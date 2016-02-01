@@ -23,9 +23,10 @@
       </span>
       <div id="text3" class="layer"></div>
       <div id="layer1" class="layer">
-        <div id="text6"></div>
+        <div id="text6" class="layer"></div>
       </div>
       <div id="text4" class="layer"></div>
+      <div id="logo2" class="layer"></div>
       <div id="text5" class="layer"></div>
       <div id="btn" class="layer"></div>
     </div>
@@ -69,14 +70,15 @@
           text6 = document.getElementById('text6'),
           layer1 = document.getElementById('layer1'),
           btn = document.getElementById('btn'),
+          logo1 = document.getElementById('logo'),
+          logo2 = document.getElementById('logo2'),
 
           icon = document.querySelectorAll('.icon'),
           scaner = document.querySelectorAll('.scaner'),
           highlightIcon =  document.querySelector('.choosen-icon'),
           l = icon.length
           chosenIcon = icon[numberOfChosenIcon];
-      timeline.to(text1, .5, {autoAlpha: 1, delay: 1})
-              .to(text1, .5, {autoAlpha: 1});
+      timeline.to([text1, logo1], .5, {autoAlpha: 1})
 
       for(var i = 0; i < l; i++) {
         alreadyShowIcon[i] = i;
@@ -107,9 +109,9 @@
                 }
               })
               .fromTo(highlightIcon, .5, {autoAlpha: 0, repeat: 2, repeatDelay: 0.5}, {autoAlpha:1, repeat:2, repeatDelay: 0.5})
-              .to(text3, .5, {autoAlpha: 1, delay: 1}, 7.567)
+              .to(text3, .5, {autoAlpha: 1}, 7.567)
               .to(layer1, .5, {autoAlpha: 1, delay: 2})
-              .to(text4, .5, {autoAlpha: 1, delay: 1})
+              .to([text4, logo2, text6], .5, {autoAlpha: 1})
               .to(text4, .5, {autoAlpha: 0, delay: 1})
               .to(text5, .5, {autoAlpha: 1, delay: 1})
               .to(btn, .5, {autoAlpha: 1, delay: 1});

@@ -21,7 +21,7 @@ body {
   visibility: hidden;
   opacity: 0;
 }
-#list-icon, #logo {
+#list-icon {
   visibility: visible;
   opacity: 1;
 }
@@ -56,6 +56,10 @@ body {
 }
 #logo {
   background: url("images/logo.png");
+  background-position: -1px -1px;
+}
+#logo2 {
+  background: url("images/logo2.png");
   background-position: -1px -1px;
 }
 #text1 {
