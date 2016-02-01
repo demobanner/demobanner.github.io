@@ -92,7 +92,7 @@
         timeline.to(icon[randomIntFromInterval(0, l)], .01, {backgroundImage: 'url(images/icon-2.png)'});
       }
       timeline.to(chosenIcon, .01, {backgroundImage: 'url(images/icon-2.png)'})
-              .to(text2, .5, {autoAlpha: 0, delay: 1})
+              .to(text2, .5, {autoAlpha: 0, delay: 2})
               .to(listIcon, .5, {autoAlpha: .3})
               .to(scaner, .1, {
                 ease: Power0.easeNone,
@@ -103,29 +103,7 @@
                 ease: Power0.easeNone,
                 css: {
                   autoAlpha: 1,
-                  y: chosenIcon.offsetTop + 120,
-                  x: 200
-                }
-              })
-              .to(scaner, 1, {
-                ease: Power0.easeNone,
-                css: {
-                  y: chosenIcon.offsetTop + 0,
-                  x: 0
-                }
-              })
-              .to(scaner, 1, {
-                ease: Power0.easeNone,
-                css: {
-                  y: chosenIcon.offsetTop + 50,
-                  x: 250
-                }
-              })
-              .to(scaner, 1, {
-                ease: Power0.easeNone,
-                css: {
-                  y: chosenIcon.offsetTop - 10,
-                  x: chosenIcon.offsetLeft - 10
+                  x: 164
                 }
               })
               .fromTo(highlightIcon, .5, {autoAlpha: 0, repeat: 2, repeatDelay: 0.5}, {autoAlpha:1, repeat:2, repeatDelay: 0.5})

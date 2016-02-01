@@ -45,6 +45,8 @@ body {
   visibility: hidden;
 }
 .scaner {
+  top: 66px;
+  left: -30px;
   background: url("images/icon-bg.png");
   width: 29px;
   height: 30px;
