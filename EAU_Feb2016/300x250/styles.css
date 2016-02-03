@@ -45,15 +45,12 @@ a {
 }
 #f1-text {
   background: url(f1-text.png) no-repeat;
-  top: 250px;
 }
 #f2-text {
   background: url(f2-text.png) no-repeat;
-  top: 250px;
 }
 #f3-text {
   background: url(f3-text.png) no-repeat;
-  top: 250px;
 }
 #text-box-1, #text-box-2, #text-box-3, #text-box-4, #text-box-5, #text-box-6 {
   position: absolute;
@@ -80,14 +77,12 @@ a {
 }
 #f4-text {
   background: url(f4-text.png) no-repeat;
-  top: 250px;
 }
 #f4-bgd {
   background: url(f4-bg.jpg) no-repeat;
 }
 #cta {
   background: url(cta.png) no-repeat;
-  top: 250px;
 }
 #group-wrap, #radar-img-1, #radar-img-2, #radar-img-3, #radar-img-4, #radar {
   top: 85px;

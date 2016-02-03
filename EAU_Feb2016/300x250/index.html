@@ -41,7 +41,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
     var bannerTween = new TimelineLite();
-    var myVar;
     var bgd = document.getElementById('bgd'),
         f1_text = document.getElementById('f1-text'),
         f2_text = document.getElementById('f2-text'),
@@ -68,34 +67,34 @@
     function init() {
       bannerTween.to(bgd, 0.2, {autoAlpha: 1})
                   .to(logo, 0.5, {autoAlpha: 1},'-=0.2')
-                  .to(f1_text, 0.5, {autoAlpha: 1, top: 0});
+                  .to(f1_text, 0.5, {autoAlpha: 1});
     bannerTween.to(f1_text, 0.5, {autoAlpha: 0},'+=1.5')
-                .to(f2_text, 0.5, {autoAlpha: 1, top: 0})
+                .to(f2_text, 0.5, {autoAlpha: 1})
                 .to(radar_img_1, 0.5, {autoAlpha: 1})
                 .to(radar, 0.3, {autoAlpha: 1},'-=0.3')
                 .to(text_box_1, 0.5, {autoAlpha: 1},'-=0.3')
-                .to(text_box_1, 0.3, {autoAlpha: 0},'+=1.5')
+                .to(text_box_1, 0.3, {autoAlpha: 0},'+=2')
                 .to(text_box_2, 0.3, {autoAlpha: 1})
-                .to(text_box_2, 0.3, {autoAlpha: 0},'+=1.5')
+                .to(text_box_2, 0.3, {autoAlpha: 0},'+=2')
                 .to(radar_img_1, 0.5, {autoAlpha: 0})
                 .to(radar_img_2, 0.5, {autoAlpha: 1},'-=0.5')
                 .to(text_box_3, 0.3, {autoAlpha: 1})
-                .to(text_box_3, 0.3, {autoAlpha: 0},'+=1')
+                .to(text_box_3, 0.3, {autoAlpha: 0},'+=1.5')
                 .to(radar_img_2, 0.5, {autoAlpha: 0})
                 .to(radar_img_3, 0.5, {autoAlpha: 1},'-=1')
                 .to(f2_text, 0.5, {autoAlpha: 0},'-=0.5')
-                .to(f3_text, 0.5, {autoAlpha: 1, top: 0})
+                .to(f3_text, 0.5, {autoAlpha: 1}, "-=0.3")
                 .to(text_box_4, 0.3, {autoAlpha: 1})
-                .to(text_box_4, 0.3, {autoAlpha: 0},'+=1.5')
+                .to(text_box_4, 0.3, {autoAlpha: 0},'+=2')
                 .to(radar_img_3, 0.5, {autoAlpha: 0})
                 .to(radar_img_4, 0.5, {autoAlpha: 1},'-=0.5')
                 .to(text_box_5, 0.3, {autoAlpha: 1})
-                .to(text_box_5, 0.3, {autoAlpha: 0},'+=1.5')
+                .to(text_box_5, 0.3, {autoAlpha: 0},'+=2')
                 .to(text_box_6, 0.3, {autoAlpha: 1});
-      bannerTween.to(radar, 12.5, {rotation: 380, ease: Power0.easeNone, y: 0 }, 4.5);
+      bannerTween.to(radar, 15, {rotation: 380, ease: Power0.easeNone, y: 0 }, 4.5);
       bannerTween.to(group_wrap, 0.5, {autoAlpha: 0})
               .to(f4_bgd, 0.5, {autoAlpha: 1},'-=0.2')
-              .to(f4_text, 0.5, {autoAlpha: 1, top: 0})
+              .to(f4_text, 0.5, {autoAlpha: 1})
               .to(cta, 0.5, {autoAlpha: 1, top: 0})
               .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
     }
