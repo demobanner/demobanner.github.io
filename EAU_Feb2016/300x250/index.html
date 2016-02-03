@@ -27,6 +27,7 @@
         <div id="radar-img-3" class="layer"></div>
         <div id="radar-img-4" class="layer"></div>
         <div id="radar" class="layer"></div>
+		<div id="radar-border" class="layer"></div>
         <div id="text-box-1" class="layer"></div>
         <div id="text-box-2" class="layer"></div>
         <div id="text-box-3" class="layer"></div>
@@ -55,11 +56,12 @@
         f4_text = document.getElementById('f4-text'),
         f4_bgd = document.getElementById('f4-bgd'),
         cta = document.getElementById('cta'),
-        radar = document.getElementById('radar')
-        radar_img_1 = document.getElementById('radar-img-1')
-        radar_img_2 = document.getElementById('radar-img-2')
-        radar_img_3 = document.getElementById('radar-img-3')
-        radar_img_4 = document.getElementById('radar-img-4')
+        radar = document.getElementById('radar'),
+		radar_border = document.getElementById('radar-border'),
+        radar_img_1 = document.getElementById('radar-img-1'),
+        radar_img_2 = document.getElementById('radar-img-2'),
+        radar_img_3 = document.getElementById('radar-img-3'),
+        radar_img_4 = document.getElementById('radar-img-4'),
         logo = document.getElementById('logo'),
         cta = document.getElementById('cta'),
         btn_replay = document.getElementById('btn-replay');
@@ -68,10 +70,11 @@
       bannerTween.to(bgd, 0.2, {autoAlpha: 1})
                   .to(logo, 0.5, {autoAlpha: 1},'-=0.2')
                   .to(f1_text, 0.5, {autoAlpha: 1});
-    bannerTween.to(f1_text, 0.5, {autoAlpha: 0},'+=1.5')
+      bannerTween.to(f1_text, 0.5, {autoAlpha: 0},'+=1.5')
                 .to(f2_text, 0.5, {autoAlpha: 1})
                 .to(radar_img_1, 0.5, {autoAlpha: 1})
                 .to(radar, 0.3, {autoAlpha: 1},'-=0.3')
+				.to(radar_border, 0.3, {autoAlpha: 1},'-=0.3')
                 .to(text_box_1, 0.5, {autoAlpha: 1},'-=0.3')
                 .to(text_box_1, 0.3, {autoAlpha: 0},'+=2')
                 .to(text_box_2, 0.3, {autoAlpha: 1})

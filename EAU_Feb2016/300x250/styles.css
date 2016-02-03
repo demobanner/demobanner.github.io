@@ -37,6 +37,9 @@ a {
 #radar {
   background: url(radar.png);
 }
+#radar-border{
+  background: url(radar-border.png);
+}
 #bgd {
   background: url(bg.png) no-repeat;
 }
@@ -84,7 +87,7 @@ a {
 #cta {
   background: url(cta.png) no-repeat;
 }
-#group-wrap, #radar-img-1, #radar-img-2, #radar-img-3, #radar-img-4, #radar {
+#group-wrap, #radar-img-1, #radar-img-2, #radar-img-3, #radar-img-4, #radar, #radar-border {
   top: 85px;
   left: 135px;
   width: 149px;
