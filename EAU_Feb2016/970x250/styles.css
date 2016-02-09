@@ -16,7 +16,7 @@ a {
   width: 970px;
   height: 250px;
   border: 1px solid #000000;
-  background: white;
+  background: url(bg.png) no-repeat;
 }
 .click-tag {
   position: absolute;
@@ -35,13 +35,10 @@ a {
   opacity: 0;
 }
 #radar {
-  background: url(radar.png);
+  background: url(radar.png) no-repeat;
 }
 #radar-border{
-  background: url(radar-border.png);
-}
-#bgd {
-  background: url(bg.png) no-repeat;
+  background: url(radar-border.png) no-repeat;
 }
 #logo {
   background: url(logo.png) no-repeat;

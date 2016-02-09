@@ -14,7 +14,6 @@
 <body onload="init()">
   <div id="banner">
     <a class="click-tag" href="javascript:window.open(window.clickTag)">
-      <div id="bgd" class="layer"></div>
       <div id="f1-text" class="layer"></div>
       <div id="f2-text" class="layer"></div>
       <div id="f3-text" class="layer"></div>
@@ -37,13 +36,14 @@
       </div>
       <div id="logo" class="layer"></div>
     </a>
-    <a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
+    <a id="btn-replay" href="javascript:" onclick="restart();">
+    	<img src="btn-replay.png">
+    </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
     var bannerTween = new TimelineLite();
-    var bgd = document.getElementById('bgd')
-        f1_text = document.getElementById('f1-text')
+    var f1_text = document.getElementById('f1-text')
         f2_text = document.getElementById('f2-text')
         f3_text = document.getElementById('f3-text')
         text_box_1 = document.getElementById('text-box-1')
@@ -57,7 +57,7 @@
         f4_bgd = document.getElementById('f4-bgd')
         cta = document.getElementById('cta')
         radar = document.getElementById('radar')
-		    radar_border = document.getElementById('radar-border')
+		radar_border = document.getElementById('radar-border')
         radar_img_1 = document.getElementById('radar-img-1')
         radar_img_2 = document.getElementById('radar-img-2')
         radar_img_3 = document.getElementById('radar-img-3')
@@ -67,14 +67,13 @@
         btn_replay = document.getElementById('btn-replay');
 
     function init() {
-      bannerTween.to(bgd, 0.2, {autoAlpha: 1})
-                  .to(logo, 0.5, {autoAlpha: 1},'-=0.2')
-                  .to(f1_text, 0.5, {autoAlpha: 1});
+      bannerTween.to(logo, 0.5, {autoAlpha: 1},'-=0.2')
+                 .to(f1_text, 0.5, {autoAlpha: 1});
       bannerTween.to(f1_text, 0.5, {autoAlpha: 0},'+=1.5')
                 .to(f2_text, 0.5, {autoAlpha: 1})
                 .to(radar_img_1, 0.5, {autoAlpha: 1})
                 .to(radar, 0.3, {autoAlpha: 1},'-=0.3')
-				        .to(radar_border, 0.3, {autoAlpha: 1},'-=0.3')
+				.to(radar_border, 0.3, {autoAlpha: 1},'-=0.3')
                 .to(text_box_1, 0.5, {autoAlpha: 1},'-=0.3')
                 .to(text_box_1, 0.3, {autoAlpha: 0},'+=2')
                 .to(text_box_2, 0.3, {autoAlpha: 1})
