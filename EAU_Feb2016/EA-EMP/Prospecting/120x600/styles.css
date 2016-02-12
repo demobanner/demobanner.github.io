@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 120px;
+  height: 600px;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+#logo {
+  background: url(logo.png) no-repeat;
+}
+#photo {
+  width: 480px;
+  height: 1200px;
+  background: url(photo.jpg) no-repeat;
+  transform: translate(-200px, -430px);
+}
+#mask {
+  background: url(gradient.png) no-repeat;
+}
+#f1-text {
+  background: url(f1-text.png) no-repeat;
+}
+#f2-text {
+  background: url(f2-text.png) no-repeat;
+}
+#f3-text {
+  background: url(f3-text.png) no-repeat;
+}
+#f4-text1 {
+  background: url(f4-text.png) no-repeat;
+}
+#f4-text2 {
+  background: url(hello.png) no-repeat;
+}
+#bgd {
+  background: url(bgd.png) no-repeat;
+}
+#cta {
+  background: url(cta.png) no-repeat;
+}

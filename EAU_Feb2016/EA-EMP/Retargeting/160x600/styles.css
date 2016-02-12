@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 600px;
+  border: 1px solid #000000;
+  background: #ffffff url(frame-1.jpg) no-repeat;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+#frame2 {
+  background: url(frame-2.jpg) no-repeat;
+}
+#frame3 {
+  background: url(frame-3.jpg) no-repeat;
+}
+#frame4 {
+  background: url(frame-4.png) no-repeat;
+}
+#text1 {
+  background: url(text-1.png) no-repeat;
+}
+#text2 {
+  background: url(text-2.png) no-repeat;
+}
+#text3 {
+  background: url(text-3.png) no-repeat;
+}
+#text4 {
+  background: url(text-4.png) no-repeat;
+}
+#logo {
+  background: url(logo.png) no-repeat;
+  opacity: 1;
+  visibility: visible;
+}
+#logo-text {
+  background: url(logo-text.png) no-repeat;
+}
+#cta {
+  background: url(cta.png) no-repeat;
+}
+

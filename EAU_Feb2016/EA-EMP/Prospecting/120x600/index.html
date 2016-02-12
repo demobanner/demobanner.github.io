@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="ad.size" content= "width=300, height=250">
-  <title>Prospecting_300x250</title>
+  <meta name="ad.size" content= "width=120, height=600">
+  <title>Prospecting_120x600</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript">
     var clickTag = "http://www.emiratesgroupcareers.com/english/Default.aspx";
@@ -15,7 +15,6 @@
   <div id="banner">
     <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
       <div id="photo"></div>
-      <div id="mask" class="layer"></div>
       <div id="f1-text" class="layer"></div>
       <div id="f2-text" class="layer"></div>
       <div id="f3-text" class="layer"></div>
@@ -30,7 +29,6 @@
   <script type="text/javascript">
     var bannerTween = new TimelineLite();
     var photo = document.getElementById('photo'),
-        mask = document.getElementById('mask'),
         bgd = document.getElementById('bgd'),
         f1_text = document.getElementById('f1-text'),
         f2_text = document.getElementById('f2-text'),
@@ -43,13 +41,12 @@
 
     function init() {
       bannerTween.to(logo, 0.5, {autoAlpha: 1})
-                  .to(mask, 0.5, {autoAlpha: 1})
-                  .to(f1_text, 0.5, {autoAlpha: 1},'-=0.5');
+                  .to(f1_text, 0.5, {autoAlpha: 1});
       bannerTween.to(f1_text, 0.5, {autoAlpha: 0},'+=2')
                   .to(f2_text, 0.5, {autoAlpha: 1});
       bannerTween.to(f2_text, 0.5, {autoAlpha: 0},'+=2')
                   .to(f3_text, 0.5, {autoAlpha: 1});
-      bannerTween.to(photo, 9, {scale: 0.35, x: -300, y: -250, rotation: 0.01}, 1);
+      bannerTween.to(photo, 9, {scale: 0.5, x: -125, y: -300, rotation: 0.01}, 1);
       bannerTween.to(bgd, 0.5, {autoAlpha: 1},'+=0.5')
                   .to(f4_text2, 0.5, {autoAlpha: 1})
                   .to(f4_text1, 0.5, {autoAlpha: 1})
