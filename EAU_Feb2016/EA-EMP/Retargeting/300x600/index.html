@@ -29,7 +29,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
-    var bannerTween = new TimelineLite();
+    var bannerTween = new TimelineMax({repeat:1, repeatDelay: 2});
     var frame2 = document.getElementById('frame2')
         frame3 = document.getElementById('frame3')
         frame4 = document.getElementById('frame4')
