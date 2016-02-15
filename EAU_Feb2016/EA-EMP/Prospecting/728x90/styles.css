@@ -13,8 +13,8 @@ a {
 #banner {
   position: relative;
   overflow: hidden;
-  width: 298px;
-  height: 248px;
+  width: 726px;
+  height: 88px;
   border: 1px solid #000000;
   background: #ffffff;
 }
@@ -38,15 +38,10 @@ a {
   background: url(logo.png) no-repeat;
 }
 #photo {
-  width: 900px;
-  height: 750px;
+  width: 1359px;
+  height: 611px;
   background: url(photo.jpg) no-repeat;
-  transform: translate(-300px, -250px);
-}
-#mask {
-  background: url(gradient.png) no-repeat;
-  opacity: 1;
-  visibility: visible;
+  transform: translate(-483px, -182px);
 }
 #f1-text {
   background: url(f1-text.png) no-repeat;
