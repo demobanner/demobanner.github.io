@@ -38,10 +38,10 @@ a {
   background: url(logo.png) no-repeat;
 }
 #photo {
-  width: 600px;
-  height: 900px;
+  width: 1173px;
+  height: 1086px;
   background: url(photo.jpg) no-repeat;
-  transform: translate(-300px, -240px);
+  transform: translate(-460px, -425px);
 }
 #mask {
   background: url(gradient.png) no-repeat;
