@@ -73,7 +73,7 @@ a {
 }
 #frame5-text {
   background: url(frame-5-text.png) no-repeat;
-  top: 200px;
+  left: -300px;
 }
 #frame6 {
   background: url(frame-6.jpg) no-repeat;
