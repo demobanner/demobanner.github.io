@@ -36,6 +36,8 @@ a {
 }
 #logo {
   background: url(logo.png) no-repeat;
+  opacity: 1;
+  visibility: visible;
 }
 #photo-1 {
   background: url(photo-1.jpg) no-repeat;
