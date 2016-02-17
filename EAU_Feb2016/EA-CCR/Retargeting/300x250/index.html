@@ -14,11 +14,11 @@
 <body onload="init()">
   <div id="banner">
     <a class="click-tag" href="javascript:window.open(window.clickTag)">
-      <div id="frame2" class="layer"></div>
-      <div id="frame3" class="layer"></div>
-      <div id="frame4" class="layer"></div>
-  	  <div id="frame5" class="layer"></div>
-  	  <div id="frame5-text" class="layer"></div>
+      <div id="frame2" class="frame"></div>
+      <div id="frame3" class="frame"></div>
+      <div id="frame4" class="frame"></div>
+  	  <div id="frame5" class="frame"></div>
+  	  <div id="frame5-text" class="frame"></div>
   	  <div id="frame6" class="layer"></div>
   	  <div id="frame6-text" class="layer"></div>
   	  <div id="frame7" class="layer"></div>
@@ -54,7 +54,7 @@
           			 .to(frame4, 0.3, {left: 0, rotation: 0}, "+=0.5")
                  .to(frame5, 0.3, {top: 0, rotation: 0}, "+=0.5")
                  .to(logo, 0.5, {autoAlpha: 1})
-        				 .to(frame5_text, 0.5, {autoAlpha: 1}, "+=0.3")
+        				 .to(frame5_text, 1.5, {top: 0, ease: Elastic.easeOut.config(1, 0.4) },"-=0.5")
         				 .to(frame6, 0.5, {autoAlpha: 1}, "+=2")
         				 .to(frame6_text, 0.5, {autoAlpha: 1})
         				 .to(frame7, 0.5, {autoAlpha: 1}, "+=2")
@@ -62,8 +62,7 @@
         				 .to(frame8, 0.5, {autoAlpha: 1}, "+=2")
           			 .to(logo_text, 0.5, {autoAlpha: 1})
           			 .to(frame8_text, 0.5, {autoAlpha: 1})
-          			 .to(cta, 0.5, {autoAlpha: 1})
-                ;
+          			 .to(cta, 0.5, {autoAlpha: 1});
     }
 
   </script>

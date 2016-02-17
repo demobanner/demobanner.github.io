@@ -83,9 +83,79 @@ a {
 #net-dot {
   background: url(net-dot.png) no-repeat;
 }
-#net {
-  background: url(net.png) no-repeat;
-  transform: matrix(0, 0, 0, 0, 40, 35);
-  opacity: 1;
-  visibility: visible;
+#net-1, #net-2, #net-3, #net-4, #net-5, #net-6, #net-7, #net-8, #net-9, #net-10, #net-11,
+#net-12, #net-13, #net-14, #net-15 {
+  position: absolute;
+}
+#net-1, #net-2, #net-3, #net-4, #net-5, #net-13, #net-14, #net-15 {
+  width: 190px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#net-1 {
+  background: url(net-curve1.png) no-repeat;
+}
+#net-2 {
+  background: url(net-curve2.png) no-repeat;
+}
+#net-3 {
+  background: url(net-curve3.png) no-repeat;
+}
+#net-4 {
+  background: url(net-curve4.png) no-repeat;
+}
+#net-5 {
+  background: url(net-curve5.png) no-repeat;
+  width: 185px;
+}
+#net-6, #net-7 {
+  width: 100%;
+  height: 160px;
+  top: 0;
+  left: 0;
+}
+#net-6 {
+  background: url(net-curve6.png) no-repeat;
+}
+#net-7 {
+  background: url(net-curve7.png) no-repeat;
+  height: 158px;
+}
+#net-8, #net-9 {
+  width: 110px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+#net-8 {
+  background: url(net-curve8.png) no-repeat right top;
+}
+#net-9 {
+  background: url(net-curve9.png) no-repeat right top;
+}
+#net-10, #net-11, #net-12 {
+  width: 100%;
+  height: 90px;
+  left: 0;
+  bottom: 0;
+}
+#net-10 {
+  background: url(net-curve10.png) no-repeat left bottom;
+}
+#net-11 {
+  background: url(net-curve11.png) no-repeat left bottom;
+}
+#net-12 {
+  background: url(net-curve12.png) no-repeat left bottom;
+}
+#net-13 {
+  background: url(net-curve13.png) no-repeat;
+  width: 185px;
+}
+#net-14 {
+  background: url(net-curve14.png) no-repeat;
+}
+#net-15 {
+  background: url(net-curve15.png) no-repeat;
 }

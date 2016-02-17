@@ -34,10 +34,17 @@ a {
   visibility: hidden;
   opacity: 0;
 }
-#frame2 {
-  background: url(frame-2.jpg) no-repeat;
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   visibility: visible;
   opacity: 1;
+}
+#frame2 {
+  background: url(frame-2.jpg) no-repeat;
   left: -350px;
   -ms-transform: rotate(30deg); /* IE 9 */
   -webkit-transform: rotate(30deg); /* Safari */
@@ -45,33 +52,28 @@ a {
 }
 #frame3 {
   background: url(frame-3.jpg) no-repeat;
-  visibility: visible;
   top: 350px;
-  opacity: 1;
   -ms-transform: rotate(60deg); /* IE 9 */
   -webkit-transform: rotate(60deg); /* Safari */
   transform: rotate(60deg);
 }
 #frame4 {
   background: url(frame-4.jpg) no-repeat;
-  visibility: visible;
   left: 350px;
-  opacity: 1;
   -ms-transform: rotate(70deg); /* IE 9 */
   -webkit-transform: rotate(70deg); /* Safari */
   transform: rotate(70deg);
 }
 #frame5 {
   background: url(frame-5.jpg) no-repeat;
-  visibility: visible;
   top: -350px;
-  opacity: 1;
   -ms-transform: rotate(40deg); /* IE 9 */
   -webkit-transform: rotate(40deg); /* Safari */
   transform: rotate(40deg);
 }
 #frame5-text {
   background: url(frame-5-text.png) no-repeat;
+  top: 200px;
 }
 #frame6 {
   background: url(frame-6.jpg) no-repeat;
