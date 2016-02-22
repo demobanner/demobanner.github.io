@@ -50,13 +50,6 @@ a {
   -webkit-transform: rotate(30deg); /* Safari */
   transform: rotate(30deg);
 }
-#frame3 {
-  background: url(frame-3.jpg) no-repeat;
-  top: 350px;
-  -ms-transform: rotate(60deg); /* IE 9 */
-  -webkit-transform: rotate(60deg); /* Safari */
-  transform: rotate(60deg);
-}
 #frame4 {
   background: url(frame-4.jpg) no-repeat;
   left: 350px;

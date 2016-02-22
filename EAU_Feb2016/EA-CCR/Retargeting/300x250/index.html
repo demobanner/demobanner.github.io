@@ -15,7 +15,6 @@
   <div id="banner">
     <a class="click-tag" href="javascript:window.open(window.clickTag)">
       <div id="frame2" class="frame"></div>
-      <div id="frame3" class="frame"></div>
       <div id="frame4" class="frame"></div>
   	  <div id="frame5" class="frame"></div>
   	  <div id="frame5-text" class="layer"></div>
@@ -34,7 +33,6 @@
   <script type="text/javascript">
     var bannerTween = new TimelineMax({repeat:1, repeatDelay: 2});
     var frame2 = document.getElementById('frame2')
-        frame3 = document.getElementById('frame3')
         frame4 = document.getElementById('frame4')
         frame5 = document.getElementById('frame5')
         frame5_text = document.getElementById('frame5-text')
@@ -50,7 +48,6 @@
 
     function init() {
       bannerTween.to(frame2, 0.3, {left: 0, rotation: 0}, "+=1")
-          			 .to(frame3, 0.3, {top: 0, rotation: 0}, "+=0.5")
           			 .to(frame4, 0.3, {left: 0, rotation: 0}, "+=0.5")
                  .to(frame5, 0.3, {top: 0, rotation: 0}, "+=0.5")
                  .to(logo, 0.5, {autoAlpha: 1})
