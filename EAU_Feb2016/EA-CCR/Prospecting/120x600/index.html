@@ -50,34 +50,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
     var bannerTween = new TimelineMax({repeat:1, repeatDelay: 2});
-    var photo_1 = document.getElementById('photo-1'),
-        photo_2 = document.getElementById('photo-2'),
-        photo_3 = document.getElementById('photo-3'),
-        photo_4 = document.getElementById('photo-4'),
-        bgd = document.getElementById('bgd'),
-        net = document.getElementById('net'),
-        net_dot = document.getElementById('net-dot'),
-        f1_text = document.getElementById('f1-text'),
-        f2_text = document.getElementById('f2-text'),
-        f3_text = document.getElementById('f3-text'),
+    var photo_1 = document.getElementById('photo-1')
+        photo_2 = document.getElementById('photo-2')
+        photo_3 = document.getElementById('photo-3')
+        photo_4 = document.getElementById('photo-4')
+        bgd = document.getElementById('bgd')
+        net = document.getElementById('net')
+        net_dot = document.getElementById('net-dot')
+        f1_text = document.getElementById('f1-text')
+        f2_text = document.getElementById('f2-text')
+        f3_text = document.getElementById('f3-text')
         f4_text = document.getElementById('f4-text'),
-        f5_text1 = document.getElementById('f5-text1'),
-        f5_text2 = document.getElementById('f5-text2'),
-        bgd = document.getElementById('bgd'),
-        logo = document.getElementById('logo'),
+        f5_text1 = document.getElementById('f5-text1')
+        f5_text2 = document.getElementById('f5-text2')
+        bgd = document.getElementById('bgd')
+        logo = document.getElementById('logo')
         cta = document.getElementById('cta');
 
     function init() {
-      bannerTween.to(f1_text, 0.5, {autoAlpha: 1});
-      bannerTween.to(photo_1, 0.5, {autoAlpha: 0},'+=2')
+      bannerTween.to(f1_text, 0.5, {autoAlpha: 1})
+                  .to(photo_1, 0.5, {autoAlpha: 0},'+=2')
                   .to(f1_text, 0.5, {autoAlpha: 0},'-=0.5')
                   .to(photo_2, 0.5, {autoAlpha: 1},'-=0.5')
-                  .to(f2_text, 0.5, {autoAlpha: 1});
-      bannerTween.to(photo_2, 0.5, {autoAlpha: 0},'+=2')
+                  .to(f2_text, 0.5, {autoAlpha: 1})
+                  .to(photo_2, 0.5, {autoAlpha: 0},'+=2')
                   .to(f2_text, 0.5, {autoAlpha: 0},'-=0.5')
                   .to(photo_3, 0.5, {autoAlpha: 1},'-=0.5')
-                  .to(f3_text, 0.5, {autoAlpha: 1});
-      bannerTween.to(photo_3, 0.5, {autoAlpha: 0},'+=2')
+                  .to(f3_text, 0.5, {autoAlpha: 1})
+                  .to(photo_3, 0.5, {autoAlpha: 0},'+=2')
                   .to(f3_text, 0.5, {autoAlpha: 0},'-=0.5')
                   .to(photo_4, 0.5, {autoAlpha: 1},'-=0.5')
                   .to(net_dot, 0.5, {autoAlpha: 1})
@@ -96,8 +96,8 @@
                   .to('#net-13', 0.5, {width: '100%'},'-=0.5')
                   .to('#net-14', 0.5, {width: '100%'},'-=0.5')
                   .to('#net-15', 0.5, {width: '100%'},'-=0.5')
-                  .to(f4_text, 0.5, {autoAlpha: 1},'+=0.3');
-      bannerTween.to(bgd, 0.5, {autoAlpha: 1},'+=2')
+                  .to(f4_text, 0.5, {autoAlpha: 1},'+=0.3')
+                  .to(bgd, 0.5, {autoAlpha: 1},'+=2')
                   .to(f5_text2, 0.5, {autoAlpha: 1})
                   .to(f5_text1, 0.5, {autoAlpha: 1})
                   .to(cta, 0.5, {autoAlpha: 1});
