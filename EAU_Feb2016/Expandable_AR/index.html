@@ -17,7 +17,6 @@
   <div id="banner">
     <div id="collapsed-panel">
       <div class="feature-collapsed" id="feature-collapsed">
-        <div id="collapsed-exit"></div>
         <a class="click-tag" href="javascript:window.open(window.clickTag)">
           <div id="bgd" class="layer"></div>
           <div id="f1-text" class="layer"></div>
@@ -43,6 +42,7 @@
           <div id="logo" class="layer"></div>
         </a>
         <a id="btn-replay-970x250" href="javascript:" onclick="restart_970x250();"><img src="btn-replay.png"></a>
+        <div id="collapsed-exit" onclick="javascript:window.open(window.clickTag)"></div>
         <!-- <div id="expand-button" class="button">
           Expand
         </div> -->
@@ -51,7 +51,6 @@
     <!-- Expand Content -->
     <div id="expanded-panel">
       <div class="feature-expanded" id="feature-expanded">
-        <div id="expanded-exit"></div>
         <a class="click-tag" href="javascript:window.open(window.clickTag)">
           <div id="big-bgd" class="layer"></div>
           <div id="big-f1-text" class="layer"></div>
@@ -76,8 +75,8 @@
           </div>
           <div id="big-logo" class="layer"></div>
         </a>
-
         <a id="btn-replay-970x500" href="javascript:" onclick="restart_970x500();"><img src="btn-replay.png"></a>
+        <div id="expanded-exit" onlick="javascript:window.open(window.clickTag)"></div>
         <div id="collapse-button" class="button">Close <strong>X</strong></div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 
 var creative = {};
 var counter = 0;
+var changed = false;
 
 /**
  * Window onload handler.
@@ -61,11 +62,12 @@ function addListeners() {
   Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_START, collapseStartHandler);
   Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_FINISH, collapseFinishHandler);
   // creative.dom.expandButton.addEventListener('click', onExpandHandler, false);
-  creative.dom.collapseButton.addEventListener('click', onCollapseClickHandler, false);
-  creative.dom.expandedExit.addEventListener('click', exitClickHandler);
-  creative.dom.collapsedExit.addEventListener('click', collapsedExitClickHandler);
-  creative.dom.collapsedContent.addEventListener('mouseover', onExpandHandler, false);
-  creative.dom.expandedContent.addEventListener('mouseout', onCollapseClickHandler, false);
+  creative.dom.collapseButton.addEventListener('click', onCloseButtonClickHandler, false);
+  // creative.dom.expandedExit.addEventListener('click', exitClickHandler);
+  // creative.dom.collapsedExit.addEventListener('click', collapsedExitClickHandler);
+  creative.dom.collapsedExit.addEventListener('mouseover', onExpandHandler, false);
+  creative.dom.collapsedExit.addEventListener('mouseout', function() { changed = false }, false);
+  creative.dom.expandedExit.addEventListener('mouseout', onCollapseClickHandler, false);
 
 }
 
@@ -130,12 +132,19 @@ function collapseFinishHandler() {
   creative.isExpanded = false;
 }
 
+function onCloseButtonClickHandler(){
+  onCollapseClickHandler();
+  changed = true;
+}
+
 function onCollapseClickHandler(){
   Enabler.requestCollapse();
   Enabler.stopTimer('Panel Expansion');
 }
 
 function onExpandHandler(){
+  console.log(changed);
+  if (changed) { return; }
   Enabler.requestExpand();
   Enabler.startTimer('Panel Expansion');
 }
