@@ -2,6 +2,8 @@
 var creative = {};
 var counter = 0;
 var changed = false;
+var openFlag = false;
+var timer;
 
 /**
  * Window onload handler.
@@ -31,8 +33,6 @@ function setupDom() {
   creative.dom.collapsedContent = document.getElementById('collapsed-panel');
   creative.dom.collapseButton = document.getElementById('collapse-button');
   creative.dom.expandButton = document.getElementById('expand-button');
-  creative.dom.image0 = document.getElementById('main-img-0');
-  creative.dom.image1 = document.getElementById('main-img-1');
 }
 
 /**
@@ -66,9 +66,11 @@ function addListeners() {
   // creative.dom.expandedExit.addEventListener('click', exitClickHandler);
   // creative.dom.collapsedExit.addEventListener('click', collapsedExitClickHandler);
   creative.dom.collapsedExit.addEventListener('mouseover', onExpandHandler, false);
-  creative.dom.collapsedExit.addEventListener('mouseout', function() { changed = false }, false);
-  creative.dom.expandedExit.addEventListener('mouseout', onCollapseClickHandler, false);
-
+  creative.dom.collapsedExit.addEventListener('mouseout', function() { changed = false;}, false);
+  creative.dom.expandedExit.addEventListener('mouseout', preCollapseHandler, false);
+  creative.dom.expandedExit.addEventListener('click', function() {window.open(window.clickTag)}, false);
+  document.getElementById('btn-replay-970x500').addEventListener('mouseover', function() { openFlag = false }, false);
+  creative.dom.collapseButton.addEventListener('mouseover', function() { openFlag = false }, false);
 }
 
 /**
@@ -133,17 +135,25 @@ function collapseFinishHandler() {
 }
 
 function onCloseButtonClickHandler() {
-  onCollapseClickHandler();
+  openFlag = true;
+  onCollapseHandler();
   changed = true;
 }
 
-function onCollapseClickHandler(){
-  Enabler.requestCollapse();
-  Enabler.stopTimer('Panel Expansion');
+function preCollapseHandler() {
+  openFlag = true;
+  timer = setInterval(onCollapseHandler, 100);
+}
+function onCollapseHandler(){
+  if (openFlag) {
+    Enabler.requestCollapse();
+    Enabler.stopTimer('Panel Expansion');
+  }
+  clearInterval(timer);
 }
 
 function onExpandHandler(){
-  console.log(changed);
+  // console.log(changed);
   if (changed) { return; }
   Enabler.requestExpand();
   Enabler.startTimer('Panel Expansion');
@@ -157,6 +167,11 @@ function exitClickHandler() {
 
 function collapsedExitClickHandler() {
   Enabler.exit('CollapsedExit');
+}
+
+function updateStatus(stt) {
+  changed = !(stt);
+  openFlag = stt;
 }
 
 
