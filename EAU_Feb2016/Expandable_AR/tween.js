@@ -1,6 +1,7 @@
-var bannerTween_970x250 = new TimelineLite();
-var bannerTween_970x500 = new TimelineLite();
+var bannerTween_970x250 = new TimelineMax();
+var bannerTween_970x500 = new TimelineMax();
 var myFun_970x250, myFun_970x500;
+
 var f1_text = document.getElementById('f1-text')
     f2_text = document.getElementById('f2-text')
     bgd = document.getElementById('bgd')
@@ -22,7 +23,7 @@ var f1_text = document.getElementById('f1-text')
     radar_img_4 = document.getElementById('radar-img-4')
     logo = document.getElementById('logo')
     cta = document.getElementById('cta')
-    btn_replay_970x250 = document.getElementById('btn-replay-970x250');
+    // btn_replay_970x250 = document.getElementById('btn-replay-970x250');
 
 var big_f1_text = document.getElementById('big-f1-text')
     big_bgd = document.getElementById('big-bgd')
@@ -45,11 +46,13 @@ var big_f1_text = document.getElementById('big-f1-text')
     big_radar_img_4 = document.getElementById('big-radar-img-4')
     big_logo = document.getElementById('big-logo')
     big_cta = document.getElementById('big-cta')
+    collapse_button = document.getElementById('collapse-button')
     big_btn_replay = document.getElementById('btn-replay-970x500');
 
 function initTween() {
   showBanner_970x250();
 }
+
 function showBanner_970x250() {
   bannerTween_970x250.to(logo, 0.5, {autoAlpha: 1},'-=0.2')
                      .to(f1_text, 0.5, {autoAlpha: 1});
@@ -81,9 +84,10 @@ function showBanner_970x250() {
     bannerTween_970x250.to(group_wrap, 0.5, {autoAlpha: 0})
                       .to(f4_bgd, 0.5, {autoAlpha: 1},'-=0.2')
                       .to(f4_text, 0.5, {autoAlpha: 1})
-                      .to(cta, 0.5, {autoAlpha: 1, top: 0})
-                      .to(btn_replay_970x250, 0.5, {autoAlpha: 1, rotation: 180});
+                      .to(cta, 0.5, {autoAlpha: 1, top: 0});
+                      // .to(btn_replay_970x250, 0.5, {autoAlpha: 1, rotation: 180});
 }
+
 function showBanner_970x500() {
   bannerTween_970x500.to(big_logo, 0.5, {autoAlpha: 1},'-=0.2')
                      .to(big_f1_text, 0.5, {autoAlpha: 1});
@@ -118,13 +122,31 @@ function showBanner_970x500() {
                 .to(big_cta, 0.5, {autoAlpha: 1, top: 0})
                 .to(big_btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
 }
+
 function restart_970x250() {
   bannerTween_970x250.restart().stop();
-  bannerTween_970x250 = new TimelineLite();
+  bannerTween_970x250 = new TimelineMax();
   showBanner_970x250();
 }
 function restart_970x500() {
   bannerTween_970x500.restart().stop();
-  bannerTween_970x500 = new TimelineLite();
+  bannerTween_970x500 = new TimelineMax();
   showBanner_970x500();
+}
+
+function play_970x250() {
+  bannerTween_970x500.paused(true);
+  if (bannerTween_970x250.duration() > bannerTween_970x250.time()) {
+    bannerTween_970x250.resume();
+  } else {
+    restart_970x250();
+  }
+}
+function play_970x500() {
+  bannerTween_970x250.paused(true);
+  if (bannerTween_970x500.duration() > bannerTween_970x500.time()) {
+    bannerTween_970x500.resume();
+  } else {
+    restart_970x500();
+  }
 }

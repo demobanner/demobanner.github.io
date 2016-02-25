@@ -102,7 +102,7 @@ function expandStartHandler() {
   if (counter <= 0) {
     showBanner_970x500();
   } else {
-    restart_970x500();
+    play_970x500();
   }
 
   Enabler.finishExpand();
@@ -122,7 +122,7 @@ function collapseStartHandler() {
   creative.dom.collapsedExit.style.display = 'block';
   // creative.dom.expandButton.style.display = 'block';
 
-  restart_970x250();
+  play_970x250();
 
   // When animation finished must call
   Enabler.finishCollapse();
@@ -132,7 +132,7 @@ function collapseFinishHandler() {
   creative.isExpanded = false;
 }
 
-function onCloseButtonClickHandler(){
+function onCloseButtonClickHandler() {
   onCollapseClickHandler();
   changed = true;
 }
