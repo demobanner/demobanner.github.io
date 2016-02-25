@@ -51,6 +51,8 @@ function init() {
   else {
     Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, show);
   }
+
+  initTween();
 }
 
 /**
@@ -101,11 +103,11 @@ function expandStartHandler() {
   creative.dom.collapsedExit.style.display = 'none';
   // creative.dom.expandButton.style.display = 'none';
 
-  if (counter <= 0) {
+  /*if (counter <= 0) {
     showBanner_970x500();
-  } else {
+  } else {*/
     play_970x500();
-  }
+  // }
 
   Enabler.finishExpand();
 }
@@ -168,12 +170,6 @@ function exitClickHandler() {
 function collapsedExitClickHandler() {
   Enabler.exit('CollapsedExit');
 }
-
-function updateStatus(stt) {
-  changed = !(stt);
-  openFlag = stt;
-}
-
 
 /**
  *  Main onload handler

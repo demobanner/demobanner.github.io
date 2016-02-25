@@ -51,6 +51,7 @@ var big_f1_text = document.getElementById('big-f1-text')
 
 function initTween() {
   showBanner_970x250();
+  showBanner_970x500();
 }
 
 function showBanner_970x250() {
@@ -135,18 +136,28 @@ function restart_970x500() {
 }
 
 function play_970x250() {
+  var seek;
   bannerTween_970x500.paused(true);
-  if (bannerTween_970x250.duration() > bannerTween_970x250.time()) {
+  seek = bannerTween_970x500.time();
+  console.log('play 970x250 at ' + seek);
+  bannerTween_970x250.seek(seek);
+  bannerTween_970x250.resume();
+  /*if (bannerTween_970x250.duration() > bannerTween_970x250.time()) {
     bannerTween_970x250.resume();
   } else {
     restart_970x250();
-  }
+  }*/
 }
 function play_970x500() {
+  var seek;
   bannerTween_970x250.paused(true);
-  if (bannerTween_970x500.duration() > bannerTween_970x500.time()) {
+  seek = bannerTween_970x250.time();
+  console.log('play 970x500 at ' + seek);
+  bannerTween_970x500.seek(seek);
+  bannerTween_970x500.resume();
+  /*if (bannerTween_970x500.duration() > bannerTween_970x500.time()) {
     bannerTween_970x500.resume();
   } else {
     restart_970x500();
-  }
+  }*/
 }
