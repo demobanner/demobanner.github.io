@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=970, height=250">
+  <title>970x250 Engineering testimonial</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.eau.ac.ae/english/prospective/";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="text1" class="layer"></div>
+      <div id="video-frame" class="layer">
+        <video id="video" width="970" height="250" autoplay>
+          <source src="Engineering testimonial.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div id="frame-2" class="layer"></div>
+      <div id="text2" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo-text" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var bannerTween = new TimelineLite();
+    var text1  = document.getElementById('text1')
+        video_frame = document.getElementById('video-frame')
+        frame2 = document.getElementById('frame-2')
+        text2  = document.getElementById('text2')
+        cta    = document.getElementById('cta')
+        logo   = document.getElementById('logo')
+        logo_text = document.getElementById('logo-text');
+
+    function init() {
+      bannerTween.to(logo, 0.5, {autoAlpha: 1})
+                 .to(text1, 0.5, {autoAlpha: 1})
+                 .to(logo, 0.5, {autoAlpha: 0}, "+=2")
+                 .to(video_frame, 0.5, {autoAlpha: 1}, "-=0.5")
+                 .to(frame2, 0.5, {autoAlpha: 1}, "+=23")
+                 .to(logo, 0.5, {autoAlpha: 1}, "-=0.5")
+                 .to(text2, 0.5, {autoAlpha: 1})
+                 .to(cta, 0.5, {autoAlpha: 1})
+                 .to(logo_text, 0.5, {autoAlpha: 1});
+    }
+  </script>
+</body>
+</html>
