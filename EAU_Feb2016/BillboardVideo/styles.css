@@ -15,7 +15,6 @@ a {
   width: 968px;
   height: 248px;
   border: 1px solid #000000;
-  background: url(frame-1.jpg) no-repeat;
 }
 .click-tag {
   position: absolute;
@@ -33,17 +32,24 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+#frame-1 {
+  background: url(frame-1.jpg) no-repeat;
+  visibility: visible;
+  opacity: 1;
+}
 #text1 {
   background: url(text1.png) no-repeat;
 }
-#video-frame,#frame-2 {
+#video-frame, #frame-2 {
   background: url(frame-2.png) no-repeat;
 }
 #text2 {
   background: url(text2.png) no-repeat;
 }
-#logo {
+#logo, #logo-1 {
   background: url(logo.png) no-repeat;
+  visibility: visible;
+  opacity: 1;
 }
 #logo-text {
   background: url(logo-text.png) no-repeat;
