@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 970px;
+  height: 400px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.button {
+  position: absolute;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 3px 5px;
+  /*z-index: 500;*/
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+}
+#collapse-button {
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  opacity: 0;
+  /*z-index: 400;*/
+  display: none;
+}
+#collapsed-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  opacity: 0;
+  /*z-index: 400;*/
+  display: none;
+}
+#collapsed-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 250px;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  overflow: hidden;
+  background: url(frame1.jpg) no-repeat;
+}
+#collapsed-panel .layer {
+  width: 100%;
+  height: 100%;
+}
+.feature-collapsed {
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 248px;
+  position: absolute;
+}
+.feature-expanded {
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 398px;
+  position: absolute;
+}
+#expanded-panel {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: none;
+  overflow: hidden;
+  border: 1px solid #000;
+  background: url(frame1.jpg) no-repeat;
+}
+#expanded-panel .layer {
+  width: 100%;
+  height: 100%;
+}
+#text1, #big-text1 {
+  background: url(text1.png) no-repeat top left;
+}
+#frame-2, #big-frame-2 {
+  background: url(frame2.png) no-repeat top left;
+}
+#text2, #big-text2 {
+  background: url(text2.png) no-repeat left center;
+}
+#logo, #logo-1, #big-logo, #big-logo-1 {
+  background: url(logo.png) no-repeat left top;
+  visibility: visible;
+  opacity: 1;
+}
+#logo-text, #big-logo-text{
+  background: url(logo-text.png) no-repeat;
+}
+#cta, #big-cta {
+  background: url(cta.png) no-repeat left center;
+}
+#video, #big-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  display: none;
+}
+
+/*970x400*/
+/*#big-text1 {
+  background: url(text1.png) no-repeat top left;
+}
+#big-frame-2, #big-video-frame {
+  background: url(frame2.png) no-repeat top left;
+}
+#big-text2 {
+  background: url(text2.png) no-repeat left center;
+}
+#big-logo, #big-logo-1 {
+  background: url(logo.png) no-repeat left top;
+}
+#big-logo-text {
+  background: url(logo-text.png) no-repeat;
+}
+#big-cta {
+  background: url(cta.png) no-repeat;
+}
+#big-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
