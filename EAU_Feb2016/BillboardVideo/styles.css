@@ -46,6 +46,9 @@ a {
 #text2 {
   background: url(text2.png) no-repeat;
 }
+#text3 {
+  background: url(text3.png) no-repeat;
+}
 #logo, #logo-1 {
   background: url(logo.png) no-repeat;
   visibility: visible;
@@ -57,5 +60,8 @@ a {
 #cta {
   background: url(cta.png) no-repeat;
 }
-
+#video {
+  width: 450px;
+  left: 264px;
+}
 

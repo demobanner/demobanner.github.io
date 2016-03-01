@@ -22,8 +22,9 @@
         <div id="logo-text" class="layer"></div>
         <div id="logo" class="layer"></div>
         <div id="video-frame" class="layer">
+          <div id="text3" class="layer"></div>
           <div id="logo-1" class="layer"></div>
-          <video id="video" width="970" height="250" controls onmouseover="playVideo()">
+          <video id="video" width="395" height="250" controls onmouseover="playVideo()" class="layer">
             <source src="Engineering Hyperlapse.mp4" type="video/mp4">
           </video>
         </div>
@@ -36,6 +37,7 @@
           text1       = document.getElementById('text1')
           video_frame = document.getElementById('video-frame')
           video       = document.getElementById('video')
+          text3       = document.getElementById('text3')
           frame2      = document.getElementById('frame-2')
           text2       = document.getElementById('text2')
           cta         = document.getElementById('cta')
@@ -46,7 +48,9 @@
       function init() {
         bannerTween.to(text1, 0.5, {autoAlpha: 1})
                    .to(logo_1, 0.5, {autoAlpha: 1}, "+=0.5")
-                   .to(video_frame, 0.5, {autoAlpha: 1}, "+=2");
+                   .to(text3, 0.5, {autoAlpha: 1},"-=0.5")
+                   .to(video_frame, 0.5, {autoAlpha: 1}, "+=2")
+                   .to(video, 0.5, {autoAlpha: 1}, "-=2");
       }
       function lastFrame() {
         frame1.style.opacity = 0;
