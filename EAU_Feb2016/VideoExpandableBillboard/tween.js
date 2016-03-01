@@ -24,25 +24,33 @@ var big_text1           = document.getElementById('big-text1')
 
 function initTween() {
   showBanner_970x250();
-  showBanner_970x400();
 }
 
 function showBanner_970x250() {
+    pauseVideo970x400();
     bannerTween_970x250.to(logo, 0.5, {autoAlpha: 1},'-=0.5')
-                 .to(text1, 0.5, {autoAlpha: 1})
-                 .to(logo, 0.5, {autoAlpha: 1})
-                 .to(frame2, 0.5, {autoAlpha: 1, delay: 2});
+                       .to(text1, 0.5, {autoAlpha: 1})
+                       .to(logo, 0.5, {autoAlpha: 1})
+                       .to(frame2, 0.5, {autoAlpha: 1, delay: 2});
     bannerTween_970x250.to(logo, 0.5, {autoAlpha: 1},'-=0.5')
-               .to(logo_text, 0.5, {autoAlpha: 1})
-               .to(text2, 0.5, {autoAlpha: 1})
-               .to(cta, 0.5, {autoAlpha: 1})
-               .to(video_frame, 0.5, {autoAlpha: 1, onComplete:playVideo970x250});
+                       .to(logo_text, 0.5, {autoAlpha: 1})
+                       .to(text2, 0.5, {autoAlpha: 1})
+                       .to(video_frame, 0.5, {autoAlpha: 1})
+                       .to(cta, 0.5, {autoAlpha: 1, onComplete:playVideo970x250});
 }
 function playVideo970x250() {
   video.style.display = "block";
   video.play();
+  console.log('video');
+}
+function pauseVideo970x250() {
+  video.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+  console.log("pause small");
 }
 function showBanner_970x400() {
+  pauseVideo970x250();
   bannerTween_970x400.to(big_logo, 0.5, {autoAlpha: 1},'-=0.5')
                  .to(big_text1, 0.5, {autoAlpha: 1})
                  .to(big_logo, 0.5, {autoAlpha: 1})
@@ -50,26 +58,29 @@ function showBanner_970x400() {
   bannerTween_970x400.to(big_logo, 0.5, {autoAlpha: 1},'-=0.5')
                .to(big_logo_text, 0.5, {autoAlpha: 1})
                .to(big_text2, 0.5, {autoAlpha: 1})
-               .to(big_cta, 0.5, {autoAlpha: 1})
-               .to(big_video_frame, 0.5, {autoAlpha: 1, onComplete:playVideo970x400});
+               .to(big_video_frame, 0.5, {autoAlpha: 1})
+               .to(big_cta, 0.5, {autoAlpha: 1, onComplete:playVideo970x400});
 }
 function playVideo970x400() {
   big_video.style.display = "block";
   big_video.play();
+  console.log('play big video');
 }
-function restart_970x250() {
-  bannerTween_970x250.restart();
-  bannerTween_970x250 = new TimelineMax();
-  showBanner_970x250();
-  video.pause();
-  video.currentTime = 0;
-  video.controls = false;
-}
-function restart_970x400() {
-  bannerTween_970x400.restart();
-  bannerTween_970x400 = new TimelineMax();
-  showBanner_970x400();
+function pauseVideo970x400() {
+  big_video.style.display = "none";
   big_video.pause();
   big_video.currentTime = 0;
-  big_video.controls = true;
+  console.log("pause big");
+}
+function restart_970x250() {
+  bannerTween_970x400.pause(true);
+  pauseVideo970x400();
+  bannerTween_970x250.restart();
+  showBanner_970x250();
+}
+function restart_970x400() {
+  bannerTween_970x250.pause(true);
+  pauseVideo970x250();
+  bannerTween_970x400.restart();
+  showBanner_970x400();
 }

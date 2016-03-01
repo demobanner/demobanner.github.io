@@ -2,7 +2,7 @@
 var creative = {};
 var counter = 0;
 var changed = false;
-var openFlag = false;
+var isOpened = false;
 var timer;
 
 /**
@@ -64,16 +64,17 @@ function addListeners() {
   Enabler.addEventListener(studio.events.StudioEvent.EXPAND_FINISH, expandFinishHandler);
   Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_START, collapseStartHandler);
   Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_FINISH, collapseFinishHandler);
-  // creative.dom.expandButton.addEventListener('click', onExpandHandler, false);
   creative.dom.collapseButton.addEventListener('click', onCloseButtonClickHandler, false);
-  // creative.dom.expandedExit.addEventListener('click', exitClickHandler);
-  // creative.dom.collapsedExit.addEventListener('click', collapsedExitClickHandler);
+  creative.dom.expandedExit.addEventListener('click', exitClickHandler);
+  creative.dom.collapsedExit.addEventListener('click', collapsedExitClickHandler);
   creative.dom.collapsedExit.addEventListener('mouseover', onExpandHandler, false);
   creative.dom.collapsedExit.addEventListener('mouseout', function() { changed = false;}, false);
   creative.dom.expandedExit.addEventListener('mouseout', preCollapseHandler, false);
   creative.dom.expandedExit.addEventListener('click', function() {window.open(window.clickTag)}, false);
-  // document.getElementById('btn-replay-970x500').addEventListener('mouseover', function() { openFlag = false }, false);
-  creative.dom.collapseButton.addEventListener('mouseover', function() { openFlag = false }, false);
+  document.getElementById('big-video-frame').addEventListener('mouseover', function() { isOpened = true }, false);
+  document.getElementById('big-video').addEventListener('mouseover', function() { isOpened = true }, false);
+  document.getElementById('big-video-frame').addEventListener('mouseout', preCollapseHandler, false);
+  creative.dom.collapseButton.addEventListener('mouseover', function() { isOpened = true }, false);
 }
 
 /**
@@ -83,7 +84,6 @@ function show() {
   creative.dom.expandedContent.style.display = 'none';
   creative.dom.expandedExit.style.display = 'none';
   creative.dom.collapseButton.style.display = 'none';
-
   creative.dom.collapsedContent.style.display = 'block';
   creative.dom.collapsedExit.style.display = 'block';
   // creative.dom.expandButton.style.display = 'block';
@@ -103,13 +103,14 @@ function expandStartHandler() {
   creative.dom.collapsedContent.style.display = 'none';
   creative.dom.collapsedExit.style.display = 'none';
   // creative.dom.expandButton.style.display = 'none';
-  restart_970x400();
-  /*if (counter <= 0) {
-    showBanner_970x500();
-  } else {*/
-    // play_970x500();
-  // }
-
+  if (counter <= 0) {
+    showBanner_970x400();
+    console.log("hover");
+  } else {
+    restart_970x400();
+    console.log("hover1");
+    // restart_970x400();
+  }
   Enabler.finishExpand();
 }
 
@@ -123,12 +124,10 @@ function collapseStartHandler() {
   creative.dom.expandedContent.style.display = 'none';
   creative.dom.expandedExit.style.display = 'none';
   creative.dom.collapseButton.style.display = 'none';
-  creative.dom.bigVideo.style.display = "none";
   creative.dom.collapsedContent.style.display = 'block';
   creative.dom.collapsedExit.style.display = 'block';
   // creative.dom.expandButton.style.display = 'block';
   restart_970x250();
-  // play_970x250();
 
   // When animation finished must call
   Enabler.finishCollapse();
@@ -139,17 +138,17 @@ function collapseFinishHandler() {
 }
 
 function onCloseButtonClickHandler() {
-  openFlag = true;
+  isOpened = false;
   onCollapseHandler();
   changed = true;
 }
 
 function preCollapseHandler() {
-  openFlag = true;
+  isOpened = false;
   timer = setInterval(onCollapseHandler, 100);
 }
 function onCollapseHandler(){
-  if (openFlag) {
+  if (!isOpened) {
     Enabler.requestCollapse();
     Enabler.stopTimer('Panel Expansion');
   }
@@ -159,6 +158,7 @@ function onCollapseHandler(){
 function onExpandHandler(){
   // console.log(changed);
   if (changed) { return; }
+  isOpened = true;
   Enabler.requestExpand();
   Enabler.startTimer('Panel Expansion');
 }
