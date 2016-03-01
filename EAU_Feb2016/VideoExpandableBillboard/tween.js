@@ -1,5 +1,6 @@
 var bannerTween_970x250 = new TimelineMax();
 var bannerTween_970x400 = new TimelineMax();
+var isExpanding = false;
 var text1       = document.getElementById('text1')
     video_frame = document.getElementById('video-frame')
     video       = document.getElementById('video')
@@ -24,6 +25,7 @@ var big_text1           = document.getElementById('big-text1')
 
 function initTween() {
   showBanner_970x250();
+  showBanner_970x400();
 }
 
 function showBanner_970x250() {
@@ -39,15 +41,15 @@ function showBanner_970x250() {
                        .to(cta, 0.5, {autoAlpha: 1, onComplete:playVideo970x250});
 }
 function playVideo970x250() {
-  video.style.display = "block";
-  video.play();
-  console.log('video');
+  if(!isExpanding){
+    video.style.display = "block";
+    video.play();
+  }
 }
 function pauseVideo970x250() {
   video.style.display = "none";
   video.pause();
   video.currentTime = 0;
-  console.log("pause small");
 }
 function showBanner_970x400() {
   pauseVideo970x250();
@@ -62,17 +64,17 @@ function showBanner_970x400() {
                .to(big_cta, 0.5, {autoAlpha: 1, onComplete:playVideo970x400});
 }
 function playVideo970x400() {
-  big_video.style.display = "block";
-  big_video.play();
-  console.log('play big video');
+  if(isExpanding){
+    big_video.style.display = "block";
+    big_video.play();
+  }
 }
 function pauseVideo970x400() {
   big_video.style.display = "none";
   big_video.pause();
   big_video.currentTime = 0;
-  console.log("pause big");
 }
-function restart_970x250() {
+/*function restart_970x250() {
   bannerTween_970x400.pause(true);
   pauseVideo970x400();
   bannerTween_970x250.restart();
@@ -83,4 +85,40 @@ function restart_970x400() {
   pauseVideo970x250();
   bannerTween_970x400.restart();
   showBanner_970x400();
+}*/
+
+function restart_970x250() {
+  bannerTween_970x250.restart().stop();
+  bannerTween_970x250 = new TimelineMax();
+  showBanner_970x250();
+}
+function restart_970x400() {
+  bannerTween_970x400.restart().stop();
+  bannerTween_970x400 = new TimelineMax();
+  showBanner_970x400();
+}
+
+function play_970x250() {
+  var seek = 0;
+  isExpanding = false;
+  bannerTween_970x400.paused(true);
+  pauseVideo970x400();
+  seek = bannerTween_970x400.time();
+  if(seek >= 6){
+    seek = 5.6;
+  }
+  bannerTween_970x250.seek(seek);
+  bannerTween_970x250.resume();
+}
+function play_970x400() {
+  var seek = 0;
+  isExpanding = true;
+  bannerTween_970x250.paused(true);
+  pauseVideo970x250();
+  seek = bannerTween_970x250.time();
+  if(seek >= 6){
+    seek = 5.6;
+  }
+  bannerTween_970x400.seek(seek);
+  bannerTween_970x400.resume();
 }

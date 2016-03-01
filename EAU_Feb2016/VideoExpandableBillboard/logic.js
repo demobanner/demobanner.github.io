@@ -33,7 +33,7 @@ function setupDom() {
   creative.dom.collapsedContent = document.getElementById('collapsed-panel');
   creative.dom.collapseButton = document.getElementById('collapse-button');
   creative.dom.bigVideo = document.getElementById('big-video');
-  // creative.dom.expandButton = document.getElementById('expand-button');
+  creative.dom.bigVideoFrame = document.getElementById('big-video-frame');
 }
 
 /**
@@ -64,16 +64,16 @@ function addListeners() {
   Enabler.addEventListener(studio.events.StudioEvent.EXPAND_FINISH, expandFinishHandler);
   Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_START, collapseStartHandler);
   Enabler.addEventListener(studio.events.StudioEvent.COLLAPSE_FINISH, collapseFinishHandler);
-  creative.dom.collapseButton.addEventListener('click', onCloseButtonClickHandler, false);
   creative.dom.expandedExit.addEventListener('click', exitClickHandler);
+  creative.dom.expandedExit.addEventListener('mouseout', preCollapseHandler, false);
+  creative.dom.expandedExit.addEventListener('click', function() {window.open(window.clickTag)}, false);
   creative.dom.collapsedExit.addEventListener('click', collapsedExitClickHandler);
   creative.dom.collapsedExit.addEventListener('mouseover', onExpandHandler, false);
   creative.dom.collapsedExit.addEventListener('mouseout', function() { changed = false;}, false);
-  creative.dom.expandedExit.addEventListener('mouseout', preCollapseHandler, false);
-  creative.dom.expandedExit.addEventListener('click', function() {window.open(window.clickTag)}, false);
-  document.getElementById('big-video-frame').addEventListener('mouseover', function() { isOpened = true }, false);
-  document.getElementById('big-video').addEventListener('mouseover', function() { isOpened = true }, false);
-  document.getElementById('big-video-frame').addEventListener('mouseout', preCollapseHandler, false);
+  creative.dom.bigVideoFrame.addEventListener('mouseover', function() { isOpened = true }, false);
+  creative.dom.bigVideoFrame.addEventListener('mouseout', preCollapseHandler, false);
+  creative.dom.bigVideo.addEventListener('mouseover', function() { isOpened = true }, false);
+  creative.dom.collapseButton.addEventListener('click', onCloseButtonClickHandler, false);
   creative.dom.collapseButton.addEventListener('mouseover', function() { isOpened = true }, false);
 }
 
@@ -102,15 +102,7 @@ function expandStartHandler() {
   creative.dom.collapseButton.style.display = 'block';
   creative.dom.collapsedContent.style.display = 'none';
   creative.dom.collapsedExit.style.display = 'none';
-  // creative.dom.expandButton.style.display = 'none';
-  if (counter <= 0) {
-    showBanner_970x400();
-    console.log("hover");
-  } else {
-    restart_970x400();
-    console.log("hover1");
-    // restart_970x400();
-  }
+  play_970x400();
   Enabler.finishExpand();
 }
 
@@ -126,8 +118,7 @@ function collapseStartHandler() {
   creative.dom.collapseButton.style.display = 'none';
   creative.dom.collapsedContent.style.display = 'block';
   creative.dom.collapsedExit.style.display = 'block';
-  // creative.dom.expandButton.style.display = 'block';
-  restart_970x250();
+  play_970x250();
 
   // When animation finished must call
   Enabler.finishCollapse();
@@ -151,12 +142,12 @@ function onCollapseHandler(){
   if (!isOpened) {
     Enabler.requestCollapse();
     Enabler.stopTimer('Panel Expansion');
+    isOpened = true;
   }
   clearInterval(timer);
 }
 
 function onExpandHandler(){
-  // console.log(changed);
   if (changed) { return; }
   isOpened = true;
   Enabler.requestExpand();
