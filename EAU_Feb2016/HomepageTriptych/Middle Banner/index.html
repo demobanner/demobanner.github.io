@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=1600, height=935">
+  <title>Middle Banner 1600x935</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.eau.ac.ae/english/prospective/";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="mid-text" class="layer"></div>
+      <div id="mid-cta" class="layer"></div>
+      <div id="mid-logo" class="layer"></div>
+      <div id="video-frame" class="layer">
+        <video id="video" width="1600" height="534" autoplay controls preload="auto">
+          <source src="Dawn.mp4" type="video/mp4">
+        </video>
+      </div>
+    </a>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var midFrame    = new TimelineLite();
+    var mid_text    = document.getElementById('mid-text')
+        video_frame = document.getElementById('video-frame')
+        video       = document.getElementById('video')
+        mid_cta     = document.getElementById('mid-cta')
+        mid_logo    = document.getElementById('mid-logo');
+
+    function init() {
+      midFrame.to(mid_logo, 0.5, {autoAlpha: 1})
+              .to(video_frame, 0.5, {autoAlpha: 1})
+              .to(mid_text, 0.5, {autoAlpha: 1})
+              .to(mid_cta, 0.5, {autoAlpha: 1});
+    }
+    video.onended = function(e) {
+      video.play();
+      video.pause();
+    }
+  </script>
+</body>
+</html>

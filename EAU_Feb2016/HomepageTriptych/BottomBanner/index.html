@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=1600, height=935">
+  <title>Bottom Banner 1600x935</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.eau.ac.ae/english/prospective/";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="bottom-text" class="layer"></div>
+      <div id="bottom-cta" class="layer"></div>
+      <div id="bottom-logo-text" class="layer"></div>
+      <div id="bottom-logo" class="layer"></div>
+    </a>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var bottomFrame       = new TimelineLite();
+    var bottom_text       = document.getElementById('bottom-text')
+        bottom_cta        = document.getElementById('bottom-cta')
+        bottom_logo_text  = document.getElementById('bottom-logo-text')
+        bottom_logo       = document.getElementById('bottom-logo');
+
+    function init() {
+      bottomFrame.to(bottom_logo, 0.5, {autoAlpha: 1})
+                 .to(bottom_logo_text, 0.5, {autoAlpha: 1})
+                 .to(bottom_text, 0.5, {autoAlpha: 1})
+                 .to(bottom_cta, 0.5, {autoAlpha: 1});
+    }
+  </script>
+</body>
+</html>

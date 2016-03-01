@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 1558px;
+  height: 933px;
+  border: 1px solid #000000;
+  background: url(mid-frame.png) no-repeat;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+#mid-text {
+  background: url(mid-text.png) no-repeat;
+}
+#mid-cta {
+  background: url(mid-cta.png) no-repeat;
+}
+#mid-logo, #mid-logo-1 {
+  background: url(mid-logo.png) no-repeat;
+}
+#video-frame {
+  height: 534px;
+  top: 200px;
+  background: black;
+}
