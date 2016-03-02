@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 968px;
+  height: 248px;
+  border: 1px solid #000000;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+#bgd-1 {
+  background: url(bgd-1.jpg) no-repeat center;
+  visibility: visible;
+  opacity: 1;
+}
+#bgd-2 {
+  background: url(bgd-2.jpg) no-repeat center;
+}
+#bgd-3 {
+  background: url(bgd-3.jpg) no-repeat center;
+}
+#bgd-4 {
+  background: url(bgd-4.jpg) no-repeat center;
+}
+#bgd-5 {
+  background: url(bgd-5.jpg) no-repeat center;
+}
+#bgd-6 {
+  background: url(bgd-6.jpg) no-repeat center;
+}
+#bgd-7 {
+  background: url(bgd-7.jpg) no-repeat center;
+}
+#bgd-8 {
+  background: url(bgd-8.png) no-repeat center;
+}
+#text-1 {
+  background: url(text-1.png) no-repeat center;
+}
+#text-2 {
+  background: url(text-2.png) no-repeat center;
+}
+#text-3 {
+  background: url(text-3.png) no-repeat center;
+}
+#text-4 {
+  background: url(text-4.png) no-repeat center;
+}
+#cta-1 {
+  background: url(cta-1.png) no-repeat center;
+}
+#cta-2 {
+  background: url(cta-2.png) no-repeat center;
+}
+#logo {
+  background: url(logo.png) no-repeat center;
+  visibility: visible;
+  opacity: 1;
+}
+#logo-text {
+  background: url(logo-text.png) no-repeat center;
+}
+#group-icon {
+  position: absolute;
+  top: 103px;
+  left: 23px;
+}
+.icon {
+  display: inline-block;
+  margin: 0 3px;
+  width: 51px;
+  height: 51px;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+#icon-1 {
+  background: url(icon-1.png) no-repeat center;
+}
+#icon-2 {
+  background: url(icon-2.png) no-repeat center;
+}
+#icon-3 {
+  background: url(icon-3.png) no-repeat center;
+}
+#icon-4 {
+  background: url(icon-4.png) no-repeat center;
+}
+#icon-5 {
+  background: url(icon-5.png) no-repeat center;
+}
+#icon-6 {
+  background: url(icon-6.png) no-repeat center;
+}
