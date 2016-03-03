@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=970, height=250">
+  <title>970x250</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.emiratesgroupcareers.com/english/careers_overview/engineering/default.aspx";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+    <div id="text1" class="layer"></div>
+    <div id="bg1" class="layer"></div>
+    <div id="bg2" class="layer"></div>
+    <div id="bg3" class="layer"></div>
+    <div id="bg4" class="layer"></div>
+    <div id="bg5" class="layer"></div>
+    <div id="bg6" class="layer"></div>
+    <div id="text2" class="layer"></div>
+    <div id="cta" class="layer"></div>
+    <div id="logo" class="layer"></div>
+    <a id="clicktag" href="javascript:window.open(window.clickTag)"></a>
+    <div id="icon1" class="icon"></div>
+    <div id="icon2" class="icon"></div>
+    <div id="icon3" class="icon"></div>
+    <div id="icon4" class="icon"></div>
+    <div id="icon5" class="icon"></div>
+    <div id="icon6" class="icon"></div>
+    <div id="bg7" class="layer"></div>
+    <div id="text3" class="layer"></div>
+    <div id="text4" class="layer"></div>
+    <div id="cta2" class="layer"></div>
+    <div id="logo2" class="layer"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var bannerTween = new TimelineLite();
+    var timer,
+        counter = 0,
+        curIndex = -1,
+        selectedIndex = -1,
+        delayTime = 3,    // seconds
+        text1 = document.getElementById('text1'),
+        text2 = document.getElementById('text2'),
+        text3 = document.getElementById('text3'),
+        text4 = document.getElementById('text4'),
+        cta = document.getElementById('cta'),
+        cta2 = document.getElementById('cta2'),
+        logo2 = document.getElementById('logo2'),
+        bg7 = document.getElementById('bg7');
+    var length = 6,
+        arrIcon = [],
+        arrBg = [],
+        isAuto = true;
+
+    function init() {
+      bannerTween.to(text1, 0.5, {autoAlpha: 1});
+      for (var i=0; i<length; i++) {
+        var j=i+1;
+
+        arrBg.push(document.getElementById('bg'+j));
+        arrIcon.push(document.getElementById('icon'+j));
+
+        if (i<length-1) {
+          bannerTween.to(arrIcon[i], 0.5, {autoAlpha:1},'-=0.3');
+        } else {
+          bannerTween.to(arrIcon[i], 0.5, {autoAlpha:1, onComplete:function(){timer = setInterval(autoChangeHandler, delayTime*1000);}},'-=0.3');
+        }
+      }
+
+    }
+    function autoChangeHandler() {
+      clearInterval(timer);
+      if (!isAuto) return;
+      if (curIndex < length-1) {
+        changeFrameHandler(curIndex+1);
+      } else {
+        endFrameHandler();
+      }
+
+    }
+    function changeFrameHandler(index) {
+      bannerTween.to(arrBg[index], 0.5, {autoAlpha: 1});
+      for (var j=0; j<length; j++) {
+        if (j==index) {
+          bannerTween.to(arrIcon[j], 0.3, {top: 134, autoAlpha:1, onComplete:function(){curIndex = index;}},'-=0.3');
+
+        } else {
+          bannerTween.to(arrIcon[j], 0.3, {top: 134, autoAlpha:0.5},'-=0.3');
+        }
+      }
+      if (counter==0) {
+        bannerTween.to(text2, 0.5, {autoAlpha: 1, onComplete:function(){addEventsHandler(); timer = setInterval(autoChangeHandler, delayTime*1000);}})
+                   .to(cta, 0.5, {autoAlpha: 1});
+        counter++;
+      } else {
+        timer = setInterval(autoChangeHandler, (delayTime + 1)*1000);
+      }
+    }
+    function endFrameHandler() {
+      bannerTween.to(bg7, 0.5, {autoAlpha: 1, onComplete:function(){
+        document.getElementById('clicktag').style.zIndex = 1;
+      }},'+=2')
+                 .to(logo2, 0.5, {autoAlpha: 1}, '-=0.5')
+                 .to(text3, 0.5, {autoAlpha: 1})
+                 .to(text4, 0.5, {autoAlpha: 1}, '-=0.2')
+                 .to(cta2, 0.5, {autoAlpha: 1});
+    }
+    function getIndex(icon) {
+      var index = -1;
+      for (var i=0; i<length; i++) {
+        if (arrIcon[i]===icon) {
+          return i;
+        }
+      }
+      return index;
+    }
+    function addEventsHandler() {
+      for (var i=0; i<length; i++) {
+        arrIcon[i].addEventListener('mouseover', onIconOverHandler, false);
+        arrIcon[i].addEventListener('mouseout', onIconOutHandler, false);
+        arrIcon[i].addEventListener('click', onIconClickHandler, false);
+      }
+    }
+    function onIconOverHandler(evt) {
+      this.style.opacity = 1;
+    }
+    function onIconOutHandler(evt) {
+      if (getIndex(this) != curIndex) {
+        this.style.opacity = 0.5;
+      }
+    }
+    function onIconClickHandler(evt) {
+      clearInterval(timer);
+      isAuto = false;
+      selectedIndex = getIndex(this);
+      if (selectedIndex > curIndex) {
+        changeFrameHandler(selectedIndex);
+      } else {
+        arrBg[selectedIndex].style.opacity = 1;
+        arrBg[selectedIndex].style.visibility = 'visible';
+        for (var i=selectedIndex+1; i<curIndex; i++) {
+          arrBg[i].style.opacity = 0;
+        }
+        bannerTween.to(arrBg[curIndex], 0.5, {autoAlpha:0})
+                   .to(arrIcon[curIndex], 0.5, {autoAlpha:0.5})
+                   .to(arrIcon[selectedIndex], 0.5, {autoAlpha:1, onComplete: onUpdateIndexHandler}, '-=0.5');
+      }
+    }
+    function onUpdateIndexHandler(argument) {
+      curIndex = selectedIndex;
+      selectedIndex = -1;
+      timer = setInterval(autoChangeHandler, delayTime*1000);
+    }
+  </script>
+</body>
+</html>
