@@ -24,8 +24,8 @@
         <div id="brush-2"></div>
         <div id="brush-3"></div>
         <div id="brush-4"></div>
-        <div id="text-1" class="layer"></div>
         <div id="photo" class="layer"></div>
+        <div id="text-1" class="layer"></div>
         <div id="text-2" class="layer"></div>
         <div id="text-3" class="layer"></div>
         <div id="frame-3" class="layer"></div>
@@ -80,6 +80,7 @@
                     .to(brush3, 0.3, {width: '100%'})
                     .to(brush4, 0.2, {width: '100%'})
                     .to(photo, 0.2, {autoAlpha: 1})
+                    .to(text1, 0.5, {autoAlpha: 0},'+=1.5')
                     .to(text2, 0.5, {autoAlpha: 1})
                     .to(text2, 0.5, {autoAlpha: 0},'+=2')
                     .to(text3, 0.5, {autoAlpha: 1});
