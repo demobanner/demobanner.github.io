@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: 118px;
+  height: 598px;
+}
+#banner {
+  position: relative;
+  width: 118px;
+  height: 598px;
+  border: 1px solid #000;
+  background-color: #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bg {
+  left: -50px;
+	width: 250px;
+  background: url('bg.jpg');
+  background-size: cover;
+  opacity: 1;
+}
+#car {
+  left: inherit;
+  right: -140px;
+  transform: scale(0.4);
+  background: url('car.png') center;
+  background-size: cover;
+}
+#logo {
+  opacity: 1;
+  background: url('logo.png') center;
+}
+#awr-logo {
+  background: url('awr-logo.png') center;
+  opacity: 1;
+}
+#title {
+  background: url('title.png') center;
+}
+#submain {
+  background: url('submain.png') center;
+}
+#sub-1 {
+  background: url('sub-1.png') center;
+}
+#sub-2 {
+  background: url('sub-2.png') center;
+}
+#sub-3 {
+  background: url('sub-3.png') center;
+}
+#cta {
+  background: url('cta.png') center;
+}
+#rate {
+  background: url('rate.png') center;
+}
+#tc {
+  background: url('tc.png') center;
+}
+#reload {
+  width: 14px;
+  height: 14px;
+  left: inherit;
+  right: 0;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+
+

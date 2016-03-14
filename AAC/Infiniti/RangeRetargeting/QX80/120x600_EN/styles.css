@@ -5,11 +5,11 @@ body {
 }
 .layer {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   opacity: 0;
-  width: 100%;
-  height: 100%;
+  width: 118px;
+  height: 598px;
 }
 #banner {
   position: relative;
@@ -22,48 +22,49 @@ body {
 }
 #bg {
   left: -20px;
-  background: url('images/bg.jpg');
+	width: 138px;
+  background: url('bg.jpg');
   background-size: cover;
   opacity: 1;
 }
 #logo {
   opacity: 1;
-  background: url('images/logo.png');
+  background: url('logo.png') center;
 }
 #awr-logo {
-  background: url('images/awr-logo.png');
+  background: url('awr-logo.png') center;
   opacity: 1;
 }
 #title {
-  background: url('images/title.png');
+  background: url('title.png') center;
 }
 #submain {
-  background: url('images/submain.png');
+  background: url('submain.png') center;
 }
 #sub-1 {
-  background: url('images/sub-1.png');
+  background: url('sub-1.png') center;
 }
 #sub-2 {
-  background: url('images/sub-2.png');
+  background: url('sub-2.png') center;
 }
 #sub-3 {
-  background: url('images/sub-3.png');
+  background: url('sub-3.png') center;
 }
 #cta {
-  background: url('images/cta.png');
+  background: url('cta.png') center;
 }
 #rate {
-  background: url('images/rate.png');
+  background: url('rate.png') center;
 }
 #tc {
-  background: url('images/tc.png');
+  background: url('tc.png') center;
 }
 #reload {
   width: 14px;
   height: 14px;
   left: inherit;
   right: 0;
-  background: url('images/reload.png');
+  background: url('reload.png');
   background-size: cover;
   z-index: 10;
 }

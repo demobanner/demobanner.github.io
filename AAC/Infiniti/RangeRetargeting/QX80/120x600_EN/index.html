@@ -7,12 +7,18 @@
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
     <script type="text/javascript">
       var clickTag = "";
     </script>
     <script type="text/javascript">
       var tl = new TimelineLite();
+			function bgExitHandler(e){
+				Enabler.exit('mainExit');
+				//Enabler.exit('mainExit', 'http://www.infiniti-dubai.com/en/shopping_tools/request_test_drive.submitform.qx80.html');
+			}
       function init() {
+				document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
         var bg = document.getElementById("bg"),
             title = document.getElementById("title"),
             submain = document.getElementById("submain"),
@@ -41,13 +47,18 @@
         tl.restart();
       }
 
-      window.onload = init;
-
+      window.onload = function() {
+				if (Enabler.isInitialized()) {
+					init();
+				} else {
+					Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+				}
+			}
     </script>
   </head>
   <body>
-    <div id="banner" onclick="javascript:handleBannerClick();">
-      <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div id="banner">
+      <a id="bg-exit" target="_blank">
         <div id="bg" class="layer"></div>
         <div id="logo" class="layer"></div>
         <div id="awr-logo" class="layer"></div>

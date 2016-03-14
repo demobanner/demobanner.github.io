@@ -7,26 +7,29 @@
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
     <script type="text/javascript">
       var clickTag = "";
     </script>
     <script type="text/javascript">
       var tl = new TimelineLite();
+			function bgExitHandler(e){
+				Enabler.exit('mainExit');
+			}
       function init() {
+				document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
         var bg = document.getElementById("bg"),
             title = document.getElementById("title"),
-            submain = document.getElementById("submain"),
             sub1 = document.getElementById("sub-1"),
             sub2 = document.getElementById("sub-2"),
             sub3 = document.getElementById("sub-3"),
+            tc = document.getElementById("tc"),
             rate = document.getElementById("rate"),
             cta = document.getElementById("cta");
             reload = document.getElementById("reload");
-            car = document.getElementById("car");
 
-        tl.to(bg, 1.5, {x: -40, rotation: 0.01})
-          .to(car, 1.5, {autoAlpha: 1, scale: 1, rotation: 0.01, left: 0}, '-=1.5')
-          .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=1.5')
+        tl.to(bg, 0.5, {left: 0, rotation: 0.01})
+          .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.5')
           .to(rate, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(sub1, 0.5, {autoAlpha: 0, delay: 2.5})
@@ -34,8 +37,8 @@
           .to(sub2, 0.5, {autoAlpha: 0, delay: 2.5})
           .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub3, 0.5, {autoAlpha: 0, delay: 2.5})
-          .to(submain, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(cta, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+          .to(tc, 0.5, {autoAlpha: 1, delay: 1, ease: Power2.easeOut})
           .to(reload, 0.1, {autoAlpha: 1});
       }
 
@@ -43,19 +46,22 @@
         tl.restart();
       }
 
-      window.onload = init;
-
+      window.onload = function() {
+				if (Enabler.isInitialized()) {
+					init();
+				} else {
+					Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+				}
+			}
     </script>
   </head>
   <body>
-    <div id="banner" onclick="javascript:handleBannerClick();">
-      <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div id="banner">
+      <a id="bg-exit">
         <div id="bg" class="layer"></div>
         <div id="logo" class="layer"></div>
         <div id="awr-logo" class="layer"></div>
         <div id="title" class="layer"></div>
-        <div id="car" class="layer"></div>
-        <div id="submain" class="layer"></div>
         <div id="rate" class="layer"></div>
         <div id="sub-1" class="layer"></div>
         <div id="sub-2" class="layer"></div>
