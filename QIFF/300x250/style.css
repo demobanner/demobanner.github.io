@@ -28,6 +28,13 @@ body {
 #circle {
 	width: 0;
 	height: 0;
+}
+#circle1{
+	width: 390.5px;
+	height: 390.5px;
+	opacity: 0;
+}
+.circle {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -39,10 +46,10 @@ body {
 	box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.75);
 	overflow: hidden;
 }
-#bg, #bg2{
+#bg, #bg2, #bg3{
 	background: url('images/bg.jpg') no-repeat center;
 }
-#bg{
+#bg, #bg3{
 	width: 100%;
 	height: 100%;
 	opacity: 1;
@@ -112,13 +119,13 @@ body {
 #text4 {
 	background: url('images/text4.png') no-repeat;
 }
-#plates {
+#plate1 {
 	top: 10px;
-	background: url('images/plates.png') no-repeat;
+	background: url('images/plate1.png') no-repeat;
 }
-#circle1 {
-	background: url('images/circle1.jpg') no-repeat;
-	transform: scale(3);
+#plate2 {
+	top: 10px;
+	background: url('images/plate2.png') no-repeat;
 }
 #bg1 {
 	background: url('images/frame1.jpg') no-repeat;

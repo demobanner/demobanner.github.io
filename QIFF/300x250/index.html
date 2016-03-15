@@ -49,13 +49,15 @@
               food10  = document.getElementById("food10"),
               frame4  = document.getElementById("frame4"),
               truck   = document.getElementById("truck"),
-              plates  = document.getElementById("plates"),
+			  plate1  = document.getElementById("plate1"),
+			  plate2  = document.getElementById("plate2"),
               circle1  = document.getElementById("circle1"),
-              bg1      = document.getElementById("bg1"),
+			  bg3      = document.getElementById("bg3"),
+			  bg1      = document.getElementById("bg1"),
               text5    = document.getElementById("text5"),
               cta      = document.getElementById("cta");
 
-          tl.to(text1, 0.5,{autoAlpha: 1})
+          tl.to(text1, 0.7,{autoAlpha: 1}, "+=0.5")
             .to(bg, 0,{autoAlpha: 1}, "+=2")
             .to(circle, 0.1, {autoAlpha: 1})
             .to(circle, 0.5,{width: 390.5, height: 390.5})
@@ -83,12 +85,15 @@
             .to(frame4, 0.5,{autoAlpha: 1, left:0, ease: Power0.easeOut})
             .to(truck, 0.5,{autoAlpha: 1, left: 0, ease: Power1.easeOut}, "-=0.5")
             .to(text4, 0.5,{autoAlpha: 1})
-            .to(plates, 0.5,{autoAlpha: 1, top: 0}, "+=0.5")
+			.to(plate1, 0.5,{autoAlpha: 1, top: 0, ease: Elastic.easeOut.config(1, 0.4)})
+			.to(plate2, 0.5,{autoAlpha: 1, top: 0, ease: Elastic.easeOut.config(1, 0.4)})
             .to(text4, 0.5,{autoAlpha: 0}, "+=0.5")
-            .to(circle1, 0.5,{autoAlpha: 1, scale: 1, ease: Power1.easeOut})
-            .to(truck, 1,{left: -300, ease: Power1.easeOut})
-            .to(plates, 1,{left: -300, ease: Power1.easeOut}, "-=1")
-            .to(bg1, 0.1,{autoAlpha:1}, "-=0.5")
+            .to(circle1, 0.5,{autoAlpha:1, width:0, height:0, ease: Power1.easeOut})
+			.to(bg1, 0.1,{autoAlpha:1}, "-=0.5")
+            .to(truck, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.4")
+            .to(plate1, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.5")
+			.to(plate2, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.5")
+			.to(circle1, 0.5,{autoAlpha:0}, "-=1")
             .to(text5, 0.5,{autoAlpha: 1}, "-=0.5")
             .to(cta, 0.5,{autoAlpha: 1});
         }
@@ -98,7 +103,7 @@
     <a id="banner" onclick="javascript:handleBannerClick();">
     	<div id="global">
          <div id="text1" class="layer"></div>
-          <div id="circle" class="layer">
+          <div id="circle" class="layer circle">
             <div id="bg" class="layer"></div>
           </div>
          <div id="bg2" class="layer"></div>
@@ -121,10 +126,13 @@
          <div id="food10" class="layer top-position"></div>
          <div id="frame4" class="layer"></div>
          <div id="text4" class="layer"></div>
-         <div id="circle1" class="layer"></div>
+		  <div id="bg1" class="layer"></div>
          <div id="truck" class="layer"></div>
-         <div id="plates" class="layer"></div>
-         <div id="bg1" class="layer"></div>
+         <div id="plate1" class="layer"></div>
+		 <div id="plate2" class="layer"></div>
+		 <div id="circle1" class="layer circle">
+			<div id="bg3" class="layer"></div>
+		 </div>
          <div id="text5" class="layer"></div>
          <div id="cta" class="layer"></div>
       </div>
