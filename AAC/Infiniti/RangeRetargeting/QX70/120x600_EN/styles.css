@@ -21,18 +21,11 @@ body {
   cursor: pointer;
 }
 #bg {
-  left: -50px;
-	width: 250px;
+  left: 20px;
+	width: 120px;
   background: url('bg.jpg');
   background-size: cover;
-  opacity: 1;
-}
-#car {
-  left: inherit;
-  right: -140px;
-  transform: scale(0.4);
-  background: url('car.png') center;
-  background-size: cover;
+  opacity: 0.5;
 }
 #logo {
   opacity: 1;
@@ -44,9 +37,6 @@ body {
 }
 #title {
   background: url('title.png') center;
-}
-#submain {
-  background: url('submain.png') center;
 }
 #sub-1 {
   background: url('sub-1.png') center;
