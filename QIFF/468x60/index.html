@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="ad.size" content= "width=300, height=250">
-    <title>300x250</title>
+    <meta name="ad.size" content= "width=468, height=60">
+    <title>468x60</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js" type="text/javascript">
     </script>
@@ -49,10 +49,10 @@
           tl.to(text1, 0.7,{autoAlpha: 1}, "+=0.5")
             .to(bg, 0,{autoAlpha: 1}, "+=2")
             .to(circle, 0.1, {autoAlpha: 1})
-            .to(circle, 0.5,{width: 390.5, height: 390.5})
+            .to(circle, 0.3, {width: 471.8, height: 471.8})
             .to(bg2, 0.1,{autoAlpha: 1}, "-=0.2")
             .to(cloche , 0.5,{autoAlpha: 1, top: 0, ease: Power1.easeOut})
-            .to(steam , 0.5,{autoAlpha: 1, height: 250, top: 0, ease: Back.easeInOut.config(1.4), y: 0 })
+            .to(steam , 0.5,{autoAlpha: 1, height: '100%', top: 0, ease: Back.easeInOut.config(1.4), y: 0 })
             .to(text2, 0.5,{autoAlpha: 1})
             .to(cloche , 0.5,{autoAlpha: 0}, "+=1")
             .to(court, 0.5,{autoAlpha: 1, top: 0, ease: Power1.easeOut}, "-=0.5")
@@ -79,9 +79,9 @@
             .to(text4, 0.5,{autoAlpha: 0}, "+=0.5")
             .to(circle1, 0.5,{autoAlpha:1, width:0, height:0, ease: Power1.easeOut})
 			      .to(bg1, 0.1,{autoAlpha:1}, "-=0.5")
-            .to(truck, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.4")
-            .to(plate1, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.5")
-			      .to(plate2, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.5")
+            .to(truck, 0.5,{left: -468, ease: Power1.easeOut}, "-=0.4")
+            .to(plate1, 0.5,{left: -468, ease: Power1.easeOut}, "-=0.5")
+			      .to(plate2, 0.5,{left: -468, ease: Power1.easeOut}, "-=0.5")
 			      .to(circle1, 0.5,{autoAlpha:0}, "-=0.5")
             .to(text5, 0.5,{autoAlpha: 1}, "-=0.5")
             .to(cta, 0.5,{autoAlpha: 1});
