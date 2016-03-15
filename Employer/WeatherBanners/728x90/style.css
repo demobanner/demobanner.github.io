@@ -43,7 +43,7 @@ a {
 }
 #frame-1 {
   position: absolute;
-  top: -240px;
+  top: 0px;
 }
 #frame-3 {
   background: url(bgd.png) no-repeat center;
