@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="ad.size" content= "width=300, height=250">
-    <title>300x250</title>
+    <title>QIFF 300x250</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js" type="text/javascript">
     </script>
@@ -18,13 +18,13 @@
           var text1   = document.getElementById("text1"),
               circle  = document.getElementById("circle"),
               bg      = document.getElementById("bg"),
-              bg2      = document.getElementById("bg2"),
+              bg2     = document.getElementById("bg2"),
               cloche  = document.getElementById("cloche"),
-              steam   = document.getElementById("steam"),
+              steam1  = document.getElementById("steam1"),
+              steam2  = document.getElementById("steam2"),
               text2   = document.getElementById("text2"),
               court   = document.getElementById("court"),
-              skewer1 = document.getElementById("skewer1"),
-              skewer2 = document.getElementById("skewer2"),
+              skewer  = document.getElementById("skewer"),
               text3   = document.getElementById("text3"),
               food1   = document.getElementById("food1"),
               food2   = document.getElementById("food2"),
@@ -40,26 +40,30 @@
               truck   = document.getElementById("truck"),
       			  plate1  = document.getElementById("plate1"),
       			  plate2  = document.getElementById("plate2"),
-              circle1  = document.getElementById("circle1"),
-      			  bg3      = document.getElementById("bg3"),
-      			  bg1      = document.getElementById("bg1"),
-              text5    = document.getElementById("text5"),
-              cta      = document.getElementById("cta");
+              circle1 = document.getElementById("circle1"),
+      			  bg3     = document.getElementById("bg3"),
+      			  bg1     = document.getElementById("bg1"),
+              text5   = document.getElementById("text5"),
+              cta     = document.getElementById("cta");
 
           tl.to(text1, 0.7,{autoAlpha: 1}, "+=0.5")
             .to(bg, 0,{autoAlpha: 1}, "+=2")
             .to(circle, 0.1, {autoAlpha: 1})
             .to(circle, 0.5,{width: 390.5, height: 390.5})
+
             .to(bg2, 0.1,{autoAlpha: 1}, "-=0.2")
             .to(cloche , 0.5,{autoAlpha: 1, top: 0, ease: Power1.easeOut})
-            .to(steam , 0.5,{autoAlpha: 1, height: 250, top: 0, ease: Back.easeInOut.config(1.4), y: 0 })
+            .to(steam1 , 0.5,{autoAlpha: 1, height: 250, top: 0, ease: Back.easeInOut.config(1.4), y: 0 })
+            .to(steam2 , 0.5,{autoAlpha: 1, height: 250, top: 0, ease: Back.easeInOut.config(1.4), y: 0 })
+
             .to(text2, 0.5,{autoAlpha: 1})
             .to(cloche , 0.5,{autoAlpha: 0}, "+=1")
-            .to(court, 0.5,{autoAlpha: 1, top: 0, ease: Power1.easeOut}, "-=0.5")
-            .to(steam , 0.5,{autoAlpha: 0}, "-=0.5")
+            .to(steam1 , 0.5,{autoAlpha: 0}, "-=0.5")
+            .to(steam2 , 0.5,{autoAlpha: 0}, "-=0.5")
             .to(text2, 0.5,{autoAlpha: 0}, "-=0.5")
-            .to(skewer1, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut})
-            .to(skewer2, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut}, "-=0.3")
+
+            .to(court, 0.5,{autoAlpha: 1, top: 0, ease: Power1.easeOut}, "-=0.5")
+            .to(skewer, 0.5,{autoAlpha: 1}, "-=0.3")
             .to(text3, 0.5,{autoAlpha: 1})
             .to(food1, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut})
             .to(food6, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut}, "-=0.3")
@@ -71,12 +75,14 @@
             .to(food9, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut}, "-=0.3")
             .to(food5, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut}, "-=0.3")
             .to(food10, 0.5,{autoAlpha: 1, top: 0, ease: Power3.easeOut}, "-=0.3")
+
             .to(frame4, 0.5,{autoAlpha: 1, left:0, ease: Power0.easeOut})
             .to(truck, 0.5,{autoAlpha: 1, left: 0, ease: Power1.easeOut}, "-=0.5")
             .to(text4, 0.5,{autoAlpha: 1})
       			.to(plate1, 0.5,{autoAlpha: 1, top: 0, ease: Elastic.easeOut.config(1, 0.4)})
       			.to(plate2, 0.5,{autoAlpha: 1, top: 0, ease: Elastic.easeOut.config(1, 0.4)})
             .to(text4, 0.5,{autoAlpha: 0}, "+=0.5")
+
             .to(circle1, 0.5,{autoAlpha:1, width:0, height:0, ease: Power1.easeOut})
 			      .to(bg1, 0.1,{autoAlpha:1}, "-=0.5")
             .to(truck, 0.5,{left: -300, ease: Power1.easeOut}, "-=0.4")
@@ -97,11 +103,11 @@
          </div>
          <div id="bg2" class="layer"></div>
          <div id="cloche" class="layer top-position"></div>
-         <div id="steam" class="layer"></div>
+         <div id="steam1" class="layer"></div>
+         <div id="steam2" class="layer"></div>
          <div id="text2" class="layer"></div>
          <div id="court" class="layer top-position"></div>
-         <div id="skewer1" class="layer top-position"></div>
-         <div id="skewer2" class="layer top-position"></div>
+         <div id="skewer" class="layer"></div>
          <div id="text3" class="layer"></div>
          <div id="food1" class="layer top-position"></div>
          <div id="food2" class="layer top-position"></div>

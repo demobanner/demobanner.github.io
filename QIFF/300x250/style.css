@@ -60,9 +60,14 @@ body {
 #cloche {
 	background: url('images/cloche.png') no-repeat;
 }
-#steam {
+#steam1 {
 	top: 80px;
-	background: url('images/steam.png') no-repeat;
+	background: url('images/steam1.png') no-repeat;
+	height: 0;
+}
+#steam2 {
+	top: 80px;
+	background: url('images/steam2.png') no-repeat;
 	height: 0;
 }
 #text2 {
@@ -71,11 +76,8 @@ body {
 #court {
 	background: url('images/court.png') no-repeat;
 }
-#skewer1 {
-	background: url('images/skewer1.png') no-repeat;
-}
-#skewer2 {
-	background: url('images/skewer2.png') no-repeat;
+#skewer {
+	background: url('images/skewer.png') no-repeat;
 }
 #text3 {
 	background: url('images/text3.png') no-repeat;
