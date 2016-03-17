@@ -11,7 +11,7 @@ body {
 	cursor: pointer;
 	background: url('images/frame1.jpg') no-repeat;
 }
-#banner {
+#clickTag {
 	display: inline-block;
 }
 .layer {
@@ -140,4 +140,13 @@ body {
 }
 #cta {
 	background: url('images/cta.png') no-repeat;
+}
+#btn-replay{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 16px;
+	height: 16px;
+	background: url('images/btn-replay.png') no-repeat center;
+	opacity: 0;
 }
