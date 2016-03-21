@@ -65,7 +65,8 @@
                 .to(radar_img_2, 0.5, {autoAlpha: 1},'-=0.5')
                 .to(f3_text, 0.5, {autoAlpha: 1})
                 .to(text_box_2, 0.3, {autoAlpha: 1},'-=0.5')
-                .to(text_box_3, 0.3, {autoAlpha: 1},'+=1.5')
+                .to(text_box_2, 0.3, {autoAlpha: 0},'+=2')
+                .to(text_box_3, 0.3, {autoAlpha: 1})
       bannerTween.to(radar, 6, {rotation: 380, ease: Power0.easeNone, y: 0, onComplete: showEndFrame}, 3.5);
     }
     function showEndFrame() {
