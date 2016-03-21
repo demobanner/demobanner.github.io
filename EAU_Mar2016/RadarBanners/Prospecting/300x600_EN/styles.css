@@ -13,10 +13,10 @@ a {
 #banner {
   position: relative;
   overflow: hidden;
-  width: 300px;
-  height: 600px;
+  width: 298px;
+  height: 598px;
   border: 1px solid #000000;
-  background: #ffffff url(bg.png) no-repeat;
+  background: #ffffff url(bg.png) no-repeat center;
 }
 .click-tag {
   position: absolute;
@@ -41,19 +41,21 @@ a {
   background: url(radar-border.png);
 }
 #logo {
-  background: url(logo.png) no-repeat;
+  background: url(logo.png) no-repeat center;
+  visibility: visible;
+  opacity: 1;
 }
 #f1-text {
-  background: url(text-1.png) no-repeat;
+  background: url(text-1.png) no-repeat center;
 }
 #f2-text {
-  background: url(text-2.png) no-repeat;
+  background: url(text-2.png) no-repeat center;
 }
 #f3-text {
-  background: url(text-3.png) no-repeat;
+  background: url(text-3.png) no-repeat center;
 }
 #f4-text{
-  background: url(text-4.png) no-repeat;
+  background: url(text-4.png) no-repeat center;
 }
 #text-box-1, #text-box-2, #text-box-3, #text-box-4, #text-box-5, #text-box-6 {
   position: absolute;
@@ -61,22 +63,22 @@ a {
   visibility: hidden;
 }
 #text-box-1 {
-  background: url(text-box-1.png) no-repeat;
+  background: url(text-box-1.png) no-repeat center;
 }
 #text-box-2 {
-  background: url(text-box-2.png) no-repeat;
+  background: url(text-box-2.png) no-repeat center;
 }
 #text-box-3 {
-  background: url(text-box-3.png) no-repeat;
+  background: url(text-box-3.png) no-repeat center;
 }
 #cta {
-  background: url(cta.png) no-repeat;
+  background: url(cta.png) no-repeat center;
 }
 #group-wrap, #radar-img-1, #radar-img-2, #radar-img-3, #radar-img-4, #radar, #radar-border {
-  top: 228px;
-  left: 28px;
-  width: 243px;
-  height: 243px;
+  top: 220px;
+  left: 25px;
+  width: 252px;
+  height: 252px;
 }
 #radar-img-1 {
   background: url(radar-img-1.png) no-repeat;
@@ -89,8 +91,8 @@ a {
 }
 #btn-replay {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 25px;
+  right: 25px;
   visibility: hidden;
   opacity: 0;
 }
