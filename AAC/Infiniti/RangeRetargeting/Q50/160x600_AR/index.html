@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var tl = new TimelineLite();
 			function bgExitHandler(e){
-				Enabler.exit('mainExit', 'http://www.infiniti-dubai.com/en/shopping_tools/request_test_drive.submitform.q50.html');
+				Enabler.exit('mainExit', 'http://www.infiniti-dubai.com/ar/shopping_tools/request_test_drive.submitform.q50.html');
 			}
       function init() {
 				document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
@@ -31,9 +31,9 @@
         tl.to(bg, 0.5, {autoAlpha: 1, scale: 1 , rotation: 0.01})
           .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.5')
           // .to(rate, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+          .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(sub2, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
-          .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
+          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
           .to(cta, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(tc, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(reload, 0.1, {autoAlpha: 1});

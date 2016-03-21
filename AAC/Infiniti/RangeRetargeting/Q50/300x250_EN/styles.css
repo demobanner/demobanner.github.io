@@ -21,11 +21,18 @@ body {
   cursor: pointer;
 }
 #bg {
-  width: 300px;
-  height: 250px;
+  width: 330px;
+  height: 275px;
   background: url('bg.jpg') center;
   background-size: cover;
   opacity: 1;
+  left: -15px;
+  top: -12px;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
 }
 #logo {
   opacity: 1;
