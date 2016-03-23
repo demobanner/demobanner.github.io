@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  margin:0;
+  padding: 0;
+}
+.global {
+  position: absolute;
+  width: 118px;
+  height: 598px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #E6427E;
+  cursor: pointer;
+}
+#text_1, #text_3, #text_5, #text_7, #text_9 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+#logo {
+  position: absolute;
+  width: 120px;
+  height: 141px;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+
+}
+#border_1 {
+  background-image: url(images/border_1.png);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+
+}
+#border_2 {
+  background-image: url(images/border_2.png);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+
+}
+#text_1 {
+  background-image: url(images/text_1.png);
+  opacity: 1;
+}
+#text_2 {
+  background-image: url(images/text_2.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 11px;
+  top: 338px;
+  opacity: 0;
+  background-repeat: no-repeat;
+}
+#text_3 {
+  background-image: url(images/text_3.png);
+  opacity: 1;
+}
+#text_4 {
+  background-image: url(images/text_4.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 11px;
+  top: 548px;
+  opacity: 0;
+  background-repeat: no-repeat;
+}
+#text_5 {
+  background-image: url(images/text_5.png);
+  opacity: 1;
+}
+#text_6 {
+  background-image: url(images/text_6.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 11px;
+  top: 155px;
+  opacity: 0;
+  background-repeat: no-repeat;
+}
+#text_7 {
+  background-image: url(images/text_7.png);
+  opacity: 1;
+}
+#text_8 {
+  background-image: url(images/text_8.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 11px;
+  top: 458px;
+  opacity: 0;
+  background-repeat: no-repeat;
+}
+#text_9 {
+  background-image: url(images/text_9.png);
+  opacity: 1;
+}
+#text_10 {
+  background-image: url(images/text_10.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 11px;
+  top: 571px;
+  opacity: 0;
+  background-repeat: no-repeat;
+}

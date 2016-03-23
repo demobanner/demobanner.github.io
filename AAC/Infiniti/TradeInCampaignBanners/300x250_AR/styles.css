@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 298px;
+  height: 248px;
+}
+#banner {
+  position: relative;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  background-color: #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bg {
+  width: 300px;
+  height: 250px;
+  background: url('bg.jpg') center;
+  background-size: cover;
+  opacity: 1;
+}
+#logo-1 {
+  background: url('logo-1.png') center;
+}
+#logo-2 {
+  background: url('logo-2.png') center;
+  opacity: 1;
+}
+#logo-3 {
+  background: url('logo-3.png') center;
+}
+#text-1 {
+  background: url('text-1.png') center;
+}
+#text-2 {
+  background: url('text-2.png') center;
+}
+#title {
+  background: url('title.png') center;
+}
+#sub-1 {
+  background: url('sub-1.png') center;
+}
+#sub-2 {
+  background: url('sub-2.png') center;
+}
+#sub-3 {
+  background: url('sub-3.png') center;
+}
+#cta {
+  background: url('cta.png') center;
+}
+
+

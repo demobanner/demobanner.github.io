@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Big Spring Clearance Sale Banners - Mindshare - 300x600</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type"text/javascript">
+	var clickTag = "";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+		<a class="click-tag" href="javascript:window.open(window.clickTag); void(0)" style="display:inline-block;">
+			<div id="bg" class="layer"></div>
+			<div id="logo" class="layer"></div>
+			<div id="text1" class="layer"></div>
+			<div id="text2" class="layer"></div>
+			<div id="text3" class="layer"></div>
+			<div id="text4" class="layer"></div>
+			<div id="text5" class="layer"></div>
+			<div id="text6" class="layer"></div>
+			<div id="text7" class="layer"></div>
+			<div id="text8" class="layer"></div>
+			<div id="yellowborder1" class="layer"></div>
+			<div id="yellowborder2" class="layer"></div>
+			<div id="bg2" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var text1 = document.getElementById('text1'),
+        text2 = document.getElementById('text2'),
+        text3 = document.getElementById('text3'),
+        text4 = document.getElementById('text4'),
+        text5 = document.getElementById('text5'),
+        text6 = document.getElementById('text6'),
+        text7 = document.getElementById('text7'),
+        text8 = document.getElementById('text8'),
+        logo = document.getElementById('logo'),
+        yellowborder1 = document.getElementById('yellowborder1'),
+        yellowborder2 = document.getElementById('yellowborder2'),
+        bg = document.getElementById('bg'),
+        bg2 = document.getElementById('bg2'),
+        replay = document.getElementById('btn-replay');
+    var bannerTween = new TimelineLite();
+
+    function init() {
+      bannerTween.to(bg, 0,{opacity: 1})
+                  .from(logo, 0.3, {scale: 0,autoAlpha: 0, ease: Power2.easeOut})
+                  .to(text1, 0.3, {left: 0, autoAlpha: 1}, '+=0.5')
+                  .to(text2, 0.3, {left: 0, autoAlpha: 1}, '-=0.3')
+                  .to([bg, logo, text1, text2], 0.2,{opacity: 0}, '+=2')
+                  .to(text1, 0.1, {left: '-300px'})
+                  .to(text2, 0.1, {left: '300px'}, '-=0.1')
+
+                  .to(yellowborder1, 0.3, {autoAlpha:1, height:'172px'})
+                  .from(text3, 0.3, {scale: 0, autoAlpha: 0, ease: Power2.easeOut})
+                  .to(yellowborder1, 0.3, {autoAlpha:1, height:'406px'}, '+=0.5')
+                  .to(text4, 0.3, {autoAlpha: 1})
+                  .to(yellowborder1, 0.3, {autoAlpha:1, height:'600px'}, '+=0.5')
+                  .from(text5, 0.3, {scale: 0, autoAlpha: 0, ease: Power2.easeOut})
+                  .to([yellowborder1, text3, text4, text5], 0.2,{opacity: 0}, '+=2')
+
+                  .to(yellowborder2, 0.3, {autoAlpha:1, height:'202px'})
+                  .to(text6, 0.3, {autoAlpha: 1})
+                  .to(yellowborder2, 0.3, {autoAlpha:1, height:'495px'}, '+=0.2')
+                  .from(text7, 0.3, {scale: 0, autoAlpha: 0, ease: Power2.easeOut})
+                  .to(yellowborder2, 0.4, {autoAlpha:1, height:'600px'})
+                  .to(text8, 0.3, {autoAlpha: 1})
+                  .to([yellowborder2, text6, text7, text8], 0.2,{opacity: 0}, '+=2')
+
+                  .to(bg, 1,{opacity: 1}, '-=0.2')
+                  .fromTo(logo, 0.3, {scale: 0, autoAlpha: 0}, {scale:1 , autoAlpha: 1, ease: Power2.easeOut}, '-=1')
+                  .to(text1, 0.3, {left: 0, autoAlpha: 1})
+                  .to(text2, 0.3, {left: 0, autoAlpha: 1}, '-=0.3')
+    }
+  </script>
+</body>
+</html>
