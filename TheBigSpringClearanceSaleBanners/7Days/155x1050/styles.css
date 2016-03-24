@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  margin:0;
+  padding: 0;
+}
+.global {
+  position: absolute;
+  width: 153px;
+  height: 1048px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #E6427E;
+  cursor: pointer;
+}
+#logo, #border_1, #text_1, #text_2, #text_3, #text_4, #text_5, #text_6, #text_7 {
+  position: absolute;
+  width: 153px;
+  height: 1048px;
+  left: -1px;
+  top: 0;
+  opacity: 0;
+}
+#logo {
+  opacity: 1;
+  background-image: url(logo.png);
+
+}
+#border_1 {
+  background-image: url(border_1.png);
+  position: absolute;
+  height: 0;
+
+}
+#text_1 {
+  background-image: url(text_1.png);
+}
+#text_2 {
+  background-image: url(text_2.png);
+  opacity: 1;
+}
+#text_3 {
+  background-image: url(text_3.png);
+  opacity: 0;
+}
+#text_4 {
+  background-image: url(text_4.png);
+  opacity: 1;
+}
+#text_5 {
+  background-image: url(text_5.png);
+  opacity: 0;
+}
+#text_6 {
+  background-image: url(text_6.png);
+  opacity: 1;
+}
+#text_7 {
+  background-image: url(text_7.png);
+  opacity: 0;
+}

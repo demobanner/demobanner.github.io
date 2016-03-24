@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="ad.size" content= "width=728, height=90">
+  <title>The Big Spring Clearance Sale Banners - 728x90</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "";
+  </script>
+</head>
+<body>
+  <div id="banner">
+    <a id="mainExit" class="click-tag" href="javascript:">
+      <div id="border" class="layer border"></div>
+      <div id="logo" class="layer"></div>
+      <div id="text1" class="layer"></div>
+      <div id="border1" class="layer border"></div>
+      <div id="text2" class="layer"></div>
+      <div id="text3" class="layer"></div>
+      <div id="text4" class="layer"></div>
+      <div id="border2" class="layer border"></div>
+      <div id="text5" class="layer"></div>
+      <div id="text6" class="layer"></div>
+      <div id="border4" class="layer border"></div>
+      <div id="logo1" class="layer"></div>
+      <div id="text8" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var bannerTween = new TimelineLite();
+    var border  = document.getElementById('border'),
+        logo    = document.getElementById('logo'),
+        text1   = document.getElementById('text1'),
+        border1 = document.getElementById('border1'),
+        text2   = document.getElementById('text2'),
+        text3   = document.getElementById('text3'),
+        text4   = document.getElementById('text4'),
+        border2 = document.getElementById('border2'),
+        text5   = document.getElementById('text5'),
+        text6   = document.getElementById('text6'),
+        border4 = document.getElementById('border4'),
+        logo1   = document.getElementById('logo1'),
+        text8   = document.getElementById('text8');
+
+    function bgExitHandler(e) {
+      window.open(window.clickTag);
+    }
+
+    function init() {
+      bannerTween.to(border, 0.3, {autoAlpha: 1, height: 90})
+                 .to(logo, 0.3, {autoAlpha: 1, top: 0})
+                 .to(text1, 0.3, {autoAlpha: 1, scale: 1, ease: Power2.easeOut});
+
+      bannerTween.to(border, 0.3, {autoAlpha: 0}, "+=2")
+                 .to([logo, text1], 0.3, {autoAlpha: 0}, "-=0.3");
+
+      bannerTween.to(border1, 0.3, {autoAlpha: 1, width:236})
+                 .to(text2, 0.3, {autoAlpha: 1, scale: 1, left:0, ease: Power2.easeOut})
+                 .to(border1, 0.3, {width:536}, "+=0.5")
+                 .to(text3, 0.3, {autoAlpha: 1})
+                 .to(border1, 0.3, {width:728}, "+=0.5")
+                 .to(text4, 0.3, {autoAlpha: 1, scale: 1, left:0, ease: Power2.easeOut});
+
+      bannerTween.to(border1, 0.3, {autoAlpha: 0}, "+=2")
+                 .to([text2, text3, text4], 0.3, {autoAlpha: 0}, "-=0.3");
+
+      bannerTween.to(border2, 0.3, {autoAlpha: 1, width:459})
+                 .to(text5, 0.3, {autoAlpha: 1})
+                 .to(border2, 0.3, {width:728}, "+=0.5")
+                 .to(text6, 0.3, {autoAlpha: 1, scale: 1, left: 0, ease: Power2.easeOut});
+
+      bannerTween.to(border2, 0.3, {autoAlpha: 0}, "+=2")
+                 .to([text5, text6], 0.3, {autoAlpha: 0}, "-=0.3");
+
+      bannerTween.to(border4, 0.3, {autoAlpha: 1, height: 90})
+                 .to(logo1, 0.3, {autoAlpha: 1,top: 0})
+                 .to(text8, 0.3, {autoAlpha: 1, scale: 1, ease: Power2.easeOut});
+    }
+    document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
+    window.onload = init;
+  </script>
+</body>
+</html>

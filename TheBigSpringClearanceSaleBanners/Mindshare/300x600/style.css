@@ -26,28 +26,23 @@ img {
 #bg {
   width: 300px;
   height: 600px;
-  background: url(images/bg.jpg) no-repeat;
+  background: url(bg.jpg) no-repeat;
   visibility: visible;
 
-}
-#bg2 {
-  width: 300px;
-  height: 600px;
-  background: url(images/bg2.jpg) no-repeat;
 }
 #text1 {
   width: 300px;
   height: 600px;
   opacity: 1;
   left: -300px;
-  background: url(images/text1.png) no-repeat;
+  background: url(text1.png) no-repeat;
 }
 #text2 {
   left: 300px;
   width: 300px;
   height: 600px;
   opacity: 1;
-  background: url(images/text2.png) no-repeat;
+  background: url(text2.png) no-repeat;
 }
 #text3 {
   left: 57px;
@@ -55,12 +50,12 @@ img {
   width: 178px;
   height: 105px;
   opacity: 1;
-  background: url(images/text3.png) no-repeat;
+  background: url(text3.png) no-repeat;
 }
 #text4 {
   width: 300px;
   height: 405px;
-  background: url(images/text4.png) no-repeat;
+  background: url(text4.png) no-repeat;
 }
 #text5 {
   width: 198px;
@@ -68,12 +63,12 @@ img {
   left: 57px;
   top: 434px;
   opacity: 1;
-  background: url(images/text5.png) no-repeat;
+  background: url(text5.png) no-repeat;
 }
 #text6 {
   width: 300px;
   height: 203px;
-  background: url(images/text6.png) no-repeat;
+  background: url(text6.png) no-repeat;
 }
 #text7 {
   width: 202px;
@@ -81,23 +76,23 @@ img {
   left: 50px;
   top: 217px;
   opacity: 1;
-  background: url(images/text7.png) no-repeat;
+  background: url(text7.png) no-repeat;
 }
 #text8 {
   width: 300px;
   height: 114px;
   top: 486px;
-  background: url(images/text8.png) no-repeat;
+  background: url(text8.png) no-repeat;
 }
 #yellowborder1 {
   width: 300px;
   height: 0;
-  background: url(images/yellowborder1.png) no-repeat;
+  background: url(yellowborder1.png) no-repeat;
 }
 #yellowborder2 {
   width: 300px;
   height: 0;
-  background: url(images/yellowborder2.png) no-repeat;
+  background: url(yellowborder2.png) no-repeat;
 }
 
 .click-tag {
@@ -112,7 +107,7 @@ img {
   width: 300px;
   height: 600px;
   opacity: 1;
-  background: url(images/logo.png) no-repeat;
+  background: url(logo.png) no-repeat;
 }
 
 

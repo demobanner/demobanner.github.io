@@ -54,37 +54,32 @@
     function init() {
       bannerTween.to(border, 0.3, {autoAlpha: 1, height: 90})
                  .to(logo, 0.3, {autoAlpha: 1, top: 0})
-                 .to(text1, 0.3, {autoAlpha: 1, scale: 1, ease: Power2.easeOut})
+                 .to(text1, 0.3, {autoAlpha: 1, scale: 1, ease: Power2.easeOut});
 
-                 .to(border, 0.3, {autoAlpha: 0}, "+=2")
-                 .to(logo, 0.3, {autoAlpha: 0}, "-=0.3")
-                 .to(text1, 0.3, {autoAlpha: 0}, "-=0.3")
+      bannerTween.to(border, 0.3, {autoAlpha: 0}, "+=2")
+                 .to([logo, text1], 0.3, {autoAlpha: 0}, "-=0.3");
 
-                 .to(border1, 0.3, {autoAlpha: 1, width:236})
+      bannerTween.to(border1, 0.3, {autoAlpha: 1, width:236})
                  .to(text2, 0.3, {autoAlpha: 1, scale: 1, left:0, ease: Power2.easeOut})
                  .to(border1, 0.3, {width:536}, "+=0.5")
                  .to(text3, 0.3, {autoAlpha: 1})
                  .to(border1, 0.3, {width:728}, "+=0.5")
-                 .to(text4, 0.3, {autoAlpha: 1, scale: 1, left:0, ease: Power2.easeOut})
+                 .to(text4, 0.3, {autoAlpha: 1, scale: 1, left:0, ease: Power2.easeOut});
 
-                 .to(border1, 0.3, {autoAlpha: 0}, "+=2")
-                 .to(text2, 0.3, {autoAlpha: 0}, "-=0.3")
-                 .to(text3, 0.3, {autoAlpha: 0}, "-=0.3")
-                 .to(text4, 0.3, {autoAlpha: 0}, "-=0.3")
+      bannerTween.to(border1, 0.3, {autoAlpha: 0}, "+=2")
+                 .to([text2, text3, text4], 0.3, {autoAlpha: 0}, "-=0.3");
 
-                 .to(border2, 0.3, {autoAlpha: 1, width:375})
+      bannerTween.to(border2, 0.3, {autoAlpha: 1, width:375})
                  .to(text5, 0.3, {autoAlpha: 1})
                  .to(border2, 0.3, {width:598}, "+=0.5")
                  .to(text6, 0.3, {autoAlpha: 1, scale: 1, left: 0, ease: Power2.easeOut})
                  .to(border2, 0.3, {width:728}, "+=0.5")
-                 .to(text7, 0.3, {autoAlpha: 1})
+                 .to(text7, 0.3, {autoAlpha: 1});
 
-                 .to(border2, 0.3, {autoAlpha: 0}, "+=2")
-                 .to(text5, 0.3, {autoAlpha: 0}, "-=0.3")
-                 .to(text6, 0.3, {autoAlpha: 0}, "-=0.3")
-                 .to(text7, 0.3, {autoAlpha: 0}, "-=0.3")
+      bannerTween.to(border2, 0.3, {autoAlpha: 0}, "+=2")
+                 .to([text5, text6, text7], 0.3, {autoAlpha: 0}, "-=0.3");
 
-                 .to(border4, 0.3, {autoAlpha: 1, height: 90})
+      bannerTween.to(border4, 0.3, {autoAlpha: 1, height: 90})
                  .to(logo1, 0.3, {autoAlpha: 1,top: 0})
                  .to(text8, 0.3, {autoAlpha: 1, scale: 1, ease: Power2.easeOut});
     }

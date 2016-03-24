@@ -48,6 +48,8 @@ a {
 }
 #text1, #text8 {
   background: url(text1.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
   transform: scale(0);
 }
 #border1 {
@@ -55,20 +57,23 @@ a {
   width: 0;
 }
 #text2 {
-  background: url(text2.png) no-repeat;
-  transform: scale(0);
   left: -215px;
+  background: url(text2.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
-
 #text3 {
   background: url(text3.png) no-repeat;
   top: -1px;
   left: -1px;
 }
 #text4 {
-  background: url(text4.png) no-repeat;
-  transform: scale(0);
   left: 242px;
+  background: url(text4.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #border2 {
   background: url(border2.png) no-repeat;
@@ -82,9 +87,11 @@ a {
   background: url(text5.png) no-repeat;
 }
 #text6 {
-  background: url(text6.png) no-repeat;
-  transform: scale(0);
   left: 106px;
+  background: url(text6.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #text7 {
   background: url(text7.png) no-repeat;

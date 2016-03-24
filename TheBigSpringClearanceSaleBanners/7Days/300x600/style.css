@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+img {
+  vertical-align: middle;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 298px;
+  height: 598px;
+  border: 1px solid #000;
+  background-color: #E6427E;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 600px;
+  visibility: hidden;
+  opacity: 0;
+}
+#bg {
+  width: 300px;
+  height: 600px;
+  background: url(bg.jpg) no-repeat;
+  visibility: visible;
+
+}
+#text1 {
+  width: 300px;
+  height: 600px;
+  opacity: 1;
+  left: -300px;
+  background: url(text1.png) no-repeat;
+}
+#text2 {
+  left: 300px;
+  width: 300px;
+  height: 600px;
+  opacity: 1;
+  background: url(text2.png) no-repeat;
+}
+#text3 {
+  left: 57px;
+  top: 37px;
+  width: 178px;
+  height: 105px;
+  opacity: 1;
+  background: url(text3.png) no-repeat;
+}
+#text4 {
+  width: 300px;
+  height: 405px;
+  background: url(text4.png) no-repeat;
+}
+#text5 {
+  width: 198px;
+  height: 115px;
+  left: 57px;
+  top: 434px;
+  opacity: 1;
+  background: url(text5.png) no-repeat;
+}
+#text6 {
+  width: 202px;
+  height: 129px;
+  top: 61px;
+  left: 51px;
+  opacity: 1;
+  background: url(text6.png) no-repeat;
+}
+#text7 {
+  width: 300px;
+  height: 600px;
+  opacity: 1;
+  background: url(text7.png) no-repeat;
+}
+#yellowborder1 {
+  width: 300px;
+  height: 0;
+  background: url(yellowborder1.png) no-repeat;
+}
+#yellowborder2 {
+  width: 300px;
+  height: 0;
+  background: url(yellowborder2.png) no-repeat;
+}
+
+.click-tag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#logo {
+  width: 300px;
+  height: 600px;
+  opacity: 1;
+  background: url(logo.png) no-repeat;
+}
+
+
