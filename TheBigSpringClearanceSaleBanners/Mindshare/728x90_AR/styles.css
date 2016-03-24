@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 726px;
+  height: 88px;
+  border: 1px solid #000000;
+  background: #e6427e;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 728px;
+  height: 90px;
+  visibility: hidden;
+  opacity: 0;
+}
+.border {
+  top: -2px;
+  left: -1px;
+}
+#border, #border4 {
+  background: url(border.png) no-repeat;
+  height: 0;
+}
+#logo, #logo1 {
+  background: url(logo.png) no-repeat;
+  top: -90px;
+}
+#text1, #text8 {
+  background: url(text1.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#border1 {
+  background: url(border1.png) no-repeat right;
+  right: 0;
+  left: initial;
+  width: 0;
+}
+#text2 {
+  left: -215px;
+  background: url(text2.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#text3 {
+  background: url(text3.png) no-repeat;
+  top: -2px;
+  left: -2px;
+}
+#text4 {
+  left: 242px;
+  background: url(text4.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#border2 {
+  background: url(border2.png) no-repeat right;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  left: initial;
+}
+#text5, #text7 {
+  top: -2px;
+  left: -1px;
+}
+#text5 {
+  background: url(text5.png) no-repeat;
+}
+#text6 {
+  left: -110px;
+  background: url(text6.png) no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#text7 {
+  background: url(text7.png) no-repeat;
+}
