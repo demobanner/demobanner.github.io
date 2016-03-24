@@ -28,12 +28,11 @@ img {
   height: 600px;
   background: url(bg.jpg) no-repeat;
   visibility: visible;
-
+  
 }
 #text1 {
   width: 300px;
   height: 600px;
-  opacity: 1;
   left: -300px;
   background: url(text1.png) no-repeat;
 }
@@ -41,7 +40,6 @@ img {
   left: 300px;
   width: 300px;
   height: 600px;
-  opacity: 1;
   background: url(text2.png) no-repeat;
 }
 #text3 {
@@ -49,8 +47,10 @@ img {
   top: 37px;
   width: 178px;
   height: 105px;
-  opacity: 1;
   background: url(text3.png) no-repeat;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
 }
 #text4 {
   width: 300px;
@@ -62,8 +62,10 @@ img {
   height: 115px;
   left: 57px;
   top: 434px;
-  opacity: 1;
   background: url(text5.png) no-repeat;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
 }
 #text6 {
   width: 300px;
@@ -75,8 +77,10 @@ img {
   height: 256px;
   left: 50px;
   top: 217px;
-  opacity: 1;
   background: url(text7.png) no-repeat;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
 }
 #text8 {
   width: 300px;
@@ -106,8 +110,10 @@ img {
 #logo {
   width: 300px;
   height: 600px;
-  opacity: 1;
   background: url(logo.png) no-repeat;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 

@@ -42,7 +42,7 @@
 
     function init() {
       bannerTween.to(bg, 0,{opacity: 1})
-                  .from(logo, 0.3, {scale: 0,autoAlpha: 0, ease: Power2.easeOut})
+                  .to(logo, 0.3, {scale: 1,autoAlpha: 1, ease: Power2.easeOut})
                   .to(text1, 0.3, {left: 0, autoAlpha: 1}, '+=0.5')
                   .to(text2, 0.3, {left: 0, autoAlpha: 1}, '-=0.3')
                   .to([bg, logo, text1, text2], 0.2,{opacity: 0}, '+=2')
@@ -50,17 +50,17 @@
                   .to(text2, 0.1, {left: '300px'}, '-=0.1')
 
                   .to(yellowborder1, 0.3, {autoAlpha:1, height:'172px'})
-                  .from(text3, 0.3, {scale: 0, autoAlpha: 0, ease: Power2.easeOut})
+                  .to(text3, 0.3, {scale: 1, autoAlpha: 1, ease: Power2.easeOut})
                   .to(yellowborder1, 0.3, {autoAlpha:1, height:'406px'}, '+=0.5')
                   .to(text4, 0.3, {autoAlpha: 1})
                   .to(yellowborder1, 0.3, {autoAlpha:1, height:'600px'}, '+=0.5')
-                  .from(text5, 0.3, {scale: 0, autoAlpha: 0, ease: Power2.easeOut})
+                  .to(text5, 0.3, {scale: 1, autoAlpha: 1, ease: Power2.easeOut})
                   .to([yellowborder1, text3, text4, text5], 0.2,{opacity: 0}, '+=2')
 
                   .to(yellowborder2, 0.3, {autoAlpha:1, height:'202px'})
                   .to(text6, 0.3, {autoAlpha: 1})
                   .to(yellowborder2, 0.3, {autoAlpha:1, height:'495px'}, '+=0.2')
-                  .from(text7, 0.3, {scale: 0, autoAlpha: 0, ease: Power2.easeOut})
+                  .to(text7, 0.3, {scale: 1, autoAlpha: 1, ease: Power2.easeOut})
                   .to(yellowborder2, 0.4, {autoAlpha:1, height:'600px'})
                   .to(text8, 0.3, {autoAlpha: 1})
                   .to([yellowborder2, text6, text7, text8], 0.2,{opacity: 0}, '+=2')

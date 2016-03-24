@@ -24,8 +24,10 @@ body {
   opacity: 0;
 }
 #logo {
-  opacity: 1;
   background-image: url(logo.png);
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
 
 }
 #border_1 {
@@ -39,7 +41,10 @@ body {
 }
 #text_2 {
   background-image: url(text_2.png);
-  opacity: 1;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  top: -150px;
 }
 #text_3 {
   background-image: url(text_3.png);
@@ -47,7 +52,10 @@ body {
 }
 #text_4 {
   background-image: url(text_4.png);
-  opacity: 1;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  top: 40px;
 }
 #text_5 {
   background-image: url(text_5.png);
@@ -55,7 +63,10 @@ body {
 }
 #text_6 {
   background-image: url(text_6.png);
-  opacity: 1;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  top: 290px;
 }
 #text_7 {
   background-image: url(text_7.png);

@@ -32,6 +32,8 @@ body {
 }
 #logo {
   background: url(logo.png);
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 #text-1 {
@@ -58,6 +60,8 @@ body {
   background: url(text-3.png) no-repeat;
   top: 139px;
   left: 14px;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 #text-4 {
@@ -66,6 +70,8 @@ body {
   background: url(text-4.png) no-repeat;
   top: 138px;
   left: 152px;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 #border-3 {
@@ -86,6 +92,8 @@ body {
   background: url(text-6.png) no-repeat;
   top: 89px;
   left: 16px;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 #text-7 {
