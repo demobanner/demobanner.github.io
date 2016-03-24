@@ -31,7 +31,9 @@ body {
   opacity: 1;
   background-image: url(logo.png);
   background-repeat: no-repeat;
-
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #border_1 {
   background-image: url(border_1.png);
@@ -41,7 +43,6 @@ body {
   height: 0;
   left: 0;
   top: 0;
-
 }
 #border_2 {
   background-image: url(border_2.png);
@@ -51,11 +52,14 @@ body {
   height: 0;
   left: 0;
   top: 0;
-
 }
 #text_1 {
   background-image: url(text_1.png);
-  opacity: 1;
+  opacity: 0;
+	top: -50px;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #text_2 {
   background-image: url(text_2.png);
@@ -69,7 +73,11 @@ body {
 }
 #text_3 {
   background-image: url(text_3.png);
-  opacity: 1;
+  opacity: 0;
+	top: 220px;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #text_4 {
   background-image: url(text_4.png);
@@ -83,7 +91,11 @@ body {
 }
 #text_5 {
   background-image: url(text_5.png);
-  opacity: 1;
+  opacity: 0;
+	top: 280px;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #text_6 {
   background-image: url(text_6.png);
@@ -97,7 +109,11 @@ body {
 }
 #text_7 {
   background-image: url(text_7.png);
-  opacity: 1;
+  opacity: 0;
+	top: 60px;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #text_8 {
   background-image: url(text_8.png);
@@ -111,7 +127,11 @@ body {
 }
 #text_9 {
   background-image: url(text_9.png);
-  opacity: 1;
+  opacity: 0;
+	top: 260px;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 #text_10 {
   background-image: url(text_10.png);

@@ -31,28 +31,28 @@
 								text_10= document.getElementById("text_10");
 
 						//frame 1
-						timeline.from(logo, 0.3, {alpha:0, scale:0, ease: Power2.easeOut});
+						timeline.to(logo, 0.3, {alpha:1, scale:1, ease: Power2.easeOut});
 						timeline.to(border_1, 0.4, {alpha:1, height:338}, '+=0.5');
-						timeline.from(text_1, 0.3, {alpha:0, scale:0, top:-50, ease: Power2.easeOut});
+						timeline.to(text_1, 0.3, {alpha:1, scale:1, top:0, ease: Power2.easeOut});
 						timeline.to(border_1, 0.3, {alpha:1, height:468}, '+=0.5');
 						timeline.to(text_2, 0.3, {alpha:1});
 						timeline.to(border_1, 0.3, {alpha:1, height:547}, '+=0.5');
-						timeline.from(text_3, 0.3, {alpha:0, scale:0, top:220, ease: Power2.easeOut});
+						timeline.to(text_3, 0.3, {alpha:1, scale:1, top:0, ease: Power2.easeOut});
 						timeline.to(border_1, 0.2, {alpha:1, height:572}, '+=0.5');
 						timeline.to(text_4, 0.3, {alpha:1});
 						timeline.to(border_1, 0.2, {alpha:1, height:600}, '+=0.2');
-						timeline.from(text_5, 0.3, {alpha:0, scale:0, top: 280, ease: Power2.easeOut});
+						timeline.to(text_5, 0.3, {alpha:1, scale:1, top:0, ease: Power2.easeOut});
 						timeline.to([text_1,text_2,text_3,text_4,text_5,border_1], 0.3, {alpha:0}, '+=2');
 
 						//frame 2
 						timeline.to(border_2, 0.3, {alpha:1, height:250});
 						timeline.to(text_6, 0.3, {alpha:1});
 						timeline.to(border_2, 0.5, {alpha:1, height:457}, '+=0.5');
-						timeline.from(text_7, 0.3, {alpha:1, scale:0, top:60, ease: Power2.easeOut});
+						timeline.to(text_7, 0.3, {alpha:1, scale:1, top:0, ease: Power2.easeOut});
 						timeline.to(border_2, 0.3, {alpha:1, height:547}, '+=0.5');
 						timeline.to(text_8, 0.3, {alpha:1});
 						timeline.to(border_2, 0.3, {alpha:1, height:572}, '+=0.5');
-						timeline.from(text_9, 0.3, {alpha:1, scale:0, top:260, ease: Power2.easeOut});
+						timeline.to(text_9, 0.3, {alpha:1, scale:1, top:0, ease: Power2.easeOut});
 						timeline.to(border_2, 0.3, {alpha:1, height:600}, '+=0.2');
 						timeline.to(text_10, 0.3, {alpha:1});
 						
