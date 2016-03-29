@@ -26,6 +26,7 @@
       <div id="text-5" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="text-6" class="layer"></div>
+      <a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
     </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -41,7 +42,8 @@
         text_4 = document.getElementById('text-4'),
         text_5 = document.getElementById('text-5'),
         cta = document.getElementById('cta'),
-        text_6 = document.getElementById('text-6');
+        text_6 = document.getElementById('text-6'),
+        btn_replay = document.getElementById('btn-replay');
 
     function init() {
       bannerTween.to(text_1, 0.5, {autoAlpha: 1})
@@ -49,12 +51,12 @@
                  .to(img_1, 0.5, {autoAlpha: 0}, '-=0.5')
 
                  .to(img_2, 0.5, {autoAlpha: 1}, '-=0.5')
-                 .to(text_2, 0.8, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+                 .to(text_2, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
                  .to(text_2, 0.5, {top: 150}, '+=3.5')
                  .to(img_2, 0.5, {autoAlpha: 0})
 
                  .to(img_3, 0.5, {autoAlpha: 1}, '-=0.5')
-                 .to(text_3, 0.8, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+                 .to(text_3, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
                  .to(text_3, 0.5, {top: 150}, '+=3.5')
                  .to(img_3, 0.5, {autoAlpha: 0})
 
@@ -62,7 +64,8 @@
                  .to(text_4, 0.5, {autoAlpha: 1})
                  .to(text_5, 0.5, {autoAlpha: 1})
                  .to(cta, 0.5, {autoAlpha: 1})
-                 .to(text_6, 0.5, {autoAlpha: 1});
+                 .to(text_6, 0.5, {autoAlpha: 1})
+                 .to(btn_replay, 0.5, {autoAlpha: 1});
     }
 
     function restart() {

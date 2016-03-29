@@ -30,6 +30,14 @@ body {
   opacity: 1;
   z-index: 1;
 }
+#btn-replay {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
 #img-1 {
   background: url(img-1.jpg);
   visibility: visible;
@@ -43,14 +51,14 @@ body {
 }
 #text-2 {
   background: url(text-2.png) no-repeat;
-  top: 250px;
+  top: 150px;
 }
 #img-3 {
   background: url(img-3.jpg);
 }
 #text-3 {
   background: url(text-3.png) no-repeat;
-  top: 250px;
+  top: 150px;
 }
 #img-4 {
   background: url(img-4.jpg) no-repeat;
