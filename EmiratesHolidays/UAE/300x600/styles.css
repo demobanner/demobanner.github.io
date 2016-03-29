@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 298px;
+  height: 598px;
+  border: 1px solid #000000;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  width: 298px;
+  height: 5988px;
+  visibility: hidden;
+  opacity: 0;
+}
+#logo {
+  background: url(logo.png);
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+#btn-replay {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+#img-1 {
+  background: url(img-1.jpg);
+  visibility: visible;
+  opacity: 1;
+}
+#text-1 {
+  background: url(text-1.png) no-repeat;
+}
+#img-2 {
+  background: url(img-2.jpg);
+}
+#text-2 {
+  background: url(text-2.png) no-repeat;
+  top: 600px;
+}
+#img-3 {
+  background: url(img-3.jpg);
+}
+#text-3 {
+  background: url(text-3.png) no-repeat;
+  top: 600px;
+}
+#img-4 {
+  background: url(img-4.jpg) no-repeat;
+}
+#text-4 {
+  background: url(text-4.png) no-repeat;
+}
+#text-5 {
+  background: url(text-5.png) no-repeat;
+}
+#cta {
+  background: url(cta.png) no-repeat;
+}
+

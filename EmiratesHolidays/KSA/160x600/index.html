@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="ad.size" content= "width=160, height=600">
+    <title>Emirates Holidays 160x600</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript">
+     		var clickTag = "http://www.emiratesholidays.com";
+        var tl = new TimelineLite();
+
+        function init() {
+          var text1   = document.getElementById("text1"),
+              frame2  = document.getElementById("frame2"),
+              text2   = document.getElementById("text2"),
+              frame3  = document.getElementById("frame3"),
+              text3   = document.getElementById("text3"),
+              frame4  = document.getElementById("frame4"),
+              logo_txt= document.getElementById("logo-text"),
+              text4   = document.getElementById("text4"),
+              cta     = document.getElementById("cta"),
+              text5   = document.getElementById("text5"),
+              replay  = document.getElementById("btn-replay");
+
+          tl.to(text1, 0.5,{autoAlpha: 1})
+            .to(frame2, 0.5,{autoAlpha: 1}, "+=1.5")
+            .to(text2, 0.5,{autoAlpha: 1, left: 0, ease: Power2.easeOut})
+            .to(text2, 0.5,{left: -160, ease: Power2.easeOut}, "+=3.5")
+            .to(frame3, 0.5,{autoAlpha: 1})
+            .to(text3, 0.5,{autoAlpha: 1, left: 0, ease: Power2.easeOut})
+            .to(text3, 0.5,{left: -160, ease: Power2.easeOut}, "+=3.5")
+            .to(frame4, 0.5,{autoAlpha: 1})
+            .to(logo_txt, 0.5,{autoAlpha: 1})
+            .to(text4, 0.5,{autoAlpha: 1})
+            .to(cta, 0.5,{autoAlpha: 1})
+            .to(text5, 0.5,{autoAlpha: 1})
+            .to(replay, 0.5,{autoAlpha: 1});
+        }
+         function replayBanner() {
+          tl.restart();
+        }
+    </script>
+  </head>
+  <body onload="init();">
+    <div id="global">
+       <div id="text1" class="layer"></div>
+       <div id="frame2" class="layer"></div>
+       <div id="text2" class="layer"></div>
+       <div id="frame3" class="layer"></div>
+       <div id="text3" class="layer"></div>
+       <div id="frame4" class="layer"></div>
+       <div id="logo-text" class="layer"></div>
+       <div id="text4" class="layer"></div>
+       <div id="cta" class="layer"></div>
+       <div id="text5" class="layer"></div>
+       <div id="logo" class="layer"></div>
+       <a id="clickTag" href="javascript:window.open(window.clickTag)" class="layer"></a>
+       <a id="btn-replay" class="layer" onclick="replayBanner()"></a>
+    </div>
+  </body>
+</html>
