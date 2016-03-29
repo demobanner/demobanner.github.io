@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=300, height=250">
+  <title>Emirates Holidays 300x250</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.emiratesholidays.com";
+  </script>
+</head>
+<body>
+  <div id="banner">
+    <a id="mainExit" class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="img-1" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="text-1" class="layer"></div>
+      <div id="img-2" class="layer"></div>
+      <div id="text-2" class="layer"></div>
+      <div id="img-3" class="layer"></div>
+      <div id="text-3" class="layer"></div>
+      <div id="img-4" class="layer"></div>
+      <div id="text-4" class="layer"></div>
+      <div id="text-5" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="text-6" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var bannerTween = new TimelineLite();
+    var img_1 = document.getElementById('img-1'),
+        text_1 = document.getElementById('text-1'),
+        img_2 = document.getElementById('img-2'),
+        text_2 = document.getElementById('text-2'),
+        img_3 = document.getElementById('img-3'),
+        text_3 = document.getElementById('text-3'),
+        img_4 = document.getElementById('img-4'),
+        text_4 = document.getElementById('text-4'),
+        text_5 = document.getElementById('text-5'),
+        cta = document.getElementById('cta'),
+        text_6 = document.getElementById('text-6');
+
+    function init() {
+      bannerTween.to(text_1, 0.5, {autoAlpha: 1})
+                 .to(text_1, 0.5, {autoAlpha: 0}, '+=1.5')
+                 .to(img_1, 0.5, {autoAlpha: 0}, '-=0.5')
+
+                 .to(img_2, 0.5, {autoAlpha: 1}, '-=0.5')
+                 .to(text_2, 0.8, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+                 .to(text_2, 0.5, {top: 150}, '+=3.5')
+                 .to(img_2, 0.5, {autoAlpha: 0})
+
+                 .to(img_3, 0.5, {autoAlpha: 1}, '-=0.5')
+                 .to(text_3, 0.8, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+                 .to(text_3, 0.5, {top: 150}, '+=3.5')
+                 .to(img_3, 0.5, {autoAlpha: 0})
+
+                 .to(img_4, 0.5, {autoAlpha: 1}, '-=0.5')
+                 .to(text_4, 0.5, {autoAlpha: 1})
+                 .to(text_5, 0.5, {autoAlpha: 1})
+                 .to(cta, 0.5, {autoAlpha: 1})
+                 .to(text_6, 0.5, {autoAlpha: 1});
+    }
+
+    function restart() {
+      bannerTween.restart();
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>
