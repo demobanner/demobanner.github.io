@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emirates Holidays - 728x90</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type"text/javascript">
+	var clickTag = "http://www.emiratesholidays.com";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+		<a class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="bg1" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="text1" class="layer"></div>
+      <div id="bg2" class="layer"></div>
+      <div id="text2" class="layer"></div>
+      <div id="bg3" class="layer"></div>
+      <div id="text3" class="layer"></div>
+      <div id="bg4" class="layer"></div>
+      <div id="text4" class="layer"></div>
+      <div id="text5" class="layer"></div>
+      <div id="cta" class="layer"></div>
+    </a>
+    <a id="btn-replay" href="javascript:" onclick="restart();">
+      <div id="btn_replay" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var bg1 = document.getElementById('bg1'),
+        logo = document.getElementById('logo'),
+        text1 = document.getElementById('text1'),
+        bg2 = document.getElementById('bg2'),
+        text2 = document.getElementById('text2'),
+        bg3 = document.getElementById('bg3'),
+        text3 = document.getElementById('text3'),
+        bg4 = document.getElementById('bg4'),
+        text4 = document.getElementById('text4'),
+        text5 = document.getElementById('text5'),
+        cta = document.getElementById('cta');
+    var bannerTween = new TimelineLite();
+
+    function init() {
+      bannerTween.to(text1, 0.5, {autoAlpha: 1})
+                  .to(text1, 0.5, {autoAlpha: 0}, '+=1.5')
+                  .to(bg1, 0.5, {autoAlpha: 0}, '-=0.5')
+                  .to(bg2, 0.5, {autoAlpha: 1}, '-=0.5')
+                  .to(text2, 0.5, {autoAlpha: 1, top: -1, ease: Power2.easeOut})
+                  .to(text2, 0.5, {top: '-90px', ease: Power2.easeOut}, '+=3.5')
+                  .to(bg2, 0.5, {autoAlpha: 0})
+                  .to(bg3, 0.5, {autoAlpha: 1}, '-=0.5')
+                  .to(text3, 0.5, {autoAlpha: 1, top: -1, ease: Power2.easeOut})
+                  .to(text3, 0.5, {top: '-90px', ease: Power2.easeOut}, '+=3.5')
+                  .to(bg3, 0.5, {autoAlpha: 0})
+                  .to(bg4, 0.5, {autoAlpha: 1}, '-=0.5')
+                  .to(text4, 0.5, {autoAlpha: 1})
+                  .to(text5, 0.5, {autoAlpha: 1})
+                  .to(cta, 0.5, {autoAlpha: 1})
+                  .to(btn_replay, 0.1, {scale: 0.8}, '-=0.3')
+                  .to(btn_replay, 0.5, {autoAlpha: 1})
+    }
+    function restart() {
+      bannerTween.restart();
+    }
+  </script>
+</body>
+</html>
