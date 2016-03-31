@@ -13,16 +13,16 @@ body {
 }
 #banner {
   position: relative;
-  width: 298px;
-  height: 248px;
+  width: 118px;
+  height: 598px;
   border: 1px solid #000;
   background-color: #000;
   overflow: hidden;
   cursor: pointer;
 }
 #bg {
-  width: 300px;
-  height: 250px;
+  width: 120px;
+  height: 600px;
   background: url('bg.jpg') center;
   background-size: cover;
   opacity: 0.5;
@@ -39,9 +39,6 @@ body {
 }
 #text-1 {
   background: url('text-1.png') center;
-}
-#text-2 {
-  background: url('text-2.png') center;
 }
 #logo-1 {
   background: url('logo-1.png') center;
@@ -87,7 +84,4 @@ body {
   background-size: cover;
   z-index: 10;
 }
-
-
-
 
