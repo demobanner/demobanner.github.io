@@ -11,7 +11,9 @@
       var clickTag = "";
     </script>
     <script type="text/javascript">
+
       var tl = new TimelineLite();
+
       function init() {
         var logo = document.getElementById("logo"),
             awr_logo  = document.getElementById("awr-logo"),
@@ -24,8 +26,6 @@
             logo_3 = document.getElementById("logo_3"),
             logo_4 = document.getElementById("logo_4"),
             text1 = document.getElementById("text-1"),
-            text2 = document.getElementById("text-2"),
-            text3 = document.getElementById("text-3"),
             cta = document.getElementById("cta"),
             line = document.getElementById("line");
 
@@ -38,25 +38,20 @@
           .to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(text1, 0.3, {autoAlpha: 0, delay: 2})
           .to(awr_logo, 0.5, {autoAlpha: 1})
-          .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
-          .to(text2, 0.5, {left: 0, autoAlpha: 1, ease: Power2.easeOut}, '+=0.5')
-          .to(text3, 0.5, {left: 0, autoAlpha: 1, ease: Power2.easeOut}, '-=0.5')
-          .to(line, 0.5, {autoAlpha: 1}, '-=0.3')
-          .to(logo1, 0.5, {autoAlpha: 1, delay: 0.5})
-          .to(logo1, 0.5, {autoAlpha: 0, delay: 1})
-          .to(logo2, 0.5, {autoAlpha: 1})
-          .to(logo2, 0.5, {autoAlpha: 0, delay: 1})
-          .to(logo3, 0.5, {autoAlpha: 1})
-          .to(logo3, 0.5, {autoAlpha: 0, delay: 1})
-          .to(logo4, 0.5, {autoAlpha: 1})
-					.to(logo4, 0.5, {autoAlpha: 0, delay: 1})
-					.to(cta, 0.5, {top: -30});
+          .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut, onComplete:onLoop});
 
+        function onLoop() {
+          tl.to(logo1, 0.5, {autoAlpha: 1, delay: 0.5})
+            .to(logo1, 0.5, {autoAlpha: 0, delay: 1})
+            .to(logo2, 0.5, {autoAlpha: 1})
+            .to(logo2, 0.5, {autoAlpha: 0, delay: 1})
+            .to(logo3, 0.5, {autoAlpha: 1})
+            .to(logo3, 0.5, {autoAlpha: 0, delay: 1})
+            .to(logo4, 0.5, {autoAlpha: 1})
+            .to(logo4, 0.5, {autoAlpha: 0, delay: 1, onComplete:onLoop});
+        }
       }
 
-      function reloadBanner() {
-        tl.restart();
-      }
     </script>
   </head>
   <body onload="init()">
@@ -74,9 +69,6 @@
         <div id="logo-3" class="layer"></div>
         <div id="logo-4" class="layer"></div>
         <div id="cta" class="layer"></div>
-        <div id="line" class="layer"></div>
-        <div id="text-2" class="layer"></div>
-        <div id="text-3" class="layer"></div>
       </a>
     </div>
   </body>

@@ -70,20 +70,9 @@ body {
   background: url('logo_4.png');
   width: 0
 }
-#text-2 {
-  background: url('text-2.png') center;
-  left: -100px;
-}
-#text-3 {
-  background: url('text-3.png') center;
-  left: 100px;
-}
 #cta {
   background: url('cta.png') center;
   top: 50px;
-}
-#line {
-  background: url('line.png') center;
 }
 
 
