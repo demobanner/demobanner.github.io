@@ -44,6 +44,12 @@ body {
 #text-2 {
   background: url('text-2.png') center;
 }
+#text-3 {
+  background: url('text-3.png') center;
+}
+#tc {
+  background: url('tc.png') center;
+}
 #juke-text-1 {
   background: url('juke-text-1.png') center;
   left: -150px;
