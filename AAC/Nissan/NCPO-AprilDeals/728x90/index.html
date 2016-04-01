@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="ad.size" content="width=160, height=600">
+    <meta name="ad.size" content="width=728, height=90">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
     <script src="TweenMax.min.js"></script>
@@ -36,10 +36,10 @@
 
         tl.to(bg, 0.5, {autoAlpha: 1, left: 0})
           .to(logo_1, 0.3, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
-          .to(logo_2, 0.5, {width: '100%', autoAlpha: 1, ease: Power2.easeOut})
-          .to(logo_3, 0.5, {width: '100%', autoAlpha: 1, ease: Power2.easeOut}, '+=0.2')
-          .to(logo_4, 0.5, {width: '100%', autoAlpha: 1, ease: Power2.easeOut}, '+=0.2')
-          .to([logo_1, logo_2, logo_3, logo_4], 0.5, {autoAlpha: 0, delay: 2})
+          .to(logo_2, 1.8, {width: '100%', autoAlpha: 1, ease: Power2.easeOut})
+          .to(logo_3, 1.8, {width: '100%', autoAlpha: 1, ease: Power2.easeOut}, '-=1')
+          .to(logo_4, 1.8, {width: '100%', autoAlpha: 1, ease: Power2.easeOut}, '-=1')
+          .to([logo_1, logo_2, logo_3, logo_4], 0.5, {autoAlpha: 0, delay: 0.5})
           .to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(text1, 0.3, {autoAlpha: 0, delay: 4})
           .to(awr_logo, 0.5, {autoAlpha: 1})
