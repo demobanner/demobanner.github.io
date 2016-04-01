@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 232px;
+  height: 58px;
+  border: 1px solid #000000;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+#text1 {
+  background: url(text1.png) no-repeat;
+}
+#frame-2 {
+  background: url(frame-2.jpg) no-repeat;
+}
+#banner, #frame-3 {
+  background: url(frame-1.jpg) no-repeat;
+}
+#text2 {
+  background: url(text2.png) no-repeat;
+}
+#cta {
+  background: url(cta.png) no-repeat;
+}
