@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="ad.size" content="width=300,height=250">
+    <meta name="ad.size" content="width=160,height=600">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
     <script src="TweenMax.min.js"></script>
@@ -39,7 +39,6 @@
             xtCar = document.getElementById("xt-car");
             pfCar = document.getElementById("pf-car");
             muCar = document.getElementById("mu-car");
-            line = document.getElementById("line");
 
         tl.to(text1, 0.5, {autoAlpha: 1})
           .to(text1, 0.3, {autoAlpha: 0, delay: 1.5})
@@ -84,7 +83,6 @@
           .to(cta, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeOut})
           .to(logo2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '+=0.5')
           .to(logo3, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '-=0.5')
-          .to(line, 0.5, {autoAlpha: 1}, '-=0.3')
       }
     </script>
   </head>
@@ -111,7 +109,6 @@
         <div id="logo-2" class="layer"></div>
         <div id="logo-3" class="layer"></div>
         <div id="cta" class="layer"></div>
-        <div id="line" class="layer"></div>
         <div id="logo-1" class="layer"></div>
       </a>
     </div>
