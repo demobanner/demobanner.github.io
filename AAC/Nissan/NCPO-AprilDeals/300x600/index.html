@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=300, height=600">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="TweenMax.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+
+      var LOOP_TIME = 1,  // how many time the banner replays
+          loop = 0,
+          isReplay = true;  // show/hide replay button in the end
+
+      var tl = new TimelineLite();
+
+      function init() {
+        var logo = document.getElementById("logo"),
+            awr_logo  = document.getElementById("awr-logo"),
+            logo1 = document.getElementById("logo-1"),
+            logo2 = document.getElementById("logo-2"),
+            logo3 = document.getElementById("logo-3"),
+            logo4 = document.getElementById("logo-4"),
+            logo_1 = document.getElementById("logo_1"),
+            logo_2 = document.getElementById("logo_2"),
+            logo_3 = document.getElementById("logo_3"),
+            logo_4 = document.getElementById("logo_4"),
+            text1 = document.getElementById("text-1"),
+            cta = document.getElementById("cta"),
+            line = document.getElementById("line");
+
+        tl.to(bg, 0.5, {autoAlpha: 1, left: 0})
+          .to(logo_1, 0.3, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+          .to(logo_2, 0.5, {width: '100%', autoAlpha: 1, ease: Power2.easeOut})
+          .to(logo_3, 0.5, {width: '100%', autoAlpha: 1, ease: Power2.easeOut}, '+=0.2')
+          .to(logo_4, 0.5, {width: '100%', autoAlpha: 1, ease: Power2.easeOut}, '+=0.2')
+          .to([logo_1, logo_2, logo_3, logo_4], 0.5, {autoAlpha: 0, delay: 2})
+          .to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(text1, 0.3, {autoAlpha: 0, delay: 4})
+          .to(awr_logo, 0.5, {autoAlpha: 1})
+          .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+          .to(logo1, 0.5, {autoAlpha: 1, delay: 0.5})
+          .to(logo1, 0.5, {autoAlpha: 0, delay: 1})
+          .to(logo2, 0.5, {autoAlpha: 1})
+          .to(logo2, 0.5, {autoAlpha: 0, delay: 1})
+          .to(logo3, 0.5, {autoAlpha: 1})
+          .to(logo3, 0.5, {autoAlpha: 0, delay: 1})
+          .to(logo4, 0.5, {autoAlpha: 1})
+          .to(logo4, 0.5, {autoAlpha: 0, delay: 1, onComplete:onLoop});
+
+        function restart() {
+          tl.restart();
+        }
+
+        function onLoop() {
+          if ( loop < LOOP_TIME ) {
+            restart();
+            loop++ ;
+          } else if (isReplay) {
+            var btn_replay = document.getElementById('btn-replay');
+            tl.to(btn_replay, 0.5, {autoAlpha: 1})
+              .to(logo1, 0.5, {autoAlpha: 1, delay: 0.5})
+              .to(logo1, 0.5, {autoAlpha: 0, delay: 1})
+              .to(logo2, 0.5, {autoAlpha: 1})
+              .to(logo2, 0.5, {autoAlpha: 0, delay: 1})
+              .to(logo3, 0.5, {autoAlpha: 1})
+              .to(logo3, 0.5, {autoAlpha: 0, delay: 1})
+              .to(logo4, 0.5, {autoAlpha: 1})
+              .to(logo4, 0.5, {autoAlpha: 0, delay: 1, onComplete:onLoop})
+          }
+        }
+      }
+
+      function restart() {
+          tl.restart();
+      }
+
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="bg" class="layer"></div>
+        <div id="logo_1" class="layer"></div>
+        <div id="logo_3" class="layer"></div>
+        <div id="logo_2" class="layer"></div>
+        <div id="logo_4" class="layer"></div>
+        <div id="text-1" class="layer"></div>
+        <div id="awr-logo" class="layer"></div>
+        <div id="logo-1" class="layer"></div>
+        <div id="logo-2" class="layer"></div>
+        <div id="logo-3" class="layer"></div>
+        <div id="logo-4" class="layer"></div>
+        <div id="cta" class="layer"></div>
+      </a>
+      <div id="btn-replay" class="layer" onclick="restart();"></div>
+    </div>
+  </body>
+</html>

@@ -40,6 +40,9 @@ body {
 #text-1 {
   background: url('text-1.png') center;
 }
+#text-2 {
+  background: url('text-2.png') center;
+}
 #logo-1 {
   background: url('logo-1.png') center;
 }
@@ -70,21 +73,21 @@ body {
   background: url('logo_4.png');
   width: 0
 }
-#text-2 {
-  background: url('text-2.png') center;
-  left: -100px;
-}
-#text-3 {
-  background: url('text-3.png') center;
-  left: 100px;
-}
 #cta {
   background: url('cta.png') center;
   top: 50px;
 }
-#line {
-  background: url('line.png') center;
+#btn-replay {
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: inherit;
+  right: 3px;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
 }
+
 
 
 

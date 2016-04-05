@@ -16,7 +16,6 @@ a {
   width: 298px;
   height: 248px;
   border: 1px solid #000000;
-  background: #ffffff url(frame-1.jpg) no-repeat;
 }
 .click-tag {
   position: absolute;
@@ -52,7 +51,7 @@ a {
 #frame-6 {
   background: url(frame-6.jpg) no-repeat;
 }
-#frame-7 {
+#banner, #frame-7 {
   background: url(frame-1.jpg) no-repeat;
 }
 #text2 {
