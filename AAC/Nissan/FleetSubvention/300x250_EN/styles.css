@@ -42,13 +42,17 @@ body {
 #text-2 {
   background: url('text-2.png') center;
 }
-#car {
-  background: url('car.png') center;
-  -webkit-transform: scale(0.5);
-     -moz-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-       -o-transform: scale(0.5);
-          transform: scale(0.5);
+#car-1 {
+  background: url('car-1.png') center;
+}
+#car-2 {
+  background: url('car-2.png') center;
+}
+#car-3 {
+  background: url('car-3.png') center;
+}
+#car-4 {
+  background: url('car-4.png') center;
 }
 #card {
   background: url('card.png') center;
