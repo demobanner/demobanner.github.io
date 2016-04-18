@@ -30,7 +30,7 @@ body {
 }
 #logo-3 {
   background: url('logo-3.png') center;
-  top: 100px;
+  top: -100px;
 }
 #logo-4 {
   background: url('logo-4.png') center;
@@ -49,6 +49,18 @@ body {
       -ms-transform: scale(0.5);
        -o-transform: scale(0.5);
           transform: scale(0.5);
+}
+#car-1 {
+  background: url('car-1.png') center;
+}
+#car-2 {
+  background: url('car-2.png') center;
+}
+#car-3 {
+  background: url('car-3.png') center;
+}
+#car-4 {
+  background: url('car-4.png') center;
 }
 #card {
   height: 110px;

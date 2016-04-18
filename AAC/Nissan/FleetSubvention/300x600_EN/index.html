@@ -23,18 +23,27 @@
             text1 = document.getElementById("text-1"),
             text2 = document.getElementById("text-2"),
             cta = document.getElementById("cta"),
-            car = document.getElementById("car"),
+            car1 = document.getElementById("car-1"),
+            car2 = document.getElementById("car-2"),
+            car3 = document.getElementById("car-3"),
+            car4 = document.getElementById("car-4"),
             card = document.getElementById("card"),
             line = document.getElementById("line");
 
         tl.to(card, 0.5, {autoAlpha: 1, top: 0, left: 0, rotation: 0.01, ease: Power2.easeOut})
           .to(card, 0.5, {autoAlpha: 0, top: 300, left: 300, rotation: 0.01, ease: Power2.easeOut, delay: 2})
-          .to(car, 0.5, {autoAlpha: 1, scale: 1, rotation: 0.01, ease: Power2.easeOut}, '-=0.5')
-          .to(text1, 0.3, {autoAlpha: 1, delay: 0.5})
-          .to(text1, 0.3, {autoAlpha: 0, delay: 1.5})
-          .to(text2, 0.3, {autoAlpha: 1})
-          .to([text2, car], 0.3, {autoAlpha: 0, delay: 1.5})
-          .to(cta, 0.3, {autoAlpha: 1, top: 0})
+          .to(text1, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(car1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(car1, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(car2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(car2, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(car3, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(car3, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(car4, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to([car4, text1], 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(text2, 0.5, {autoAlpha: 1})
+          .to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1.5})
+          .to(cta, 0.5, {autoAlpha: 1, top: 0})
           .to(logo3, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '+=0.5')
           .to(logo4, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '-=0.5')
           .to(line, 0.5, {autoAlpha: 1}, '-=0.3')
@@ -48,7 +57,10 @@
         <div id="logo-1" class="layer"></div>
         <div id="logo-2" class="layer"></div>
         <div id="card" class="layer"></div>
-        <div id="car" class="layer"></div>
+        <div id="car-4" class="layer"></div>
+        <div id="car-3" class="layer"></div>
+        <div id="car-2" class="layer"></div>
+        <div id="car-1" class="layer"></div>
         <div id="text-1" class="layer"></div>
         <div id="text-2" class="layer"></div>
         <div id="cta" class="layer"></div>
