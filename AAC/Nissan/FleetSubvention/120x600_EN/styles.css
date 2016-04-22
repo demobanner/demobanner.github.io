@@ -42,14 +42,6 @@ body {
 #text-2 {
   background: url('text-2.png') center;
 }
-#car {
-  background: url('car.png') center;
-  -webkit-transform: scale(0.5);
-     -moz-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-       -o-transform: scale(0.5);
-          transform: scale(0.5);
-}
 #car-1 {
   background: url('car-1.png') center;
 }
@@ -71,6 +63,16 @@ body {
 #cta {
   background: url('cta.png') center;
   top: 200px;
+}
+#btn-replay {
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: inherit;
+  right: 3px;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
 }
 
 

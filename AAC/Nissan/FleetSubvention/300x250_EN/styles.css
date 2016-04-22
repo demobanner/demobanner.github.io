@@ -43,16 +43,16 @@ body {
   background: url('text-2.png') center;
 }
 #car-1 {
-  background: url('car-1.png') center;
+  background: url('car-1.jpg') center;
 }
 #car-2 {
-  background: url('car-2.png') center;
+  background: url('car-2.jpg') center;
 }
 #car-3 {
-  background: url('car-3.png') center;
+  background: url('car-3.jpg') center;
 }
 #car-4 {
-  background: url('car-4.png') center;
+  background: url('car-4.jpg') center;
 }
 #card {
   background: url('card.png') center;
@@ -65,6 +65,16 @@ body {
 }
 #line {
   background: url('line.png') center;
+}
+#btn-replay {
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: inherit;
+  right: 3px;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
 }
 
 

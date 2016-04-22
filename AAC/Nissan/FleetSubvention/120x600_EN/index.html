@@ -7,12 +7,18 @@
     <meta name="ad.size" content="width=120,height=600">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="TweenMax.min.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
     <script type="text/javascript">
       var clickTag = "";
     </script>
     <script type="text/javascript">
       var tl = new TimelineLite();
+
+      function restart() {
+          tl.restart();
+      }
 
       function init() {
         var bg = document.getElementById("bg"),
@@ -23,15 +29,16 @@
             text1 = document.getElementById("text-1"),
             text2 = document.getElementById("text-2"),
             cta = document.getElementById("cta"),
-			car1 = document.getElementById("car-1"),
+            car1 = document.getElementById("car-1"),
             car2 = document.getElementById("car-2"),
             car3 = document.getElementById("car-3"),
             car4 = document.getElementById("car-4"),
-            card = document.getElementById("card");
+            card = document.getElementById("card"),
+            btn_replay = document.getElementById("btn-replay");
 
         tl.to(card, 0.5, {autoAlpha: 1, top: 0, left: -20, rotation: 0.01, ease: Power2.easeOut})
-          .to(card, 0.5, {autoAlpha: 0, top: 120, left: 120, rotation: 0.01, ease: Power2.easeOut, delay: 2})
-		  .to(text1, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(card, 0.5, {autoAlpha: 0, top: 120, left: 120, rotation: 0.01, ease: Power2.easeOut, delay: 3})
+          .to(text1, 0.5, {autoAlpha: 1}, "-=0.5")
           .to(car1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(car1, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
           .to(car2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
@@ -44,7 +51,8 @@
           .to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1.5})
           .to(cta, 0.5, {autoAlpha: 1, top: 0})
           .to(logo3, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '+=0.5')
-          .to(logo4, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '-=0.5');
+          .to(logo4, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '-=0.5')
+          .to(btn_replay, 0.5, {autoAlpha: 1});
       }
     </script>
   </head>
@@ -64,6 +72,7 @@
         <div id="logo-3" class="layer"></div>
         <div id="logo-4" class="layer"></div>
       </a>
+      <div id="btn-replay" class="layer" onclick="restart();"></div>
     </div>
   </body>
 </html>

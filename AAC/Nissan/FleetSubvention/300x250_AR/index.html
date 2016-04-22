@@ -7,12 +7,18 @@
     <meta name="ad.size" content="width=300,height=250">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="TweenMax.min.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
     <script type="text/javascript">
       var clickTag = "";
     </script>
     <script type="text/javascript">
       var tl = new TimelineLite();
+
+      function restart() {
+          tl.restart();
+      }
 
       function init() {
         var bg = document.getElementById("bg"),
@@ -29,6 +35,7 @@
             car4 = document.getElementById("car-4"),
             card = document.getElementById("card"),
             line = document.getElementById("line");
+            btn_replay = document.getElementById("btn-replay");
 
         tl.to(card, 0.5, {autoAlpha: 1, top: 0, left: 0, rotation: 0.01, ease: Power2.easeOut})
           .to(card, 0.5, {autoAlpha: 0, top: 300, left: 250, rotation: 0.01, ease: Power2.easeOut, delay: 3})
@@ -47,6 +54,7 @@
           .to(logo3, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '+=0.5')
           .to(logo4, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '-=0.5')
           .to(line, 0.5, {autoAlpha: 1}, '-=0.3')
+          .to(btn_replay, 0.5, {autoAlpha: 1});
 
       }
     </script>
@@ -54,8 +62,7 @@
   <body onload="init()">
     <div id="banner">
       <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
-        <div id="logo-1" class="layer"></div>
-        <div id="logo-2" class="layer"></div>
+
         <div id="card" class="layer"></div>
         <div id="car-4" class="layer"></div>
         <div id="car-3" class="layer"></div>
@@ -64,10 +71,13 @@
         <div id="text-1" class="layer"></div>
         <div id="text-2" class="layer"></div>
         <div id="cta" class="layer"></div>
+        <div id="logo-1" class="layer"></div>
+        <div id="logo-2" class="layer"></div>
         <div id="logo-3" class="layer"></div>
         <div id="logo-4" class="layer"></div>
         <div id="line" class="layer"></div>
       </a>
+      <div id="btn-replay" class="layer" onclick="restart();"></div>
     </div>
   </body>
 </html>

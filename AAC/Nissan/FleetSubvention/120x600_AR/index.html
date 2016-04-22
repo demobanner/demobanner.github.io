@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=120,height=600">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+
+      function restart() {
+          tl.restart();
+      }
+
+      function init() {
+        var bg = document.getElementById("bg"),
+            logo1 = document.getElementById("logo-1"),
+            logo2 = document.getElementById("logo-2"),
+            logo3 = document.getElementById("logo-3"),
+            logo4 = document.getElementById("logo-4"),
+            text1 = document.getElementById("text-1"),
+            text2 = document.getElementById("text-2"),
+            cta = document.getElementById("cta"),
+			      car1 = document.getElementById("car-1"),
+            car2 = document.getElementById("car-2"),
+            car3 = document.getElementById("car-3"),
+            car4 = document.getElementById("car-4"),
+            card = document.getElementById("card"),
+            btn_replay = document.getElementById("btn-replay");
+
+        tl.to(card, 0.5, {autoAlpha: 1, top: 0, left: -20, rotation: 0.01, ease: Power2.easeOut})
+          .to(card, 0.5, {autoAlpha: 0, top: 120, left: 120, rotation: 0.01, ease: Power2.easeOut, delay: 3})
+		  .to(text1, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(car1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(car1, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(car2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(car2, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(car3, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(car3, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(car4, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to([car4, text1], 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1})
+          .to(text2, 0.5, {autoAlpha: 1})
+          .to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeIn, delay: 1.5})
+          .to(cta, 0.5, {autoAlpha: 1, top: 0})
+          .to(logo3, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '+=0.5')
+          .to(logo4, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, '-=0.5')
+          .to(btn_replay, 0.5, {autoAlpha: 1});
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="logo-1" class="layer"></div>
+        <div id="logo-2" class="layer"></div>
+        <div id="card" class="layer"></div>
+        <div id="car-4" class="layer"></div>
+        <div id="car-3" class="layer"></div>
+        <div id="car-2" class="layer"></div>
+        <div id="car-1" class="layer"></div>
+        <div id="text-1" class="layer"></div>
+        <div id="text-2" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="logo-3" class="layer"></div>
+        <div id="logo-4" class="layer"></div>
+      </a>
+      <div id="btn-replay" class="layer" onclick="restart();"></div>
+    </div>
+  </body>
+</html>
