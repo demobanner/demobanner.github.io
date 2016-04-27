@@ -31,7 +31,8 @@
             text4_160x600 = document.getElementById("text-4-160x600"),
             text5_160x600 = document.getElementById("text-5-160x600"),
             cta_160x600 = document.getElementById("cta-160x600"),
-            car_160x600 = document.getElementById("car-160x600");
+            car_160x600 = document.getElementById("car-160x600"),
+            car2_160x600 = document.getElementById("car-2-160x600"),
             btn_replay_160x600 = document.getElementById("btn-replay-160x600");
 
         tl_160x600.to(text1_160x600, 0.5, {height: 600, ease: Power2.easeOut})
@@ -43,8 +44,10 @@
                   .to(text4_160x600, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
                   .to(text4_160x600, 0.5, {left: -160, ease: Power2.easeOut, delay: 4})
                   .to(car_160x600, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, "-=0.5")
-                  .to(car_160x600, 0.5, {scale: 2.5, ease: Power2.easeOut, delay: 3})
-                  .to(car_160x600, 0.5, {autoAlpha: 0})
+                  .to(car2_160x600, 0.1, {autoAlpha: 1, delay:2})
+                  .to(car_160x600, 0.5, {autoAlpha: 0, scale: 2.5, ease: Power2.easeOut})
+                  .to(car2_160x600, 0.5, {scale: 1, ease: Power2.easeOut}, "-=0.5")
+                  .to(car2_160x600, 0.5, {autoAlpha: 0, delay: 1})
                   .to(text5_160x600, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.3')
                   .to(text5_160x600, 0.5, {left: -160, ease: Power2.easeOut, delay: 3})
                   .to(logo_160x600, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut}, '-=0.3')
@@ -58,7 +61,7 @@
             text4_320x600 = document.getElementById("text-4-320x600"),
             text5_320x600 = document.getElementById("text-5-320x600"),
             cta_320x600 = document.getElementById("cta-320x600"),
-            car_320x600 = document.getElementById("car-320x600");
+            car_320x600 = document.getElementById("car-320x600"),
             btn_replay_320x600 = document.getElementById("btn-replay-320x600");
 
         tl_320x600.to(text1_320x600, 0.5, {height: 600, ease: Power2.easeOut})
@@ -93,6 +96,7 @@
             <div id="text-3-160x600" class="layer-160x600"></div>
             <div id="text-4-160x600" class="layer-160x600"></div>
             <div id="text-5-160x600" class="layer-160x600"></div>
+            <div id="car-2-160x600" class="layer-160x600"></div>
             <div id="car-160x600" class="layer-160x600"></div>
             <div id="logo-160x600" class="layer-160x600"></div>
             <div id="cta-160x600" class="layer-160x600"></div>
