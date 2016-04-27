@@ -29,6 +29,7 @@
             text5 = document.getElementById("text-5"),
             cta = document.getElementById("cta"),
             car = document.getElementById("car"),
+						car2 = document.getElementById("car-2"),
             btn_replay = document.getElementById("btn-replay");
 
         tl.to(text1, 0.5, {height: 600, ease: Power2.easeOut})
@@ -40,8 +41,10 @@
           .to(text4, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
           .to(text4, 0.5, {left: -120, ease: Power2.easeOut, delay: 4})
           .to(car, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, "-=0.5")
-          .to(car, 0.5, {scale: 2.5, ease: Power2.easeOut, delay: 3})
-          .to(car, 0.5, {autoAlpha: 0})
+					.to(car2, 0.1, {autoAlpha: 1, delay:2})
+          .to(car, 0.5, {autoAlpha: 0, scale: 2.5, ease: Power2.easeOut})
+					.to(car2, 0.5, {scale: 1, ease: Power2.easeOut}, "-=0.5")
+					.to(car2, 0.5, {autoAlpha: 0, delay: 1})
           .to(text5, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.3')
           .to(text5, 0.5, {left: -120, ease: Power2.easeOut, delay: 3})
           .to(logo, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut}, '-=0.3')
@@ -59,6 +62,7 @@
         <div id="text-3" class="layer"></div>
         <div id="text-4" class="layer"></div>
         <div id="text-5" class="layer"></div>
+        <div id="car-2" class="layer"></div>
         <div id="car" class="layer"></div>
         <div id="logo" class="layer"></div>
         <div id="cta" class="layer"></div>
