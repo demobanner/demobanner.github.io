@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta data-template-name="Template_H5T_expanding-728x90-image">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script type="text/javascript">
+
+      var tl_728x90 = new TimelineLite();
+      var tl_728x180 = new TimelineLite();
+
+      function restart_728x90() {
+        tl_728x90.restart();
+      }
+
+      function restart_728x180() {
+        tl_728x180.restart();
+      }
+
+      function initTween() {
+
+        var logo_728x90 = document.getElementById("logo-728x90"),
+            text1_728x90 = document.getElementById("text-1-728x90"),
+            text2_728x90 = document.getElementById("text-2-728x90"),
+            text3_728x90 = document.getElementById("text-3-728x90"),
+            text4_728x90 = document.getElementById("text-4-728x90"),
+            text5_728x90 = document.getElementById("text-5-728x90"),
+            cta_728x90 = document.getElementById("cta-728x90"),
+            car_728x90 = document.getElementById("car-728x90"),
+            car2_728x90 = document.getElementById("car-2-728x90"),
+            btn_replay_728x90 = document.getElementById("btn-replay-728x90");
+
+        tl_728x90.to(text1_728x90, 0.5, {height: 90, ease: Power2.easeOut})
+                .to(text1_728x90, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                .to(text2_728x90, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
+                .to(text2_728x90, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                .to(text3_728x90, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
+                .to(text3_728x90, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                .to(text4_728x90, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
+                .to(text4_728x90, 0.5, {left: -728, ease: Power2.easeOut, delay: 4})
+                .to(car_728x90, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, "-=0.5")
+                .to(car2_728x90, 0.1, {autoAlpha: 1, delay:2})
+                .to(car_728x90, 0.5, {autoAlpha: 0, scale: 2.5, ease: Power2.easeOut})
+                .to(car2_728x90, 0.5, {scale: 1, top: -90, ease: Power2.easeOut}, "-=0.5")
+                .to(car2_728x90, 0.5, {autoAlpha: 0, delay: 1})
+                .to(car_728x90, 0.5, {autoAlpha: 0})
+                .to(text5_728x90, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.3')
+                .to(text5_728x90, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                .to(logo_728x90, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut}, '-=0.3')
+                .to(cta_728x90, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+                .to(btn_replay_728x90, 0.3, {autoAlpha: 1});
+
+
+        var logo_728x180 = document.getElementById("logo-728x180"),
+            text1_728x180 = document.getElementById("text-1-728x180"),
+            text2_728x180 = document.getElementById("text-2-728x180"),
+            text3_728x180 = document.getElementById("text-3-728x180"),
+            text4_728x180 = document.getElementById("text-4-728x180"),
+            text5_728x180 = document.getElementById("text-5-728x180"),
+            cta_728x180 = document.getElementById("cta-728x180"),
+            car_728x180 = document.getElementById("car-728x180"),
+            btn_replay_728x180 = document.getElementById("btn-replay-728x180");
+
+        tl_728x180.to(text1_728x180, 0.5, {height: 180, ease: Power2.easeOut})
+                  .to(text1_728x180, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                  .to(text2_728x180, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
+                  .to(text2_728x180, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                  .to(text3_728x180, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
+                  .to(text3_728x180, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                  .to(text4_728x180, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut}, "-=0.5")
+                  .to(text4_728x180, 0.5, {left: -728, ease: Power2.easeOut, delay: 4})
+                  .to(car_728x180, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, "-=0.5")
+                  .to(car_728x180, 0.5, {scale: 2.5, ease: Power2.easeOut, delay: 3})
+                  .to(car_728x180, 0.5, {autoAlpha: 0})
+                  .to(text5_728x180, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.3')
+                  .to(text5_728x180, 0.5, {left: -728, ease: Power2.easeOut, delay: 3})
+                  .to(logo_728x180, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut}, '-=0.3')
+                  .to(cta_728x180, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+                  .to(btn_replay_728x180, 0.3, {autoAlpha: 1});
+
+      }
+    </script>
+</head>
+<body onload="initTween()">
+    <div id="main-container">
+      <!-- Collapsed Conent -->
+      <div id="collapsed-state">
+        <div id="collapsed-exit"></div>
+        <div class="feature-collapsed" id="feature-collapsed">
+          <div id="banner-728x90">
+            <div id="text-1-728x90" class="layer-728x90"></div>
+            <div id="text-2-728x90" class="layer-728x90"></div>
+            <div id="text-3-728x90" class="layer-728x90"></div>
+            <div id="text-4-728x90" class="layer-728x90"></div>
+            <div id="text-5-728x90" class="layer-728x90"></div>
+            <div id="car-2-728x90" class="layer-728x90"></div>
+            <div id="car-728x90" class="layer-728x90"></div>
+            <div id="logo-728x90" class="layer-728x90"></div>
+            <div id="cta-728x90" class="layer-728x90"></div>
+            <div id="btn-replay-728x90" class="layer-728x90" onclick="restart_728x90();"></div>
+          </div>
+        </div>
+        <div id="expand-button" class="button">
+          Expand
+        </div>
+      </div>
+
+      <!-- Expand Content -->
+      <div id="expanded-state">
+        <div id="expanded-exit"></div>
+        <div id="collapse-button" class="button">X Close</div>
+        <div class="feature-expanded" id="feature-expanded">
+          <div id="banner-728x180">
+            <div id="text-1-728x180" class="layer-728x180"></div>
+            <div id="text-2-728x180" class="layer-728x180"></div>
+            <div id="text-3-728x180" class="layer-728x180"></div>
+            <div id="text-4-728x180" class="layer-728x180"></div>
+            <div id="text-5-728x180" class="layer-728x180"></div>
+            <div id="car-728x180" class="layer-728x180"></div>
+            <div id="logo-728x180" class="layer-728x180"></div>
+            <div id="cta-728x180" class="layer-728x180"></div>
+            <div id="btn-replay-728x180" class="layer-728x180" onclick="restart_728x180();"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="logic.js"></script>
+</body>
+</html>

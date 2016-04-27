@@ -1,0 +1,256 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #333;
+}
+
+
+#main-container {
+  position: absolute;
+  width: 728px;
+  height: 180px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+#collapsed-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 728px;
+  height: 90px;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  background-color: #EEE;
+  box-sizing: border-box;
+}
+
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 728px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  background-color: #F1F1F1;
+  z-index: 200;
+  display: none;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+#collapsed-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+.button {
+  position: absolute;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+#expand-button {
+  top: 5px;
+  left: 5px;
+  display: none;
+}
+
+#collapse-button {
+  top: 5px;
+  left: 5px;
+  display: none;
+}
+
+.feature-collapsed {
+  width: 728px;
+  height: 90px;
+  position: absolute;
+}
+
+.feature-expanded {
+  width: 728px;
+  height: 180px;
+  position: absolute;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
+
+/*-- Collapsed Panel --*/
+
+.layer-728x90 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 726px;
+  height: 88px;
+}
+#banner-728x90 {
+  position: relative;
+  width: 726px;
+  height: 88px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#text-1-728x90 {
+  background: url('728x90-text-1.png') top center;
+  height: 0;
+  opacity: 1;
+}
+#text-2-728x90 {
+  left: 728px;
+  background: url('728x90-text-2.png') center;
+}
+#text-3-728x90 {
+  left: 728px;
+  background: url('728x90-text-3.png') center;
+}
+#text-4-728x90 {
+  left: 728px;
+  background: url('728x90-text-4.png') center;
+}
+#text-5-728x90 {
+  background: url('728x90-text-5.png') center;
+}
+#cta-728x90 {
+  background: url('728x90-cta.png') center;
+}
+#car-728x90 {
+  -webkit-transform: scale(0.1);
+     -moz-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+       -o-transform: scale(0.1);
+          transform: scale(0.1);
+  background: url('728x90-car.jpg') center;
+}
+#car-2-728x90{
+  height: 300px;
+  top: -100px;
+  -webkit-transform: scale(0.4);
+     -moz-transform: scale(0.4);
+      -ms-transform: scale(0.4);
+       -o-transform: scale(0.4);
+          transform: scale(0.4);
+  background: url('car2.jpg') center;
+}
+#logo-728x90 {
+  top: 250px;
+  background: url('728x90-logo.png') center;
+}
+#btn-replay-728x90 {
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: inherit;
+  right: 3px;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 999;
+}
+
+/*-- Expanded Panel --*/
+
+.layer-728x180 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 726px;
+  height: 178px;
+}
+#banner-728x180 {
+  position: relative;
+  width: 726px;
+  height: 178px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#text-1-728x180 {
+  background: url('728x180-text-1.png') top center;
+  height: 0;
+  opacity: 1;
+}
+#text-2-728x180 {
+  left: 728px;
+  background: url('728x180-text-2.png') center;
+}
+#text-3-728x180 {
+  left: 728px;
+  background: url('728x180-text-3.png') center;
+}
+#text-4-728x180 {
+  left: 728px;
+  background: url('728x180-text-4.png') center;
+}
+#text-5-728x180 {
+  background: url('728x180-text-5.png') center;
+}
+#cta-728x180 {
+  background: url('728x180-cta.png') center;
+}
+#car-728x180 {
+  -webkit-transform: scale(0.1);
+     -moz-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+       -o-transform: scale(0.1);
+          transform: scale(0.1);
+  background: url('728x180-car.jpg') center;
+}
+#logo-728x180 {
+  top: 250px;
+  background: url('728x180-logo.png') center;
+}
+#btn-replay-728x180 {
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: inherit;
+  right: 3px;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 999;
+}
