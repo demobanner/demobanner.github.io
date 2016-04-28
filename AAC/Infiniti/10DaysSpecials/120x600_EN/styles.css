@@ -8,13 +8,13 @@ body {
   left: 0;
   top: 0;
   opacity: 0;
-  width: 298px;
-  height: 248px;
+  width: 118px;
+  height: 598px;
 }
 #banner {
   position: relative;
-  width: 298px;
-  height: 248px;
+  width: 118px;
+  height: 598px;
   border: 1px solid #000;
   background-color: #fff;
   overflow: hidden;
@@ -49,5 +49,4 @@ body {
   background-size: cover;
   z-index: 10;
 }
-
 
