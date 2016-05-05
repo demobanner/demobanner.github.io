@@ -53,8 +53,6 @@ addListeners = function (){
 	expandBtn.addEventListener('click', onExpandHandler, false);
 	hideBtn.addEventListener('click', onHideHandler, false);
 	exitBtn.addEventListener('click', onExitHandler, false);
-  cta.addEventListener('click', onCtaHandler, false);
-  cta1.addEventListener('click', onCta1Handler, false);
 }
 
 onExpandHandler = function(e){
@@ -64,15 +62,7 @@ onExpandHandler = function(e){
 }
 
 onExitHandler = function(e){
-	Enabler.exit('mainExit', 'http://www.pandora.net/en-ae/');
-}
-
-onCtaHandler = function(e){
-  Enabler.exit('mainExit1', 'http://www.pandora.net/en-ae/explore/collections/essence');
-}
-
-onCta1Handler = function(e){
-  Enabler.exit('mainExit2', 'http://www.pandora.net/en-ae/explore/collections/essence');
+	Enabler.exit('mainExit', 'http://www.pandora.net/en-ae/explore/collections/essence');
 }
 
 onHideHandler = function(e){

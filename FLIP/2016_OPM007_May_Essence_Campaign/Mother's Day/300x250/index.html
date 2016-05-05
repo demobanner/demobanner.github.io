@@ -16,19 +16,11 @@
       }
     }
     function bgExitHandler(e) {
-      Enabler.exit('mainExit','http://www.pandora.net/en-ae/');
-    }
-    function bgExitHandler1(e) {
-      Enabler.exit('mainExit1','http://www.pandora.net/en-ae/explore/collections/essence');
-    }
-    function bgExitHandler2(e) {
-      Enabler.exit('mainExit2','http://www.pandora.net/en-ae/explore/collections/essence');
+      Enabler.exit('mainExit','http://www.pandora.net/en-ae/explore/collections/essence');
     }
 
     function init() {
       document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
-			document.getElementById('cta').addEventListener('click', bgExitHandler1, false);
-			document.getElementById('cta1').addEventListener('click', bgExitHandler2, false);
       var text1    = document.getElementById('text1'),
         charm1   = document.getElementById('charm1'),
         charm2   = document.getElementById('charm2'),
@@ -67,9 +59,9 @@
       <div class="layer" id="bracelet"></div>
       <div class="layer" id="text2"></div>
       <div class="layer" id="logo"></div>
+      <div class="layer" id="cta"></div>
+      <div class="layer" id="cta1"></div>
     </a>
-    <div class="layer" id="cta"></div>
-    <div class="layer" id="cta1"></div>
   </div>
 </body>
 </html>
