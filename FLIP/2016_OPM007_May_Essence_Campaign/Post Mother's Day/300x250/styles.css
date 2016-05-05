@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #000000;
+  background: #ffffff url(bg.jpg) no-repeat;
+  cursor: pointer;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+#text1 {
+  background: url(text1.png) no-repeat;
+  top: -20px;
+}
+#charm1 {
+  left: -50px;
+  background: url(charm1.png) no-repeat;
+}
+#charm2 {
+  background: url(charm2.png) no-repeat;
+}
+#charm3 {
+  left: 50px;
+  background: url(charm3.png) no-repeat;
+}
+#bracelet {
+  background: url(bracelet.png) no-repeat;
+  transform: scale(1.5);
+}
+#text2 {
+  background: url(text2.png) no-repeat;
+  top: -10px;
+}
+#cta {
+  top: 214px;
+  background: url(cta.png) no-repeat;
+  left: 33px;
+  width: 175px;
+  height: 22px;
+}
+#cta1 {
+  top: 223px;
+  background: url(cta1.png) no-repeat;
+  left: 33px;
+  width: 175px;
+  height: 22px;
+}
+#logo {
+  background: url(logo.png) no-repeat;
+}
+#mainExit1 {
+  z-index: 10;
+}
