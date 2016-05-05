@@ -1,0 +1,98 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#banner {
+  position: relative;
+  width: 158px;
+  height: 598px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bg {
+  width: 160px;
+  height: 600px;
+  opacity: 1;
+  background: url('bg.jpg') center;
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#bg-2 {
+  top: 222px;
+  left: 37px;
+  right: 80px;
+  height: 150px;
+  background: url('bg-2.png') center;
+  width: 83px;
+  border-radius: 7px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,1);
+  box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,1);
+}
+#bg-3, #cta, #text-1, #logo, #bg-4 {
+  width: 160px;
+  height: 600px;
+}
+#bg-3 {
+  left: -160px;
+  background: url('bg-3.png') center;
+}
+#bg-4 {
+  background: url('bg-4.png') center;
+}
+#cta {
+  background: url('cta.png') center;
+}
+#text-1 {
+  top: 100px;
+  left: -300px;
+  background: url('text-1.png') center;
+}
+#logo {
+  background: url('logo.png') center;
+}
+#bg-card {
+  width: 160px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background: url('bg-card.jpg') center;
+}
+#bg-card1 {
+  width: 160px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background: url('bg-card1.jpg') center;
+}
+#liberty-left {
+  top: 50%;
+  left: 50%;
+  margin-left: -45px;
+  margin-top: -75px;
+  width: 87px;
+  height: 150px;
+  background: url('statue.png') center;
+}
+#liberty-right {
+  top: 50%;
+  left: 50%;
+  margin-left: -41px;
+  margin-top: -75px;
+  width: 87px;
+  height: 150px;
+  background: url('statue.png') center;
+}
