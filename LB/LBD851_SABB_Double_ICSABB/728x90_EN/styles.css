@@ -31,7 +31,7 @@ body {
 }
 #bg-2 {
   top: 2px;
-  left: 323px;
+  left: 349px;
   right: 374px;
   height: 80px;
   background: url('bg-2.png') center;
@@ -47,7 +47,7 @@ body {
   height: 90px;
 }
 #bg-3 {
-  left: -300px;
+  left: -728px;
   background: url('bg-3.png') center;
 }
 #bg-4 {
@@ -75,7 +75,7 @@ body {
 #liberty-left {
   top: 50%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -50px;
   margin-top: -40px;
   width: 87px;
   height: 80px;
@@ -84,7 +84,7 @@ body {
 #liberty-right {
   top: 50%;
   left: 50%;
-  margin-left: -76px;
+  margin-left: -50px;
   margin-top: -40px;
   width: 87px;
   height: 80px;

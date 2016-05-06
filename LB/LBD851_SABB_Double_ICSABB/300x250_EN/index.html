@@ -7,9 +7,9 @@
     <meta name="ad.size" content="width=300,height=250">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+		<script src="TweenMax.min.js"></script>
     <script type="text/javascript">
-      var clickTag = "";
+      var clickTag = "https://google.com";
     </script>
     <script type="text/javascript">
       var tl = new TimelineLite();
@@ -22,9 +22,7 @@
         var bg = document.getElementById("bg"),
             bg2 = document.getElementById("bg-2"),
             bg3 = document.getElementById("bg-3"),
-            
             bgCard = document.getElementById("bg-card"),
-            liberty = document.getElementById("liberty"),
             liberty_left = document.getElementById("liberty-left"),
             liberty_right = document.getElementById("liberty-right"),
             text1 = document.getElementById("text-1"),
@@ -35,7 +33,7 @@
           .to([liberty_right], 0.3, {autoAlpha: 1, ease: Power2.easeIn})
           .to(bg2, 0.3, {autoAlpha: 1, ease: Power2.easeIn}, "-=0.3")
           /*.to(bg4, 0.3, {autoAlpha: 1, ease: Power2.easeIn}, "-=0.3")*/
-          .to([liberty_left], 1.5, {autoAlpha: 1, left: 91, ease: Power2.easeOut, delay:1})
+          .to([liberty_left], 1.5, {autoAlpha: 1, left: 88, ease: Power2.easeOut, delay:1})
           /*.to(bg4, 0.1, {autoAlpha: 0, ease: Power2.easeOut}, "-=1.7")*/
           .to([liberty_right], 1.5, {autoAlpha: 1, left: 217, ease: Power2.easeOut}, "-=1.5")
           /*.to(bg2, 0.1, {autoAlpha: 1, ease: Power2.easeOut}, "-=1.7")*/
