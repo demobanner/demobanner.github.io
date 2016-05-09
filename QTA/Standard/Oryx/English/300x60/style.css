@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+a {
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 298px;
+  height: 58px;
+  border: 1px solid #999999;
+  background: white;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 60px;
+  visibility: hidden;
+  opacity: 0;
+}
+#bg {
+  background: url(images/bg.jpg) no-repeat;
+  width: 300px;
+  height: 60px;
+}
+#text {
+  background: url(images/text.png) no-repeat;
+}
+#cta {
+  background: url(images/cta.png) no-repeat;
+}
+#logo {
+  background: url(images/logo.png) no-repeat;
+}
