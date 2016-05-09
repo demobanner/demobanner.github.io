@@ -66,8 +66,8 @@ body {
 }
 #bg-card {
   width: 300px;
-  height: 600px;
-  top: 0;
+  height: 160px;
+  top: 220px;
   left: 0;
   background: url('bg-card.jpg') center;
 }

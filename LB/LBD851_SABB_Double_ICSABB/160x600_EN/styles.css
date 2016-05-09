@@ -66,10 +66,10 @@ body {
 }
 #bg-card {
   width: 160px;
-  height: 600px;
-  top: 0;
+  height: 160px;
+  top: 220px;
   left: 0;
-  background: url('bg-card.jpg') center;
+  background: url('bg-card.jpg') no-repeat center;
 }
 #bg-card1 {
   width: 160px;
@@ -82,17 +82,17 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -41px;
-  margin-top: -75px;
+  margin-top: -76px;
   width: 87px;
-  height: 150px;
+  height: 151px;
   background: url('statue.png') center;
 }
 #liberty-right {
   top: 50%;
   left: 50%;
   margin-left: -41px;
-  margin-top: -75px;
+  margin-top: -76px;
   width: 87px;
-  height: 150px;
+  height: 151px;
   background: url('statue.png') center;
 }

@@ -30,19 +30,9 @@ body {
           transform: scale(1.2);
 }
 #bg-2 {
-  top: 233px;
-  left: 25px;
-  right: 80px;
-  height: 120px;
   background: url('bg-2.png') center;
-  width: 68px;
-  border-radius: 7px;
-  border: 2px solid #fff;
-  -webkit-box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,1);
-  -moz-box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,1);
-  box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,1);
 }
-#bg-3, #cta, #text-1, #logo, #bg-4 {
+#bg-3, #cta, #text-1, #logo, #bg-4, #bg-2 {
   width: 120px;
   height: 600px;
 }
@@ -82,7 +72,7 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -40px;
-  margin-top: -64px;
+  margin-top: -63px;
   width: 87px;
   height: 128px;
   background: url('statue.png') center;
@@ -91,7 +81,7 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -40px;
-  margin-top: -64px;
+  margin-top: -63px;
   width: 87px;
   height: 128px;
   background: url('statue.png') center;
