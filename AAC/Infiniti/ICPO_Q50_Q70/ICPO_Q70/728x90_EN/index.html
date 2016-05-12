@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=728,height=90">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+
+      function restart() {
+          tl.restart();
+      }
+
+      function init() {
+        var text1 = document.getElementById("text-1"),
+            text2 = document.getElementById("text-2"),
+            car = document.getElementById("car"),
+            gradient1 = document.getElementById("gradient-1"),
+            gradient2 = document.getElementById("gradient-2"),
+            gradient3 = document.getElementById("gradient-3"),
+            sub1 = document.getElementById("sub-1"),
+            sub2 = document.getElementById("sub-2"),
+            sub3 = document.getElementById("sub-3"),
+            sub4 = document.getElementById("sub-4"),
+            sub5 = document.getElementById("sub-5"),
+            sub6 = document.getElementById("sub-6"),
+            logo = document.getElementById("logo"),
+            cta = document.getElementById("cta");
+
+
+        tl.to(gradient1, 2, {autoAlpha: 1, top: 90, ease: Power2.easeOut})
+          .to(text1, 1, {autoAlpha: 0, left: -300, ease: Power2.easeOut, delay: 1})
+          .to(car, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(text2, 0.1, {autoAlpha: 1})
+          .to([gradient2, gradient3], 0.1, {autoAlpha: 1, ease: Power2.easeOut}, "-=0.2")
+          .to(gradient2, 3, {top: 90, ease: Power2.easeOut})
+          .to(gradient3, 3, {left: 250, ease: Power2.easeOut}, "-=2.75")
+          .to(sub1, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(sub1, 0.3, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(sub2, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(sub2, 0.3, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(sub3, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(sub3, 0.3, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(sub4, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(sub4, 0.3, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(sub5, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(sub5, 0.3, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(sub6, 0.3, {autoAlpha: 1, ease: Power2.easeOut})
+          .to([car, gradient2, gradient3, sub6, text2], 0.3, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(logo, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+          .to(cta, 0.3, {autoAlpha: 1, ease: Power2.easeOut, delay: 0.5});
+
+
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="text-1" class="layer"></div>
+        <div id="gradient-1" class="layer"></div>
+        <div id="text-2" class="layer"></div>
+        <div id="gradient-2" class="layer"></div>
+        <div id="gradient-3" class="layer"></div>
+        <div id="car" class="layer"></div>
+        <div id="sub-1" class="layer"></div>
+        <div id="sub-2" class="layer"></div>
+        <div id="sub-3" class="layer"></div>
+        <div id="sub-4" class="layer"></div>
+        <div id="sub-5" class="layer"></div>
+        <div id="sub-6" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="logo" class="layer"></div>
+      </a>
+    </div>
+  </body>
+</html>
