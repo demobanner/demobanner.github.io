@@ -1,0 +1,69 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#banner {
+  position: relative;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bg {
+  opacity: 1;
+  background: url('bg.jpg') center;
+}
+#logo {
+  opacity: 1;
+  background: url('logo.png') center;
+}
+#f1-image{
+  background: url('f1_image.png') center;
+  left: -20px;
+}
+#f1-text{
+  background: url('f1_text.png') center;
+  left: 20px;
+}
+#f1-cta{
+  background: url('f1_cta.png') center;
+  top: 20px;
+}
+
+#f2-line1{
+  background: url('f2_line1.png') center;
+}
+#f2-line2{
+  left: -300px;
+  opacity: 1;
+  background: url('f2_line2.png') center;
+}
+#f2-text1{
+  background: url('f2_text1.png') center;
+  left: 20px;
+}
+#f2-text2{
+  background: url('f2_text2.png') center;
+  left: -20px;
+}
+#f2-text3{
+  background: url('f2_text3.png') center;
+}
+#f2-text4{
+  background: url('f2_text4.png') center;
+}
+#f2-cta{
+  background: url('f2_cta.png') center;
+  top: 20px;
+}
