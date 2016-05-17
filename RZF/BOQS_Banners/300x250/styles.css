@@ -16,13 +16,9 @@ body {
   width: 298px;
   height: 248px;
   border: 1px solid #000;
-  background-color: #fff;
+  background: #fff url('bg.jpg') center;
   overflow: hidden;
   cursor: pointer;
-}
-#bg {
-  opacity: 1;
-  background: url('bg.jpg') center;
 }
 #logo {
   opacity: 1;

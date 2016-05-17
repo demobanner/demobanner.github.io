@@ -20,8 +20,7 @@
       }
 
       function init() {
-        var bg = document.getElementById("bg"),
-            logo = document.getElementById("logo"),
+        var logo = document.getElementById("logo"),
             f1_image = document.getElementById("f1-image"),
             f1_text = document.getElementById("f1-text"),
             f1_cta = document.getElementById("f1-cta"),
@@ -37,7 +36,7 @@
         tl.to(f1_image, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
           .to(f1_text, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
           .to(f1_cta, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
-          .to([bg, f1_image, f1_text, f1_cta], 0.2, {autoAlpha: 0}, "+=3")
+          .to([f1_image, f1_text, f1_cta], 0.2, {autoAlpha: 0}, "+=2")
           .to(f2_image, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
           .to(f2_line, 0.2, {autoAlpha: 1}, "-=0.2")
           .to([f2_text1, f2_text2], 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut},"-=0.2")
@@ -51,7 +50,6 @@
   <body onload="init()">
     <div id="banner">
       <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank" style="display:inline-block">
-        <div id="bg" class="layer"></div>
         <div id="logo" class="layer"></div>
         <div id="f1-image" class="layer"></div>
         <div id="f1-text" class="layer"></div>

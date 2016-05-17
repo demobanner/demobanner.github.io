@@ -19,7 +19,7 @@ body {
   height: 50px;
   background: url(f1_bg.jpg);
 }
-  #f1_img, #f2_line, #f1_text, #f1_cta, #f2_bg, #f2_line, #f2_text1, #f2_text2, #f2_text3, #f2_cta {
+  #f1_img, #f2_line, #f1_text, #f1_cta, #f2_line, #f2_text1, #f2_text2, #f2_text3, #f2_cta {
     position: absolute;
     left: 0;
     top: 0;
@@ -58,9 +58,7 @@ body {
   #f1_cta{
     background: url(f1_cta.png);
     top: 20px;
-  }
-  #f2_bg{
-    background: url(f2_bg.jpg);
+
   }
   #f2_line{
     background: url(f2_line.png);
@@ -79,4 +77,5 @@ body {
   #f2_cta{
     background: url(f2_cta.png);
     top: 20px;
+    
   }

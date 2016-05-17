@@ -18,7 +18,6 @@
                 f1_text = document.getElementById('f1_text'),
                 f1_cta = document.getElementById('f1_cta'),
                 f1_logo = document.getElementById('f1_logo'),
-                f2_bg = document.getElementById('f2_bg'),
                 f2_line = document.getElementById('f2_line'),
                 f2_cta = document.getElementById('f2_cta'),
                 f2_text1 = document.getElementById('f2_text1'),
@@ -31,7 +30,7 @@
                 tl.to(f1_img, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut})
                   .to(f1_text, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut})
                   .to(f1_cta, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeOut},"+=0.2")
-                  .to(f2_bg, 0.5, {autoAlpha: 1}, "+=3")
+                  .to([f1_img,f1_text,f1_cta], 0.5, {autoAlpha: 0}, "+=2")
                   .to(f2_line, 0.2, {autoAlpha: 1})
                   .to([f2_text1,f2_text2], 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut},"-=0.2")
                   .to(f2_cta, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeOut})
@@ -48,7 +47,6 @@
             <div id="f1_img"></div>
             <div id="f1_text"></div>
             <div id="f1_cta"></div>
-            <div id="f2_bg"></div>
             <div id="f2_line"></div>
             <div id="f2_cta"></div>
             <div id="f2_text1"></div>
