@@ -32,14 +32,14 @@ body {
 }
 #gradient-1 {
   opacity: 1;
-  background: url('gradient.png') center;
-}
-#gradient-2 {
-  top: -20px;
   background: url('gradient-1.png') center;
 }
-#gradient-3 {
+#gradient-2 {
+  top: -49px;
   background: url('gradient-2.png') center;
+}
+#gradient-3 {  
+  background: url('gradient-3.png') center;
 }
 #sub-1 {
   background: url('sub-1.png') center;
@@ -60,7 +60,7 @@ body {
   background: url('sub-6.png') center;
 }
 #logo {
-  top: 90px;
+  top: 100px;
   background: url('logo.png') center;
 }
 #cta {
