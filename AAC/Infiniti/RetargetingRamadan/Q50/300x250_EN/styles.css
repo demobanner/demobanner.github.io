@@ -21,18 +21,14 @@ body {
   cursor: pointer;
 }
 #bg {
-  width: 330px;
-  height: 275px;
   background: url('bg.jpg') center;
   background-size: cover;
   opacity: 1;
-  left: -15px;
-  top: -12px;
-  -webkit-transform: scale(0.9);
-     -moz-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-       -o-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+       -o-transform: scale(0.8);
+          transform: scale(0.8);
 }
 #logo {
   opacity: 1;
@@ -56,6 +52,9 @@ body {
 }
 #sub-4 {
   background: url('sub-4.png') center;
+}
+#sub-5 {
+  background: url('sub-5.png') center;
 }
 #cta {
   background: url('cta.png') center;

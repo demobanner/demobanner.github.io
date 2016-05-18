@@ -20,12 +20,13 @@
             sub2 = document.getElementById("sub-2"),
             sub3 = document.getElementById("sub-3"),
             sub4 = document.getElementById("sub-4"),
+            sub5 = document.getElementById("sub-5"),
             rate = document.getElementById("rate"),
             tc = document.getElementById("tc"),
             cta = document.getElementById("cta"),
             reload = document.getElementById("reload");
 
-        tl.to(bg, 1, {scale: 1, rotation: 0.01, autoAlpha: 1})
+        tl.to(bg, 1, {scale: 1})
           .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=1')
           .to(rate, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
@@ -36,7 +37,7 @@
           .to(sub3, 0.5, {autoAlpha: 0, delay: 2.5})
           .to(sub4, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub4, 0.5, {autoAlpha: 0, delay: 2.5})
-          .to(cta, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+          .to([cta, sub5], 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(tc, 0.5, {autoAlpha: 1, delay: 1, ease: Power2.easeOut})
           .to(reload, 0.1, {autoAlpha: 1});
       }
@@ -59,6 +60,7 @@
         <div id="sub-2" class="layer"></div>
         <div id="sub-3" class="layer"></div>
         <div id="sub-4" class="layer"></div>
+        <div id="sub-5" class="layer"></div>
         <div id="tc" class="layer"></div>
         <div id="cta" class="layer"></div>
       </a>
