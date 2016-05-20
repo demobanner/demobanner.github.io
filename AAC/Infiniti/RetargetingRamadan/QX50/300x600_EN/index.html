@@ -7,9 +7,11 @@
     <meta name="ad.size" content="width=300,height=600">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="TweenMax.min.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
     <script type="text/javascript">
-      var clickTag = "http://www.infiniti-dubai.com/en/shopping_tools/request_test_drive.submitform.qx50.html";
+      var clickTag = "http://www.infiniti-dubai.com/en/shopping_tools/request_test_drive.submitform.q50.html";
     </script>
     <script type="text/javascript">
       var tl = new TimelineLite();
@@ -19,21 +21,24 @@
             sub1 = document.getElementById("sub-1"),
             sub2 = document.getElementById("sub-2"),
             sub3 = document.getElementById("sub-3"),
+            sub4 = document.getElementById("sub-4"),
+            sub5 = document.getElementById("sub-5"),
             rate = document.getElementById("rate"),
             tc = document.getElementById("tc"),
             cta = document.getElementById("cta"),
             reload = document.getElementById("reload");
 
+
         tl.to(bg, 0.5, {left: 0, rotation: 0.01})
-          .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=0.5')
+          .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=1')
           .to(rate, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
-          .to(sub1, 0.5, {autoAlpha: 0, delay: 2.5})
-          .to(sub2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(sub2, 0.5, {autoAlpha: 0, delay: 2.5})
-          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(sub3, 0.5, {autoAlpha: 0, delay: 2.5})
-          .to(cta, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+          .to(sub1, 0.5, {autoAlpha: 0, delay: 3})
+          .to(sub2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})          
+          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})          
+          .to(sub4, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
+          .to([sub2, sub3, sub4], 0.5, {autoAlpha: 0, delay: 1.5})
+          .to([cta, sub5], 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(tc, 0.5, {autoAlpha: 1, delay: 1, ease: Power2.easeOut})
           .to(reload, 0.1, {autoAlpha: 1});
       }
@@ -41,7 +46,6 @@
       function reloadBanner() {
         tl.restart();
       }
-
     </script>
   </head>
   <body onload="init()">
@@ -55,6 +59,8 @@
         <div id="sub-1" class="layer"></div>
         <div id="sub-2" class="layer"></div>
         <div id="sub-3" class="layer"></div>
+        <div id="sub-4" class="layer"></div>
+        <div id="sub-5" class="layer"></div>
         <div id="tc" class="layer"></div>
         <div id="cta" class="layer"></div>
       </a>

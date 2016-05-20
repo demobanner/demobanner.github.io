@@ -21,7 +21,7 @@ body {
   cursor: pointer;
 }
 #bg {
-  left: -20px;
+  left: -20px;  
   width: 320px;
   background: url('bg.jpg') center;
   background-size: cover;

@@ -28,17 +28,16 @@
             cta = document.getElementById("cta"),
             reload = document.getElementById("reload");
 
-
-        tl.to(bg, 0.5, {left: 0, autoAlpha: 1})
+        tl.to(bg, 0.5, {left: -20, rotation: 0.01})
           .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=1')
           .to(rate, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
           .to(sub1, 0.5, {autoAlpha: 0, delay: 3})
-          .to(sub2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})          
-          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})          
+          .to(sub2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
           .to(sub4, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
-          .to([sub2, sub3, sub4], 0.5, {autoAlpha: 0, delay: 2.5})
-          .to([cta, sub5], 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+          .to([sub2, sub3, sub4], 0.5, {autoAlpha: 0, delay: 2})
+          .to([cta, sub5], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(tc, 0.5, {autoAlpha: 1, delay: 1, ease: Power2.easeOut})
           .to(reload, 0.1, {autoAlpha: 1});
       }
@@ -46,6 +45,7 @@
       function reloadBanner() {
         tl.restart();
       }
+
     </script>
   </head>
   <body onload="init()">

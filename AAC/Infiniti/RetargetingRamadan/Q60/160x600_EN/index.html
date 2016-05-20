@@ -28,7 +28,8 @@
             cta = document.getElementById("cta"),
             reload = document.getElementById("reload");
 
-        tl.to(bg, 0.5, {left: 0, autoAlpha: 1})
+
+        tl.to(bg, 0.5, {left: -20, rotation: 0.01})
           .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, '-=1')
           .to(rate, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
@@ -45,7 +46,6 @@
       function reloadBanner() {
         tl.restart();
       }
-
     </script>
   </head>
   <body onload="init()">
