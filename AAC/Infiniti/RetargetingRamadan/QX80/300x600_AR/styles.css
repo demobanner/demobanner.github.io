@@ -16,12 +16,13 @@ body {
   width: 298px;
   height: 598px;
   border: 1px solid #000;
-  background-color: #000;
+  background-color: #fff;
   overflow: hidden;
   cursor: pointer;
 }
-#bg {
+#bg {  
   left: -20px;
+  width: 320px;
   background: url('bg.jpg') center;
   background-size: cover;
   opacity: 1;
@@ -45,6 +46,12 @@ body {
 }
 #sub-3 {
   background: url('sub-3.png') center;
+}
+#sub-4 {
+  background: url('sub-4.png') center;
+}
+#sub-5 {
+  background: url('sub-5.png') center;
 }
 #cta {
   background: url('cta.png') center;

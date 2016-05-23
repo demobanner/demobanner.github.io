@@ -20,12 +20,13 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-#bg {
-  left: -20px;
-	width: 120px;
-  background: url('bg.jpg');
+#bg {  
+  width: 140px;
+  height: 600px;
+  background: url('bg.jpg') center;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 1;
+  left: -20px;
 }
 #logo {
   opacity: 1;
@@ -47,6 +48,12 @@ body {
 #sub-3 {
   background: url('sub-3.png') center;
 }
+#sub-4 {
+  background: url('sub-4.png') center;
+}
+#sub-5 {
+  background: url('sub-5.png') center;
+}
 #cta {
   background: url('cta.png') center;
 }
@@ -54,8 +61,8 @@ body {
   background: url('tc.png') center;
 }
 #reload {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   left: inherit;
   right: 0;
   background: url('reload.png');

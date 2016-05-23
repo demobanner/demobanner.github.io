@@ -16,15 +16,15 @@ body {
   width: 726px;
   height: 88px;
   border: 1px solid #000;
-  background-color: #000;
+  background-color: #fff;
   overflow: hidden;
   cursor: pointer;
 }
 #bg {
+  left: 20px;
   background: url('bg.jpg') center;
   background-size: cover;
-  opacity: 0.3;
-  transform: scale(0.8);
+  opacity: 1;
 }
 #logo {
   opacity: 1;
@@ -49,10 +49,15 @@ body {
 #sub-3 {
   background: url('sub-3.png') center;
 }
+#sub-4 {
+  background: url('sub-4.png') center;
+}
+#sub-5 {
+  background: url('sub-5.png') center;
+}
 #cta {
   background: url('cta.png') center;
 }
-
 #tc {
   background: url('tc.png') center;
 }

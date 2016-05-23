@@ -16,7 +16,7 @@ body {
   width: 298px;
   height: 248px;
   border: 1px solid #000;
-  background-color: #000;
+  background-color: #fff;
   overflow: hidden;
   cursor: pointer;
 }
@@ -26,14 +26,7 @@ body {
   height: 250px;
   background: url('bg.jpg') center;
   background-size: cover;
-  opacity: 0.5;
-}
-#car {
-  left: inherit;
-  right: -140px;
-  transform: scale(0.4);
-  background: url('car.png') center;
-  background-size: cover;
+  opacity: 1;
 }
 #logo {
   opacity: 1;
@@ -55,11 +48,17 @@ body {
 #sub-3 {
   background: url('sub-3.png') center;
 }
-#tc {
-  background: url('tc.png') center;
+#sub-4 {
+  background: url('sub-4.png') center;
+}
+#sub-5 {
+  background: url('sub-5.png') center;
 }
 #cta {
   background: url('cta.png') center;
+}
+#tc {
+  background: url('tc.png') center;
 }
 #reload {
   width: 14px;
