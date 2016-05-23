@@ -11,7 +11,7 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
-  border: 1px solid black;
+  border: 1px solid #e5edf1;
 }
   #f1_bg {
   position: absolute;
@@ -51,7 +51,7 @@ body {
     top: 20px;
   }
   #f2_line{
-    background: url(f2_line.png);
+    background:#fff url(f2_line.png);
   }
   #f2_text1{
     background: url(f2_text1.png);

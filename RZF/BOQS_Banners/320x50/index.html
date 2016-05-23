@@ -15,25 +15,20 @@
           function init(){
             var f1_bg = document.getElementById('f1_bg'),
                 f1_img = document.getElementById('f1_img'),
-                f1_text = document.getElementById('f1_text'),
-                f1_cta = document.getElementById('f1_cta'),
+                f1_text = document.getElementById('f1_text'),                
                 f1_logo = document.getElementById('f1_logo'),
                 f2_cta = document.getElementById('f2_cta'),
                 f2_text1 = document.getElementById('f2_text1'),
-                f2_text2 = document.getElementById('f2_text2'),
-                f2_text3 = document.getElementById('f2_text3');
-
+                f2_text2 = document.getElementById('f2_text2');
 
             var tl = new TimelineLite();
 
                 tl.to(f1_img, 0.5, {autoAlpha: 1, scale:1})
-                  .to(f1_text, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut})
-                  .to(f1_cta, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeOut},"+=0.2")
-                  .to([f1_img,f1_text,f1_cta], 0.5, {autoAlpha: 0}, "+=2")
-                  .to(f2_text1, 0.5, {autoAlpha: 1})
-                  .to(f2_text2, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut},"-=0.2")
+                  .to(f1_text, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut})                  
+                  .to([f1_img,f1_text], 0.5, {autoAlpha: 0}, "+=2")
+                  .to(f2_text1, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeOut},"-=0.2")
                   .to(f2_cta, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeOut})
-                  .to(f2_text3, 0.5, {autoAlpha: 1});
+                  .to(f2_text2, 0.5, {autoAlpha: 1});
 
 
           }
@@ -44,12 +39,10 @@
         <div id="banner">
             <div id="f1_bg"></div>
             <div id="f1_img"></div>
-            <div id="f1_text"></div>
-            <div id="f1_cta"></div>
+            <div id="f1_text"></div>            
             <div id="f2_cta"></div>
             <div id="f2_text1"></div>
             <div id="f2_text2"></div>
-            <div id="f2_text3"></div>
             <div id="f1_logo"></div>
         </div>
       </a>

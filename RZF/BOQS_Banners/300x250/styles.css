@@ -15,7 +15,7 @@ body {
   position: relative;
   width: 298px;
   height: 248px;
-  border: 1px solid #000;
+  border: 1px solid #e5edf1;
   background: #fff url('bg.jpg') center;
   overflow: hidden;
   cursor: pointer;
@@ -38,7 +38,7 @@ body {
 }
 
 #f2-line1{
-  background: url('f2_line1.png') center;
+  background: #fff url('f2_line1.png') center;
 }
 #f2-line2{
   left: -300px;

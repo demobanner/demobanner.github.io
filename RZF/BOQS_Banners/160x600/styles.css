@@ -15,7 +15,7 @@ body {
   position: relative;
   width: 158px;
   height: 598px;
-  border: 1px solid #000;
+  border: 1px solid #e5edf1;
   background: #fff url('bg.jpg') center;  
   overflow: hidden;
   cursor: pointer;
@@ -38,7 +38,7 @@ body {
 }
 
 #f2-image{
-  background: url('f2_image.png') center;
+  background:#fff url('f2_image.png') center;
   left: -20px;
 }
 #f2-line{

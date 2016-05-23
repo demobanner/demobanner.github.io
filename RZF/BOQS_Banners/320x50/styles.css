@@ -11,7 +11,7 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
-  border: 1px solid black;
+  border: 1px solid #e5edf1;
 }
   #f1_bg {
   position: absolute;
@@ -39,7 +39,7 @@ body {
     background: url(f1_logo.png);
   }
   #f1_img{
-    left: 69px;
+    left: 81px;
     width: 93px;
     height: 80px;
     top:-16px;
@@ -55,27 +55,17 @@ body {
     background: url(f1_text.png);
     left: 30px;
   }
-  #f1_cta{
-    background: url(f1_cta.png);
-    top: 20px;
-
-  }
   #f2_line{
     background: url(f2_line.png);
   }
   #f2_text1{
-    background: url(f2_text1.png);
-    
+    background:#fff url(f2_text1.png);  
+    left: 15px  
   }
   #f2_text2{
     background: url(f2_text2.png);
-    left: 15px
-  }
-  #f2_text3{
-    background: url(f2_text3.png);
   }
   #f2_cta{
     background: url(f2_cta.png);
-    top: 20px;
-    
+    top: 20px;    
   }
