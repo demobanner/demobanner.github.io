@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 968px;
+  height: 248px;
+  border: 1px solid #000000;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 250px;
+  visibility: hidden;
+  opacity: 0;
+}
+#bg{
+  position: inherit;
+  width: 1493px;
+  height: 623px;
+  background: url('bg.jpg') center ;
+  top: -356px;
+  left: -265px;
+}
+#logo{
+  position: absolute;
+  width: 970px;
+  height: 250px;
+  background-image: url('logo.png');
+}
+#f1_text1{
+  background-image: url('f1_text1.png');
+}#f1_text2{
+  background-image: url('f1_text2.png');
+}
+#f2_text1{
+  background-image: url('f2_text1.png');
+}#f2_text2{
+  background-image: url('f2_text2.png');
+}
+#bg2{
+
+  background-image: url(bg2.jpg);
+}
+#cta{
+  background-image: url(cta.png);
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=300, height=250">
+  <title>Banner 300x250</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "";
+  </script>
+</head>
+<body onload="init()">
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="bg"></div>
+      <div id="f1_text1" class="layer"></div>
+      <div id="f1_text2" class="layer"></div>
+      <div id="bg2" class="layer"></div>
+      <div id="f2_text1" class="layer"></div>
+      <div id="f2_text2" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var f1_text1 = document.getElementById('f1_text1'),
+        f1_text2 = document.getElementById('f1_text2'),
+        f2_text1 = document.getElementById('f2_text1'),
+        f2_text2 = document.getElementById('f2_text2'),
+        bg2 = document.getElementById('bg2'),
+        cta = document.getElementById('cta');
+    var bannerTween = new TimelineLite();
+
+    function init() {
+      bannerTween.to(f1_text1, 0.5, {autoAlpha:1})
+                  .to(bg, 1, {left: '-250px' , top: '-250px', scale: 0.375, ease: Power3.easeOut}, '+=1.5')
+                  .to(f1_text1, 0.5, {autoAlpha:0}, '-=1')
+                  .to(f1_text2, 0.5, {autoAlpha:1}, '-=0.2')
+                  .to(bg2, 0.5, {autoAlpha:1}, '+=2')
+                  .to(f2_text1, 0.5, {autoAlpha:1})
+                  .to(f2_text1, 0.5, {autoAlpha:0}, '+=3')
+                  .to(f2_text2, 0.5, {autoAlpha:1})
+                  .to(cta, 0.5, {autoAlpha:1}, '+=0.5')
+    }
+  </script>
+</body>
+</html>
