@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=300,height=250">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "http://google.com";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+      function init() {
+        var bg = document.getElementById("bg"),
+            cta = document.getElementById("cta"),
+            rope1 = document.getElementById("rope1"),
+            rope2 = document.getElementById("rope2"),
+            rope3 = document.getElementById("rope3"),
+            rope4 = document.getElementById("rope4"),
+            rope5 = document.getElementById("rope5"),
+            rope6 = document.getElementById("rope6"),
+            text1 = document.getElementById("text1"),
+            text2 = document.getElementById("text2"),
+            text3 = document.getElementById("text3"),
+            logo = document.getElementById("logo");
+
+        tl.to([rope1, rope2, rope3, rope4, rope5, rope6], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(text1, 0.5, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(text2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(rope4, 1.5, {top: 100, ease: Power2.easeOut}, "-=0.5")
+          .to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(rope2, 1, {top: 12, ease: Power2.easeOut}, "-=0.25")
+          .to(rope3, 1, {top: 65, ease: Power2.easeOut}, "-=1")
+          .to(rope5, 1, {left: 10, ease: Power2.easeOut}, "-=1")
+          .to(rope6, 1, {left: 0, ease: Power2.easeOut}, "-=1")
+          .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "-=1")
+          .to(text3, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "-=1")
+          .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut}, "-=0.5");
+      }
+
+      function reloadBanner() {
+        tl.restart();
+      }
+
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="bg" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="rope1" class="layer"></div>
+        <div id="rope2" class="layer"></div>
+        <div id="rope3" class="layer"></div>
+        <div id="rope4" class="layer"></div>
+        <div id="rope5" class="layer"></div>
+        <div id="rope6" class="layer"></div>
+        <div id="text1" class="layer"></div>
+        <div id="text2" class="layer"></div>
+        <div id="text3" class="layer"></div>
+        <div id="logo" class="layer"></div>
+      </a>
+        <div id="reload" class="layer" onclick="reloadBanner();"></div>
+    </div>
+  </body>
+</html>
