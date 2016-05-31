@@ -37,9 +37,6 @@ body {
 #rope3 {
   background: url('rope3.png') center;
 }
-#rope4 {
-  background: url('rope4.png') center;
-}
 #rope5 {
   background: url('rope5.png') center;
 }
@@ -47,9 +44,7 @@ body {
   background: url('rope6.png') center;
   left: -62px;
 }
-#text1 {
-  background: url('text1.png') center;
-}
+
 #text2 {
   background: url('text2.png') center;
 }

@@ -49,9 +49,11 @@ body {
 }
 #text1 {
   background: url('text1.png') center;
+  top: -90px;
 }
 #text2 {
   background: url('text2.png') center;
+  top: -90px;
 }
 #text3 {
   background: url('text3.png') center;

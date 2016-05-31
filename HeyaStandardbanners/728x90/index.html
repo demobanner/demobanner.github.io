@@ -29,10 +29,9 @@
             logo = document.getElementById("logo");
 
         tl.to([rope1,rope2,rope3,rope4,rope5], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(text1, 0.5, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
-          .to(text2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
+          .to(text1, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+          .to(text2, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+          .to([text1, text2], 0.5, {autoAlpha: 0, ease: Power2.easeOut, delay: 2})
           .to(rope2, 1, {top: 30, ease: Power2.easeOut}, "-=0.25")
           .to(rope5, 1, {left: 15, ease: Power2.easeOut}, "-=1")
           .to(rope4, 1, {left: 88, ease: Power2.easeOut}, "-=1")
