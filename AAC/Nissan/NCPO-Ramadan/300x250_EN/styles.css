@@ -16,7 +16,7 @@ body {
   width: 298px;
   height: 248px;
   border: 1px solid #000;
-  background-color: #fff;
+  background: url('bg.jpg');
   overflow: hidden;
   cursor: pointer;
 }

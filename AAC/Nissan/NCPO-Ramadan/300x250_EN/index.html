@@ -30,22 +30,24 @@
 
         tl.to(f1_text, 0.5, {autoAlpha: 1})
           .to(f1_car, 0.5, {autoAlpha: 1}, "+=0.5")
-          .to(f1_car, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame2, 0.5, {autoAlpha: 1})
-          .to(frame2, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame2_1, 0.5, {autoAlpha: 1})
-          .to(frame2_1, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame3, 0.5, {autoAlpha: 1})
-          .to(frame3, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame4, 0.5, {autoAlpha: 1})
-          .to(frame4, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame5, 0.5, {autoAlpha: 1})
-          .to(frame5, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame6, 0.5, {autoAlpha: 1})
-          .to(frame6, 0.5, {autoAlpha: 0, delay: 2})
-          .to(frame7, 0.5, {autoAlpha: 1})
-          .to(frame7, 0.5, {autoAlpha: 0, delay: 2})
-          .to(f1_text, 0.5, {top: 30, ease: Power1.easeOut})
+          .to(f1_car, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame2, 0.5, {autoAlpha: 1})
+          .to(frame2, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame2_1, 0.5, {autoAlpha: 1})
+          .to(frame2_1, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame3, 0.5, {autoAlpha: 1})
+          .to(frame3, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame4, 0.5, {autoAlpha: 1})
+          .to(frame4, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame5, 0.5, {autoAlpha: 1})
+          .to(frame5, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame6, 0.5, {autoAlpha: 1})
+          .to(frame6, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame7, 0.5, {autoAlpha: 1})
+          .to(frame7, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame7, 0.5, {autoAlpha: 1})
+          .to(frame7, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(f1_text, 0.5, {top: 19, ease: Power1.easeOut})
           .to(f8_text, 0.5, {autoAlpha: 1}, "+=0.5")
           .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeOut}, "+=0.5");
       }
@@ -54,7 +56,6 @@
   <body onload="init()">
     <div id="banner">
       <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
-        <div id="f1-text" class="layer"></div>
         <div id="f1-car" class="layer"></div>
         <div id="frame2" class="layer"></div>
         <div id="frame2-1" class="layer"></div>
@@ -65,6 +66,7 @@
         <div id="frame7" class="layer"></div>
         <div id="frame8-text" class="layer"></div>
         <div id="cta" class="layer"></div>
+        <div id="f1-text" class="layer"></div>
         <div id="awr-logo" class="layer"></div>
         <div id="cpo-logo" class="layer"></div>
       </a>
