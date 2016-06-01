@@ -30,22 +30,22 @@ body {
   background: url('f2.png') center no-repeat;
 }
 #frame2-1 {
-  background: url('f2-1.png') center no-repeat;
+  background: url('f2.png') center no-repeat;
 }
 #frame3 {
-  background: url('f3.png') center no-repeat;
-}
-#frame4 {
   background: url('f4.png') center no-repeat;
 }
-#frame5 {
+#frame4 {
   background: url('f5.png') center no-repeat;
 }
-#frame6 {
+#frame5 {
   background: url('f6.png') center no-repeat;
 }
-#frame7 {
+#frame6 {
   background: url('f7.png') center no-repeat;
+}
+#frame7 {
+  background: url('f8.png') center no-repeat;
 }
 #frame8-text {
   background: url('f8-text.png') center no-repeat;

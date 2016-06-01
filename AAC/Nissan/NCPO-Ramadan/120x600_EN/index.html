@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=120,height=600">
+
+    <title>NCPO Ramadan 120x600</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+
+      function init() {
+        var f1_text   = document.getElementById("f1-text"),
+            f1_car    = document.getElementById("f1-car"),
+            frame2    = document.getElementById("frame2"),
+            frame2_1  = document.getElementById("frame2-1"),
+            frame3    = document.getElementById("frame3"),
+            frame4    = document.getElementById("frame4"),
+            frame5    = document.getElementById("frame5"),
+            frame6    = document.getElementById("frame6"),
+            frame7    = document.getElementById("frame7"),
+            f8_text   = document.getElementById("frame8-text"),
+            cta       = document.getElementById("cta");
+
+        tl.to(f1_text, 0.5, {autoAlpha: 1})
+          .to(f1_car, 0.5, {autoAlpha: 1}, "+=0.5")
+          .to(f1_car, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame2, 0.5, {autoAlpha: 1})
+          .to(frame2, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame2_1, 0.5, {autoAlpha: 1})
+          .to(frame2_1, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame3, 0.5, {autoAlpha: 1})
+          .to(frame3, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame4, 0.5, {autoAlpha: 1})
+          .to(frame4, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame5, 0.5, {autoAlpha: 1})
+          .to(frame5, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame6, 0.5, {autoAlpha: 1})
+          .to(frame6, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame7, 0.5, {autoAlpha: 1})
+          .to(frame7, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(f1_text, 0.5, {top: 32, ease: Power1.easeOut})
+          .to(f8_text, 0.5, {autoAlpha: 1}, "+=0.5")
+          .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeOut}, "+=0.5");
+        tl.to(f1_text, 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut}, "+=2")
+          .to([cta, f8_text], 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut, onComplete: loopFunction}, "-=0.5");
+      }
+      function loopFunction(){
+        tl.restart();
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="f1-car" class="layer"></div>
+        <div id="frame2" class="layer"></div>
+        <div id="frame2-1" class="layer"></div>
+        <div id="frame3" class="layer"></div>
+        <div id="frame4" class="layer"></div>
+        <div id="frame5" class="layer"></div>
+        <div id="frame6" class="layer"></div>
+        <div id="frame7" class="layer"></div>
+        <div id="frame8-text" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="f1-text" class="layer"></div>
+        <div id="awr-logo" class="layer"></div>
+        <div id="cpo-logo" class="layer"></div>
+      </a>
+    </div>
+  </body>
+</html>
