@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=300, height=250">
+  <title>Banner</title>
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+		function preInit() {
+			if (Enabler.isInitialized()) {
+				init();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+			}
+		}
+		function bgExitHandler(e) {
+			Enabler.exit('mainExit');
+		}
+		window.onload = preInit;
+	</script>
+</head>
+<body onload="init()">
+  <div id="banner">
+    <a id="mainExit" class="click-tag" href="javascript:">
+      <div id="bg" class="layer"></div>
+      <div id="bottle" class="layer"></div>
+      <div id="over" class="layer"></div>
+      <div id="logo" class="layer"></div>
+			<div id="lastFrame" class="layer"></div>
+      <div id="fivebottles" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="text1" class="layer"></div>
+      <div id="text2" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+		document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
+    var over = document.getElementById('over'),
+        bg = document.getElementById('bg'),
+        bottle = document.getElementById('bottle'),
+				last = document.getElementById('last'),
+        logo = document.getElementById('logo'),
+		    lastFrame = document.getElementById('lastFrame'),
+        text1 = document.getElementById('text1'),
+        text2 = document.getElementById('text2'),
+        fivebottles = document.getElementById('fivebottles'),
+        cta = document.getElementById('cta');
+    var bannerTween = new TimelineLite();
+
+    function init() {
+      bannerTween.to(bottle, 2, {autoAlpha: 1, ease: Power2.easeOut})
+								 .to(over, 2, {autoAlpha: 0, scale: 2, ease: Power2.easeOut}, '-=1.8')
+								 .to(lastFrame, 0.5, {autoAlpha: 1 })
+                 .to(text1, 0.5, {left: 0})
+                 .to(fivebottles, 1, {autoAlpha: 1})
+                 .to(text2, 0.5, {top: 0})
+                 .to(cta, 0.5, {autoAlpha: 1})
+    }
+  </script>
+</body>
+</html>
