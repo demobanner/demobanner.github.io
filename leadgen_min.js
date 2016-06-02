@@ -13,7 +13,7 @@
             var itemLabel = document.createElement("Label");
             itemLabel.setAttribute("for", a);
             itemLabel.innerHTML = h;
-            itemLabel.style.color = #ffffff;
+            itemLabel.style.color = "#ffffff";
             itemLabel.style.fontFamily  = "Arial";
             itemLabel.style.marginBottom = "5px";
             b.insertBefore(itemLabel, a);
