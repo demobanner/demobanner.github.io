@@ -25,12 +25,14 @@
             frame6    = document.getElementById("frame6"),
             frame7    = document.getElementById("frame7"),
             frame8    = document.getElementById("frame8"),
-            cta       = document.getElementById("cta");
+            cta       = document.getElementById("cta"),
+            tc       = document.getElementById("tc");
 
         tl.to(f1_text, 0.5, {autoAlpha: 1})
           .to(f1_car, 0.5, {autoAlpha: 1}, "+=0.5")
           .to(f1_car, 0.5, {autoAlpha: 0, delay: 2});
         tl.to(frame2, 0.5, {autoAlpha: 1})
+          .to(tc, 0.5, {autoAlpha: 1})  
           .to(frame2, 0.5, {autoAlpha: 0, delay: 2});
         tl.to(frame3, 0.5, {autoAlpha: 1})
           .to(frame3, 0.5, {autoAlpha: 0, delay: 2});
@@ -46,7 +48,7 @@
           .to(frame8, 0.5, {autoAlpha: 0, delay: 2})
           .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeOut}, "+=0.5");
 				tl.to(f1_text, 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut}, "+=3")
-					.to(cta, 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut, onComplete: loopFunction}, "-=0.5");
+					.to([cta, tc], 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut, onComplete: loopFunction}, "-=0.5");
       }
       function loopFunction(){
         tl.restart();
@@ -65,6 +67,7 @@
         <div id="frame6" class="layer"></div>
         <div id="frame7" class="layer"></div>
         <div id="frame8" class="layer"></div>
+        <div id="tc" class="layer"></div>
         <div id="cta" class="layer"></div>
         <div id="awr-logo" class="layer"></div>
         <div id="cpo-logo" class="layer"></div>

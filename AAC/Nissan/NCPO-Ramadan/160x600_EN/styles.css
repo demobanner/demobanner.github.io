@@ -50,6 +50,9 @@ body {
 #frame8-text {
   background: url('f8-text.png') center no-repeat;
 }
+#tc {
+  background: url('tc.png') center no-repeat;
+}
 #cta {
   top: 20px;
   background: url('cta.png') center no-repeat;
