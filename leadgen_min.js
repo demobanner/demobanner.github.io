@@ -56,7 +56,7 @@
         this.j = d(this, this.j, "leadgen-name", "text", this.v, this.f);
         this.i = d(this, this.i, "leadgen-email", "email", this.u, this.c);
         this.l = d(this, this.l, "leadgen-phone", "tel", this.w, this.g);
-        this.h = combo(this, this.h, "leadgen-model", "select-one", this.o, this.b);
+        this.h = combo(this, this.h, "leadgen-model", "", this.o, this.b);
 
         var b = this.a,
             a = this.A,
