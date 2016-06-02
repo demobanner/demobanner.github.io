@@ -2,11 +2,12 @@
   "use strict";
   var d=function(b,a,c,g,h,k){
         a=document.createElement("input");
-        a.type=g;a.id=c;
+        a.type=g;
+        a.id=c;
         a.placeholder=h;
         a.style.display=k?"block":"none";
         a.style.width="90%";
-        a.style.margin="5px";
+        a.style.margin-bottom="5px";
         b.appendChild(a);
         return a
       },
