@@ -11,6 +11,17 @@
             b.appendChild(a);
             return a
         },
+        combo = function(b, a, c, g, h, k) {
+            a = document.createElement("select");
+            a.type = g;
+            a.id = c;
+            a.placeholder = h;
+            a.style.display = k ? "block" : "none";
+            a.style.width = "90%";
+            a.style.margin = "5px";
+            b.appendChild(a);
+            return a
+        },
         e = function(b) {
             return b && "true" == b.toLowerCase() || "" == b || "1" == b
         },
@@ -45,7 +56,7 @@
         this.j = d(this, this.j, "leadgen-name", "text", this.v, this.f);
         this.i = d(this, this.i, "leadgen-email", "email", this.u, this.c);
         this.l = d(this, this.l, "leadgen-phone", "tel", this.w, this.g);
-        this.h = d(this, this.h, "leadgen-model", "text", this.o, this.b);
+        this.h = combo(this, this.h, "leadgen-model", "select-one", this.o, this.b);
 
         var b = this.a,
             a = this.A,
