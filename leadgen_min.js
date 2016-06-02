@@ -85,6 +85,7 @@
             case "include_name":
                 this.iName = e(a);
                 break;
+
             case "include_email":
                 this.iMail = e(a);
                 break;
