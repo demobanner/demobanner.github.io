@@ -79,6 +79,9 @@
             case "lead_depot_id":
                 this.m = "https://cplads-hrd.appspot.com/submit/" + a;
                 break;
+            case "lbl_name":
+                this.lName = e(a);
+                break;
             case "include_name":
                 this.iName = e(a);
                 break;
