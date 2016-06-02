@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="ad.size" content= "width=300, height=600">
-  <title>Banner 300x600</title>
+  <meta name="ad.size" content= "width=468, height=60">
+  <title>Banner 468x60</title>
   <script src="TweenLite.min.js"></script>
   <script src="TimelineLite.min.js"></script>
   <script src="CSSPlugin.min.js"></script>
@@ -28,7 +28,6 @@
       <div id="logo" class="layer"></div>
     </a>
   </div>
-
   <script type="text/javascript">
     var over = document.getElementById('over'),
         bg = document.getElementById('bg'),
@@ -42,7 +41,7 @@
 
     function init() {
       bannerTween.to(bottle, 2, {autoAlpha: 1, ease: Power2.easeOut})
-								 .to(over, 2, {autoAlpha: 0, scale: 2, ease: Power2.easeOut}, '-=2')
+								 .to(over, 2, {autoAlpha: 0, scale: 2, left: -100, ease: Power2.easeOut}, '-=2')
                  .to(text1, 0.5, {left: 0, ease: Power2.easeInOut}, '-=1')
                  .to(fivebottles, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
                  .to(text2, 0.5, {top: 0, ease: Power2.easeOut})
