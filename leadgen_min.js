@@ -13,7 +13,7 @@
 
             var itemLabel = document.createElement("Label");
             itemLabel.setAttribute("for", a);
-            itemLabel.innerHTML = "Item: ";
+            itemLabel.innerHTML = h;
             b.insertBefore(itemLabel, a);
 
             return a
