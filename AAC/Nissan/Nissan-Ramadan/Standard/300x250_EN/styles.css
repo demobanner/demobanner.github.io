@@ -15,7 +15,7 @@ body {
   position: relative;
   width: 298px;
   height: 248px;
-  border: 1px dotted #000;
+  border: 1px solid #000;
   overflow: hidden;
   cursor: pointer;
 }
@@ -58,7 +58,7 @@ body {
   opacity: 1;
 }
 #coin{
-  background: url('coin.png') center no-repeat;  
+  background: url('coin.png') center no-repeat;
 }
 #coin-left1{
   background: url('coin_left1.png') center no-repeat;
@@ -85,7 +85,7 @@ body {
 }
 #text1{
   background: url('text1.png') center no-repeat;
-  left: -20px;  
+  left: -20px;
 }
 #text2{
   background: url('text2.png') center no-repeat;
@@ -126,4 +126,7 @@ body {
 #car4-name{
   background: url('car4_name.png') center no-repeat;
   top: 50px;
+}
+#shakeTxt {
+  background: url('shake.png') center no-repeat;
 }
