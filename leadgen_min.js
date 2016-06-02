@@ -8,16 +8,16 @@
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
             a.style.width = "90%";
-            a.style.margin-bottom = "5px";
+            a.style.marginBottom = "5px";
             b.appendChild(a);
             return a
         },
-        label = function(b, a, c, g, h, k) {
-            a = document.createElement("var oLabel = document.createElement('label');");
+        createLabel = function(b, a, c, k) {
+            a = document.createElement("label");
             a.id = c;
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
-            a.style.margin-bottom = "5px";
+            a.style.marginBottom = "5px";
             b.appendChild(a);
             return a
         },
@@ -40,6 +40,7 @@
         this.style.display = "inherit";
         this.m = "https://cplads-hrd.appspot.com/submit/" + this.getAttribute("lead_depot_id");
 
+        this.lName = e(this.getAttribute("lbl_name"));
         this.iName = e(this.getAttribute("include_name"));
         this.iMail = e(this.getAttribute("include_email"));
         this.iPhone = e(this.getAttribute("include_phone"));
@@ -54,6 +55,7 @@
         this.pSubmit = this.getAttribute("placeholder_submit");
         this.pConfirmation = this.getAttribute("placeholder_confirmation");
 
+        this.lblName = createLabel(this, this.j, "leadgen-lblName", this.iName);
         this.txtName = d(this, this.j, "leadgen-name", "text", this.pName, this.iName);
         this.txtMail = d(this, this.i, "leadgen-email", "email", this.pMail, this.iMail);
         this.txtPhone = d(this, this.l, "leadgen-phone", "tel", this.pPhone, this.iPhone);
