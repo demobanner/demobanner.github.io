@@ -1,6 +1,15 @@
 -function(){
   "use strict";
-  var d=function(b,a,c,g,h,k){a=document.createElement("input");a.type=g;a.id=c;a.placeholder=h;a.style.display=k?"block":"none";a.style.width="90%";b.appendChild(a);return a},
+  var d=function(b,a,c,g,h,k){
+        a=document.createElement("input");
+        a.type=g;a.id=c;
+        a.placeholder=h;
+        a.style.display=k?"block":"none";
+        a.style.width="90%";
+        a.style.margin="5px";
+        b.appendChild(a);
+        return a
+      },
     e=function(b){return b&&"true"==b.toLowerCase()||""==b||"1"==b},
     f=function(b,a){
       var c;window.XMLHttpRequest&&(c=new XMLHttpRequest);
