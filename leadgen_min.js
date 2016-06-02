@@ -30,28 +30,28 @@
         this.style.display = "inherit";
         this.m = "https://cplads-hrd.appspot.com/submit/" + this.getAttribute("lead_depot_id");
 
-        this.fname = e(this.getAttribute("include_name"));
-        this.c = e(this.getAttribute("include_email"));
-        this.g = e(this.getAttribute("include_phone"));
-        this.b = e(this.getAttribute("include_model"));
-        this.x = e(this.getAttribute("include_location"));
+        this.iName = e(this.getAttribute("include_name"));
+        this.iMail = e(this.getAttribute("include_email"));
+        this.iPhone = e(this.getAttribute("include_phone"));
+        this.iModel = e(this.getAttribute("include_model"));
+        this.iLocation = e(this.getAttribute("include_location"));
 
-        this.v = this.getAttribute("placeholder_name");
-        this.u = this.getAttribute("placeholder_email");
-        this.w = this.getAttribute("placeholder_phone");
-        this.o = this.getAttribute("placeholder_model");
-        this.y = this.getAttribute("placeholder_location");
-        this.A = this.getAttribute("placeholder_submit");
-        this.s = this.getAttribute("placeholder_confirmation");
+        this.pName = this.getAttribute("placeholder_name");
+        this.pMail = this.getAttribute("placeholder_email");
+        this.pPhone = this.getAttribute("placeholder_phone");
+        this.pModel = this.getAttribute("placeholder_model");
+        this.pLocation = this.getAttribute("placeholder_location");
+        this.pSubmit = this.getAttribute("placeholder_submit");
+        this.pConfirmation = this.getAttribute("placeholder_confirmation");
 
-        this.j = d(this, this.j, "leadgen-name", "text", this.v, this.fname);
-        this.i = d(this, this.i, "leadgen-email", "email", this.u, this.c);
-        this.l = d(this, this.l, "leadgen-phone", "tel", this.w, this.g);
-        this.h = d(this, this.h, "leadgen-model", "text", this.o, this.b);
-        this.z = d(this, this.k, "leadgen-location", "text", this.y, this.x);
+        this.txtName = d(this, this.j, "leadgen-name", "text", this.pName, this.iName);
+        this.txtMail = d(this, this.i, "leadgen-email", "email", this.pMail, this.iMail);
+        this.txtPhone = d(this, this.l, "leadgen-phone", "tel", this.pPhone, this.iPhone);
+        this.txtModel = d(this, this.h, "leadgen-model", "text", this.pModel, this.iModel);
+        this.txtLocation = d(this, this.k, "leadgen-location", "text", this.pLocation, this.iLocation);
 
         var b = this.a,
-            a = this.A,
+            a = this.pSubmit,
             b = document.createElement("button");
 
         b.id = "leadgen-submit";
@@ -68,47 +68,47 @@
                 this.m = "https://cplads-hrd.appspot.com/submit/" + a;
                 break;
             case "include_name":
-                this.fname = e(a);
+                this.iName = e(a);
                 break;
             case "include_email":
-                this.c = e(a);
+                this.iMail = e(a);
                 break;
             case "include_phone":
-                this.g = e(a);
+                this.iPhone = e(a);
                 break;
             case "include_model":
-                this.b = e(a);
+                this.iModel = e(a);
                 break;
             case "include_location":
-                this.x = e(a);
+                this.iLocation = e(a);
                 break;
             case "placeholder_name":
-                this.v = a;
+                this.pName = a;
                 break;
             case "placeholder_email":
-                this.u = a;
+                this.pMail = a;
                 break;
             case "placeholder_phone":
-                this.w = a;
+                this.pPhone = a;
                 break;
             case "placeholder_model":
-                this.o = a;
+                this.pModel = a;
                 break;
             case "placeholder_location":
-                this.y = a;
+                this.pLocation = a;
                 break;
             case "placeholder_submit":
-                this.A = a;
+                this.pSubmit = a;
                 break;
             case "placeholder_confirmation":
-                this.s = a
+                this.pConfirmation = a
         }
     };
     l.prototype.B = function(b) {
         b.preventDefault();
-        f("name=" + encodeURIComponent(this.j.value) + "&email=" + encodeURIComponent(this.i.value) + "&phone=" + encodeURIComponent(this.l.value) + "&model=" + encodeURIComponent(this.h.value), this.m);
+        f("name=" + encodeURIComponent(this.txtName.value) + "&email=" + encodeURIComponent(this.txtMail.value) + "&phone=" + encodeURIComponent(this.txtPhone.value) + "&model=" + encodeURIComponent(this.txtModel.value)+ "&location=" + encodeURIComponent(this.txtLocation.value), this.m);
         this.a.disabled = !0;
-        this.a.textContent = this.s;
+        this.a.textContent = this.pConfirmation;
         b = document.createEvent("Event");
         b.initEvent("lead-submitted", !0, !0);
         this.dispatchEvent(b)
