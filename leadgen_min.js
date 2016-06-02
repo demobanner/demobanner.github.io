@@ -47,6 +47,7 @@
         this.iModel = e(this.getAttribute("include_model"));
         this.iLocation = e(this.getAttribute("include_location"));
 
+        this.lblName = this.getAttribute("placeholder_lblName");
         this.pName = this.getAttribute("placeholder_name");
         this.pMail = this.getAttribute("placeholder_email");
         this.pPhone = this.getAttribute("placeholder_phone");
@@ -55,7 +56,6 @@
         this.pSubmit = this.getAttribute("placeholder_submit");
         this.pConfirmation = this.getAttribute("placeholder_confirmation");
 
-        this.lblName = createLabel(this, this.j, "leadgen-lblName", this.iName);
         this.txtName = d(this, this.j, "leadgen-name", "text", this.pName, this.iName);
         this.txtMail = d(this, this.i, "leadgen-email", "email", this.pMail, this.iMail);
         this.txtPhone = d(this, this.l, "leadgen-phone", "tel", this.pPhone, this.iPhone);
@@ -65,6 +65,10 @@
         var b = this.a,
             a = this.pSubmit,
             b = document.createElement("button");
+
+        var label = this.lbl,
+            lbl = this.lblName,
+            label = document.createElement("label");
 
         b.id = "leadgen-submit";
         b.textContent = a;
@@ -115,6 +119,9 @@
                 break;
             case "placeholder_submit":
                 this.pSubmit = a;
+                break;
+            case "placeholder_lblName":
+                this.lblName = a;
                 break;
             case "placeholder_confirmation":
                 this.pConfirmation = a
