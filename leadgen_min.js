@@ -1,50 +1,23 @@
-<<<<<<< HEAD
--function(){
-  "use strict";
-  var d=function(b,a,c,g,h,k){
-        a=document.createElement("input");
-        a.type=g;
-        a.id=c;
-        a.placeholder=h;
-        a.style.display=k?"block":"none";
-        a.style.width="90%";
-        a.style.margin-bottom="5px";
-        b.appendChild(a);
-        return a
-      },
-    e=function(b){return b&&"true"==b.toLowerCase()||""==b||"1"==b},
-    f=function(b,a){
-      var c;window.XMLHttpRequest&&(c=new XMLHttpRequest);
-      c.onreadystatechange=function(){4==c.readyState&&200==c.status&&(console.log("ready"),console.log(c.responseText))};
-      c.open("POST",a,!0);c.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-      c.send(b)
-    },
-    l=function(){};goog.inherits(l,HTMLFormElement);
-  l.prototype.createdCallback=function(){
-    this.style.display="inherit";
-    this.m="https://cplads-hrd.appspot.com/submit/"+this.getAttribute("lead_depot_id");
-=======
 - function() {
     "use strict";
     var d = function(b, a, c, g, h, k) {
             a = document.createElement("input");
             a.type = g;
             a.id = c;
-            a.placeholder = h;
+            a.placeholder = "";
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
-            a.style.width = "90%";
-            a.style.marginBottom = "5px";
+            a.style.marginTop = "5px";
+            a.style.marginBottom = "10px";
             b.appendChild(a);
-            return a
-        },
-        createLabel = function(b, a, c, k) {
-            a = document.createElement("label");
-            a.id = c;
-            a.style.display = k ? "block" : "none";
-            a.style.width = "90%";
-            a.style.marginBottom = "5px";
-            b.appendChild(a);
+
+            var itemLabel = document.createElement("Label");
+            itemLabel.setAttribute("for", a);
+            itemLabel.innerHTML = h;
+            itemLabel.style.color = "#ffffff";
+            itemLabel.style.fontFamily  = "Arial";
+            b.insertBefore(itemLabel, a);
+
             return a
         },
         e = function(b) {
@@ -65,9 +38,7 @@
     l.prototype.createdCallback = function() {
         this.style.display = "inherit";
         this.m = "https://cplads-hrd.appspot.com/submit/" + this.getAttribute("lead_depot_id");
->>>>>>> ef8e209ef20e4c7509109be46e5e213b1a13db78
 
-        this.lName = e(this.getAttribute("lbl_name"));
         this.iName = e(this.getAttribute("include_name"));
         this.iMail = e(this.getAttribute("include_email"));
         this.iPhone = e(this.getAttribute("include_phone"));
@@ -80,9 +51,9 @@
         this.pModel = this.getAttribute("placeholder_model");
         this.pLocation = this.getAttribute("placeholder_location");
         this.pSubmit = this.getAttribute("placeholder_submit");
+        this.lblName = this.getAttribute("placeholder_lblName");
         this.pConfirmation = this.getAttribute("placeholder_confirmation");
 
-        this.lblName = createLabel(this, this.j, "leadgen-lblName", this.iName);
         this.txtName = d(this, this.j, "leadgen-name", "text", this.pName, this.iName);
         this.txtMail = d(this, this.i, "leadgen-email", "email", this.pMail, this.iMail);
         this.txtPhone = d(this, this.l, "leadgen-phone", "tel", this.pPhone, this.iPhone);
@@ -105,9 +76,6 @@
         switch (b) {
             case "lead_depot_id":
                 this.m = "https://cplads-hrd.appspot.com/submit/" + a;
-                break;
-            case "lbl_name":
-                this.lName = e(a);
                 break;
             case "include_name":
                 this.iName = e(a);
