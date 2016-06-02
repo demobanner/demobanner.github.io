@@ -15,7 +15,7 @@
             itemLabel.innerHTML = h;
             itemLabel.style.color = "#ffffff";
             itemLabel.style.fontFamily  = "Arial";
-            itemLabel.style.marginBottom = "5px";
+            itemLabel.style.marginBottom = "10px";
             b.insertBefore(itemLabel, a);
 
             return a
