@@ -7,7 +7,17 @@
             a.placeholder = h;
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
-            a.style.margin = "5px";
+            a.style.width = "90%";
+            a.style.margin-bottom = "5px";
+            b.appendChild(a);
+            return a
+        },
+        label = function(b, a, c, g, h, k) {
+            a = document.createElement("var oLabel = document.createElement('label');");
+            a.id = c;
+            a.style.display = k ? "block" : "none";
+            a.style.width = "90%";
+            a.style.margin-bottom = "5px";
             b.appendChild(a);
             return a
         },
