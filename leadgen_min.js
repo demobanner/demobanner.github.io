@@ -12,9 +12,10 @@
             b.appendChild(a);
             return a
         },
-        createLabel = function(b, a, c, k) {
+        createLabel = function(b, a, c, h, k) {
             a = document.createElement("label");
             a.id = c;
+            a.placeholder = h;
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
             a.style.marginBottom = "5px";
@@ -40,22 +41,24 @@
         this.style.display = "inherit";
         this.m = "https://cplads-hrd.appspot.com/submit/" + this.getAttribute("lead_depot_id");
 
-        this.lName = e(this.getAttribute("lbl_name"));
+        this.iLblName = e(this.getAttribute("include_lblName"));
         this.iName = e(this.getAttribute("include_name"));
         this.iMail = e(this.getAttribute("include_email"));
         this.iPhone = e(this.getAttribute("include_phone"));
         this.iModel = e(this.getAttribute("include_model"));
         this.iLocation = e(this.getAttribute("include_location"));
 
-        this.lblName = this.getAttribute("placeholder_lblName");
+        this.pLblName = this.getAttribute("placeholder_lblName");
         this.pName = this.getAttribute("placeholder_name");
         this.pMail = this.getAttribute("placeholder_email");
         this.pPhone = this.getAttribute("placeholder_phone");
         this.pModel = this.getAttribute("placeholder_model");
         this.pLocation = this.getAttribute("placeholder_location");
         this.pSubmit = this.getAttribute("placeholder_submit");
+        this.lblName = this.getAttribute("placeholder_lblName");
         this.pConfirmation = this.getAttribute("placeholder_confirmation");
 
+        this.lblName = createLabel(this, this.j, "leadgen-lblName", this.pLblName, this.iLblName);
         this.txtName = d(this, this.j, "leadgen-name", "text", this.pName, this.iName);
         this.txtMail = d(this, this.i, "leadgen-email", "email", this.pMail, this.iMail);
         this.txtPhone = d(this, this.l, "leadgen-phone", "tel", this.pPhone, this.iPhone);
@@ -65,10 +68,6 @@
         var b = this.a,
             a = this.pSubmit,
             b = document.createElement("button");
-
-        var label = this.lbl,
-            lbl = this.lblName,
-            label = document.createElement("label");
 
         b.id = "leadgen-submit";
         b.textContent = a;
@@ -83,8 +82,8 @@
             case "lead_depot_id":
                 this.m = "https://cplads-hrd.appspot.com/submit/" + a;
                 break;
-            case "lbl_name":
-                this.lName = e(a);
+            case "include_LblName":
+                this.iLblName = e(a);
                 break;
             case "include_name":
                 this.iName = e(a);
@@ -101,6 +100,9 @@
                 break;
             case "include_location":
                 this.iLocation = e(a);
+                break;
+            case "placeholder_lblName":
+                this.pLblName = a;
                 break;
             case "placeholder_name":
                 this.pName = a;
@@ -119,10 +121,6 @@
                 break;
             case "placeholder_submit":
                 this.pSubmit = a;
-                break;
-
-            case "placeholder_lblName":
-                this.lblName = a;
                 break;
             case "placeholder_confirmation":
                 this.pConfirmation = a
