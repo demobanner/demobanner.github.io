@@ -10,6 +10,12 @@
             a.style.width = "90%";
             a.style.marginBottom = "5px";
             b.appendChild(a);
+
+            var itemLabel = document.createElement("Label");
+            itemLabel.setAttribute("for", a);
+            itemLabel.innerHTML = "Item: ";
+            b.insertBefore(itemLabel, a);
+
             return a
         },
         createLabel = function(b, a, c, h, k) {
