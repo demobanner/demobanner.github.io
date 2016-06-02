@@ -7,8 +7,8 @@
             a.placeholder = "";
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
-            a.style.marginTop = "10px";
-            a.style.marginBottom = "15px";
+            a.style.marginTop = "5px";
+            a.style.marginBottom = "10px";
             b.appendChild(a);
 
             var itemLabel = document.createElement("Label");
@@ -16,7 +16,6 @@
             itemLabel.innerHTML = h;
             itemLabel.style.color = "#ffffff";
             itemLabel.style.fontFamily  = "Arial";
-            itemLabel.style.marginBottom = "10px";
             b.insertBefore(itemLabel, a);
 
             return a
