@@ -26,14 +26,16 @@
   <div id="banner">
     <a id="mainExit" class="click-tag" href="javascript:">
       <div id="bg" class="layer"></div>
-      <div id="bottle" class="layer"></div>
+      <div id="bg_final" class="layer"></div>
+			<div id="bottle" class="layer"></div>
       <div id="over" class="layer"></div>
-      <div id="logo" class="layer"></div>
 			<div id="lastFrame" class="layer"></div>
       <div id="fivebottles" class="layer"></div>
-      <div id="cta" class="layer"></div>
       <div id="text1" class="layer"></div>
+      <div id="text1_" class="layer"></div>
       <div id="text2" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
     </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -41,23 +43,30 @@
 		document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
     var over = document.getElementById('over'),
         bg = document.getElementById('bg'),
-        bottle = document.getElementById('bottle'),
+        bg_final = document.getElementById('bg_final'),
+				bottle = document.getElementById('bottle'),
 				last = document.getElementById('last'),
         logo = document.getElementById('logo'),
-		    lastFrame = document.getElementById('lastFrame'),
         text1 = document.getElementById('text1'),
+        text1_ = document.getElementById('text1_'),
         text2 = document.getElementById('text2'),
         fivebottles = document.getElementById('fivebottles'),
         cta = document.getElementById('cta');
-    var bannerTween = new TimelineLite();
+    
+		var bannerTween = new TimelineLite();
 
     function init() {
-      bannerTween.to(bottle, 2, {autoAlpha: 1, ease: Power2.easeOut})
-								 .to(over, 2, {autoAlpha: 0, scale: 2, ease: Power2.easeOut}, '-=1.8')
-								 .to(lastFrame, 0.5, {autoAlpha: 1 })
-                 .to(text1, 0.5, {left: 0})
+      bannerTween.to(bg_final, 2, {autoAlpha: 1, ease: Power2.easeOut})
+								 .to(bottle, 2, {autoAlpha: 1, ease: Power2.easeOut}, "-=2")
+								 .to(over, 2, {autoAlpha: 0, scale: 2, ease: Power2.easeOut}, "-=1.8")
+                 .to(text1, 0.5, {left: 70, ease: Power2.easeOut})
+								 .to(text1_, 0.1, {autoAlpha: 1, ease: Power2.easeOut})
+								 .to(text1, 0.1, {autoAlpha: 0, ease: Power2.easeOut})
+								 .to(bottle, 0.5, {scale: 0.60, top:-25, left: -60}, "+=1")
+								 .to(logo, 0.5, {scale: 0.70, top:-40},"-=0.5")
+                 .to(text1_, 0.5, {left: 0, top: 0, ease: Power2.easeOut},"-=0.5")
                  .to(fivebottles, 1, {autoAlpha: 1})
-                 .to(text2, 0.5, {top: 0})
+                 .to(text2, 0.5, {top: 0, ease: Power2.easeOut})
                  .to(cta, 0.5, {autoAlpha: 1})
     }
   </script>

@@ -47,9 +47,22 @@ body {
 #logo{
   background-image: url('logo.png');
 	opacity: 1;
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+}
+#bg_final{
+  background-image: url('bg_final.jpg');
 }
 #bottle{
-  background-image: url('bg_final.jpg');
+  background-image: url('bottle.png');
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
 }
 #f1_blur{
   background-image: url('f1_blur.png');
@@ -62,7 +75,13 @@ body {
 #text1{
   background-image: url('text1.png');
   left: 250px;
+  top: 40px;
   opacity: 1;
+}
+#text1_{
+  background-image: url('text1.png');
+	left: 70px;
+  top: 40px;
 }
 #text2{
   background-image: url('text2.png');
