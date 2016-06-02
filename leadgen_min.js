@@ -11,17 +11,6 @@
             b.appendChild(a);
             return a
         },
-        combo = function(b, a, c, g, h, k) {
-            a = document.createElement("select");
-            a.type = g;
-            a.id = c;
-            a.placeholder = h;
-            a.style.display = k ? "block" : "none";
-            a.style.width = "90%";
-            a.style.margin = "5px";
-            b.appendChild(a);
-            return a
-        },
         e = function(b) {
             return b && "true" == b.toLowerCase() || "" == b || "1" == b
         },
@@ -45,18 +34,21 @@
         this.c = e(this.getAttribute("include_email"));
         this.g = e(this.getAttribute("include_phone"));
         this.b = e(this.getAttribute("include_model"));
+        this.x = e(this.getAttribute("include_location"));
 
         this.v = this.getAttribute("placeholder_name");
         this.u = this.getAttribute("placeholder_email");
         this.w = this.getAttribute("placeholder_phone");
         this.o = this.getAttribute("placeholder_model");
+        this.y = this.getAttribute("placeholder_location");
         this.A = this.getAttribute("placeholder_submit");
         this.s = this.getAttribute("placeholder_confirmation");
 
         this.j = d(this, this.j, "leadgen-name", "text", this.v, this.f);
         this.i = d(this, this.i, "leadgen-email", "email", this.u, this.c);
         this.l = d(this, this.l, "leadgen-phone", "tel", this.w, this.g);
-        this.h = combo(this, this.h, "leadgen-model", "", this.o, this.b);
+        this.h = d(this, this.h, "leadgen-model", "text", this.o, this.b);
+        this.z = d(this, this.k, "leadgen-location", "text", this.y, this.x);
 
         var b = this.a,
             a = this.A,
@@ -87,6 +79,9 @@
             case "include_model":
                 this.b = e(a);
                 break;
+            case "include_location":
+                this.x = e(a);
+                break;
             case "placeholder_name":
                 this.v = a;
                 break;
@@ -98,6 +93,9 @@
                 break;
             case "placeholder_model":
                 this.o = a;
+                break;
+            case "placeholder_location":
+                this.y = a;
                 break;
             case "placeholder_submit":
                 this.A = a;
