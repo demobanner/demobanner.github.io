@@ -7,7 +7,8 @@
             a.placeholder = "";
             a.style.display = k ? "block" : "none";
             a.style.width = "90%";
-            a.style.marginBottom = "10px";
+            a.style.marginTop = "10px";
+            a.style.marginBottom = "15px";
             b.appendChild(a);
 
             var itemLabel = document.createElement("Label");
