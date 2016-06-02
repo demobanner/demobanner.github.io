@@ -30,7 +30,7 @@
         this.style.display = "inherit";
         this.m = "https://cplads-hrd.appspot.com/submit/" + this.getAttribute("lead_depot_id");
 
-        this.f = e(this.getAttribute("include_name"));
+        this.fname = e(this.getAttribute("include_name"));
         this.c = e(this.getAttribute("include_email"));
         this.g = e(this.getAttribute("include_phone"));
         this.b = e(this.getAttribute("include_model"));
@@ -44,7 +44,7 @@
         this.A = this.getAttribute("placeholder_submit");
         this.s = this.getAttribute("placeholder_confirmation");
 
-        this.j = d(this, this.j, "leadgen-name", "text", this.v, this.f);
+        this.j = d(this, this.j, "leadgen-name", "text", this.v, this.fname);
         this.i = d(this, this.i, "leadgen-email", "email", this.u, this.c);
         this.l = d(this, this.l, "leadgen-phone", "tel", this.w, this.g);
         this.h = d(this, this.h, "leadgen-model", "text", this.o, this.b);
@@ -68,7 +68,7 @@
                 this.m = "https://cplads-hrd.appspot.com/submit/" + a;
                 break;
             case "include_name":
-                this.f = e(a);
+                this.fname = e(a);
                 break;
             case "include_email":
                 this.c = e(a);
