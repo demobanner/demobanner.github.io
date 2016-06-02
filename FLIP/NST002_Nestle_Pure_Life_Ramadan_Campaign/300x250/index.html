@@ -6,25 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="ad.size" content= "width=300, height=250">
   <title>Banner</title>
-  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript">
-		function preInit() {
-			if (Enabler.isInitialized()) {
-				init();
-			} else {
-				Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
-			}
-		}
-		function bgExitHandler(e) {
-			Enabler.exit('mainExit');
-		}
-		window.onload = preInit;
-	</script>
+    var clickTag = "http://google.com";
+  </script>
 </head>
 <body onload="init()">
   <div id="banner">
-    <a id="mainExit" class="click-tag" href="javascript:">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)">
       <div id="bg" class="layer"></div>
       <div id="bg_final" class="layer"></div>
 			<div id="bottle" class="layer"></div>
@@ -40,7 +29,6 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
-		document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
     var over = document.getElementById('over'),
         bg = document.getElementById('bg'),
         bg_final = document.getElementById('bg_final'),

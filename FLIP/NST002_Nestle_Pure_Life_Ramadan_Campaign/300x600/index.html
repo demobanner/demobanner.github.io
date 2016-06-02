@@ -6,25 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="ad.size" content= "width=300, height=600">
   <title>Banner 300x600</title>
-  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript">
-		function preInit() {
-			if (Enabler.isInitialized()) {
-				init();
-			} else {
-				Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
-			}
-		}
-		function bgExitHandler(e) {
-			Enabler.exit('mainExit');
-		}
-		window.onload = preInit;
-	</script>
+    var clickTag = "http://google.com";
+  </script>
+	
 </head>
 <body onload="init()">
   <div id="banner">
-    <a id="mainExit" class="click-tag" href="javascript:">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)">
       <div id="bg" class="layer"></div>
       <div id="bottle" class="layer"></div>
       <div id="over" class="layer"></div>
@@ -37,7 +27,6 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
-		document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
     var over = document.getElementById('over'),
         bg = document.getElementById('bg'),
         bottle = document.getElementById('bottle'),
@@ -53,7 +42,7 @@
 								 .to(over, 2, {autoAlpha: 0, scale: 2, ease: Power2.easeOut}, '-=2')
                  .to(text1, 0.5, {left: 0, ease: Power2.easeInOut}, '-=1')
                  .to(fivebottles, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-                 .to(text2, 0.5, {top: 0, ease: Power2.easeIn})
+                 .to(text2, 0.5, {top: 0, ease: Power2.easeOut})
                  .to(cta, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
     }
   </script>
