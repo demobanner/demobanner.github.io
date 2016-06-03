@@ -56,7 +56,7 @@
 
         this.txtName = d(this, this.j, "leadgen-name", "text", this.pName, this.iName);
         this.txtMail = d(this, this.i, "leadgen-email", "email", this.pMail, this.iMail);
-        this.txtPhone = d(this, this.l, "leadgen-phone", "tel", this.pPhone, this.iPhone);
+        this.txtPhone = d(this, this.l, "leadgen-phone", "number", this.pPhone, this.iPhone);
         this.txtModel = d(this, this.h, "leadgen-model", "text", this.pModel, this.iModel);
         this.txtLocation = d(this, this.k, "leadgen-location", "text", this.pLocation, this.iLocation);
 
