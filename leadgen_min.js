@@ -20,6 +20,7 @@
 
             return a
         },
+
         e = function(b) {
             return b && "true" == b.toLowerCase() || "" == b || "1" == b
         },
