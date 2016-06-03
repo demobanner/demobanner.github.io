@@ -15,7 +15,8 @@
     <script type="text/javascript">
       var tl = new TimelineLite();
 
-      var bg,
+      var timer,
+          bg,
           shakeTxt,
           bg2,
           logo,
@@ -44,8 +45,6 @@
           car4_name;
 
       function init() {
-        bg   = document.getElementById("bg"),
-
         start();
         document.getElementById('banner').addEventListener('mouseover', resume, false);
       }
@@ -56,11 +55,15 @@
 
         tl.to(coin, 0.5, {autoAlpha: 1})
           .to(shakeTxt, 0.5, {autoAlpha: 1}, "-=0.5");
+
+        timer = setTimeout(resume, 2000);
       }
 
       function resume() {
+        clearTimeout(timer);
         document.getElementById('banner').removeEventListener('mouseover', resume);
 
+        bg   = document.getElementById("bg");
         bg2   = document.getElementById("bg2");
         logo   = document.getElementById("logo");
         coin   = document.getElementById("coin");
