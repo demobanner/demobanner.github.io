@@ -28,11 +28,6 @@ body {
 #bg{
   background: url('bg.jpg') center;
   opacity: 1;
-
-}
-#lastFrame{
-  background: url('lastFrame.jpg') center;
-
 }
 #over{
 	position: absolute;
@@ -63,14 +58,6 @@ body {
       -ms-transform: scale(1);
        -o-transform: scale(1);
           transform: scale(1);
-}
-#f1_blur{
-  background-image: url('f1_blur.png');
-  -webkit-transform: scale(0);
-     -moz-transform: scale(0);
-      -ms-transform: scale(0);
-       -o-transform: scale(0);
-          transform: scale(0);
 }
 #text1{
   background-image: url('text1.png');

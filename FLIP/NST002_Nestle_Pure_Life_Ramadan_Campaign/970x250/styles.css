@@ -51,8 +51,7 @@ body {
 }
 #text1{
   background-image: url('text1.png');
-  left: 250px;
-  opacity: 1;
+  left: 100px;
 }
 #text2{
   background-image: url('text2.png');

@@ -32,8 +32,6 @@ body {
 }
 #over{
 	position: absolute;
-  width: 300px;
-  height: 600px;
   opacity: 1;
   background: url('over.png')center no-repeat;
   -webkit-transform: scale(1);
@@ -52,8 +50,7 @@ body {
 
 #text1{
   background-image: url('text1.png');
-  left: 200px;
-  opacity: 1;
+  left: 100px;
 }
 #text2{
   background-image: url('text2.png');
