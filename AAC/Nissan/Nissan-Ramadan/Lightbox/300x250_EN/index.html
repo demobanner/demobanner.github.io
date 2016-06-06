@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl32d95e182162209e57c06da98feaaec2"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl0440cc0056a3288887e11f51e5fcbf8d"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <link href="gwdpage_style.css" rel="stylesheet" data-version="8" data-exports-type="gwd-page">
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="8" data-exports-type="gwd-pagedeck">
@@ -250,7 +250,7 @@
     <gwd-exit metric="Facebook-Exit" url="https://facebook.com"></gwd-exit>
     <gwd-exit metric="exit-button" url="http://google.com"></gwd-exit>
   </gwd-doubleclick>
-  <script type="text/javascript" gwd-events="registration">gwd.actions.events.registerEventHandlers=function(event){gwd.actions.events.addHandler("expand-button","action",gwd.choosePage,false);gwd.actions.events.addHandler("expand-button","click",gwd.choosePage,false);gwd.actions.events.addHandler("banner-page","pageactivated",gwd.detectMobile,false);gwd.actions.events.addHandler(" logo-wrap logo-exit","action",gwd.auto__Logo_wrap_Logo_exitAction,false);gwd.actions.events.addHandler(" cta_button btn-cta-exit","action",gwd.auto__Cta_button_Btn_cta_exitAction,false);gwd.actions.events.addHandler(" social_icons btn-tw-exit","action",gwd.auto__Social_icons_Btn_tw_exitAction,false);gwd.actions.events.addHandler(" social_icons btn-fb-exit","action",gwd.auto__Social_icons_Btn_fb_exitAction,false);gwd.actions.events.addHandler("exit-button","action",gwd.auto_Exit_buttonAction,false);gwd.actions.events.addHandler("close_desk","action",gwd.auto_Gwd_taparea_1Action,false)};gwd.actions.events.deregisterEventHandlers=function(event){gwd.actions.events.removeHandler("expand-button","action",gwd.choosePage,false);gwd.actions.events.removeHandler("expand-button","click",gwd.choosePage,false);gwd.actions.events.removeHandler("banner-page","pageactivated",gwd.detectMobile,false);gwd.actions.events.removeHandler(" logo-wrap logo-exit","action",gwd.auto__Logo_wrap_Logo_exitAction,false);gwd.actions.events.removeHandler(" cta_button btn-cta-exit","action",gwd.auto__Cta_button_Btn_cta_exitAction,false);gwd.actions.events.removeHandler(" social_icons btn-tw-exit","action",gwd.auto__Social_icons_Btn_tw_exitAction,false);gwd.actions.events.removeHandler(" social_icons btn-fb-exit","action",gwd.auto__Social_icons_Btn_fb_exitAction,false);gwd.actions.events.removeHandler("exit-button","action",gwd.auto_Exit_buttonAction,false);gwd.actions.events.removeHandler("close_desk","action",gwd.auto_Gwd_taparea_1Action,false)};document.addEventListener("DOMContentLoaded",gwd.actions.events.registerEventHandlers);document.addEventListener("unload",gwd.actions.events.deregisterEventHandlers)</script>
+  <script type="text/javascript" gwd-events="registration">gwd.actions.events.registerEventHandlers=function(event){gwd.actions.events.addHandler("expand-button","action",gwd.choosePage,false);gwd.actions.events.addHandler("expand-button","click",gwd.choosePage,false);gwd.actions.events.addHandler("banner-page","pageactivated",gwd.detectMobile,false);gwd.actions.events.addHandler(" logo-wrap logo-exit","action",gwd.auto__Logo_wrap_Logo_exitAction,false);gwd.actions.events.addHandler(" cta_button btn-cta-exit","action",gwd.auto__Cta_button_Btn_cta_exitAction,false);gwd.actions.events.addHandler(" social_icons btn-tw-exit","action",gwd.auto__Social_icons_Btn_tw_exitAction,false);gwd.actions.events.addHandler(" social_icons btn-fb-exit","action",gwd.auto__Social_icons_Btn_fb_exitAction,false);gwd.actions.events.addHandler("exit-button","action",gwd.auto_Exit_buttonAction,false);gwd.actions.events.addHandler("close_desk","action",gwd.auto_Gwd_taparea_1Action,false);gwd.actions.events.addHandler("close_mob","action",gwd.auto_Close_mobAction,false);gwd.actions.events.addHandler("close_tab","action",gwd.auto_Close_tabAction,false)};gwd.actions.events.deregisterEventHandlers=function(event){gwd.actions.events.removeHandler("expand-button","action",gwd.choosePage,false);gwd.actions.events.removeHandler("expand-button","click",gwd.choosePage,false);gwd.actions.events.removeHandler("banner-page","pageactivated",gwd.detectMobile,false);gwd.actions.events.removeHandler(" logo-wrap logo-exit","action",gwd.auto__Logo_wrap_Logo_exitAction,false);gwd.actions.events.removeHandler(" cta_button btn-cta-exit","action",gwd.auto__Cta_button_Btn_cta_exitAction,false);gwd.actions.events.removeHandler(" social_icons btn-tw-exit","action",gwd.auto__Social_icons_Btn_tw_exitAction,false);gwd.actions.events.removeHandler(" social_icons btn-fb-exit","action",gwd.auto__Social_icons_Btn_fb_exitAction,false);gwd.actions.events.removeHandler("exit-button","action",gwd.auto_Exit_buttonAction,false);gwd.actions.events.removeHandler("close_desk","action",gwd.auto_Gwd_taparea_1Action,false);gwd.actions.events.removeHandler("close_mob","action",gwd.auto_Close_mobAction,false);gwd.actions.events.removeHandler("close_tab","action",gwd.auto_Close_tabAction,false)};document.addEventListener("DOMContentLoaded",gwd.actions.events.registerEventHandlers);document.addEventListener("unload",gwd.actions.events.deregisterEventHandlers)</script>
   <script type="text/javascript" gwd-events="handlers">
     window.gwd = window.gwd || {};
     gwd.handleExpand_buttonAction = function(event) {
@@ -353,6 +353,14 @@
       gwd.actions.gwdDoubleclick.exit('gwd-ad', 'exit-button', 'http://google.com', true, true);
     };
     gwd.auto_Gwd_taparea_1Action = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdPagedeck.goToPage('pagedeck', 'banner-page', 'none', 1000, 'linear', 'top');
+    };
+    gwd.auto_Close_mobAction = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdPagedeck.goToPage('pagedeck', 'banner-page', 'none', 1000, 'linear', 'top');
+    };
+    gwd.auto_Close_tabAction = function(event) {
       // GWD Predefined Function
       gwd.actions.gwdPagedeck.goToPage('pagedeck', 'banner-page', 'none', 1000, 'linear', 'top');
     };
