@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>DoubleClick Banner</title>
-  	<script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 	<link rel="stylesheet" href="styles.css"/>
   <script type="text/javascript">
@@ -38,26 +38,26 @@
 				logo = document.getElementById('logo');
 
       	bannerTween.to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-				.to(f1_charm, 1 , {left: 0, ease: Power2.easeOut})
+				.to(f1_charm, 0.5, {left: 0, ease: Power2.easeOut})
       			.to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
       			.to(f1_cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
 
-      			.to(f2_bg, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeIn}, '+=1')
-      			.to([f1_charm, f1_text, f1_cta], 0.1, {autoAlpha: 0, ease: Power2.easeIn})
-      			.to(f2_bg, 0.5, {autoAlpha: 0, ease: Power2.easeIn}, '+=1')
+      			.to(f2_bg, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, '+=2')
+      			.to([f1_charm, f1_text, f1_cta], 0.1, {autoAlpha: 0, ease: Power2.easeOut})
+      			.to(f2_bg, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, '+=1')
 
-      			.to(f3_charm, 0.5 , {left: 0, ease: Power2.easeNon})
+      			.to(f3_charm, 0.5, {left: 0, ease: Power2.easeOut})
       			.to(f3_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
       			.to(f3_cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
 
-      			.to(f4_bg, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeIn}, '+=1')
-      			.to([f3_charm, f3_text, f3_cta], 0.1, {autoAlpha: 0, ease: Power2.easeIn})
-      			.to(f4_bg, 0.5, {autoAlpha: 0, ease: Power2.easeIn}, '+=1')
+      			.to(f4_bg, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, '+=2')
+      			.to([f3_charm, f3_text, f3_cta], 0.1, {autoAlpha: 0, ease: Power2.easeOut})
+      			.to(f4_bg, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, '+=1')
 
-      			.to(f5_circle, 0.5 , {left: 0, ease: Power2.easeNon})
-      			.to(f5_jewellryBox, 0.5 , {left: 0, ease: Power2.easeOut})
-      			.to(f5_text, 0.5 , {autoAlpha: 1, top: 0, ease: Power2.easeOut})
-      			.to(f5_cta, 0.5 , {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+      			.to(f5_circle, 0.5, {left: 0, ease: Power2.easeOut})
+      			.to(f5_jewellryBox, 0.5, {left: 0, ease: Power2.easeOut})
+      			.to(f5_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+      			.to(f5_cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
 
 
 		}
