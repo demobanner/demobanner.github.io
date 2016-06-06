@@ -1,7 +1,7 @@
 - function() {
     "use strict";
     var d = function(b, a, c, g, h, k) {
-            a = document.createElement("input");
+            a = document.createElement("select");
             a.type = g;
             a.id = c;
             a.placeholder = "";
