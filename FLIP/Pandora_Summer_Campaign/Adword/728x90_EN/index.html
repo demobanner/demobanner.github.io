@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=728,height=90">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>DoubleClick Banner</title>
+	<script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"> </script>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = "http://pandora.net/explore/collections/summer";
+		var bannerTween = new TimelineLite();
+		function init() {
+			var f1_charm = document.getElementById('f1_charm'),
+				f1_model = document.getElementById('f1_model'),
+				f1_text = document.getElementById('f1_text'),
+				f1_cta = document.getElementById('f1_cta'),
+				f2_bg = document.getElementById('f2_bg'),
+				f3_charm = document.getElementById('f3_charm'),
+				f3_model = document.getElementById('f3_model'),
+				f3_text = document.getElementById('f3_text'),
+				f3_cta = document.getElementById('f3_cta'),
+				f4_bg = document.getElementById('f4_bg'),
+				f5_jewellryBox = document.getElementById('f5_jewellryBox'),
+				f5_circle= document.getElementById('f5_circle'),
+				f5_text1 = document.getElementById('f5_text1'),
+				f5_text2 = document.getElementById('f5_text2'),
+				f5_cta = document.getElementById('f5_cta'),
+				logo = document.getElementById('logo');
+
+      	bannerTween.to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+				.to([f1_charm, f1_model], 0.5, {left: 0, ease: Power2.easeOut})
+      			.to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+      			.to(f1_cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+
+      			.to(f2_bg, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, '+=2')
+      			.to([f1_charm, f1_model, f1_text, f1_cta], 0.1, {autoAlpha: 0, ease: Power2.easeOut})
+      			.to(f2_bg, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, '+=1')
+
+      			.to([f3_charm, f3_model], 0.5, {left: 0, ease: Power2.easeOut})
+      			.to(f3_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+      			.to(f3_cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+
+      			.to(f4_bg, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeOut}, '+=2')
+      			.to([f3_charm, f3_model, f3_text, f3_cta], 0.1, {autoAlpha: 0, ease: Power2.easeOut})
+      			.to(f4_bg, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, '+=1')
+
+      			.to(f5_text1, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+      			.to(f5_jewellryBox, 0.5, {left: 0, ease: Power2.easeOut})
+      			.to(f5_text2, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+      			.to(f5_cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+
+
+		}
+		
+		window.onload = init;
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" href="javascript:ExitApi.exit();">
+      <div id="bg" class="layer"></div>
+      <div id="f1_charm" class="layer"></div>
+      <div id="f1_model" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f1_cta" class="layer"></div>
+
+      <div id="f2_bg" class="layer"></div>
+
+      <div id="f3_charm" class="layer"></div>
+      <div id="f3_model" class="layer"></div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f3_cta" class="layer"></div>
+      
+      <div id="f4_bg" class="layer"></div>
+
+      <div id="f5_jewellryBox" class="layer"></div>
+      <div id="f5_text1" class="layer"></div>
+      <div id="f5_text2" class="layer"></div>
+      <div id="f5_cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+</body>
+</html>
