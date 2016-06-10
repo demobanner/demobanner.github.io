@@ -69,4 +69,8 @@ body {
   left: 90px;
   background: url('replay.png') no-repeat;
   z-index: 10;
+  visibility: hidden;
+  width: 25px;
+  height: 10px;
+
 }
