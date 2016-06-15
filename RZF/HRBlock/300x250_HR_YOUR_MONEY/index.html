@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Banner</title>
+
+<style>
+#container {
+  border: 1px solid black;
+	margin:50px;
+	background:#fff;
+	height:248px;
+	width:298px;
+	overflow: hidden;
+}
+#banner {
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	height:230px;
+	width:280px;
+}
+#cubeParent1, #cubeParent2 {
+	height:230px;
+	width:280px;
+	position:absolute;
+}
+#cubeParent2 {
+	opacity: 0;
+}
+.cubeFace{
+	height:230px;
+	width:280px;
+	position:absolute;
+	opacity: 1;
+}
+#face11{
+	background: url('frame1.png');
+}
+#face12{
+	background: url('frame2.png');
+	opacity: 0;
+}
+#face21{
+	background: url('frame2.png');
+}
+#face22{
+	background: url('frame3.png');
+	opacity: 0;
+}
+#face23{
+	background: url('frame4.png');
+	opacity: 0;
+}
+#f4_text{
+	width: 155px;
+	height: 9px;
+	position:absolute;
+	top: 199px;
+	left: 65px;
+}
+.text1{
+	position:absolute;
+	height: 9px;
+	opacity: 0;
+}
+#c1_F{
+	background: url('F.png');
+	width: 7px;
+	height: 9px;
+	
+}
+#c2_8{
+	background: url('8.png');
+	width: 7px;
+	left: 7px;
+	
+}
+#c3_2{
+	background: url('2.png');
+	width: 6px;
+	left: 14px;
+	
+}
+#c4_3{
+	background: url('3.png');
+	width: 7px;
+	left: 20px;
+	
+}
+#c5_1{
+	background: url('1.png');
+	width: 4px;
+	left: 28px;
+	
+}
+#c6_7{
+	background: url('7.png');
+	width: 7px;
+	left: 31px;
+	
+}
+#c7_8{
+	background: url('8.png');
+	width: 7px;
+	left: 38px;
+	
+}
+#c8_1{
+	background: url('1.png');
+	width: 4px;
+	left: 45px;
+	
+}
+#c9_3{
+	background: url('3.png');
+	width: 7px;
+	left: 49px;
+	
+}
+#c10_4{
+	background: url('4.png');
+	width: 6px;
+	left: 56px;
+	
+}
+#c11_8{
+	background: url('8.png');
+	width: 7px;
+	left: 72px;
+	
+}
+#c12_7{
+	background: url('7.png');
+	width: 7px;
+	left: 79px;
+	
+}
+#c13_3{
+	background: url('3.png');
+	width: 7px;
+	left: 96px;
+	
+}
+#c14_9{
+	background: url('9.png');
+	width: 7px;
+	left: 103px;
+	
+}
+#c15_MB3RS{
+	background: url('MB3RS.png');
+	width: 37px;
+	height: 10px;
+	left: 112px;
+	
+	top:-1px;
+
+}
+.text2{
+	position:absolute;
+	height: 9px;
+	
+	opacity: 0;
+
+}
+#c2_A{
+	background: url('A.png');
+	width: 6px;
+	left: 7px;
+}
+#c3_S{
+	background: url('S.png');
+	width: 7px;
+	left: 14px;
+}
+#c4_C{
+	background: url('C.png');
+	width: 6px;
+	left: 21px;
+}
+#c6_N{
+	background: url('N.png');
+	width: 6px;
+	left: 33px;
+}
+#c7_A{
+	background: url('A.png');
+	width: 6px;
+	left: 40px;
+}
+#c8_T{
+	background: url('T.png');
+	width: 6px;
+	left: 47px;
+}
+#c9_E{
+	background: url('E.png');
+	width: 6px;
+	left: 54px;
+}
+#c10_D{
+	background: url('D.png');
+	width: 7px;
+	left: 61px;
+}
+#c11_B{
+	background: url('B.png');
+	width: 6px;
+	left: 76px;
+}
+#c12_Y{
+	background: url('Y.png');
+	width: 6px;
+	left: 82px;
+}
+#c13_N{
+	background: url('N.png');
+	width: 6px;
+	left: 98px;
+}
+#c14_U{
+	background: url('U.png');
+	width: 6px;
+	left: 105px;
+}
+</style>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="banner">
+		<a id="mainExit" href="javascript:">
+			<div id="cubeParent1">
+	    		<div class="cubeFace" id="face11"></div>
+	        	<div class="cubeFace" id="face12"></div>
+	  		</div>
+			<div id="cubeParent2">
+	  			<div class="cubeFace" id="face21"></div>
+	    		<div class="cubeFace" id="face22"></div>
+	    		<div class="cubeFace" id="face23"></div>
+			</div>
+			<div id="f4_text">
+				<div class="text1" id="c1_F"></div>
+				<div class="text1" id="c2_8"></div>
+				<div class="text1" id="c3_2"></div>
+				<div class="text1" id="c4_3"></div>
+				<div class="text1" id="c5_1"></div>
+				<div class="text1" id="c6_7"></div>
+				<div class="text1" id="c7_8"></div>
+				<div class="text1" id="c8_1"></div>
+				<div class="text1" id="c9_3"></div>
+				<div class="text1" id="c10_4"></div>
+				<div class="text1" id="c11_8"></div>
+				<div class="text1" id="c12_7"></div>
+				<div class="text1" id="c13_3"></div>
+				<div class="text1" id="c14_9"></div>
+				<div class="text1" id="c15_MB3RS"></div>
+
+				
+				<div class="text2" id="c2_A"></div>
+				<div class="text2" id="c3_S"></div>
+				<div class="text2" id="c4_C"></div>
+				
+				<div class="text2" id="c6_N"></div>
+				<div class="text2" id="c7_A"></div>
+				<div class="text2" id="c8_T"></div>
+				<div class="text2" id="c9_E"></div>
+				<div class="text2" id="c10_D"></div>
+				<div class="text2" id="c11_B"></div>
+				<div class="text2" id="c12_Y"></div>
+				<div class="text2" id="c13_N"></div>
+				<div class="text2" id="c14_U"></div>
+				
+			</div>
+		</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+	var clickTag = 'http://google.com';
+
+	function exitClickHandler(e) {
+		Enabler.exitOverride('mainExit', clickTag);
+	}
+	function init (){
+		document.getElementById('mainExit').addEventListener('click', exitClickHandler, false);
+		var WIDTH = 280,
+				HEIGHT = 230;
+
+		var tl = new TimelineMax({paused:false});
+
+		var	container = document.getElementById("container"),
+				face11 = document.getElementById("face11"),
+				face12 = document.getElementById("face12"),
+				face21 = document.getElementById("face21"),
+				face22 = document.getElementById("face22"),
+				face23 = document.getElementById("face23"),
+				cubeParent1 = document.getElementById("cubeParent1"),
+				cubeParent2 = document.getElementById("cubeParent2"),
+				c1_F = document.getElementById("c1_F");
+
+		TweenMax.set(container, {perspective:400});
+
+		TweenLite.set(cubeParent1, {transformStyle:"preserve-3d"});
+		TweenLite.set(cubeParent2, {transformStyle:"preserve-3d"});
+
+		tl.to(face12, .1, {rotationX:90, y:-(HEIGHT/2), z:-(HEIGHT/2)})
+			.to(face12, .1, {autoAlpha:1})
+		  .to(cubeParent1, 0.8, {rotationX:-90, y:(HEIGHT/2), z:-(HEIGHT/2)}, "+=1.8")
+			.to(face22, .1, {rotationY:90, x:(WIDTH/2), z:-(WIDTH/2)})
+			.to(face23, .1, {rotationY:180, z:-WIDTH})
+		  .to(cubeParent2, .1, {autoAlpha:1}, "+=1")
+			.to([face22, face23], .1, {autoAlpha:1})
+		  .to(cubeParent1, .1, {autoAlpha:0})
+			.to(cubeParent2, 0.8, {rotationY:-90, x:-(WIDTH/2), z:-(WIDTH/2)}, "+=0.5");
+		tl.to(cubeParent2, 0.8, {rotationY:-180, x:0, z:-WIDTH}, "+=2");
+		tl.to([c1_F,c2_8,c3_2,c4_3,c5_1,c6_7,c7_8,c8_1,c9_3,c10_4,c11_8,c12_7,c13_3,c14_9,c15_MB3RS], 1, {alpha: 1})
+		tl.to(c2_8, 2, {rotationX: 1440})
+		tl.to(c3_2, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c4_3, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c6_7, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c7_8, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c8_1, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c9_3, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c10_4, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c11_8, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c12_7, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c13_3, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c14_9, 2, {rotationX: 1440},"-=1.9")
+		tl.to(c2_8, 1, {alpha:0},"-=1.9")
+		tl.to(c2_A, 1, {alpha:1},"-=1.5")
+		tl.to(c3_2, 1, {alpha:0},"-=1.9")
+		tl.to(c3_S, 1, {alpha:1},"-=1.5")
+		tl.to(c4_3, 1, {alpha:0},"-=1.9")
+		tl.to(c4_C, 1, {alpha:1},"-=1.5")
+		tl.to(c6_7, 1, {alpha:0},"-=1.9")
+		tl.to(c6_N, 1, {alpha:1},"-=1.5")
+		tl.to(c7_8, 1, {alpha:0},"-=1.9")
+		tl.to(c7_A, 1, {alpha:1},"-=1.5")
+		tl.to(c8_1, 1, {alpha:0},"-=1.9")
+		tl.to(c8_T, 1, {alpha:1},"-=1.5")
+		tl.to(c9_3, 1, {alpha:0},"-=1.9")
+		tl.to(c9_E, 1, {alpha:1},"-=1.5")
+		tl.to(c10_4, 1, {alpha:0},"-=1.9")
+		tl.to(c10_D, 1, {alpha:1},"-=1.5")
+		tl.to(c11_8, 1, {alpha:0},"-=1.9")
+		tl.to(c11_B, 1, {alpha:1},"-=1.5")
+		tl.to(c12_7, 1, {alpha:0},"-=1.9")
+		tl.to(c12_Y, 1, {alpha:1},"-=1.5")
+		tl.to(c13_3, 1, {alpha:0},"-=1.9")
+		tl.to(c13_N, 1, {alpha:1},"-=1.5")
+		tl.to(c14_9, 1, {alpha:0},"-=1.9")
+		tl.to(c14_U, 1, {alpha:1},"-=1.5")
+	}
+	window.onload = init();
+</script>
+
+</body>
+</html>
