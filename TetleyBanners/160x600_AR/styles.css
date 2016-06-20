@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 158px;
+  height: 598px;
+	background: #FFD300;
+  border: 1px solid #000000;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 600px;
+  opacity: 0;
+}
+#logo{
+  background: url('logo.png') center;
+}
+#f1_text{
+  background: url('f1_text.png') center;
+  left: 160px;
+}
+
+#f1_woman1{
+  background: url('f1_woman1.png') center;
+}
+#f1_woman2{
+  background: url('f1_woman2.png') center;
+}
+#f2_bg{
+  background: url('f2_bg.jpg') center;
+  left: 160px;
+  opacity: 1;
+}
+#f2_text1{
+  background: url('f2_text1.png') center;
+  left: 160px;
+  opacity: 1;
+}
+#f2_woman1{
+  background: url('f2_woman1.png') center;
+  left: 160px;
+  opacity: 1;
+}
+#f2_woman2{
+  background: url('f2_woman2.png') center;
+}
+#f2_woman3{
+  background: url('f2_woman3.png') center;
+}
+#f2_box1{
+  background: url('f2_box1.png') center;
+  opacity: 1;
+  left: 160px;
+}
+#f2_box2{
+  background: url('f2_box2.png') center;
+  opacity: 1;
+  left: 160px;
+}
+#f2_text2{
+  background: url('f2_text2.png') center;
+  left: 160px;
+}
+#replay{
+  background: url('reload.png') center;
+  width: 12px;
+  height: 13px;
+  top: 3px;
+  left: 3px;
+  visibility: hidden;
+  cursor: pointer;
+}
