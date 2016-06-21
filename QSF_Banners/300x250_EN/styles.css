@@ -31,13 +31,13 @@ body {
 	transform: scale(0.3);
 }
 #f1_bg2{
-	left: -100px;
-	top: -100px;
+	left: -50px;
+	top: -50px;
   background: url('f1_bg2.png');
 }
 #f1_bg3{
-	left: 100px;
-	top: 100px;
+	left: 50px;
+	top: 50px;
   background: url('f1_bg3.png');
 }
 #f1_text{
