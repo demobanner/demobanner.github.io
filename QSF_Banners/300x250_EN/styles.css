@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 300px;
+  height: 250px;
+}
+#banner {
+  position: relative;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+#f1_bg{
+  background:  url('f1_bg.jpg');
+  opacity: 1;  
+}
+#f1_text{
+  background:  url('f1_text.png');
+  top: -10px;  
+}
+#f2_bg{
+  background:  url('f1_bg.jpg');  
+}
+#f2_text{
+  background:  url('f2_text.png');
+  top: -10px;  
+}
+#f3_bg{
+  background:  url('f3_bg.jpg');  
+}
+#f3_text{
+  background:  url('f3_text.png');
+  top: -10px;  
+}
+#f4_bg{
+  background:  url('f4_bg.jpg');  
+}
+#f4_text{
+  background:  url('f4_text.png');
+  top: -10px;  
+}
+#f5_bg{
+  background:  url('f5_bg.jpg');  
+}
+#f5_logo{
+  background:  url('f5_logo.png');  
+}
+#f5_cta{
+  background:  url('f5_cta.png'); 
+  top: 20px; 
+}
+#f5_text{
+  background:  url('f5_text.png');
+  top: -10px;  
+}
