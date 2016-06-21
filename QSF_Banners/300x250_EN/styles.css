@@ -18,17 +18,31 @@ body {
   border: 1px solid #000;
   overflow: hidden;
   cursor: pointer;
+	background: url('bg.jpg')
 }
-#f1_bg{
-  background:  url('f1_bg.jpg');
-  opacity: 1;  
+#f1_bg1{
+	width: 320px;
+	height: 300px;
+	top: -25px;
+	left: -10px;
+  background: url('f1_bg1.png') center no-repeat;
+	-ms-transform: scale(0.3);
+	-webkit-transform: scale(0.3);
+	transform: scale(0.3);
+}
+#f1_bg2{
+	left: -100px;
+	top: -100px;
+  background: url('f1_bg2.png');
+}
+#f1_bg3{
+	left: 100px;
+	top: 100px;
+  background: url('f1_bg3.png');
 }
 #f1_text{
   background:  url('f1_text.png');
   top: -10px;  
-}
-#f2_bg{
-  background:  url('f1_bg.jpg');  
 }
 #f2_text{
   background:  url('f2_text.png');
@@ -61,4 +75,14 @@ body {
 #f5_text{
   background:  url('f5_text.png');
   top: -10px;  
+}
+#reload {
+  width: 14px;
+  height: 14px;
+  left: inherit;
+  right: 0;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
+  visibility: hidden;
 }

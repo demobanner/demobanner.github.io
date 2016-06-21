@@ -16,9 +16,10 @@
     <script type="text/javascript">
       var tl = new TimelineLite();
       function init() {
-        var f1_bg = document.getElementById("f1_bg"),
+        var f1_bg1 = document.getElementById("f1_bg1"),
+            f1_bg2 = document.getElementById("f1_bg2"),
+            f1_bg3 = document.getElementById("f1_bg3"),
             f1_text = document.getElementById("f1_text"),
-            f2_bg = document.getElementById("f2_bg"),
             f2_text = document.getElementById("f2_text"),
             f3_bg = document.getElementById("f3_bg"),
             f3_text = document.getElementById("f3_text"),
@@ -29,31 +30,39 @@
             f5_logo = document.getElementById("f5_logo"),
             f5_cta = document.getElementById("f5_cta");
 
-        tl.to(f1_text, 0.5, {autoAlpha: 1, top: 0})
-        .to([f1_bg, f1_text], 0.5, {autoAlpha: 0, delay: 2})
-        .to(f2_bg, 0.5, {autoAlpha: 1}, "-=0.5")
-        .to(f2_text, 0.5, {autoAlpha: 1, top: 0})
-        .to([f2_bg, f2_text], 0.5, {autoAlpha: 0, delay: 2})
-        .to(f3_bg, 0.5, {autoAlpha: 1}, "-=0.5")
-        .to(f3_text, 0.5, {autoAlpha: 1, top: 0})
-        .to([f3_bg, f3_text], 0.5, {autoAlpha: 0, delay: 2})
-        .to(f4_bg, 0.5, {autoAlpha: 1}, "-=0.5")
-        .to(f4_text, 0.5, {autoAlpha: 1, top: 0})
-        .to([f4_bg, f4_text], 0.5, {autoAlpha: 0, delay: 2})
-        .to(f5_bg, 0.5, {autoAlpha: 1}, "-=0.5")
-        .to(f5_logo, 0.5, {autoAlpha: 1})
-        .to(f5_text, 0.5, {autoAlpha: 1, top: 0})
-        .to(f5_cta, 0.5, {autoAlpha: 1, top: 0});
+				tl.to(f1_bg1, 1, {autoAlpha: 1, scale:1, ease: Power4.easeOut})
+					.to(f1_bg2, 0.5, {autoAlpha: 1, left: 0, top: 0, ease: Power4.easeOut}, '-=1')
+					.to(f1_bg3, 0.5, {autoAlpha: 1, left: 0, top: 0, ease: Power4.easeOut}, '-=1')
+					.to(f1_text, 0.5, {autoAlpha: 1, top:0})
+					.to(f1_text, 0.5, {autoAlpha: 0, delay: 2})
+					.to(f2_text, 0.5, {autoAlpha: 1, top: 0})
+					.to([f1_bg1, f1_bg2, f1_bg3, f2_text], 0.5, {autoAlpha: 0, delay: 2})
+					.to(f3_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+					.to(f3_text, 0.5, {autoAlpha: 1, top: 0})
+					.to([f3_bg, f3_text], 0.5, {autoAlpha: 0, delay: 2})
+					.to(f4_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+					.to(f4_text, 0.5, {autoAlpha: 1, top: 0})
+					.to([f4_bg, f4_text], 0.5, {autoAlpha: 0, delay: 2})
+					.to(f5_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+					.to(f5_logo, 0.5, {autoAlpha: 1})
+					.to(f5_text, 0.5, {autoAlpha: 1, top: 0})
+					.to(f5_cta, 0.5, {autoAlpha: 1, top: 0})
+					.to(reload, 0.1, {autoAlpha: 1});
       }
 
+      function reloadBanner(){
+        tl.restart();
+    }
+      
     </script>
   </head>
   <body onload="init()">
     <div id="banner">
       <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
-        <div id="f1_bg" class="layer"></div>
+        <div id="f1_bg1" class="layer"></div>
+        <div id="f1_bg2" class="layer"></div>
+        <div id="f1_bg3" class="layer"></div>
         <div id="f1_text" class="layer"></div>
-        <div id="f2_bg" class="layer"></div>
         <div id="f2_text" class="layer"></div>
         <div id="f3_bg" class="layer"></div>
         <div id="f3_text" class="layer"></div>
@@ -64,6 +73,7 @@
         <div id="f5_text" class="layer"></div>
         <div id="f5_cta" class="layer"></div>
       </a>
+      <div id="reload" class="layer" onclick="reloadBanner();"></div>
     </div>
   </body>
 </html>
