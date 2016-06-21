@@ -6,7 +6,7 @@ body {
   position: relative;
   overflow: hidden;
   width: 298px;
-  height: 248px;
+  height: 598px;
 	background: #FFD300;
   border: 1px solid #000000;
 }
@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   width: 300px;
-  height: 250px;
+  height: 600px;
   opacity: 0;
 }
 #logo{
@@ -51,6 +51,7 @@ body {
 }
 #f2_woman1{
   background: url('f2_woman1.png') center;
+  
 }
 #f2_woman2{
   background: url('f2_woman2.png') center;
@@ -60,11 +61,13 @@ body {
 }
 #f2_box1{
   background: url('f2_box1.png') center;
-  left: -50px;
+  opacity: 1;
+  left: -300px;
 }
 #f2_box2{
   background: url('f2_box2.png') center;
-  left: 50px;
+  opacity: 1;
+  left: 300px;
 }
 #f2_text2{
   background: url('f2_text2.png') center;
