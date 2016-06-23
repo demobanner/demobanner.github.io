@@ -9,50 +9,53 @@
 
 	<body>
 		<div id="banner">
-		<div class="cube" id="banner1" style="transform: scale(0.85);">
-		  	<div class="face front">
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face right">
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face back">
-					<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face left">
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face top" >
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face bottom">
-		  		<div class="clickTag"></div>
-		  	</div>
+		<a id="mainExit" href="javascript:">
+			<div class="cube" id="banner1" style="transform: scale(0.85);">
+			  	<div class="face front">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face right">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face back">
+						<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face left">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face top" >
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face bottom">
+			  		<div class="clickTag"></div>
+			  	</div>
+			</div>
+
+			<div class="cube" id="banner2" style="display:none; transform: scale(0.82);">
+			  	<div class="face front">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face right">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face back">
+						<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face left">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face top" >
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face bottom">
+			  		<div class="clickTag"></div>
+			  	</div>
+			</div>
+		<a id="mainExit" href="javascript:">
 		</div>
 
-		<div class="cube" id="banner2" style="display:none; transform: scale(0.82);">
-		  	<div class="face front">
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face right">
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face back">
-					<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face left">
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face top" >
-		  		<div class="clickTag"></div>
-		  	</div>
-		  	<div class="face bottom">
-		  		<div class="clickTag"></div>
-		  	</div>
-		</div>
-		</div>
-
-	  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
 	  <script src="cube.js"></script>
 
 	  <script>
@@ -113,6 +116,14 @@
 			});
 
 	  </script>
-
+	  <script>
+			window.onload = function(){
+				var clickTag = 'http://google.com';
+				function exitClickHandler(e) {
+					Enabler.exitOverride('mainExit', clickTag);
+				}
+				document.getElementById('mainExit').addEventListener('click', exitClickHandler, false);
+			}
+		</script>
 	</body>
 </html>
