@@ -43,22 +43,25 @@
             f5_logo = document.getElementById("f5_logo"),
             f5_cta = document.getElementById("f5_cta");
 
-				tl.to(f1_bg1, 1, {autoAlpha: 1, scale:1, ease: Power4.easeOut})
-					.to(f1_bg2, 0.7, {autoAlpha: 1, left: 0, top: 0, ease: Power4.easeOut}, '-=1')
-					.to(f1_bg3, 0.7, {autoAlpha: 1, left: 0, top: 0, ease: Power4.easeOut}, '-=1')
+				tl.to(f1_bg1, 1.5, {autoAlpha: 1, scale:1, ease: Power3.easeOut})
+					.to(f1_bg2, 0.8, {autoAlpha: 1, left: 0, top: 0, ease: Power3.easeOut}, '-=1.2')
+					.to(f1_bg3, 0.8, {autoAlpha: 1, left: 0, top: 0, ease: Power3.easeOut}, '-=1.2')
 					.to(f1_text, 0.5, {autoAlpha: 1, top:0})
 					.to(f1_text, 0.5, {autoAlpha: 0, delay: 2})
 					.to(f2_text, 0.5, {autoAlpha: 1, top: 0})
 					// .to([f1_bg1, f1_bg2, f1_bg3, f2_text], 0.5, {autoAlpha: 0, delay: 2})
-					.to([f1_bg2, f1_bg3, f2_text], 0.5, {autoAlpha: 0, delay: 2})
-					.to(f1_bg1, 1, {scale: 2, top: -195, left: -40, ease: Power4.easeOut}, "-=0.5")
-					//.to(f3_bg, 1, {autoAlpha: 1, top: -75, left: -70, scale:1, ease: Power4.easeOut}, "-=0.5")
+					.to([f1_bg2, f1_bg3, f2_text], 0.5, {autoAlpha: 0, delay: 2});
+					
+				tl.to(f1_bg1, 1.5, {scale: 2, top: -195, left: -40, ease: Power3.easeOut}, "-=0.5")
+					//.to(f3_bg, 1, {autoAlpha: 1, top: -75, left: -70, scale:1, ease: Power3.easeOut}, "-=0.5")
 					.to(f3_text, 0.5, {autoAlpha: 1, top: 0}, "-=0.3")
-					.to([f1_bg1, f3_text], 0.5, {autoAlpha: 0, delay: 2})
-					.to(f4_bg, 1.2, {autoAlpha: 1, scale:1, ease: Power4.easeOut}, "-=0.5")
-					.to(f4_text, 0.5, {autoAlpha: 1, top: 0})
-					.to([f4_bg, f4_text], 0.5, {autoAlpha: 0, delay: 2})
-					.to(f5_bg, 1, {autoAlpha: 1, left: -205, scale:1, ease: Power4.easeOut}, "-=0.5")
+					.to([f1_bg1, f3_text], 0.5, {autoAlpha: 0, delay: 2});
+					
+				tl.to(f4_bg, 1.8, {autoAlpha: 1, scale:1, ease: Power3.easeOut}, "-=0.5")
+					.to(f4_text, 0.5, {autoAlpha: 1, top: 0}, "-=0.5")
+					.to([f4_bg, f4_text], 0.5, {autoAlpha: 0, delay: 2});
+					
+				tl.to(f5_bg, 1, {autoAlpha: 1, left: -205, scale:1, ease: Power3.easeOut}, "-=0.5")
 					.to(f5_logo, 0.5, {autoAlpha: 1})
 					.to(f5_text, 0.5, {autoAlpha: 1, top: 0})
 					.to(f5_cta, 0.5, {autoAlpha: 1, top: 0})
