@@ -4,7 +4,7 @@ function Cube(options) {
   this.styles = [];
   this.isDrag = false;
   this.currentPoint;
-  this.currentAngle; 
+  this.currentAngle;
   this.upAngle;
   this.perspective = 'perspective(800px) ';
   this.rotateTween = null;
@@ -23,16 +23,16 @@ function Cube(options) {
   this.currentPoint = null;
   this.rotateTween = null;
   this.isTest = false;
-  
+
   this.cube = document.getElementById(options.banner);
   this.faces = this.cube.querySelectorAll('.face');
-  
+
   this.parse(options);
   this.init();
-  this.addEvents();
+  // this.addEvents();
 
  };
- 
+
 Cube.prototype.parse = function(options) {
     this.width = options.width;
     this.height = options.height;
@@ -50,59 +50,59 @@ Cube.prototype.parse = function(options) {
   }
 
 Cube.prototype.init = function() {
-    
+
     var transform;
     this.styles = [];
     for (var i = 0; i < this.nunOfFace; i++) {
       transform = i < 4 ? 'rotateY(' + i * 90 + 'deg)' : 'rotateX(' + Math.pow(-1, i) * 90 + 'deg)';
-      
+
 	  if (i == 2) {
         transform = this.isVertical ? 'rotateX(180deg) rotateY(0deg)' : 'rotateX(0deg) rotateY(180deg)';
       }
-	  
+
 	  if (this.isTest) {
 		transform = transform + ' translateZ(' + (i < 4 ? this.width / 2 : this.height / 2) + 'px)';
-	  } else {      
+	  } else {
 		transform = transform + ' translateZ(' + (this.height / 2) + 'px)';
 	  }
-	  
+
       this.faces[i].style.marginLeft = -this.width / 2 + 'px';
-      
+
 	  if (this.isTest) {
 		this.faces[i].style.marginTop = -(i < 4 ? this.height / 2 : this.width / 2) + 'px';
 	  } else {
 		this.faces[i].style.marginTop = -(this.height/ 2) + 'px';
 	  }
-		
+
 	  if (this.isTest) {
 		this.faces[i].style.width = this.width + 'px';
 	  } else {
-		if (i == 1 || i == 3) {	
+		if (i == 1 || i == 3) {
 			this.faces[i].style.width = this.height + 'px';
 		} else {
 			this.faces[i].style.width = this.width + 'px';
 		}
 	  }
-      
+
 	  if (this.isTest) {
 		this.faces[i].style.height = (i < 4 ? this.height : this.width) + 'px';
       } else {
 		this.faces[i].style.height = this.height + 'px';
 	  }
-	  
+
       this.faces[i].style.transform = this.faces[i].style.webkitTransform = this.perspective + transform;
       this.styles.push(transform);
     }
-	
+
 	for (var i = 0; i < this.links.length; i ++) {
       this.setFaceData(this.links[i]);
     }
   }
 
 Cube.prototype.setFaceData = function(objFace) {
-  
+
     var face = objFace.face;
-		
+
 	var divFace = this.cube.querySelectorAll('.' + face)[0];
     divFace.setAttribute('data-clickTag', objFace.clickTag);
     divFace.setAttribute('data-type', objFace.type);
@@ -113,10 +113,10 @@ Cube.prototype.setFaceData = function(objFace) {
     }
     else if (objFace.type.toLowerCase() == 'video') {
       banner = document.createElement('video');
-    } 
+    }
     else {
       banner = document.createElement('img');
-    }  
+    }
     banner.setAttribute('src', objFace.link);
     banner.setAttribute('width', parseInt(divFace.style.width));
     banner.setAttribute('height', parseInt(divFace.style.height));
@@ -128,7 +128,7 @@ Cube.prototype.resetFaces = function() {
     for (var i = 0; i < this.nunOfFace; i++) {
       transform = this.faces[i].style.transform || this.faces[i].style.webkitTransform;
       this.styles[i] = transform.replace(perspective, '');
-    }    
+    }
   }
 
 Cube.prototype.updateFaces = function(angle) {
@@ -141,7 +141,7 @@ Cube.prototype.updateFaces = function(angle) {
 
 Cube.prototype.addEvents = function() {
 	var that = this;
-	
+
 	this.cube.addEventListener('touchstart', function(evt){
       that.isDrag = true;
 
@@ -152,13 +152,13 @@ Cube.prototype.addEvents = function() {
 		that.onTouchMoveHandler(evt);
 	  }, false);
     }, false);
-      
+
     this.cube.addEventListener('mousedown', function (evt) {
       if (that.rotateTween) {
         that.rotateTween.kill();
         that.rotateTween = null;
       }
-	  
+
       that.isDrag = true;
       that.currentPoint = {'x': evt.clientX, 'y': evt.clientY};
 
@@ -166,13 +166,13 @@ Cube.prototype.addEvents = function() {
 		that.onMouseMoveHandler(evt);
 	  }, false);
     }, false);
-	
+
     this.cube.addEventListener('click', function (evt) {
 		that.onClickCubeHandler(evt.clientX, evt.clientY, evt.target);
     }, false);
 
     window.addEventListener('mouseup', function(evt) {
-		that.onMouseUpHandler(evt);	
+		that.onMouseUpHandler(evt);
 	}, false);
     window.addEventListener('touchend', function(evt) {
 		that.onTouchEndHandler(evt);
@@ -250,14 +250,14 @@ Cube.prototype.onClickCubeHandler = function(x, y, target) {
     if (this.currentPoint.x == x && this.currentPoint.y == y) {
 
 		var face = target;
-      
+
 		while(face) {
 			face = target.parentElement;
 			if (face.className.indexOf('face') != -1) {
-          
+
 			  var clickTag = face.getAttribute('data-clickTag');
 			  var type = face.getAttribute('data-type');
-			  
+
 			  if (type.toLowerCase() == 'video') {
 				var video;
 				var children = face.children;
@@ -267,10 +267,10 @@ Cube.prototype.onClickCubeHandler = function(x, y, target) {
 					  video = children[i];
 					  break;
 				  }
-				} 
+				}
 
 				if (video) {
-				  
+
 				  var isPlay = face.getAttribute('data-play');
 				  if (isPlay == 1) {
 				  if (clickTag) {
@@ -280,7 +280,7 @@ Cube.prototype.onClickCubeHandler = function(x, y, target) {
 					}
 				  } else {
 					face.setAttribute('data-play', 1);
-					video.play();                
+					video.play();
 				  }
 				  break;
 				}
@@ -334,4 +334,4 @@ Cube.prototype.play = function() {
 	}
 }
 
-  
+
