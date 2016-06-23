@@ -1,0 +1,118 @@
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	  <title>3D Cube Banner</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<div id="banner">
+		<div class="cube" id="banner1" style="transform: scale(0.85);">
+		  	<div class="face front">
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face right">
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face back">
+					<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face left">
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face top" >
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face bottom">
+		  		<div class="clickTag"></div>
+		  	</div>
+		</div>
+
+		<div class="cube" id="banner2" style="display:none; transform: scale(0.82);">
+		  	<div class="face front">
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face right">
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face back">
+					<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face left">
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face top" >
+		  		<div class="clickTag"></div>
+		  	</div>
+		  	<div class="face bottom">
+		  		<div class="clickTag"></div>
+		  	</div>
+		</div>
+		</div>
+
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	  <script src="cube.js"></script>
+
+	  <script>
+
+			var w = 280;
+			var h = 230;
+
+			var cube1 = new Cube({
+				banner: 'banner1',
+				width: w,
+				height: h,
+				isTest: false,
+				vertical: true,
+				autoRotate: true,
+				autoRotateDelay: 2.5,
+				autoRotateTime: 1,
+				autoRotateLeft: false,
+				autoRotateTop: true,
+				completeFunc: onComplete,
+				loop: 1,
+				faces: [
+					{face: 'front', type: 'image', link: 'frame1.png', clickTag: 'http://www.google.com'},
+					{face: 'right', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=RIGHT&w=230&h=230', clickTag: ''},
+					{face: 'back', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=BACK&w=280&h=230', clickTag: ''},
+					{face: 'left', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=LEFT&w=230&h=230', clickTag: ''},
+					{face: 'top', type: 'image', link: 'frame2.png', clickTag: ''},
+					{face: 'bottom', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=BOTTOM&w=280&h=230', clickTag: ''}
+				]
+			});
+
+			function onComplete() {
+				cube1.cube.style.display = 'none';
+				cube2.cube.style.display = 'block';
+				cube2.play();
+			};
+			cube1.play();
+
+			var cube2 = new Cube({
+				banner: 'banner2',
+				width: w,
+				height: h,
+				isTest: true,
+				vertical: false,
+				autoRotate: true,
+				autoRotateDelay: 2.5,
+				autoRotateTime: 1,
+				autoRotateLeft: false,
+				autoRotateTop: true,
+				loop: 2,
+				faces: [
+					{face: 'front', type: 'image', link: 'frame2.png', clickTag: 'http://www.google.com'},
+					{face: 'right', type: 'image', link: 'frame3.png', clickTag: ''},
+					{face: 'back', type: 'image', link: 'frame4.png', clickTag: ''},
+					{face: 'left', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=LEFT&w=230&h=230', clickTag: ''},
+					{face: 'top', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=TOP&w=230&h=230', clickTag: ''},
+					{face: 'bottom', type: 'image', link: 'https://placeholdit.imgix.net/~text?bg=ff00ff&txt=BOTTOM&w=280&h=230', clickTag: ''}
+				]
+			});
+
+	  </script>
+
+	</body>
+</html>
