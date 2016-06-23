@@ -69,4 +69,5 @@ a {
   background-size: cover;
   z-index: 10;
   cursor: pointer;
+	visibility: hidden;
 }

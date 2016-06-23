@@ -67,5 +67,5 @@ a {
   top: -1px;
   left: 707px;
   background: url('reload.png');
-  z-index: 10;
+	visibility: hidden;
 }
