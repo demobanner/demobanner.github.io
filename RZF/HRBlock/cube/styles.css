@@ -1,6 +1,6 @@
 body {
         margin: 0;
-        pading: 0;
+        padding: 0;
         overflow: hidden;
       }
 
@@ -9,7 +9,7 @@ body {
         width: 298px;
         height: 248px;
         overflow: hidden;
-        border: 1px solid #000;
+        border: 1px solid #cccccc;
       }
 
       .cube {
