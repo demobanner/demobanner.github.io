@@ -1,0 +1,54 @@
+body {
+        margin: 0;
+        pading: 0;
+        overflow: hidden;
+      }
+
+      #banner {
+        position: absolute;
+        width: 298px;
+        height: 248px;
+        overflow: hidden;
+        border: 1px solid #000;
+      }
+
+      .cube {
+        -webkit-user-select: none;
+        cursor: pointer;
+      }
+      .cube, .cube .face {
+        position: absolute;
+        top: 67px;
+        left: 80px;
+      }
+      #banner2, #banner2 .face {
+        position: absolute;
+        top: 68px;
+        left: 81px;
+      }
+      .cube .face iframe {
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .cube .face * {
+        position: absolute;
+      }
+      .clickTag {
+        width: 100%;
+        height: 100%;
+        background: white;
+        opacity: 0.01;
+      }
+
+      .face {
+        text-transform: uppercase;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .front, .right {
+        z-index: 10000;
+      }
