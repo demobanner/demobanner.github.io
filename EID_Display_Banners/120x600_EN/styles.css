@@ -39,6 +39,7 @@ a {
 #mask {
   background: url("mask.png") center no-repeat;
   opacity: 1;
+  height: 700px;
 }
 #f1_box {
   background: url("f1_box.png") center no-repeat;
