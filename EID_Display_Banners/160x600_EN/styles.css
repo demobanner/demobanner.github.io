@@ -55,7 +55,7 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  left: 20px;
+  left: -20px;
 }
 #logo {
   background: url("logo.png") center no-repeat;
