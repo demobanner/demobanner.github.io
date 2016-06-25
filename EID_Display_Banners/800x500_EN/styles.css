@@ -33,7 +33,7 @@ a {
   bottom: 0;
 }
 #img {
-  background: url("img.png") center no-repeat;
+  background: url("img.jpg") center no-repeat;
   opacity: 1;
 }
 #mask {

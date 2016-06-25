@@ -5,11 +5,11 @@ body {
   margin: 0;
 }
 a {
-  border: none;
+  border: 0;
   display: inline-block;
 }
 #banner {
-  position: absolute;
+  position: relative;
   width: 232px;
   height: 58px;
   overflow: hidden;
@@ -25,11 +25,8 @@ a {
   opacity: 0;
 }
 .click-tag {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 #rainbow {
   background: url("rainbow.png") center no-repeat;
