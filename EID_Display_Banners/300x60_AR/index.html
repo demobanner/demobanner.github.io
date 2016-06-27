@@ -18,24 +18,15 @@
       function init() {
         var img = document.getElementById("img"),
     mask = document.getElementById("mask"),
-    f1_box = document.getElementById("f1_box"),
-    f1_text = document.getElementById("f1_text"),
-    f2_text = document.getElementById("f2_text"),
     f3_text = document.getElementById("f3_text"),
     cta = document.getElementById("cta"),
     logo = document.getElementById("logo"),
     btn_replay = document.getElementById("btn-replay");
         tl.to(mask, 1, {left: -250, ease: Power2.easeOut})
-    .to(logo, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
-    .to([f1_text, f1_box], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-    .to(f1_text, 0.5, {autoAlpha: 0, delay: 2, ease: Power2.easeOut});
-
-    tl.to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-    .to(f2_text, 0.5, {autoAlpha: 0, delay: 2, ease: Power2.easeOut});
-
-    tl.to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-    .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
-    .to(btn_replay, 0.3, {autoAlpha: 1, ease: Power2.easeOut});
+          .to(logo, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+        tl.to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+          .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+          .to(btn_replay, 0.3, {autoAlpha: 1, ease: Power2.easeOut});
       }
 
       function restart() {
@@ -50,9 +41,6 @@
       <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
         <div id="img" class="layer"></div>
         <div id="mask" class="layer"></div>
-        <div id="f1_box" class="layer"></div>
-        <div id="f1_text" class="layer"></div>
-        <div id="f2_text" class="layer"></div>
         <div id="f3_text" class="layer"></div>
         <div id="cta" class="layer"></div>
         <div id="logo" class="layer"></div>

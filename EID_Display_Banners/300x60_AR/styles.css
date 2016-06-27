@@ -37,15 +37,6 @@ a {
   background: url("mask.png") center no-repeat;
   opacity: 1;
 }
-#f1_box {
-  background: url("f1_box.png") center no-repeat;
-}
-#f1_text {
-  background: url("f1_text.png") center no-repeat;
-}
-#f2_text {
-  background: url("f2_text.png") center no-repeat;
-}
 #f3_text {
   background: url("f3_text.png") center no-repeat;
 }
