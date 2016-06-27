@@ -51,16 +51,16 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  left: 10px;
+  top: 20px;
 }
 #logo {
   background: url("logo.png") center no-repeat;
-  top: 10px;
+  left: 30px;
 }
 #btn-replay {
   width: 10px;
   height: 10px;
-  top: 0px;
+  top: -1px;
   left: 288px;
   background: url('reload.png');
   background-size: cover;

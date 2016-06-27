@@ -35,6 +35,7 @@ a {
 #mask {
   background: url("mask.png") center no-repeat;
   opacity: 1;
+  left: -20px;
 }
 #box {
   background: url("box.png") center no-repeat;
@@ -51,7 +52,7 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  top:150px;
+  top:20px;
 }
 #logo {
   background: url("logo.png") center no-repeat;

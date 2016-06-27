@@ -51,11 +51,12 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  left: -10px;
+  top: 20px;
+
 }
 #logo {
   background: url("logo.png") center no-repeat;
-  top: 10px;
+  left: 30px;
 }
 #btn-replay {
   width: 10px;

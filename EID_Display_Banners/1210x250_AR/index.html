@@ -26,8 +26,8 @@
           logo = document.getElementById("logo"),
           btn_replay = document.getElementById("btn-replay");
 
-			tl.to(mask, 1, {left: -900, ease: Power2.easeOut})
-        .to(logo, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+			tl.to(mask, 2, {left: -1000, ease: Power2.easeOut})
+        .to(logo, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
         .to([f1_text, f1_box], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
         .to(f1_text, 0.5, {autoAlpha: 0, delay: 2, ease: Power2.easeOut});
 				
@@ -35,7 +35,7 @@
         .to(f2_text, 0.5, {autoAlpha: 0, delay: 2, ease: Power2.easeOut});
 				
       tl.to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-        .to(cta, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeOut})
+        .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
         .to(btn_replay, 0.3, {autoAlpha: 1, ease: Power2.easeOut});
 		}
 		
