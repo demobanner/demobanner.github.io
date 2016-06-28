@@ -8,26 +8,27 @@ body {
   left: 0;
   top: 0;
   opacity: 0;
-  width: 800px;
-  height: 500px;
+  width: 300px;
+  height: 250px;
 }
 #banner {
   position: relative;
-  width: 798px;
-  height: 498px;
+  width: 298px;
+  height: 248px;
   border: 1px solid #000;
   overflow: hidden;
   cursor: pointer;
 	background: url('bg.jpg') center no-repeat;
 }
 #f1_bg1{
-	width: 800px;
-	height: 800px;
-	top: -150px;
-	background: url('f1_bg1.jpg') center no-repeat;
-	-ms-transform: scale(0.5);
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5);
+	width: 320px;
+	height: 300px;
+	top: -25px;
+	left: -10px;
+  background: url('f1_bg1.png') center no-repeat;
+	-ms-transform: scale(0.3);
+	-webkit-transform: scale(0.3);
+	transform: scale(0.3);
 }
 #f1_bg2{
 	left: -50px;
@@ -62,28 +63,28 @@ body {
   top: -10px;  
 }
 #f4_bg{
-	width: 991px;
-	height: 989px;
-	top: -220px;
-	left: -104px;
-  background: url('f4_bg.jpg') center no-repeat;
-	-ms-transform: scale(0.5);
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5);
+	width: 500px;
+	height: 500px;
+	top: -120px;
+	left: -95px;
+  background: url('f4_bg.png') center no-repeat;
+	-ms-transform: scale(0.3);
+	-webkit-transform: scale(0.3);
+	transform: scale(0.3);
 }
 #f4_text{
   background: url('f4_text.png') center no-repeat;
   top: -10px;  
 }
 #f5_bg{
-	width: 800px;
-	height: 633px;
-	top: -60px;
-	left: -400px;
-  background: url('f5_bg_.png') center no-repeat;
-	-ms-transform: scale(0.5);
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5);
+	width: 310px;
+	height: 310px;
+	top: -35px;
+	left: -310px;
+  background: url('f5_bg.png') center no-repeat;
+	-ms-transform: scale(0.3);
+	-webkit-transform: scale(0.3);
+	transform: scale(0.3);
 }
 #f5_logo{
   background: url('f5_logo.png') center no-repeat;

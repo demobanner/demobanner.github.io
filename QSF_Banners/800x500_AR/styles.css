@@ -24,7 +24,7 @@ body {
 	width: 800px;
 	height: 800px;
 	top: -150px;
-	background: url('f1_bg1.jpg') center no-repeat;
+	background: url('f1_bg1.png') center no-repeat;
 	-ms-transform: scale(0.5);
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
@@ -66,7 +66,7 @@ body {
 	height: 989px;
 	top: -220px;
 	left: -104px;
-  background: url('f4_bg.jpg') center no-repeat;
+  background: url('f4_bg.png') center no-repeat;
 	-ms-transform: scale(0.5);
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
@@ -76,11 +76,11 @@ body {
   top: -10px;  
 }
 #f5_bg{
-	width: 800px;
+	width: 624px;
 	height: 633px;
 	top: -60px;
-	left: -400px;
-  background: url('f5_bg_.png') center no-repeat;
+	left: -310px;
+  background: url('f5_bg.png') center no-repeat;
 	-ms-transform: scale(0.5);
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
