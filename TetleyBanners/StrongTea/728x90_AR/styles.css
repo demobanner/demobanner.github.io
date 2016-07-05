@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 728px;
+  height: 90px;
+  opacity: 0;
+}
+#banner {
+  position: relative;
+  width: 726px;
+  height: 88px;
+  border: 1px solid #000;
+  overflow: hidden;
+  cursor: pointer;
+	background-image: url(f1_bg.jpg);
+}
+#logo{
+  background: url('logo.png');
+  opacity: 1;
+}
+#f2-text{
+  background: url('f2_text.png');
+  top: -90px;
+  opacity: 1;
+}
+#f3-text{
+  background: url('f3_text.png');
+  top: 90px;
+  opacity: 1;
+}
+#f4-cup{
+  background: url('f4_cup.png');
+  opacity: 1;
+  left: -200px;
+  top: -1px;
+}
+#f5-cup{
+  background: url('f5_cup.png');
+  top: -1px;
+}
+#f6-cup{
+  background: url('f6_cup.png');
+  top: -1px;
+}
+#f5-tea{
+  background: url('f5_tea.png');
+  top: -90px;
+  opacity: 1;
+}
+#f5-box{
+  background: url('f5_box.png');
+  left: -130px;
+  opacity: 1;
+}
+#replay {
+  top: 3px;
+  left: 3px;
+  background: url('btn_replay.png') no-repeat;
+  visibility: hidden;
+  width: 12px;
+  height: 13px;
+
+  
+}

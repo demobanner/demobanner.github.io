@@ -27,13 +27,8 @@ body {
 }
 #bg2{
   background: url('bg.jpg');
-  height: 278px;
+  height: 216px;
   opacity: 1;
-}
-#text{
-  background: url('text.png') center no-repeat;
-  top: -117px;
-  left: -1px;
 }
 #text1{
   background: url('text1.png') center;
@@ -63,7 +58,7 @@ body {
 }
 #tea{
   background: url('tea.png') center;
-  top: -99px;
+  top: -88px;
 }
 #box{
   background: url('box.png') center;
