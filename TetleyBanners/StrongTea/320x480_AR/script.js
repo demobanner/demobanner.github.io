@@ -55,8 +55,10 @@ function init() {
 
       	bannerTween.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
               .to(text2, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-              .to(cup1, 0.5, {left: 0, ease: Power2.easeInOut})
               .to(tea, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+              .to(text1, 0.2, {scale: 1.2, top: 15})
+              .to(text1, 0.2, {scale: 1, top: 0})
+              .to(cup1, 0.3, {left: 0, ease: Power2.easeInOut}, '-=0.2')
 
               .to(bg2, 0.5, {height: 184, ease: Power2.easeOut})
               .to(text2, 0.5, {top: 14, ease: Power2.easeOut}, '-=0.5')

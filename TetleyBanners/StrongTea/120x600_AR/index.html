@@ -29,8 +29,10 @@
 
         tl.to(text1, 0.5, {autoAlpha: 1})
           .to(text2, 0.5, {autoAlpha: 1})
-          .to(cup1, 0.5, {autoAlpha: 1, left: 0})
           .to([tea1, tea2], 0.5, {autoAlpha: 1})
+          .to(text1, 0.2, {scale: 1.2, top: 20})
+          .to(text1, 0.2, {scale: 1, top: 0})
+          .to(cup1, 0.3, {autoAlpha: 1, left: 0}, '-=0.2')
           .to([tea1, tea2], 0.5, {top: -1, ease: Power4.easeOut})
           .to(text2, 0.5, {top: 19,ease: Power4.easeOut}, "-=0.5")
           .to(tea1, 0.1, {autoAlpha: 0.5}, "-=0.1")
