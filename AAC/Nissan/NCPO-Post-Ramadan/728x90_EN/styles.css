@@ -50,11 +50,11 @@ body {
 #frame7 {
   background: url('f7.png') center no-repeat;
 }
-#tc {
-  background: url('tc.png') center no-repeat;
-}
 #logo {
   background: url('logo.png') center no-repeat;
+}
+#tc {
+  background: url('tc.png') center no-repeat;
 }
 #cta {
   top: 20px;

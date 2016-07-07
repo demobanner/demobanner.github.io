@@ -29,23 +29,23 @@ body {
 #frame2 {
   background: url('f2.png') center no-repeat;
 }
-#frame2-1 {
-  background: url('f3.png') center no-repeat;
+#frame8 {
+  background: url('f8.png') center no-repeat;
 }
 #frame3 {
-  background: url('f4.png') center no-repeat;
+  background: url('f3.png') center no-repeat;
 }
 #frame4 {
-  background: url('f5.png') center no-repeat;
+  background: url('f4.png') center no-repeat;
 }
 #frame5 {
-  background: url('f6.png') center no-repeat;
+  background: url('f5.png') center no-repeat;
 }
 #frame6 {
-  background: url('f7.png') center no-repeat;
+  background: url('f6.png') center no-repeat;
 }
 #frame7 {
-  background: url('f8.png') center no-repeat;
+  background: url('f7.png') center no-repeat;
 }
 #logo {
   background: url('logo.png') center no-repeat;
@@ -57,7 +57,11 @@ body {
   top: 20px;
   background: url('cta.png') center no-repeat;
 }
-#logo1 {
-  background: url('logo1.png') center no-repeat;
+#awr-logo {
+  background: url('awr-logo.png') center no-repeat;
+  opacity: 1;
+}
+#cpo-logo {
+  background: url('cpo-logo.png') center no-repeat;
   opacity: 1;
 }

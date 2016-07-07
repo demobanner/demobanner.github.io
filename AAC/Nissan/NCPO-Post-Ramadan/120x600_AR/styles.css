@@ -29,6 +29,9 @@ body {
 #frame2 {
   background: url('f2.png') center no-repeat;
 }
+#frame8 {
+  background: url('f8.png') center no-repeat;
+}
 #frame3 {
   background: url('f3.png') center no-repeat;
 }
@@ -43,9 +46,6 @@ body {
 }
 #frame7 {
   background: url('f7.png') center no-repeat;
-}
-#frame8 {
-  background: url('f8.png') center no-repeat;
 }
 #logo {
   background: url('logo.png') center no-repeat;
