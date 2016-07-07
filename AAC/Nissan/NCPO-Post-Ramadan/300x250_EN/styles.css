@@ -50,6 +50,9 @@ body {
 #logo {
   background: url('logo.png') center no-repeat;
 }
+#logo2 {
+  background: url('logo2.png') center no-repeat;
+}
 #tc {
   background: url('tc.png') center no-repeat;
 }
