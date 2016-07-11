@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=300,height=600">
+
+    <title>NCPO 300x600</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+
+      function init() {
+        var f1_text   = document.getElementById("f1-text"),
+            f1_car    = document.getElementById("f1-car"),
+            logo3    = document.getElementById("logo3"),
+            text1    = document.getElementById("text1"),
+            text1    = document.getElementById("text1"),
+            text2    = document.getElementById("text2"),
+            text3    = document.getElementById("text3"),
+            frame2    = document.getElementById("frame2"),
+            frame3    = document.getElementById("frame3"),
+            frame4    = document.getElementById("frame4"),
+            frame5    = document.getElementById("frame5"),
+            frame6    = document.getElementById("frame6"),
+            frame7    = document.getElementById("frame7"),
+            logo1   = document.getElementById("logo1"),
+            cta       = document.getElementById("cta"),
+            tc       = document.getElementById("tc");
+
+        tl.to(f1_text, 0.5, {autoAlpha: 1})
+          .to(f1_car, 0.5, {autoAlpha: 1})
+          .to(text1, 0.5, {autoAlpha: 1})
+          .to(text1, 0.5, {autoAlpha: 0, delay: 2})
+          .to(text2, 0.5, {autoAlpha: 1})
+          .to(text2, 0.5, {autoAlpha: 0, delay: 2})
+          .to(text3, 0.5, {autoAlpha: 1})
+          .to([f1_car, text3], 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame2, 0.5, {autoAlpha: 1})
+          .to(tc, 0.5, {autoAlpha: 1})
+          .to(frame2, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame3, 0.5, {autoAlpha: 1})
+          .to(frame3, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame4, 0.5, {autoAlpha: 1})
+          .to(frame4, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame5, 0.5, {autoAlpha: 1})
+          .to(frame5, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame6, 0.5, {autoAlpha: 1})
+          .to(frame6, 0.5, {autoAlpha: 0, delay: 2});
+        tl.to(frame7, 0.5, {autoAlpha: 1})
+          .to(frame7, 0.5, {autoAlpha: 0, delay: 2})
+          .to(logo1, 0.5, {autoAlpha: 1})
+          .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeOut}, "+=2");
+				tl.to(f1_text, 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut}, "+=3")
+					.to([cta, tc, logo1], 0.5, {autoAlpha: 0, top: 0, ease: Power1.easeOut, onComplete: loopFunction}, "-=0.5");
+      }
+      function loopFunction(){
+        tl.restart();
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="f1-car" class="layer"></div>
+        <div id="text1" class="layer"></div>
+        <div id="text2" class="layer"></div>
+        <div id="text3" class="layer"></div>
+        <div id="frame2" class="layer"></div>
+        <div id="frame3" class="layer"></div>
+        <div id="frame4" class="layer"></div>
+        <div id="frame5" class="layer"></div>
+        <div id="frame6" class="layer"></div>
+        <div id="frame7" class="layer"></div>
+        <div id="tc" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="f1-text" class="layer"></div>
+        <div id="logo" class="layer"></div>
+        <div id="logo1" class="layer"></div>
+      </a>
+    </div>
+  </body>
+</html>
