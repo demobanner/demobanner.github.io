@@ -62,7 +62,7 @@ body {
 }
 #box{
   background: url('box.png') center;
-  top: 100px;
+  top: 105px;
   height: 600px;
   opacity: 1;
 }
