@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+}
+#banner {
+  position: relative;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  overflow: hidden;
+  cursor: pointer;
+	background-image: url(bg.jpg);
+}
+#bg2{
+  background: url('bg.jpg');
+  height: 115px;
+  opacity: 1;
+}
+#logo{
+  background: url('logo.png');
+  opacity: 1;
+}
+#text1{
+  background: url('text1.png');
+}
+#text2{
+  background: url('text2.png');
+}
+#cup1{
+  background: url('cup1.png');
+  opacity: 1;
+  top: 2px;
+  left: -150px;
+}
+#cup2{
+  background: url('cup2.png');
+  top: 2px;
+}
+#cup3{
+  background: url('cup3.png');
+  top: 2px;
+}
+#tea{
+  background: url('tea.png');
+  top: -30px;
+}
+#box{
+  background: url('box.png');
+  left  : 180px;
+  opacity: 1;
+}
+#replay {
+  top: 3px;
+  left: 282px;
+  background: url('btn_replay.png') no-repeat;
+  visibility: hidden;
+  width: 12px;
+  height: 13px;
+  cursor: pointer;
+  
+}
