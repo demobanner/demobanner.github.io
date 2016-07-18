@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 728px;
+  height: 90px;
+}
+#banner {
+  position: relative;
+  width: 726px;
+  height: 88px;
+  border: 1px solid #000;
+  overflow: hidden;
+  cursor: pointer;
+	background: url('bg.jpg') center no-repeat;
+}
+#f1_bg1{
+	width: 363px;
+	height: 352px;
+	top: -110px;
+  left: 200px;
+  background: url('f1_bg1.png') center no-repeat;
+	-ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+}
+#f1_bg2{
+  width: 203px;
+  height: 68px;
+	left: 1px;
+  top: -50px;
+  background: url('f1_bg2.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+}
+#f1_bg3{
+  width: 184px;
+  height: 87px;
+	left: 540px;
+  top: -50px;
+  background: url('f1_bg3.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+}
+#f1_text{
+  background: url('f1_text.png') center no-repeat;
+  top: -10px;  
+}
+#f2_text{
+  background: url('f2_text.png') center no-repeat;
+  top: -10px;  
+}
+
+#f3_bg1{
+  width: 525px;
+  height: 238px;
+  top: -130px;
+  left: 182px;
+  background: url('f3_bg1.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+}
+#f3_bg2{
+  width: 330px;
+  height: 107px;
+  left: -108px;
+  top: 35px;
+  background: url('f3_bg2.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+}
+#f3_text{
+  background: url('f3_text.png') center no-repeat;
+  top: -10px;  
+}
+
+#f4_text{
+  background: url('f4_text.png') center no-repeat;
+  top: -10px;  
+}
+#f5_bg{
+	width: 432px;
+	height: 241px;
+	top: -227px;
+  left: -39px;
+  background: url('f5_bg.png') center no-repeat;
+	-ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+}
+#f5_logo{
+  background: url('f5_logo.png') center no-repeat;
+}
+#f5_cta{
+  background: url('f5_cta.png') center no-repeat;
+  top: 20px; 
+}
+#f5_text{
+  background: url('f5_text.png') center no-repeat;
+  top: -10px;  
+}
+#reload {
+  width: 14px;
+  height: 14px;
+  left: inherit;
+  right: 0;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
+  visibility: hidden;
+}
