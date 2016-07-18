@@ -16,19 +16,19 @@
 
       var tl = new TimelineLite();
 
-			// function preInit() {
-			// 	if (Enabler.isInitialized()) {
-			// 		init();
-			// 	} else {
-			// 		Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
-			// 	}
-			// }
-			// function bgExitHandler(e) {
-			// 	Enabler.exit('mainExit', clickTag);
-			// }
+			function preInit() {
+        if (Enabler.isInitialized()) {
+          init();
+        } else {
+          Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+        }
+      }
+      function bgExitHandler(e) {
+        Enabler.exit('mainExit', clickTag);
+      }
 
 			function init() {
-				// document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
+        document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
         var bg1 = document.getElementById("bg1"),
             flower1 = document.getElementById("flower1"),
             flower2 = document.getElementById("flower2"),
@@ -70,7 +70,7 @@
 					tl.restart();
 			}
 
-			// window.onload = preInit;
+			window.onload = preInit;
 
     </script>
   </head>

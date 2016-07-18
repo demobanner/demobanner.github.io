@@ -27,6 +27,7 @@
 			}
 
 		function init() {
+			document.getElementById('mainExit').addEventListener('click', bgExitHandler, false);
 			var f1_1 = document.getElementById("f1_1"),
 				f1_2 = document.getElementById("f1_2"),
 				f1_3 = document.getElementById("f1_3"),
@@ -65,7 +66,7 @@
 	</head>
 	<body>
 		<div id="banner">
-		    <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+		    <a id="mainExit" class="click-tag" href="javascript:">
 		      	<div id="f1_1" class="layer"></div>
 		      	<div id="f1_2" class="layer"></div>
 		      	<div id="f1_3" class="layer"></div>
