@@ -1,10 +1,7 @@
 
 var creative = {};
 var tl = new TimelineLite();
-var f1_img1 = document.getElementById("f1_img1"),
-    f1_img2 = document.getElementById("f1_img2"),
-    f1_img3 = document.getElementById("f1_img3"),
-    f2_img1 = document.getElementById("f2_img1"),
+var f2_img1 = document.getElementById("f2_img1"),
     f2_img2 = document.getElementById("f2_img2"),
     f2_img3 = document.getElementById("f2_img3"),
     f2_text1 = document.getElementById("f2_text1"),
@@ -44,7 +41,7 @@ function setupDom() {
 function init() {
 
   addListeners();
-  startTween();
+	startTween();
   // Polite loading
   if (Enabler.isVisible()) {
     show();
@@ -55,15 +52,10 @@ function init() {
 }
 
 function startTween(){
-  tl.to(f1_img1, 1.5, {scale:1})
-        .to(f1_img2, 1, {scale:1}, "-=0.8")
-        .to(f1_img3, 1, {scale:1}, "-=0.8")
-        .to([f1_img1, f1_img2, f1_img3], 0.5, {autoAlpha:0, delay:2});
-      tl.to(f2_img1, 1.5, {scale:1})
-        .to(f2_img2, 1, {scale:1}, "-=0.8")
-        .to(f2_img3, 1, {scale:1}, "-=0.8")
-        .to(f2_text1, 0.5, {autoAlpha: 1, top: 0})
-        .to(f2_text2, 0.5, {autoAlpha: 1, top: 0});
+      tl.to(f2_img1, 0.5, {scale:1})
+        .to(f2_img2, 0.5, {scale:1}, "-=0.5")
+        .to(f2_img3, 0.5, {scale:1}, "-=0.5")
+        .to(f2_text1, 0.5, {autoAlpha: 1, top: 0, delay: 8});
 }
 /**
  * Adds appropriate listeners at initialization time
@@ -110,8 +102,6 @@ function showYTPlayer0(containerId) {
     document.getElementById(containerId).appendChild(ytp);
 
 
-
-
     /*ytp.addEventListener('playpressed', function() {
       if (ytp.a.isMuted()) {
         ytp.toggleMute();
@@ -136,9 +126,13 @@ function showYTPlayer0(containerId) {
     ytp.addEventListener('viewed25percent', function() {
       Enabler.counter('YTP 0 viewed 25%');
     }, false);
+    */
     ytp.addEventListener('viewed50percent', function() {
-      Enabler.counter('YTP 0 viewed 50%');
+      // Enabler.counter('YTP 0 viewed 50%');
+      // console.log('15s');
+      tl.to(f2_text2, 0.5, {autoAlpha: 1, top: 0});
     }, false);
+    /*
     ytp.addEventListener('viewed75percent', function() {
       Enabler.counter('YTP 0 viewed 75%');
     }, false);
@@ -186,11 +180,11 @@ window.addEventListener('load', preInit);
 
 /* Animation for banner */
 function endTween() {
-  console.log("ended");
+  //console.log("ended");
   hideYTPlayer0('feature');
 
   tl.to([f2_img1, f2_img2, f2_img3, f2_text1, f2_text2], 0.5, {autoAlpha:0})
-    .to(f3_img1, 0.8, {scale:1, top: -188, left: 380})
-    .to(logo, 0.5, {autoAlpha: 1})
-    .to(cta, 0.5, {autoAlpha: 1, top: 0});
+    .to(f3_img1, 0.5, {scale:1, top: -188, left: 380})
+    .to(logo, 0.5, {autoAlpha: 1}, "-=0.5")
+    .to(cta, 0.5, {autoAlpha: 1, top: 0}, "-=0.5");
 }
