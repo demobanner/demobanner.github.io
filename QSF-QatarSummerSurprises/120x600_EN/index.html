@@ -61,7 +61,7 @@
 
 				tl.to(bg3, 1.5, {autoAlpha: 1,scale:1, ease: Power3.easeOut}, "-=0.5")
 					.to(logo, 0.5, {autoAlpha: 1})
-					.to(text, 0.5, {autoAlpha: 1, top: 0})
+					.to(f5_text, 0.5, {autoAlpha: 1, top: 0})
 					.to(cta, 0.5, {autoAlpha: 1, top: 0})
 					.to(reload, 0.1, {autoAlpha: 1}, "+=0.5");
       }
@@ -74,7 +74,7 @@
 
     </script>
   </head>
-  <body onload="init()">
+  <body >
     <div id="banner">
       <a id="mainExit" class="click-tag" href="javascript:">
         <div id="flower1" class="layer"></div>
@@ -90,7 +90,7 @@
 
         <div id="bg3" class="layer"></div>
         <div id="logo" class="layer"></div>
-        <div id="text" class="layer"></div>
+        <div id="f5_text" class="layer"></div>
         <div id="cta" class="layer"></div>
       </a>
       <div id="reload" class="layer" onclick="reloadBanner();"></div>
