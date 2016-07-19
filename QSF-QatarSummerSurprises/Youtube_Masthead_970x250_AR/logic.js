@@ -81,7 +81,7 @@ function exitClickHandler() {
     creative.dom.ytplayer0.pause();
     // creative.dom.ytplayer0.seek(0);
   }
-  Enabler.exit('BackgroundExit', 'http://eidinqatar.qa/');
+  Enabler.exit('BackgroundExit');
 }
 /**
  * Shows the YT player.
