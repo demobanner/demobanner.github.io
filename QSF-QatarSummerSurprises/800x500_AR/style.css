@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 798px;
+  height: 498px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: url('bg.jpg') no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 798px;
+  height: 498px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_1 {
+  background: url('f1_1.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+  top: -44px;
+  left: 30px;
+  width: 764px;
+  height: 740px;
+}
+#f1_2 {
+  background: url('f1_2.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+  left:-500px;
+  top:-300px;
+}
+#f1_3 {
+  background: url('f1_3.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+  left:500px;
+  top:-300px;
+}
+#text1 {
+  background: url('text1.png') center no-repeat;
+  top: -15px;
+}
+#text2 {
+  background: url('text2.png') center no-repeat;
+  top: -15px;
+}
+#f3_1 {
+  background: url('f3_1.png') center no-repeat;
+   -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+  top:-400px;
+  left :-45px;
+  width: 894px;
+  height: 894px;
+}
+#f3_2 {
+  background: url('f3_2.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+  top:300px;
+}
+#text3 {
+  background: url('text3.png') center no-repeat;
+  top: -15px;
+}
+#text4 {
+  background: url('text4.png') center no-repeat;
+  top:-15px;
+}
+#f5 {
+  background: url('f5.png') center no-repeat;
+  -ms-transform: scale(0.005);
+  -webkit-transform: scale(0.005);
+  transform: scale(0.005);
+  width: 754px;
+  height: 743px;
+  top:-112px;
+  left: 263px;
+}
+#logo {
+  background: url('logo.png') center no-repeat;
+}
+#text5 {
+  background: url('text5.png') center no-repeat;
+  top:-15px;
+}
+#cta {
+  background: url('cta.png') center no-repeat;
+  top:25px;
+}
+#reload {
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
+  width: 14px;
+  height: 14px;
+}
