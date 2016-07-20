@@ -53,11 +53,11 @@ body{
 }
 #frame3{
 	background: url('frame3.png');
-	
+
 }
 #frame4{
 	background: url('frame4.png');
-	top:-46px;	
+	top:-46px;
 }
 #f4_text{
 	width: 112px;
@@ -75,7 +75,7 @@ body{
 }
 #c1_F{
 	background: url('F.png');
-	
+
 }
 #c2_8{
 	background: url('8.png');
@@ -244,7 +244,7 @@ body{
 				<div class="text2" id="c12_Y"></div>
 				<div class="text2" id="c13_N"></div>
 				<div class="text2" id="c14_U"></div>
-				
+
 			</div>
 		</a>
   </div>
@@ -258,7 +258,7 @@ body{
 	}
 	function init (){
 		document.getElementById('mainExit').addEventListener('click', exitClickHandler, false);
-		
+
 		var tl = new TimelineMax({paused:false});
 
 		var	container = document.getElementById("container"),
@@ -266,16 +266,16 @@ body{
 				frame2 = document.getElementById("frame2"),
 				frame3 = document.getElementById("frame3"),
 				frame4 = document.getElementById("frame4");
-				
+
 		TweenMax.set(container, {perspective:500});
 
-		tl.to(frame1, 0.5, {top:-46,ease: Power0.easeOut},"+=2.5")
+		tl.to(frame1, 0.5, {top:-46,ease: Power0.easeOut},"+=3.5")
 		  .to(frame2, 0.5, {top:1,ease: Power0.easeOut},"-=0.5")
 
-		  .to(frame2, 0.5, {top:-46,ease: Power0.easeOut},"+=2.5")
+		  .to(frame2, 0.5, {top:-46,ease: Power0.easeOut},"+=3.5")
 		  .to(frame3, 0.5, {top:1,ease: Power0.easeOut},"-=0.5")
 
-		  .to(frame3, 0.5, {top:46,ease: Power0.easeOut},"+=2.5")
+		  .to(frame3, 0.5, {top:46,ease: Power0.easeOut},"+=3.5")
 		  .to(frame4, 0.5, {top:1,ease: Power0.easeOut},"-=0.5")
 
 		tl.to([c1_F,c2_8,c3_2,c4_3,c5_1,c6_7,c7_8,c8_1,c9_3,c10_4,c11_8,c12_7,c13_3,c14_9,c15_MB3RS], 1, {alpha: 1},"+=0.5")
