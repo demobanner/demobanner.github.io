@@ -90,9 +90,9 @@ body {
 }
 #bg3{
 	width: 288px;
-	height: 200px;
-	top: -53px;
-    left: 148px;
+	height: 297px;
+	top: -121px;
+  left: 163px;
   background: url('bg3.png') center no-repeat;
 	-ms-transform: scale(0.005);
   -webkit-transform: scale(0.005);

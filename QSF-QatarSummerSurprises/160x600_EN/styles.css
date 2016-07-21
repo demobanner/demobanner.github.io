@@ -90,8 +90,8 @@ body {
 }
 #f5_bg{
 	width: 361px;
-	height: 353px;
-	top: -42px;
+	height: 372px;
+	top: -52px;
   left: -105px;
   background: url('f5_bg.png') center no-repeat;
 	-ms-transform: scale(0.005);
