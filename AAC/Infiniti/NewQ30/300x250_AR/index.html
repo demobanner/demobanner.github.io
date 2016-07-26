@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=300,height=250">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+
+      function init() {
+        var logo = document.getElementById("logo"),
+        f1_bg = document.getElementById("f1_bg"),
+        f1_text = document.getElementById("f1_text"),
+        f2_bg = document.getElementById("f2_bg"),
+        f2_text = document.getElementById("f2_text"),
+        f3_bg = document.getElementById("f3_bg"),
+        f3_text = document.getElementById("f3_text"),
+        f4_bg = document.getElementById("f4_bg"),
+        f4_text = document.getElementById("f4_text"),
+        f5_bg = document.getElementById("f5_bg"),
+        f5_text = document.getElementById("f5_text"),
+        f5_price = document.getElementById("f5_price"),
+        f5_logo = document.getElementById("f5_logo"),
+        f5_cta = document.getElementById("f5_cta");
+
+        tl.to(f1_bg, 0.5, {autoAlpha: 1})
+          .to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power4.easeOut})
+          .to([f1_bg, f1_text], 0.5, {autoAlpha: 0, delay: 2})
+          .to(f2_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(f2_text, 0.5, {autoAlpha: 1, top: 0, ease: Power4.easeOut})
+          .to([f2_bg, f2_text], 0.5, {autoAlpha: 0, delay: 2})
+          .to(f3_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(f3_text, 0.5, {autoAlpha: 1, top: 0, ease: Power4.easeOut})
+          .to([f3_bg, f3_text], 0.5, {autoAlpha: 0, delay: 2})
+          .to(f4_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(f4_text, 0.5, {autoAlpha: 1, top: 0, ease: Power4.easeOut})
+          .to([f4_bg, f4_text, logo], 0.5, {autoAlpha: 0, delay: 2})   
+          .to(f5_bg, 0.5, {autoAlpha: 1}, "-=0.5")
+          .to(f5_text, 0.5, {autoAlpha: 1, top: 0, ease: Power4.easeOut})
+          .to(f5_price, 0.5, {autoAlpha: 1, top: 0, ease: Power4.easeOut})
+          .to(f5_logo, 0.5, {autoAlpha: 1})
+          .to(f5_cta, 0.5, {autoAlpha: 1});
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="banner">
+      <a class="click-tag" href="javascript:window.open(window.clickTag, '_blank')">
+        <div id="f1_bg" class="layer"></div>
+        <div id="f1_text" class="layer"></div>
+        <div id="f2_bg" class="layer"></div>        
+        <div id="f2_text" class="layer"></div>
+        <div id="f3_bg" class="layer"></div>
+        <div id="f3_text" class="layer"></div>
+        <div id="f4_bg" class="layer"></div>        
+        <div id="f4_text" class="layer"></div>
+        <div id="logo" class="layer"></div>
+        <div id="f5_bg" class="layer"></div>
+        <div id="f5_text" class="layer"></div>
+        <div id="f5_price" class="layer"></div>
+        <div id="f5_cta" class="layer"></div>
+        <div id="f5_logo" class="layer"></div>
+      </a>
+    </div>
+  </body>
+</html>
