@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE TranslationFile [
+<!ELEMENT CQ5PageTranslation ( PageURL, PropertyContents ) >
+<!ATTLIST CQ5PageTranslation Deadline CDATA #IMPLIED >
+<!ATTLIST CQ5PageTranslation PagePath CDATA #REQUIRED >
+
+<!ELEMENT CQ5PageTranslations ( CQ5PageTranslation+ ) >
+
+<!ELEMENT PageURL ( #PCDATA ) >
+<!ATTLIST PageURL ForPreviewOnly CDATA #REQUIRED >
+<!ATTLIST PageURL NeedTranslation CDATA #REQUIRED >
+
+<!ELEMENT PropertyContent ( #PCDATA | Contents )* >
+<!ATTLIST PropertyContent IsMultipleValue CDATA #REQUIRED >
+<!ATTLIST PropertyContent NodePath CDATA #REQUIRED >
+<!ATTLIST PropertyContent PropertyName CDATA #REQUIRED >
+
+<!ELEMENT PropertyContents ( PropertyContent+ ) >
+
+<!ELEMENT Contents ( Content+ ) >
+
+<!ELEMENT Content ( #PCDATA ) >
+<!ATTLIST Content Order CDATA #REQUIRED ><!ELEMENT TranslationFile ( CQ5PageTranslations ) >
+<!ATTLIST TranslationFile CQ5SourceLanguage CDATA #REQUIRED >
+<!ATTLIST TranslationFile CQ5TargetLanguage CDATA #REQUIRED >
+<!ATTLIST TranslationFile CQJobDescription CDATA #IMPLIED >
+<!ATTLIST TranslationFile CQJobName CDATA #REQUIRED >
+<!ATTLIST TranslationFile CT3AssetId CDATA #REQUIRED >
+<!ATTLIST TranslationFile CT3ProjectId CDATA #REQUIRED >
+<!ATTLIST TranslationFile CT3SourceLanguage CDATA #REQUIRED >
+<!ATTLIST TranslationFile CT3TargetLanguage CDATA #REQUIRED >
+<!ATTLIST TranslationFile InCountryReviewer CDATA #IMPLIED >
+]>
+<TranslationFile CQ5SourceLanguage="EN_ME" CQ5TargetLanguage="AR_ME" CQJobDescription="" CQJobName="Submit by [s.butt] @ 2016-06-14 5.49 AM" CT3AssetId="24eb431b-793a-413e-8602-7a83042b0ee9" CT3ProjectId="740cf4bb-3c4a-46bd-85cb-c4acad2a7af7" CT3SourceLanguage="en-GB" CT3TargetLanguage="ar-XR" InCountryReviewer="">
+    <CQ5PageTranslations>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/brand-section/our-vision">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/brand-section/our-vision.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Our Vision</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">LET EMOTION BE THE DRIVER</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txSubTitle">Our Vision</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_8390/col1-par/heliostext_b4c4" PropertyName="txText">&lt;p&gt;We believe a premium vehicle should connect you to your senses. It should put you in charge. Make your heart beat faster. Infiniti’s pioneering spirit breaks from convention to create progressive automobiles that are more audacious, more irresistible and more alive.&lt;/p&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_8390/col1-par/image_c0bc" PropertyName="txAlt">Let emotion be the driver</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/brand-section/concept-cars/etherea-concept-">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/brand-section/concept-cars/etherea-concept-.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Etherea Concept </PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_ddf" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_916" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_faa" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_993" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_caf" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_f93" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_ae8a/columns/columns12bleed_7a1f/col1-par/imagegallerycontaine/slides/imagegalleryitem_5be" PropertyName="txAlt">Infiniti Etherea Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5e4a" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5e4a" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5e4a/columns/columns12bleed_f5bd/col1-par/image_343" PropertyName="txAlt">Gold Line</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4ce6" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4ce6" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4ce6/title" PropertyName="txBody">If you would like to receive the latest news and exclusive offers, sign up for Infiniti World – The Infiniti eNewsletter.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4ce6/title" PropertyName="txTitle">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e295" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e295" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e295/columns/columns12_dd94/col1-par/heliostext_523e" PropertyName="txLinkTitle1">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_9153" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_9153" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txBodyCopy">Introducing Infiniti Etherea, a special concept vehicle designed to foreshadow the future of Infiniti compact performance, Etherea is highly compact but at the same time both space efficient and practical. A supercharged 2.5-litre 4-cylinder engine developing 245 horsepower, providing quick response and strong acceleration while offering all the luxury that Infiniti owners expect. Etherea can be summed up as a four-door coupe with five-door practicality - a hatchback that doesn’t look like a hatchback.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">INFINITI ETHEREA</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/maintenance-tips">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/maintenance-tips.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Maintenance Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="sling:alias">ownership/services</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e58b" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e58b" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e58b/title" PropertyName="txTitle">INSIDE VEHICLES</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e58b/columns/columns12_e695/col1-par/image_f340" PropertyName="txBody">&lt;ul&gt;&lt;li&gt;Check that the seat belts operate properly and smoothly. Check belt wabbing for wear or damage.&lt;/li&gt;&lt;li&gt;Be sure all gauges - fuel, oil, temperature and battery - function properly and indicate normal levels.&lt;/li&gt;&lt;li&gt;Check brakes for smooth operation. Pedal should be firm and vehicle shouldn't pull to one side while stopping.&lt;/li&gt;&lt;li&gt;Check for steering - wheel vibration, hard steering or strange noises. If vehicle pulls to one side, have tires and alignment checked by a Infiniti dealer.&lt;/li&gt;&lt;li&gt;Accelerator pedal should not catch or require uneven effort. Keep the floor mats away from the pedal.&lt;/li&gt;&lt;li&gt;Make sure, headlights, stoplights; taillights and turn signals operate properly. Check headlight aim.&lt;/li&gt;&lt;li&gt;Check that wipers and washers are working and do not streak.&lt;br&gt;Ensure that air or heat comes out of the defroster outlets properly and in sufficient quantity.&lt;/li&gt;&lt;li&gt;If the exhaust note sounds unusual or there is a smell of exhaust fumes, roll down windows and bring vehicle to an Infiniti dealer immediately.&lt;/li&gt;&lt;li&gt;Test automatic transmission &amp;quot;Park&amp;quot; mechanism on a fairly steep hill. The vehicle should be held securely in the &amp;quot;P&amp;quot; position without applying brakes.&lt;/li&gt;&lt;/ul&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e58b/columns/columns12_e695/col1-par/image_f340" PropertyName="txTitle">Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e58b/columns/columns12_e695/col1-par/image_f340/previewImage" PropertyName="txAlt">Inside Vehicles</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_1e8b" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_1e8b" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_1e8b/title" PropertyName="txTitle">Under the hood</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_1e8b/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txBody">&lt;ul&gt;&lt;li&gt;Check fluid levels - engine oil, coolant, brake and power - steering fluids. Engine oil should be checked with the vehicle parked on the level ground and the engine stopped.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Check automatic - transmission fluid level after putting the selector level in &amp;quot;P&amp;quot; with the engine idling.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Check radiator for dirt, insects or leaves that may have accumulated. Inspect hoses for cracks, deformation or loose connections that lead to overheating.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Make sure engine drive - belts are not frayed, worn, cracked or oily.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_1e8b/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txTitle">Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_1e8b/columns/columns12_3f7c/col1-par/image_494f/previewImage" PropertyName="txAlt">Under the hood</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8b18" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8b18" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8b18/title" PropertyName="txTitle">Oil</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8b18/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txBody">&lt;div&gt;Operating a vehicle with insufficient oil can cause irreparable damage to the engine, so check the oil regularly and change it as often as noted in the maintenance schedule. Some tips:&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Park the vehicle on a level surface and apply parking brake.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Run the engine until it reaches operating temperature.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Turn off the engine. Wait for few minutes for the oil to drain back into the oil pan.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Remove the dipstick and wipe it clean. Reinsert it all the way.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Remove the dipstick again and check the oil level. It should be between the &amp;quot;H&amp;quot; and &amp;quot;L&amp;quot; marks. If the oil level is below the &amp;quot;L&amp;quot; mark, remove the oil filter cap and add the recommended oil. Do not overfill.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Recheck oil level with dipstick.&lt;/li&gt;&lt;/ul&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8b18/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txTitle">Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8b18/columns/columns12_3f7c/col1-par/image_494f/previewImage" PropertyName="txAlt">Oil</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7aae" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7aae" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7aae/title" PropertyName="txTitle">Tires</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7aae/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txBody">&lt;ul&gt;&lt;li&gt;Keep proper inflation. Take readings with a tire gauge when the tire is cool - and don't forget the spare. If your steering pulls to one side, a low tire should be to blame. (If not, it may be improper alignment.) Always check low tires for foreign objects such as screws or nails that might have caused the leak.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Have alignment and tire balance checked when your car is serviced. Misalignments lead to rapid and uneven tire wear, and out-of-balance tires will cause steering vibration.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Rotate tires according to their manufacturer's rotation schedule to get the most out of each set. When buying new tires, it's best to replace all four tires at once.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7aae/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txTitle">Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7aae/columns/columns12_3f7c/col1-par/image_494f/previewImage" PropertyName="txAlt">Tires</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_d866" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_d866" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_d866/title" PropertyName="txTitle">Outside Vehicle</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_d866/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txBody">&lt;ul&gt;&lt;li&gt;Inspect tires for damage, cuts or excessive wear. At the service station, test pressure with a gauge and adjust if necessary. Also check for missing or loose wheel nuts.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Check windshield wiper blades for cracks or wear.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Look underneath vehicle to check for a low - hanging muffler or anything that looks abnormal. Also look at fluid leaks.&lt;/li&gt;&lt;/ul&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_d866/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txTitle">Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_d866/columns/columns12_3f7c/col1-par/image_494f/previewImage" PropertyName="txAlt">Outside Vehicle</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_395a" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_395a" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_395a/title" PropertyName="txTitle">Fuel</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_395a/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txBody">&lt;ul&gt;&lt;li&gt;Use only gasoline with the octane recommended in your owner's manual. A common misconception is that octane measures the quality or power capabilities of gas. But octane is simply the measurement of gasoline's resistance to detonation or pinging. So using higher-than-recommended octane gas is a waste of money, while lower-than-recommended octane will result in poor performance and increased operating costs.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Be sure to avoid running the tank too close to empty. Gas impurities and sediments collect at the bottom of your tank and cause problems if drawn into the fuel line.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_395a/columns/columns12_3f7c/col1-par/image_494f" PropertyName="txTitle">Tips</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_395a/columns/columns12_3f7c/col1-par/image_494f/previewImage" PropertyName="txAlt">Fuel</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">Services</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader/panel" PropertyName="txTitle">Maintenance Tips</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/contact-us">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/contact-us.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Contact Us</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">Send Us Message</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/brand-section/concept-cars/q80">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/brand-section/concept-cars/q80.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Q80</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txBodyCopy">A concept as impactful as Q80 Inspiration is set to push boundaries in more ways than through the beauty of its attention-grabbing skin. The cabin can bring together its four occupants in a distinctly personalized ambiance of the highest quality.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">THE ALL-NEW INFINITI Q80 INSPIRATION</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_33e" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_820" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_282" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_285" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_7d9" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_23d" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_b2f" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_382" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_ce6" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/columns/columns12bleed_9634/col1-par/imagegallerycontaine/slides/imagegalleryitem_c79" PropertyName="txAlt">Infiniti Q80 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/title" PropertyName="txBody">At the Paris Motor Show, we brought the crowds to a stand-still as we revealed the future of Infiniti: the Q80 Inspiration.Equipped with ground-breaking technologies that bring us closer to autonomous driving systems, this category-breaking concept car pushes the boundaries of what it means to get behind the wheel. These, combined with the high performance and efficiency of the hybrid-electric powertrain technology, embody the standard of progression Infiniti has always strived for.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/title" PropertyName="txTitle">Equipped with ground-breaking technologies</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4e6/title" PropertyName="txSubTitle">The future of Infiniti</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_88b7" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_88b7" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8c00" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8c00" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8c00/columns/columns12bleed_dbec/col1-par/image_b30b" PropertyName="txAlt">Gold Line</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8078" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8078" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8078/title" PropertyName="txBody">If you would like to receive the latest news and exclusive offers, sign up for Infiniti World – The Infiniti eNewsletter.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8078/title" PropertyName="txTitle">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_db0a" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_db0a" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4281" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4281" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_4281/columns/columns12_bf9/col1-par/heliostext_dccd" PropertyName="txLinkTitle1">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_2bf7" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_2bf7" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/errors/404">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/errors/404.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Page Not Found</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_ef87/col1-par/image_9673" PropertyName="txBody">Use the navigation to continue, or return to the Infiniti homepage</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_ef87/col1-par/image_9673" PropertyName="txTitle">ARE YOU LOST?</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_ef87/col1-par/image_9673" PropertyName="txSubTitle">Sorry, that page can't be displayed</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_ef87/col1-par/image_9673/previewImage" PropertyName="txAlt">ERROR PAGE</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_ef87/col1-par/image_9673/links/link1" PropertyName="txText">BACK TO HOME</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/brand-section/concept-cars/Qx30">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/brand-section/concept-cars/Qx30.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Qx30</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txBodyCopy">Spontaneous and fluid, the Infiniti QX30 Concept is a vision of a compact premium crossover to effortlessly handle anything the city or weather might throw at it with beauty and grace.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">THE NEW INFINITI QX30 CONCEPT</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_4798/col1-par/imagegallerycontaine/slides/imagegalleryitem_61d" PropertyName="txAlt">QX30 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_4798/col1-par/imagegallerycontaine/slides/imagegalleryitem_d1b" PropertyName="txAlt">QX30 Concept </PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_4798/col1-par/imagegallerycontaine/slides/imagegalleryitem_3f8" PropertyName="txAlt">QX30 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_4798/col1-par/imagegallerycontaine/slides/imagegalleryitem_fd2" PropertyName="txAlt">QX30 Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/columns12_4798/col1-par/imagegallerycontaine/slides/imagegalleryitem_9fb" PropertyName="txAlt">QX30 Concept</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/errors/500">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/errors/500.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Server Error</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a/columns/columns12_ca76/col1-par/image_6179" PropertyName="txBody">Use the navigation to continue, or return to the Infiniti homepage</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a/columns/columns12_ca76/col1-par/image_6179" PropertyName="txTitle">ARE YOU LOST?</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a/columns/columns12_ca76/col1-par/image_6179" PropertyName="txSubTitle">Sorry, that page can't be displayed</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a/columns/columns12_ca76/col1-par/image_6179/previewImage" PropertyName="txAlt">ERROR PAGE</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_917a/columns/columns12_ca76/col1-par/image_6179/links/link1" PropertyName="txText">BACK TO HOME</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e9c6" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_e9c6" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/brand-section/concept-cars/emerg-e-sports-car">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/brand-section/concept-cars/emerg-e-sports-car.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">EMERG-E Sports Car</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/title" PropertyName="txBody">The Infiniti EMERG-E is a highly advanced, mid-ship, electric motor powered sports car concept. It projects Infiniti’s already advanced electric vehicle technology deep into the future with a range-extender powertrain that delivers the performance expected of sports car bearing the Infiniti badge. The EMERG-E incorporates an array of exciting new technologies that Infiniti will adopt in its quest to build dramatic and sustainable high performance cars.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/title" PropertyName="txTitle">THE CONCEPT</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/title" PropertyName="txSubTitle">Sustainable High Performance Car</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_9b1" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_8ab" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_7bd" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_6be" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_2cf" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_798" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_3cc" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_d24" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_5aa7/columns/columns12bleed_29ce/col1-par/imagegallerycontaine/slides/imagegalleryitem_861" PropertyName="txAlt">Infiniti Emerg-E Sports Car Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_288b" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_288b" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_288b/columns/columns12bleed_6ae7/col1-par/image_a621" PropertyName="txAlt">Gold Line</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_71fe" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_71fe" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_71fe/title" PropertyName="txBody">If you would like to receive the latest news and exclusive offers, sign up for Infiniti World – The Infiniti eNewsletter.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_71fe/title" PropertyName="txTitle">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_b0f9" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_b0f9" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_22db" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_22db" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_22db/columns/columns12_4732/col1-par/heliostext_445e" PropertyName="txLinkTitle1">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_cc97" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_cc97" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txBodyCopy">Launched at the Geneva Motor Show 2012, EMERG-E manifests our ambition to deliver a vivid, engaging and sophisticated driving experience from an electrically-propelled vehicle. EMERG-E combines low emission, high performance driving on the open road with zero emission urban mobility. It’s a glimpse of the future; the shape of performance motoring for generations to come.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">INFINITI EMERG-E SPORTS CAR</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/vehicles/brochure">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/vehicles/brochure.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Brochure</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txBodyCopy">Download all the facts and figures about our Infiniti models.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">Download Brochures</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/brand-section/concept-cars/infiniti-le">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/brand-section/concept-cars/infiniti-le.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Infiniti LE</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_42c" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_bae" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_b2" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_9ab" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_10c" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_dda" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_fe3" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_6c89/columns/columns12bleed_4cb/col1-par/imagegallerycontaine/slides/imagegalleryitem_fab" PropertyName="txAlt">Infiniti LE Concept</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7b4a" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7b4a" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_7b4a/columns/columns12bleed_8530/col1-par/image_c1d" PropertyName="txAlt">Gold Line</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8f82" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8f82" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8f82/title" PropertyName="txBody">If you would like to receive the latest news and exclusive offers, sign up for Infiniti World – The Infiniti eNewsletter.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_8f82/title" PropertyName="txTitle">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_bf05" PropertyName="txCollapsedCTA">Show more options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_bf05" PropertyName="txExpandedCTA">Show less options</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/freeEditorial/contentzone_bf05/columns/columns12_3a01/col1-par/heliostext_4226" PropertyName="txLinkTitle1">STAY INFORMED</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txBodyCopy">Welcome to the bold future of high performance electric vehicles. This luxury 5-seat sedan is Infiniti’s ultimate expression of future mobility: powerful electric propulsion with zero emission, luxury design, organic styling, and effortless wireless charging. More than just fantasy, the Infiniti LE Concept becomes reality in 2014.</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">INFINITI LE CONCEPT</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+        <CQ5PageTranslation Deadline="07/04/2016" PagePath="/content/infiniti_master/ar_ME/index/book-a-service-confirmation">
+            <PageURL ForPreviewOnly="True" NeedTranslation="False">http://author.prod.heliosnissan.net/content/infiniti_master/ar_ME/index/book-a-service-confirmation.html</PageURL>
+            <PropertyContents>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content" PropertyName="jcr:title">Book A Service Confirmation</PropertyContent>
+                <PropertyContent IsMultipleValue="No" NodePath="jcr:content/pageHeader" PropertyName="txTitle">Thank You</PropertyContent>
+            </PropertyContents>
+        </CQ5PageTranslation>
+    </CQ5PageTranslations>
+</TranslationFile>
