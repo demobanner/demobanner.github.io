@@ -22,45 +22,67 @@ body {
 }
 #f1_car {
   background: url('f1_car.jpg') center;
+	left: -30px;
 }
 #f1_text {
   background: url('f1_text.png') center;
+  top: -40px;
 }
 #f2_car {
   background: url('f2_car.jpg') center;
+  width: 600px;
+  height: 500px;
+  left: -151px;
+  top: -126px;
+	transform: scale(1.3);
+	-ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+}
+#bottom {
+  background: url('bottom.png') center;
+}
+#top {
+  background: url('top.png') center;
 }
 #f2_text {
   background: url('f2_text.png') center;
-}
-#f3_car {
-  background: url('f3_car.jpg') center;
+  top: -40px;
 }
 #f3_text {
   background: url('f3_text.png') center;
+  top: -40px;
 }
 #f4_car {
   background: url('f4_car.jpg') center;
+	transform: scale(0.7);
+	-ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
 }
 #f4_text {
   background: url('f4_text.png') center;
+  top: -40px;
 }
 #f5_car {
   background: url('f2_car.jpg') center;
 }
 #f5_text {
   background: url('f5_text.png') center;
+  top: -40px;
 }
 #tc1 {
   background: url('tc1.png') center;
 }
 #f6_text {
   background: url('f6_text.png') center;
+  top: -40px;
 }
 #f7_text {
   background: url('f7_text.png') center;
+  top: -40px;
 }
 #f8_text {
   background: url('f8_text.png') center;
+  top: -40px;
 }
 #logo2 {
   background: url('logo2.png') center;
