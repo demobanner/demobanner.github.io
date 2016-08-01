@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-  margin:2;
-  padding: 2;
+  margin:0;
+  padding:0;
 }
 .layer {
   position: absolute;
@@ -24,7 +24,6 @@ body {
   width: 135px;
   height: 600px;
   background: url('bg.jpg') center;
-  background-size: cover;
   opacity: 1;
 }
 #logo {

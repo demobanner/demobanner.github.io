@@ -24,7 +24,6 @@ body {
   left: 20px;
   width: 728px;
   background: url('bg.jpg') center;
-  background-size: cover;
   opacity: 1;
 }
 #logo {

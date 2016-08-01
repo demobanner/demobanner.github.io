@@ -24,7 +24,6 @@ body {
   width: 175px;
   height: 600px;
   background: url('bg.jpg') center;
-  background-size: cover;
   opacity: 0;
   left: 0px;
 }

@@ -23,7 +23,6 @@ body {
 #bg {
   width: 320px;
   background: url('bg.jpg') center;
-  background-size: cover;
   opacity: 1;
 }
 #logo {
