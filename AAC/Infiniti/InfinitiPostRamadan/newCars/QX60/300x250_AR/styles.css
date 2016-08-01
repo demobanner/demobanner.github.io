@@ -1,0 +1,67 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 298px;
+  height: 248px;
+}
+#banner {
+  position: relative;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bg {
+  left: -20px;
+  width: 300px;
+  height: 250px;
+  background: url('bg.jpg') center;
+  opacity: 1;
+}
+#logo {
+  opacity: 1;
+  background: url('logo.png') center;
+}
+#awr-logo {
+  background: url('awr-logo.png') center;
+  opacity: 1;
+}
+#title {
+  background: url('title.png') center;
+}
+#sub-1 {
+  background: url('sub-1.png') center;
+}
+#sub-3 {
+  background: url('sub-3.png') center;
+}
+#sub-4 {
+  background: url('sub-4.png') center;
+}
+#cta {
+  background: url('cta.png') center;
+}
+#tc {
+  background: url('tc.png') center;
+}
+#reload {
+  width: 14px;
+  height: 14px;
+  left: inherit;
+  right: 0;
+  background: url('reload.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+
+
