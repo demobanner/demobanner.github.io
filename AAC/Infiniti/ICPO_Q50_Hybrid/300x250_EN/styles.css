@@ -34,9 +34,9 @@ body {
   height: 500px;
   left: -151px;
   top: -126px;
-	transform: scale(1.3);
-	-ms-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
+	transform: scale(0.1);
+	-ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
 }
 #bottom {
   background: url('bottom.png') center;
