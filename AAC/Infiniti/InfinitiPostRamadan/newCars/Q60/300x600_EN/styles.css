@@ -18,7 +18,6 @@ body {
   border: 1px solid #000;
   background-color: #fff;
   overflow: hidden;
-  cursor: pointer;
 }
 #bg {
   width: 320px;
@@ -53,14 +52,10 @@ body {
   background: url('tc.png') center;
 }
 #reload {
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   left: inherit;
   right: 0;
-  background: url('reload.png');
-  background-size: cover;
-  z-index: 10;
+  background: url('reload.png') center;
+  cursor: pointer;
 }
-
-
-
