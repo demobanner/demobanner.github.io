@@ -22,7 +22,7 @@ body {
 #bg {  
   width: 135px;
   background: url('bg.jpg') center;
-  opacity: 1;
+  opacity: 0;
 }
 #logo {
   opacity: 1;
