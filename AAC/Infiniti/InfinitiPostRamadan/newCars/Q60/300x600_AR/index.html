@@ -18,6 +18,7 @@
       function init() {
         var bg = document.getElementById("bg"),
             title = document.getElementById("title"),
+            sub1 = document.getElementById("sub-1"),
             sub3 = document.getElementById("sub-3"),
             sub4 = document.getElementById("sub-4"),
             tc = document.getElementById("tc"),
@@ -26,7 +27,9 @@
 
         tl.to(bg, 0.5, {left: -20})
           .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay:1})
+          .to(sub1, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1})
+          .to(sub1, 0.5, {autoAlpha: 0, delay: 3})
+          .to(sub3, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
           .to(sub4, 0.5, {autoAlpha: 1, ease: Power2.easeOut, delay: 1.5})
           .to([sub3, sub4], 0.5, {autoAlpha: 0, delay: 2})
           .to(cta, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
@@ -47,6 +50,7 @@
         <div id="logo" class="layer"></div>
         <div id="awr-logo" class="layer"></div>
         <div id="title" class="layer"></div>
+        <div id="sub-1" class="layer"></div>
         <div id="sub-3" class="layer"></div>
         <div id="sub-4" class="layer"></div>
         <div id="tc" class="layer"></div>
