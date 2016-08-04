@@ -35,15 +35,11 @@ body {
 #title {
   background: url('title.png') center;
 }
-#sub-1 {
-  background: url('sub-1.png') center;
-}
 #sub-2 {
   background: url('sub-2.png') center;
 }
 #sub-4 {
   background: url('sub-4.png') center;
-  top: 8px;
 }
 #cta {
   background: url('cta.png') center;
