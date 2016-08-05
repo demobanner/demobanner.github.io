@@ -5,8 +5,8 @@ body {
 }
 .layer {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   opacity: 0;
   width: 298px;
   height: 598px;
@@ -19,11 +19,10 @@ body {
   background-color: #fff;
   overflow: hidden;
 }
-#bg {  
-  width: 315px;
+#bg {
+  width: 320px;
   background: url('bg.jpg') center;
   opacity: 1;
-  left: -20px;
 }
 #logo {
   opacity: 1;
