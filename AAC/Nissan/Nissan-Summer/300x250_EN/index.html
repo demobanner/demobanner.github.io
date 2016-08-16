@@ -24,32 +24,21 @@
 					title = document.getElementById("title"),
 					blueBg = document.getElementById("blueBg"),
 					text1 = document.getElementById("text1"),
+					tc = document.getElementById("tc"),
 					redBg = document.getElementById("redBg"),
 					text2 = document.getElementById("text2"),
 					card = document.getElementById("card"),
-					suitcase2 = document.getElementById("suitcase2"),
-					car1 = document.getElementById("car1"),
-					car2 = document.getElementById("car2"),
-					car3 = document.getElementById("car3"),
-					car3 = document.getElementById("car3"),
-					cta = document.getElementById("cta"),
-					hotline = document.getElementById("hotline");
+					suitcase2 = document.getElementById("suitcase2");
 
 			tl.to(suitcase, 0.5, {left:0, autoAlpha:1, ease:Power1.easeOut})
-			  .to(title, 0.5, {top:0, autoAlpha:1, ease:Power2.easeOut})
-			  .to(blueBg, 0.5, {left:0, autoAlpha:1, ease:Power2.easeOut}, "+=0.5")
 			  .to(text1, 0.5, {autoAlpha:1, ease:Power1.easeOut})
+			  .to(title, 0.5, {top:0, autoAlpha:1, ease:Power2.easeOut}, "+=0.5")
+			  .to(tc, 0.5, {autoAlpha:1, ease:Power1.easeOut}, "+=0.5")
 			  .to(redBg, 0.5, {left:0, autoAlpha:1, ease:Power2.easeOut}, "+=2")
 			  .to(text2, 0.5, {autoAlpha:1, ease:Power1.easeOut})
-			  .to(card, 0.5, {left:0, autoAlpha:1, ease:Power2.easeOut}, "+=2");
-				 
-			tl.to(suitcase, 0.5, {scale:0.8, left:17, top:-26, ease:Power2.easeOut}, "+=1")
-				.to(car1, 0.3, {autoAlpha:1, ease:Power1.easeOut})
-				.to(car2, 0.3, {autoAlpha:1, ease:Power1.easeOut}, "-=0.2")
-				.to(car3, 0.3, {autoAlpha:1, ease:Power1.easeOut}, "-=0.2")
-				.to(car4, 0.3, {autoAlpha:1, ease:Power1.easeOut}, "-=0.2")
-				.to(cta, 0.5, {top:0, autoAlpha:1, ease:Power1.easeOut})
-				.to(hotline, 0.5, {autoAlpha:1, ease:Power1.easeOut, onComplete:onLoop});
+			  .to(card, 0.5, {left:0, autoAlpha:1, ease:Power2.easeOut}, "+=2")
+			  .to(text2, 0.1, {autoAlpha:0, ease:Power1.easeOut}, "-=0.1")
+			  .to(cta, 0.5, {top:0, autoAlpha:1, ease:Power1.easeOut, onComplete:onLoop}, "+=0.5");
 		}
 		
 		function restart() {
@@ -74,20 +63,15 @@
     <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
       <div id="logo" class="layer"></div>
       <div id="title" class="layer"></div>
+      <div id="tc" class="layer"></div>
       <div id="suitcase" class="layer">
-	      <div id="blueBg" class="layer"></div>
 	      <div id="text1" class="layer"></div>
 	      <div id="redBg" class="layer"></div>
 	      <div id="text2" class="layer"></div>
 	      <div id="card" class="layer"></div>
       </div>
       <div id="suitcase2" class="layer"></div>
-      <div id="car1" class="layer"></div>
-      <div id="car2" class="layer"></div>
-      <div id="car3" class="layer"></div>
-      <div id="car4" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <div id="hotline" class="layer"></div>
     </a>
 		<a id="btnReplay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
   </div>

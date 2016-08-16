@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background: #fff url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#suitcase, #redBg, #card {
+  top: -100px;
+}
+#suitcase {
+  background: url("suitcase.png") center no-repeat;
+  height: 120px;
+}
+#title {
+  background: url("title.png") center no-repeat;
+  top: -50px;
+}
+#tc {
+  background: url("tc.png") center no-repeat;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+}
+#redBg {
+  background: url("redBg.png") center no-repeat;
+  height: 120px;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+}
+#card {
+  background: url("card.png") center no-repeat;
+  height: 120px;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 50px;
+}
+#btnReplay {
+  position: absolute;
+  top: -4px;
+  right: -1px;
+  visibility: hidden;
+  opacity: 0;
+}

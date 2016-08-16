@@ -45,11 +45,11 @@ a {
   background: url("title.png") center no-repeat;
   top: -50px;
 }
-#blueBg {
-  background: url("blueBg.png") center no-repeat;
-}
 #text1 {
   background: url("text1.png") center no-repeat;
+}
+#tc {
+  background: url("tc.png") center no-repeat;
 }
 #redBg {
   background: url("redBg.png") center no-repeat;
@@ -60,29 +60,10 @@ a {
 #card {
   background: url("card.png") center no-repeat;
 }
-#suitcase2 {
-  background: url("suitcase2.png") center no-repeat;
-}
-#car1 {
-  background: url("car1.png") center no-repeat;
-}
-#car2 {
-  background: url("car2.png") center no-repeat;
-}
-#car3 {
-  background: url("car3.png") center no-repeat;
-}
-#car4 {
-  background: url("car4.png") center no-repeat;
-}
 #cta {
   background: url("cta.png") center no-repeat;
   top: 50px;
 }
-#hotline {
-  background: url("hotline.png") center no-repeat;
-}
-
 #btnReplay {
   position: absolute;
   top: 0px;
