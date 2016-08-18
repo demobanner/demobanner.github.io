@@ -92,7 +92,7 @@ define(
       {
         "svKey": "cta_icon_style",
         "svType": "String",
-        "value": "24px,33px,5px,0px"
+        "value": "24px,33px,5px,2px"
       },
       {
         "svKey": "cta_text",
@@ -107,7 +107,7 @@ define(
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "135px,33px,100px,233px"
+        "value": "135px,31px,82px,207px"
       },
       {
         "svKey": "cta_highlight",
@@ -117,7 +117,7 @@ define(
       {
         "svKey": "cta_highlight_style",
         "svType": "String",
-        "value": "71px,33px,150px"
+        "value": "71px,59px,150px"
       },
       {
         "svKey": "Standalone",
@@ -138,6 +138,7 @@ define(
   },
 
   "AdditionalAssets": [
+    
     {
         "OrdinalNumber": 1,
         "FileName": "logo.png"
@@ -171,4 +172,5 @@ define(
         "FileName": "standalone.jpg"
     },
   ]
+
 });
