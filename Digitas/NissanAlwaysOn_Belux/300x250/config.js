@@ -12,7 +12,7 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "UITZONDERLIJKE <br>OPENDEURDAGENCONDITIES"
+        "value": "UITZONDERLIJKE <br>OPENDEURDAGEN <br>CONDITIES"
       },
       {
         "svKey": "f1_title_style",
@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "VAN 8 TO 17 SEPTEMBER<br><span></span>"
+        "value": "VAN 8 TO 17 <br>SEPTEMBER<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -52,7 +52,7 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "Jusqu’à € 4.350 d’avantages clients"
+        "value": "Jusqu’à € 4.350 <br>d’avantages clients"
       },
       {
         "svKey": "f3_subtitle_style",
