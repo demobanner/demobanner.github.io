@@ -77,7 +77,6 @@
             this.f2_subtitle = adkit.getSVData('f2_subtitle');
             this.f3_title    = adkit.getSVData('f3_title');
             this.f3_subtitle = adkit.getSVData('f3_subtitle');
-            this.f1_image     = EB.getAssetUrl("", adkit.getSVData('f1_image'));
             this.logo     = EB.getAssetUrl("", adkit.getSVData('logo'));
             this.background = EB.getAssetUrl("", adkit.getSVData('background'));
             this.packshot   = EB.getAssetUrl("", adkit.getSVData('packshot'));
@@ -222,10 +221,12 @@
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
-                this.timeline.to(f1_title, 0.5, {alpha:1, left: 553, ease: Power2.easeOut});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
-                this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
+                this.timeline.to(f1_title, 0.5, {alpha:1, left: 72, ease: Power2.easeOut});
+                this.timeline.to(packshot, 1.5, {alpha:1, ease: Power2.easeOut});
+                this.timeline.to(f1_title, 0.8, {alpha:0},'+=1');
+
+                
+                this.timeline.to([f1_image,f1_title], 0.5, {alpha:0},"+=1");
 
                 this.timeline.to(packshot, 1.5, {left: 0, top:0, width: '100%', height: '100%', ease: Power2.easeOut});
                 this.timeline.to(f2_title, 0.5, {alpha:1});
@@ -236,6 +237,7 @@
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
                 this.timeline.to(f3_title, 0.5, {alpha:1});
                 this.timeline.to(f3_subtitle, 0.5, {alpha:1, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
+                this.timeline.to([f3_title,f3_subtitle], 0.8, {alpha:0},"+=1");
                 this.timeline.to(cta_wrapper, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:0});

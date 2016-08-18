@@ -17,8 +17,9 @@ define(
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,31px"
+        "value": "black,19px"
       },
+      
       {
         "svKey": "f2_title",
         "svType": "String",
@@ -37,7 +38,7 @@ define(
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "black,32px, 42, #c71444"
+        "value": "black,15px, 34, #c71444"
       },
       {
         "svKey": "f3_title",
@@ -47,7 +48,7 @@ define(
       {
         "svKey": "f3_title_style",
         "svType": "String",
-        "value": "black,40px"
+        "value": "black,17px"
       },
       {
         "svKey": "f3_subtitle",
@@ -57,7 +58,7 @@ define(
       {
         "svKey": "f3_subtitle_style",
         "svType": "String",
-        "value": "black,23px, 90, #c71444"
+        "value": "black,14px, 50, #c71444"
       },
       {
         "svKey": "logo",
@@ -92,7 +93,7 @@ define(
       {
         "svKey": "cta_icon_style",
         "svType": "String",
-        "value": "24px,33px,20px,0px"
+        "value": "24px,33px,-7px,0px"
       },
       {
         "svKey": "cta_text",
@@ -102,12 +103,12 @@ define(
       {
         "svKey": "cta_text_style",
         "svType": "String",
-        "value": "21px,44px,29px"
+        "value": "13px,28px,9px"
       },
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "227px,43px,556px,155px"
+        "value": "123px,28px,179px,36px"
       },
       {
         "svKey": "cta_highlight",
@@ -117,7 +118,7 @@ define(
       {
         "svKey": "cta_highlight_style",
         "svType": "String",
-        "value": "71px,43px,215px"
+        "value": "71px,33px,150px"
       },
       {
         "svKey": "Standalone",
@@ -138,6 +139,7 @@ define(
   },
 
   "AdditionalAssets": [
+    
     {
         "OrdinalNumber": 1,
         "FileName": "logo.png"
