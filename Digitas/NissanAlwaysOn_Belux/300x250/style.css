@@ -27,7 +27,7 @@
 	display: none;
 	background-image:url(images/standalone.jpg);
 }
-#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f1_image, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
+#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -61,7 +61,7 @@
 }
 #f1_title{
 	left: 109px;
-	top: 19px;
+	top: 14px;
   opacity: 0;
 }
 #f2_title, #f3_title{
