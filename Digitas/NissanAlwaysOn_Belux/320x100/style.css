@@ -17,8 +17,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 970px;
-	height: 250px;
+	width: 320px;
+	height: 100px;
 	overflow: hidden;
 	background-color: #ffffff;
 	cursor: pointer;
@@ -27,13 +27,14 @@
 	display: none;
 	background-image:url(images/standalone.jpg);
 }
-#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
+#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f1_image, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
 }
+
 #headlights{
   opacity: 0;
 }
@@ -49,18 +50,19 @@
 #cta_highlight {
   left:-100px;
 }
+
 #f1_title{
-	left: 753px;
-	top: 27px;
+	left: 92px;
+	top: 19px;
   opacity: 0;
 }
 #f2_title, #f3_title{
-  left: 553px;
-  top: 40px;
+  left: 171px;
+  top: 32px;
   opacity: 0;
 }
 #f2_subtitle, #f3_subtitle{
-  left: 553px;
+  left: 171px;
   opacity: 0;
 }
 #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle {

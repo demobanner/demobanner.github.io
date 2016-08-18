@@ -221,11 +221,14 @@
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
-                this.timeline.to(f1_title, 0.5, {alpha:1, left: 257, ease: Power2.easeOut});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
-                this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
+                this.timeline.to(f1_title, 0.5, {alpha:1, left: 72, ease: Power2.easeOut});
+                this.timeline.to(packshot, 1.5, {alpha:1, ease: Power2.easeOut});
+                this.timeline.to(f1_title, 0.8, {alpha:0},'+=1');
 
+                
+                this.timeline.to([f1_image,f1_title], 0.5, {alpha:0},"+=1");
+
+                this.timeline.to(packshot, 1.5, {left: 0, top:0, width: '100%', height: '100%', ease: Power2.easeOut});
                 this.timeline.to(f2_title, 0.5, {alpha:1});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
@@ -234,6 +237,7 @@
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
                 this.timeline.to(f3_title, 0.5, {alpha:1});
                 this.timeline.to(f3_subtitle, 0.5, {alpha:1, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
+                this.timeline.to([f3_title,f3_subtitle], 0.8, {alpha:0},"+=1");
                 this.timeline.to(cta_wrapper, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:0});
