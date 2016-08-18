@@ -224,6 +224,8 @@
                 this.timeline.to(f1_title, 0.5, {alpha:1, left: 95, ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:0});
+                this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
+
                 this.timeline.to(f2_title, 0.5, {alpha:1});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
