@@ -34,12 +34,7 @@
   left: 0;
   top: 0;
 }
-#packshot{
-  width: 70%;
-  height: 70%;
-  left: -334px;
-  top: 15px;
-}
+
 #headlights{
   opacity: 0;
 }
