@@ -49,14 +49,6 @@
 #cta_highlight {
   left:-100px;
 }
-#f1_image{
-  opacity: 0;
-  -webkit-transform: scale(1.5);
-     -moz-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-       -o-transform: scale(1.5);
-          transform: scale(1.5);
-}
 #f1_title{
 	left: 118px;
 	top: 19px;
