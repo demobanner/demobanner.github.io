@@ -12,7 +12,7 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "UITZONDERLIJKE <br>OPENDEURDAGEN <br>CONDITIES"
+        "value": "CONDITIONS PORTES <br>OUVERTES EXCEPTIONNELLES"
       },
       {
         "svKey": "f1_title_style",
@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "VAN 8 TO 17 <br>SEPTEMBER<span></span>"
+        "value": "DU 8 AU 17 SEPTEMBRE<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -97,7 +97,7 @@ define(
       {
         "svKey": "cta_text",
         "svType": "String",
-        "value": "ONTDEK HIER"
+        "value": "C’EST ICI"
       },
       {
         "svKey": "cta_text_style",
