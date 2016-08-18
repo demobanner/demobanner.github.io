@@ -52,7 +52,7 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "Jusqu’à € 4.350 <br>d’avantages clients"
+        "value": "Tot € 4.350 voordeel"
       },
       {
         "svKey": "f3_subtitle_style",
