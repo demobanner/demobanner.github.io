@@ -17,7 +17,7 @@ define(
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,18px"
+        "value": "black,16px"
       },
       {
         "svKey": "f2_title",
@@ -37,7 +37,7 @@ define(
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "black,18px, 19, #c71444"
+        "value": "black,16px, 19, #c71444"
       },
       {
         "svKey": "f3_title",
@@ -52,12 +52,12 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "Jusqu’à € 4.350 <br>d’avantages clients"
+        "value": "Jusqu’à € 4.350 d’avantages clients"
       },
       {
         "svKey": "f3_subtitle_style",
         "svType": "String",
-        "value": "black,17px, 46, #c71444"
+        "value": "black,14px, 46, #c71444"
       },
       {
         "svKey": "logo",
