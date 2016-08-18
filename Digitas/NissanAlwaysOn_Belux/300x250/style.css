@@ -17,8 +17,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 336px;
-	height: 280px;
+	width: 300px;
+	height: 250px;
 	overflow: hidden;
 	background-color: #ffffff;
 	cursor: pointer;
@@ -34,6 +34,7 @@
   left: 0;
   top: 0;
 }
+
 #headlights{
   opacity: 0;
 }
@@ -47,20 +48,30 @@
   position: absolute;
 }
 #cta_highlight {
-  left:-100px;
+ left:-100px;
+  top:-16px;
+}
+#f1_image{
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+       -o-transform: scale(1.5);
+          transform: scale(1.5);
 }
 #f1_title{
-	left: 118px;
-	top: 19px;
+	left: 109px;
+	top: 14px;
   opacity: 0;
 }
 #f2_title, #f3_title{
-  left: 98px;
-  top: 19px;
+  left: 89px;
+  top: 17px;
   opacity: 0;
 }
 #f2_subtitle, #f3_subtitle{
-  left: 98px;
+  left: 89px;
+  top: 36px;
   opacity: 0;
 }
 #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle {

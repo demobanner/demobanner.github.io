@@ -71,6 +71,7 @@
             this.cta_icon_right             = this.cta_icon_css_array[2];
             this.cta_icon_top               = this.cta_icon_css_array[3];
 
+
             //Initializing all config value
             this.f1_title    = adkit.getSVData('f1_title');
             this.f2_title    = adkit.getSVData('f2_title');
@@ -221,13 +222,14 @@
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
-                
-                this.timeline.to(packshot, 0.5, {alpha:1});
-                this.timeline.to(f1_title, 0.5, {alpha:1, left: 98, ease: Power2.easeOut});
+ 
+                this.timeline.to(f1_title, 0.5, {alpha:1, left: 89, ease: Power2.easeOut});
+                this.timeline.to(packshot, 1.5, { top: 0, width: '100%', height: '100%', ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:0});
-                this.timeline.to(f1_title, 0.5, {alpha:0}, "+=0.5");
+                this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
 
+                //this.timeline.to(packshot, 1.5, { top: 0, width: '100%', height: '100%', ease: Power2.easeOut});
                 this.timeline.to(f2_title, 0.5, {alpha:1});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
