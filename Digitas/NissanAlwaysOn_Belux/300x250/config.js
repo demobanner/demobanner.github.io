@@ -12,7 +12,7 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "INNOVATIE NU<br>BEREIKBAARDER<br>DAN OOIT"
+        "value": "UITZONDERLIJKE <br>OPENDEURDAGENCONDITIES"
       },
       {
         "svKey": "f1_title_style",
@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "DANKZIJ DE<br><span>TECHNO DEALS</span>"
+        "value": "VAN 8 TO 17 SEPTEMBER<br><span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -42,7 +42,7 @@ define(
       {
         "svKey": "f3_title",
         "svType": "String",
-        "value": "NISSAN NOTE"
+        "value": "NISSAN JUKE"
       },
       {
         "svKey": "f3_title_style",
@@ -52,7 +52,7 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "tot €4.650 voordeel"
+        "value": "Jusqu’à € 4.350 d’avantages clients"
       },
       {
         "svKey": "f3_subtitle_style",
