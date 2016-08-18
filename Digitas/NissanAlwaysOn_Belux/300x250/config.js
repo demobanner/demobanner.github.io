@@ -12,12 +12,12 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "UITZONDERLIJKE <br>OPENDEURDAGEN <br>CONDITIES"
+        "value": "CONDITIONS PORTES <br>OUVERTES EXCEPTIONNELLES"
       },
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,18px"
+        "value": "black,16px"
       },
       {
         "svKey": "f2_title",
@@ -32,12 +32,12 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "VAN 8 TO 17 <br>SEPTEMBER<span></span>"
+        "value": "DU 8 AU 17 SEPTEMBRE<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "black,18px, 19, #c71444"
+        "value": "black,16px, 19, #c71444"
       },
       {
         "svKey": "f3_title",
@@ -52,12 +52,12 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "Jusqu’à € 4.350 <br>d’avantages clients"
+        "value": "Jusqu’à € 4.350 d’avantages clients"
       },
       {
         "svKey": "f3_subtitle_style",
         "svType": "String",
-        "value": "black,17px, 46, #c71444"
+        "value": "black,14px, 46, #c71444"
       },
       {
         "svKey": "logo",
@@ -97,7 +97,7 @@ define(
       {
         "svKey": "cta_text",
         "svType": "String",
-        "value": "ONTDEK HIER"
+        "value": "C’EST ICI"
       },
       {
         "svKey": "cta_text_style",
