@@ -149,7 +149,7 @@ define(
     },
     {
         "OrdinalNumber": 3,
-        "FileName": "packshot_note.png"
+        "FileName": "packshot_juke.png"
     },
     {
         "OrdinalNumber": 4,
