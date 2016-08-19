@@ -17,7 +17,7 @@ define(
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,19px"
+        "value": "black,25px"
       },
       {
         "svKey": "f2_title",
@@ -32,12 +32,12 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "VAN 8 TO 17 SEPTEMBER<br><span></span>"
+        "value": "VAN 8 TO <br>17 SEPTEMBER<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "black,18px, 19, #c71444"
+        "value": "black,25px, 113, #c71444"
       },
       {
         "svKey": "f3_title",
@@ -47,7 +47,7 @@ define(
       {
         "svKey": "f3_title_style",
         "svType": "String",
-        "value": "black,25px"
+        "value": "black,29px"
       },
       {
         "svKey": "f3_subtitle",
@@ -57,7 +57,7 @@ define(
       {
         "svKey": "f3_subtitle_style",
         "svType": "String",
-        "value": "black,17px, 46, #c71444"
+        "value": "black,20px, 145, #c71444"
       },
       {
         "svKey": "logo",
@@ -92,7 +92,7 @@ define(
       {
         "svKey": "cta_icon_style",
         "svType": "String",
-        "value": "24px,33px,10px,1px"
+        "value": "24px,33px,5px,0px"
       },
       {
         "svKey": "cta_text",
@@ -102,12 +102,12 @@ define(
       {
         "svKey": "cta_text_style",
         "svType": "String",
-        "value": "15px,34px,24px"
+        "value": "13px,33px,18px"
       },
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "170px,33px,535px,28px"
+        "value": "149px,33px,75px,472px"
       },
       {
         "svKey": "cta_highlight",
@@ -117,7 +117,7 @@ define(
       {
         "svKey": "cta_highlight_style",
         "svType": "String",
-        "value": "71px,33px,172px"
+        "value": "71px,72px,150px"
       },
       {
         "svKey": "Standalone",
@@ -152,7 +152,7 @@ define(
     },
     {
         "OrdinalNumber": 4,
-        "FileName": "headlights_juke.png"
+        "FileName": "headlights_note.png"
     },
     {
         "OrdinalNumber": 5,

@@ -12,17 +12,12 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "INNOVATIE NU<br>BEREIKBAARDER<br>DAN OOIT"
+        "value": "UITZONDERLIJKE<br>OPENDEURDAGEN<br>CONDITIES"
       },
       {
         "svKey": "f1_title_style",
         "svType": "String",
         "value": "black,31px"
-      },
-      {
-        "svKey": "f1_image",
-        "svType": "Image",
-        "value": 1
       },
       {
         "svKey": "f2_title",
@@ -37,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "DANKZIJ DE<br><span>TECHNO DEALS</span>"
+        "value": "VAN 8 TO 17 SEPTEMBER<br><span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -47,7 +42,7 @@ define(
       {
         "svKey": "f3_title",
         "svType": "String",
-        "value": "NISSAN NOTE"
+        "value": "NISSAN JUKE"
       },
       {
         "svKey": "f3_title_style",
@@ -57,7 +52,7 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "tot €4.650 voordeel"
+        "value": "Tot € 4.350 voordeel"
       },
       {
         "svKey": "f3_subtitle_style",
@@ -67,32 +62,32 @@ define(
       {
         "svKey": "logo",
         "svType": "Image",
-        "value": 2
+        "value": 1
       },
       {
         "svKey": "background",
         "svType": "Image",
-        "value": 3
+        "value": 2
       },
       {
         "svKey": "packshot",
         "svType": "Image",
-        "value": 4
+        "value": 3
       },
       {
         "svKey": "headlights",
         "svType": "Image",
-        "value": 5
+        "value": 4
       },
       {
         "svKey": "cta_icon",
         "svType": "Image",
-        "value": 6
+        "value": 5
       },
       {
         "svKey": "cta_icon_animate",
         "svType": "Image",
-        "value": 7
+        "value": 6
       },
       {
         "svKey": "cta_icon_style",
@@ -117,7 +112,7 @@ define(
       {
         "svKey": "cta_highlight",
         "svType": "Image",
-        "value": 8
+        "value": 7
       },
       {
         "svKey": "cta_highlight_style",
@@ -127,7 +122,7 @@ define(
       {
         "svKey": "Standalone",
         "svType": "Image",
-        "value": 9
+        "value": 8
       },
       {
         "svKey": "Standalone_status",
@@ -145,38 +140,34 @@ define(
   "AdditionalAssets": [
     {
         "OrdinalNumber": 1,
-        "FileName": "f1_image_NL.png"
-    },
-    {
-        "OrdinalNumber": 2,
         "FileName": "logo.png"
     },
     {
-        "OrdinalNumber": 3,
+        "OrdinalNumber": 2,
         "FileName": "background.jpg"
     },
     {
+        "OrdinalNumber": 3,
+        "FileName": "packshot_juke.png"
+    },
+    {
         "OrdinalNumber": 4,
-        "FileName": "packshot_note.png"
+        "FileName": "headlights_juke.png"
     },
     {
         "OrdinalNumber": 5,
-        "FileName": "headlights_note.png"
-    },
-    {
-        "OrdinalNumber": 6,
         "FileName": "icon_arrow.png"
     },
     {
-        "OrdinalNumber": 7,
+        "OrdinalNumber": 6,
         "FileName": "icon_arrow_animate.png"
     },
     {
-        "OrdinalNumber": 8,
+        "OrdinalNumber": 7,
         "FileName": "cta_highlight.png"
     },
     {
-        "OrdinalNumber": 9,
+        "OrdinalNumber": 8,
         "FileName": "standalone.jpg"
     },
   ]

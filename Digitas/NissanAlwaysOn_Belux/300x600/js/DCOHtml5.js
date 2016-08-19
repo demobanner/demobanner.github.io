@@ -221,7 +221,8 @@
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
-                this.timeline.to(f1_title, 0.5, {alpha:1, left: 257, ease: Power2.easeOut});
+                this.timeline.to(packshot, 1.5, {alpha:1});
+                this.timeline.to(f1_title, 0.5, {alpha:1, left: 15, ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:0});
                 this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");

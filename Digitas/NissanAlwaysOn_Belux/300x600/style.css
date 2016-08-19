@@ -17,8 +17,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 336px;
-	height: 280px;
+	width: 300px;
+	height: 600px;
 	overflow: hidden;
 	background-color: #ffffff;
 	cursor: pointer;
@@ -48,19 +48,20 @@
 }
 #cta_highlight {
   left:-100px;
+  top:-16px;
 }
 #f1_title{
-	left: 118px;
-	top: 19px;
+	left: 35px;
+	top: 116px;
   opacity: 0;
 }
 #f2_title, #f3_title{
-  left: 98px;
-  top: 19px;
+  left: 14px;
+  top: 112px;
   opacity: 0;
 }
 #f2_subtitle, #f3_subtitle{
-  left: 98px;
+  left: 14px;
   opacity: 0;
 }
 #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle {

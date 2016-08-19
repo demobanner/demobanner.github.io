@@ -144,7 +144,6 @@
             //get data
             background.css('background-image', 'url(' + this.background + ')');
             logo.css('background-image', 'url(' + this.logo + ')');
-            f1_image.css('background-image', 'url(' + this.f1_image + ')');
             packshot.attr('src', this.packshot).load(function() { packshot.show();});
             headlights.css('background-image', 'url(' + this.headlights + ')');
 
@@ -222,7 +221,7 @@
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
-                // this.timeline.to(f1_image, 0.8, {alpha:1, scale:1, ease: Power2.easeOut}, '+=0.2');
+                
                 this.timeline.to(packshot, 0.5, {alpha:1});
                 this.timeline.to(f1_title, 0.5, {alpha:1, left: 98, ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});

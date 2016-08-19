@@ -53,7 +53,11 @@
 
 #f1_title{
 	left: 220px;
+<<<<<<< HEAD
 	top: 21px;
+=======
+	top: 19px;
+>>>>>>> 4e822315301288fd5f17720549560cfe01d62c0e
   opacity: 0;
 }
 #f2_title, #f3_title{

@@ -27,18 +27,12 @@
 	display: none;
 	background-image:url(images/standalone.jpg);
 }
-#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f1_image, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
+#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-}
-#packshot{
-  width: 70%;
-  height: 70%;
-  left: -3544px;
-  top: 15px;
 }
 #headlights{
   opacity: 0;
@@ -55,16 +49,8 @@
 #cta_highlight {
   left:-100px;
 }
-#f1_image{
-  opacity: 0;
-  -webkit-transform: scale(1.5);
-     -moz-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-       -o-transform: scale(1.5);
-          transform: scale(1.5);
-}
 #f1_title{
-	left: 160px;
+	left: 753px;
 	top: 27px;
   opacity: 0;
 }
