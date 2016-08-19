@@ -25,7 +25,6 @@
 }
 #standalone{
 	display: none;
-	background-image:url(images/standalone.jpg);
 }
 .layer{
   position: absolute;
