@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "VAN 8 TO <br>17 SEPTEMBER<span></span>"
+        "value": "VAN 8 TO 17 <br>SEPTEMBER<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
