@@ -12,7 +12,7 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "CONDITIONS PORTES <br>OUVERTES EXCEPTIONNELLES"
+        "value": "UITZONDERLIJKE <br>OPENDEURDAGEN <br>CONDITIES"
       },
       {
         "svKey": "f1_title_style",
@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "DU 8 AU 17 SEPTEMBRE<span></span>"
+        "value": "VAN 8 TO 17 SEPTEMBER<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -52,7 +52,7 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "Jusqu’à € 4.350 d’avantages clients"
+        "value": "Tot € 4.350 voordeel"
       },
       {
         "svKey": "f3_subtitle_style",
@@ -97,7 +97,7 @@ define(
       {
         "svKey": "cta_text",
         "svType": "String",
-        "value": "C’EST ICI"
+        "value": "ONTDEK HIER"
       },
       {
         "svKey": "cta_text_style",

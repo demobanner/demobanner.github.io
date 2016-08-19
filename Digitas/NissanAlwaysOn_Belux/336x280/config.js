@@ -12,7 +12,7 @@ define(
       {
         "svKey": "f1_title",
         "svType": "String",
-        "value": "INNOVATIE NU<br>BEREIKBAARDER<br>DAN OOIT"
+        "value": "UITZONDERLIJKE<br>OPENDEURDAGEN<br>CONDITIES"
       },
       {
         "svKey": "f1_title_style",
@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "DANKZIJ DE<br><span>TECHNO DEALS</span>"
+        "value": "VAN 8 TO <br>17 SEPTEMBER<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -42,7 +42,7 @@ define(
       {
         "svKey": "f3_title",
         "svType": "String",
-        "value": "NISSAN NOTE"
+        "value": "NISSAN JUKE"
       },
       {
         "svKey": "f3_title_style",
@@ -52,7 +52,7 @@ define(
       {
         "svKey": "f3_subtitle",
         "svType": "String",
-        "value": "tot €4.650 voordeel"
+        "value": "Tot € 4.350 voordeel"
       },
       {
         "svKey": "f3_subtitle_style",
@@ -148,7 +148,7 @@ define(
     },
     {
         "OrdinalNumber": 3,
-        "FileName": "packshot_note.png"
+        "FileName": "packshot_juke.png"
     },
     {
         "OrdinalNumber": 4,
