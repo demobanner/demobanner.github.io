@@ -154,7 +154,7 @@ define(
     },
     {
         "OrdinalNumber": 4,
-        "FileName": "headlights_note.png"
+        "FileName": "headlights_juke.png"
     },
     {
         "OrdinalNumber": 5,

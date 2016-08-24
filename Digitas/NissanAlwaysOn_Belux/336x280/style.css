@@ -25,7 +25,6 @@
 }
 #standalone{
 	display: none;
-	background-image:url(images/standalone.jpg);
 }
 #background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
   position: absolute;

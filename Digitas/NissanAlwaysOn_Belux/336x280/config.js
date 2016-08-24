@@ -32,7 +32,7 @@ define(
       {
         "svKey": "f2_subtitle",
         "svType": "String",
-        "value": "VAN 8 TO <br>17 SEPTEMBER<span></span>"
+        "value": "VAN 8 TO 17 SEPTEMBER<span></span>"
       },
       {
         "svKey": "f2_subtitle_style",
@@ -152,7 +152,7 @@ define(
     },
     {
         "OrdinalNumber": 4,
-        "FileName": "headlights_note.png"
+        "FileName": "headlights_juke.png"
     },
     {
         "OrdinalNumber": 5,
