@@ -46,10 +46,6 @@ a {
   top: -30px;
   left: -35px;
 }
-#text2 {
-  background: url("text2.png") center no-repeat;
-  top: -50px;
-}
 #hand2 {
   background: url("icon_like.png") center no-repeat;
   transform:scale(0.1);
@@ -58,8 +54,12 @@ a {
   -webkit-transform:scale(0.1);
   width: 360px;
   height: 254px;
-  top:23px;
-  left:-36px;
+  top: 45px;
+  left: -10px;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+  top: -50px;
 }
 #text3 {
   background: url("text3.png") center no-repeat;
