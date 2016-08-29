@@ -52,8 +52,8 @@ a {
   -webkit-transform:scale(0.5);
   width: 728px;
   height: 140px;
-  left:-140px;
-  top:-26px;
+  left: -230px;
+  top: -26px;
 }
 #like {
   background: url("icon_like.png") center no-repeat;
