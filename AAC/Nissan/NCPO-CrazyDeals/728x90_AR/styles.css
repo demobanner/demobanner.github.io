@@ -14,7 +14,7 @@ a {
   height: 88px;
   overflow: hidden;
   border: 1px solid #000;
-  background: url("bg.jpg") center no-repeat; 
+  background-color: #ececec;
 }
 .layer {
   position: absolute;
