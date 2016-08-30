@@ -35,25 +35,19 @@ a {
   background: url("text1.png") center no-repeat;
   left: -120px;
 }
-#img1 {
+#like {
   width: 243px;
-  left: -66px;
-  background: url("img1.png") center no-repeat;
+  left: -67px;
+  top: 56px;
+  background: url("like.png") center no-repeat;
   tranform; scale(0.5);
   -ms-transform: scale(0.5);
+  -moz-transform:scale(0.5);
   -webkit-transform: scale(0.5);
 }
 #text2 {
   background: url("text2.png") center no-repeat;
   left: -120px;
-}
-#img2 {
-  width: 243px;
-  left: -66px;
-  background: url("img2.png") center no-repeat;
-  tranform; scale(0.1);
-  -ms-transform: scale(0.1);
-  -webkit-transform: scale(0.1);
 }
 #tc {
   background: url("tc.png") center no-repeat;
@@ -89,7 +83,8 @@ a {
 #btn-replay {
   position: absolute;
   top: 3px;
-  left: 3px;
+  right: 3px;
+	height: 16px;
   visibility: hidden;
   opacity: 0;
 }
