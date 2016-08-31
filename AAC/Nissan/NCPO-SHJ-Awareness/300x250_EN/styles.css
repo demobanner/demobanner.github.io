@@ -40,7 +40,40 @@ a {
   top: -100px;
 }
 #map {
-  background: url("map.gif") center no-repeat;
+  background: url("map.jpg") center no-repeat;
+}
+#map_direction_1 {
+  background: url("map_direction_1.png") center no-repeat;
+}
+#map_direction_2 {
+  background: url("map_direction_2.png") center no-repeat;
+}
+#map_direction_3 {
+  background: url("map_direction_3.png") center no-repeat;
+}
+#map_direction_4 {
+  background: url("map_direction_4.png") center no-repeat;
+}
+#map_direction_5 {
+  background: url("map_direction_5.png") center no-repeat;
+}
+#map_direction_6 {
+  background: url("map_direction_6.png") center no-repeat;
+}
+#map_direction_7 {
+  background: url("map_direction_7.png") center no-repeat;
+}
+#map_direction_8 {
+  background: url("map_direction_8.png") center no-repeat;
+}
+#map_direction_9 {
+  background: url("map_direction_9.png") center no-repeat;
+}
+#map_direction_10 {
+  background: url("map_direction_10.png") center no-repeat;
+}
+#map_direction_11 {
+  background: url("map_direction_11.png") center no-repeat;
 }
 #store {
   background: url("store.jpg") center no-repeat;
