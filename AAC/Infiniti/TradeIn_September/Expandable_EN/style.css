@@ -1,0 +1,211 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #333;
+}
+
+#ad {
+  position: absolute;
+  width: 970px;
+  height: 250px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#collapsed-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 88px;
+  z-index: 100;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: solid 1px #000;
+}
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: none;
+  box-sizing: border-box;
+  border: solid 1px #000;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+#collapsed-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+.button {
+  position: absolute;
+  color: #FFF;
+  background-color: #339933;
+  border: 1px outset #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+#expand-button {
+  bottom: 5px;
+  right: 5px;
+  display: none;
+}
+
+#close-button {
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
+#main-collapsed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#main-expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* 970x90 */
+#banner-970x90 {
+  position: absolute;
+  width: 968px;
+  height: 88px;
+  overflow: hidden;
+  background: url("bg_1.jpg") center no-repeat;
+}
+.layer-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 88px;
+  opacity: 0;
+}
+#right_1 {
+  background: url("right_1.png") center no-repeat;
+  opacity: 1;
+}
+#left_1 {
+  background: url("left_1.png") center no-repeat;
+  opacity: 1;
+}
+#text2_1 {
+  background: url("text2_1.png") center no-repeat;
+}
+#car4_1 {
+  background: url("car4_1.png") center no-repeat;
+}
+#text6_1 {
+  background: url("text6_1.png") center no-repeat;
+}
+#car8_1 {
+  background: url("car8_1.png") center no-repeat;
+}
+#text10_1 {
+  background: url("text10_1.png") center no-repeat;
+}
+#end_1 {
+  background: url("end_1.png") center no-repeat;
+}
+#logo_AWR_1 {
+  background: url("logo_AWR_1.png") center no-repeat;
+  opacity: 1;
+}
+#logo_Infiniti_1 {
+  background: url("logo_Infiniti_1.png") center no-repeat;
+  opacity: 1;
+}
+/* 970x250 */
+#banner-970x250 {
+  position: absolute;
+  width: 968px;
+  height: 248px;
+  overflow: hidden;
+  background: url("bg_2.jpg") center no-repeat;
+}
+.layer-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 248px;
+  opacity: 0;
+}
+#right_2 {
+  background: url("right_2.png") center no-repeat;
+  opacity: 1;
+}
+#left_2 {
+  background: url("left_2.png") center no-repeat;
+  opacity: 1;
+}
+#text2_2 {
+  background: url("text2_2.png") center no-repeat;
+}
+#car4_2 {
+  background: url("car4_2.png") center no-repeat;
+}
+#text6_2 {
+  background: url("text6_2.png") center no-repeat;
+}
+#car8_2 {
+  background: url("car8_2.png") center no-repeat;
+}
+#text10_2 {
+  background: url("text10_2.png") center no-repeat;
+}
+#end_2 {
+  background: url("end_2.png") center no-repeat;
+}
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}

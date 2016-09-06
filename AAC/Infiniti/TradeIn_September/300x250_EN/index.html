@@ -26,6 +26,7 @@
 					car4 = document.getElementById("car4"),
 					text6 = document.getElementById("text6"),
 					car8 = document.getElementById("car8"),
+          text10 = document.getElementById("text10"),
 					end = document.getElementById("end");
 
 			tl.to(right, 0.5, {left: 240, ease: Power4.easeInOut}, "+=1")
@@ -51,6 +52,12 @@
         .to(car8, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(car8,0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
+
+      tl.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
+        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+        .to(text10, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
+        .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
+        .to(text10,0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
       tl.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
         .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
@@ -84,6 +91,7 @@
       <div id="car4" class="layer"></div>
       <div id="text6" class="layer"></div>
       <div id="car8" class="layer"></div>
+      <div id="text10" class="layer"></div>
       <div id="end" class="layer"></div>
     </a>
 		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
