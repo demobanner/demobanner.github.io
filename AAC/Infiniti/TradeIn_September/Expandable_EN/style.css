@@ -74,7 +74,7 @@ body, body * {
 .button {
   position: absolute;
   color: #FFF;
-  background-color: #339933;
+  background-color: #555;
   border: 1px outset #333;
   cursor: pointer;
   padding: 5px 10px;
@@ -91,7 +91,7 @@ body, body * {
 
 #close-button {
   top: 5px;
-  right: 5px;
+  left: 5px;
   display: none;
 }
 

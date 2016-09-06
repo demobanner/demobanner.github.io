@@ -39,7 +39,7 @@ function setupDom() {
  * Ad initialisation.
  */
 function init() {
-  Enabler.setExpandingPixelOffsets(0, 0, 300, 600);
+  Enabler.setExpandingPixelOffsets(0, 0, 970, 250);
   Enabler.setStartExpanded(false);
 
   addListeners();
@@ -85,6 +85,7 @@ function show() {
   creative.dom.mainExpanded.style.visibility  = 'visible';
 
   init1();
+	init2();
 }
 
 // ---------------------------------------------------------------------------------
@@ -106,7 +107,7 @@ function expandStartHandler() {
 
 function expandFinishHandler() {
   creative.isExpanded = true;
-  init2();
+  tl2.restart();
 }
 
 function collapseStartHandler() {
@@ -119,6 +120,7 @@ function collapseStartHandler() {
 
   // When animation finished must call
   Enabler.finishCollapse();
+  tl1.restart();
 }
 
 function collapseFinishHandler() {
@@ -170,7 +172,9 @@ function collapsedExitClickHandler() {
  */
 window.addEventListener('load', preInit);
 
-// // BANNER
+/*
+ *  Banner
+ */
 var tl1 = new TimelineLite();
 var tl2 = new TimelineLite();
 init1 = function() {
@@ -185,32 +189,32 @@ init1 = function() {
      logo_AWR = document.getElementById("logo_AWR_1"),
      logo_Infiniti = document.getElementById("logo_Infiniti_1");
 
-  tl1.to([right, logo_Infiniti], 0.5, {left: 260, ease: Power4.easeInOut})
-        .to([left, logo_AWR], 0.5, {left: -250, ease: Power4.easeInOut}, "-=0.5")
+  tl1.to([right, logo_Infiniti], 0.5, {left: 280, ease: Power4.easeInOut})
+        .to([left, logo_AWR], 0.5, {left: -270, ease: Power4.easeInOut}, "-=0.5")
         .to(text2, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right, logo_AWR, logo_Infiniti], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(text2, 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-  tl1.to([right, logo_Infiniti], 0.5, {left: 260, ease: Power4.easeInOut, delay: 1})
-    .to([left, logo_AWR], 0.5, {left: -250, ease: Power4.easeInOut}, "-=0.5")
+  tl1.to([right, logo_Infiniti], 0.5, {left: 280, ease: Power4.easeInOut, delay: 1})
+    .to([left, logo_AWR], 0.5, {left: -270, ease: Power4.easeInOut}, "-=0.5")
     .to(car4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
     .to([left, right, logo_AWR, logo_Infiniti], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
     .to(car4, 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-  tl1.to([right, logo_Infiniti], 0.5, {left: 260, ease: Power4.easeInOut, delay: 1})
-    .to([left, logo_AWR], 0.5, {left: -250, ease: Power4.easeInOut}, "-=0.5")
+  tl1.to([right, logo_Infiniti], 0.5, {left: 280, ease: Power4.easeInOut, delay: 1})
+    .to([left, logo_AWR], 0.5, {left: -270, ease: Power4.easeInOut}, "-=0.5")
     .to(text6, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
     .to([left, right, logo_AWR, logo_Infiniti], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
     .to(text6, 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-  tl1.to([right, logo_Infiniti], 0.5, {left: 260, ease: Power4.easeInOut, delay: 1})
-    .to([left, logo_AWR], 0.5, {left: -250, ease: Power4.easeInOut}, "-=0.5")
+  tl1.to([right, logo_Infiniti], 0.5, {left: 280, ease: Power4.easeInOut, delay: 1})
+    .to([left, logo_AWR], 0.5, {left: -270, ease: Power4.easeInOut}, "-=0.5")
     .to(car8, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
     .to([left, right, logo_AWR, logo_Infiniti], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
     .to(car8,0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-  tl1.to([right, logo_Infiniti], 0.5, {left: 260, ease: Power4.easeInOut, delay: 1})
-    .to([left, logo_AWR], 0.5, {left: -250, ease: Power4.easeInOut}, "-=0.5")
+  tl1.to([right, logo_Infiniti], 0.5, {left: 280, ease: Power4.easeInOut, delay: 1})
+    .to([left, logo_AWR], 0.5, {left: -270, ease: Power4.easeInOut}, "-=0.5")
     .to(text10, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
     .to([left, right, logo_AWR, logo_Infiniti], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
     .to(text10,0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
@@ -230,37 +234,37 @@ init2 = function() {
      text10 = document.getElementById("text10_2"),
      end = document.getElementById("end_2");
 
-  tl2.to(right, 0.5, {left: 240, ease: Power4.easeInOut}, "+=1")
-        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+  tl2.to(right, 0.5, {left: 308, ease: Power4.easeInOut}, "+=1")
+        .to(left, 0.5, {left: -308, ease: Power4.easeInOut}, "-=0.5")
         .to(text2, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(text2, 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-      tl2.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
-        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+      tl2.to(right, 0.5, {left: 308, ease: Power4.easeInOut, delay: 1})
+        .to(left, 0.5, {left: -308, ease: Power4.easeInOut}, "-=0.5")
         .to(car4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(car4, 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-      tl2.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
-        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+      tl2.to(right, 0.5, {left: 308, ease: Power4.easeInOut, delay: 1})
+        .to(left, 0.5, {left: -308, ease: Power4.easeInOut}, "-=0.5")
         .to(text6, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(text6, 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-      tl2.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
-        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+      tl2.to(right, 0.5, {left: 308, ease: Power4.easeInOut, delay: 1})
+        .to(left, 0.5, {left: -308, ease: Power4.easeInOut}, "-=0.5")
         .to(car8, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(car8,0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-      tl2.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
-        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+      tl2.to(right, 0.5, {left: 308, ease: Power4.easeInOut, delay: 1})
+        .to(left, 0.5, {left: -308, ease: Power4.easeInOut}, "-=0.5")
         .to(text10, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25")
         .to([left, right], 0.5, {left: 0, ease: Power4.easeInOut, delay: 2})
         .to(text10,0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.5");
 
-      tl2.to(right, 0.5, {left: 240, ease: Power4.easeInOut, delay: 1})
-        .to(left, 0.5, {left: -240, ease: Power4.easeInOut}, "-=0.5")
+      tl2.to(right, 0.5, {left: 308, ease: Power4.easeInOut, delay: 1})
+        .to(left, 0.5, {left: -308, ease: Power4.easeInOut}, "-=0.5")
         .to(end, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.25");
 }
