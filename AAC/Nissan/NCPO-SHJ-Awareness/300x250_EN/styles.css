@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border:1px solid black;
+  background: #ebebeb;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+  left: 300px;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+  top: -100px;
+}
+#map {
+  background: url("map.jpg") center no-repeat;
+}
+#map_direction_1 {
+  background: url("map_direction_1.png") center no-repeat;
+}
+#map_direction_2 {
+  background: url("map_direction_2.png") center no-repeat;
+}
+#map_direction_3 {
+  background: url("map_direction_3.png") center no-repeat;
+}
+#map_direction_4 {
+  background: url("map_direction_4.png") center no-repeat;
+}
+#map_direction_5 {
+  background: url("map_direction_5.png") center no-repeat;
+}
+#map_direction_6 {
+  background: url("map_direction_6.png") center no-repeat;
+}
+#map_direction_7 {
+  background: url("map_direction_7.png") center no-repeat;
+}
+#map_direction_8 {
+  background: url("map_direction_8.png") center no-repeat;
+}
+#map_direction_9 {
+  background: url("map_direction_9.png") center no-repeat;
+}
+#map_direction_10 {
+  background: url("map_direction_10.png") center no-repeat;
+}
+#map_direction_11 {
+  background: url("map_direction_11.png") center no-repeat;
+}
+#store {
+  background: url("store.jpg") center no-repeat;
+}
+#hand {
+  background: url("icon_like.png") center no-repeat;
+  transform:scale(0.1);
+  -ms-transform:scale(0.1);
+  -moz-transform:scale(0.1);
+  -webkit-transform:scale(0.1);
+  width: 360px;
+  height: 254px;
+  top: 20px;
+  left: -35px;
+}
+#text3 {
+  background: url("text3.png") center no-repeat;
+  top: -50px;
+}
+#text4 {
+  background: url("text4.png") center no-repeat;
+  top: -50px;
+}
+#text5 {
+  background: url("text5.png") center no-repeat;
+  top: -50px;
+}
+#logo {
+  background: url("logo1.png") center no-repeat;
+  opacity: 1;
+}
+#logoBig {
+  background: url("logo_end.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 20px;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}

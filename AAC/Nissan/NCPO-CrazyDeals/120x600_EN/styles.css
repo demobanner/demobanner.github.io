@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 118px;
+  height: 598px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #ececec;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 118px;
+  height: 598px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+  left: 120px;
+}
+#like {
+  width: 243px;
+  left: -67px;
+  top: 56px;
+  background: url("like.png") center no-repeat;
+  tranform; scale(0.5);
+  -ms-transform: scale(0.5);
+  -moz-transform:scale(0.5);
+  -webkit-transform: scale(0.5);
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+  left: 120px;
+}
+#tc {
+  background: url("tc.png") center no-repeat;
+}
+#text3 {
+  background: url("text3.png") center no-repeat;
+  left: 120px;
+}
+#text4 {
+  background: url("text4.png") center no-repeat;
+  left: 120px;
+}
+#text5 {
+  background: url("text5.png") center no-repeat;
+  left: 120px;
+}
+#text6 {
+  background: url("text6.png") center no-repeat;
+  left: 120px;
+}
+#text7 {
+  background: url("text7.png") center no-repeat;
+  left: 120px;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 50px;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}

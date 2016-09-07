@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#right {
+  background: url("right.png") center no-repeat;
+  opacity: 1;
+}
+#left {
+  background: url("left.png") center no-repeat;
+  opacity: 1;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+}
+#car4 {
+  background: url("car4.png") center no-repeat;
+}
+#text6 {
+  background: url("text6.png") center no-repeat;
+}
+#car8 {
+  background: url("car8.png") center no-repeat;
+}
+#text10 {
+  background: url("text10.png") center no-repeat;
+}
+#end {
+  background: url("end.png") center no-repeat;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+  opacity: 1;
+}
+#logo_Infiniti {
+  background: url("logo_Infiniti.png") center no-repeat;
+  opacity: 1;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  visibility: hidden;
+  opacity: 0;
+}
