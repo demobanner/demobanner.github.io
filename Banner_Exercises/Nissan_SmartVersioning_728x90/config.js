@@ -5,7 +5,6 @@ define(
       "id": "contentBanner",
       "type": "adkit-html",
       "svKey": "content"
-      add
     }
   ],
   "SV": {
