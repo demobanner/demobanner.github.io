@@ -142,7 +142,7 @@ define(
       {
         "svKey": "background2_animation_style",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "background3",
@@ -157,7 +157,7 @@ define(
       {
         "svKey": "background3_animation_style",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "Standalone_status",
