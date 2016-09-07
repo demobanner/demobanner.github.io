@@ -65,9 +65,14 @@ define(
         "value": 1
       },
       {
-        "svKey": "background",
+        "svKey": "background1",
         "svType": "Image",
         "value": 2
+      },
+      {
+        "svKey": "background1_style",
+        "svType": "String",
+        "value": "1"
       },
       {
         "svKey": "packshot",
@@ -125,6 +130,36 @@ define(
         "value": 8
       },
       {
+        "svKey": "background2",
+        "svType": "Image",
+        "value": 9
+      },
+      {
+        "svKey": "background2_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "background2_animation_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "background3",
+        "svType": "Image",
+        "value": 10
+      },
+      {
+        "svKey": "background3_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "background3_animation_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
         "svKey": "Standalone_status",
         "svType": "String",
         "value": "false"
@@ -144,7 +179,7 @@ define(
     },
     {
         "OrdinalNumber": 2,
-        "FileName": "background.jpg"
+        "FileName": "background1.jpg"
     },
     {
         "OrdinalNumber": 3,
@@ -169,6 +204,14 @@ define(
     {
         "OrdinalNumber": 8,
         "FileName": "standalone.jpg"
+    },
+    {
+        "OrdinalNumber": 9,
+        "FileName": "background1.jpg"
+    },
+    {
+        "OrdinalNumber": 10,
+        "FileName": "background1.jpg"
     },
   ]
 

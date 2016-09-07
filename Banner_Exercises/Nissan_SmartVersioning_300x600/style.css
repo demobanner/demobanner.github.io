@@ -26,7 +26,7 @@
 #standalone{
 	display: none;
 }
-#background, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
+#background1, #background2, #background3, #logo, #packshot, #headlights, #cta_wrapper, #cta_highlight, #f1_title, #f2_title, #f2_subtitle, #f3_title, #f3_subtitle{
   position: absolute;
   width: 100%;
   height: 100%;
