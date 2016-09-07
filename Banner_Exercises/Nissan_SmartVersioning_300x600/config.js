@@ -207,11 +207,11 @@ define(
     },
     {
         "OrdinalNumber": 9,
-        "FileName": "background1.jpg"
+        "FileName": "background2.jpg"
     },
     {
         "OrdinalNumber": 10,
-        "FileName": "background1.jpg"
+        "FileName": "background3.jpg"
     },
   ]
 
