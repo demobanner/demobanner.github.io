@@ -12,13 +12,13 @@
 	<link rel="stylesheet" href="styles.css"/>
 	<script type="text/javascript">
 		var clickTag = '';
-		
+
 		var tl = new TimelineLite();
-		
+
 		var LOOP_TIME = 0,	// how many time the banner replays
 				loop = 0,
 				isReplay = true;	// show/hide replay button in the end
-		
+
 		function init() {
 			var hand1 = document.getElementById("hand1"),
 				text1 = document.getElementById("text1"),
@@ -30,6 +30,8 @@
 				text5 = document.getElementById("text5"),
 				text6 = document.getElementById("text6"),
 				text7 = document.getElementById("text7"),
+				line = document.getElementById("line"),
+				replace = document.getElementById("replace"),
 				cta = document.getElementById("cta"),
 				logo = document.getElementById("logo"),
 				logoBig = document.getElementById("logoBig");
@@ -37,37 +39,39 @@
 			tl.to(text1, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
 				.to(hand1, 0.5, {scale:1, top: 20, autoAlpha:1, ease: Power2.easeInOut})
 				.to(text1, 0.5, {autoAlpha:0}, "+=2");
-				
+
 			tl.to(text2, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut}, "-=0.25")
 				.to(hand1, 0.5, {scaleY:-1, ease: Power2.easeInOut}, "-=0.5")
 				.to(text2, 0.5, {autoAlpha:0, delay:2});
-				
+
 			tl.to(hand1, 0.5, {scaleX:0.8, scaleY:-0.8, top:45, left:-10, ease: Power2.easeInOut}, "-=0.5")
 				.to(text3, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut}, "-=0.2")
 				.to(tc, 0.5, {autoAlpha:1})
 				.to([hand1, text3], 0.5, {autoAlpha:0, delay:2});
-				
+
 			tl.to(text4, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
 				.to(hand2, 0.5, {autoAlpha:1, scale:1, ease: Power3.easeInOut})
 				.to(hand2, 0.2, {scale:0.7, ease: Power3.easeInOut})
 				.to([hand2, text4], 0.5, {autoAlpha:0, delay:2});
-				
+
 			tl.to(text5, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
 				.to(hand2, 0.5, {autoAlpha:1, scale:1, ease: Power3.easeInOut})
 				.to(hand2, 0.2, {scale:0.7, ease: Power3.easeInOut})
 				.to([hand2, text5], 0.5, {autoAlpha:0, delay:2});
-				
+
 			tl.to(text6, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
 				.to(hand2, 0.5, {autoAlpha:1, scale:1, ease: Power3.easeInOut})
 				.to(hand2, 0.2, {scale:0.7, ease: Power3.easeInOut})
 				.to([text6, hand2], 0.5, {autoAlpha:0, delay:2})
-				.to(text7, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut});
-				
-			tl.to([tc, text7, logo], 0.5, {autoAlpha:0, delay:2})
+				.to(text7, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(line, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(replace, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut});
+
+			tl.to([tc, text7, logo, line, replace], 0.5, {autoAlpha:0, delay:2})
 				.to(logoBig, 0.5, {autoAlpha:1}, "-=0.5")
 				.to(cta, 0.5 ,{autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
-		
+
 		function restart() {
 	      tl.restart();
 	    }
@@ -80,9 +84,9 @@
 				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
 			}
 		}
-		
+
 		window.onload = init;
-		
+
 	</script>
 </head>
 <body>
@@ -98,6 +102,8 @@
     	<div id="text5" class="layer"></div>
     	<div id="text6" class="layer"></div>
     	<div id="text7" class="layer"></div>
+    	<div id="line" class="layer"></div>
+    	<div id="replace" class="layer"></div>
     	<div id="cta" class="layer"></div>
     	<div id="logo" class="layer"></div>
     	<div id="logoBig" class="layer"></div>

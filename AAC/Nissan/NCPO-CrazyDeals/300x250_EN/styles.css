@@ -84,6 +84,12 @@ a {
   background: url("text7.png") center no-repeat;
   top: -50px;
 }
+#line {
+  background: url("line.png") center no-repeat;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
+}
 #logo {
   background: url("logo.png") center no-repeat;
   opacity: 1;
