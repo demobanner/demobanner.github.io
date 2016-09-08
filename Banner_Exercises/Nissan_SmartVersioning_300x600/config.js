@@ -122,7 +122,17 @@ define(
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px"
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_wrapper_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_wrapper_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "cta_highlight",
@@ -198,6 +208,101 @@ define(
         "svKey": "packshot3_animation_style",
         "svType": "String",
         "value": "1"
+      },
+      {
+        "svKey": "cta_icon2",
+        "svType": "Image",
+        "value": 13
+      },
+      {
+        "svKey": "cta_icon_animate2",
+        "svType": "Image",
+        "value": 14
+      },
+      {
+        "svKey": "cta_icon2_style",
+        "svType": "String",
+        "value": "24px,33px,5px,0px"
+      },
+      {
+        "svKey": "cta_text2",
+        "svType": "String",
+        "value": "ONTDEK HIER"
+      },
+      {
+        "svKey": "cta_text2_style",
+        "svType": "String",
+        "value": "13px,33px,18px"
+      },
+      {
+        "svKey": "cta_wrapper2_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_wrapper2_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_wrapper2_none_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_highlight2",
+        "svType": "Image",
+        "value": 15
+      },
+      {
+        "svKey": "cta_highlight2_style",
+        "svType": "String",
+        "value": "71px,72px,150px"
+      },
+      {
+        "svKey": "cta_icon3",
+        "svType": "Image",
+        "value": 16
+      },
+      {
+        "svKey": "cta_icon_animate3",
+        "svType": "Image",
+        "value": 17
+      },
+      {
+        "svKey": "cta_icon3_style",
+        "svType": "String",
+        "value": "24px,33px,5px,0px"
+      },
+      {
+        "svKey": "cta_text3",
+        "svType": "String",
+        "value": "ONTDEK HIER"
+      },
+      {
+        "svKey": "cta_text3_style",
+        "svType": "String",
+        "value": "13px,33px,18px"
+      },
+      {
+        "svKey": "cta_wrapper3_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_wrapper3_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_highlight3",
+        "svType": "Image",
+        "value": 18
+      },
+      {
+        "svKey": "cta_highlight3_style",
+        "svType": "String",
+        "value": "71px,72px,150px"
       },
       {
         "svKey": "Standalone_status",
