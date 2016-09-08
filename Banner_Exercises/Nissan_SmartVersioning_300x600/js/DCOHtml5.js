@@ -54,7 +54,7 @@
             this.cta_wrapper_opacity            = this.cta_wrapper_css_array[4];
 
             this.cta_wrapper_animation_css                = adkit.getSVData("cta_wrapper_animation_style");
-            this.cta_wrapper_animation_css_array          = this.cta_wrapper_animation_css.split(',');
+            this.cta_wrapper_animation_css_array         = this.cta_wrapper_animation_css.split(',');
             this.cta_wrapper_animation_width              = this.cta_wrapper_animation_css_array[0];
             this.cta_wrapper_animation_height             = this.cta_wrapper_animation_css_array[1];
             this.cta_wrapper_animation_left               = this.cta_wrapper_animation_css_array[2];
