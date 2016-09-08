@@ -521,6 +521,8 @@
                 this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_animation_opacity});
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_none_opacity});
+                this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
+                this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
                 this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
                 this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_none_opacity}, "-=0.5");
 
@@ -531,6 +533,8 @@
                 this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_animation_opacity});
                 this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
                 this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_none_opacity});
+                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
+                this.timeline.to(cta_highlight2, 1, {left:this.cta_highlight2_left});
                 this.timeline.to(f2_title, 0.5, {alpha:0},"+=0.5");
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
                 this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_none_opacity}, "-=1");
@@ -544,7 +548,7 @@
                 this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
                 this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_none_opacity});
                 this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
-                this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
+                this.timeline.to(cta_highlight3, 1, {left:this.cta_highlight3_left});
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'url(' + cta_icon_animate_url + ') no-repeat', onComplete:function(){
                     that.restarted = true;
                 }});

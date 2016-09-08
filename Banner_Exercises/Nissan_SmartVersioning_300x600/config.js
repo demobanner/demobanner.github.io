@@ -423,7 +423,7 @@ define(
         "FileName": "icon_arrow.png"
     },
     {
-        "OrdinalNumber": 16,
+        "OrdinalNumber": 17,
         "FileName": "icon_arrow_animate.png"
     },
     {
