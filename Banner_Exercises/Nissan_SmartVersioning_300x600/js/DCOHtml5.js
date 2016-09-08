@@ -51,6 +51,19 @@
             this.cta_wrapper_height             = this.cta_wrapper_css_array[1];
             this.cta_wrapper_left               = this.cta_wrapper_css_array[2];
             this.cta_wrapper_top                = this.cta_wrapper_css_array[3];
+            this.cta_wrapper_opacity            = this.cta_wrapper_css_array[4];
+
+            this.cta_wrapper_animation_css                = adkit.getSVData("cta_wrapper_animation_style");
+            this.cta_wrapper_animation_css_array          = this.cta_wrapper_animation_css.split(',');
+            this.cta_wrapper_animation_width              = this.cta_wrapper_animation_css_array[0];
+            this.cta_wrapper_animation_height             = this.cta_wrapper_animation_css_array[1];
+            this.cta_wrapper_animation_left               = this.cta_wrapper_animation_css_array[2];
+            this.cta_wrapper_animation_top                = this.cta_wrapper_animation_css_array[3];
+            this.cta_wrapper_animation_opacity            = this.cta_wrapper_animation_css_array[4];
+
+            this.cta_wrapper_none_css           = adkit.getSVData("cta_wrapper_none_style");
+            this.cta_wrapper_none_css_array     = this.cta_wrapper_none_css.split(',');
+            this.cta_wrapper_none_opacity       = this.cta_wrapper_none_css_array[0];
 
             this.cta_text_css                   = adkit.getSVData("cta_text_style");
             this.cta_text_css_array             = this.cta_text_css.split(',');
@@ -70,6 +83,80 @@
             this.cta_icon_height                = this.cta_icon_css_array[1];
             this.cta_icon_right                 = this.cta_icon_css_array[2];
             this.cta_icon_top                   = this.cta_icon_css_array[3];
+
+            this.cta_wrapper2_css               = adkit.getSVData("cta_wrapper2_style");
+            this.cta_wrapper2_css_array         = this.cta_wrapper2_css.split(',');
+            this.cta_wrapper2_width             = this.cta_wrapper2_css_array[0];
+            this.cta_wrapper2_height            = this.cta_wrapper2_css_array[1];
+            this.cta_wrapper2_left              = this.cta_wrapper2_css_array[2];
+            this.cta_wrapper2_top               = this.cta_wrapper2_css_array[3];
+            this.cta_wrapper2_opacity           = this.cta_wrapper2_css_array[4];
+
+            this.cta_wrapper2_animation_css               = adkit.getSVData("cta_wrapper2_animation_style");
+            this.cta_wrapper2_animation_css_array         = this.cta_wrapper2_animation_css.split(',');
+            this.cta_wrapper2_animation_width             = this.cta_wrapper2_animation_css_array[0];
+            this.cta_wrapper2_animation_height            = this.cta_wrapper2_animation_css_array[1];
+            this.cta_wrapper2_animation_left              = this.cta_wrapper2_animation_css_array[2];
+            this.cta_wrapper2_animation_top               = this.cta_wrapper2_animation_css_array[3];
+            this.cta_wrapper2_animation_opacity           = this.cta_wrapper2_animation_css_array[4];
+
+            this.cta_wrapper2_none_css           = adkit.getSVData("cta_wrapper2_none_style");
+            this.cta_wrapper2_none_css_array     = this.cta_wrapper2_none_css.split(',');
+            this.cta_wrapper2_none_opacity       = this.cta_wrapper2_none_css_array[0];
+
+            this.cta_text2_css                   = adkit.getSVData("cta_text2_style");
+            this.cta_text2_css_array             = this.cta_text2_css.split(',');
+            this.cta_text2_size                  = this.cta_text2_css_array[0];
+            this.cta_line2_height                = this.cta_text2_css_array[1];
+            this.cta_text2_indent                = this.cta_text2_css_array[2];
+
+            this.cta_highlight2_css              = adkit.getSVData("cta_highlight2_style");
+            this.cta_highlight2_css_array        = this.cta_highlight2_css.split(',');
+            this.cta_highlight2_width            = this.cta_highlight2_css_array[0];
+            this.cta_highlight2_height           = this.cta_highlight2_css_array[1];
+            this.cta_highlight2_left             = this.cta_highlight2_css_array[2];
+
+            this.cta_icon2_css                   = adkit.getSVData("cta_icon2_style");
+            this.cta_icon2_css_array             = this.cta_icon2_css.split(',');
+            this.cta_icon2_width                 = this.cta_icon2_css_array[0];
+            this.cta_icon2_height                = this.cta_icon2_css_array[1];
+            this.cta_icon2_right                 = this.cta_icon2_css_array[2];
+            this.cta_icon2_top                   = this.cta_icon2_css_array[3];
+
+            this.cta_wrapper3_css                = adkit.getSVData("cta_wrapper3_style");
+            this.cta_wrapper3_css_array          = this.cta_wrapper3_css.split(',');
+            this.cta_wrapper3_width              = this.cta_wrapper3_css_array[0];
+            this.cta_wrapper3_height             = this.cta_wrapper3_css_array[1];
+            this.cta_wrapper3_left               = this.cta_wrapper3_css_array[2];
+            this.cta_wrapper3_top                = this.cta_wrapper3_css_array[3];
+            this.cta_wrapper3_opacity            = this.cta_wrapper3_css_array[4];
+
+            this.cta_wrapper3_animation_css                = adkit.getSVData("cta_wrapper3_animation_style");
+            this.cta_wrapper3_animation_css_array          = this.cta_wrapper3_animation_css.split(',');
+            this.cta_wrapper3_animation_width              = this.cta_wrapper3_animation_css_array[0];
+            this.cta_wrapper3_animation_height             = this.cta_wrapper3_animation_css_array[1];
+            this.cta_wrapper3_animation_left               = this.cta_wrapper3_animation_css_array[2];
+            this.cta_wrapper3_animation_top                = this.cta_wrapper3_animation_css_array[3];
+            this.cta_wrapper3_animation_opacity            = this.cta_wrapper3_animation_css_array[4];
+
+            this.cta_text3_css                   = adkit.getSVData("cta_text3_style");
+            this.cta_text3_css_array             = this.cta_text3_css.split(',');
+            this.cta_text3_size                  = this.cta_text3_css_array[0];
+            this.cta_line3_height                = this.cta_text3_css_array[1];
+            this.cta_text3_indent                = this.cta_text3_css_array[2];
+
+            this.cta_highlight3_css              = adkit.getSVData("cta_highlight3_style");
+            this.cta_highlight3_css_array        = this.cta_highlight3_css.split(',');
+            this.cta_highlight3_width            = this.cta_highlight3_css_array[0];
+            this.cta_highlight3_height           = this.cta_highlight3_css_array[1];
+            this.cta_highlight3_left             = this.cta_highlight3_css_array[2];
+
+            this.cta_icon3_css                   = adkit.getSVData("cta_icon3_style");
+            this.cta_icon3_css_array             = this.cta_icon3_css.split(',');
+            this.cta_icon3_width                 = this.cta_icon3_css_array[0];
+            this.cta_icon3_height                = this.cta_icon3_css_array[1];
+            this.cta_icon3_right                 = this.cta_icon3_css_array[2];
+            this.cta_icon3_top                   = this.cta_icon3_css_array[3];
 
             this.background1_css                = adkit.getSVData("background1_style");
             this.background1_css_array          = this.background1_css.split(',');
@@ -91,29 +178,53 @@
             this.background3_animation_css_array= this.background3_animation_css.split(',');
             this.background3_animation_opacity  = this.background3_animation_css_array[0];
 
-            this.packshot1_css                = adkit.getSVData("packshot1_style");
-            this.packshot1_css_array          = this.packshot1_css.split(',');
-            this.packshot1_opacity            = this.packshot1_css_array[0];
+            this.packshot1_css                  = adkit.getSVData("packshot1_style");
+            this.packshot1_css_array            = this.packshot1_css.split(',');
+            this.packshot1_opacity              = this.packshot1_css_array[0];
 
-            this.packshot1_animation_css      = adkit.getSVData("packshot1_animation_style");
-            this.packshot1_animation_css_array= this.packshot1_animation_css.split(',');
-            this.packshot1_animation_opacity  = this.packshot1_animation_css_array[0];
+            this.packshot1_animation_css        = adkit.getSVData("packshot1_animation_style");
+            this.packshot1_animation_css_array  = this.packshot1_animation_css.split(',');
+            this.packshot1_animation_opacity    = this.packshot1_animation_css_array[0];
 
-            this.packshot2_css                = adkit.getSVData("packshot2_style");
-            this.packshot2_css_array          = this.packshot2_css.split(',');
-            this.packshot2_opacity            = this.packshot2_css_array[0];
+            this.packshot2_css                  = adkit.getSVData("packshot2_style");
+            this.packshot2_css_array            = this.packshot2_css.split(',');
+            this.packshot2_opacity              = this.packshot2_css_array[0];
 
-            this.packshot2_animation_css      = adkit.getSVData("packshot2_animation_style");
-            this.packshot2_animation_css_array= this.packshot2_animation_css.split(',');
-            this.packshot2_animation_opacity  = this.packshot2_animation_css_array[0];
+            this.packshot2_animation_css        = adkit.getSVData("packshot2_animation_style");
+            this.packshot2_animation_css_array  = this.packshot2_animation_css.split(',');
+            this.packshot2_animation_opacity    = this.packshot2_animation_css_array[0];
 
-            this.packshot3_css                = adkit.getSVData("packshot3_style");
-            this.packshot3_css_array          = this.packshot3_css.split(',');
-            this.packshot3_opacity            = this.packshot3_css_array[0];
+            this.packshot3_css                  = adkit.getSVData("packshot3_style");
+            this.packshot3_css_array            = this.packshot3_css.split(',');
+            this.packshot3_opacity              = this.packshot3_css_array[0];
 
-            this.packshot3_animation_css      = adkit.getSVData("packshot3_animation_style");
-            this.packshot3_animation_css_array= this.packshot3_animation_css.split(',');
-            this.packshot3_animation_opacity  = this.packshot3_animation_css_array[0];
+            this.packshot3_animation_css        = adkit.getSVData("packshot3_animation_style");
+            this.packshot3_animation_css_array  = this.packshot3_animation_css.split(',');
+            this.packshot3_animation_opacity    = this.packshot3_animation_css_array[0];
+
+            this.headlights_css        = adkit.getSVData("headlights_style");
+            this.headlights_css_array  = this.headlights_css.split(',');
+            this.headlights_opacity    = this.headlights_css_array[0];
+
+            this.headlights_none_css        = adkit.getSVData("headlights_none_style");
+            this.headlights_none_css_array  = this.headlights_none_css.split(',');
+            this.headlights_none_opacity    = this.headlights_none_css_array[0];
+
+            this.headlights2_css        = adkit.getSVData("headlights2_style");
+            this.headlights2_css_array  = this.headlights2_css.split(',');
+            this.headlights2_opacity    = this.headlights2_css_array[0];
+
+            this.headlights2_none_css        = adkit.getSVData("headlights2_none_style");
+            this.headlights2_none_css_array  = this.headlights2_none_css.split(',');
+            this.headlights2_none_opacity    = this.headlights2_none_css_array[0];
+
+            this.headlights3_css        = adkit.getSVData("headlights3_style");
+            this.headlights3_css_array  = this.headlights3_css.split(',');
+            this.headlights3_opacity    = this.headlights3_css_array[0];
+
+            this.headlights3_none_css        = adkit.getSVData("headlights3_none_style");
+            this.headlights3_none_css_array  = this.headlights3_none_css.split(',');
+            this.headlights3_none_opacity    = this.headlights3_none_css_array[0];
 
             //Initializing all config value
             this.f1_title    = adkit.getSVData('f1_title');
@@ -135,6 +246,18 @@
             this.background3 = EB.getAssetUrl("", adkit.getSVData('background3'));
             this.packshot2   = EB.getAssetUrl("", adkit.getSVData('packshot2'));
             this.packshot3   = EB.getAssetUrl("", adkit.getSVData('packshot3'));
+            this.cta_wrapper2 =adkit.getSVData('cta_wrapper2');
+            this.cta_icon2    = EB.getAssetUrl("", adkit.getSVData('cta_icon2'));
+            this.cta_text2    = adkit.getSVData('cta_text2');
+            this.cta_icon_animate2 = EB.getAssetUrl("", adkit.getSVData('cta_icon_animate2'));
+            this.cta_highlight2 = EB.getAssetUrl("", adkit.getSVData('cta_highlight2'));
+            this.cta_wrapper3 =adkit.getSVData('cta_wrapper3');
+            this.cta_icon3    = EB.getAssetUrl("", adkit.getSVData('cta_icon3'));
+            this.cta_text3    = adkit.getSVData('cta_text3');
+            this.cta_icon_animate3 = EB.getAssetUrl("", adkit.getSVData('cta_icon_animate3'));
+            this.cta_highlight3 = EB.getAssetUrl("", adkit.getSVData('cta_highlight3'));
+            this.headlights2 = EB.getAssetUrl("", adkit.getSVData('headlights2'));
+            this.headlights3 = EB.getAssetUrl("", adkit.getSVData('headlights3'));
 
             this.Standalone_status = adkit.getSVData('Standalone_status');
             this.border        =  adkit.getSVData('border');
@@ -180,11 +303,23 @@
                 packshot2   = $('#packshot2'),
                 packshot3   = $('#packshot3'),
                 headlights = $('#headlights'),
+                headlights2 = $('#headlights2'),
+                headlights3 = $('#headlights3'),
                 cta_wrapper = $('#cta_wrapper'),
                 cta_icon     = $('#cta_icon'),
                 cta_text    = $('#cta_text'),
                 cta_icon_animate  = $('#cta_icon_animate'),
-                cta_highlight = $('#cta_highlight');
+                cta_highlight = $('#cta_highlight'),
+                cta_wrapper2 = $('#cta_wrapper2'),
+                cta_icon2     = $('#cta_icon2'),
+                cta_text2    = $('#cta_text2'),
+                cta_icon_animate2  = $('#cta_icon_animate2'),
+                cta_highlight2 = $('#cta_highlight2'),
+                cta_wrapper3 = $('#cta_wrapper3'),
+                cta_icon3     = $('#cta_icon3'),
+                cta_text3    = $('#cta_text3'),
+                cta_icon_animate3  = $('#cta_icon_animate3'),
+                cta_highlight3 = $('#cta_highlight3');
 
             if (this.border == 'true') {
                 $('.global').css('box-sizing', 'border-box');
@@ -198,28 +333,39 @@
                 'background-image': 'url(' + this.background1 + ')',
                 opacity: this.background1_opacity
             });
+
             background2.css({
                 'background-image': 'url(' + this.background2 + ')',
                 opacity: this.background2_opacity
             });
+
             background3.css({
                 'background-image': 'url(' + this.background3 + ')',
                 opacity: this.background3_opacity
             });
+
             logo.css('background-image', 'url(' + this.logo + ')');
+
             packshot1.attr('src', this.packshot1).load(function() { packshot1.show();});
             packshot1.css({
                 opacity: this.packshot1_opacity
             });
+
             packshot2.attr('src', this.packshot2).load(function() { packshot2.show();});
             packshot2.css({
                 opacity: this.packshot2_opacity
             });
+
             packshot3.attr('src', this.packshot3).load(function() { packshot3.show();});
             packshot3.css({
                 opacity: this.packshot3_opacity
             });
+
             headlights.css('background-image', 'url(' + this.headlights + ')');
+
+            headlights2.css('background-image', 'url(' + this.headlights2 + ')');
+
+            headlights3.css('background-image', 'url(' + this.headlights3 + ')');
 
             f1_title.css({
                 fontSize: this.f1_title_size,
@@ -259,7 +405,8 @@
                 width: this.cta_wrapper_width,
                 height: this.cta_wrapper_height,
                 left: this.cta_wrapper_left,
-                top: this.cta_wrapper_top
+                top: this.cta_wrapper_top,
+                opacity: this.cta_wrapper_opacity
             });
 
             cta_text.css({
@@ -291,34 +438,117 @@
                 top: this.cta_icon_top
             });
 
+            cta_wrapper2.css({
+                width: this.cta_wrapper2_width,
+                height: this.cta_wrapper2_height,
+                left: this.cta_wrapper2_left,
+                top: this.cta_wrapper2_top,
+                opacity: this.cta_wrapper2_opacity
+            });
+
+            cta_text2.css({
+                fontSize: this.cta_text2_size,
+                'line-height': this.cta_line2_height,
+                'text-indent': this.cta_text2_indent
+            })
+            cta_text2.html(this.cta_text2);
+
+            cta_highlight2.css({
+                'background-image': 'url(' + this.cta_highlight2 + ')',
+                width: this.cta_highlight2_width,
+                height: this.cta_highlight2_height
+            });
+
+            cta_icon2.css({
+                background: 'url(' + this.cta_icon2 + ') no-repeat',
+                width: this.cta_icon2_width,
+                height: this.cta_icon2_height,
+                right: this.cta_icon2_right,
+                top: this.cta_icon2_top
+            });
+
+            cta_icon_animate2.css({
+                background: 'url(' + this.cta_icon2 + ') no-repeat',
+                width: this.cta_icon2_width,
+                height: this.cta_icon2_height,
+                right: this.cta_icon2_right,
+                top: this.cta_icon2_top
+            });
+
+            cta_wrapper3.css({
+                width: this.cta_wrapper3_width,
+                height: this.cta_wrapper3_height,
+                left: this.cta_wrapper3_left,
+                top: this.cta_wrapper3_top,
+                opacity: this.cta_wrapper3_opacity
+            });
+
+            cta_text3.css({
+                fontSize: this.cta_text3_size,
+                'line-height': this.cta_line3_height,
+                'text-indent': this.cta_text3_indent
+            })
+            cta_text3.html(this.cta_text3);
+
+            cta_highlight3.css({
+                'background-image': 'url(' + this.cta_highlight3 + ')',
+                width: this.cta_highlight3_width,
+                height: this.cta_highlight3_height
+            });
+
+            cta_icon3.css({
+                background: 'url(' + this.cta_icon3 + ') no-repeat',
+                width: this.cta_icon3_width,
+                height: this.cta_icon3_height,
+                right: this.cta_icon3_right,
+                top: this.cta_icon3_top
+            });
+
+            cta_icon_animate3.css({
+                background: 'url(' + this.cta_icon3 + ') no-repeat',
+                width: this.cta_icon3_width,
+                height: this.cta_icon3_height,
+                right: this.cta_icon3_right,
+                top: this.cta_icon3_top
+            });
+
             //animate
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
                 this.timeline.to(packshot1, 1.5, {opacity: this.packshot1_animation_opacity});
                 this.timeline.to(f1_title, 0.5, {alpha:1, left: 15, ease: Power2.easeOut});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
+                this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_animation_opacity});
+                this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
+                this.timeline.to(headlights, 0.5, {opacity:this.headlights_none_opacity});
+                this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
+                this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
                 this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
+                this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_none_opacity}, "-=0.5");
 
                 this.timeline.to(background2, 0.5, {opacity: this.background2_animation_opacity});
                 this.timeline.to(packshot2, 1.5, {opacity: this.packshot2_animation_opacity});
                 this.timeline.to(f2_title, 0.5, {alpha:1});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
+                this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_animation_opacity});
+                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
+                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_none_opacity});
+                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
+                this.timeline.to(cta_highlight2, 1, {left:this.cta_highlight2_left});
                 this.timeline.to(f2_title, 0.5, {alpha:0},"+=0.5");
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
+                this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_none_opacity}, "-=1");
 
                 this.timeline.to(background3, 0.5, {opacity: this.background3_animation_opacity});
                 this.timeline.to(packshot3, 1.5, {opacity: this.packshot3_animation_opacity});
                 this.timeline.to(f3_title, 0.5, {alpha:1});
                 this.timeline.to(f3_subtitle, 0.5, {alpha:1, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
-                this.timeline.to(cta_wrapper, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
+                this.timeline.to(cta_wrapper3, 0.5, {opacity: this.cta_wrapper3_animation_opacity});
+                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
+                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_none_opacity});
+                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
+                this.timeline.to(cta_highlight3, 1, {left:this.cta_highlight3_left});
+                console.log(this.cta_wrapper2_none_opacity);
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'url(' + cta_icon_animate_url + ') no-repeat', onComplete:function(){
                     that.restarted = true;
                 }});

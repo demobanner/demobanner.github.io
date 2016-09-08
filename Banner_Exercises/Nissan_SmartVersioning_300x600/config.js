@@ -95,6 +95,16 @@ define(
         "value": 4
       },
       {
+        "svKey": "headlights_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "headlights_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
         "svKey": "cta_icon",
         "svType": "Image",
         "value": 5
@@ -122,7 +132,17 @@ define(
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px"
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_wrapper_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_wrapper_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "cta_highlight",
@@ -200,6 +220,131 @@ define(
         "value": "1"
       },
       {
+        "svKey": "cta_icon2",
+        "svType": "Image",
+        "value": 13
+      },
+      {
+        "svKey": "cta_icon_animate2",
+        "svType": "Image",
+        "value": 14
+      },
+      {
+        "svKey": "cta_icon2_style",
+        "svType": "String",
+        "value": "24px,33px,5px,0px"
+      },
+      {
+        "svKey": "cta_text2",
+        "svType": "String",
+        "value": "ONTDEK HIER"
+      },
+      {
+        "svKey": "cta_text2_style",
+        "svType": "String",
+        "value": "13px,33px,18px"
+      },
+      {
+        "svKey": "cta_wrapper2_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_wrapper2_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_wrapper2_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "cta_highlight2",
+        "svType": "Image",
+        "value": 15
+      },
+      {
+        "svKey": "cta_highlight2_style",
+        "svType": "String",
+        "value": "71px,72px,150px"
+      },
+      {
+        "svKey": "cta_icon3",
+        "svType": "Image",
+        "value": 16
+      },
+      {
+        "svKey": "cta_icon_animate3",
+        "svType": "Image",
+        "value": 17
+      },
+      {
+        "svKey": "cta_icon3_style",
+        "svType": "String",
+        "value": "24px,33px,5px,0px"
+      },
+      {
+        "svKey": "cta_text3",
+        "svType": "String",
+        "value": "ONTDEK HIER"
+      },
+      {
+        "svKey": "cta_text3_style",
+        "svType": "String",
+        "value": "13px,33px,18px"
+      },
+      {
+        "svKey": "cta_wrapper3_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,0"
+      },
+      {
+        "svKey": "cta_wrapper3_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_highlight3",
+        "svType": "Image",
+        "value": 18
+      },
+      {
+        "svKey": "cta_highlight3_style",
+        "svType": "String",
+        "value": "71px,72px,150px"
+      },
+      {
+        "svKey": "headlights2",
+        "svType": "Image",
+        "value": 19
+      },
+      {
+        "svKey": "headlights2_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "headlights2_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "headlights3",
+        "svType": "Image",
+        "value": 20
+      },
+      {
+        "svKey": "headlights3_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "headlights3_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
         "svKey": "Standalone_status",
         "svType": "String",
         "value": "false"
@@ -260,6 +405,38 @@ define(
     {
         "OrdinalNumber": 12,
         "FileName": "packshot_juke3.png"
+    },
+    {
+        "OrdinalNumber": 13,
+        "FileName": "icon_arrow.png"
+    },
+    {
+        "OrdinalNumber": 14,
+        "FileName": "icon_arrow_animate.png"
+    },
+    {
+        "OrdinalNumber": 15,
+        "FileName": "cta_highlight.png"
+    },
+    {
+        "OrdinalNumber": 16,
+        "FileName": "icon_arrow.png"
+    },
+    {
+        "OrdinalNumber": 17,
+        "FileName": "icon_arrow_animate.png"
+    },
+    {
+        "OrdinalNumber": 18,
+        "FileName": "cta_highlight.png"
+    },
+    {
+        "OrdinalNumber": 19,
+        "FileName": "headlights_juke.png"
+    },
+    {
+        "OrdinalNumber": 20,
+        "FileName": "headlights_juke.png"
     },
   ]
 
