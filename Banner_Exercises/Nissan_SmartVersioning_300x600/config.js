@@ -257,7 +257,7 @@ define(
       {
         "svKey": "cta_wrapper2_none_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,0"
+        "value": "0"
       },
       {
         "svKey": "cta_highlight2",
