@@ -322,7 +322,7 @@ define(
       {
         "svKey": "headlights2_style",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "headlights2_none_style",
@@ -337,7 +337,7 @@ define(
       {
         "svKey": "headlights3_style",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "headlights3_none_style",
