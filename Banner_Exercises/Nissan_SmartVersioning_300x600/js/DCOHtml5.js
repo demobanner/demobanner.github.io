@@ -202,6 +202,30 @@
             this.packshot3_animation_css_array  = this.packshot3_animation_css.split(',');
             this.packshot3_animation_opacity    = this.packshot3_animation_css_array[0];
 
+            this.headlights_css        = adkit.getSVData("headlights_style");
+            this.headlights_css_array  = this.headlights_css.split(',');
+            this.headlights_opacity    = this.headlights_css_array[0];
+
+            this.headlights_none_css        = adkit.getSVData("headlights_none_style");
+            this.headlights_none_css_array  = this.headlights_none_css.split(',');
+            this.headlights_none_opacity    = this.headlights_none_css_array[0];
+
+            this.headlights2_css        = adkit.getSVData("headlights2_style");
+            this.headlights2_css_array  = this.headlights2_css.split(',');
+            this.headlights2_opacity    = this.headlights2_css_array[0];
+
+            this.headlights2_none_css        = adkit.getSVData("headlights2_none_style");
+            this.headlights2_none_css_array  = this.headlights2_none_css.split(',');
+            this.headlights2_none_opacity    = this.headlights2_none_css_array[0];
+
+            this.headlights3_css        = adkit.getSVData("headlights3_style");
+            this.headlights3_css_array  = this.headlights3_css.split(',');
+            this.headlights3_opacity    = this.headlights3_css_array[0];
+
+            this.headlights3_none_css        = adkit.getSVData("headlights3_none_style");
+            this.headlights3_none_css_array  = this.headlights3_none_css.split(',');
+            this.headlights3_none_opacity    = this.headlights3_none_css_array[0];
+
             //Initializing all config value
             this.f1_title    = adkit.getSVData('f1_title');
             this.f2_title    = adkit.getSVData('f2_title');
@@ -217,6 +241,11 @@
             this.cta_text    = adkit.getSVData('cta_text');
             this.cta_icon_animate = EB.getAssetUrl("", adkit.getSVData('cta_icon_animate'));
             this.cta_highlight = EB.getAssetUrl("", adkit.getSVData('cta_highlight'));
+            this.Standalone    = EB.getAssetUrl("", adkit.getSVData('Standalone'));
+            this.background2 = EB.getAssetUrl("", adkit.getSVData('background2'));
+            this.background3 = EB.getAssetUrl("", adkit.getSVData('background3'));
+            this.packshot2   = EB.getAssetUrl("", adkit.getSVData('packshot2'));
+            this.packshot3   = EB.getAssetUrl("", adkit.getSVData('packshot3'));
             this.cta_wrapper2 =adkit.getSVData('cta_wrapper2');
             this.cta_icon2    = EB.getAssetUrl("", adkit.getSVData('cta_icon2'));
             this.cta_text2    = adkit.getSVData('cta_text2');
@@ -227,11 +256,8 @@
             this.cta_text3    = adkit.getSVData('cta_text3');
             this.cta_icon_animate3 = EB.getAssetUrl("", adkit.getSVData('cta_icon_animate3'));
             this.cta_highlight3 = EB.getAssetUrl("", adkit.getSVData('cta_highlight3'));
-            this.Standalone    = EB.getAssetUrl("", adkit.getSVData('Standalone'));
-            this.background2 = EB.getAssetUrl("", adkit.getSVData('background2'));
-            this.background3 = EB.getAssetUrl("", adkit.getSVData('background3'));
-            this.packshot2   = EB.getAssetUrl("", adkit.getSVData('packshot2'));
-            this.packshot3   = EB.getAssetUrl("", adkit.getSVData('packshot3'));
+            this.headlights2 = EB.getAssetUrl("", adkit.getSVData('headlights2'));
+            this.headlights3 = EB.getAssetUrl("", adkit.getSVData('headlights3'));
 
             this.Standalone_status = adkit.getSVData('Standalone_status');
             this.border        =  adkit.getSVData('border');
@@ -277,6 +303,8 @@
                 packshot2   = $('#packshot2'),
                 packshot3   = $('#packshot3'),
                 headlights = $('#headlights'),
+                headlights2 = $('#headlights2'),
+                headlights3 = $('#headlights3'),
                 cta_wrapper = $('#cta_wrapper'),
                 cta_icon     = $('#cta_icon'),
                 cta_text    = $('#cta_text'),
@@ -305,28 +333,39 @@
                 'background-image': 'url(' + this.background1 + ')',
                 opacity: this.background1_opacity
             });
+
             background2.css({
                 'background-image': 'url(' + this.background2 + ')',
                 opacity: this.background2_opacity
             });
+
             background3.css({
                 'background-image': 'url(' + this.background3 + ')',
                 opacity: this.background3_opacity
             });
+
             logo.css('background-image', 'url(' + this.logo + ')');
+
             packshot1.attr('src', this.packshot1).load(function() { packshot1.show();});
             packshot1.css({
                 opacity: this.packshot1_opacity
             });
+
             packshot2.attr('src', this.packshot2).load(function() { packshot2.show();});
             packshot2.css({
                 opacity: this.packshot2_opacity
             });
+
             packshot3.attr('src', this.packshot3).load(function() { packshot3.show();});
             packshot3.css({
                 opacity: this.packshot3_opacity
             });
+
             headlights.css('background-image', 'url(' + this.headlights + ')');
+
+            headlights2.css('background-image', 'url(' + this.headlights2 + ')');
+
+            headlights3.css('background-image', 'url(' + this.headlights3 + ')');
 
             f1_title.css({
                 fontSize: this.f1_title_size,
@@ -480,8 +519,8 @@
                 this.timeline.to(packshot1, 1.5, {opacity: this.packshot1_animation_opacity});
                 this.timeline.to(f1_title, 0.5, {alpha:1, left: 15, ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_animation_opacity});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
+                this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
+                this.timeline.to(headlights, 0.5, {opacity:this.headlights_none_opacity});
                 this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
 
                 this.timeline.to(background2, 0.5, {opacity: this.background2_animation_opacity});
@@ -489,8 +528,8 @@
                 this.timeline.to(f2_title, 0.5, {alpha:1});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_animation_opacity});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
+                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
+                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_none_opacity});
                 this.timeline.to(f2_title, 0.5, {alpha:0},"+=0.5");
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
 
@@ -499,9 +538,9 @@
                 this.timeline.to(f3_title, 0.5, {alpha:1});
                 this.timeline.to(f3_subtitle, 0.5, {alpha:1, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper3, 0.5, {opacity: this.cta_wrapper3_animation_opacity});
-                this.timeline.to(headlights, 0.5, {alpha:1});
-                this.timeline.to(headlights, 0.5, {alpha:0});
-                this.timeline.to(headlights, 0.5, {alpha:1});
+                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
+                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_none_opacity});
+                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
                 this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'url(' + cta_icon_animate_url + ') no-repeat', onComplete:function(){
                     that.restarted = true;

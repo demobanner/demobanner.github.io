@@ -95,6 +95,16 @@ define(
         "value": 4
       },
       {
+        "svKey": "headlights_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "headlights_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
         "svKey": "cta_icon",
         "svType": "Image",
         "value": 5
@@ -303,6 +313,36 @@ define(
         "svKey": "cta_highlight3_style",
         "svType": "String",
         "value": "71px,72px,150px"
+      },
+      {
+        "svKey": "headlights2",
+        "svType": "Image",
+        "value": 19
+      },
+      {
+        "svKey": "headlights2_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "headlights2_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "headlights3",
+        "svType": "Image",
+        "value": 20
+      },
+      {
+        "svKey": "headlights3_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "headlights3_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "Standalone_status",
