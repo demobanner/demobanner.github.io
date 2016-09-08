@@ -44,11 +44,7 @@ a {
   width: 360px;
   height: 254px;
   top: -30px;
-  left: -22px;
-}
-#text2 {
-  background: url("text2.png") center no-repeat;
-  top: -50px;
+  left: -35px;
 }
 #hand2 {
   background: url("icon_like.png") center no-repeat;
@@ -58,8 +54,12 @@ a {
   -webkit-transform:scale(0.1);
   width: 360px;
   height: 254px;
-  top:50px;
-  left:10px;
+  top: 45px;
+  left: -10px;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+  top: -50px;
 }
 #text3 {
   background: url("text3.png") center no-repeat;
@@ -84,6 +84,12 @@ a {
   background: url("text7.png") center no-repeat;
   top: -50px;
 }
+#line {
+  background: url("line.png") center no-repeat;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
+}
 #logo {
   background: url("logo.png") center no-repeat;
   opacity: 1;
@@ -98,7 +104,7 @@ a {
 #btn-replay {
   position: absolute;
   top: 3px;
-  left: 3px;
+  right: 3px;
 	height: 16px;
   visibility: hidden;
   opacity: 0;
