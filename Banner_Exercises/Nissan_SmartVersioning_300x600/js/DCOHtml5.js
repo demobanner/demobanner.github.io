@@ -522,6 +522,7 @@
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_none_opacity});
                 this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
+                this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_none_opacity}, "-=0.5");
 
                 this.timeline.to(background2, 0.5, {opacity: this.background2_animation_opacity});
                 this.timeline.to(packshot2, 1.5, {opacity: this.packshot2_animation_opacity});
@@ -532,6 +533,7 @@
                 this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_none_opacity});
                 this.timeline.to(f2_title, 0.5, {alpha:0},"+=0.5");
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
+                this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_none_opacity}, "-=1");
 
                 this.timeline.to(background3, 0.5, {opacity: this.background3_animation_opacity});
                 this.timeline.to(packshot3, 1.5, {opacity: this.packshot3_animation_opacity});
