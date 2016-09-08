@@ -406,6 +406,38 @@ define(
         "OrdinalNumber": 12,
         "FileName": "packshot_juke3.png"
     },
+    {
+        "OrdinalNumber": 13,
+        "FileName": "icon_arrow.png"
+    },
+    {
+        "OrdinalNumber": 14,
+        "FileName": "icon_arrow_animate.png"
+    },
+    {
+        "OrdinalNumber": 15,
+        "FileName": "cta_highlight.png"
+    },
+    {
+        "OrdinalNumber": 16,
+        "FileName": "icon_arrow.png"
+    },
+    {
+        "OrdinalNumber": 16,
+        "FileName": "icon_arrow_animate.png"
+    },
+    {
+        "OrdinalNumber": 18,
+        "FileName": "cta_highlight.png"
+    },
+    {
+        "OrdinalNumber": 19,
+        "FileName": "headlights_juke.png"
+    },
+    {
+        "OrdinalNumber": 20,
+        "FileName": "headlights_juke.png"
+    },
   ]
 
 });

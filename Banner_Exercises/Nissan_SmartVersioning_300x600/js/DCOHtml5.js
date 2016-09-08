@@ -534,6 +534,7 @@
                 this.timeline.to(f2_title, 0.5, {alpha:0},"+=0.5");
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
                 this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_none_opacity}, "-=1");
+                console.log(this.cta_wrapper2_none_opacity);
 
                 this.timeline.to(background3, 0.5, {opacity: this.background3_animation_opacity});
                 this.timeline.to(packshot3, 1.5, {opacity: this.packshot3_animation_opacity});
