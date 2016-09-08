@@ -75,9 +75,19 @@ define(
         "value": "1"
       },
       {
-        "svKey": "packshot",
+        "svKey": "packshot1",
         "svType": "Image",
         "value": 3
+      },
+      {
+        "svKey": "packshot1_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "packshot1_animation_style",
+        "svType": "String",
+        "value": "1"
       },
       {
         "svKey": "headlights",
@@ -160,6 +170,36 @@ define(
         "value": "1"
       },
       {
+        "svKey": "packshot2",
+        "svType": "Image",
+        "value": 11
+      },
+      {
+        "svKey": "packshot2_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "packshot2_animation_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "packshot3",
+        "svType": "Image",
+        "value": 12
+      },
+      {
+        "svKey": "packshot3_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "packshot3_animation_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
         "svKey": "Standalone_status",
         "svType": "String",
         "value": "false"
@@ -212,6 +252,14 @@ define(
     {
         "OrdinalNumber": 10,
         "FileName": "background3.jpg"
+    },
+    {
+        "OrdinalNumber": 11,
+        "FileName": "packshot_juke2.png"
+    },
+    {
+        "OrdinalNumber": 12,
+        "FileName": "packshot_juke3.png"
     },
   ]
 

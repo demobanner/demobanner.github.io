@@ -91,6 +91,30 @@
             this.background3_animation_css_array= this.background3_animation_css.split(',');
             this.background3_animation_opacity  = this.background3_animation_css_array[0];
 
+            this.packshot1_css                = adkit.getSVData("packshot1_style");
+            this.packshot1_css_array          = this.packshot1_css.split(',');
+            this.packshot1_opacity            = this.packshot1_css_array[0];
+
+            this.packshot1_animation_css      = adkit.getSVData("packshot1_animation_style");
+            this.packshot1_animation_css_array= this.packshot1_animation_css.split(',');
+            this.packshot1_animation_opacity  = this.packshot1_animation_css_array[0];
+
+            this.packshot2_css                = adkit.getSVData("packshot2_style");
+            this.packshot2_css_array          = this.packshot2_css.split(',');
+            this.packshot2_opacity            = this.packshot2_css_array[0];
+
+            this.packshot2_animation_css      = adkit.getSVData("packshot2_animation_style");
+            this.packshot2_animation_css_array= this.packshot2_animation_css.split(',');
+            this.packshot2_animation_opacity  = this.packshot2_animation_css_array[0];
+
+            this.packshot3_css                = adkit.getSVData("packshot3_style");
+            this.packshot3_css_array          = this.packshot3_css.split(',');
+            this.packshot3_opacity            = this.packshot3_css_array[0];
+
+            this.packshot3_animation_css      = adkit.getSVData("packshot3_animation_style");
+            this.packshot3_animation_css_array= this.packshot3_animation_css.split(',');
+            this.packshot3_animation_opacity  = this.packshot3_animation_css_array[0];
+
             //Initializing all config value
             this.f1_title    = adkit.getSVData('f1_title');
             this.f2_title    = adkit.getSVData('f2_title');
@@ -99,9 +123,7 @@
             this.f3_subtitle = adkit.getSVData('f3_subtitle');
             this.logo     = EB.getAssetUrl("", adkit.getSVData('logo'));
             this.background1 = EB.getAssetUrl("", adkit.getSVData('background1'));
-            this.background2 = EB.getAssetUrl("", adkit.getSVData('background2'));
-            this.background3 = EB.getAssetUrl("", adkit.getSVData('background3'));
-            this.packshot   = EB.getAssetUrl("", adkit.getSVData('packshot'));
+            this.packshot1   = EB.getAssetUrl("", adkit.getSVData('packshot1'));
             this.headlights = EB.getAssetUrl("", adkit.getSVData('headlights'));
             this.cta_wrapper =adkit.getSVData('cta_wrapper');
             this.cta_icon    = EB.getAssetUrl("", adkit.getSVData('cta_icon'));
@@ -109,6 +131,10 @@
             this.cta_icon_animate = EB.getAssetUrl("", adkit.getSVData('cta_icon_animate'));
             this.cta_highlight = EB.getAssetUrl("", adkit.getSVData('cta_highlight'));
             this.Standalone    = EB.getAssetUrl("", adkit.getSVData('Standalone'));
+            this.background2 = EB.getAssetUrl("", adkit.getSVData('background2'));
+            this.background3 = EB.getAssetUrl("", adkit.getSVData('background3'));
+            this.packshot2   = EB.getAssetUrl("", adkit.getSVData('packshot2'));
+            this.packshot3   = EB.getAssetUrl("", adkit.getSVData('packshot3'));
 
             this.Standalone_status = adkit.getSVData('Standalone_status');
             this.border        =  adkit.getSVData('border');
@@ -150,7 +176,9 @@
                 background2 =  $('#background2'),
                 background3 =  $('#background3'),
                 logo       = $('#logo'),
-                packshot   = $('#packshot'),
+                packshot1   = $('#packshot1'),
+                packshot2   = $('#packshot2'),
+                packshot3   = $('#packshot3'),
                 headlights = $('#headlights'),
                 cta_wrapper = $('#cta_wrapper'),
                 cta_icon     = $('#cta_icon'),
@@ -179,7 +207,18 @@
                 opacity: this.background3_opacity
             });
             logo.css('background-image', 'url(' + this.logo + ')');
-            packshot.attr('src', this.packshot).load(function() { packshot.show();});
+            packshot1.attr('src', this.packshot1).load(function() { packshot1.show();});
+            packshot1.css({
+                opacity: this.packshot1_opacity
+            });
+            packshot2.attr('src', this.packshot2).load(function() { packshot2.show();});
+            packshot2.css({
+                opacity: this.packshot2_opacity
+            });
+            packshot3.attr('src', this.packshot3).load(function() { packshot3.show();});
+            packshot3.css({
+                opacity: this.packshot3_opacity
+            });
             headlights.css('background-image', 'url(' + this.headlights + ')');
 
             f1_title.css({
@@ -256,13 +295,14 @@
             var cta_icon_animate_url = this.cta_icon_animate;
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
-                this.timeline.to(packshot, 1.5, {alpha:1});
+                this.timeline.to(packshot1, 1.5, {opacity: this.packshot1_animation_opacity});
                 this.timeline.to(f1_title, 0.5, {alpha:1, left: 15, ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
                 this.timeline.to(headlights, 0.5, {alpha:0});
                 this.timeline.to(f1_title, 0.5, {alpha:0},"+=2");
 
                 this.timeline.to(background2, 0.5, {opacity: this.background2_animation_opacity});
+                this.timeline.to(packshot2, 1.5, {opacity: this.packshot2_animation_opacity});
                 this.timeline.to(f2_title, 0.5, {alpha:1});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1});
@@ -271,6 +311,7 @@
                 this.timeline.to(f2_subtitle, 0.5, {alpha:0},"-=0.5");
 
                 this.timeline.to(background3, 0.5, {opacity: this.background3_animation_opacity});
+                this.timeline.to(packshot3, 1.5, {opacity: this.packshot3_animation_opacity});
                 this.timeline.to(f3_title, 0.5, {alpha:1});
                 this.timeline.to(f3_subtitle, 0.5, {alpha:1, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper, 0.5, {alpha:1});
