@@ -73,6 +73,13 @@ a {
   background: url("text7.png") center no-repeat;
   left: -300px;
 }
+#line {
+  background: url("line.png") center no-repeat;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
+  top: 65px;
+}
 #cta {
   background: url("cta.png") center no-repeat;
   top: 50px;

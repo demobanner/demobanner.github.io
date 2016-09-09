@@ -50,10 +50,10 @@ a {
   -ms-transform:scale(0.5);
   -moz-transform:scale(0.5);
   -webkit-transform:scale(0.5);
-  width: 395px;
-  height: 278px;
-  top: -50px;
-  left: 435px;
+  width: 542px;
+  height: 382px;
+  top: -120px;
+  left: 545px;
 }
 #like {
   background: url("icon_like.png") center no-repeat;
@@ -61,10 +61,10 @@ a {
   -ms-transform:scale(0.1);
   -moz-transform:scale(0.1);
   -webkit-transform:scale(0.1);
-  width: 395px;
-  height: 278px;
-  top: 5px;
-  left: 423px;
+  width: 542px;
+  height: 382px;
+  top: -50px;
+  left: 545px;
 }
 #text1 {
   background: url("text1.png") center no-repeat;
@@ -93,6 +93,12 @@ a {
 #text7 {
   background: url("text7.png") center no-repeat;\
 	top:-50px;
+}
+#line {
+  background: url("line.png") center no-repeat;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;

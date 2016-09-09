@@ -91,6 +91,13 @@ a {
 	top:-50px;
   left: 10px;
 }
+#line {
+  background: url("line.png") center no-repeat;
+  top: 5px;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
+}
 #cta {
   background: url("cta.png") center no-repeat;
   top:15px;
