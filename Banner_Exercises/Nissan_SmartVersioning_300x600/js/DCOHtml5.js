@@ -120,8 +120,6 @@
             this.cta_wrapper_top                = this.cta_wrapper_css_array[3];
             this.cta_wrapper_bgcolor                = this.cta_wrapper_css_array[4];
             this.cta_wrapper_opacity            = this.cta_wrapper_css_array[5];
-            this.cta_wrapper_scaleX            = this.cta_wrapper_css_array[6];
-            this.cta_wrapper_scaleY            = this.cta_wrapper_css_array[7];
 
             this.cta_wrapper_animation_css                = adkit.getSVData("cta_wrapper_animation_style");
             this.cta_wrapper_animation_css_array          = this.cta_wrapper_animation_css.split(',');
@@ -130,8 +128,6 @@
             this.cta_wrapper_animation_left               = this.cta_wrapper_animation_css_array[2];
             this.cta_wrapper_animation_top                = this.cta_wrapper_animation_css_array[3];
             this.cta_wrapper_animation_opacity            = this.cta_wrapper_animation_css_array[4];
-            this.cta_wrapper_animation_scaleX            = this.cta_wrapper_animation_css_array[5];
-            this.cta_wrapper_animation_scaleY           = this.cta_wrapper_animation_css_array[6];
 
 
             this.cta_wrapper_none_css           = adkit.getSVData("cta_wrapper_none_style");
@@ -173,8 +169,6 @@
             this.cta_wrapper2_top               = this.cta_wrapper2_css_array[3];
             this.cta_wrapper2_bgcolor                = this.cta_wrapper2_css_array[4];
             this.cta_wrapper2_opacity            = this.cta_wrapper2_css_array[5];
-            this.cta_wrapper2_scaleX            = this.cta_wrapper2_css_array[6];
-            this.cta_wrapper2_scaleY            = this.cta_wrapper2_css_array[7];
 
             this.cta_wrapper2_animation_css               = adkit.getSVData("cta_wrapper2_animation_style");
             this.cta_wrapper2_animation_css_array         = this.cta_wrapper2_animation_css.split(',');
@@ -183,8 +177,6 @@
             this.cta_wrapper2_animation_left              = this.cta_wrapper2_animation_css_array[2];
             this.cta_wrapper2_animation_top               = this.cta_wrapper2_animation_css_array[3];
             this.cta_wrapper2_animation_opacity           = this.cta_wrapper2_animation_css_array[4];
-            this.cta_wrapper2_animation_scaleX           = this.cta_wrapper2_animation_css_array[5];
-            this.cta_wrapper2_animation_scaleY           = this.cta_wrapper2_animation_css_array[6];
 
             this.cta_wrapper2_none_css           = adkit.getSVData("cta_wrapper2_none_style");
             this.cta_wrapper2_none_css_array     = this.cta_wrapper2_none_css.split(',');
@@ -225,8 +217,6 @@
             this.cta_wrapper3_top                = this.cta_wrapper3_css_array[3];
             this.cta_wrapper3_bgcolor                = this.cta_wrapper3_css_array[4];
             this.cta_wrapper3_opacity            = this.cta_wrapper3_css_array[5];
-            this.cta_wrapper3_scaleX            = this.cta_wrapper3_css_array[6];
-            this.cta_wrapper3_scaleY            = this.cta_wrapper3_css_array[7];
 
             this.cta_wrapper3_animation_css                = adkit.getSVData("cta_wrapper3_animation_style");
             this.cta_wrapper3_animation_css_array          = this.cta_wrapper3_animation_css.split(',');
@@ -235,8 +225,6 @@
             this.cta_wrapper3_animation_left               = this.cta_wrapper3_animation_css_array[2];
             this.cta_wrapper3_animation_top                = this.cta_wrapper3_animation_css_array[3];
             this.cta_wrapper3_animation_opacity            = this.cta_wrapper3_animation_css_array[4];
-            this.cta_wrapper3_animation_scaleX            = this.cta_wrapper3_animation_css_array[5];
-            this.cta_wrapper3_animation_scaleY            = this.cta_wrapper3_animation_css_array[6];
 
             this.cta_text3_css                   = adkit.getSVData("cta_text3_style");
             this.cta_text3_css_array             = this.cta_text3_css.split(',');
@@ -490,9 +478,9 @@
                   left: this.packshot1_left,
                   top: this.packshot1_top,
                 opacity: this.packshot1_opacity,
-                '-ms-transform': 'scale(' + this.packshot1_scaleX + this.packshot1_scaleY + ')',
-                  '-webkit-transform': 'scale(' + this.packshot1_scaleX + this.packshot1_scaleY + ')',
-                  transform: 'scale(' + this.packshot1_scaleX + this.packshot1_scaleY + ')'
+                '-ms-transform': 'scale(' + this.packshot1_scaleX + ',' + this.packshot1_scaleY + ')',
+                  '-webkit-transform': 'scale(' + this.packshot1_scaleX  + ',' +  this.packshot1_scaleY + ')',
+                  transform: 'scale(' + this.packshot1_scaleX  + ',' +  this.packshot1_scaleY + ')'
             });
 
             packshot2.attr('src', this.packshot2).load(function() { packshot2.show();});
@@ -500,19 +488,19 @@
                 left: this.packshot2_left,
                   top: this.packshot2_top,
                 opacity: this.packshot2_opacity,
-                '-ms-transform': 'scale(' + this.packshot2_scaleX+ this.packshot2_scaleY + ')',
-                  '-webkit-transform': 'scale(' + this.packshot2_scaleX+ this.packshot2_scaleY + ')',
-                  transform: 'scale(' + this.packshot2_scaleX+ this.packshot2_scaleY + ')'
+                '-ms-transform': 'scale(' + this.packshot2_scaleX + ',' + this.packshot2_scaleY + ')',
+                  '-webkit-transform': 'scale(' + this.packshot2_scaleX + ',' + this.packshot2_scaleY + ')',
+                  transform: 'scale(' + this.packshot2_scaleX + ',' + this.packshot2_scaleY + ')'
             });
 
             packshot3.attr('src', this.packshot3).load(function() { packshot3.show();});
             packshot3.css({
-                left: this.packshot3_left,
+                  left: this.packshot3_left,
                   top: this.packshot3_top,
-                opacity: this.packshot3_opacity,
-                '-ms-transform': 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')',
-                  '-webkit-transform': 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')',
-                  transform: 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')'
+                  opacity: this.packshot3_opacity,
+                  '-ms-transform': 'scale(' + this.packshot3_scaleX + ',' + this.packshot3_scaleY + ')',
+                  '-webkit-transform': 'scale(' + this.packshot3_scaleX + ',' + this.packshot3_scaleY + ')',
+                  transform: 'scale(' + this.packshot3_scaleX + ',' + this.packshot3_scaleY + ')'
             });
 
             headlights.css('background-image', 'url(' + this.headlights + ')');
@@ -574,10 +562,7 @@
                 left: this.cta_wrapper_left,
                 top: this.cta_wrapper_top,
                 'background-color': this.cta_wrapper_bgcolor,
-                opacity: this.cta_wrapper_opacity,
-                '-ms-transform': 'scale(' + this.cta_wrapper_scaleX+ this.cta_wrapper_scaleY + ')',
-                  '-webkit-transform': 'scale(' + this.cta_wrapper_scaleX+ this.cta_wrapper_scaleY + ')',
-                  transform: 'scale(' + this.cta_wrapper_scaleX+ this.cta_wrapper_scaleY + ')'
+                opacity: this.cta_wrapper_opacity
             });
 
             cta_text.css({
@@ -617,10 +602,7 @@
                 left: this.cta_wrapper2_left,
                 top: this.cta_wrapper2_top,
                 'background-color': this.cta_wrapper2_bgcolor,
-                opacity: this.cta_wrapper2_opacity,
-                '-ms-transform': 'scale(' + this.cta_wrapper2_scaleX+ this.cta_wrapper2_scaleY + ')',
-                  '-webkit-transform': 'scale(' + this.cta_wrapper2_scaleX+ this.cta_wrapper2_scaleY + ')',
-                  transform: 'scale(' + this.cta_wrapper2_scaleX+ this.cta_wrapper2_scaleY + ')'
+                opacity: this.cta_wrapper2_opacity
             });
             cta_text2.css({
                 fontSize: this.cta_text2_size,
@@ -659,10 +641,7 @@
                 left: this.cta_wrapper3_left,
                 top: this.cta_wrapper3_top,
                 'background-color': this.cta_wrapper3_bgcolor,
-                opacity: this.cta_wrapper3_opacity,
-                '-ms-transform': 'scale(' + this.cta_wrapper3_scaleX+ this.cta_wrapper3_scaleY + ')',
-                  '-webkit-transform': 'scale(' + this.cta_wrapper3_scaleX+ this.cta_wrapper3_scaleY + ')',
-                  transform: 'scale(' + this.cta_wrapper3_scaleX+ this.cta_wrapper3_scaleY + ')'
+                opacity: this.cta_wrapper3_opacity
             });
 
             cta_text3.css({
@@ -702,7 +681,7 @@
 
                 this.timeline.to(packshot1, 1.5, {opacity: this.packshot1_animation_opacity, left: this.packshot1_animation_left, top: this.packshot1_animation_top, scaleX: this.packshot1_animation_scaleX, scaleY: this.packshot1_animation_scaleY});
                 this.timeline.to(f1_title, 0.5, {opacity: this.f1_title_animation_opacity, left: this.f1_title_animation_left, top: this.f1_title_animation_top, ease: Power2.easeOut});
-                this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_animation_opacity, left: this.cta_wrapper_animation_left, top: this.cta_wrapper_animation_top, scaleX:this.cta_wrapper_animation_scaleX, scaleY: this.cta_wrapper_animation_scaleY});
+                this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_animation_opacity, left: this.cta_wrapper_animation_left, top: this.cta_wrapper_animation_top});
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_none_opacity});
                 this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
@@ -714,7 +693,7 @@
                 this.timeline.to(packshot2, 1.5, {opacity: this.packshot2_animation_opacity, left: this.packshot2_animation_left, top: this.packshot2_animation_top, scaleX: this.packshot2_animation_scaleX, scaleY: this.packshot2_animation_scaleY});
                 this.timeline.to(f2_title, 0.5, {opacity: this.f2_title_animation_opacity, left: this.f2_title_animation_left, top: this.f2_title_animation_top, ease: Power2.easeOut});
                 this.timeline.to(f2_subtitle, 0.5, {opacity: this.f2_subtitle_animation_opacity, top: parseInt(this.f2_subtitle_animation_top), left: this.f2_subtitle_animation_left, ease: Power2.easeOut});
-                this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_animation_opacity, left: this.cta_wrapper2_animation_left, top: this.cta_wrapper2_animation_top, scaleX:this.cta_wrapper2_animation_scaleX, scaleY: this.cta_wrapper2_animation_scaleY});
+                this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_animation_opacity, left: this.cta_wrapper2_animation_left, top: this.cta_wrapper2_animation_top});
                 this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
                 this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_none_opacity});
                 this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
@@ -727,7 +706,7 @@
                 this.timeline.to(packshot3, 1.5, {opacity: this.packshot3_animation_opacity, left: this.packshot3_animation_left, top: this.packshot3_animation_top, scaleX: this.packshot3_animation_scaleX, scaleY: this.packshot3_animation_scaleY});
                 this.timeline.to(f3_title, 0.5, {opacity: this.f3_title_animation_opacity, left: this.f3_title_animation_left, top: this.f3_title_animation_top, ease: Power2.easeOut});
                 this.timeline.to(f3_subtitle, 0.5, {opacity: this.f3_subtitle_animation_opacity, top: parseInt(this.f3_subtitle_animation_top), left: this.f3_subtitle_animation_left, ease: Power2.easeOut});
-                this.timeline.to(cta_wrapper3, 0.5, {opacity: this.cta_wrapper3_animation_opacity, left: this.cta_wrapper3_animation_left, top: this.cta_wrapper3_animation_top, scaleX:this.cta_wrapper3_animation_scaleX, scaleY: this.cta_wrapper3_animation_scaleY});
+                this.timeline.to(cta_wrapper3, 0.5, {opacity: this.cta_wrapper3_animation_opacity, left: this.cta_wrapper3_animation_left, top: this.cta_wrapper3_animation_top});
                 this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
                 this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_none_opacity});
                 this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});

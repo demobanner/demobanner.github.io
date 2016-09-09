@@ -122,12 +122,12 @@ define(
       {
         "svKey": "packshot1_style",
         "svType": "String",
-        "value": "0px, 0px, 1, 1"
+        "value": "0px, 0px, 1, 1,1"
       },
       {
         "svKey": "packshot1_animation_style",
         "svType": "String",
-        "value": "0px, 0px, 1, 1"
+        "value": "0px, 0px, 1, 1,1"
       },
       {
         "svKey": "headlights",
@@ -172,12 +172,12 @@ define(
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,#c71444,0,1"
+        "value": "149px,33px,75px,472px,#c71444,0"
       },
       {
         "svKey": "cta_wrapper_animation_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,1,1"
+        "value": "149px,33px,75px,472px,1"
       },
       {
         "svKey": "cta_wrapper_none_style",
@@ -242,12 +242,12 @@ define(
       {
         "svKey": "packshot2_style",
         "svType": "String",
-        "value": "0px, 0px, 0, 1,1"
+        "value": "0px, 0px, 0, 1,1,1"
       },
       {
         "svKey": "packshot2_animation_style",
         "svType": "String",
-        "value": "0px, 0px, 1, 1,1"
+        "value": "0px, 0px, 1, 1,1,1"
       },
       {
         "svKey": "packshot3",
@@ -292,12 +292,12 @@ define(
       {
         "svKey": "cta_wrapper2_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,#c71444, 0, 1"
+        "value": "149px,33px,75px,472px,#c71444, 0"
       },
       {
         "svKey": "cta_wrapper2_animation_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,1, 1"
+        "value": "149px,33px,75px,472px,1"
       },
       {
         "svKey": "cta_wrapper2_none_style",
@@ -347,12 +347,12 @@ define(
       {
         "svKey": "cta_wrapper3_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,#c71444,0,1"
+        "value": "149px,33px,75px,472px,#c71444,0"
       },
       {
         "svKey": "cta_wrapper3_animation_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,1,1"
+        "value": "149px,33px,75px,472px,1"
       },
       {
         "svKey": "cta_highlight3",
