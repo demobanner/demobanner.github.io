@@ -122,12 +122,17 @@ define(
       {
         "svKey": "packshot1_style",
         "svType": "String",
-        "value": "0px, 0px, 1, 1,1"
+        "value": "-200px, -400px, 1, 0.5 ,0.5"
       },
       {
         "svKey": "packshot1_animation_style",
         "svType": "String",
         "value": "0px, 0px, 1, 1,1"
+      },
+      {
+        "svKey": "packshot1_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "headlights",
@@ -137,12 +142,7 @@ define(
       {
         "svKey": "headlights_style",
         "svType": "String",
-        "value": "1"
-      },
-      {
-        "svKey": "headlights_none_style",
-        "svType": "String",
-        "value": "0"
+        "value": "block"
       },
       {
         "svKey": "cta_icon",
@@ -242,12 +242,17 @@ define(
       {
         "svKey": "packshot2_style",
         "svType": "String",
-        "value": "0px, 0px, 0, 1,1,1"
+        "value": "-250px, 0px, 0, 1,1"
       },
       {
         "svKey": "packshot2_animation_style",
         "svType": "String",
-        "value": "0px, 0px, 1, 1,1,1"
+        "value": "0px, 0px, 1, 1,1"
+      },
+      {
+        "svKey": "packshot2_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "packshot3",
@@ -257,7 +262,7 @@ define(
       {
         "svKey": "packshot3_style",
         "svType": "String",
-        "value": "0px, 0px, 0, 1,1"
+        "value": "-250px, 0px, 0, 1,1"
       },
       {
         "svKey": "packshot3_animation_style",
@@ -377,12 +382,7 @@ define(
       {
         "svKey": "headlights2_style",
         "svType": "String",
-        "value": "0"
-      },
-      {
-        "svKey": "headlights2_none_style",
-        "svType": "String",
-        "value": "0"
+        "value": "none"
       },
       {
         "svKey": "headlights3",
@@ -392,12 +392,7 @@ define(
       {
         "svKey": "headlights3_style",
         "svType": "String",
-        "value": "0"
-      },
-      {
-        "svKey": "headlights3_none_style",
-        "svType": "String",
-        "value": "0"
+        "value": "none"
       },
       {
         "svKey": "frame1_delay",
