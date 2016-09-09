@@ -95,12 +95,19 @@ a {
   background: url("text7.png") center no-repeat;\
 	top:-50px;
 }
+#line {
+  background: url("line.png") center no-repeat;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
+}
 #cta {
   background: url("cta.png") center no-repeat;
   top:15px;
 }
 #tc{
   background: url("tc.png") center no-repeat;   
+  top: -5px;
 }
 #btn-replay {
   position: absolute;

@@ -84,8 +84,16 @@ a {
 	top:-50px;
 }
 #text7 {
-  background: url("text7.png") center no-repeat;\
+  background: url("text7.png") center no-repeat;
 	top:-50px;
+}
+#replace {
+  background: url("replace.png") center no-repeat;
+}
+#line {
+  background: url("line.png") center no-repeat;
+  top: -17px;
+  left: -18px;
 }
 #cta {
   background: url("cta.png") center no-repeat;
