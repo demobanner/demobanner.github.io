@@ -507,10 +507,10 @@
 
             packshot3.attr('src', this.packshot3).load(function() { packshot3.show();});
             packshot3.css({
-                left: this.packshot3_left,
+                  left: this.packshot3_left,
                   top: this.packshot3_top,
-                opacity: this.packshot3_opacity,
-                '-ms-transform': 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')',
+                  opacity: this.packshot3_opacity,
+                  '-ms-transform': 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')',
                   '-webkit-transform': 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')',
                   transform: 'scale(' + this.packshot3_scaleX+ this.packshot3_scaleY + ')'
             });
