@@ -289,6 +289,10 @@
             this.packshot1_animation_scaleX              = this.packshot1_animation_css_array[3];
             this.packshot1_animation_scaleY              = this.packshot1_animation_css_array[4];
 
+            this.packshot1_none_css                  = adkit.getSVData("packshot1_none_style");
+            this.packshot1_none_css_array            = this.packshot1_none_css.split(',');
+            this.packshot1_none_opacity              = this.packshot1_none_css_array[0];
+
             this.packshot2_css                  = adkit.getSVData("packshot2_style");
             this.packshot2_css_array            = this.packshot2_css.split(',');
             this.packshot2_left              = this.packshot2_css_array[0];
@@ -304,6 +308,10 @@
             this.packshot2_animation_opacity    = this.packshot2_animation_css_array[2];
             this.packshot2_animation_scaleX              = this.packshot2_animation_css_array[3];
             this.packshot2_animation_scaleY              = this.packshot2_animation_css_array[4];
+
+            this.packshot2_none_css                  = adkit.getSVData("packshot2_none_style");
+            this.packshot2_none_css_array            = this.packshot2_none_css.split(',');
+            this.packshot2_none_opacity              = this.packshot2_none_css_array[0];
 
             this.packshot3_css                  = adkit.getSVData("packshot3_style");
             this.packshot3_css_array            = this.packshot3_css.split(',');
@@ -323,27 +331,15 @@
 
             this.headlights_css        = adkit.getSVData("headlights_style");
             this.headlights_css_array  = this.headlights_css.split(',');
-            this.headlights_opacity    = this.headlights_css_array[0];
-
-            this.headlights_none_css        = adkit.getSVData("headlights_none_style");
-            this.headlights_none_css_array  = this.headlights_none_css.split(',');
-            this.headlights_none_opacity    = this.headlights_none_css_array[0];
+            this.headlights_display    = this.headlights_css_array[0];
 
             this.headlights2_css        = adkit.getSVData("headlights2_style");
             this.headlights2_css_array  = this.headlights2_css.split(',');
-            this.headlights2_opacity    = this.headlights2_css_array[0];
-
-            this.headlights2_none_css        = adkit.getSVData("headlights2_none_style");
-            this.headlights2_none_css_array  = this.headlights2_none_css.split(',');
-            this.headlights2_none_opacity    = this.headlights2_none_css_array[0];
+            this.headlights2_display    = this.headlights2_css_array[0];
 
             this.headlights3_css        = adkit.getSVData("headlights3_style");
             this.headlights3_css_array  = this.headlights3_css.split(',');
-            this.headlights3_opacity    = this.headlights3_css_array[0];
-
-            this.headlights3_none_css        = adkit.getSVData("headlights3_none_style");
-            this.headlights3_none_css_array  = this.headlights3_none_css.split(',');
-            this.headlights3_none_opacity    = this.headlights3_none_css_array[0];
+            this.headlights3_display    = this.headlights3_css_array[0];
 
             this.frame1_delay_css        = adkit.getSVData("frame1_delay");
             this.frame1_delay_css_array  = this.frame1_delay_css.split(',');
@@ -503,11 +499,20 @@
                   transform: 'scale(' + this.packshot3_scaleX + ',' + this.packshot3_scaleY + ')'
             });
 
-            headlights.css('background-image', 'url(' + this.headlights + ')');
+            headlights.css({
+                  'background-image': 'url(' + this.headlights + ')',
+                  display: this.headlights_display
+            });
 
-            headlights2.css('background-image', 'url(' + this.headlights2 + ')');
+            headlights2.css({
+                  'background-image': 'url(' + this.headlights2 + ')',
+                  display: this.headlights2_display
+            });
 
-            headlights3.css('background-image', 'url(' + this.headlights3 + ')');
+            headlights3.css({
+                  'background-image': 'url(' + this.headlights3 + ')',
+                  display: this.headlights3_display
+            });
 
             f1_title.css({
                   left: this.f1_title_left,
@@ -682,11 +687,12 @@
                 this.timeline.to(packshot1, 1.5, {opacity: this.packshot1_animation_opacity, left: this.packshot1_animation_left, top: this.packshot1_animation_top, scaleX: this.packshot1_animation_scaleX, scaleY: this.packshot1_animation_scaleY});
                 this.timeline.to(f1_title, 0.5, {opacity: this.f1_title_animation_opacity, left: this.f1_title_animation_left, top: this.f1_title_animation_top, ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_animation_opacity, left: this.cta_wrapper_animation_left, top: this.cta_wrapper_animation_top});
-                this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
-                this.timeline.to(headlights, 0.5, {opacity:this.headlights_none_opacity});
-                this.timeline.to(headlights, 0.5, {opacity:this.headlights_opacity});
+                this.timeline.to(headlights, 0.5, {opacity:1});
+                this.timeline.to(headlights, 0.5, {opacity:0});
+                this.timeline.to(headlights, 0.5, {opacity:1});
                 this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_animation_left, top:this.cta_highlight_animation_top});
                 this.timeline.to(f1_title, 0.5, {opacity: this.f1_title_none_opacity, delay: this.frame1_delay_delay});
+                this.timeline.to(packshot1, 0.5, {opacity: this.packshot1_none_opacity}, "-=0.5");
                 this.timeline.to(cta_wrapper, 0.5, {opacity: this.cta_wrapper_none_opacity}, "-=0.5");
 
                 this.timeline.to(background2, 0.5, {opacity: this.background2_animation_opacity}, "-=0.5");
@@ -694,12 +700,13 @@
                 this.timeline.to(f2_title, 0.5, {opacity: this.f2_title_animation_opacity, left: this.f2_title_animation_left, top: this.f2_title_animation_top, ease: Power2.easeOut});
                 this.timeline.to(f2_subtitle, 0.5, {opacity: this.f2_subtitle_animation_opacity, top: parseInt(this.f2_subtitle_animation_top), left: this.f2_subtitle_animation_left, ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_animation_opacity, left: this.cta_wrapper2_animation_left, top: this.cta_wrapper2_animation_top});
-                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
-                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_none_opacity});
-                this.timeline.to(headlights2, 0.5, {opacity:this.headlights2_opacity});
+                this.timeline.to(headlights2, 0.5, {opacity:1});
+                this.timeline.to(headlights2, 0.5, {opacity:0});
+                this.timeline.to(headlights2, 0.5, {opacity:1});
                 this.timeline.to(cta_highlight2, 1, {left:this.cta_highlight2_animation_left, top:this.cta_highlight2_animation_top});
                 this.timeline.to(f2_title, 0.5, {opacity: this.f2_title_none_opacity, delay: this.frame2_delay_delay});
                 this.timeline.to(f2_subtitle, 0.5, {opacity: this.f2_subtitle_none_opacity},"-=0.5");
+                this.timeline.to(packshot2, 0.5, {opacity: this.packshot2_none_opacity}, "-=0.5");
                 this.timeline.to(cta_wrapper2, 0.5, {opacity: this.cta_wrapper2_none_opacity}, "-=0.5");
 
                 this.timeline.to(background3, 0.5, {opacity: this.background3_animation_opacity}, "-=0.5");
@@ -707,9 +714,9 @@
                 this.timeline.to(f3_title, 0.5, {opacity: this.f3_title_animation_opacity, left: this.f3_title_animation_left, top: this.f3_title_animation_top, ease: Power2.easeOut});
                 this.timeline.to(f3_subtitle, 0.5, {opacity: this.f3_subtitle_animation_opacity, top: parseInt(this.f3_subtitle_animation_top), left: this.f3_subtitle_animation_left, ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper3, 0.5, {opacity: this.cta_wrapper3_animation_opacity, left: this.cta_wrapper3_animation_left, top: this.cta_wrapper3_animation_top});
-                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
-                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_none_opacity});
-                this.timeline.to(headlights3, 0.5, {opacity:this.headlights3_opacity});
+                this.timeline.to(headlights3, 0.5, {opacity:1});
+                this.timeline.to(headlights3, 0.5, {opacity:0});
+                this.timeline.to(headlights3, 0.5, {opacity:1});
                 this.timeline.to(cta_highlight3, 1, {left:this.cta_highlight3_animation_left, top:this.cta_highlight3_animation_top});
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'url(' + cta_icon_animate_url + ') no-repeat', onComplete:function(){
                     that.restarted = true;
