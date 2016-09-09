@@ -622,8 +622,6 @@
                   '-webkit-transform': 'scale(' + this.cta_wrapper2_scaleX+ this.cta_wrapper2_scaleY + ')',
                   transform: 'scale(' + this.cta_wrapper2_scaleX+ this.cta_wrapper2_scaleY + ')'
             });
-console.log(this.cta_wrapper_scaleY);
-console.log(this.cta_wrapper_animation_scaleY);
             cta_text2.css({
                 fontSize: this.cta_text2_size,
                 'line-height': this.cta_line2_height,
