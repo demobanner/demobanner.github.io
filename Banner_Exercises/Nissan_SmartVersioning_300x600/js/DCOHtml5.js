@@ -295,10 +295,10 @@
 
             this.packshot2_css                  = adkit.getSVData("packshot2_style");
             this.packshot2_css_array            = this.packshot2_css.split(',');
-            this.packshot2_left              = this.packshot2_css_array[0];
-            this.packshot2_top              = this.packshot2_css_array[1];
+            this.packshot2_left                 = this.packshot2_css_array[0];
+            this.packshot2_top                   = this.packshot2_css_array[1];
             this.packshot2_opacity              = this.packshot2_css_array[2];
-            this.packshot2_scaleX              = this.packshot2_css_array[3];
+            this.packshot2_scaleX               = this.packshot2_css_array[3];
             this.packshot2_scaleY              = this.packshot2_css_array[4];
 
             this.packshot2_animation_css        = adkit.getSVData("packshot2_animation_style");
