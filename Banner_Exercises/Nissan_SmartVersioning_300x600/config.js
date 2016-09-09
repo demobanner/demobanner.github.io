@@ -17,7 +17,17 @@ define(
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,25px"
+        "value": "35px, 116px, black, 25px, 0"
+      },
+      {
+        "svKey": "f1_title_animation_style",
+        "svType": "String",
+        "value": "15px, 116px, black, 25px, 1"
+      },
+      {
+        "svKey": "f1_title_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "f2_title",
@@ -27,7 +37,17 @@ define(
       {
         "svKey": "f2_title_style",
         "svType": "String",
-        "value": "black,25px"
+        "value": "14px, 112px, black, 25px, 0"
+      },
+      {
+        "svKey": "f2_title_animation_style",
+        "svType": "String",
+        "value": "14px, 112px, black, 25px, 0"
+      },
+      {
+        "svKey": "f2_title_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "f2_subtitle",
@@ -37,7 +57,17 @@ define(
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "black,25px, 113, #c71444"
+        "value": "black, 25px, 14px, 103px, #c71444, 0"
+      },
+      {
+        "svKey": "f2_subtitle_animation_style",
+        "svType": "String",
+        "value": "black, 25px, 14px, 113, #c71444, 1"
+      },
+      {
+        "svKey": "f2_subtitle_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "f3_title",
@@ -47,7 +77,12 @@ define(
       {
         "svKey": "f3_title_style",
         "svType": "String",
-        "value": "black,29px"
+        "value": "14px, 112px, black, 29px, 0"
+      },
+      {
+        "svKey": "f3_title_animation_style",
+        "svType": "String",
+        "value": "14px, 112px, black, 29px, 1"
       },
       {
         "svKey": "f3_subtitle",
@@ -57,7 +92,12 @@ define(
       {
         "svKey": "f3_subtitle_style",
         "svType": "String",
-        "value": "black,20px, 145, #c71444"
+        "value": "black, 20px, 14px, 135px, #c71444, 0"
+      },
+      {
+        "svKey": "f3_subtitle_animation_style",
+        "svType": "String",
+        "value": "black, 20px, 14px, 145, #c71444, 1"
       },
       {
         "svKey": "logo",
@@ -82,12 +122,12 @@ define(
       {
         "svKey": "packshot1_style",
         "svType": "String",
-        "value": "1"
+        "value": "0px, 0px, 1, 1"
       },
       {
         "svKey": "packshot1_animation_style",
         "svType": "String",
-        "value": "1"
+        "value": "0px, 0px, 1, 1"
       },
       {
         "svKey": "headlights",
@@ -132,12 +172,12 @@ define(
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,0"
+        "value": "149px,33px,75px,472px,#c71444,0,1"
       },
       {
         "svKey": "cta_wrapper_animation_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,1"
+        "value": "149px,33px,75px,472px,1,1"
       },
       {
         "svKey": "cta_wrapper_none_style",
@@ -152,7 +192,12 @@ define(
       {
         "svKey": "cta_highlight_style",
         "svType": "String",
-        "value": "71px,72px,150px"
+        "value": "71px,72px,-100px,-16px"
+      },
+      {
+        "svKey": "cta_highlight_animation_style",
+        "svType": "String",
+        "value": "71px,72px,150px,-16px"
       },
       {
         "svKey": "Standalone",
@@ -197,12 +242,12 @@ define(
       {
         "svKey": "packshot2_style",
         "svType": "String",
-        "value": "0"
+        "value": "0px, 0px, 0, 1,1"
       },
       {
         "svKey": "packshot2_animation_style",
         "svType": "String",
-        "value": "1"
+        "value": "0px, 0px, 1, 1,1"
       },
       {
         "svKey": "packshot3",
@@ -212,12 +257,12 @@ define(
       {
         "svKey": "packshot3_style",
         "svType": "String",
-        "value": "0"
+        "value": "0px, 0px, 0, 1,1"
       },
       {
         "svKey": "packshot3_animation_style",
         "svType": "String",
-        "value": "1"
+        "value": "0px, 0px, 1, 1,1"
       },
       {
         "svKey": "cta_icon2",
@@ -247,12 +292,12 @@ define(
       {
         "svKey": "cta_wrapper2_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,0"
+        "value": "149px,33px,75px,472px,#c71444, 0, 1"
       },
       {
         "svKey": "cta_wrapper2_animation_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,1"
+        "value": "149px,33px,75px,472px,1, 1"
       },
       {
         "svKey": "cta_wrapper2_none_style",
@@ -267,7 +312,12 @@ define(
       {
         "svKey": "cta_highlight2_style",
         "svType": "String",
-        "value": "71px,72px,150px"
+        "value": "71px,72px,-100px,-16px"
+      },
+      {
+        "svKey": "cta_highlight2_animation_style",
+        "svType": "String",
+        "value": "71px,72px,150px,-16px"
       },
       {
         "svKey": "cta_icon3",
@@ -297,12 +347,12 @@ define(
       {
         "svKey": "cta_wrapper3_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,0"
+        "value": "149px,33px,75px,472px,#c71444,0,1"
       },
       {
         "svKey": "cta_wrapper3_animation_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px,1"
+        "value": "149px,33px,75px,472px,1,1"
       },
       {
         "svKey": "cta_highlight3",
@@ -312,7 +362,12 @@ define(
       {
         "svKey": "cta_highlight3_style",
         "svType": "String",
-        "value": "71px,72px,150px"
+        "value": "71px,72px,-100px,-16px"
+      },
+      {
+        "svKey": "cta_highlight3_animation_style",
+        "svType": "String",
+        "value": "71px,72px,150px,-16px"
       },
       {
         "svKey": "headlights2",
@@ -322,7 +377,7 @@ define(
       {
         "svKey": "headlights2_style",
         "svType": "String",
-        "value": "1"
+        "value": "0"
       },
       {
         "svKey": "headlights2_none_style",
@@ -337,12 +392,22 @@ define(
       {
         "svKey": "headlights3_style",
         "svType": "String",
-        "value": "1"
+        "value": "0"
       },
       {
         "svKey": "headlights3_none_style",
         "svType": "String",
         "value": "0"
+      },
+      {
+        "svKey": "frame1_delay",
+        "svType": "String",
+        "value": "2"
+      },
+      {
+        "svKey": "frame2_delay",
+        "svType": "String",
+        "value": "0.5"
       },
       {
         "svKey": "Standalone_status",
