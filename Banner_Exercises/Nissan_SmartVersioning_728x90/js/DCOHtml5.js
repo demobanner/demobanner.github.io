@@ -522,7 +522,7 @@
                 this.timeline.to(cta_wrapper2, 0.5, {alpha:this.cta_wrapper2_ani_opacity, scaleX:this.cta_wrapper2_ani_scaleX, scaleY:this.cta_wrapper2_ani_scaleY});
                 this.timeline.to(cta_highlight2, 1, {left:this.cta_highlight2_left});
                 this.timeline.to([background2,f2_title,f2_subtitle,cta_wrapper2,cta_highlight2], 0.5, {alpha:0, delay:this.frame2_ani_delay });
-                this.timeline.to(packshot2, 0.5, {alpha:this.packshot2_ani_none});
+                this.timeline.to(packshot2, 0.5, {alpha:this.packshot2_ani_none},"-=1");
 
 
                 this.timeline.to(background3, 0.5, {alpha:1});

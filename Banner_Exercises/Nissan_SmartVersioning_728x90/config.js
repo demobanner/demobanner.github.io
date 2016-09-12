@@ -22,7 +22,7 @@ define(
       {
         "svKey": "f1_title_ani",
         "svType": "String",
-        "value": "1"
+        "value": "0"
       },
       
       {
@@ -88,7 +88,7 @@ define(
       {
         "svKey": "cta_wrapper_ani",
         "svType": "String",
-        "value": "1,1,1,0"
+        "value": "1,1,1,1"
       },
       {
         "svKey": "cta_highlight",
@@ -123,7 +123,7 @@ define(
       {
         "svKey": "packshot2_ani",
         "svType": "String",
-        "value": "1,-5px,-1px,1"
+        "value": "1,-5px,-1px,0"
       },
       {
         "svKey": "f2_title",
@@ -178,7 +178,7 @@ define(
       {
         "svKey": "cta_wrapper2_ani",
         "svType": "String",
-        "value": "1,1,1"
+        "value": "0,1,1,0"
       },
       {
         "svKey": "cta_highlight2",
@@ -213,7 +213,7 @@ define(
       {
         "svKey": "packshot3_ani",
         "svType": "String",
-        "value": "0,0px,-3px"
+        "value": "1,0px,-3px"
       },
       {
         "svKey": "f3_title",
