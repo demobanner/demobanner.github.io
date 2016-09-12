@@ -21,7 +21,7 @@
             this.packshot_opacity             = this.packshot_css_array[0];
             this.packshot_left             = this.packshot_css_array[1];
             this.packshot_top             = this.packshot_css_array[2];
-            console.log(this.packshot_left )
+            console.log(this.packshot_left );
 
             this.packshot_ani_css               = adkit.getSVData("packshot_ani");
             this.packshot_ani_css_array         = this.packshot_ani_css.split(',');
