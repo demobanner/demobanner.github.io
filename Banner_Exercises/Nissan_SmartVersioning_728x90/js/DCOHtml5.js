@@ -42,6 +42,15 @@
             this.packshot_ani_top               = this.packshot_ani_css_array[2];
             this.packshot_ani_none              = this.packshot_ani_css_array[3];
 
+            this.headlights_css               = adkit.getSVData("headlights_style");
+            this.headlights_css_array         = this.headlights_css.split(',');
+            this.headlights_opacity           = this.headlights_css_array[0];
+            
+            this.headlights_ani_css               = adkit.getSVData("headlights_ani");
+            this.headlights_ani_css_array         = this.headlights_ani_css.split(',');
+            this.headlights_ani_opacity           = this.headlights_ani_css_array[0];
+            this.headlights_ani_none              = this.headlights_ani_css_array[1];
+
             this.f1_title_css               = adkit.getSVData("f1_title_style");
             this.f1_title_css_array         = this.f1_title_css.split(',');
             this.f1_title_opacity            = this.f1_title_css_array[0];
@@ -377,7 +386,8 @@
                            'opacity':this.packshot3_opacity,
                            'left': this.packshot3_left +'px',
                            'top':this.packshot3_top +'px'});
-            headlights.css('background-image', 'url(' + this.headlights + ')');
+            headlights.css({'background-image':'url(' + this.headlights + ')',
+                             'opacity':this.headlights_opacity});
 
             f1_title.css({
                 fontSize: this.f1_title_size,
@@ -545,21 +555,22 @@
                 this.timeline.to(background, 0.5, {alpha:this.background_ani_opacity },"-=0.5");
                 this.timeline.to(packshot, 0.5, {alpha:this.packshot_ani_opacity , left: parseInt(this.packshot_ani_left),top:parseInt(this.packshot_ani_left), ease: Power2.easeOut});
                 this.timeline.to(f1_title, 0.5, {alpha:this.f1_title_ani_opacity, left: 257, ease: Power2.easeOut});
-                this.timeline.to(headlights, 0.5, {alpha:1},"-=0.5");
-                this.timeline.to(headlights, 0.5, {alpha:0});
+                this.timeline.to(headlights, 0.5, {alpha:this.headlights_ani_opacity},"-=0.5");
+                this.timeline.to(headlights, 0.5, {alpha:this.headlights_opacity});
                 this.timeline.to(cta_wrapper, 0.5, {alpha:this.cta_wrapper_ani_opacity, scaleX:this.cta_wrapper_ani_scaleX, scaleY:this.cta_wrapper_ani_scaleY});
                 this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
                 this.timeline.to([headlights,f1_title,cta_highlight], 0.5, {alpha:0, delay:this.frame1_ani_delay});
                 this.timeline.to(packshot, 0.5, {alpha:this.packshot_ani_none},"-=0.5");
                 this.timeline.to(background, 0.5, {alpha:this.background_ani_none},"-=0.5");
-               // this.timeline.to(packshot, 0.5, {alpha:this.packshot_ani_none},"-=0.5");
                 this.timeline.to(cta_wrapper, 0.5, {alpha:this.cta_wrapper_ani_none},"-=0.5");
                  
                 this.timeline.to(background2, 0.5, {alpha:this.background2_ani_opacity});
                 this.timeline.to(packshot2, 0.5, {alpha:this.packshot2_ani_opacity , left: parseInt(this.packshot2_ani_left),top:parseInt(this.packshot2_ani_top), ease: Power2.easeOut});
                 this.timeline.to(f2_title, 0.5, {alpha:this.f2_title_ani_opacity});
                 this.timeline.to(f2_subtitle, 0.5, {alpha:this.f2_subtitle_ani_opacity, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
-                this.timeline.to(cta_wrapper2, 0.5, {alpha:this.cta_wrapper2_ani_opacity, scaleX:this.cta_wrapper2_ani_scaleX, scaleY:this.cta_wrapper2_ani_scaleY});
+                this.timeline.to(headlights, 0.5, {alpha:this.headlights_ani_none},"-=0.5");
+                this.timeline.to(headlights, 0.5, {alpha:this.headlights_opacity});
+                this.timeline.to(cta_wrapper2, 0.5, {alpha:this.cta_wrapper2_ani_opacity, scaleX:this.cta_wrapper2_ani_scaleX, scaleY:this.cta_wrapper2_ani_scaleY},"-=0.5");
                 this.timeline.to(cta_highlight2, 1, {left:this.cta_highlight2_left});
                 this.timeline.to([background2,f2_title,f2_subtitle,cta_wrapper2,cta_highlight2], 0.5, {alpha:0, delay:this.frame2_ani_delay });
                 this.timeline.to(packshot2, 0.5, {alpha:this.packshot2_ani_none},"-=1");
@@ -569,7 +580,9 @@
                 this.timeline.to(packshot3, 0.5, {alpha:this.packshot3_ani_opacity , left: parseInt(this.packshot3_ani_left),top:parseInt(this.packshot3_ani_top), ease: Power2.easeOut});
                 this.timeline.to(f3_title, 0.5, {alpha:this.f3_title_ani_opacity});
                 this.timeline.to(f3_subtitle, 0.5, {alpha:this.f3_subtitle_ani_opacity, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
-                this.timeline.to(cta_wrapper3, 0.5, {alpha:this.cta_wrapper3_ani_opacity, scaleX:this.cta_wrapper3_ani_scaleX, scaleY:this.cta_wrapper3_ani_scaleY});
+                this.timeline.to(headlights, 0.5, {alpha:this.headlights_ani_none },"-=0.5");
+                this.timeline.to(headlights, 0.5, {alpha:this.headlights_opacity});
+                this.timeline.to(cta_wrapper3, 0.5, {alpha:this.cta_wrapper3_ani_opacity, scaleX:this.cta_wrapper3_ani_scaleX, scaleY:this.cta_wrapper3_ani_scaleY},"-=0.5");
                 this.timeline.to(cta_icon3, 0.2,{right:this.cta_icon3_ani_right})
                 this.timeline.to(cta_icon3, 0.2,{right:this.cta_icon3_ani_none })
                 this.timeline.to(cta_icon3, 0.2,{right:this.cta_icon3_right })

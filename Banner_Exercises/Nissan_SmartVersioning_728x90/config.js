@@ -66,6 +66,16 @@ define(
         "value": 4
       },
       {
+        "svKey": "headlights_style",
+        "svType": "Image",
+        "value": "0"
+      },
+      {
+        "svKey": "headlights_ani",
+        "svType": "Image",
+        "value": "1,1"
+      },
+      {
         "svKey": "cta_icon",
         "svType": "Image",
         "value": 5
