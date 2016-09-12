@@ -36,6 +36,16 @@ define(
         "value": 2
       },
       {
+        "svKey": "background_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "background_ani",
+        "svType": "String",
+        "value": "1,1"
+      },
+      {
         "svKey": "packshot",
         "svType": "Image",
         "value": 3
@@ -48,7 +58,7 @@ define(
       {
         "svKey": "packshot_ani",
         "svType": "String",
-        "value": "1,0px,0px,0"
+        "value": "1,0px,0px,1"
       },
       {
         "svKey": "headlights",
@@ -111,6 +121,11 @@ define(
         "value": 8
       },
       {
+        "svKey": "background2_ani",
+        "svType": "Image",
+        "value": "0"
+      },
+      {
         "svKey": "packshot2",
         "svType": "Image",
         "value": 9
@@ -123,7 +138,7 @@ define(
       {
         "svKey": "packshot2_ani",
         "svType": "String",
-        "value": "1,-5px,-1px,0"
+        "value": "0,-5px,-1px,0"
       },
       {
         "svKey": "f2_title",
@@ -136,6 +151,11 @@ define(
         "value": "#fff,25px"
       },
       {
+        "svKey": "f2_title_ani",
+        "svType": "String",
+        "value": "0"
+      },
+      {
         "svKey": "f2_subtitle",
         "svType": "String",
         "value": "VAN 8 TOT 17 SEPTEMBER<br><span></span>"
@@ -144,6 +164,11 @@ define(
         "svKey": "f2_subtitle_style",
         "svType": "String",
         "value": "#fff,18px, 28, #c71444"
+      },
+      {
+        "svKey": "f2_subtitle_ani",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "cta_icon2",
@@ -201,6 +226,11 @@ define(
         "value":13
       },
       {
+        "svKey": "background3_ani",
+        "svType": "Image",
+        "value":"0"
+      },
+      {
         "svKey": "packshot3",
         "svType": "Image",
         "value": 14
@@ -213,7 +243,7 @@ define(
       {
         "svKey": "packshot3_ani",
         "svType": "String",
-        "value": "1,0px,-3px"
+        "value": "0,0px,-3px"
       },
       {
         "svKey": "f3_title",
@@ -226,6 +256,11 @@ define(
         "value": "black,25px"
       },
       {
+        "svKey": "f3_title_ani",
+        "svType": "String",
+        "value": "0"
+      },
+      {
         "svKey": "f3_subtitle",
         "svType": "String",
         "value": "tot € 4.350 voordeel"
@@ -234,6 +269,11 @@ define(
         "svKey": "f3_subtitle_style",
         "svType": "String",
         "value": "black,17px, 46, #c71444"
+      },
+      {
+        "svKey": "f3_subtitle_ani",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "cta_icon3",

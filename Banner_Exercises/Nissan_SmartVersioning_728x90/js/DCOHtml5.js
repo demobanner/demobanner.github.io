@@ -16,9 +16,18 @@
             this.timeline = new TimelineLite(),
 
             //Initializing Heading Style Css
-           
+
+            this.background_css               = adkit.getSVData("background_style");
+            this.background_css_array         = this.background_css.split(',');
+            this.background_opacity           = this.background_css_array[0];
             
 
+            this.background_ani_css               = adkit.getSVData("background_ani");
+            this.background_ani_css_array         = this.background_ani_css.split(',');
+            this.background_ani_opacity           = this.background_ani_css_array[0];
+            this.background_ani_none              = this.background_ani_css_array[1];
+            
+            
             this.packshot_css               = adkit.getSVData("packshot_style");
             this.packshot_css_array         = this.packshot_css.split(',');
             this.packshot_opacity           = this.packshot_css_array[0];
@@ -42,8 +51,12 @@
             this.f1_title_ani_css                = adkit.getSVData("f1_title_ani");
             this.f1_title_ani_css_array          = this.f1_title_ani_css.split(',');
             this.f1_title_ani_opacity            = this.f1_title_ani_css_array[0];
-            
 
+            this.background2_ani_css                = adkit.getSVData("background2_ani");
+            this.background2_ani_css_array          = this.background2_ani_css.split(',');
+            this.background2_ani_opacity            = this.background2_ani_css_array[0];
+
+            
             this.packshot2_css               = adkit.getSVData("packshot2_style");
             this.packshot2_css_array         = this.packshot2_css.split(',');
             this.packshot2_opacity             = this.packshot2_css_array[0];
@@ -70,10 +83,24 @@
             this.f2_subtitle_top            = this.f2_subtitle_css_array[2];
             this.f2_subtitle_span_color     = this.f2_subtitle_css_array[3];
 
+            this.f2_subtitle_ani_css             = adkit.getSVData("f2_subtitle_ani");
+            this.f2_subtitle_ani_css_array       = this.f2_subtitle_ani_css.split(',');
+            this.f2_subtitle_ani_opacity         = this.f2_subtitle_ani_css_array[0];
+
+            this.background3_ani_css                = adkit.getSVData("background3_ani");
+            this.background3_ani_css_array          = this.background3_ani_css.split(',');
+            this.background3_ani_opacity            = this.background3_ani_css_array[0];
+
+           
             this.f3_title_css               = adkit.getSVData("f3_title_style");
             this.f3_title_css_array         = this.f3_title_css.split(',');
             this.f3_title_color             = this.f3_title_css_array[0];
             this.f3_title_size              = this.f3_title_css_array[1];
+
+            this.f3_title_ani_css                 = adkit.getSVData("f3_title_ani");
+            this.f3_title_ani_css_array           = this.f3_title_ani_css.split(',');
+            this.f3_title_ani_opacity             = this.f3_title_ani_css_array[0];
+           
 
             this.f3_subtitle_css           = adkit.getSVData("f3_subtitle_style");
             this.f3_subtitle_css_array     = this.f3_subtitle_css.split(',');
@@ -81,6 +108,11 @@
             this.f3_subtitle_size          = this.f3_subtitle_css_array[1];
             this.f3_subtitle_top           = this.f3_subtitle_css_array[2];
             this.f3_subtitle_span_color    = this.f3_subtitle_css_array[3];
+
+            this.f3_subtitle_ani_css            = adkit.getSVData("f3_subtitle_ani");
+            this.f3_subtitle_ani_css_array      = this.f3_subtitle_ani_css.split(',');
+            this.f3_subtitle_ani_opacity        = this.f3_subtitle_ani_css_array[0];
+
 
             this.packshot3_css               = adkit.getSVData("packshot3_style");
             this.packshot3_css_array         = this.packshot3_css.split(',');
@@ -98,6 +130,11 @@
             this.f2_title_css_array         = this.f2_title_css.split(',');
             this.f2_title_color             = this.f2_title_css_array[0];
             this.f2_title_size              = this.f2_title_css_array[1];
+
+            this.f2_title_ani_css                 = adkit.getSVData("f2_title_ani");
+            this.f2_title_ani_css_array           = this.f2_title_ani_css.split(',');
+            this.f2_title_ani_opacity             = this.f2_title_ani_css_array[0];
+        
 
             this.cta_wrapper_css            = adkit.getSVData("cta_wrapper_style");
             this.cta_wrapper_css_array      = this.cta_wrapper_css.split(',');
@@ -323,7 +360,8 @@
             }
 
             //get data
-            background.css('background-image', 'url(' + this.background + ')');
+            background.css({'background-image': 'url(' + this.background + ')',
+                             'opacity':this.background_opacity});
             background2.css('background-image', 'url(' + this.background2 + ')');
             background3.css('background-image', 'url(' + this.background3 + ')');
             logo.css('background-image', 'url(' + this.logo + ')');
@@ -504,31 +542,33 @@
                 this.timeline.to(cta_icon_animate, 0.2, {background: 'none'});
 
                 
-                this.timeline.to(background, 0.5, {alpha:1},"-=0.5");
+                this.timeline.to(background, 0.5, {alpha:this.background_ani_opacity },"-=0.5");
                 this.timeline.to(packshot, 0.5, {alpha:this.packshot_ani_opacity , left: parseInt(this.packshot_ani_left),top:parseInt(this.packshot_ani_left), ease: Power2.easeOut});
                 this.timeline.to(f1_title, 0.5, {alpha:this.f1_title_ani_opacity, left: 257, ease: Power2.easeOut});
                 this.timeline.to(headlights, 0.5, {alpha:1},"-=0.5");
                 this.timeline.to(headlights, 0.5, {alpha:0});
                 this.timeline.to(cta_wrapper, 0.5, {alpha:this.cta_wrapper_ani_opacity, scaleX:this.cta_wrapper_ani_scaleX, scaleY:this.cta_wrapper_ani_scaleY});
                 this.timeline.to(cta_highlight, 1, {left:this.cta_highlight_left});
-                this.timeline.to([background,headlights,f1_title,cta_highlight], 0.5, {alpha:0, delay:this.frame1_ani_delay});
+                this.timeline.to([headlights,f1_title,cta_highlight], 0.5, {alpha:0, delay:this.frame1_ani_delay});
                 this.timeline.to(packshot, 0.5, {alpha:this.packshot_ani_none},"-=0.5");
+                this.timeline.to(background, 0.5, {alpha:this.background_ani_none},"-=0.5");
+               // this.timeline.to(packshot, 0.5, {alpha:this.packshot_ani_none},"-=0.5");
                 this.timeline.to(cta_wrapper, 0.5, {alpha:this.cta_wrapper_ani_none},"-=0.5");
                  
-                this.timeline.to(background2, 0.5, {alpha:1});
+                this.timeline.to(background2, 0.5, {alpha:this.background2_ani_opacity});
                 this.timeline.to(packshot2, 0.5, {alpha:this.packshot2_ani_opacity , left: parseInt(this.packshot2_ani_left),top:parseInt(this.packshot2_ani_top), ease: Power2.easeOut});
-                this.timeline.to(f2_title, 0.5, {alpha:1});
-                this.timeline.to(f2_subtitle, 0.5, {alpha:1, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
+                this.timeline.to(f2_title, 0.5, {alpha:this.f2_title_ani_opacity});
+                this.timeline.to(f2_subtitle, 0.5, {alpha:this.f2_subtitle_ani_opacity, top: parseInt(this.f2_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper2, 0.5, {alpha:this.cta_wrapper2_ani_opacity, scaleX:this.cta_wrapper2_ani_scaleX, scaleY:this.cta_wrapper2_ani_scaleY});
                 this.timeline.to(cta_highlight2, 1, {left:this.cta_highlight2_left});
                 this.timeline.to([background2,f2_title,f2_subtitle,cta_wrapper2,cta_highlight2], 0.5, {alpha:0, delay:this.frame2_ani_delay });
                 this.timeline.to(packshot2, 0.5, {alpha:this.packshot2_ani_none},"-=1");
 
 
-                this.timeline.to(background3, 0.5, {alpha:1});
+                this.timeline.to(background3, 0.5, {alpha: this.background3_ani_opacity});
                 this.timeline.to(packshot3, 0.5, {alpha:this.packshot3_ani_opacity , left: parseInt(this.packshot3_ani_left),top:parseInt(this.packshot3_ani_top), ease: Power2.easeOut});
-                this.timeline.to(f3_title, 0.5, {alpha:1});
-                this.timeline.to(f3_subtitle, 0.5, {alpha:1, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
+                this.timeline.to(f3_title, 0.5, {alpha:this.f3_title_ani_opacity});
+                this.timeline.to(f3_subtitle, 0.5, {alpha:this.f3_subtitle_ani_opacity, top: parseInt(this.f3_subtitle_top), ease: Power2.easeOut});
                 this.timeline.to(cta_wrapper3, 0.5, {alpha:this.cta_wrapper3_ani_opacity, scaleX:this.cta_wrapper3_ani_scaleX, scaleY:this.cta_wrapper3_ani_scaleY});
                 this.timeline.to(cta_icon3, 0.2,{right:this.cta_icon3_ani_right})
                 this.timeline.to(cta_icon3, 0.2,{right:this.cta_icon3_ani_none })
