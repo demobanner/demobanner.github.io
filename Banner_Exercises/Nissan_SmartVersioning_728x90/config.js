@@ -22,7 +22,7 @@ define(
       {
         "svKey": "f1_title_ani",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       
       {
@@ -153,7 +153,7 @@ define(
       {
         "svKey": "f2_title_ani",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "f2_subtitle",
@@ -163,12 +163,12 @@ define(
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "#fff,18px, 28, #c71444"
+        "value": "black,18px, 28, #c71444"
       },
       {
         "svKey": "f2_subtitle_ani",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "cta_icon2",
@@ -258,7 +258,7 @@ define(
       {
         "svKey": "f3_title_ani",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "f3_subtitle",
@@ -273,7 +273,7 @@ define(
       {
         "svKey": "f3_subtitle_ani",
         "svType": "String",
-        "value": "0"
+        "value": "1"
       },
       {
         "svKey": "cta_icon3",
