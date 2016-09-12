@@ -17,9 +17,14 @@ define(
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,19px"
+        "value": "0,black,19px"
       },
-     
+      {
+        "svKey": "f1_title_ani",
+        "svType": "String",
+        "value": "1"
+      },
+      
       {
         "svKey": "logo",
         "svType": "Image",
@@ -30,7 +35,6 @@ define(
         "svType": "Image",
         "value": 2
       },
-      
       {
         "svKey": "packshot",
         "svType": "Image",
@@ -44,7 +48,7 @@ define(
       {
         "svKey": "packshot_ani",
         "svType": "String",
-        "value": "1,0px,0px"
+        "value": "1,0px,0px,0"
       },
       {
         "svKey": "headlights",
@@ -84,7 +88,7 @@ define(
       {
         "svKey": "cta_wrapper_ani",
         "svType": "String",
-        "value": "1,1,1"
+        "value": "1,1,1,0"
       },
       {
         "svKey": "cta_highlight",
@@ -119,7 +123,7 @@ define(
       {
         "svKey": "packshot2_ani",
         "svType": "String",
-        "value": "1,-5px,-1px"
+        "value": "1,-5px,-1px,1"
       },
       {
         "svKey": "f2_title",
@@ -209,7 +213,7 @@ define(
       {
         "svKey": "packshot3_ani",
         "svType": "String",
-        "value": "1,0px,-3px"
+        "value": "0,0px,-3px"
       },
       {
         "svKey": "f3_title",
@@ -269,7 +273,7 @@ define(
       {
         "svKey": "cta_wrapper3_ani",
         "svType": "String",
-        "value": "1,1,1"
+        "value": "0,1,1"
       },
       {
         "svKey": "cta_highlight3",
