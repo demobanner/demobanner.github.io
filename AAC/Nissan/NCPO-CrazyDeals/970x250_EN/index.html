@@ -28,15 +28,18 @@
 					text4 = document.getElementById("text4"),
 					text5 = document.getElementById("text5"),
 					text6 = document.getElementById("text6"),
+					text7 = document.getElementById("text7"),
+					line = document.getElementById("line"),
+					replace = document.getElementById("replace"),
 					tc = document.getElementById("tc"),
 					cta = document.getElementById("cta"),
 				  logo_end = document.getElementById("logo_end"),
 				  btn_replay = document.getElementById("btn-replay");
 
 			tl.to(text1, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
-				.to(dislike, 0.5, {autoAlpha:1, scale:1,top:-23, ease: Power2.easeInOut})
+				.to(dislike, 0.5, {autoAlpha:1, scale:1,top:-90, ease: Power2.easeInOut})
 				.to(text1, 0.5, {autoAlpha:0, ease: Power2.easeInOut},"+=2")
-				.to(dislike, 0.5, {scaleY:-1, top: 5, ease: Power2.easeInOut},"-=0.5");
+				.to(dislike, 0.5, {scaleY:-1, top: -50, ease: Power2.easeInOut},"-=0.5");
 
 			tl.to(text2, 0.5, {autoAlpha:1 ,top:0, ease: Power1.easeInOut},"-=0.25")
 				.to(text2, 0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
@@ -45,24 +48,26 @@
 				.to(tc, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
 				.to([text3, dislike], 0.5, {autoAlpha:0 , ease: Power1.easeInOut},"+=2");
 				
-				tl.to(text4, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut},"-=0.25")
-				.to(like, 0.5, {autoAlpha:1, scale:1.2, ease: Power4.easeInOut})
-				.to(like, 0.2, {scale:1, ease: Power4.easeInOut})
+			tl.to(text4, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut},"-=0.25")
+				.to(like, 0.5, {autoAlpha:1, scale:1, ease: Power4.easeInOut})
+				.to(like, 0.2, {scale:0.8, ease: Power4.easeInOut})
 				.to([like, text4], 0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
 
 			tl.to(text5, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to(like, 0.5, {autoAlpha:1, scale:1.2, ease: Power4.easeInOut})
-				.to(like, 0.2, {scale:1, ease: Power4.easeInOut})
+				.to(like, 0.5, {autoAlpha:1, scale:1, ease: Power4.easeInOut})
+				.to(like, 0.2, {scale:0.8, ease: Power4.easeInOut})
 				.to([like, text5], 0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
 
 			tl.to(text6, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to(like, 0.5, {autoAlpha:1, scale:1.2, ease: Power4.easeInOut})
-				.to(like, 0.2, {scale:1, ease: Power4.easeInOut})
+				.to(like, 0.5, {autoAlpha:1, scale:1, ease: Power4.easeInOut})
+				.to(like, 0.2, {scale:0.8, ease: Power4.easeInOut})
 				.to([like, text6], 0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
 
-			tl.to(tc, 0.5, {left:57, ease: Power4.easeInOut})
+			tl.to(tc, 0.5, {left: 0, autoAlpha: 1, ease: Power4.easeInOut})
 				.to(text7, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to([text7, tc, logo_star] ,0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
+				.to(line, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(replace, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to([text7, tc, logo_star, line, replace] ,0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
 			
 			tl.to(logo_end, 0.5, {autoAlpha:1, ease: Power1.easeInOut}) 
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
@@ -98,6 +103,8 @@
     	<div id="text5" class="layer"></div>
     	<div id="text6" class="layer"></div>
     	<div id="text7" class="layer"></div>
+    	<div id="line" class="layer"></div>
+    	<div id="replace" class="layer"></div>
     	<div id="cta" class="layer"></div>
     	<div id="logo" >
     	<div id="logo_star" class="layer"></div>

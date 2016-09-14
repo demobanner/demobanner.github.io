@@ -28,6 +28,8 @@
 					text4 = document.getElementById("text4"),
 					text5 = document.getElementById("text5"),
 					text6 = document.getElementById("text6"),
+					line = document.getElementById("line"),
+					replace = document.getElementById("replace"),
 					tc = document.getElementById("tc"),
 					cta = document.getElementById("cta"),
 				  //logo_end = document.getElementById("logo_end"),
@@ -62,9 +64,11 @@
 				.to(like, 0.2, {scale:0.8, ease: Power4.easeInOut})
 				.to([like, text6], 0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
 
-			tl.to(tc, 0.5, {left:95, ease: Power4.easeInOut})
+			tl.to(tc, 0.5, {left:30, autoAlpha: 1, ease: Power4.easeInOut})
 				.to(text7, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to([text7, tc] ,0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
+				.to(line, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(replace, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to([text7, tc, line, replace] ,0.5, {autoAlpha:0, ease: Power1.easeInOut},"+=2");
 			
 			tl.to(logo_star, 0.5, {left:100, ease: Power1.easeInOut}) 
 			tl.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
@@ -100,6 +104,8 @@
     	<div id="text5" class="layer"></div>
     	<div id="text6" class="layer"></div>
     	<div id="text7" class="layer"></div>
+    	<div id="line" class="layer"></div>
+    	<div id="replace" class="layer"></div>
     	<div id="cta" class="layer"></div>
     	<div id="logo" >
     	<div id="logo_star" class="layer"></div>

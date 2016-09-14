@@ -17,7 +17,17 @@ define(
       {
         "svKey": "f1_title_style",
         "svType": "String",
-        "value": "black,25px"
+        "value": "35px, 116px, black, 25px, 0"
+      },
+      {
+        "svKey": "f1_title_animation_style",
+        "svType": "String",
+        "value": "15px, 116px, black, 25px, 1"
+      },
+      {
+        "svKey": "f1_title_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "f2_title",
@@ -27,7 +37,17 @@ define(
       {
         "svKey": "f2_title_style",
         "svType": "String",
-        "value": "black,25px"
+        "value": "14px, 112px, black, 25px, 0"
+      },
+      {
+        "svKey": "f2_title_animation_style",
+        "svType": "String",
+        "value": "14px, 112px, black, 25px, 0"
+      },
+      {
+        "svKey": "f2_title_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "f2_subtitle",
@@ -37,7 +57,17 @@ define(
       {
         "svKey": "f2_subtitle_style",
         "svType": "String",
-        "value": "black,25px, 113, #c71444"
+        "value": "black, 25px, 14px, 103px, #c71444, 0"
+      },
+      {
+        "svKey": "f2_subtitle_animation_style",
+        "svType": "String",
+        "value": "black, 25px, 14px, 113, #c71444, 1"
+      },
+      {
+        "svKey": "f2_subtitle_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "f3_title",
@@ -47,7 +77,12 @@ define(
       {
         "svKey": "f3_title_style",
         "svType": "String",
-        "value": "black,29px"
+        "value": "14px, 112px, black, 29px, 0"
+      },
+      {
+        "svKey": "f3_title_animation_style",
+        "svType": "String",
+        "value": "14px, 112px, black, 29px, 1"
       },
       {
         "svKey": "f3_subtitle",
@@ -57,7 +92,12 @@ define(
       {
         "svKey": "f3_subtitle_style",
         "svType": "String",
-        "value": "black,20px, 145, #c71444"
+        "value": "black, 20px, 14px, 135px, #c71444, 0"
+      },
+      {
+        "svKey": "f3_subtitle_animation_style",
+        "svType": "String",
+        "value": "black, 20px, 14px, 145, #c71444, 1"
       },
       {
         "svKey": "logo",
@@ -65,19 +105,44 @@ define(
         "value": 1
       },
       {
-        "svKey": "background",
+        "svKey": "background1",
         "svType": "Image",
         "value": 2
       },
       {
-        "svKey": "packshot",
+        "svKey": "background1_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "packshot1",
         "svType": "Image",
         "value": 3
+      },
+      {
+        "svKey": "packshot1_style",
+        "svType": "String",
+        "value": "-200px, -400px, 1, 0.5 ,0.5"
+      },
+      {
+        "svKey": "packshot1_animation_style",
+        "svType": "String",
+        "value": "0px, 0px, 1, 1,1"
+      },
+      {
+        "svKey": "packshot1_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "headlights",
         "svType": "Image",
         "value": 4
+      },
+      {
+        "svKey": "headlights_style",
+        "svType": "String",
+        "value": "block"
       },
       {
         "svKey": "cta_icon",
@@ -107,7 +172,17 @@ define(
       {
         "svKey": "cta_wrapper_style",
         "svType": "String",
-        "value": "149px,33px,75px,472px"
+        "value": "149px,33px,75px,472px,#c71444,0"
+      },
+      {
+        "svKey": "cta_wrapper_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_wrapper_none_style",
+        "svType": "String",
+        "value": "0"
       },
       {
         "svKey": "cta_highlight",
@@ -117,12 +192,217 @@ define(
       {
         "svKey": "cta_highlight_style",
         "svType": "String",
-        "value": "71px,72px,150px"
+        "value": "71px,72px,-100px,-16px"
+      },
+      {
+        "svKey": "cta_highlight_animation_style",
+        "svType": "String",
+        "value": "71px,72px,150px,-16px"
       },
       {
         "svKey": "Standalone",
         "svType": "Image",
         "value": 8
+      },
+      {
+        "svKey": "background2",
+        "svType": "Image",
+        "value": 9
+      },
+      {
+        "svKey": "background2_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "background2_animation_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "background3",
+        "svType": "Image",
+        "value": 10
+      },
+      {
+        "svKey": "background3_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "background3_animation_style",
+        "svType": "String",
+        "value": "1"
+      },
+      {
+        "svKey": "packshot2",
+        "svType": "Image",
+        "value": 11
+      },
+      {
+        "svKey": "packshot2_style",
+        "svType": "String",
+        "value": "-250px, 0px, 0, 1,1"
+      },
+      {
+        "svKey": "packshot2_animation_style",
+        "svType": "String",
+        "value": "0px, 0px, 1, 1,1"
+      },
+      {
+        "svKey": "packshot2_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "packshot3",
+        "svType": "Image",
+        "value": 12
+      },
+      {
+        "svKey": "packshot3_style",
+        "svType": "String",
+        "value": "-250px, 0px, 0, 1,1"
+      },
+      {
+        "svKey": "packshot3_animation_style",
+        "svType": "String",
+        "value": "0px, 0px, 1, 1,1"
+      },
+      {
+        "svKey": "cta_icon2",
+        "svType": "Image",
+        "value": 13
+      },
+      {
+        "svKey": "cta_icon_animate2",
+        "svType": "Image",
+        "value": 14
+      },
+      {
+        "svKey": "cta_icon2_style",
+        "svType": "String",
+        "value": "24px,33px,5px,0px"
+      },
+      {
+        "svKey": "cta_text2",
+        "svType": "String",
+        "value": "ONTDEK HIER"
+      },
+      {
+        "svKey": "cta_text2_style",
+        "svType": "String",
+        "value": "13px,33px,18px"
+      },
+      {
+        "svKey": "cta_wrapper2_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,#c71444, 0"
+      },
+      {
+        "svKey": "cta_wrapper2_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_wrapper2_none_style",
+        "svType": "String",
+        "value": "0"
+      },
+      {
+        "svKey": "cta_highlight2",
+        "svType": "Image",
+        "value": 15
+      },
+      {
+        "svKey": "cta_highlight2_style",
+        "svType": "String",
+        "value": "71px,72px,-100px,-16px"
+      },
+      {
+        "svKey": "cta_highlight2_animation_style",
+        "svType": "String",
+        "value": "71px,72px,150px,-16px"
+      },
+      {
+        "svKey": "cta_icon3",
+        "svType": "Image",
+        "value": 16
+      },
+      {
+        "svKey": "cta_icon_animate3",
+        "svType": "Image",
+        "value": 17
+      },
+      {
+        "svKey": "cta_icon3_style",
+        "svType": "String",
+        "value": "24px,33px,5px,0px"
+      },
+      {
+        "svKey": "cta_text3",
+        "svType": "String",
+        "value": "ONTDEK HIER"
+      },
+      {
+        "svKey": "cta_text3_style",
+        "svType": "String",
+        "value": "13px,33px,18px"
+      },
+      {
+        "svKey": "cta_wrapper3_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,#c71444,0"
+      },
+      {
+        "svKey": "cta_wrapper3_animation_style",
+        "svType": "String",
+        "value": "149px,33px,75px,472px,1"
+      },
+      {
+        "svKey": "cta_highlight3",
+        "svType": "Image",
+        "value": 18
+      },
+      {
+        "svKey": "cta_highlight3_style",
+        "svType": "String",
+        "value": "71px,72px,-100px,-16px"
+      },
+      {
+        "svKey": "cta_highlight3_animation_style",
+        "svType": "String",
+        "value": "71px,72px,150px,-16px"
+      },
+      {
+        "svKey": "headlights2",
+        "svType": "Image",
+        "value": 19
+      },
+      {
+        "svKey": "headlights2_style",
+        "svType": "String",
+        "value": "none"
+      },
+      {
+        "svKey": "headlights3",
+        "svType": "Image",
+        "value": 20
+      },
+      {
+        "svKey": "headlights3_style",
+        "svType": "String",
+        "value": "none"
+      },
+      {
+        "svKey": "frame1_delay",
+        "svType": "String",
+        "value": "2"
+      },
+      {
+        "svKey": "frame2_delay",
+        "svType": "String",
+        "value": "0.5"
       },
       {
         "svKey": "Standalone_status",
@@ -144,7 +424,7 @@ define(
     },
     {
         "OrdinalNumber": 2,
-        "FileName": "background.jpg"
+        "FileName": "background1.jpg"
     },
     {
         "OrdinalNumber": 3,
@@ -169,6 +449,54 @@ define(
     {
         "OrdinalNumber": 8,
         "FileName": "standalone.jpg"
+    },
+    {
+        "OrdinalNumber": 9,
+        "FileName": "background2.jpg"
+    },
+    {
+        "OrdinalNumber": 10,
+        "FileName": "background3.jpg"
+    },
+    {
+        "OrdinalNumber": 11,
+        "FileName": "packshot_juke2.png"
+    },
+    {
+        "OrdinalNumber": 12,
+        "FileName": "packshot_juke3.png"
+    },
+    {
+        "OrdinalNumber": 13,
+        "FileName": "icon_arrow.png"
+    },
+    {
+        "OrdinalNumber": 14,
+        "FileName": "icon_arrow_animate.png"
+    },
+    {
+        "OrdinalNumber": 15,
+        "FileName": "cta_highlight.png"
+    },
+    {
+        "OrdinalNumber": 16,
+        "FileName": "icon_arrow.png"
+    },
+    {
+        "OrdinalNumber": 17,
+        "FileName": "icon_arrow_animate.png"
+    },
+    {
+        "OrdinalNumber": 18,
+        "FileName": "cta_highlight.png"
+    },
+    {
+        "OrdinalNumber": 19,
+        "FileName": "headlights_juke.png"
+    },
+    {
+        "OrdinalNumber": 20,
+        "FileName": "headlights_juke.png"
     },
   ]
 
