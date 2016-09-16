@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=728,height=90">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = 'https://www.google.com/';
+		
+		var tl = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {
+			var smile = document.getElementById("smile"),
+				bg1 = document.getElementById("bg1"),
+				text1 = document.getElementById("text1"),
+				bg2 = document.getElementById("bg2"),
+				text2 = document.getElementById("text2"),
+				bg3 = document.getElementById("bg3"),
+				text3 = document.getElementById("text3"),
+				bg4 = document.getElementById("bg4"),
+				text4 = document.getElementById("text4"),
+				text5 = document.getElementById("text5"),
+				bg6 = document.getElementById("bg6"),
+				text6 = document.getElementById("text6"),
+				logo = document.getElementById("logo"),
+				logo1 = document.getElementById("logo1"),
+				cta = document.getElementById("cta"),
+				tc = document.getElementById("tc");								
+
+			tl.to(smile, 0.5, {autoAlpha:1, scale:1, left:-110, top:0, ease: Power3.easeInOut})
+				.to([smile, logo1], 0.5, {autoAlpha:0, delay:2});
+
+			tl.to(bg1, 0.5, {autoAlpha:1}, "-=0.5")
+				.to(text1, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(text1, 0.5, {autoAlpha:0, delay:2});
+
+			tl.to(text2, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(bg2, 0.5, {autoAlpha:1}, "-=0.25")
+				.to([bg1, text2], 0.5, {autoAlpha:0, delay:2});
+
+			tl.to(text3, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(bg3, 0.5, {autoAlpha:1}, "-=0.25")
+				.to([bg2, text3], 0.5, {autoAlpha:0, delay:2});
+
+			tl.to(text4, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(bg4, 0.5, {autoAlpha:1}, "-=0.25")
+				.to([text4, bg3], 0.5, {autoAlpha:0, delay:2});
+
+			tl.to(text5, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(text5, 0.5, {autoAlpha:0, delay:2});
+
+			tl.to(text6, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(bg6, 0.5, {autoAlpha:1}, "-=0.25")
+				.to(bg4, 0.5, {autoAlpha:0}, "-=0.5")
+				.to([bg6, text6], 0.5, {autoAlpha:0, delay:2})
+				.to(smile, 0.1, {left: 65, top:5, scale: 0.1, ease: Power3.easeInOut}, "-=0.5");
+
+			tl.to(smile, 0.5, {autoAlpha:1, scale:1, left:0, top:0, ease: Power3.easeInOut})
+				.to(logo1, 0.5, {autoAlpha:1})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power3.easeInOut})
+				.to(tc, 0.5, {autoAlpha:1, onComplete:onLoop});
+		}
+		
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+    	<div id="smile" class="layer"></div>
+    	<div id="bg1" class="layer"></div>
+    	<div id="text1" class="layer"></div>
+    	<div id="bg2" class="layer"></div>
+    	<div id="text2" class="layer"></div>
+    	<div id="bg3" class="layer"></div>
+    	<div id="text3" class="layer"></div>
+    	<div id="bg4" class="layer"></div>
+    	<div id="text4" class="layer"></div>
+    	<div id="text5" class="layer"></div>
+    	<div id="bg6" class="layer"></div>
+    	<div id="text6" class="layer"></div>
+     	<div id="logo" class="layer"></div>
+     	<div id="logo1" class="layer"></div>
+     	<div id="cta" class="layer"></div>
+     	<div id="tc" class="layer"></div> 
+    </a>
+	<a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
+  </div>
+</body>
+</html>
