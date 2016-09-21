@@ -83,4 +83,11 @@ body {
   background-image:url(shadow-2.png);
   opacity: 0;
 }
-
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}

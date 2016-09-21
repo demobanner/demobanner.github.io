@@ -13,6 +13,10 @@
 
 		var timeline = new TimelineLite();
 
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
 		function init() {
 			var car1 = document.getElementById("car-1"),
 					car2 = document.getElementById("car-2"),
@@ -50,8 +54,21 @@
 			timeline.to(text2, 0.2, {top: 0, left: 0, width: '100%',height: '100%'}, '-=0.2');
 			timeline.to(text2, 0.3, {alpha:0, delay: 1.5});
 			timeline.to(logo2, 0.3, {alpha:1, left: 0});
-			timeline.to(cta, 0.3, {alpha:1, top: 0});
+			timeline.to(cta, 0.3, {alpha:1, top: 0, onComplete:onLoop});
 
+		}
+
+		function restart() {
+      timeline.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				timeline.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
 		}
 
 		window.onload = init;
@@ -59,10 +76,9 @@
 		</script>
 	</head>
 	<body>
-		<a href="javascript:window.open(window.clickTag);" target="_blank">
-			<div class="global" id="ad">
+		<div class="global" id="ad">
+			<a href="javascript:window.open(window.clickTag);" target="_blank">
 				<div id="stade"></div>
-				<div id="logo"></div>
 				<div id="car-1"></div>
 				<div id="car-2"></div>
 				<div id="shadow"></div>
@@ -72,8 +88,10 @@
 				<div id="text-1"></div>
 				<div id="text-2"></div>
 				<div id="cta"></div>
+				<div id="logo"></div>
 				<div id="logo-2"></div>
-			</div>
-		</a>
+			</a>
+			<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+		</div>
 	</body>
 </html>

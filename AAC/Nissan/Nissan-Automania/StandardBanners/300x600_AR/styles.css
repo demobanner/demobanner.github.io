@@ -23,30 +23,29 @@ body {
   top: 0;
 }
 #stade {
-  background-image:url(bg.jpg);
+  background:url(bg.jpg);
 }
 #bg-2 {
-  background-image:url(bg-2.jpg);
+  background:url(bg-2.jpg);
   opacity: 0;
 }
 #logo {
   background:url(logo.png) center no-repeat;
-  z-index: 1;
 }
 #store-1 {
-  background-image:url(store-1.png);
+  background:url(store-1.png);
   opacity: 1;
 }
 #store-2 {
-  background-image:url(store-2.png);
+  background:url(store-2.png);
   opacity: 0;
 }
 #car-1 {
-  background-image:url(car-1.png);
+  background:url(car-1.png);
   left: -300px;
 }
 #car-2 {
-  background-image:url(car-2.png);
+  background:url(car-2.png);
   opacity: 0;
   left: 25px;
 }
@@ -80,12 +79,19 @@ body {
 }
 #shadow-1 {
   top: 0;
-  background-image:url(shadow-1.png);
+  background:url(shadow-1.png);
   opacity: 1;
 }
 #shadow-2 {
   top: 0;
-  background-image:url(shadow-2.png);
+  background:url(shadow-2.png);
   opacity: 0;
 }
-
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}
