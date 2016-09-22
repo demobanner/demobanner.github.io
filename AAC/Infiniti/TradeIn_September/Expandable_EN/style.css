@@ -28,7 +28,7 @@ body, body * {
   z-index: 100;
   cursor: pointer;
   box-sizing: border-box;
-  border: solid 1px #000;
+  border: solid 1px #fff;
 }
 #expanded-state {
   position: absolute;
@@ -40,7 +40,7 @@ body, body * {
   z-index: 200;
   display: none;
   box-sizing: border-box;
-  border: solid 1px #000;
+  border: solid 1px #fff;
 }
 
 #expanded-exit {
