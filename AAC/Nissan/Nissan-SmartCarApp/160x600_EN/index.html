@@ -37,35 +37,35 @@
 				text_end = document.getElementById("text_end"),
 				tc = document.getElementById("tc");
 
-			tl.to(f1_text, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-				.to(f1_text, 0.3, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2});
+			tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2});
 
-			tl.to(f2_text, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-				.to(finger, 0.4, {left: 0, ease: Power1.easeInOut})
-				.to(f3_lights, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-				.to([f3_lights, f2_text], 0.3, {autoAlpha: 0, ease: Power1.easeInOut, delay: 1.5});
+			tl.to(f2_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(finger, 0.5, {left: 0, ease: Power1.easeInOut})
+				.to(f3_lights, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to([f3_lights, f2_text], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2});
 
-			tl.to(f4_text, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-				.to(finger, 0.4, {top: -20, left: 20, ease: Power1.easeInOut})
-				.to(f5_lights, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-				.to(finger, 0.4, {top: 6, left: 25, ease: Power1.easeInOut, delay: 1})
-				.to([f4_text, f5_lights, car1], 0.3, {autoAlpha: 0, ease: Power3.easeInOut});
+			tl.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(finger, 0.5, {top: -20, left: 20, ease: Power1.easeInOut})
+				.to(f5_lights, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(finger, 0.5, {top: 6, left: 25, ease: Power1.easeInOut, delay: 1})
+				.to([f4_text, f5_lights, car1], 0.5, {autoAlpha: 0, ease: Power3.easeInOut});
 
-			tl.to(f6_text, 0.3, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
-				.to(finger, 0.4, {top: 6, left: 25, ease: Power1.easeInOut})
-				.to(car1, 0.3, {autoAlpha: 0, ease: Power1.easeInOut})
-				.to(mask, 0.3, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.3")
-				.to(finger, 0.4, {top: 22, left: 13, ease: Power1.easeInOut})
-				.to(maps, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-				.to(car2, 0.3, {autoAlpha: 1, ease: Power1.easeInOut, delay: 0.25})
+			tl.to(f6_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+				.to(finger, 0.5, {top: 6, left: 25, ease: Power1.easeInOut})
+				.to(car1, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.5")
+				.to(mask, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.5")
+				.to(finger, 0.5, {top: 22, left: 13, ease: Power1.easeInOut})
+				.to(maps, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(car2, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
 				.to(mask, 0.5, {scale: 5, autoAlpha: 0, ease: Power0.easeInOut}, "-=0.25");
 				
-			tl.to([logo, mobile, maps, f6_text, mask, car2, car1, finger, bg_black], 0.3, {autoAlpha: 0, ease: Power1.easeInOut, delay: 1.5})
-					.to(logo1_end, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-					.to(text_end, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-					.to(cta, 0.3, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-					.to(logo2_end, 0.3, {autoAlpha: 1, ease: Power1.easeInOut})
-					.to(tc, 0.3, {autoAlpha: 1, ease: Power1.easeInOut, onComplete:onLoop});
+			tl.to([logo, mobile, maps, f6_text, mask, car2, car1, finger, bg_black], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2})
+				.to(logo1_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(text_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
+				.to(logo2_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(tc, 0.5, {autoAlpha: 1, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
