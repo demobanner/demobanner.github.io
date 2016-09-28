@@ -47,13 +47,13 @@
 
 			tl.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
 				.to(finger, 0.5, {top: -20, left: 20, ease: Power1.easeInOut})
-				.to(f5_lights, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f5_lights, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.25")
 				.to(finger, 0.5, {top: -7, left: 25, ease: Power1.easeInOut, delay: 2})
 				.to([f4_text, f5_lights, car1], 0.5, {autoAlpha: 0, ease: Power3.easeInOut});
 
 			tl.to(f6_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 				//.to(finger, 0.5, {top: 2, left: 25, ease: Power1.easeInOut})
-				.to(car1, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.5")
+				//.to(car1, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.5")
 				.to(mask, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.5")
 				.to(finger, 0.5, {top: 22, left: 13, ease: Power1.easeInOut})
 				.to(maps, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
