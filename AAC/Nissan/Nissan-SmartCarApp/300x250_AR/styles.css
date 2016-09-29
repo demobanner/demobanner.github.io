@@ -51,16 +51,16 @@ a {
 }
 #mask {
   background: url("mask.png") center no-repeat;
-  transform: scale(3.2);
-  -ms-transform: scale(3.2);
-  -webkit-transform: scale(3.2);
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
 }
 #finger {
   background: url("finger.png") center no-repeat;
-  opacity: 1;
+  opacity: 1;	
   left: 50px;
 }
 #f3_lights {

@@ -11,7 +11,7 @@ a {
 #banner {
   position: absolute;
   width: 298px;
-  height: 248px;
+  height: 598px;
   overflow: hidden;
   border:1px solid black;
   background-color: #F5F5F5;
@@ -21,7 +21,7 @@ a {
   top: 0;
   left: 0;
   width: 298px;
-  height: 248px;
+  height: 598px;
   opacity: 0;
 }
 .click-tag {
@@ -51,9 +51,6 @@ a {
 }
 #mask {
   background: url("mask.png") center no-repeat;
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
@@ -61,7 +58,7 @@ a {
 #finger {
   background: url("finger.png") center no-repeat;
   opacity: 1;
-  left: 50px;
+  left: 56px;
 }
 #f3_lights {
   background: url("f3_lights.jpg") center no-repeat;

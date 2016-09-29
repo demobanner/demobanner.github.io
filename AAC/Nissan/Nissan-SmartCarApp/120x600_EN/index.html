@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=120,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = 'https://www.google.com/';
+		
+		var tl = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {
+			var car1 = document.getElementById("car1"),
+				logo = document.getElementById("logo"),
+				mobile = document.getElementById("mobile"),
+				f1_text = document.getElementById("f1_text"),
+				f2_text = document.getElementById("f2_text"),
+				finger = document.getElementById("finger"),
+				f3_lights = document.getElementById("f3_lights"),
+				f4_text = document.getElementById("f4_text"),
+				f5_lights = document.getElementById("f5_lights"),
+				f6_text = document.getElementById("f6_text"),
+				maps = document.getElementById("maps"),
+				logo1_end = document.getElementById("logo1_end"),
+				logo2_end = document.getElementById("logo2_end"),
+				cta = document.getElementById("cta"),
+				text_end = document.getElementById("text_end"),
+				tc = document.getElementById("tc");
+
+			tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2});
+
+			tl.to(f2_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(finger, 0.5, {left: 0, ease: Power1.easeInOut})
+				.to(f3_lights, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to([f3_lights, f2_text], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2});
+
+			tl.to(finger, 0.5, {top: -15, left: 15, ease: Power1.easeInOut})
+				.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(finger, 0.5, {top: -7, left: 19, ease: Power1.easeInOut}, "+=0.5")
+				.to(f5_lights, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(finger, 0.5, {top: 7, left: 18, ease: Power1.easeInOut, delay: 2})
+				.to([f4_text, f5_lights, car1], 0.5, {autoAlpha: 0, ease: Power3.easeInOut});
+
+			tl.to(finger, 0.5, {top: 18, left: 9, ease: Power1.easeInOut})
+				.to(f6_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(maps, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.5")
+				.to(mask, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=1")
+				.to(car2, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.5")
+				.to(mask, 0.5, {scale: 5, autoAlpha: 0, ease: Power0.easeInOut}, "-=0.25");
+				
+			tl.to([logo, mobile, maps, f6_text, mask, car2, car1, finger, bg_black], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2})
+				.to(logo1_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(text_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
+				.to(logo2_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(tc, 0.5, {autoAlpha: 1, ease: Power1.easeInOut, onComplete:onLoop});
+		}
+		
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+      <div id="bg_black" class="layer"></div>
+      <div id="car1" class="layer"></div>
+      <div id="car2" class="layer"></div>
+      <div id="mask" class="layer"></div>
+      <div id="f3_lights" class="layer"></div>
+      <div id="f5_lights" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="mobile" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="maps" class="layer"></div>
+      <div id="finger" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="f6_text" class="layer"></div>
+      <div id="logo1_end" class="layer"></div>
+      <div id="text_end" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo2_end" class="layer"></div>
+      <div id="tc" class="layer"></div>
+    </a>
+		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
+  </div>
+</body>
+</html>
