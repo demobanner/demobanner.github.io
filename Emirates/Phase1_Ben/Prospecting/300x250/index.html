@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="ad.size" content= "width=300, height=250">
-  <title>ProsBanner 300x250</title>
+  <title>Banner 300x250</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript">
     var clickTag = "http://www.emiratesgroupcareers.com/english/Careers_Overview/Pilot_Jobs/PilotJobs.aspx";
@@ -24,6 +24,7 @@
       <div id="f4_text" class="layer"></div>
       <div id="f5_text1" class="layer"></div>
       <div id="f5_text2" class="layer"></div>
+      <div id="f5_text3" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
     </a>
@@ -41,6 +42,7 @@
         f4_text = document.getElementById('f4_text'), 
         f5_text1 = document.getElementById('f5_text1'),
         f5_text2 = document.getElementById('f5_text2'), 
+        f5_text3 = document.getElementById('f5_text3'), 
         cta = document.getElementById('cta');
 
     function init() {
@@ -64,6 +66,7 @@
 
         .to(f5_text1, 0.5, {autoAlpha: 1})
         .to(f5_text2, 0.5, {autoAlpha: 1})
+        .to(f5_text3, 0.5, {autoAlpha: 1, delay: 0.5})
         .to(cta, 0.5, {autoAlpha: 1});
     }
 
