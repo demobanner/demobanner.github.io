@@ -31,7 +31,7 @@
 				f5_lights = document.getElementById("f5_lights"),
 				f6_text = document.getElementById("f6_text"),
 				maps = document.getElementById("maps"),
-				logo2_end = document.getElementById("logo2_end"),
+				logo_end = document.getElementById("logo_end"),
 				cta = document.getElementById("cta"),
 				text_end = document.getElementById("text_end"),
 				tc = document.getElementById("tc");
@@ -59,9 +59,9 @@
 				.to(mask, 0.5, {scale: 5, autoAlpha: 0, ease: Power0.easeInOut}, "-=0.25");
 				
 			tl.to([mobile, maps, f6_text, mask, car2, car1, finger, bg_black], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2})
+				.to(logo_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
 				.to(text_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
 				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-				.to(logo2_end, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
 				.to(tc, 0.5, {autoAlpha: 1, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
@@ -101,7 +101,7 @@
       <div id="f6_text" class="layer"></div>
       <div id="text_end" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <div id="logo2_end" class="layer"></div>
+      <div id="logo_end" class="layer"></div>
       <div id="tc" class="layer"></div>
     </a>
 		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>

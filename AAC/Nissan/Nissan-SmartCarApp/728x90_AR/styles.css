@@ -82,9 +82,8 @@ a {
 #text_end {
   background: url("text_end.png") center no-repeat;
 }
-#logo2_end {
-  background: url("logo2_end.png") center no-repeat;
-  top: 15px;
+#logo_end {
+  background: url("logo_end.png") center no-repeat;
 }
 #tc {
   background: url("tc.png") center no-repeat;
