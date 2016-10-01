@@ -47,27 +47,36 @@
 
     function init() {
       tl.to(f1_text, 0.5, {autoAlpha: 1})
-        .to(f1_text, 0.5, {autoAlpha: 0}, '+=1.5')
+        .to(f1_text, 0.5, {autoAlpha: 0}, '+=2')
         .to(f1_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f2_bg, 0.5, {autoAlpha: 1}, '-=0.5')
         .to(f2_text, 0.5, {autoAlpha: 1})
-        .to(f2_text, 0.5, {autoAlpha: 0}, '+=1.5')
+        .to(f2_text, 0.5, {autoAlpha: 0}, '+=2')
         .to(f2_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
         .to(f3_text, 0.5, {autoAlpha: 1})
-        .to(f3_text, 0.5, {autoAlpha: 0}, '+=1.5')
+        .to(f3_text, 0.5, {autoAlpha: 0}, '+=2')
         .to(f3_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f4_bg, 0.5, {autoAlpha: 1}, '-=0.5')
         .to(f4_text, 0.5, {autoAlpha: 1})
-        .to(f4_text, 0.5, {autoAlpha: 0}, '+=1.5')
+        .to(f4_text, 0.5, {autoAlpha: 0}, '+=2')
 
         .to(f5_text1, 0.5, {autoAlpha: 1})
         .to(f5_text2, 0.5, {autoAlpha: 1})
-        .to(f5_text3, 0.5, {autoAlpha: 1, delay: 0.5})
-        .to(cta, 0.5, {autoAlpha: 1});
+        .to(f5_text3, 0.5, {autoAlpha: 1})
+        .to(cta, 0.5, {autoAlpha: 1})
+        .to(logo, 2, {autoAlpha: 1, onComplete:replay});
+    }
+
+    var count = 0;
+    function replay() {
+      if (count < 1) {
+        tl.restart();        
+      }
+      count++;
     }
 
     window.onload = init;

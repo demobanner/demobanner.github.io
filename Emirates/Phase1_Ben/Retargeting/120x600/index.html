@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=120, height=600">
+  <title>Banner 120x600</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.emiratesgroupcareers.com/english/Careers_Overview/Pilot_Jobs/PilotJobs.aspx";
+  </script>
+</head>
+<body>
+  <div id="banner">
+    <a id="mainExit" class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f2_bg" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="f3_bg" class="layer"></div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f4_text1" class="layer"></div>
+      <div id="f4_text2" class="layer"></div>
+      <div id="f4_text3" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var tl = new TimelineLite();
+    var f1_bg = document.getElementById('f1_bg'),
+        f1_text = document.getElementById('f1_text'),
+        f2_bg = document.getElementById('f2_bg'),
+        f2_text = document.getElementById('f2_text'), 
+        f3_bg = document.getElementById('f3_bg'),
+        f3_text = document.getElementById('f3_text'), 
+        f4_text1 = document.getElementById('f4_text1'), 
+        f4_text2 = document.getElementById('f4_text2'), 
+        f4_text3 = document.getElementById('f4_text3'),
+        cta = document.getElementById('cta');
+
+    function init() {
+      tl.to(f1_text, 0.5, {autoAlpha: 1})
+        .to(f1_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f1_bg, 0.5, {autoAlpha: 0}, '-=0.5')
+
+        .to(f2_bg, 0.5, {autoAlpha: 1}, '-=0.5')
+        .to(f2_text, 0.5, {autoAlpha: 1})
+        .to(f2_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f2_bg, 0.5, {autoAlpha: 0}, '-=0.5')
+
+        .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
+        .to(f3_text, 0.5, {autoAlpha: 1})
+        .to(f3_text, 0.5, {autoAlpha: 0}, '+=2')
+
+        .to(f4_text1, 0.5, {autoAlpha: 1})
+        .to(f4_text2, 0.5, {autoAlpha: 1})
+        .to(f4_text3, 0.5, {autoAlpha: 1})
+        .to(cta, 0.5, {autoAlpha: 1})
+        .to(logo, 2, {autoAlpha: 1, onComplete:replay});
+    }
+
+    var count = 0;
+    function replay() {
+      if (count < 1) {
+        tl.restart();        
+      }
+      count++;
+    }
+    window.onload = init;
+  </script>
+</body>
+</html>
