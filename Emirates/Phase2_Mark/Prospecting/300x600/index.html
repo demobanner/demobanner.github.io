@@ -67,7 +67,16 @@
         .to(f5_text1, 0.5, {autoAlpha: 1})
         .to(f5_text2, 0.5, {autoAlpha: 1})
         .to(f5_text3, 0.5, {autoAlpha: 1})
-        .to(cta, 0.5, {autoAlpha: 1});
+        .to(cta, 0.5, {autoAlpha: 1})
+		.to(logo, 2, {autoAlpha: 1, onComplete:replay});
+    }
+
+    var count = 0;
+    function replay() {
+      if (count < 1) {
+        tl.restart();        
+      }
+      count++;
     }
 
     window.onload = init;
