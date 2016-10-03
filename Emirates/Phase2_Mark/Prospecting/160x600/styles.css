@@ -25,13 +25,13 @@ body {
   opacity: 0;
 }
 #logo {
-  background: url(logo.png);
+  background: url(logo.png) center no-repeat;
   visibility: visible;
   opacity: 1;
   z-index: 1;
 }
 #f1_bg {
-  background: url(f1_bg.jpg);
+  background: url(f1_bg.jpg) center no-repeat;
   visibility: visible;
   opacity: 1;
 }
@@ -55,6 +55,12 @@ body {
 }
 #f4_text {
   background: url(f4_text.png) center no-repeat;
+}
+#f4_text1 {
+  background: url(f4_text1.png) center no-repeat;
+}
+#f4_text2 {
+  background: url(f4_text2.png) center no-repeat;
 }
 #f5_text1 {
   background: url(f5_text1.png) center no-repeat;

@@ -14,6 +14,7 @@
 <body>
   <div id="banner">
     <a id="mainExit" class="click-tag" href="javascript:window.open(window.clickTag)">
+      <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f2_bg" class="layer"></div>
       <div id="f2_text" class="layer"></div>
@@ -21,6 +22,8 @@
       <div id="f3_text" class="layer"></div>
       <div id="f4_bg" class="layer"></div>
       <div id="f4_text" class="layer"></div>
+      <div id="f4_text1" class="layer"></div>
+      <div id="f4_text2" class="layer"></div>
       <div id="f5_text1" class="layer"></div>
       <div id="f5_text2" class="layer"></div>
       <div id="f5_text3" class="layer"></div>
@@ -30,37 +33,46 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
-    var tl = new TimelineMax();
-    var f1_text = document.getElementById('f1_text'),
-        f2_bg   = document.getElementById('f2_bg'),
-        f2_text = document.getElementById('f2_text'),
-        f3_bg   = document.getElementById('f3_bg'),
-        f3_text = document.getElementById('f3_text'),
-        f4_bg   = document.getElementById('f4_bg'),
-        f4_text = document.getElementById('f4_text'),
+    var tl = new TimelineLite();
+    var f1_bg = document.getElementById('f1_bg'),
+        f1_text = document.getElementById('f1_text'),
+        f2_bg = document.getElementById('f2_bg'),
+        f2_text = document.getElementById('f2_text'), 
+        f3_bg = document.getElementById('f3_bg'),
+        f3_text = document.getElementById('f3_text'), 
+        f4_bg = document.getElementById('f4_bg'),
+        f4_text = document.getElementById('f4_text'), 
+        f4_text1 = document.getElementById('f4_text1'), 
+        f4_text2 = document.getElementById('f4_text2'), 
         f5_text1 = document.getElementById('f5_text1'),
-        f5_text2 = document.getElementById('f5_text2'),
-        f5_text3 = document.getElementById('f5_text3'),
+        f5_text2 = document.getElementById('f5_text2'), 
+        f5_text3 = document.getElementById('f5_text3'), 
         cta = document.getElementById('cta');
 
     function init() {
       tl.to(f1_text, 0.5, {autoAlpha: 1})
         .to(f1_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f1_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f2_bg, 0.5, {autoAlpha: 1}, '-=0.5')
         .to(f2_text, 0.5, {autoAlpha: 1})
         .to(f2_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f2_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
         .to(f3_text, 0.5, {autoAlpha: 1})
         .to(f3_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f3_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f4_bg, 0.5, {autoAlpha: 1}, '-=0.5')
-        .to(f4_text, 0.5, {autoAlpha: 1})
-        .to(f4_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to([f4_text,f4_text1] , 0.5, {autoAlpha: 1})
+        .to(f4_text1, 0.5, {autoAlpha: 0}, '+=0.5')
+        .to(f4_text2, 0.5, {autoAlpha: 1})
+        .to([f4_text,f4_text2], 0.5, {autoAlpha: 0}, '+=2')
 
         .to(f5_text1, 0.5, {autoAlpha: 1})
         .to(f5_text2, 0.5, {autoAlpha: 1})
+        .to(f5_text2, 0.5, {autoAlpha: 0}, '+=1.5')
         .to(f5_text3, 0.5, {autoAlpha: 1})
         .to(cta, 0.5, {autoAlpha: 1})
         .to(logo, 2, {autoAlpha: 1, onComplete:replay});

@@ -56,6 +56,12 @@ body {
 #f4_text {
   background: url(f4_text.png) center no-repeat;
 }
+#f4_text1 {
+  background: url(f4_text1.png) center no-repeat;
+}
+#f4_text2 {
+  background: url(f4_text2.png) center no-repeat;
+}
 #f5_text1 {
   background: url(f5_text1.png) center no-repeat;
 }

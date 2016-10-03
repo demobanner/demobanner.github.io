@@ -9,7 +9,6 @@ body {
   width: 298px;
   height: 598px;
   border: 1px solid #000000;
-  background: url(frame1.jpg) center no-repeat;
 }
 .click-tag {
   position: absolute;
@@ -29,38 +28,50 @@ body {
   background: url(logo.png) center no-repeat;
   visibility: visible;
   opacity: 1;
+  z-index: 1;
+}
+#f1_bg {
+  background: url(f1_bg.jpg) center no-repeat;
+  visibility: visible;
+  opacity: 1;
 }
 #f1_text {
-  background: url(frame1-text.png) center no-repeat;
+  background: url(f1_text.png) center no-repeat;
 }
 #f2_bg {
-  background: url(frame2.jpg) center no-repeat;
+  background: url(f2_bg.jpg) center no-repeat;
 }
 #f2_text {
-  background: url(frame2-text.png) center no-repeat;
+  background: url(f2_text.png) center no-repeat;
 }
 #f3_bg {
-  background: url(frame3.jpg) center no-repeat;
+  background: url(f3_bg.jpg) center no-repeat;
 }
 #f3_text {
-  background: url(frame3-text.png) center no-repeat;
+  background: url(f3_text.png) center no-repeat;
 }
 #f4_bg {
-  background: url(last-bg.png) center no-repeat;
+  background: url(f4_bg.png) center no-repeat;
 }
 #f4_text {
-  background: url(frame4-text.png) center no-repeat;
+  background: url(f4_text.png) center no-repeat;
+}
+#f4_text1 {
+  background: url(f4_text1.png) center no-repeat;
+}
+#f4_text2 {
+  background: url(f4_text2.png) center no-repeat;
 }
 #f5_text1 {
-  background: url(logo-text.png) center no-repeat;
+  background: url(f5_text1.png) center no-repeat;
 }
 #f5_text2 {
-  background: url(last-text.png) center no-repeat;
+  background: url(f5_text2.png) center no-repeat;
 }
 #f5_text3 {
-  background: url(last-text-1.png) center no-repeat;
+  background: url(f5_text3.png) center no-repeat;
 }
 #cta {
-  background: url(btn-apply.png) center no-repeat;
+  background: url(cta.png) center no-repeat;
 }
 

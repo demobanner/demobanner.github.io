@@ -22,6 +22,8 @@
       <div id="f3_text" class="layer"></div>
       <div id="f4_bg" class="layer"></div>
       <div id="f4_text" class="layer"></div>
+      <div id="f4_text1" class="layer"></div>
+      <div id="f4_text2" class="layer"></div>
       <div id="f5_text1" class="layer"></div>
       <div id="f5_text2" class="layer"></div>
       <div id="f5_text3" class="layer"></div>
@@ -40,6 +42,8 @@
         f3_text = document.getElementById('f3_text'), 
         f4_bg = document.getElementById('f4_bg'),
         f4_text = document.getElementById('f4_text'), 
+        f4_text1 = document.getElementById('f4_text1'), 
+        f4_text2 = document.getElementById('f4_text2'), 
         f5_text1 = document.getElementById('f5_text1'),
         f5_text2 = document.getElementById('f5_text2'), 
         f5_text3 = document.getElementById('f5_text3'), 
@@ -61,11 +65,14 @@
         .to(f3_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f4_bg, 0.5, {autoAlpha: 1}, '-=0.5')
-        .to(f4_text, 0.5, {autoAlpha: 1})
-        .to(f4_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to([f4_text,f4_text1] , 0.5, {autoAlpha: 1})
+        .to(f4_text1, 0.5, {autoAlpha: 0}, '+=0.5')
+        .to(f4_text2, 0.5, {autoAlpha: 1})
+        .to([f4_text,f4_text2], 0.5, {autoAlpha: 0}, '+=2')
 
         .to(f5_text1, 0.5, {autoAlpha: 1})
         .to(f5_text2, 0.5, {autoAlpha: 1})
+        .to(f5_text2, 0.5, {autoAlpha: 0}, '+=1.5')
         .to(f5_text3, 0.5, {autoAlpha: 1})
         .to(cta, 0.5, {autoAlpha: 1})
         .to(logo, 2, {autoAlpha: 1, onComplete:replay});
