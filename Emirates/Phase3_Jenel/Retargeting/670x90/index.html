@@ -38,8 +38,8 @@
         f2_text = document.getElementById('f2_text'),
         f3_bg = document.getElementById('f3_bg'),
         f3_text = document.getElementById('f3_text'),
-        f3_text1 = document.getElementById('f3_text1'), 
-        f3_text2 = document.getElementById('f3_text2'), 
+        f3_text1 = document.getElementById('f3_text1'),
+        f3_text2 = document.getElementById('f3_text2'),
         f4_text1 = document.getElementById('f4_text1'),
         f4_text2 = document.getElementById('f4_text2'),
         f4_text3 = document.getElementById('f4_text3'),
@@ -57,7 +57,7 @@
 
         .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
         .to([f3_text,f3_text1] , 0.5, {autoAlpha: 1})
-        .to(f3_text1, 0.5, {autoAlpha: 0}, '+=0.5')
+        .to(f3_text1, 0.5, {autoAlpha: 0}, '+=2')
         .to(f3_text2, 0.5, {autoAlpha: 1})
         .to([f3_text,f3_text2], 0.5, {autoAlpha: 0}, '+=2')
 
@@ -72,7 +72,7 @@
     var count = 0;
     function replay() {
       if (count < 1) {
-        tl.restart();        
+        tl.restart();
       }
       count++;
     }
