@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#img {
+  background: url("img.png") center no-repeat;
+  
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+  
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top:15px;
+}
+#cta1 {
+  background: url("cta1.png") center no-repeat;
+}
+

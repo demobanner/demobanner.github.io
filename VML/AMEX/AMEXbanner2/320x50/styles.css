@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 318px;
+  height: 48px;
+  overflow: hidden;
+  border:1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 318px;
+  height: 48px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#text1 {
+  background: url("text1.png") center no-repeat;
+  
+}
+#download{
+  background: url("download.png") center no-repeat;
+  top:10px;
+}
+
+
