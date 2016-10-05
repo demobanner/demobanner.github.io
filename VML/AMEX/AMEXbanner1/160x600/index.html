@@ -20,15 +20,21 @@
 				text = document.getElementById("text"),
 				cta_text = document.getElementById("cta_text");
 
-			tl.to(image, 0.5, {autoAlpha:1})
-				.to(text, 0.5, {autoAlpha:1}, "+=1")
-				.to(cta_text, 0.5, {autoAlpha:1, top:0, ease: Power4.easeOut})
-				.to(cta_text, 0.3, {autoAlpha:0}, "+=1")
-				.to(cta_text, 0.3, {autoAlpha:1})
-				.to(cta_text, 0.3, {autoAlpha:0}, "+=0.5")
-				.to(cta_text, 0.3, {autoAlpha:1})
-				.to(cta_text, 0.3, {autoAlpha:0}, "+=0.5")
-				.to(cta_text, 0.3, {autoAlpha:1});
+			tl.to(image, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(text, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta_text, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta_text, 0.2, {autoAlpha:0}, "+=0.2")
+				.to(cta_text, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta_text, 0.2, {autoAlpha:0}, "+=0.2")
+				.to(cta_text, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta_text, 0.2, {autoAlpha:0}, "+=0.2")
+				.to(cta_text, 0.2, {autoAlpha:1}, "+=0.3")
+				.to([image,text,cta_text], 0.2, {autoAlpha:0, onComplete:loop}, "+=0.3");
+		}
+
+		function loop() {
+			
+			tl.restart();
 		}
 
 		window.onload = init;

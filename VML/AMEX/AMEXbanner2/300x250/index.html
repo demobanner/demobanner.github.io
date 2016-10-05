@@ -11,7 +11,7 @@
 	<script src="CSSPlugin.min.js"></script>
 	<link rel="stylesheet" href="styles.css"/>
 	<script type="text/javascript">
-		var clickTag = 'https://www.google.com/';
+		var clickTag = '';
 		
 		var tl = new TimelineLite();
 		
@@ -25,20 +25,22 @@
 				
 
 			  
-			tl.to(img, 0.5, {autoAlpha: 1})
-			  .to(text1, 0.5, {autoAlpha: 1})
-			  .to(text2, 0.5, {autoAlpha: 1},"+=1")
-			  .to(cta, 0.5, {autoAlpha: 1,top:0, ease: Power4.easeInOut})
-			  .to(cta1, 0.3, {autoAlpha: 1},"+=1")
-			  .to(cta1, 0.3, {autoAlpha: 0},"+=0.5")	  
-			  .to(cta1, 0.3, {autoAlpha: 1})
-			  .to(cta1, 0.3, {autoAlpha: 0},"+=0.5")		  
-			  .to(cta1, 0.3, {autoAlpha: 1})
-			  .to(cta1, 0.3, {autoAlpha: 0},"+=0.5")
-			 
+			tl.to([img,text1], 0.2, {autoAlpha: 1}, "+=0.3")
+			  .to([text2,cta], 0.2, {autoAlpha: 1}, "+=0.3")
+			  .to(cta1, 0.2, {autoAlpha:1}, "+=0.3")
+			  .to(cta1, 0.2, {autoAlpha:0}, "+=0.3")
+			  .to(cta1, 0.2, {autoAlpha:1}, "+=0.3")
+			  .to(cta1, 0.2, {autoAlpha:0}, "+=0.3")
+			  .to(cta1, 0.2, {autoAlpha:1}, "+=0.3")
+			  .to(cta1, 0.2, {autoAlpha:0}, "+=0.3")
+			  .to([img,text1,text2,cta], 0.2, {autoAlpha:0, onComplete:loop}, "+=0.3");
+		
+		}	
+        function loop() {
 			
-
+			tl.restart();
 		}
+		
 		
 		window.onload = init;
 		

@@ -24,16 +24,20 @@
 				
 
 			
-			tl.to(text1, 0.5, {autoAlpha: 1})	
-			  .to(download, 0.5, {autoAlpha: 1,top:0, ease: Power4.easeInOut})
-			  .to(download, 0.3, {autoAlpha: 0},"+=1")
-			  .to(download, 0.3, {autoAlpha: 1})
-			  .to(download, 0.3, {autoAlpha: 0},"+=0.5")
-			  .to(download, 0.3, {autoAlpha: 1})
-			  .to(download, 0.3, {autoAlpha: 0},"+=0.5")
-			  .to(download, 0.3, {autoAlpha: 1})
-
+			tl.to(text1, 0.2, {autoAlpha: 1},"+=0.3")	
+			  .to(download, 0.2, {autoAlpha: 1},"+=0.3")
+			  .to(download, 0.2, {autoAlpha: 0},"+=0.2")
+			  .to(download, 0.2, {autoAlpha: 1},"+=0.3")
+			  .to(download, 0.2, {autoAlpha: 0},"+=0.2")
+			  .to(download, 0.2, {autoAlpha: 1},"+=0.3")
+			  .to(download, 0.2, {autoAlpha: 0},"+=0.2")
+			  .to(download, 0.2, {autoAlpha: 1},"+=0.3")
+              .to([text1,download], 0.2, {autoAlpha:0, onComplete:loop}, "+=0.3");
 			
+        function loop() {
+			
+			tl.restart();
+		}
 
 		}
 		

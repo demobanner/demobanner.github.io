@@ -21,15 +21,20 @@
 				cta1 = document.getElementById("cta1"),
 				cta2 = document.getElementById("cta2");
 
-			tl.to(image, 0.5, {autoAlpha:1})
-				.to(text, 0.5, {autoAlpha:1}, "+=1")
-				.to(cta1, 0.5, {autoAlpha:1, top:0, ease: Power4.easeOut})
-				.to(cta2, 0.3, {autoAlpha:1}, "+=1")
-				.to(cta2, 0.3, {autoAlpha:0})
-				.to(cta2, 0.3, {autoAlpha:1}, "+=0.5")
-				.to(cta2, 0.3, {autoAlpha:0})
-				.to(cta2, 0.3, {autoAlpha:1}, "+=0.5")
-				.to(cta2, 0.3, {autoAlpha:0});
+			tl.to(image, 0.2, {autoAlpha:1}, "+=0.3")
+				.to([text,cta1], 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta2, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta2, 0.2, {autoAlpha:0}, "+=0.3")
+				.to(cta2, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta2, 0.2, {autoAlpha:0}, "+=0.3")
+				.to(cta2, 0.2, {autoAlpha:1}, "+=0.3")
+				.to(cta2, 0.2, {autoAlpha:0}, "+=0.3")
+				.to([image,text,cta1], 0.2, {autoAlpha:0, onComplete:loop}, "+=0.3");
+		}
+		
+		function loop() {
+			
+			tl.restart();
 		}
 
 		window.onload = init;
