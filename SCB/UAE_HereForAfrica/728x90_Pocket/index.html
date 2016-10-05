@@ -22,6 +22,7 @@
 		function init() {
 			var logo = document.getElementById("logo"),
 				bg = document.getElementById("bg"),
+				bg2 = document.getElementById("bg2"),
 				text1 = document.getElementById("text1"),
 				text2 = document.getElementById("text2"),
 				text3 = document.getElementById("text3"),
@@ -41,7 +42,12 @@
 			  .to(text3, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
 			  .to(bg, 0.5, {scale: 0.51, top: -56, left: -493, ease: Power1.easeInOut})
 			  .to(text4, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.1")
-			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop}) ;
+			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
+
+			  .to(text4, 0.5, {autoAlpha: 0, ease: Power0.easeInOut, delay: 2})
+			  .to(bg2, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "-=0.5")
+			  .to(text1, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop});
 		}
 
 		function restart() {
@@ -65,6 +71,8 @@
   <div id="banner">
     <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
       <div id="bg" class="layer"></div>
+      <div id="bg2" class="layer"></div>
+      <div id="shadow" class="layer"></div>
       <div id="text1" class="layer"></div>
       <div id="text2" class="layer"></div>
       <div id="text3" class="layer"></div>

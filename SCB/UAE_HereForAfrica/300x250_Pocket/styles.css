@@ -39,13 +39,16 @@ a {
   background: url("shadow.png") center no-repeat;
   opacity: 0.6;
 }
-#bg {
+#bg, #bg_end {
   background: url("bg.jpg") center no-repeat;
   opacity: 1;
   width: 969px;
   height: 634px;
   left: -540px;
   top: -104px;
+}
+#bg_end{
+  opacity: 0;
 }
 #text1 {
   background: url("text1.png") center no-repeat;

@@ -43,6 +43,14 @@ a {
   top: -189px;
   left: -392px;
 }
+#bg2 {
+  background: url("bg.jpg") center no-repeat;
+  width: 1510px;
+  height: 360px;
+  opacity: 0;
+  top: -189px;
+  left: -392px;
+}
 #shadow {
   background: url("shadow.png") center no-repeat;
 }

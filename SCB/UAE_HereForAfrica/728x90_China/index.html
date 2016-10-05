@@ -21,10 +21,10 @@
 		
 		function init() {
 			var logo = document.getElementById("logo"),
+				bg2 = document.getElementById("bg2"),
 				bg = document.getElementById("bg"),
 				bg_end = document.getElementById("bg_end"),
 				shadow1 = document.getElementById("shadow1"),
-				shadow2 = document.getElementById("shadow2"),
 				text1 = document.getElementById("text1"),
 				text2 = document.getElementById("text2"),
 				text3 = document.getElementById("text3"),
@@ -34,19 +34,24 @@
 			tl.to(text1, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
 
 			  .to(text1, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
-		   	  .to(bg, 0.8, {scale: 1, top: -559, left: -486, ease: Power1.easeInOut})
+		   	  .to(bg, 1.2, {scale: 1, top: -559, left: -486})
 			  .to(text2, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.1")
 
 			  .to(text2, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
 			  .to(bg, 0.6, {scale: 0.44,top: -310, left: -434, ease: Power1.easeInOut})
-			  .to(shadow1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.5")
+			  .to(shadow, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.5")
 			  .to(text3, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.1")
 
 			  .to(text3, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
 			  .to(bg, 0.5, {scale: 0.38, top: -264, left: -495, ease: Power1.easeInOut})
 			  .to(bg_end, 0.3, {autoAlpha: 1, ease: Power2.easeInOut}, "-=0.2")
 			  .to(text4, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.1")
-			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop}) ;
+			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
+
+			  .to([shadow, text4], 0.5, {autoAlpha: 0, ease: Power0.easeInOut, delay: 2})
+			  .to(bg2, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "-=0.5")
+		      .to(text1, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
@@ -71,8 +76,8 @@
     <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
       <div id="bg" class="layer"></div>
       <div id="bg_end" class="layer"></div>
-      <div id="shadow1" class="layer"></div>
-      <div id="shadow2" class="layer"></div>
+      <div id="bg2" class="layer"></div>
+      <div id="shadow" class="layer"></div>
       <div id="text1" class="layer"></div>
       <div id="text2" class="layer"></div>
       <div id="text3" class="layer"></div>

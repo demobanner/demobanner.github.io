@@ -43,6 +43,18 @@ a {
   top: -27px;
   left: -434px;
 }
+#bg2 {
+  background: url("bg.jpg") center no-repeat;
+  width: 1507px;
+  height: 214px;
+  opacity: 0;
+  top: -27px;
+  left: -434px;
+}
+#shadow {
+  background: url("shadow.png") center no-repeat;
+  opacity: 1;
+}
 #text1 {
   background: url("text1.png") center no-repeat;
 }

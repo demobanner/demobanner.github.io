@@ -49,6 +49,9 @@ a {
   top: -171px;
   left: -42px;
 }
+#bg4 {
+  background: url("bg1.jpg") center no-repeat;
+}
 #shadow {
   background: url("shadow.png") center no-repeat;
 }
