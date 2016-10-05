@@ -42,10 +42,10 @@ a {
 #bg,#bg_end {
   background: url("bg.jpg") center no-repeat;
   opacity: 1;
-  width: 556px;
-  height: 491px;
-  left: -123px;
-  top: 50px;
+  width: 943px;
+  height: 373px;
+  left: -298px;
+  top: -10px;
 }
 #bg_end{
   opacity: 0;
