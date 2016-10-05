@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {
+			var logo = document.getElementById("logo"),
+				logo2 = document.getElementById("logo2"),
+				logo3 = document.getElementById("logo3"),
+				car2 = document.getElementById("car2"),
+				text2 = document.getElementById("text2"),
+				car3 = document.getElementById("car3"),
+				text3 = document.getElementById("text3"),
+				img1 = document.getElementById("img1"),
+				img2 = document.getElementById("img2"),
+				img3 = document.getElementById("img3"),
+				tc1 = document.getElementById("tc1"),
+				smile = document.getElementById("smile"),
+				logo_nissan = document.getElementById("logo-nissan"),
+				cta = document.getElementById("cta"),
+				tc2 = document.getElementById("tc2");
+
+			tl.to(smile, 0.5, {autoAlpha:1, left: 47, top: -3, scale: 0.9, ease: Power2.easeInOut})
+			  .to([smile, logo_nissan], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2})
+
+			  .to(car2, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+			  .to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power1.easeInOut})
+			  .to([text2,car2], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2})
+
+			  .to(car3, 0.5, {autoAlpha: 1, left: 0, ease: Power1.easeInOut}, "-=0.25")
+			  .to(text3, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+			  .to([text3,car3], 0.5, {autoAlpha: 0, ease: Power1.easeInOut, delay: 2})
+
+			  .to(img1, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut})
+			  .to(tc1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+			  .to(img1, 0.5, {autoAlpha: 0},"+=2")
+
+			  .to(img2, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut})
+			  .to(img2, 0.5, {autoAlpha: 0},"+=2")	
+
+			  .to(img3, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeInOut})
+			  .to([tc1,img3,logo], 0.5, {autoAlpha: 0},"+=2")		
+
+        .to(logo_nissan, 0.1, {scale: 1, top: 0, left: 0})
+			  .to(logo_nissan, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+			  .to(logo3, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+			  .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeInOut})
+			  .to(tc2, 0.5, {autoAlpha: 1, ease: Power1.easeInOut, onComplete:onLoop});
+		}
+		
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+      <div id="car2" class="layer"></div>
+      <div id="text2" class="layer"></div>
+      <div id="car3" class="layer"></div>
+      <div id="text3" class="layer"></div>
+      <div id="img1" class="layer"></div>
+      <div id="img2" class="layer"></div>
+      <div id="img3" class="layer"></div>
+      <div id="tc1" class="layer"></div>
+      <div id="smile" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="logo-nissan" class="layer"></div>
+      <div id="logo3" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="tc2" class="layer"></div>
+    </a>
+		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="btn-replay.png"></a>
+  </div>
+</body>
+</html>
