@@ -49,7 +49,7 @@ a {
   height: 360px;
   opacity: 0;
   top: -189px;
-  left: -392px;
+  left: -442px;
 }
 #shadow {
   background: url("shadow.png") center no-repeat;
@@ -69,6 +69,7 @@ a {
 #cta {
   background: url("cta.png") center no-repeat;
   top: 50px;
+	left: 20px;
 }
 #btn-replay {
   position: absolute;
