@@ -47,13 +47,6 @@ a {
   left: -303px;
   top: -25px;
 }
-#bg2 {
-  background: url("bg.jpg") center no-repeat;
-  width: 829px;
-  height: 515px;
-  left: -303px;
-  top: -25px;
-}
 #text1 {
   background: url("text1.png") center no-repeat;
 }
