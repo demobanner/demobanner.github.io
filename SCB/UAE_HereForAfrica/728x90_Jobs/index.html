@@ -24,12 +24,9 @@
 				bg1 = document.getElementById("bg1"),
 				bg2 = document.getElementById("bg2"),
 				bg3 = document.getElementById("bg3"),
-				bg4 = document.getElementById("bg4"),
-				shadow = document.getElementById("shadow"),
 				text1 = document.getElementById("text1"),
 				text2 = document.getElementById("text2"),
 				text3 = document.getElementById("text3"),
-				text4 = document.getElementById("text4"),
 				cta = document.getElementById("cta");
 
 			tl.to(text1, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
@@ -41,20 +38,9 @@
 
 		      .to(text2, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
   	          .to(bg2, 0.5, {autoAlpha: 0, ease: Power0.easeInOut}, '-=0.5')
-  	          .to(shadow, 0.1, {autoAlpha: 1, ease: Power0.easeInOut}, "-=0.5")
               .to(bg3, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, '-=0.5')
 			  .to(text3, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-
-			  .to(text3, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
-			  .to(bg3, 0.5, {scale: 0.69, top: -137, left: -155, ease: Power1.easeInOut}, "-=0.5")
-			  .to(shadow, 0.5, {left: -150, ease: Power1.easeInOut}, "-=0.5")
-			  .to(text4, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.1")
-			  .to(cta, 0.5, {autoAlpha: 1, top: 20, ease: Power3.easeInOut})
-
-		  	  .to(text4, 0.5, {autoAlpha: 0, ease: Power0.easeInOut, delay: 2})
-			  .to(bg4, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "-=0.5")
-			  .to(text1, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
-			  .to(cta, 0.5, {autoAlpha: 1, top: 20, ease: Power3.easeInOut, onComplete:onLoop});
+			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop});
 		}
 
 		function restart() {
@@ -80,12 +66,9 @@
       <div id="bg1" class="layer"></div>
       <div id="bg2" class="layer"></div>
       <div id="bg3" class="layer"></div>
-      <div id="bg4" class="layer"></div>
-      <div id="shadow" class="layer"></div>
       <div id="text1" class="layer"></div>
       <div id="text2" class="layer"></div>
       <div id="text3" class="layer"></div>
-      <div id="text4" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
     </a>

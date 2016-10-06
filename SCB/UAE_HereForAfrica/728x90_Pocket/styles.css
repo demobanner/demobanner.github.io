@@ -41,15 +41,7 @@ a {
   height: 214px;
   opacity: 1;
   top: -27px;
-  left: -434px;
-}
-#bg2 {
-  background: url("bg.jpg") center no-repeat;
-  width: 1507px;
-  height: 214px;
-  opacity: 0;
-  top: -27px;
-  left: -464px;
+  left: -472px;
 }
 #shadow {
   background: url("shadow.png") center no-repeat;
@@ -64,13 +56,9 @@ a {
 #text3 {
   background: url("text3.png") center no-repeat;
 }
-#text4 {
-  background: url("text4.png") center no-repeat;
-}
 #cta {
   background: url("cta.png") center no-repeat;
   top: 50px;
-	left: 20px;
 }
 #btn-replay {
   position: absolute;

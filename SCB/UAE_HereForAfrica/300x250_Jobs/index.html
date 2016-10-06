@@ -43,17 +43,6 @@
         .to(bg3, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "-=0.5")
         .to(shadow, 0.5, {autoAlpha: 0.6, ease: Power0.easeInOut}, "-=0.5")
 			  .to(text3, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
-        .to(text3, 0.5, {autoAlpha: 0, ease: Power0.easeInOut, delay: 2})
-
-        .to(bg3, 0.5, {scale: 0.8, x:22, y: 20, rotation: 0.01, ease: Power2.easeInOut})
-        .to(shadow, 0.5, {autoAlpha: 0.6, ease: Power2.easeInOut}, "-=0.5")
-        .to(text4, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "-=0.1")
-        .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-
-        .to(text4, 0.5, {autoAlpha: 0, ease: Power0.easeInOut, delay: 2})
-        .to(bg3, 0.5, {autoAlpha: 0, ease: Power0.easeInOut}, "-=0.5")
-        .to(bg1, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "-=0.5")
-        .to(text1, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
         .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop});
 
 

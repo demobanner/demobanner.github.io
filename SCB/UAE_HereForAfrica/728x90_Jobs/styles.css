@@ -44,16 +44,6 @@ a {
 }
 #bg3 {
   background: url("bg3.jpg") center no-repeat;
-  width: 956px;
-  height: 326px;
-  top: -171px;
-  left: -42px;
-}
-#bg4 {
-  background: url("bg1.jpg") center no-repeat;
-}
-#shadow {
-  background: url("shadow.png") center no-repeat;
 }
 #text1 {
   background: url("text1.png") center no-repeat;
@@ -63,9 +53,6 @@ a {
 }
 #text3 {
   background: url("text3.png") center no-repeat;
-}
-#text4 {
-  background: url("text4.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;
