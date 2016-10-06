@@ -70,7 +70,7 @@ a {
   transform: scale(0.1);
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
-  left:-50px;
+  left:-100px;
 }
 #smile2 {
   background: url("smile2.png") center no-repeat;
