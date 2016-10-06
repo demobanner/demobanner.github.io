@@ -43,14 +43,6 @@ a {
   top: -5px;
   left: -319px;
 }
-#bg2 {
-  background: url("bg.jpg") center no-repeat;
-  width: 1488px;
-  height: 202px;
-  opacity: 0;
-  top: -5px;
-  left: -319px;
-}
 #text1 {
   background: url("text1.png") center no-repeat;
 }
@@ -59,9 +51,6 @@ a {
 }
 #text3 {
   background: url("text3.png") center no-repeat;
-}
-#text4 {
-  background: url("text4.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;

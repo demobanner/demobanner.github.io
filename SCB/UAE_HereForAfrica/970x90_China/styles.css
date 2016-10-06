@@ -46,20 +46,6 @@ a {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
-#bg2 {
-  background: url("bg.jpg") center no-repeat;
-  width: 2163px;
-  height: 562px;
-  opacity: 0;
-  top: -15px;
-  left: -663px;
-  -ms-transform: scale(0.95); 
-  -webkit-transform: scale(0.95);
-  transform: scale(0.95);
-}
-#bg_end {
-  background: url("bg_end.jpg") center no-repeat;
-}
 #text1 {
   background: url("text1.png") center no-repeat;
 }
@@ -68,9 +54,6 @@ a {
 }
 #text3 {
   background: url("text3.png") center no-repeat;
-}
-#text4 {
-  background: url("text4.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;

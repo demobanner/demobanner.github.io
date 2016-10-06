@@ -41,15 +41,7 @@ a {
   height: 360px;
   opacity: 1;
   top: -189px;
-  left: -392px;
-}
-#bg2 {
-  background: url("bg.jpg") center no-repeat;
-  width: 1510px;
-  height: 360px;
-  opacity: 0;
-  top: -189px;
-  left: -442px;
+  left: -417px;
 }
 #shadow {
   background: url("shadow.png") center no-repeat;
@@ -62,9 +54,6 @@ a {
 }
 #text3 {
   background: url("text3.png") center no-repeat;
-}
-#text4 {
-  background: url("text4.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;

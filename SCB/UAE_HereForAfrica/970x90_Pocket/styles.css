@@ -43,14 +43,6 @@ a {
   top: -24px;
   left: -319px;
 }
-#bg2 {
-  background: url("bg.jpg") center no-repeat;
-  width: 1507px;
-  height: 214px;
-  opacity: 0;
-  top: -24px;
-  left: -319px;
-}
 #shadow {
   background: url("shadow.png") center no-repeat;
   opacity: 1;
@@ -63,9 +55,6 @@ a {
 }
 #text3 {
   background: url("text3.png") center no-repeat;
-}
-#text4 {
-  background: url("text4.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;
