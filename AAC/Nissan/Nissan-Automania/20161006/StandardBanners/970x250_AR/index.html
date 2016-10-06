@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="ad.size" content="width=970,height=250" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>Nissan</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script type="text/javascript">
+		var clickTag = ""; //This value is used by the ad server and should not be changed
+		var timeline = new TimelineLite();
+
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
+		function init() {
+			var car1 = document.getElementById("car-1"),
+					car2 = document.getElementById("car-2"),
+					store1 = document.getElementById("store-1"),
+					store2 = document.getElementById("store-2"),
+					text1 = document.getElementById("text-1"),
+					text2 = document.getElementById("text-2"),
+					text3 = document.getElementById("text-3"),
+					cta = document.getElementById("cta"),
+					logo2 = document.getElementById("logo-2"),
+					stade = document.getElementById("stade"),
+					shadow1 = document.getElementById("shadow-1"),
+					shadow2 = document.getElementById("shadow-2");
+
+			timeline.to(car1, 2, {left:350, width: 0, ease: Power2.easeOut});
+			timeline.to([store1, shadow1], 0, {alpha:1});
+			timeline.to([store1, shadow1], 0, {alpha:0});
+			timeline.to([store2, shadow2], 0, {alpha:1});
+			timeline.to([store2, shadow2], 0, {alpha:0, delay:0.3});
+			timeline.to([store1, shadow1], 0, {alpha:1});
+			timeline.to([store1, shadow1], 0, {alpha:0, delay:0.3});
+			timeline.to([store2, shadow2], 0, {alpha:1});
+			timeline.to([store2, shadow2], 0, {alpha:0, delay:0.3});
+			timeline.to([store1, shadow1], 0, {alpha:1});
+			timeline.to([store1, shadow1], 0, {alpha:0, delay:0.3});
+			timeline.to([store2, shadow2], 0, {alpha:1});
+			timeline.to([store2, shadow2], 0, {alpha:0, delay:0.3});
+			timeline.to([store1, shadow1], 0, {alpha:1});
+			timeline.to([store1, shadow1], 0, {alpha:0, delay:0.3});
+			timeline.to([store2, shadow2], 0, {alpha:1});
+
+			timeline.to(car2, 0.1, {alpha:1});
+			timeline.to(car2, 2, {left:600, ease: Power2.easeOut});
+			timeline.to(text1, 0.5, {alpha:1, top: 0,  left: 0, width: '100%',height: '100%', ease: Elastic.easeOut.config(1, 0.5)});
+			timeline.to(text1, 0, {alpha:0, delay: 2.5});
+			timeline.to(text2, 0.2, {alpha:1, top: 0, left: 0, width: '100%',height: '100%'});
+			timeline.to(text2, 0.3, {alpha:0, delay: 2});
+			timeline.to(text3, 0.3, {alpha: 1, top: 0});
+			timeline.to(text3, 0.3, {alpha: 0, delay: 2});
+			timeline.to(logo2, 0.3, {alpha:1, left: 0});
+			timeline.to(cta, 0.3, {alpha:1, top: 0, onComplete:onLoop});
+		}
+		
+		function restart() {
+      timeline.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				timeline.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+
+		window.onload = init;
+
+		</script>
+	</head>
+	<body>
+		<div class="global" id="ad">
+			<a href="javascript:window.open(window.clickTag);" target="_blank">
+				<div id="stade"></div>
+				<div id="car-1"></div>
+				<div id="car-2"></div>
+				<div id="store-1"></div>
+				<div id="shadow-1"></div>
+				<div id="store-2"></div>
+				<div id="shadow-2"></div>
+				<div id="text-1"></div>
+				<div id="text-2"></div>
+				<div id="text-3"></div>
+				<div id="cta"></div>
+				<div id="logo"></div>
+				<div id="logo-2"></div>
+			</a>
+			<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+		</div>
+	</body>
+</html>

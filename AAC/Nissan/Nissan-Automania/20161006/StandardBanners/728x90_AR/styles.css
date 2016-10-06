@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  margin:0;
+  padding: 0;
+}
+.global {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+#stade, #logo, #car-1, #car-2, #day-on, #day-off, #store-1, #store-2, #text-1, #text-2, #text-3, #cta, #logo-2, #shadow, #machine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+#stade {
+  background-image:url(bg.jpg);
+}
+#logo {
+  background:url(logo.png) center no-repeat;
+}
+#store-1 {
+  background-image:url(store-1.png);
+  opacity: 0;
+  background-size: cover;
+}
+#store-2 {
+  background-image:url(store-2.png);
+  opacity: 1;
+  background-size: cover;
+}
+#car-1 {
+  background-image:url(car-1.png);
+  left: -166px;
+}
+#car-2 {
+  background-image:url(car-2.png);
+  opacity: 0;
+
+}
+#text-1 {
+  left: 400px;
+  background:url(text-1.png) center no-repeat;
+  opacity: 0;
+}
+#text-2 {
+  top: -30px;
+  left: -350px;
+  width: 160%;
+  height: 160%;
+  opacity: 0;
+  background:url(text-2.png) center no-repeat;
+  background-size: cover;
+}
+#text-3 {
+  top: 20px;
+  background:url(text-3.png) center no-repeat;
+  opacity: 0;
+}
+#cta {
+  top: 100px;
+  background:url(cta.png) center no-repeat;
+  opacity: 0;
+}
+#logo-2 {
+  left: 400px;
+  background:url(logo-2.png) center no-repeat;
+  opacity: 0;
+}
+#shadow {
+  top: 0;
+  background-image:url(shadow.png);
+  opacity: 1;
+}
+#machine {
+  background-image:url(machine.png);
+  opacity: 0;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}
