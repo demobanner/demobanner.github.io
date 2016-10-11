@@ -45,6 +45,7 @@ body {
 #logo {
   background: url('logo.png') center no-repeat;
   opacity: 1;
+  top: 20px;
 }
 #logo2 {
   background: url('logo2.png') center no-repeat;
