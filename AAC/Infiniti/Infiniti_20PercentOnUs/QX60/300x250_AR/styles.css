@@ -22,11 +22,11 @@ body {
 }
 #car {
   background: url('car.jpg') center no-repeat;
-  width: 390px;
-  height: 340px;
-  // opacity: 1;
-  top: -60px;
-  left: -50px;
+  width: 370px;
+  height: 320px;
+  /* opacity: 1; */
+  top: -40px;
+  left: -36px;
 }
 #f2_text {
   background: url('f2_text.png') center no-repeat;
