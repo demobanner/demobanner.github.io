@@ -10,18 +10,18 @@ a {
 }
 #banner {
   position: absolute;
-  width: 298px;
-  height: 248px;
+  width: 726px;
+  height: 88px;
   overflow: hidden;
   border:1px solid #777;
-  background-color: black;
+
 }
 .layer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 298px;
-  height: 248px;
+  width: 726px;
+  height: 88px;
   opacity: 0;
 }
 .click-tag {
@@ -31,38 +31,39 @@ a {
   right: 0;
   bottom: 0;
 }
+#bg1 {
+  background: url("bg1.jpg") center no-repeat;
+}
 #logo {
   background: url("logo.png") center no-repeat;
   opacity: 1;
 }
-#logo-nissan {
-  background: url("logo-nissan.png") center no-repeat;
+#logo_name {
+  background: url("logo_name.png") center no-repeat;
   opacity: 1;
-}
-#bg1 {
-  background: url("bg1.jpg") center no-repeat;
 }
 #bg2 {
   background: url("bg2.jpg") center no-repeat;
 }
 #title {
   background: url("title.png") center no-repeat;
-  top: -15px;
+  top: -20px;
 }
-#text {
-  background: url("text.png") center no-repeat;
-  top: -5px;
+#subtitle {
+  background: url("subtitle1.png") center no-repeat;
+  top: -10px;
 }
 #price {
   background: url("price.png") center no-repeat;
+
 }
 #cta1 {
   background: url("cta1.png") center no-repeat;
-  top: 10px;
+  top:15px;
 }
 #cta2 {
   background: url("cta2.png") center no-repeat;
-  top: 10px;
+   top:15px;
 }
 #btn-replay {
   width: 16px;

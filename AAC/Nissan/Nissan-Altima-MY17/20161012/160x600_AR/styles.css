@@ -10,8 +10,8 @@ a {
 }
 #banner {
   position: absolute;
-  width: 298px;
-  height: 248px;
+  width: 158px;
+  height: 598px;
   overflow: hidden;
   border:1px solid #777;
   background-color: black;
@@ -20,8 +20,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 298px;
-  height: 248px;
+  width: 158px;
+  height: 598px;
   opacity: 0;
 }
 .click-tag {
@@ -47,29 +47,29 @@ a {
 }
 #title {
   background: url("title.png") center no-repeat;
-  top: -15px;
+  top: -20px;
 }
 #text {
   background: url("text.png") center no-repeat;
-  top: -5px;
+  top: -10px;
 }
 #price {
   background: url("price.png") center no-repeat;
 }
 #cta1 {
   background: url("cta1.png") center no-repeat;
-  top: 10px;
+  top: 20px;
 }
 #cta2 {
   background: url("cta2.png") center no-repeat;
-  top: 10px;
+  top: 20px;
 }
 #btn-replay {
   width: 16px;
   height: 16px;
   position: absolute;
   top: 3px;
-  right: 3px;
+  left: 3px;
   visibility: hidden;
   opacity: 0;
 }
