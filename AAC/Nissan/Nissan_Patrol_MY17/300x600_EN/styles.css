@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 598px;
+  overflow: hidden;
+  border:1px solid black;
+  background: #fff;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 598px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#bg1 {
+  background: url("bg1.jpg") left no-repeat;
+	opacity: 1;
+}
+#bg2, #bg3 {
+	top: -2px;
+  left: -1px;
+  width: 0;
+  height: 600px;
+	border: solid 1px #000;
+}
+#bg2 {
+  background: url("bg2.jpg") left no-repeat;
+}
+#bg3 {
+  background: url("bg3.jpg") right no-repeat;
+	left: auto;
+	right: -3px;
+}
+#shadow {
+  background: url("shadow.png") center no-repeat;
+  opacity: 1;
+}
+#btnBg1 {
+  background: url("btn1.png") right no-repeat;
+}
+#btnBg2 {
+  background: url("btn2.png") right no-repeat;
+}
+#btn1 {
+  top: 230px;
+  left: 22px;
+  height: 27px;
+  width: 108px;
+}
+#btn2 {
+  top: 230px;
+  left: 164px;
+  height: 27px;
+  width: 107px;
+}
+#text1, #text2, #text3 {
+	top: -20px;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+}
+#text3 {
+  background: url("text3.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+	top: 20px;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+	opacity: 1;
+}
+#logo2 {
+  background: url("logo2.png") center no-repeat;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}
