@@ -40,7 +40,7 @@
 	    	for (i=0; i<images.length; i++) {
 	    		duration = Math.random()*1.5 + 1.5;
 	    		delayTime = Math.random()*1 + 2.5;
-	    		lastLeft = Math.random()*400 + 600;
+	    		lastLeft = Math.random()*500 + 500;
 	    		images[i].style.left = -Math.round(Math.random()*150 + 100) + "px";
 	    		tl.to(images[i], duration, {top:100, left: lastLeft, rotation:360, ease: Power0.easeInOut}, "-=" + delayTime);
 	    	}
