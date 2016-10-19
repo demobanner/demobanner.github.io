@@ -36,11 +36,11 @@ a {
 	opacity: 1;
 }
 #bg2, #bg3 {
-	top: -1px;
-  left: 0px;
+	top: -2px;
+  left: -1px;
   width: 0;
   height: 250px;
-	/*border: solid 1px #000;*/
+	border: solid 1px #000;
 }
 #bg2 {
   background: url("bg2.jpg") left no-repeat;
@@ -48,7 +48,7 @@ a {
 #bg3 {
   background: url("bg3.jpg") right no-repeat;
 	left: auto;
-	right: -2px;
+	right: -3px;
 }
 #shadow {
   background: url("shadow.png") center no-repeat;
