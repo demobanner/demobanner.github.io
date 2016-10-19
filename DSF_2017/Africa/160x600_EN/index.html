@@ -13,7 +13,8 @@
 	    var images = [],
 	    	i = 0,
 	    	delayTime = 0,
-	    	duration = 0;
+	    	duration = 0,
+        lastRight = 0;
 
 	    var tl = new TimelineLite();
 
@@ -39,7 +40,9 @@
 	    	for (i=0; i<images.length; i++) {
 	    		duration = Math.random()*1.5 + 2;
 	    		delayTime = Math.random()*1 + 2.8;
-	    		tl.to(images[i], duration, {top:650, rotation:360, ease: Power0.easeInOut}, "-=" + delayTime);
+          lastRight = Math.random()*150 + 50;
+          images[i].style.right = (Math.random()*100 - 60) +'px';
+	    		tl.to(images[i], duration, {top:650, right: lastRight, rotation:360, ease: Power0.easeInOut}, "-=" + delayTime);
 	    	}
 	    }
 
