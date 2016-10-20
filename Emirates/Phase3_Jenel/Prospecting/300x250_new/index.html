@@ -65,14 +65,12 @@
         .to(f3_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f4_bg, 0.5, {autoAlpha: 1}, '-=0.5')
-        .to([f4_text,f4_text1] , 0.5, {autoAlpha: 1})
-        .to(f4_text1, 0.5, {autoAlpha: 0}, '+=2')
-        .to(f4_text2, 0.5, {autoAlpha: 1})
-        .to([f4_text,f4_text2], 0.5, {autoAlpha: 0}, '+=2')
+        .to(f4_text, 0.5, {autoAlpha: 1})
+        .to(f4_text1, 0.5, {autoAlpha: 1})
+        .to([f4_text,f4_text1], 0.5, {autoAlpha: 0}, '+=2')
 
         .to(f5_text1, 0.5, {autoAlpha: 1})
         .to(f5_text2, 0.5, {autoAlpha: 1})
-        .to(f5_text2, 0.5, {autoAlpha: 0}, '+=1.5')
         .to(f5_text3, 0.5, {autoAlpha: 1})
         .to(cta, 0.5, {autoAlpha: 1})
         .to(logo, 2, {autoAlpha: 1, onComplete:replay});
