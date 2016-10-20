@@ -31,10 +31,13 @@ a {
   right: 0;
   bottom: 0;
 }
-.canfetti {
-  opacity: 1;
-  top: -90px;
+.confetti {
+  /*opacity: 1;
+  top: -90px;*/
   left: auto;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
 }
 #img1 {
   background: url("img1.png") center no-repeat;
