@@ -28,7 +28,6 @@
 				text1,
 				text2,
 				text3,
-				shadow,
 				cta,
 				logo2;
 		
@@ -43,7 +42,6 @@
 			text1b = document.getElementById("text1b");
 			text2 = document.getElementById("text2");
 			text3 = document.getElementById("text3");
-			shadow = document.getElementById("shadow");
 			cta = document.getElementById("cta");
 			logo2 = document.getElementById("logo2");
 			btn_replay = document.getElementById("btn-replay");
@@ -52,11 +50,11 @@
 		}
 		function start() {
 			tl.to(text1, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
-				.to(text1b, 0.5, {autoAlpha:1})
 				.to(btnBg1, 0.5, {autoAlpha:1})
 				.to(btn1, 0.5, {autoAlpha:1}, '-=0.5')
 				.to(btnBg2, 0.5, {autoAlpha:1})
-				.to(btn2, 0.5, {autoAlpha:1}, '-=0.5');
+				.to(btn2, 0.5, {autoAlpha:1}, '-=0.5')
+				.to(text1b, 0.5, {autoAlpha:1});
 		}
 		
 		function play1() {
@@ -83,7 +81,7 @@
 		}
 		function endFrame() {
 			tl.to(text2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
-				.to([bg1, text2, shadow], 0.5, {autoAlpha:0}, '+=2');
+				.to([bg1, text2], 0.5, {autoAlpha:0}, '+=2');
 			
 			tl.to(text3, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
@@ -91,7 +89,7 @@
 				.to(logo2, 0.5, {autoAlpha:1, onComplete:onLoop});
 		}
 		function restart() {
-			tl.to([bg1, shadow], 0.5, {autoAlpha:1})
+			tl.to(bg1, 0.5, {autoAlpha:1})
 				.to([btn_replay, text3, cta, logo2], 0.5, {autoAlpha:0}, '-=0.5')
 				.to([bg3, bg2], 0.5, {width: 0}, "-=0.5");
       start();
@@ -115,7 +113,6 @@
       <div id="bg1" class="layer"></div>
       <div id="bg2" class="layer"></div>
       <div id="bg3" class="layer"></div>
-      <div id="shadow" class="layer"></div>
       <div id="btnBg1" class="layer"></div>
       <div id="btnBg2" class="layer"></div>
       <div id="text1" class="layer"></div>

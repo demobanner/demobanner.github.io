@@ -36,11 +36,9 @@ a {
 	opacity: 1;
 }
 #bg2, #bg3 {
-	top: -2px;
-  left: -1px;
+	top: -1px;
   width: 0;
   height: 600px;
-	border: solid 1px #000;
 }
 #bg2 {
   background: url("bg2.jpg") left no-repeat;
@@ -48,7 +46,7 @@ a {
 #bg3 {
   background: url("bg3.jpg") right no-repeat;
 	left: auto;
-	right: -3px;
+	right: -2px;
 }
 #btnBg1 {
   background: url("btn1.png") right no-repeat;
@@ -73,6 +71,9 @@ a {
 }
 #text1 {
   background: url("text1.png") center no-repeat;
+}
+#text1b {
+  background: url("text1b.png") center no-repeat;
 }
 #text2 {
   background: url("text2.png") center no-repeat;

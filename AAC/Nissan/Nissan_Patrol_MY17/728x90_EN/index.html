@@ -39,6 +39,7 @@
 			btn1 = document.getElementById("btn1");
 			btnBg2 = document.getElementById("btnBg2");
 			text1 = document.getElementById("text1");
+			text1b = document.getElementById("text1b");
 			text2 = document.getElementById("text2");
 			text3 = document.getElementById("text3");
 			cta = document.getElementById("cta");
@@ -52,22 +53,29 @@
 				.to(btnBg1, 0.5, {autoAlpha:1})
 				.to(btn1, 0.5, {autoAlpha:1}, '-=0.5')
 				.to(btnBg2, 0.5, {autoAlpha:1})
-				.to(btn2, 0.5, {autoAlpha:1}, '-=0.5');
+				.to(btn2, 0.5, {autoAlpha:1}, '-=0.5')
+				.to(text1b, 0.5, {autoAlpha:1});
 		}
 		
 		function play1() {
 			tl.resume();
-			tl.to([text1,btnBg1,btn1,btnBg2,btn2], 0.5, {autoAlpha:0})
+			tl.to([text1,text1b,btnBg1,btn1,btnBg2,btn2], 0.5, {autoAlpha:0})
 				.to(bg2, 0.1, {autoAlpha:1})
-				.to(bg2, 0.5, {width:728})
+				.to(bg2, 2.8, {width:550, ease:Power0.easeInOut})
+				.to(bg2, 0.2, {width:530, ease:Power0.easeInOut}, "+=0.2")
+				.to(bg2, 0.3, {width:570, ease:Power0.easeInOut})
+				.to(bg2, 1, {width:364, ease:Power0.easeInOut})
 				.to(bg2, 0.5, {autoAlpha:0}, '+=1');
 			endFrame();
 		}
 		function play2() {
 			tl.resume();
-			tl.to([text1,btnBg1,btn1,btnBg2,btn2], 0.5, {autoAlpha:0})
+			tl.to([text1,text1b,btnBg1,btn1,btnBg2,btn2], 0.5, {autoAlpha:0})
 				.to(bg3, 0.1, {autoAlpha:1})
-				.to(bg3, 0.5, {width:728})
+				.to(bg3, 2.8, {width:550, ease:Power0.easeInOut})
+				.to(bg3, 0.2, {width:530, ease:Power0.easeInOut}, "+=0.2")
+				.to(bg3, 0.3, {width:570, ease:Power0.easeInOut})
+				.to(bg3, 1, {width:364, ease:Power0.easeInOut})
 				.to(bg3, 0.5, {autoAlpha:0}, '+=1');
 			endFrame();
 		}
@@ -83,7 +91,7 @@
 		function restart() {
 			tl.to(bg1, 0.5, {autoAlpha:1})
 				.to([btn_replay, text3, cta, logo2], 0.5, {autoAlpha:0}, '-=0.5')
-				.to([bg2, bg3], 0.5, {width: 0});
+				.to([bg2, bg3], 0.5, {width: 0}, "-=0.5");
       start();
     }
 		function onLoop() {
@@ -108,6 +116,7 @@
       <div id="btnBg1" class="layer"></div>
       <div id="btnBg2" class="layer"></div>
       <div id="text1" class="layer"></div>
+      <div id="text1b" class="layer"></div>
       <div id="text2" class="layer"></div>
       <div id="text3" class="layer"></div>
 			<div id="cta" class="layer"></div>

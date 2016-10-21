@@ -48,10 +48,6 @@ a {
 	left: auto;
 	right: -2px;
 }
-#shadow {
-  background: url("shadow.png") center no-repeat;
-	opacity: 1;
-}
 #btnBg1 {
   background: url("btn1.png") right no-repeat;
 }
