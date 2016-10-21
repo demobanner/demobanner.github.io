@@ -47,9 +47,6 @@ body {
 #f3_bg {
   background: url(f3_bg.png) center no-repeat;
 }
-#f3_text {
-  background: url(f3_text.png) center no-repeat;
-}
 #f3_text1 {
   background: url(f3_text1.png) center no-repeat;
 }
@@ -61,9 +58,6 @@ body {
 }
 #f4_text2 {
   background: url(f4_text2.png) center no-repeat;
-}
-#f4_text3 {
-  background: url(f4_text3.png) center no-repeat;
 }
 #cta {
   background: url(cta.png) center no-repeat;

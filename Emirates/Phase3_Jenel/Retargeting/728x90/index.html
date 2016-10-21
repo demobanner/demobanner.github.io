@@ -56,15 +56,12 @@
         .to(f2_bg, 0.5, {autoAlpha: 0}, '-=0.5')
 
         .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
-        .to([f3_text,f3_text1] , 0.5, {autoAlpha: 1})
-        .to(f3_text1, 0.5, {autoAlpha: 0}, '+=2')
-        .to(f3_text2, 0.5, {autoAlpha: 1})
-        .to([f3_text,f3_text2], 0.5, {autoAlpha: 0}, '+=2')
+        .to(f3_text, 0.5, {autoAlpha: 1})
+        .to(f3_text, 0.5, {autoAlpha: 1})
+        .to([f3_text,f3_text], 0.5, {autoAlpha: 0}, '+=2')
 
         .to(f4_text1, 0.5, {autoAlpha: 1})
         .to(f4_text2, 0.5, {autoAlpha: 1})
-        .to(f4_text2, 0.5, {autoAlpha: 0}, '+=1.5')
-        .to(f4_text3, 0.5, {autoAlpha: 1})
         .to(cta, 0.5, {autoAlpha: 1})
         .to(logo, 2, {autoAlpha: 1, onComplete:replay});
     }
