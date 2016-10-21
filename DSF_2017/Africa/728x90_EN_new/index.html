@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Banner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+	    var clickTag = '';
+
+	    var cft2 = [],
+	    	cft1 = [],
+	    	i = 0,
+	    	startTime = 0,
+	    	duration = 0,
+	    	lastLeft = 0,
+	    	lastTop = 0;
+
+	    var tl = new TimelineLite();
+
+	    var LOOP_TIME = 0, // how many time the banner replays
+	        loop = 0,
+	        isReplay = true; // show/hide replay button in the end
+
+	    function init() {
+
+	    	for (i=1; i<=7; i++) {
+	    		cft1[i-1] = document.getElementById('cft1_'+i);
+	    	}
+
+	    	for (i=1; i<=22; i++) {
+	    		cft2[i-1] = document.getElementById('cft2_'+i);
+	    	}
+
+	    	tl.to(text1, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+	    		.to(text1, 0.5, {autoAlpha: 0, delay: 2, ease: Power3.easeInOut})
+	    		.to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power3.easeInOut})
+	    		.to(text2, 0.5, {autoAlpha: 0, delay: 2, ease: Power3.easeInOut})
+	    		.to(mask, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "+=1")
+	    		.to(text3, 0.5, {autoAlpha: 1, ease: Power3.easeInOut, onComplete:onLoop});
+
+
+	    	for (i=0; i<cft1.length; i++) {
+	    		tl.to(cft1[i], 0.2, {autoAlpha:1, ease: Power3.easeInOut}, (3.5 + 0.15*i));
+	    		tl.to(cft1[i], 0.2, {autoAlpha:0, ease: Power3.easeInOut}, (6));
+	    	}
+
+	    	for (i=0; i<cft2.length; i++) {
+	    		tl.to(cft2[i], 0.2, {autoAlpha:1, ease: Power3.easeInOut}, (6.5 + 0.15*i));
+	    	}
+	    }
+
+	    function restart() {
+	        tl.restart();
+	    }
+
+	    function onLoop() {
+	        if (loop < LOOP_TIME) {
+	            restart();
+	            loop++;
+	        } else if (isReplay) {
+	            var btn_replay = document.getElementById('btn-replay');
+	            tl.to(btn_replay, 0.5, {
+	                autoAlpha: 1,
+	                rotation: 180
+	            });
+	        }
+	    }
+
+	    window.onload = init;
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+            <div id="mask" class="layer"></div>
+            <div id="cft1_1" class="layer"></div>
+            <div id="cft1_2" class="layer"></div>
+            <div id="cft1_3" class="layer"></div>
+            <div id="cft1_4" class="layer"></div>
+            <div id="cft1_5" class="layer"></div>
+            <div id="cft1_6" class="layer"></div>
+            <div id="cft1_7" class="layer"></div>
+
+            <div id="cft2_1" class="layer confetti"></div>
+            <div id="cft2_2" class="layer confetti"></div>
+            <div id="cft2_3" class="layer confetti"></div>
+            <div id="cft2_4" class="layer confetti"></div>
+            <div id="cft2_5" class="layer confetti"></div>
+            <div id="cft2_6" class="layer confetti"></div>
+            <div id="cft2_7" class="layer confetti"></div>
+            <div id="cft2_8" class="layer confetti"></div>
+            <div id="cft2_9" class="layer confetti"></div>
+            <div id="cft2_10" class="layer confetti"></div>
+            <div id="cft2_10" class="layer confetti"></div>
+            <div id="cft2_11" class="layer confetti"></div>
+            <div id="cft2_12" class="layer confetti"></div>
+            <div id="cft2_13" class="layer confetti"></div>
+            <div id="cft2_14" class="layer confetti"></div>
+            <div id="cft2_15" class="layer confetti"></div>
+            <div id="cft2_16" class="layer confetti"></div>
+            <div id="cft2_17" class="layer confetti"></div>
+            <div id="cft2_18" class="layer confetti"></div>
+            <div id="cft2_19" class="layer confetti"></div>
+            <div id="cft2_20" class="layer confetti"></div>
+            <div id="cft2_21" class="layer confetti"></div>
+            <div id="cft2_22" class="layer confetti"></div>
+            <div id="cft2_23" class="layer confetti"></div>
+
+            <div id="text1" class="layer"></div>
+            <div id="text2" class="layer"></div>
+            <div id="text3" class="layer"></div>
+            <div id="logo_dubai" class="layer"></div>
+            <div id="logo" class="layer"></div>
+        </a>
+        <a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+    </div>
+</body>
+
+</html>
