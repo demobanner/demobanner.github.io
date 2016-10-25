@@ -43,11 +43,12 @@ a {
 }
 #bg2 {
   background: url("bg2.jpg") left no-repeat;
+	left: 1px;
 }
 #bg3 {
   background: url("bg3.jpg") right no-repeat;
 	left: auto;
-	right: -2px;
+	right: -1px;
 }
 #btnBg1 {
   background: url("btn1.png") right no-repeat;
