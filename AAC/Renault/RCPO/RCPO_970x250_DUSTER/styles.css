@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 968px;
+  height: 248px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #fff;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#logo1 {
+  background: url("logo1.png") center no-repeat;
+  opacity: 1;
+}
+#img1 {
+  background: url("img1.png") center no-repeat;
+  left: -80px;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+  left: 60px;
+}
+#car {
+  background: url("car.jpg") center no-repeat;
+}
+#price {
+  background: url("price.png") center no-repeat;
+  top: 20px;
+}
+#tc {
+  background: url("tc.png") center no-repeat;
+}
+#img2 {
+  background: url("img2.png") center no-repeat;
+  left: -80px;
+}
+#text3 {
+  background: url("text3.png") center no-repeat;
+  left: 60px;
+}
+#title1 {
+  background: url("title1.png") center no-repeat;
+}
+#text4 {
+  background: url("text4.png") center no-repeat;
+  left: 60px;
+}
+#text5 {
+  background: url("text5.png") center no-repeat;
+  left: 60px;
+}
+#text6 {
+  background: url("text6.png") center no-repeat;
+  left: 60px;
+}
+#text7 {
+  background: url("text7.png") center no-repeat;
+  left: 60px;
+}
+#logo2 {
+  background: url("logo2.png") center no-repeat;
+}
+#title2 {
+  background: url("title2.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 30px;
+}
+#btn-replay {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
