@@ -36,35 +36,35 @@
 				logo2 = document.getElementById("logo2"),
 				cta = document.getElementById("cta");
 
-			tl.to(img1, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut})
-				.to(text1, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut}, "-=0.2")
+			tl.to(img1, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
+				.to(text1, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut}, "-=0.2")
 				.to([img1, text1, logo1], 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(car, 0.5, {autoAlpha:1})
-				.to(price, 0.5, {autoAlpha:1, top:0, ease: Power4.easeInOut})
+				.to(price, 0.5, {autoAlpha:1, top:0, ease: Power3.easeInOut})
 				.to(tc, 0.5, {autoAlpha:1})
 				.to([car, price, tc], 0.5, {autoAlpha:0}, "+=2.5");
 
-			tl.to(img2, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut})
-				.to(text3, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut}, "-=0.2")
+			tl.to(img2, 0.5, {autoAlpha:1, top:0, ease: Power3.easeInOut})
+				.to(text3, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut}, "-=0.2")
 				.to(title1, 0.5, {autoAlpha:1}, "+=0.5")
 				.to(text3, 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(text4, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut})
+			tl.to(text4, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
 				.to(text4, 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(text5, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut})
+			tl.to(text5, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
 				.to(text5, 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(text6, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut})
+			tl.to(text6, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
 				.to(text6, 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(text7, 0.5, {autoAlpha:1, left:0, ease: Power4.easeInOut})
+			tl.to(text7, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
 				.to([text7, img2], 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(logo2, 0.5, {autoAlpha:1})
 				.to(title1, 0.5, {top:-276},"-=0.4")
-				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power4.easeInOut, onComplete:onLoop});
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power3.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {

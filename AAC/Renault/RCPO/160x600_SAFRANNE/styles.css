@@ -47,7 +47,7 @@ a {
   background: url("car.jpg") center no-repeat;
 }
 #price {
-  background: url("price2.png") center no-repeat;
+  background: url("price.png") center no-repeat;
   top: 40px;
 }
 #tc {
@@ -55,7 +55,7 @@ a {
 }
 #img2 {
   background: url("img2.png") center no-repeat;
-  left: -50px;
+  top: -50px;
 }
 #text3 {
   background: url("text3.png") center no-repeat;
