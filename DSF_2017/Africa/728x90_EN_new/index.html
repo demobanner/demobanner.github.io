@@ -12,6 +12,7 @@
 	    var clickTag = '';
 
 	    var i = 0,
+          f1_cftArr = [],
 	    		cftArr = [],
 	    		posArr = [
             {x:84, y:60},
@@ -35,20 +36,29 @@
 	    function init() {
 
 	    	for (i=0; i<LENGTH; i++) {
-	    		cftArr[i] = document.getElementById('confetti_'+ (i+1));
-	    		cftArr[i].style.left = posArr[i].x + 80 + 'px';
-	    		cftArr[i].style.top = posArr[i].y + 5 + 'px';
+          f1_cftArr[i] = document.getElementById('f1_confetti_'+ (i+1));
+          f1_cftArr[i].style.left = '-20px';
+          f1_cftArr[i].style.top = '20px';
+
+          cftArr[i] = document.getElementById('confetti_'+ (i+1));
+	    		cftArr[i].style.left = posArr[i].x + 'px';
+	    		cftArr[i].style.top = posArr[i].y + 50 + 'px';
 	    		// cftArr[i].style.transform = "rotate(" + Math.round(Math.random()*120 - 60) + "deg)";
 	    	}
 
 	    	tl.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut});
 
-        for (i=0; i<cftArr.length; i++) {
-          tl.to(cftArr[i], 0.5, {autoAlpha:0.8},'-=0.35');
+        for (i=0; i<f1_cftArr.length; i++) {
+          tl.to(f1_cftArr[i], 0.5, {autoAlpha:0.8, top:0, left:0, ease: Power2.easeInOut},'-=0.35');
         }
 
-	    	tl.to(text1, 0.5, {autoAlpha: 0, ease: Power2.easeInOut})
-	    		.to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut});
+	    	tl.to(text1, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '+=0.5');
+
+        for (i=0; i<f1_cftArr.length; i++) {
+          tl.to(f1_cftArr[i], 0.5, {autoAlpha:0},'-=0.5');
+        }
+
+	    	tl.to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut});
 
 	    	for (i=0; i<cftArr.length; i++) {
           tl.to(cftArr[i], 0.5, {autoAlpha:0.8, scale:1, left:posArr[i].x, top:posArr[i].y, ease:Power2.easeOut}, '-=0.25');
@@ -86,6 +96,17 @@
     <div id="banner">
         <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
             <div id="redBg" class="layer"></div>
+            <div id="f1_confetti_1" class="layer"><img src="f1_confetti_1.png"></div>
+            <div id="f1_confetti_2" class="layer"><img src="f1_confetti_2.png"></div>
+            <div id="f1_confetti_3" class="layer"><img src="f1_confetti_3.png"></div>
+            <div id="f1_confetti_4" class="layer"><img src="f1_confetti_4.png"></div>
+            <div id="f1_confetti_5" class="layer"><img src="f1_confetti_5.png"></div>
+            <div id="f1_confetti_6" class="layer"><img src="f1_confetti_6.png"></div>
+            <div id="f1_confetti_7" class="layer"><img src="f1_confetti_7.png"></div>
+            <div id="f1_confetti_8" class="layer"><img src="f1_confetti_8.png"></div>
+            <div id="f1_confetti_9" class="layer"><img src="f1_confetti_9.png"></div>
+            <div id="f1_confetti_10" class="layer"><img src="f1_confetti_10.png"></div>
+
             <div id="confetti_1" class="confetties"><img src="confetti_1.png"></div>
             <div id="confetti_2" class="confetties"><img src="confetti_2.png"></div>
             <div id="confetti_3" class="confetties"><img src="confetti_3.png"></div>

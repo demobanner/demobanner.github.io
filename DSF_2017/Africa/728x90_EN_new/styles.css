@@ -43,11 +43,7 @@ a {
   transform: rotate(0deg) scale(0.3);
   -ms-transform: rotate(0deg) scale(0.3);
   -webkit-transform: rotate(0deg) scale(0.3);
-
-/*  transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-*/}
+}
 
 #logo_dubai {
   background: url("logo_dubai.png") center no-repeat;
