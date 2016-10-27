@@ -1,0 +1,259 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #fff;
+}
+
+
+#main-container {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+#collapsed-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100px;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  z-index: 200;
+  display: none;
+  overflow: hidden;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+#collapsed-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+.button {
+  position: absolute;
+  color: #FFF;
+  background-color: #000;
+  cursor: pointer;
+  padding: 2px 5px;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 8pt;
+}
+
+#expand-button {
+  bottom: 5px;
+  left: 5px;
+  display: none;
+}
+
+#collapse-button {
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+.feature-collapsed {
+  top: 0px;
+  left: 0px;
+  width: 398px;
+  height: 98px;
+  position: absolute;
+}
+
+.feature-expanded {
+  top: 0px;
+  left: 0px;
+  width: 398px;
+  height: 198px;
+  position: absolute;
+}
+
+.layer-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 398px;
+  height: 98px;
+  opacity: 0;
+}
+#logo1_1 {
+  background: url("logo1_1.png") center no-repeat;
+  opacity: 1;
+}
+#img1_1 {
+  background: url("img1_1.png") center no-repeat;
+  left: -60px;
+}
+#text1_1 {
+  background: url("text1_1.png") center no-repeat;
+  left: 40px;
+}
+#car1 {
+  background: url("car1.jpg") center no-repeat;
+}
+#price1 {
+  background: url("price1.png") center no-repeat;
+  top: 20px;
+}
+#tc1 {
+  background: url("tc1.png") center no-repeat;
+}
+#img1_2 {
+  background: url("img1_2.png") center no-repeat;
+  top: -60px;
+}
+#text1_3 {
+  background: url("text1_3.png") center no-repeat;
+  top: 40px;
+}
+#title1_1 {
+  background: url("title1_1.png") center no-repeat;
+}
+#text1_4 {
+  background: url("text1_4.png") center no-repeat;
+  top: 40px;
+}
+#text1_5 {
+  background: url("text1_5.png") center no-repeat;
+  top: 40px;
+}
+#text1_6 {
+  background: url("text1_6.png") center no-repeat;
+  top: 40px;
+}
+#text1_7 {
+  background: url("text1_7.png") center no-repeat;
+  top: 40px;
+}
+#logo1_2 {
+  background: url("logo1_2.png") center no-repeat;
+}
+#title1_2 {
+  background: url("title1_2.png") center no-repeat;
+}
+#cta1 {
+  background: url("cta1.png") center no-repeat;
+  top: 30px;
+}
+.layer-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 398px;
+  height: 198px;
+  opacity: 0;
+}
+
+#logo2_1 {
+  background: url("logo2_1.png") center no-repeat;
+  opacity: 1;
+}
+#img2_1 {
+  background: url("img2_1.png") center no-repeat;
+  left: -60px;
+}
+#text2_1 {
+  background: url("text2_1.png") center no-repeat;
+  left: 40px;
+}
+#car2 {
+  background: url("car2.jpg") center no-repeat;
+}
+#price2 {
+  background: url("price2.png") center no-repeat;
+  top: 20px;
+}
+#tc2 {
+  background: url("tc2.png") center no-repeat;
+}
+#img2_2 {
+  background: url("img2_2.png") center no-repeat;
+  top: -60px;
+}
+#text2_3 {
+  background: url("text2_3.png") center no-repeat;
+  top: 40px;
+}
+#title2_1 {
+  background: url("title2_1.png") center no-repeat;
+}
+#text2_4 {
+  background: url("text2_4.png") center no-repeat;
+  top: 40px;
+}
+#text2_5 {
+  background: url("text2_5.png") center no-repeat;
+  top: 40px;
+}
+#text2_6 {
+  background: url("text2_6.png") center no-repeat;
+  top: 40px;
+}
+#text2_7 {
+  background: url("text2_7.png") center no-repeat;
+  top: 40px;
+}
+#logo2_2 {
+  background: url("logo2_2.png") center no-repeat;
+}
+#title2_2 {
+  background: url("title2_2.png") center no-repeat;
+}
+#cta2 {
+  background: url("cta2.png") center no-repeat;
+  top: 30px;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
