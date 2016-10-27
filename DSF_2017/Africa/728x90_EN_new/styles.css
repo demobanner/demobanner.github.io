@@ -31,95 +31,24 @@ a {
   right: 0;
   bottom: 0;
 }
-#cft1_1 {
-  background: url("f2_1.png") center no-repeat;
-}
-#cft1_2 {
-  background: url("f2_2.png") center no-repeat;
-}
-#cft1_3 {
-  background: url("f2_3.png") center no-repeat;
-}
-#cft1_4 {
-  background: url("f2_4.png") center no-repeat;
-}
-#cft1_5 {
-  background: url("f2_5.png") center no-repeat;
-}
-#cft1_6 {
-  background: url("f2_6.png") center no-repeat;
-}
-#cft1_7 {
-  background: url("f2_7.png") center no-repeat;
-}
 
+.confetties {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
 
-#cft2_1 {
-  background: url("f3_1.png") center no-repeat;
-}
-#cft2_2 {
-  background: url("f3_2.png") center no-repeat;
-}
-#cft2_3 {
-  background: url("f3_3.png") center no-repeat;
-}
-#cft2_4 {
-  background: url("f3_4.png") center no-repeat;
-}
-#cft2_5 {
-  background: url("f3_5.png") center no-repeat;
-}
-#cft2_6 {
-  background: url("f3_6.png") center no-repeat;
-}
-#cft2_7 {
-  background: url("f3_7.png") center no-repeat;
-}
-#cft2_8 {
-  background: url("f3_8.png") center no-repeat;
-}
-#cft2_9 {
-  background: url("f3_9.png") center no-repeat;
-}
-#cft2_10 {
-  background: url("f3_10.png") center no-repeat;
-}
-#cft2_11 {
-  background: url("f3_11.png") center no-repeat;
-}
-#cft2_12 {
-  background: url("f3_12.png") center no-repeat;
-}
-#cft2_13 {
-  background: url("f3_13.png") center no-repeat;
-}
-#cft2_14 {
-  background: url("f3_14.png") center no-repeat;
-}
-#cft2_15 {
-  background: url("f3_15.png") center no-repeat;
-}
-#cft2_16 {
-  background: url("f3_16.png") center no-repeat;
-}
-#cft2_17 {
-  background: url("f3_17.png") center no-repeat;
-}
-#cft2_18 {
-  background: url("f3_18.png") center no-repeat;
-}
-#cft2_19 {
-  background: url("f3_19.png") center no-repeat;
-}
-#cft2_20 {
-  background: url("f3_20.png") center no-repeat;
-}
-#cft2_21 {
-  background: url("f3_21.png") center no-repeat;
-}
-#cft2_22 {
-  background: url("f3_22.png") center no-repeat;
-}
+  transform: rotate(30deg) scale(0.1);
+  -ms-transform: rotate(30deg) scale(0.1);
+  -webkit-transform: rotate(30deg) scale(0.1);
+
+/*  transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+*/}
+
 #logo_dubai {
   background: url("logo_dubai.png") center no-repeat;
   opacity: 1;
@@ -133,9 +62,13 @@ a {
 }
 #text3 {
   background: url("text3.png") center no-repeat;
+  left: -30px;
 }
 #mask {
   background: url("mask.png") center no-repeat;
+}
+#redBg {
+  background: url("redBg.png") center no-repeat;
 }
 #logo {
   background: url("logo.png") center no-repeat;
