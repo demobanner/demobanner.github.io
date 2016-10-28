@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Banner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+	    var clickTag = '';
+
+	    var tl = new TimelineLite();
+
+	    var LOOP_TIME = 0, // how many time the banner replays
+	        loop = 0,
+	        isReplay = true; // show/hide replay button in the end
+
+	    function init() {
+            confetti_1.style.left = '50px';
+            confetti_2.style.left = '50px';
+            confetti_3.style.left = '50px';
+            confetti_4.style.left = '50px';
+
+            tl.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut});
+            tl.to(f1_confetti_1, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut}, '+=0.5');
+            tl.to(f1_confetti_2, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
+            tl.to(f1_confetti_3, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
+            tl.to(f1_confetti_4, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
+            tl.to(f1_confetti_5, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
+
+            tl.to(text1, 0.5, {autoAlpha: 0, ease: Power2.easeInOut},'-=0.3');
+            tl.to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut});
+
+            // tl.to(f1_confetti_1, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.8');
+            // tl.to(f1_confetti_2, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+            // tl.to(f1_confetti_3, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+
+            tl.to(confetti_1, 0.5, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
+            tl.to(confetti_2, 0.5, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.35');
+            tl.to(confetti_3, 0.5, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.35');
+            tl.to(confetti_4, 0.5, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.35');
+
+            tl.to(f1_confetti_1, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut});
+            tl.to(f1_confetti_2, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+            tl.to(f1_confetti_3, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+            tl.to(f1_confetti_4, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut}, '-=0.35');
+            tl.to(f1_confetti_5, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+            tl.to(confetti_1, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+            tl.to(confetti_2, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+            tl.to(confetti_3, 0.5, {autoAlpha:0, scale:1.2, top:0, left:-50, ease: Power2.easeInOut},'-=0.35');
+
+            tl.to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=0.8');
+
+            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=1')
+                .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=0.5')
+                .to(confetti_4_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=0.5')
+	    		.to(confetti_4, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=0.5')
+	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop});
+	    }
+
+	    function restart() {
+	        tl.restart();
+	    }
+
+	    function onLoop() {
+	        if (loop < LOOP_TIME) {
+	            restart();
+	            loop++;
+	        } else if (isReplay) {
+	            var btn_replay = document.getElementById('btn-replay');
+	            tl.to(btn_replay, 0.5, {
+	                autoAlpha: 1,
+	                rotation: 180
+	            });
+	        }
+	    }
+
+	    window.onload = init;
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+            <div id="redBg" class="layer"></div>
+            <div id="mask" class="layer"></div>
+            <div id="f1_confetti_1" class="confetties"><img src="f1_confetti_1.png"></div>
+            <div id="f1_confetti_2" class="confetties"><img src="f1_confetti_2.png"></div>
+            <div id="f1_confetti_3" class="confetties"><img src="f1_confetti_3.png"></div>
+            <div id="f1_confetti_4" class="confetties"><img src="f1_confetti_4.png"></div>
+            <div id="f1_confetti_5" class="confetties"><img src="f1_confetti_5.png"></div>
+            <div id="confetti_1" class="confetties"><img src="confetti_1.png"></div>
+            <div id="confetti_2" class="confetties"><img src="confetti_2.png"></div>
+            <div id="confetti_3" class="confetties"><img src="confetti_3.png"></div>
+            <div id="confetti_4" class="confetties"><img src="confetti_4.png"></div>
+            <div id="confetti_4_over" class="layer"><img src="confetti_4_over.png"></div>
+            <div id="text1" class="layer"></div>
+            <div id="text2" class="layer"></div>
+            <div id="text3" class="layer"></div>
+            <div id="logo_dubai" class="layer"></div>
+            <div id="logo" class="layer"></div>
+        </a>
+        <a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+    </div>
+</body>
+
+</html>
