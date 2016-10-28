@@ -41,21 +41,21 @@
             tl.to(f1_confetti_4, 3, {autoAlpha:1, scale:2, top:0, left:-400},'-=3');
             tl.to(f1_confetti_5, 3, {autoAlpha:1, scale:2, top:0, left:-400},'-=3');
 
-            tl.to(text1, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=3');
+            tl.to(text1, 0.5, {autoAlpha: 0, left:-20, ease: Power2.easeInOut}, '-=2.8');
 
-            tl.to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut},'-=1.2');
+            tl.to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut},'-=1.7');
 
             tl.to(frame2, 1, {autoAlpha:1, scale:1}, '-=0.8');
 
-            tl.to(frame2, 3, {autoAlpha:1, scale: 2, top:0, left:- 400},'-=0.8');
+            tl.to(frame2, 6, {autoAlpha:1, scale: 4, top:0, left:- 400},'-=0.8');
 
-            tl.to(text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=2.5');
+            tl.to(text2, 0.8, {autoAlpha: 0, left:-70, ease: Power2.easeInOut}, '-=6');
 
-            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=3')
-                .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
-                .to(confetti_4_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=2.5')
-	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=2')
-	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=1.8');
+            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=5.5')
+                .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=5.5')
+                .to(confetti_4_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=5')
+	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=5')
+	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=4.5');
 	    }
 
 	    function restart() {
