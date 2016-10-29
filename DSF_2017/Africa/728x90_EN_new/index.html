@@ -15,6 +15,7 @@
 	    var LOOP_TIME = 0, // how many time the banner replays
 	        loop = 0,
 	        isReplay = true; // show/hide replay button in the end
+            images = [];
 
 	    function init() {
 
@@ -23,48 +24,64 @@
             // confetti_4.style.left = '50px';
 
             tl.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut});
-            // tl.to(f1_confetti_1, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut});
-            // tl.to(f1_confetti_2, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
-            // tl.to(f1_confetti_3, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
-            // tl.to(f1_confetti_4, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
-            // tl.to(f1_confetti_5, 0.8, {autoAlpha:1, scale:1, top:0, left:0, ease: Power2.easeInOut},'-=0.5');
 
-            tl.to(f1_confetti_1, 1, {autoAlpha:1, scale:1}, '+=1');
-            tl.to(f1_confetti_2, 1, {autoAlpha:1, scale:1}, '-=1');
-            tl.to(f1_confetti_3, 1, {autoAlpha:1, scale:1},'-=1');
-            tl.to(f1_confetti_4, 1, {autoAlpha:1, scale:1},'-=1');
-            tl.to(f1_confetti_5, 1, {autoAlpha:1, scale:1},'-=1');
+            //for general confetti
+            
+            var img;
+            for (i = 0; i < 23; i ++) {
+                images[i] = document.getElementById('img' + (i + 1));
+                images[i].style.opacity = 0;
+            }
 
-            tl.to(f1_confetti_2, 6, {autoAlpha:1, scale: 2, top:0, left:- 400},'-=0.8');
-            tl.to(f1_confetti_1, 6, {autoAlpha:1, scale: 2, top:0, left:- 400},'-=6');
-            tl.to(f1_confetti_3, 6, {autoAlpha:1, scale:2, top:0, left:-400},'-=6');
-            tl.to(f1_confetti_4, 6, {autoAlpha:1, scale:2, top:0, left:-400},'-=6');
-            tl.to(f1_confetti_5, 6, {autoAlpha:1, scale:2, top:0, left:-400},'-=6');
+            for (i = 0; i < images.length; i ++) {
+               
+                tl.fromTo(images[i], Math.random() * 2 + 4, 
+                    {
+                        rotation: Math.random() * 360,
+                        left: 728/2,
+                        top: Math.random() * 90 / 2,
+                        autoAlpha: 1, 
+                        scale: 0
+                    },
+                    {   
+                        autoAlpha:1, 
+                        left: -Math.random() * 400 - 100,
+                        top: Math.random() > 0.5 ? -Math.random() * 90 : Math.random() * 90,
+                        scale: 4
+                    },
+                    Math.random() * 2
+                );
+            }  
+            
+            //for the red bar to stick next frame
+            var confetti_4 = document.getElementById('confetti_4');
+            tl.fromTo(confetti_4, Math.random() * 2 + 1, 
+                {
+                    rotation: Math.random() * 360,
+                    left: 728/2 - 50,
+                    autoAlpha: 0, 
+                    top: Math.random() * 90 / 2
+                },
+                {   
+                    autoAlpha:1, 
+                    left: 0,
+                    top: 0,
+                    rotation: 0,
+                    scale: 1
+                },
+                Math.random() * 2
+            );
 
-            tl.to(confetti_1, 4, {autoAlpha:1, scale: 1, top:0, left: 0},'-=6');
-            tl.to(confetti_2, 4, {autoAlpha:1, scale: 1, top:0, left: 0},'-=6');
-            tl.to(confetti_3, 4, {autoAlpha:1, scale: 1, top:0, left: 0},'-=6');
-            tl.to(confetti_4, 4, {autoAlpha:1, scale: 1, top:0, left: 0},'-=6');
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=6');
+            tl.to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=5.5');
+            tl.to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=3');
 
-            //tl.to(confetti_1, 2.5, {autoAlpha:1, scale: 1, top:0, left: 0},'-=5');
-            //tl.to(confetti_2, 2.5, {autoAlpha:1, scale: 1, top:0, left: 0},'-=5');
-            //tl.to(confetti_3, 2.5, {autoAlpha:1, scale: 1, top:0, left: 0},'-=5');
-            //tl.to(confetti_4, 2.5, {autoAlpha:1, scale: 1, top:0, left: 0},'-=5');
-
-            //tl.to(confetti_1, 3, {autoAlpha:0, scale: 2, top: 0, left: 100}, '-=4');
-            //tl.to(confetti_2, 3, {autoAlpha:0, scale: 2, top: 0, left: 100},'-=4');
-            //tl.to(confetti_3, 3, {autoAlpha:0, scale: 2, top: 0, left: 100},'-=4');
-
-            tl.to(text1, 0.5, {autoAlpha: 0, left: 0}, '-=6');
-            tl.to(text2, 0.5, {autoAlpha: 1, left: 0},'-=4');
-
-            tl.to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=2');
-
-            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=2')
-                .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=2')
-                .to(confetti_4_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=2')
-	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=2')
-	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=1');
+            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=3')
+                .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
+                .to(confetti_4_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
+	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3')
+	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=2');
+            
 	    }
 
 	    function restart() {
@@ -98,7 +115,7 @@
 
 
             <!--div id="frame2" class="confetties"><img src="frame2.png"></div-->
-            <div id="confetti_1" class="confetties"><img src="confetti_1.png"></div>
+            <!--div id="confetti_1" class="confetties"><img src="confetti_1.png"></div>            
             <div id="confetti_2" class="confetties"><img src="confetti_2.png"></div>
             <div id="confetti_3" class="confetties"><img src="confetti_3.png"></div>
 
@@ -106,7 +123,32 @@
             <div id="f1_confetti_2" class="confetties"><img src="f1_confetti_2.png"></div>
             <div id="f1_confetti_3" class="confetties"><img src="f1_confetti_3.png"></div>
             <div id="f1_confetti_4" class="confetties"><img src="f1_confetti_4.png"></div>
-            <div id="f1_confetti_5" class="confetties"><img src="f1_confetti_5.png"></div>
+            <div id="f1_confetti_5" class="confetties"><img src="f1_confetti_5.png"></div-->
+
+            <div id="img1" class="confetti"></div>
+            <div id="img2" class="confetti"></div>
+            <div id="img3" class="confetti"></div>
+            <div id="img4" class="confetti"></div>
+            <div id="img5" class="confetti"></div>
+            <div id="img6" class="confetti"></div>
+            <div id="img7" class="confetti"></div>
+            <div id="img8" class="confetti"></div>
+            <div id="img9" class="confetti"></div>
+            <div id="img10" class="confetti"></div>
+            <div id="img11" class="confetti"></div>
+            <div id="img12" class="confetti"></div>
+            <div id="img13" class="confetti"></div>
+            <div id="img14" class="confetti"></div>
+            <div id="img15" class="confetti"></div>
+            <div id="img16" class="confetti"></div>
+            <div id="img17" class="confetti"></div>
+            <div id="img18" class="confetti"></div>
+            <div id="img19" class="confetti"></div>
+            <div id="img20" class="confetti"></div>
+            <div id="img21" class="confetti"></div>
+            <div id="img22" class="confetti"></div>
+            <div id="img23" class="confetti"></div>
+
 
             <div id="confetti_4_over" class="layer"><img src="confetti_4_over.png"></div>
             <div id="text1" class="layer"></div>
