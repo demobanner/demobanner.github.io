@@ -42,8 +42,7 @@
 
 			tl.to(car, 0.5, {autoAlpha:1})
 				.to(price, 0.5, {autoAlpha:1, top:0, ease: Power3.easeInOut})
-				.to(tc, 0.5, {autoAlpha:1})
-				.to([car, price, tc], 0.5, {autoAlpha:0}, "+=2.5");
+				.to(tc, 0.5, {autoAlpha:1});
 
 			tl.to(img2, 0.5, {autoAlpha:1, top:0, ease: Power3.easeInOut})
 				.to(text3, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut}, "-=0.2")
@@ -60,7 +59,7 @@
 				.to(text6, 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(text7, 0.5, {autoAlpha:1, left:0, ease: Power3.easeInOut})
-				.to([text7, img2], 0.5, {autoAlpha:0}, "+=2");
+				.to([text7, img2, car, price, tc], 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(logo2, 0.5, {autoAlpha:1})
 				.to(title1, 0.5, {top:-276},"-=0.3")
