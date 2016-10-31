@@ -70,9 +70,7 @@ a {
   background: url("mask.png") center no-repeat;
 }*/
 #redBg {
-  background: url("redBg.png") right no-repeat;
-  left: auto;
-  right: 0;
+  background: url("redBg.png") left no-repeat;
   width: 0;
   opacity: 1;
 }
