@@ -78,12 +78,12 @@
             tl.to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6.5');
             tl.to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4.5');
 
-            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=4')
+            // tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=4')
                 // .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
                 // .to(confetti_end_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
                 // .to(confetti_end, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=3')
-	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3.5')
-	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3');
+	    		tl.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=4')
+	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3.5');
 
 	    }
 
