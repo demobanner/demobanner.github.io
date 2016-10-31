@@ -53,26 +53,26 @@
             }
 
             //for the red bar to stick next frame
-            // var confetti_end = document.getElementById('confetti_end');
-            // tl.fromTo(confetti_end, Math.random() * 2 + 1,
-            //     {
-            //         rotation: Math.random() * 360,
-            //         left: 728/2 - 50,
-            //         autoAlpha: 0,
-            //         top: Math.random() * 90 / 2
-            //     },
-            //     {
-            //         autoAlpha:1,
-            //         left: 0,
-            //         top: 0,
-            //         rotation: 0,
-            //         scale: 1
-            //     },
-            //     // Math.random() * 2
-            //     3
-            // );
+            var confetti_end = document.getElementById('confetti_end');
+            tl.fromTo(confetti_end, Math.random() * 2 + 1,
+                {
+                    rotation: Math.random() * 360,
+                    left: 728/2 - 50,
+                    autoAlpha: 0,
+                    top: Math.random() * 90 / 2
+                },
+                {
+                    autoAlpha:1,
+                    left: 0,
+                    top: 0,
+                    rotation: 0,
+                    scale: 1
+                },
+                // Math.random() * 2
+                3
+            );
 
-            tl.to(confetti_end, 0.5, {left: 0}, '-=3.5');
+            // tl.to(confetti_end, 0.5, {left: 0}, '-=3.5');
 
             tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=7');
             tl.to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6.5');
