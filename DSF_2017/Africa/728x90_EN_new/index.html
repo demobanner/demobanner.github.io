@@ -31,7 +31,7 @@
 
             for (i = 0; i < images.length; i ++) {
 
-                tl.fromTo(images[i], Math.random() * 2 + 3,
+                tl.fromTo(images[i], Math.random() * 2 + 4,
                     {
                         rotation: Math.random() * 360,
                         left: 728/2 - 50,
@@ -40,11 +40,13 @@
                         scale: 0
                     },
                     {
-                        autoAlpha:1,
                         left: Math.random() * 2328 - 800,
                         // top: Math.random() > 0.5 ? -Math.random() * 90 : Math.random() * 90,
                         top: Math.random() * 2090 - 1000,
-                        scale: 4
+                        scale: 4,
+                        onComplete:function(){
+                            this.target.remove();
+                        }
                     },
                     Math.random() * 2
                 );
@@ -75,9 +77,9 @@
 
             tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=3')
                 // .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
-                .to(confetti_end_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
-                .to(confetti_end, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=3')
-	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3')
+                // .to(confetti_end_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
+                // .to(confetti_end, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=3')
+	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=2.5')
 	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=2');
 
 	    }
@@ -109,8 +111,6 @@
             <div id="redBg" class="layer"></div>
             <!-- <div id="mask" class="layer"></div> -->
 
-            <div id="confetti_end"><img src="confetti_end.png"></div>
-
             <div id="img1" class="confetti"><img src="img1.png"></div>
             <div id="img2" class="confetti"><img src="img2.png"></div>
             <div id="img3" class="confetti"><img src="img3.png"></div>
@@ -135,8 +135,9 @@
             <div id="img22" class="confetti"><img src="img22.png"></div>
             <div id="img23" class="confetti"><img src="img23.png"></div>
 
+            <div id="confetti_end"><img src="confetti_end.png"></div>
 
-            <div id="confetti_end_over" class="layer"><img src="confetti_end_over.png"></div>
+            <!-- <div id="confetti_end_over" class="layer"><img src="confetti_end_over.png"></div> -->
             <div id="text1" class="layer"></div>
             <div id="text2" class="layer"></div>
             <div id="text3" class="layer"></div>
