@@ -31,7 +31,7 @@
 
             for (i = 0; i < images.length; i ++) {
 
-                tl.fromTo(images[i], Math.random() * 2 + 4,
+                tl.fromTo(images[i], Math.random() * 2 + 5,
                     {
                         rotation: Math.random() * 360,
                         left: 728/2 - 50,
@@ -68,19 +68,20 @@
                     rotation: 0,
                     scale: 1
                 },
-                Math.random() * 2
+                // Math.random() * 2
+                3
             );
 
-            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=6');
-            tl.to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=5.5');
-            tl.to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=3');
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=7');
+            tl.to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6.5');
+            tl.to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4.5');
 
-            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=3')
+            tl.to(redBg, 1, {autoAlpha: 1, width:728,  ease: Power0.easeInOut},'-=4')
                 // .to(mask, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
                 // .to(confetti_end_over, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3')
                 // .to(confetti_end, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=3')
-	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=2.5')
-	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=2');
+	    		.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3.5')
+	    		.to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3');
 
 	    }
 
