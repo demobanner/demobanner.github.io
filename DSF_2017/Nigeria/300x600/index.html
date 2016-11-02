@@ -34,14 +34,14 @@
                 tl.fromTo(images[i], Math.random() * 2 + 5,
                     {
                         rotation: Math.random() * 360,
-                        left: 30,
-                        top: 300,
+                        left: 0,
+                        top: 200,
                         autoAlpha: 1,
                         scale: 0
                     },
                     {
                         left: Math.random() * 1200,
-                        top: -Math.random() * 1200 - 600,
+                        top: -Math.random() * 1200 - 500,
                         scale: 8,
                         onComplete:function(){
                             confetties.style.opacity = 0;
@@ -56,9 +56,9 @@
             tl.fromTo(confetti_end, Math.random() * 2 + 1,
                 {
                     rotation: Math.random() * 360,
-                    left: -100,
+                    left: -120,
                     autoAlpha: 0,
-                    top: 180,
+                    top: 50,
                     scale: 0
                 },
                 {
@@ -70,6 +70,7 @@
                 },
                 3
             );
+
 
             tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=6.5')
                 .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6')
