@@ -40,11 +40,11 @@
                         scale: 0
                     },
                     {
-                        left: -Math.random() * 1200 - 300,
+                        left: -Math.random() * 300 - 300,
                         top: Math.random() * 1200 - 600,
                         scale: 8,
                         onComplete:function(){
-                            this.target.remove();
+                            confetties.style.opacity = 0;
                         }
                     },
                     Math.random() * 2
@@ -71,17 +71,16 @@
                 2.5
             );
 
-            // tl.to(confetti_end, 0.5, {left: 0}, '-=3.5');
-
             tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=7')
-            tl.to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6.5')
-            tl.to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4.5')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6.5')
+                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4.5')
                 .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=4')
                 .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3.5');
 
 	    }
 
 	    function restart() {
+            document.getElementById('confetties').style.opacity = 1;
 	        tl.restart();
 	    }
 
@@ -94,7 +93,7 @@
 	            tl.to(btn_replay, 0.5, {
 	                autoAlpha: 1,
 	                rotation: 180
-	            });
+	            }, '-=3');
 	        }
 	    }
 
@@ -105,35 +104,35 @@
 <body>
     <div id="banner">
         <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
-
-            <div id="img1" class="confetti"><img src="img1.png"></div>
-            <div id="img2" class="confetti"><img src="img2.png"></div>
-            <div id="img3" class="confetti"><img src="img3.png"></div>
-            <div id="img4" class="confetti"><img src="img4.png"></div>
-            <div id="img5" class="confetti"><img src="img5.png"></div>
-            <div id="img6" class="confetti"><img src="img6.png"></div>
-            <div id="img7" class="confetti"><img src="img7.png"></div>
-            <div id="img8" class="confetti"><img src="img8.png"></div>
-            <div id="img9" class="confetti"><img src="img9.png"></div>
-            <div id="img10" class="confetti"><img src="img10.png"></div>
-            <div id="img11" class="confetti"><img src="img11.png"></div>
-            <div id="img12" class="confetti"><img src="img12.png"></div>
-            <div id="img13" class="confetti"><img src="img13.png"></div>
-            <div id="img14" class="confetti"><img src="img14.png"></div>
-            <div id="img15" class="confetti"><img src="img15.png"></div>
-            <div id="img16" class="confetti"><img src="img16.png"></div>
-            <div id="img17" class="confetti"><img src="img17.png"></div>
-            <div id="img18" class="confetti"><img src="img18.png"></div>
-            <div id="img19" class="confetti"><img src="img19.png"></div>
-            <div id="img20" class="confetti"><img src="img20.png"></div>
-            <div id="img21" class="confetti"><img src="img21.png"></div>
-            <div id="img22" class="confetti"><img src="img22.png"></div>
-            <div id="img23" class="confetti"><img src="img23.png"></div>
-            <div id="img24" class="confetti"><img src="img24.png"></div>
-            <div id="img25" class="confetti"><img src="img25.png"></div>
-            <div id="img26" class="confetti"><img src="img26.png"></div>
-            <div id="img27" class="confetti"><img src="img27.png"></div>
-
+            <div id="confetties">
+                <div id="img1" class="confetti"><img src="img1.png"></div>
+                <div id="img2" class="confetti"><img src="img2.png"></div>
+                <div id="img3" class="confetti"><img src="img3.png"></div>
+                <div id="img4" class="confetti"><img src="img4.png"></div>
+                <div id="img5" class="confetti"><img src="img5.png"></div>
+                <div id="img6" class="confetti"><img src="img6.png"></div>
+                <div id="img7" class="confetti"><img src="img7.png"></div>
+                <div id="img8" class="confetti"><img src="img8.png"></div>
+                <div id="img9" class="confetti"><img src="img9.png"></div>
+                <div id="img10" class="confetti"><img src="img10.png"></div>
+                <div id="img11" class="confetti"><img src="img11.png"></div>
+                <div id="img12" class="confetti"><img src="img12.png"></div>
+                <div id="img13" class="confetti"><img src="img13.png"></div>
+                <div id="img14" class="confetti"><img src="img14.png"></div>
+                <div id="img15" class="confetti"><img src="img15.png"></div>
+                <div id="img16" class="confetti"><img src="img16.png"></div>
+                <div id="img17" class="confetti"><img src="img17.png"></div>
+                <div id="img18" class="confetti"><img src="img18.png"></div>
+                <div id="img19" class="confetti"><img src="img19.png"></div>
+                <div id="img20" class="confetti"><img src="img20.png"></div>
+                <div id="img21" class="confetti"><img src="img21.png"></div>
+                <div id="img22" class="confetti"><img src="img22.png"></div>
+                <div id="img23" class="confetti"><img src="img23.png"></div>
+                <div id="img24" class="confetti"><img src="img24.png"></div>
+                <div id="img25" class="confetti"><img src="img25.png"></div>
+                <div id="img26" class="confetti"><img src="img26.png"></div>
+                <div id="img27" class="confetti"><img src="img27.png"></div>
+            </div>
             <div id="confetti_end"><img src="confetti_end.png"></div>
 
             <div id="text1" class="layer"></div>
