@@ -24,7 +24,7 @@
             //for general confetti
 
             var img;
-            for (i = 0; i < 26; i ++) {
+            for (i = 0; i < 27; i ++) {
                 images[i] = document.getElementById('img' + (i + 1));
                 images[i].style.opacity = 0;
             }
@@ -34,14 +34,14 @@
                 tl.fromTo(images[i], Math.random() * 2 + 5,
                     {
                         rotation: Math.random() * 360,
-                        left: 0,
-                        top: 280,
+                        left: -15,
+                        top: 300,
                         autoAlpha: 1,
                         scale: 0
                     },
                     {
-                        left: Math.random() * 1200,
-                        top: -Math.random() * 1200 - 600,
+                        left: Math.random() * 500,
+                        top: -Math.random() * 600 - 300,
                         scale: 8,
                         onComplete:function(){
                             confetties.style.opacity = 0;
@@ -56,15 +56,15 @@
             tl.fromTo(confetti_end, Math.random() * 2 + 1,
                 {
                     rotation: Math.random() * 360,
-                    left: -150,
+                    left: -120,
                     autoAlpha: 0,
-                    top: 160,
+                    top: 240,
                     scale: 0
                 },
                 {
                     autoAlpha:1,
-                    left: -22,
-                    top: -89,
+                    left: -26,
+                    top: -29,
                     rotation: 0,
                     scale: 1
                 },
@@ -132,11 +132,13 @@
                 <div id="img25" class="confetti"><img src="img25.png"></div>
                 <div id="img26" class="confetti"><img src="img26.png"></div>
                 <div id="img27" class="confetti"><img src="img27.png"></div>
-                <div id="img28" class="confetti"><img src="img28.png"></div>
             </div>
+
+            <div id="redBg" class="layer"></div>
 
             <div id="confetti_end"><img src="confetti_end.png"></div>
 
+            <!-- <div id="confetti_end_over" class="layer"><img src="confetti_end_over.png"></div> -->
             <div id="text1" class="layer"></div>
             <div id="text2" class="layer"></div>
             <div id="text3" class="layer"></div>
