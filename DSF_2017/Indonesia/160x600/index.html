@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Banner</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+	    var clickTag = '';
+
+	    var tl = new TimelineLite();
+
+	    var LOOP_TIME = 0, // how many time the banner replays
+	        loop = 0,
+	        isReplay = true; // show/hide replay button in the end
+            images = [];
+
+	    function init() {
+
+            tl.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut});
+
+            //for general confetti
+
+            var img;
+            for (i = 0; i < 27; i ++) {
+                images[i] = document.getElementById('img' + (i + 1));
+                images[i].style.opacity = 0;
+            }
+
+            for (i = 0; i < images.length; i ++) {
+
+                tl.fromTo(images[i], Math.random() * 2 + 5,
+                    {
+                        rotation: Math.random() * 360,
+                        left: -10,
+                        top: 300,
+                        autoAlpha: 1,
+                        scale: 0
+                    },
+                    {
+                        left: Math.random() * 500,
+                        top: -Math.random() * 600 - 300,
+                        scale: 8,
+                        onComplete:function(){
+                            confetties.style.opacity = 0;
+                        }
+                    },
+                    Math.random() * 2
+                );
+            }
+
+            //for the red bar to stick next frame
+            var confetti_end = document.getElementById('confetti_end');
+            tl.fromTo(confetti_end, Math.random() * 2 + 1,
+                {
+                    rotation: Math.random() * 360,
+                    left: -120,
+                    autoAlpha: 0,
+                    top: 240,
+                    scale: 0
+                },
+                {
+                    autoAlpha:1,
+                    left: -26,
+                    top: -29,
+                    rotation: 0,
+                    scale: 1
+                },
+                3
+            );
+
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=6.5')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6')
+                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4')
+                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3.5')
+                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3');
+
+	    }
+
+	    function restart() {
+            document.getElementById('confetties').style.opacity = 1;
+	        tl.restart();
+	    }
+
+	    function onLoop() {
+	        if (loop < LOOP_TIME) {
+	            restart();
+	            loop++;
+	        } else if (isReplay) {
+	            var btn_replay = document.getElementById('btn-replay');
+	            tl.to(btn_replay, 0.5, {
+	                autoAlpha: 1,
+	                rotation: 180
+	            }, '-=2.5');
+	        }
+	    }
+
+	    window.onload = init;
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+            <div id="confetties">
+                <div id="img1" class="confetti"><img src="img1.png"></div>
+                <div id="img2" class="confetti"><img src="img2.png"></div>
+                <div id="img3" class="confetti"><img src="img3.png"></div>
+                <div id="img4" class="confetti"><img src="img4.png"></div>
+                <div id="img5" class="confetti"><img src="img5.png"></div>
+                <div id="img6" class="confetti"><img src="img6.png"></div>
+                <div id="img7" class="confetti"><img src="img7.png"></div>
+                <div id="img8" class="confetti"><img src="img8.png"></div>
+                <div id="img9" class="confetti"><img src="img9.png"></div>
+                <div id="img10" class="confetti"><img src="img10.png"></div>
+                <div id="img11" class="confetti"><img src="img11.png"></div>
+                <div id="img12" class="confetti"><img src="img12.png"></div>
+                <div id="img13" class="confetti"><img src="img13.png"></div>
+                <div id="img14" class="confetti"><img src="img14.png"></div>
+                <div id="img15" class="confetti"><img src="img15.png"></div>
+                <div id="img16" class="confetti"><img src="img16.png"></div>
+                <div id="img17" class="confetti"><img src="img17.png"></div>
+                <div id="img18" class="confetti"><img src="img18.png"></div>
+                <div id="img19" class="confetti"><img src="img19.png"></div>
+                <div id="img20" class="confetti"><img src="img20.png"></div>
+                <div id="img21" class="confetti"><img src="img21.png"></div>
+                <div id="img22" class="confetti"><img src="img22.png"></div>
+                <div id="img23" class="confetti"><img src="img23.png"></div>
+                <div id="img24" class="confetti"><img src="img24.png"></div>
+                <div id="img25" class="confetti"><img src="img25.png"></div>
+                <div id="img26" class="confetti"><img src="img26.png"></div>
+                <div id="img27" class="confetti"><img src="img27.png"></div>
+            </div>
+
+            <div id="redBg" class="layer"></div>
+
+            <div id="confetti_end"><img src="confetti_end.png"></div>
+
+            <!-- <div id="confetti_end_over" class="layer"><img src="confetti_end_over.png"></div> -->
+            <div id="text1" class="layer"></div>
+            <div id="text2" class="layer"></div>
+            <div id="text3" class="layer"></div>
+            <div id="logo_dubai" class="layer"></div>
+            <div id="logo" class="layer"></div>
+        </a>
+        <a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+    </div>
+</body>
+
+</html>
