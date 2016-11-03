@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content="width=300,height=250">
     <title>Banner</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript">
 	    var clickTag = '';
@@ -31,7 +34,7 @@
 
             for (i = 0; i < images.length; i ++) {
 
-                tl.fromTo(images[i], Math.random() * 2 + 5,
+                tl.fromTo(images[i], Math.random() * 2 + 9,
                     {
                         rotation: Math.random() * 360,
                         left: 110,
@@ -47,7 +50,7 @@
                             confetties.style.opacity = 0;
                         }
                     },
-                    Math.random() * 2
+                    Math.random() * 4
                 );
             }
 
@@ -68,14 +71,14 @@
                     rotation: 0,
                     scale: 1
                 },
-                3
+                3.5
             );
 
-            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=6.5')
-                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6')
-                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4')
-                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3.5')
-                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3');
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=13')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=12.5')
+                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=10.5')
+                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=8.5')
+                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=8.5');
 
 	    }
 
@@ -88,13 +91,7 @@
 	        if (loop < LOOP_TIME) {
 	            restart();
 	            loop++;
-	        } else if (isReplay) {
-	            var btn_replay = document.getElementById('btn-replay');
-	            tl.to(btn_replay, 0.5, {
-	                autoAlpha: 1,
-	                rotation: 180
-	            }, '-=2.5');
-	        }
+	        } 
 	    }
 
 	    window.onload = init;
@@ -142,7 +139,6 @@
             <div id="logo_dubai" class="layer"></div>
             <div id="logo" class="layer"></div>
         </a>
-        <a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
     </div>
 </body>
 

@@ -4,8 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content="width=160,height=600">
     <title>Banner</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript">
 	    var clickTag = '';
@@ -14,8 +18,18 @@
 
 	    var LOOP_TIME = 0, // how many time the banner replays
 	        loop = 0,
-	        isReplay = true; // show/hide replay button in the end
             images = [];
+
+        function initEB(){
+            if (!EB.isInitialized()){
+                EB.addEventListener(EBG.EventName.EB_INITIALIZED, init);
+            }else{
+                init();
+            }
+        }
+        function handleBannerClick(){
+            EB.clickthrough();
+        }
 
 	    function init() {
 
@@ -31,7 +45,7 @@
 
             for (i = 0; i < images.length; i ++) {
 
-                tl.fromTo(images[i], Math.random() * 2 + 7,
+                tl.fromTo(images[i], Math.random() * 2 + 9,
                     {
                         rotation: Math.random() * 360,
                         left: -10,
@@ -47,7 +61,7 @@
                             confetties.style.opacity = 0;
                         }
                     },
-                    Math.random() * 2.5
+                    Math.random() * 4
                 );
             }
 
@@ -68,42 +82,24 @@
                     rotation: 0,
                     scale: 1
                 },
-                4
+                3.5
             );
 
-            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=9')
-                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=8.5')
-                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=6.5')
-                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=6')
-                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=5.5');
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=13')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=12.5')
+                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=10.5')
+                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=8.5')
+                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut},'-=8.5');
 
         }
 
-        function restart() {
-            document.getElementById('confetties').style.opacity = 1;
-            tl.restart();
-        }
-
-        function onLoop() {
-            if (loop < LOOP_TIME) {
-                restart();
-                loop++;
-            } else if (isReplay) {
-                var btn_replay = document.getElementById('btn-replay');
-                tl.to(btn_replay, 0.5, {
-                    autoAlpha: 1,
-                    rotation: 180
-                }, '-=5');
-            }
-        }
-
-	    window.onload = init;
+	    window.onload = initEB;
     </script>
 </head>
 
 <body>
     <div id="banner">
-        <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+        <a class="click-tag" onclick="javascript:handleBannerClick();">
             <div id="confetties">
                 <div id="img1" class="confetti"><img src="img1.png"></div>
                 <div id="img2" class="confetti"><img src="img2.png"></div>
@@ -134,18 +130,15 @@
                 <div id="img27" class="confetti"><img src="img27.png"></div>
             </div>
 
-            <div id="redBg" class="layer"></div>
 
             <div id="confetti_end"><img src="confetti_end.png"></div>
 
-            <!-- <div id="confetti_end_over" class="layer"><img src="confetti_end_over.png"></div> -->
             <div id="text1" class="layer"></div>
             <div id="text2" class="layer"></div>
             <div id="text3" class="layer"></div>
             <div id="logo_dubai" class="layer"></div>
             <div id="logo" class="layer"></div>
         </a>
-        <a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
     </div>
 </body>
 

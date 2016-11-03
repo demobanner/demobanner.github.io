@@ -66,10 +66,4 @@ a {
 #logo {
   background: url("logo.png") center no-repeat;
 }
-#btn-replay {
-  position: absolute;
-  top: -2px;
-  right: 2px;
-  visibility: hidden;
-  opacity: 0;
-}
+
