@@ -66,3 +66,12 @@ a {
 #logo {
   background: url("logo.png") center no-repeat;
 }
+#number {
+  background: url("number.png") center no-repeat;
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  left: auto;
+  top: 0;
+  right: 0;
+}
