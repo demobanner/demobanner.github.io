@@ -31,51 +31,52 @@
 
             for (i = 0; i < images.length; i ++) {
 
-                tl.fromTo(images[i], Math.random() * 2 + 5,
+                tl.fromTo(images[i], Math.random() * 3 + 8,
                     {
                         rotation: Math.random() * 360,
-                        left: 50,
-                        top: 300,
+                        left: 0,
+                        top: 200,
                         autoAlpha: 1,
                         scale: 0
                     },
                     {
                         left: Math.random() * 1200,
-                        top: -Math.random() * 1200 - 600,
+                        top: -Math.random() * 1200 - 500,
                         scale: 8,
                         onComplete:function(){
                             confetties.style.opacity = 0;
                         }
                     },
-                    Math.random() * 2
+                    Math.random() * 2.5
                 );
             }
 
             //for the red bar to stick next frame
             var confetti_end = document.getElementById('confetti_end');
-            tl.fromTo(confetti_end, Math.random() * 2 + 1,
+            tl.fromTo(confetti_end, Math.random() * 1 + 1,
                 {
                     rotation: Math.random() * 360,
-                    left: -100,
+                    left: -120,
                     autoAlpha: 0,
-                    top: 180,
+                    top: 50,
                     scale: 0
                 },
                 {
                     autoAlpha:1,
-                    left: -22,
-                    top: -89,
+                    left: -95,
+                    top: -175,
                     rotation: 0,
                     scale: 1
                 },
-                3
+                4
             );
 
-            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=6.5')
-                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=6')
-                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=4')
-                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=3.5')
-                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=3');
+
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=11')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=10.5')
+                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=8.5')
+                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=8')
+                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop},'-=7.5');
 
 	    }
 
@@ -93,7 +94,7 @@
 	            tl.to(btn_replay, 0.5, {
 	                autoAlpha: 1,
 	                rotation: 180
-	            }, '-=2.5');
+	            }, '-=7');
 	        }
 	    }
 
