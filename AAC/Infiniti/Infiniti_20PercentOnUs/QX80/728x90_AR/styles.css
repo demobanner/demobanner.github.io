@@ -22,7 +22,6 @@ body {
 }
 #car {
   background: url('car.jpg') center no-repeat;
-
 }
 #f2_text {
   background: url('f2_text.png') center no-repeat;
@@ -46,7 +45,7 @@ body {
 #logo {
   background: url('logo.png') center no-repeat;
   opacity: 1;
-  top: 30px;
+  top: 25px;
 }
 #logo2 {
   background: url('logo2.png') center no-repeat;
