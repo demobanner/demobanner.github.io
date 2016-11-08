@@ -45,7 +45,7 @@
 
             for (i = 0; i < images.length; i ++) {
 
-                tl.fromTo(images[i], Math.random() * 2 + 8,
+                tl.fromTo(images[i], Math.random() * 2 + 10,
                     {
                         rotation: Math.random() * 360,
                         left: 130,
@@ -67,7 +67,7 @@
 
             //for the red bar to stick next frame
             var confetti_end = document.getElementById('confetti_end');
-            tl.fromTo(confetti_end, Math.random() * 2 + 1,
+            tl.fromTo(confetti_end, 2.5,
                 {
                     rotation: Math.random() * 360,
                     left: 20,
@@ -85,11 +85,11 @@
                 4
             );
 
-            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=12')
-                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=11.5')
-                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=9.5')
-                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=7.5')
-                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut},'-=7.5');
+            tl.to(text1, 0.5, {autoAlpha: 0, left: -20}, '-=12.5')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0}, '-=12')
+                .to(text2, 0.8, {autoAlpha: 0, left: 0}, '-=10')
+                .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, '-=9')
+                .to(text3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut},'-=9');
 
 	    }
 
