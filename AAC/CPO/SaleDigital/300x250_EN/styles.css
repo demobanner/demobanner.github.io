@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border:1px solid black;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_bg {
+  background: url("f1_bg.jpg") center no-repeat;
+}
+#f1_logo {
+  background: url("f1_logo.png") center no-repeat;
+  opacity: 1;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+  top: -20px;
+}
+#f2_car {
+  background: url("f2_car.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+  top: -20px;
+}
+#f2_img {
+  background: url("f2_img.png") center no-repeat;
+  width: 160px;
+  height: 149px;
+  top: -81px;
+  left: 223px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f3_car {
+  background: url("f3_car.png") center no-repeat;
+}
+#f3_img {
+  background: url("f3_img.png") center no-repeat;
+  width: 160px;
+  height: 149px;
+  top: -81px;
+  left: 223px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f4_car {
+  background: url("f4_car.png") center no-repeat;
+}
+#f4_img {
+  background: url("f4_img.png") center no-repeat;
+  width: 160px;
+  height: 148px;
+  top: -81px;
+  left: 223px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f5_bg {
+  background: url("f5_bg.jpg") center no-repeat;
+}
+#f5_text1 {
+  background: url("f5_text1.png") center no-repeat;
+  top: -20px;
+}
+#f5_text2 {
+  background: url("f5_text2.png") center no-repeat;
+}
+#f6_bg {
+  background: url("f6_bg.jpg") center no-repeat;
+}
+#f6_text2 {
+  background: url("f6_text2.png") center no-repeat;
+}
+#f7_img {
+  background: url("f7_img.jpg") center no-repeat;
+}
+#f8_img {
+  background: url("f8_img.jpg") center no-repeat;
+}
+#f9_img {
+  background: url("f9_img.jpg") center no-repeat;
+}
+#f10_bg {
+  background: url("f10_bg.jpg") center no-repeat;
+}
+#f10_text1 {
+  background: url("f10_text1.png") center no-repeat;
+}
+#f11_logo {
+  background: url("f11_logo.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 20px;
+}
+#btn-replay {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
