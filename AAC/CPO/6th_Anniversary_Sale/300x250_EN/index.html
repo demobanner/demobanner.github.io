@@ -11,59 +11,59 @@
 	<link rel="stylesheet" href="styles.css"/>
 	<script type="text/javascript">
 		var clickTag = '';
-		
+
 		var tl = new TimelineLite();
-		
+
 		var LOOP_TIME = 0,	// how many time the banner replays
 				loop = 0,
 				isReplay = true;	// show/hide replay button in the end
-		
+
 		function init() {
 
-			tl.to(f1_bg, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to([f1_bg, f1_text, f1_logo], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			tl.to(f1_bg, 0.5, {autoAlpha: 1})
+			  .to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+			  .to([f1_bg, f1_text, f1_logo], 0.5, {autoAlpha: 0}, "+=2")
 
-			  .to(f2_car, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to(f2_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f2_img, 0.5, {autoAlpha: 1, scale: 1, left: 200, top: -45, ease: Power3.easeInOut})
-			  .to([f2_car, f2_img], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f2_car, 0.5, {autoAlpha: 1})
+			  .to(f2_text, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+			  .to(f2_firework, 0.5, {autoAlpha: 1, scale: 1, top:0, right:0, ease: Power1.easeInOut})
 
-			  .to(f3_car, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.5")
-			  .to(f3_img, 0.5, {autoAlpha: 1, scale: 1, left: 200, top: -45, ease: Power3.easeInOut})
-			  .to([f3_car, f3_img], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f3_car, 0.5, {autoAlpha: 1}, "+=2.5")
+        .to([f2_car, f2_firework], 0, {autoAlpha: 0})
+			  .to(f3_firework, 0.5, {autoAlpha: 1, scale: 1, top:0, right:0, ease: Power1.easeInOuteaseInOut})
 
-			  .to(f4_car, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.5")
-			  .to(f4_img, 0.5, {autoAlpha: 1, scale: 1, left: 200, top: -45, ease: Power3.easeInOut})
-			  .to([f2_text, f4_car, f4_img], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f4_car, 0.5, {autoAlpha: 1}, "+=2.5")
+        .to([f3_car, f3_firework], 0, {autoAlpha: 0})
+			  .to(f4_firework, 0.5, {autoAlpha: 1, scale: 1, top:0, right:0, ease: Power1.easeInOut})
 
-			  .to(f5_bg, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to(f5_text1, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f5_text2, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to([f5_bg, f5_text2], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f5_bg, 0.5, {autoAlpha: 1}, "+=2.5")
+        .to([f2_text, f4_car, f4_firework], 0, {autoAlpha: 0})
+			  .to(f5_text1, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+			  .to(f5_text2, 0.5, {autoAlpha: 1})
+			  .to([f5_bg, f5_text2], 0.5, {autoAlpha: 0}, "+=2.5")
 
-			  .to([f6_bg, f6_text2], 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to([f6_bg,f5_text1, f6_text2], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to([f6_bg, f6_text2], 0.5, {autoAlpha: 1})
+			  .to([f6_bg,f5_text1, f6_text2], 0.5, {autoAlpha: 0}, "+=2.0")
 
-			  .to(f7_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.5")
-			  .to(f7_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f7_img, 0.5, {autoAlpha: 1})
+        .to(f8_img, 0.5, {autoAlpha: 1}, "+=1")
+			  .to(f7_img, 0, {autoAlpha: 0})
 
-			  .to(f8_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.5")
-			  .to(f8_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+        .to(f9_img, 0.5, {autoAlpha: 1}, "+=1")
+			  .to(f8_img, 0, {autoAlpha: 0})
 
-			  .to(f9_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.5")
-			  .to(f9_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+        .to(f10_bg, 0.5, {autoAlpha: 1}, "+=1")
+			  .to(f9_img, 0, {autoAlpha: 0})
 
-			  .to(f10_bg, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.5")
-			  .to(f5_text1, 0.5, {top: -20}, "-=0.5")
-			  .to(f5_text1, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f10_text1, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to([f10_bg, f5_text1, f10_text1], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f5_text1, 0.5, {top: -50})
+			  .to(f5_text1, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeOut})
+			  .to(f10_text1, 0.5, {autoAlpha: 1})
+			  .to([f10_bg, f5_text1, f10_text1], 0.5, {autoAlpha: 0}, "+=2")
 
-			  .to(f11_logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop});
+			  .to(f11_logo, 0.5, {autoAlpha: 1})
+			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
-		
+
 		function restart() {
       tl.restart();
     }
@@ -76,9 +76,9 @@
 				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
 			}
 		}
-		
+
 		window.onload = init;
-		
+
 	</script>
 </head>
 <body>
@@ -88,12 +88,12 @@
       <div id="f1_text" class="layer"></div>
       <div id="f1_logo" class="layer"></div>
       <div id="f2_car" class="layer"></div>
-      <div id="f2_text" class="layer"></div>
-      <div id="f2_img" class="layer"></div>
+      <div id="f2_firework" class="layer"></div>
       <div id="f3_car" class="layer"></div>
-      <div id="f3_img" class="layer"></div>
+      <div id="f3_firework" class="layer"></div>
       <div id="f4_car" class="layer"></div>
-      <div id="f4_img" class="layer"></div>
+      <div id="f4_firework" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
       <div id="f5_bg" class="layer"></div>
       <div id="f5_text2" class="layer"></div>
       <div id="f6_bg" class="layer"></div>

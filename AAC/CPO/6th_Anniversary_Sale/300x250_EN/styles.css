@@ -39,47 +39,50 @@ a {
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
-  top: -20px;
+  top: -50px;
 }
 #f2_car {
-  background: url("f2_car.png") center no-repeat;
+  background: url("f2_car.jpg") center no-repeat;
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
-  top: -20px;
+  top: -50px;
 }
-#f2_img {
-  background: url("f2_img.png") center no-repeat;
-  width: 160px;
-  height: 149px;
-  top: -81px;
-  left: 223px;
+#f2_firework {
+  background: url("f2_firework.png") center no-repeat;
+  width: 300px;
+  height: 250px;
+  left: auto;
+  top: -113px;
+  right: -135px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f3_car {
-  background: url("f3_car.png") center no-repeat;
+  background: url("f3_car.jpg") center no-repeat;
 }
-#f3_img {
-  background: url("f3_img.png") center no-repeat;
-  width: 160px;
-  height: 149px;
-  top: -81px;
-  left: 223px;
+#f3_firework {
+  background: url("f3_firework.png") center no-repeat;
+  width: 300px;
+  height: 250px;
+  left: auto;
+  top: -113px;
+  right: -135px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f4_car {
-  background: url("f4_car.png") center no-repeat;
+  background: url("f4_car.jpg") center no-repeat;
 }
-#f4_img {
-  background: url("f4_img.png") center no-repeat;
-  width: 160px;
-  height: 148px;
-  top: -81px;
-  left: 223px;
+#f4_firework {
+  background: url("f4_firework.png") center no-repeat;
+  width: 300px;
+  height: 250px;
+  left: auto;
+  top: -113px;
+  right: -135px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -89,7 +92,7 @@ a {
 }
 #f5_text1 {
   background: url("f5_text1.png") center no-repeat;
-  top: -20px;
+  top: -50px;
 }
 #f5_text2 {
   background: url("f5_text2.png") center no-repeat;
