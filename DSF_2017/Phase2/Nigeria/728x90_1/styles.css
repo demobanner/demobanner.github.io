@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background: #fff;
+}
+#bg{
+  background: url("bg.png") center no-repeat;
+  /*background: green;*/
+  opacity: 1;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.confetti {
+  position: absolute;
+  opacity: 0;
+
+  transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+}
+
+#confetti_end1, #confetti_end2, #confetti_end3, #confetti_end4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/*#logo_dubai {
+  background: url("logo_dubai.png") center no-repeat;
+  opacity: 1;
+}*/
+#text1 {
+  background: url("text1.png") center no-repeat;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+  left: -30px;
+}
+#text3 {
+  background: url("text3.png") center no-repeat;
+  left: -30px;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
