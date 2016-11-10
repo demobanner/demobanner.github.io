@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content= "width=728, height=90">
+    <title>Banner</title>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+	    var clickTag = '';
+
+	    var tl = new TimelineLite();
+
+	    var LOOP_TIME = 0, // how many time the banner replays
+	        loop = 0,
+	        isReplay = true; // show/hide replay button in the end
+            images = [];
+
+	    function init() {
+
+            tl.fromTo(confetti_end1, 1.5,
+                {
+                    rotation: 90,
+                    left: -250,
+                    autoAlpha: 0,
+                    top: Math.random() * 45,
+                    scale: 3
+                },
+                {
+                    autoAlpha:1,
+                    left: 0,
+                    top: 0,
+                    rotation: 0,
+                    scale: 1
+                },
+                1
+            );
+
+            var confetties1 = document.getElementById('confetties1').children;
+
+            for (i = 0; i < confetties1.length; i ++) {
+                tl.fromTo(confetties1[i], Math.random() * 2 + 3,
+                    {
+                        rotation: Math.random() * 360,
+                        left: - 400,
+                        top: Math.random() * 200 - 100,
+                        autoAlpha: 1,
+                        scale: 8
+                    },
+                    {
+                        rotation: 0,
+                        left: 400,
+                        top: Math.random() * 45,
+                        scale: 0,
+                    },
+                    Math.random() * 3
+                );
+            }
+
+            var confetties2 = document.getElementById('confetties2').children;
+
+            for (i = 0; i < confetties2.length; i ++) {
+                tl.fromTo(confetties2[i], Math.random() * 2 + 4,
+                    {
+                        rotation: Math.random() * 360,
+                        left: - 400,
+                        top: Math.random() * 200 - 100,
+                        autoAlpha: 1,
+                        scale: 8
+                    },
+                    {
+                        rotation: 0,
+                        left: 728,
+                        top: Math.random() * 45,
+                        scale: 0,
+                    },
+                    Math.random() * 3 + 5
+                );
+            }
+
+            tl.fromTo(confetti_end2, 1.8,
+                {
+                    rotation: 90,
+                    left: -250,
+                    autoAlpha: 0,
+                    top: Math.random() * 45,
+                    scale: 3
+                },
+                {
+                    autoAlpha:1,
+                    left: 200,
+                    top: 0,
+                    rotation: 0,
+                    scale: 1
+                },
+                7
+            );
+
+            tl.fromTo(confetti_end3, 1.8,
+                {
+                    rotation: 90,
+                    left: -250,
+                    autoAlpha: 0,
+                    top: Math.random() * 45,
+                    scale: 3
+                },
+                {
+                    autoAlpha:1,
+                    left: 425,
+                    top: 0,
+                    rotation: 0,
+                    scale: 1
+                },
+                7.5
+            );
+
+            tl.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=11')
+                .to(text1, 0.5, {autoAlpha: 0, left: -20, ease: Power2.easeInOut}, '-=9')
+                .to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut}, '-=8.5')
+                .to(text2, 0.5, {autoAlpha: 0, left: 0, ease: Power2.easeInOut}, '-=6.5')
+                .to(bg, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=6')
+                .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut},'-=5')
+                .to(text3, 0.8, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop}, '-=5');
+
+	    }
+
+	    function restart() {
+            document.getElementById('confetties').style.opacity = 1;
+	        tl.restart();
+	    }
+
+	    function onLoop() {
+	        if (loop < LOOP_TIME) {
+	            restart();
+	            loop++;
+	        }
+	    }
+
+	    window.onload = init;
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+
+            <div id="confetties1">
+                <img class="confetti" src="img1.png">
+                <img class="confetti" src="img2.png">
+                <img class="confetti" src="img3.png">
+                <img class="confetti" src="img4.png">
+                <img class="confetti" src="img5.png">
+                <img class="confetti" src="img6.png">
+                <img class="confetti" src="img7.png">
+                <img class="confetti" src="img8.png">
+                <img class="confetti" src="img9.png">
+            </div>
+
+            <div id="bg" class="layer"></div>
+
+            <div id="confetties2">
+                <img class="confetti" src="img1.png">
+                <img class="confetti" src="img2.png">
+                <img class="confetti" src="img3.png">
+                <img class="confetti" src="img4.png">
+                <img class="confetti" src="img5.png">
+                <img class="confetti" src="img6.png">
+                <img class="confetti" src="img7.png">
+                <img class="confetti" src="img8.png">
+                <img class="confetti" src="img9.png">
+            </div>
+
+            <div id="confetti_end1"><img src="confetti_end1.png"></div>
+            <div id="confetti_end2"><img src="confetti_end2.png"></div>
+            <div id="confetti_end3"><img src="confetti_end3.png"></div>
+            <div id="confetti_end4"><img src="confetti_end4.png"></div>
+
+            <div id="text1" class="layer"></div>
+            <div id="text2" class="layer"></div>
+            <div id="text3" class="layer"></div>
+            <!-- <div id="logo_dubai" class="layer"></div> -->
+            <div id="logo" class="layer"></div>
+        </a>
+    </div>
+</body>
+
+</html>
