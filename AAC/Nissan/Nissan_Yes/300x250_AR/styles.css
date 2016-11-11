@@ -40,9 +40,9 @@ a {
 }
 #f1_img1 {
   background: url("f1_img1.png") center no-repeat;
-  top: 147px;
-  left: 154px;
-  width: 140px;
+  top: 96px;
+  left: 13px;
+  width: 108px;
   height: 84px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
@@ -50,20 +50,20 @@ a {
 }
 #f1_img2 {
   background: url("f1_img2.png") center no-repeat;
-  top: 83px;
-  left: 4px;
-  width: 150px;
-  height: 90px;
+  top: 33px;
+  left: 121px;
+  width: 157px;
+  height: 103px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img3 {
   background: url("f1_img3.png") center no-repeat;
-  top: 16px;
-  left: 139px;
-  width: 147px;
-  height: 91px;
+  top: 172px;
+  left: 99px;
+  width: 132px;
+  height: 77px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -76,9 +76,9 @@ a {
 }
 #f4_img {
   background: url("f4_img.png") center no-repeat;
-  -ms-transform: scale(0.1);
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
 }
 #f5_img {
   background: url("f5_img.png") center no-repeat;
@@ -100,30 +100,30 @@ a {
 }
 #f8_img1 {
   background: url("f8_img1.png") center no-repeat;
-  top: 60px;
-  left: 76px;
-  width: 137px;
-  height: 78px;
+  top: 64px;
+  left: 95px;
+  width: 119px;
+  height: 73px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f8_img2 {
   background: url("f8_img2.png") center no-repeat;
-  top: 134px;
-  left: 174px;
-  width: 95px;
-  height: 57px;
+  top: 124px;
+  left: 25px;
+  width: 114px;
+  height: 72px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f8_img3 {
   background: url("f8_img3.png") center no-repeat;
-  top: 137px;
-  left: 25px;
-  width: 103px;
-  height: 59px;
+  top: 121px;
+  left: 171px;
+  width: 128px;
+  height: 76px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);

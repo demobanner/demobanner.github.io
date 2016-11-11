@@ -26,26 +26,45 @@
 			  .to(f2_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
 
 			  .to(f3_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-			  .to([f1_img1, f1_img2, f1_img3, f2_img, f3_img], 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 1})
+				.to(f4_img, 0.5, {autoAlpha: 1, ease: Power4.easeInOut}, "-=0.5")
+			  .to([f1_img1, f1_img2, f1_img3, f2_img, f3_img], 0.5, {autoAlpha: 0, scale: 6, ease: Power4.easeInOut})
 
-			  .to(f4_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power4.easeInOut}, "-=0.25")
-			  .to(f4_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 2})
+			  .to(f4_img, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power4.easeInOut}, "-=0.5")
+				.to(f4_img, 0.2, {autoAlpha: 1, scale: 1, ease: Power2.easeInOut})
+			  .to(f4_img, 0.5, {autoAlpha: 0, scale: 2, ease: Power3.easeInOut, delay: 2})
 
-			  .to(logo2, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.25")
-			  .to(f5_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power3.easeInOut})
-			  .to(f5_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 1.5})
+			  .to(f5_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power4.easeInOut}, "-=0.5")
+			  .to(logo2, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+			  .to(f5_img, 0.5, {autoAlpha: 0, scale: 2, ease: Power4.easeInOut, delay: 1})
 
-			  .to(f6_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power3.easeInOut})
-			  .to(f6_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 1.5})
+			  .to(f6_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power4.easeInOut}, "-=0.25")
+			  .to(f6_img, 0.5, {autoAlpha: 0, scale: 2, ease: Power4.easeInOut, delay: 1})
 
-			  .to(f7_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power3.easeInOut})
-			  .to(f7_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut, delay: 1.5})
+			  .to(f7_img, 0.5, {autoAlpha: 1, scale: 1, ease: Power4.easeInOut}, "-=0.25")
+			  .to(f7_img, 0.5, {autoAlpha: 0, scale: 2, ease: Power3.easeInOut, delay: 1})
 
 			  .to(f8_img1, 0.5, {autoAlpha: 1, scale: 1, ease: Power4.easeInOut})
-			  .to(f8_img2, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power4.easeInOut})
-			  .to(f8_img2, 0.25, {scale: 1, ease: Power4.easeInOut})
-			  .to(f8_img3, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power4.easeInOut})
-			  .to(f8_img3, 0.25, {scale: 1, ease: Power4.easeInOut, onComplete:onLoop})
+
+			  .to(f8_img2, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
+			  .to(f8_img2, 0.2, {scale: 1, ease: Power2.easeInOut})
+
+			  .to(f8_img3, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
+			  .to(f8_img3, 0.2, {scale: 1, ease: Power2.easeInOut, onComplete: Zoom})
+		}
+		var count = 0;
+		function Zoom() {
+			if (count < 4) {
+				tl.to(f8_img2, 0.2, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
+					.to(f8_img2, 0.2, {scale: 1, ease: Power2.easeInOut})
+
+					.to(f8_img3, 0.2, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
+					.to(f8_img3, 0.2, {scale: 1, ease: Power2.easeInOut, onComplete: Zoom})
+					
+				count++;
+			}
+			else {				
+				onLoop();
+			}
 		}
 
 		function restart() {
