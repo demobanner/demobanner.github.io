@@ -76,9 +76,9 @@ a {
 }
 #f4_img {
   background: url("f4_img.png") center no-repeat;
-  -ms-transform: scale(0.1);
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
 }
 #f5_img {
   background: url("f5_img.png") center no-repeat;
