@@ -40,36 +40,57 @@ a {
 }
 #f1_img1 {
   background: url("f1_img1.png") center no-repeat;
-  top: 96px;
-  left: 13px;
-  width: 108px;
-  height: 84px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img2 {
   background: url("f1_img2.png") center no-repeat;
-  top: 33px;
-  left: 121px;
-  width: 157px;
-  height: 103px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img3 {
   background: url("f1_img3.png") center no-repeat;
-  top: 172px;
-  left: 99px;
-  width: 132px;
-  height: 77px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
-#f2_img {
-  background: url("f2_img.jpg") center no-repeat;
+#f2_img1 {
+  background: url("f2_img1.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img2 {
+  background: url("f2_img2.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img3 {
+  background: url("f2_img3.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img4 {
+  background: url("f2_img4.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img5 {
+  background: url("f2_img5.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img6 {
+  background: url("f2_img6.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
 }
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;

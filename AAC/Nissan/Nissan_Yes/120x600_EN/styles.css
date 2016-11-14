@@ -40,36 +40,63 @@ a {
 }
 #f1_img1 {
   background: url("f1_img1.png") center no-repeat;
-  top: 165px;
-  left: 0px;
-  width: 106px;
-  height: 81px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img2 {
   background: url("f1_img2.png") center no-repeat;
-  top: 298px;
-  left: 0px;
-  width: 120px;
-  height: 101px;
+  width: 170px;
+  left: -25px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img3 {
   background: url("f1_img3.png") center no-repeat;
-  top: 453px;
-  left: 0px;
-  width: 119px;
-  height: 73px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
-#f2_img {
-  background: url("f2_img.jpg") center no-repeat;
+#f2_img1 {
+  background: url("f2_img1.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img2 {
+  background: url("f2_img2.png") center no-repeat;
+  width: 150px;
+  left: -15px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img3 {
+  background: url("f2_img3.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img4 {
+  background: url("f2_img4.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img5 {
+  background: url("f2_img5.png") center no-repeat;
+  width: 150px;
+  left: -15px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img6 {
+  background: url("f2_img6.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
 }
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
@@ -83,19 +110,19 @@ a {
   transform: scale(0.3);
 }
 #f5_img {
-  background: url("f5_img.png") center no-repeat;
+  background: url("f5_img.jpg") center no-repeat;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f6_img {
-  background: url("f6_img.png") center no-repeat;
+  background: url("f6_img.jpg") center no-repeat;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f7_img {
-  background: url("f7_img.png") center no-repeat;
+  background: url("f7_img.jpg") center no-repeat;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);

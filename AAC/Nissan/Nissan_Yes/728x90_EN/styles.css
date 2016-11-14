@@ -40,37 +40,77 @@ a {
 }
 #f1_img1 {
   background: url("f1_img1.png") center no-repeat;
-  top: 24px;
-  left: 172px;
-  width: 87px;
-  height: 65px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img2 {
   background: url("f1_img2.png") center no-repeat;
-  top: -1px;
-  left: 337px;
-  width: 127px;
-  height: 83px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f1_img3 {
   background: url("f1_img3.png") center no-repeat;
-  top: 13px;
-  left: 523px;
-  width: 107px;
-  height: 64px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
-#f2_img {
-  background: url("f2_img.jpg") center no-repeat;
+#f2_img1 {
+  background: url("f2_img1.png") center no-repeat;
+  width: 728px;
+  height: 100px;
+  top:0;
+  left:0;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
 }
+#f2_img2 {
+  background: url("f2_img2.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img3 {
+  background: url("f2_img3.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img4 {
+  background: url("f2_img4.png") center no-repeat;
+  width: 728px;
+  height: 110px;
+  top:0;
+  left:0;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img5 {
+  background: url("f2_img5.png") center no-repeat;
+  width: 728px;
+  height: 95px;
+  top:0;
+  left:0;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f2_img6 {
+  background: url("f2_img6.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#f1_img3 {
+  background: url("f1_img3.png") center no-repeat;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
 }
