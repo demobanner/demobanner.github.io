@@ -40,10 +40,10 @@ a {
 }
 #f1_img1 {
   background: url("f1_img1.png") center no-repeat;
-  top: 96px;
-  left: 13px;
-  width: 108px;
-  height: 84px;
+  top: 172px;
+  left: 99px;
+  width: 132px;
+  height: 77px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -60,10 +60,10 @@ a {
 }
 #f1_img3 {
   background: url("f1_img3.png") center no-repeat;
-  top: 172px;
-  left: 99px;
-  width: 132px;
-  height: 77px;
+  top: 96px;
+  left: 13px;
+  width: 108px;
+  height: 84px;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
