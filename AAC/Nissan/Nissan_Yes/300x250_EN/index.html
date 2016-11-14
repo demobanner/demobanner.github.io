@@ -45,20 +45,20 @@
 
 			  .to(f8_img1, 0.5, {autoAlpha: 1, scale: 1, ease: Power4.easeInOut})
 
-			  .to(f8_img2, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
-			  .to(f8_img2, 0.2, {scale: 1, ease: Power2.easeInOut})
+			  .to(f8_img2, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power1.easeInOut})
+			  .to(f8_img2, 0.2, {scale: 1, ease: Power1.easeInOut})
 
-			  .to(f8_img3, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
-			  .to(f8_img3, 0.2, {scale: 1, ease: Power2.easeInOut, onComplete: Zoom})
+			  .to(f8_img3, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power1.easeInOut})
+			  .to(f8_img3, 0.2, {scale: 1, ease: Power1.easeInOut, onComplete: Zoom})
 		}
 		var count = 0;
 		function Zoom() {
 			if (count < 4) {
-				tl.to(f8_img2, 0.2, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
-					.to(f8_img2, 0.2, {scale: 1, ease: Power2.easeInOut})
+				tl.to(f8_img2, 0.2, {autoAlpha: 1, scale: 1.2, ease: Power1.easeInOut}, "+=0.5")
+					.to(f8_img2, 0.2, {scale: 1, ease: Power1.easeInOut})
 
-					.to(f8_img3, 0.2, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
-					.to(f8_img3, 0.2, {scale: 1, ease: Power2.easeInOut, onComplete: Zoom})
+					.to(f8_img3, 0.2, {autoAlpha: 1, scale: 1.2, ease: Power1.easeInOut})
+					.to(f8_img3, 0.2, {scale: 1, ease: Power1.easeInOut, onComplete: Zoom})
 					
 				count++;
 			}
