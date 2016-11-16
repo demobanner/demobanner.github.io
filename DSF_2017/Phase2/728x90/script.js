@@ -10,16 +10,18 @@ function initConfetti () {
     canvas.height = H;
 
     //snowflake particles
-    var mp = 200; //max particles
+    var mp = 2000; //max particles
     var particles = [];
     for (var i = 0; i < mp; i++) {
         particles.push({
             x: Math.random() * W, //x-coordinate
             y: Math.random() * H, //y-coordinate
-            r: Math.random() * 15 + 1, //radius
+            r: Math.random() * 2, //radius
             d: Math.random() * mp, //density
-            color: "rgba(" + Math.floor((Math.random() * 255)) + ", " + Math.floor((Math.random() * 255)) + ", " + Math.floor((Math.random() * 255)) + ", 0.8)",
-            tilt: Math.floor(Math.random() * 5) - 5
+            color: "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")",
+            tilt: Math.floor(Math.random() * 5) - 5,
+            dirX: Math.floor(Math.random()*6 - 3),
+            dirY: Math.floor(Math.random()*6 - 3)
         });
     }
 
@@ -27,17 +29,17 @@ function initConfetti () {
     function draw() {
         ctx.clearRect(0, 0, W, H);
 
-
-
         for (var i = 0; i < mp; i++) {
             var p = particles[i];
+
             ctx.beginPath();
-            ctx.lineWidth = p.r;
-            ctx.strokeStyle = p.color; // Green path
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(p.x + p.tilt + p.r / 2, p.y + p.tilt);
-            ctx.stroke(); // Draw it
-        }
+            ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI, false);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+/*            ctx.lineWidth = p.r;
+            ctx.strokeStyle = p.color;
+            ctx.stroke();
+*/        }
 
         update();
     }
@@ -54,8 +56,13 @@ function initConfetti () {
             //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
             //Every particle has its own density which can be used to make the downward movement different for each flake
             //Lets make it more random by adding in the radius
-            p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
-            p.x += Math.sin(angle) * 2;
+            /*p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
+            p.x += Math.sin(angle) * 2;*/
+
+            p.x += p.dirX;
+            p.y += p.dirY;
+            
+            p.color = "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")";
 
             //Sending flakes back from the top when it exits
             //Lets make it a bit more organic and let flakes enter from the left and right also.
@@ -99,5 +106,5 @@ function initConfetti () {
     }
 
     //animation loop
-    setInterval(draw, 20);
+    setInterval(draw, 150);
 }

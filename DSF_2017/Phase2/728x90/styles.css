@@ -14,10 +14,11 @@ a {
   height: 88px;
   overflow: hidden;
   border:1px solid black;
-  background: #fff;
+  background: #000;
 }
 #bg{
-  background: url("bg.jpg") center no-repeat;
+  /*background: url("bg.jpg") center no-repeat;*/
+  background: black;
   opacity: 1;
 }
 .layer {
