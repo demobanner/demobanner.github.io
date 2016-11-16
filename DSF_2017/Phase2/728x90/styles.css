@@ -16,11 +16,6 @@ a {
   border:1px solid black;
   background: #000;
 }
-#bg{
-  /*background: url("bg.jpg") center no-repeat;*/
-  background: black;
-  opacity: 1;
-}
 .layer {
   position: absolute;
   top: 0;
@@ -38,19 +33,57 @@ a {
 }
 #text1 {
   background: url("text1.png") center no-repeat;
+  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);
 }
 #text2 {
   background: url("text2.png") center no-repeat;
-  left: -30px;
+  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);
 }
 #text3 {
   background: url("text3.png") center no-repeat;
-  left: -30px;
+  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);
 }
 #logo {
   background: url("logo.png") center no-repeat;
 }
-
+#cta {
+  background: url("cta.png") center no-repeat;
+  opacity: 1;
+}
+#date {
+  background: url("date.png") center no-repeat;
+  top: 50px;
+}
+#endTxt1 {
+  background: url("endTxt1.png") center no-repeat;
+  left: -50px;
+/*  top: 14px;
+  left: 10px;
+  width: 84px;
+  height: 24px;
+*/}
+#endTxt2 {
+  background: url("endTxt2.png") center no-repeat;
+  left: -50px;
+/*  top: 36px;
+  left: 106px;
+  width: 54px;
+  height: 23px;
+*/}
+#endTxt3 {
+  background: url("endTxt3.png") center no-repeat;
+  left: -50px;
+/*  top: 57px;
+  left: 178px;
+  width: 172px;
+  height: 22px;
+*/}
 canvas {
   position: absolute;
   display: block;

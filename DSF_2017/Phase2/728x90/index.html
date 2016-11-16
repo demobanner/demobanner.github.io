@@ -24,14 +24,18 @@
 	    function init() {
         initConfetti();
 
-        tl.to(text1, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-          .to(text1, 0.5, {autoAlpha: 0, left: -20, ease: Power2.easeInOut})
-          .to(text2, 0.5, {autoAlpha: 1, left: 0, ease: Power2.easeInOut})
-          .to(text2, 0.5, {autoAlpha: 0, left: 0, ease: Power2.easeInOut})
-          //.to(bg, 0.5, {autoAlpha: 0, ease: Power2.easeInOut})
-          .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-          .to(text3, 0.8, {autoAlpha: 1, left:0, ease: Power2.easeInOut, onComplete:onLoop});
+        tl.to(text1, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut})
+          .to(text1, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1")
+          .to(text2, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut}, "-=0.5")
+          .to(text2, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1")
+          .to(text3, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut}, "-=0.5")
+          .to(text3, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1");
 
+        tl.to(endTxt1, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut})
+          .to(endTxt2, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut}, "-=0.2")
+          .to(endTxt3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut}, "-=0.2")
+          .to(logo, 0.5, {autoAlpha: 1})
+          .to(date, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut})
 	    }
 
 	    function restart() {
@@ -53,11 +57,15 @@
 <body>
     <div id="banner">
         <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
-          <div id="bg" class="layer"></div>
+          <div id="cta" class="layer"></div>
           <div id="text1" class="layer"></div>
           <div id="text2" class="layer"></div>
           <div id="text3" class="layer"></div>
+          <div id="endTxt1" class="layer"></div>
+          <div id="endTxt2" class="layer"></div>
+          <div id="endTxt3" class="layer"></div>
           <div id="logo" class="layer"></div>
+          <div id="date" class="layer"></div>
         </a>
       <canvas id="canvas"></canvas>
     </div>
