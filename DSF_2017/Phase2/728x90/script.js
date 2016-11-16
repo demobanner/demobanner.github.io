@@ -36,10 +36,7 @@ function initConfetti () {
             ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI, false);
             ctx.fillStyle = p.color;
             ctx.fill();
-/*            ctx.lineWidth = p.r;
-            ctx.strokeStyle = p.color;
-            ctx.stroke();
-*/        }
+        }
 
         update();
     }
@@ -61,6 +58,14 @@ function initConfetti () {
 
             p.x += p.dirX;
             p.y += p.dirY;
+
+            if ((p.x > W) || (p.x <= 0)) {
+              p.x = Math.random() * W;
+            }
+
+            if ((p.y > W) || (p.y <= 0)) {
+              p.y = Math.random() * H;
+            }
             
             p.color = "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")";
 
