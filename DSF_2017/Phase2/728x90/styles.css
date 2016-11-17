@@ -31,6 +31,10 @@ a {
   right: 0;
   bottom: 0;
 }
+canvas {
+  position: absolute;
+  display: block;
+}
 #text1 {
   background: url("text1.png") center no-repeat;
   -ms-transform: scale(5);
@@ -60,32 +64,24 @@ a {
   background: url("date.png") center no-repeat;
   top: 50px;
 }
-#endTxt1 {
-  background: url("endTxt1.png") center no-repeat;
+#endText1 {
+  background: url("endText1.png") center no-repeat;
   left: -50px;
-/*  top: 14px;
-  left: 10px;
-  width: 84px;
-  height: 24px;
-*/}
-#endTxt2 {
-  background: url("endTxt2.png") center no-repeat;
+}
+#endText2 {
+  background: url("endText2.png") center no-repeat;
   left: -50px;
-/*  top: 36px;
-  left: 106px;
-  width: 54px;
-  height: 23px;
-*/}
-#endTxt3 {
-  background: url("endTxt3.png") center no-repeat;
+}
+#endText3 {
+  background: url("endText3.png") center no-repeat;
   left: -50px;
-/*  top: 57px;
-  left: 178px;
-  width: 172px;
-  height: 22px;
-*/}
-canvas {
+}
+#btn-replay {
   position: absolute;
-  display: block;
-  z-index: 999;
+  top: 3px;
+  right: 3px;
+  height: 16px;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0;
 }

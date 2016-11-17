@@ -1,115 +1,100 @@
-function initConfetti () {
-    //canvas init
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
+var tl = new TimelineLite();
 
-    //canvas dimensions
-    var W = window.innerWidth;
-    var H = window.innerHeight;
-    canvas.width = W;
-    canvas.height = H;
+var LOOP_TIME = 0, // how many time the banner replays
+    loop = 0,
+    isReplay = true; // show/hide replay button in the end
 
-    //snowflake particles
-    var mp = 2000; //max particles
-    var particles = [];
-    for (var i = 0; i < mp; i++) {
-        particles.push({
-            x: Math.random() * W, //x-coordinate
-            y: Math.random() * H, //y-coordinate
-            r: Math.random() * 2, //radius
-            d: Math.random() * mp, //density
-            color: "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")",
-            tilt: Math.floor(Math.random() * 5) - 5,
-            dirX: Math.floor(Math.random()*6 - 3),
-            dirY: Math.floor(Math.random()*6 - 3)
-        });
-    }
+function init() {
+  initConfetti();
 
-    //Lets draw the flakes
-    function draw() {
-        ctx.clearRect(0, 0, W, H);
+  tl.to(text1, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut})
+    .to(text1, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1")
+    .to(text2, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut}, "-=0.5")
+    .to(text2, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1")
+    .to(text3, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut}, "-=0.5")
+    .to(text3, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1");
 
-        for (var i = 0; i < mp; i++) {
-            var p = particles[i];
-
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI, false);
-            ctx.fillStyle = p.color;
-            ctx.fill();
-        }
-
-        update();
-    }
-
-    //Function to move the snowflakes
-    //angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
-    var angle = 0;
-
-    function update() {
-        angle += 0.01;
-        for (var i = 0; i < mp; i++) {
-            var p = particles[i];
-            //Updating X and Y coordinates
-            //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
-            //Every particle has its own density which can be used to make the downward movement different for each flake
-            //Lets make it more random by adding in the radius
-            /*p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
-            p.x += Math.sin(angle) * 2;*/
-
-            p.x += p.dirX;
-            p.y += p.dirY;
-
-            if ((p.x > W) || (p.x <= 0)) {
-              p.x = Math.random() * W;
-            }
-
-            if ((p.y > W) || (p.y <= 0)) {
-              p.y = Math.random() * H;
-            }
-            
-            p.color = "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")";
-
-            //Sending flakes back from the top when it exits
-            //Lets make it a bit more organic and let flakes enter from the left and right also.
-            if (p.x > W + 5 || p.x < -5 || p.y > H) {
-                if (i % 3 > 0) //66.67% of the flakes
-                {
-                    particles[i] = {
-                        x: Math.random() * W,
-                        y: -10,
-                        r: p.r,
-                        d: p.d,
-                        color: p.color,
-                        tilt: p.tilt
-                    };
-                } else {
-                    //If the flake is exitting from the right
-                    if (Math.sin(angle) > 0) {
-                        //Enter from the left
-                        particles[i] = {
-                            x: -5,
-                            y: Math.random() * H,
-                            r: p.r,
-                            d: p.d,
-                            color: p.color,
-                            tilt: p.tilt
-                        };
-                    } else {
-                        //Enter from the right
-                        particles[i] = {
-                            x: W + 5,
-                            y: Math.random() * H,
-                            r: p.r,
-                            d: p.d,
-                            color: p.color,
-                            tilt: p.tilt
-                        };
-                    }
-                }
-            }
-        }
-    }
-
-    //animation loop
-    setInterval(draw, 150);
+  tl.to(endTxt1, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut})
+    .to(endTxt2, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut}, "-=0.2")
+    .to(endTxt3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut}, "-=0.2")
+    .to(logo, 0.5, {autoAlpha: 1})
+    .to(date, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut, onComplete:onLoop})
 }
+
+function restart() {
+  tl.restart();
+}
+function onLoop() {
+  if ( loop < LOOP_TIME ) {
+    restart();
+    loop++ ;
+  } else if (isReplay) {
+    var btn_replay = document.getElementById('btn-replay');
+    tl.to(btn_replay, 0.5, {autoAlpha: 0.8, rotation: 180});
+  }
+}
+
+function initConfetti () {
+  //canvas init
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+
+  //canvas dimensions
+  var W = document.getElementById("banner").offsetWidth;
+  var H = document.getElementById("banner").offsetHeight;
+
+  canvas.width = W;
+  canvas.height = H;
+
+  //snowflake particles
+  var mp = 500; //max particles
+  var particles = [];
+  for (var i = 0; i < mp; i++) {
+    particles.push({
+      x: Math.random() * W, //x-coordinate
+      y: Math.random() * H, //y-coordinate
+      r: Math.random() * 2, //radius
+      color: "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")",
+      dirX: Math.floor(Math.random()*6 - 3),
+      dirY: Math.floor(Math.random()*6 - 3)
+    });
+  }
+
+  //Lets draw the flakes
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    for (var i = 0; i < mp; i++) {
+      var p = particles[i];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI, false);
+      ctx.fillStyle = p.color;
+      ctx.fill();
+    }
+    update();
+  }
+
+  //Function to move the snowflakes
+
+  function update() {
+    for (var i = 0; i < mp; i++) {
+      var p = particles[i];
+
+      //Updating X and Y coordinates
+      p.x += p.dirX;
+      p.y += p.dirY;
+
+      if ((p.x > W) || (p.x <= 0)) {
+        p.x = Math.random() * W;
+      }
+      if ((p.y > W) || (p.y <= 0)) {
+        p.y = Math.random() * H;
+      }
+      p.color = "rgba(240,180,0," + (Math.random()*0.7 + 0.2) + ")";
+    }
+  }
+
+  //animation loop
+  setInterval(draw, 150);
+}
+
+window.onload = init;

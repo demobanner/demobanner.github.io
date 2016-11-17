@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="ad.size" content= "width=728, height=90">
@@ -13,62 +13,25 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript">
 	    var clickTag = '';
-
-	    var tl = new TimelineLite();
-
-	    var LOOP_TIME = 0, // how many time the banner replays
-	        loop = 0,
-	        isReplay = true; // show/hide replay button in the end
-          images = [];
-
-	    function init() {
-        initConfetti();
-
-        tl.to(text1, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut})
-          .to(text1, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1")
-          .to(text2, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut}, "-=0.5")
-          .to(text2, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1")
-          .to(text3, 0.5, {autoAlpha: 1, scale:1, ease: Power3.easeInOut}, "-=0.5")
-          .to(text3, 0.5, {autoAlpha: 0, scale:0.1, ease: Power3.easeInOut}, "+=1");
-
-        tl.to(endTxt1, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut})
-          .to(endTxt2, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut}, "-=0.2")
-          .to(endTxt3, 0.5, {autoAlpha: 1, left:0, ease: Power2.easeInOut}, "-=0.2")
-          .to(logo, 0.5, {autoAlpha: 1})
-          .to(date, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut})
-	    }
-
-	    function restart() {
-            document.getElementById('confetties').style.opacity = 1;
-	        tl.restart();
-	    }
-
-	    function onLoop() {
-	        if (loop < LOOP_TIME) {
-	            restart();
-	            loop++;
-	        }
-	    }
-
-	    window.onload = init;
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="banner">
-        <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
-          <div id="cta" class="layer"></div>
-          <div id="text1" class="layer"></div>
-          <div id="text2" class="layer"></div>
-          <div id="text3" class="layer"></div>
-          <div id="endTxt1" class="layer"></div>
-          <div id="endTxt2" class="layer"></div>
-          <div id="endTxt3" class="layer"></div>
-          <div id="logo" class="layer"></div>
-          <div id="date" class="layer"></div>
-        </a>
-      <canvas id="canvas"></canvas>
+      <a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
+        <canvas id="canvas"></canvas>
+        <div id="cta" class="layer"></div>
+        <div id="text1" class="layer"></div>
+        <div id="text2" class="layer"></div>
+        <div id="text3" class="layer"></div>
+        <div id="endText1" class="layer"></div>
+        <div id="endText2" class="layer"></div>
+        <div id="endText3" class="layer"></div>
+        <div id="logo" class="layer"></div>
+        <div id="date" class="layer"></div>
+      </a>
+      <a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
     </div>
-</body>
+  </body>
 
 </html>
