@@ -36,8 +36,8 @@ canvas {
   display: block;
 }
 #text1_on, #text2_on, #text3_on {
-  opacity: 1;
-  width: 1px;
+  /*opacity: 1;*/
+  /*width: 1px;*/
   left: -1px;
 }
 #text1_on {
