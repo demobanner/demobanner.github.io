@@ -35,23 +35,37 @@ canvas {
   position: absolute;
   display: block;
 }
-#text1 {
-  background: url("text1.png") center no-repeat;
-  -ms-transform: scale(5);
-  -webkit-transform: scale(5);
-  transform: scale(5);
+#text1_on, #text2_on, #text3_on {
+  opacity: 1;
+  width: 1px;
+  left: -1px;
 }
-#text2 {
-  background: url("text2.png") center no-repeat;
-  -ms-transform: scale(5);
+#text1_on {
+  background: url("text1_on.png")  left center no-repeat;
+/*  -ms-transform: scale(5);
   -webkit-transform: scale(5);
-  transform: scale(5);
+  transform: scale(5);*/
 }
-#text3 {
-  background: url("text3.png") center no-repeat;
-  -ms-transform: scale(5);
+#text2_on {
+  background: url("text2_on.png")  left center no-repeat;
+/*  -ms-transform: scale(5);
   -webkit-transform: scale(5);
-  transform: scale(5);
+  transform: scale(5);*/
+}
+#text3_on {
+  background: url("text3_on.png") left center no-repeat;
+/*  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);*/
+}
+#text1_off {
+  background: url("text1_off.png") center no-repeat;
+}
+#text2_off {
+  background: url("text2_off.png") center no-repeat;
+}
+#text3_off {
+  background: url("text3_off.png") center no-repeat;
 }
 #logo {
   background: url("logo.png") center no-repeat;
