@@ -13,25 +13,27 @@ function init() {
     .to(text1_on, 0, {width:400}, "+=0.1")
     .to(text1_on, 0, {width:728}, "+=0.1")
     .to(text1_off, 0, {autoAlpha: 0})
-    .to(text1_on, 0.5, {autoAlpha:0, scale:4, ease: Power2.easeInOut}, "+=0.5");
+    .to(text1_on, 0.5, {autoAlpha:0, scale:4, ease: Power2.easeInOut}, "+=0.5")
+    .to(text1_glow, 0.5, {autoAlpha:1, scale:4, ease: Power2.easeInOut}, "-=0.5")
+    .to(text1_glow, 0.3, {autoAlpha:0, ease: Power2.easeInOut}, '-=0.2');
 
-  tl.to(text2_off, 0.5, {autoAlpha: 1})
-    .to(text2_on, 0, {width:360})
-    .to(text2_on, 0, {width:380}, "+=0.1")
-    .to(text2_on, 0, {width:728}, "+=0.1")
-    .to(text2_off, 0, {autoAlpha: 0})
-    .to(text2_on, 0.5, {autoAlpha:0, scale:4, ease: Power2.easeInOut}, "+=0.5");
+  // tl.to(text2_off, 0.5, {autoAlpha: 1})
+  //   .to(text2_on, 0, {width:360})
+  //   .to(text2_on, 0, {width:380}, "+=0.1")
+  //   .to(text2_on, 0, {width:728}, "+=0.1")
+  //   .to(text2_off, 0, {autoAlpha: 0})
+  //   .to(text2_on, 0.5, {autoAlpha:0, scale:4, ease: Power2.easeInOut}, "+=0.5");
 
-  tl.to(text3_off, 0.5, {autoAlpha: 1})
-    .to(text3_on, 0, {width:285})
-    .to(text3_on, 0, {width:340}, "+=0.1")
-    .to(text3_on, 0, {width:450}, "+=0.1")
-    .to(text3_on, 0, {width:728}, "+=0.1")
-    .to(text3_off, 0, {autoAlpha: 0})
-    .to(text3_on, 0.5, {autoAlpha:0, scale:4, ease: Power2.easeInOut}, "+=0.5");
+  // tl.to(text3_off, 0.5, {autoAlpha: 1})
+  //   .to(text3_on, 0, {width:285})
+  //   .to(text3_on, 0, {width:340}, "+=0.1")
+  //   .to(text3_on, 0, {width:450}, "+=0.1")
+  //   .to(text3_on, 0, {width:728}, "+=0.1")
+  //   .to(text3_off, 0, {autoAlpha: 0})
+  //   .to(text3_on, 0.5, {autoAlpha:0, scale:4, ease: Power2.easeInOut}, "+=0.5");
 
-  tl.to(logo, 0.5, {autoAlpha: 1})
-    .to(date, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut, onComplete:onLoop});
+  // tl.to(logo, 0.5, {autoAlpha: 1})
+  //   .to(date, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut, onComplete:onLoop});
 }
 
 function restart() {

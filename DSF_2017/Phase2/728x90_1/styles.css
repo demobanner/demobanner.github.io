@@ -46,6 +46,12 @@ canvas {
   -webkit-transform: scale(5);
   transform: scale(5);*/
 }
+#text1_glow {
+  background: url("text1_glow.png")  left center no-repeat;
+/*  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);*/
+}
 #text2_on {
   background: url("text2_on.png")  left center no-repeat;
 /*  -ms-transform: scale(5);
