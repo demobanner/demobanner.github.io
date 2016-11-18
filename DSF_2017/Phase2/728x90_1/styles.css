@@ -36,12 +36,18 @@ canvas {
   display: block;
 }
 #text1_on, #text2_on, #text3_on {
-  /*opacity: 1;*/
-  /*width: 1px;*/
+  opacity: 1;
+  width: 1px;
   left: -1px;
 }
 #text1_on {
   background: url("text1_on.png")  left center no-repeat;
+/*  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);*/
+}
+#text1_glow {
+  background: url("text1_glow.png")  left center no-repeat;
 /*  -ms-transform: scale(5);
   -webkit-transform: scale(5);
   transform: scale(5);*/
