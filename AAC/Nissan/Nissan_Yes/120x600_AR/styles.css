@@ -161,3 +161,21 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+#btnYes, #btnNo {
+	position: absolute;
+	/*border: 1px solid #f00;*/
+	opacity: 0;
+	visibility: hidden;
+}
+#btnYes {
+	top: 322px;
+  left: 59px;
+  width: 67px;
+  height: 41px;
+}
+#btnNo {
+	top: 325px;
+  left: -10px;
+  width: 72px;
+  height: 42px;
+}

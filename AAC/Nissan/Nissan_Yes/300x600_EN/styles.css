@@ -103,19 +103,19 @@ a {
   transform: scale(0.3);
 }
 #f5_img {
-  background: url("f5_img.png") center no-repeat;
+  background: url("f5_img.jpg") center no-repeat;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f6_img {
-  background: url("f6_img.png") center no-repeat;
+  background: url("f6_img.jpg") center no-repeat;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
 }
 #f7_img {
-  background: url("f7_img.png") center no-repeat;
+  background: url("f7_img.jpg") center no-repeat;
   -ms-transform: scale(0.1);
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -157,4 +157,22 @@ a {
   right: 4px;
   visibility: hidden;
   opacity: 0;
+}
+#btnYes, #btnNo {
+	position: absolute;
+	/*border: 1px solid #f00;*/
+	opacity: 0;
+	visibility: hidden;
+}
+#btnYes {
+	top: 374px;
+  left: 13px;
+  width: 127px;
+  height: 81px;
+}
+#btnNo {
+	top: 370px;
+  left: 150px;
+  width: 143px;
+  height: 84px;
 }

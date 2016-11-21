@@ -157,3 +157,21 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+#btnYes, #btnNo {
+	position: absolute;
+	/*border: 1px solid #f00;*/
+	opacity: 0;
+	visibility: hidden;
+}
+#btnYes {
+	top: 124px;
+	left: 25px;
+	width: 114px;
+	height: 72px;
+}
+#btnNo {
+	top: 121px;
+	left: 171px;
+	width: 128px;
+	height: 76px;
+}

@@ -53,8 +53,10 @@
 			  .to(f8_img1, 0.5, {autoAlpha: 1, scale: 1, ease: Power2.easeInOut})
 				
 				.to(f8_img2, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
+				.to(btnYes, 0, {autoAlpha: 1})
 				.to(f8_img2, 0.2, {scale: 1, ease: Power1.easeInOut})
 				.to(f8_img3, 0.5, {autoAlpha: 1, scale: 1.2, ease: Power2.easeInOut})
+				.to(btnNo, 0, {autoAlpha: 1})
 				.to(f8_img3, 0.2, {scale: 1, ease: Power1.easeInOut, onComplete: Zoom});
 		}
 		var count = 0;
@@ -91,36 +93,38 @@
 </head>
 <body>
   <div id="banner">
-	<a class="click-tag" href="javascript:window.open(window.clickTag)" target="_blank">
-	  <div id="f1_img1" class="layer"></div>
-	  <div id="f1_img2" class="layer"></div>
-	  <div id="f1_img3" class="layer"></div>
+		<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+			<div id="f1_img1" class="layer"></div>
+			<div id="f1_img2" class="layer"></div>
+			<div id="f1_img3" class="layer"></div>
 
-	  <div id="f2_img1" class="layer"></div>
-	  <div id="f2_img2" class="layer"></div>
-	  <div id="f2_img3" class="layer"></div>
-	  <div id="f2_img4" class="layer"></div>
-	  <div id="f2_img5" class="layer"></div>
-	  <div id="f2_img6" class="layer"></div>
-	  <div id="f2_img7" class="layer"></div>
+			<div id="f2_img1" class="layer"></div>
+			<div id="f2_img2" class="layer"></div>
+			<div id="f2_img3" class="layer"></div>
+			<div id="f2_img4" class="layer"></div>
+			<div id="f2_img5" class="layer"></div>
+			<div id="f2_img6" class="layer"></div>
+			<div id="f2_img7" class="layer"></div>
 
-	  <div id="f3_img" class="layer"></div>
+			<div id="f3_img" class="layer"></div>
 
-	  <div id="f4_img" class="layer"></div>
+			<div id="f4_img" class="layer"></div>
 
-	  <div id="f5_img" class="layer"></div>
+			<div id="f5_img" class="layer"></div>
 
-	  <div id="f6_img" class="layer"></div>
+			<div id="f6_img" class="layer"></div>
 
-	  <div id="f7_img" class="layer"></div>
+			<div id="f7_img" class="layer"></div>
 
-	  <div id="f8_img1" class="layer"></div>
-	  <div id="f8_img2" class="layer"></div>
-	  <div id="f8_img3" class="layer"></div>
+			<div id="f8_img1" class="layer"></div>
+			<div id="f8_img2" class="layer"></div>
+			<div id="f8_img3" class="layer"></div>
 
-	  <div id="logo" class="layer"></div>
-	  <div id="logo2" class="layer"></div>
-	</a>
+			<div id="logo" class="layer"></div>
+			<div id="logo2" class="layer"></div>
+		</a>
+		<a id="btnYes" href="https://ar.nissan-dubai.com/YES-campaign.html" target="_blank"></a>
+		<a id="btnNo" href="https://ar.nissan-dubai.com/say-yes-no.html" target="_blank"></a>
 		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
   </div>
 </body>
