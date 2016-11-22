@@ -1,0 +1,222 @@
+<html> 
+<head> 
+	<!-- WEBORAMA SCREENAD META DATA (don't edit/remove) -->
+	<!-- SCRVERSION: screenad_interface_1.0.3 -->
+	<!-- SCRFORMAT: layer -->
+	<!-- SCRWIDTH: 100% -->
+	<!-- SCRHEIGHT: 100% -->
+	<!-- SCRDATE: 19-08-15 -->
+	<script src="http://media.adrcdn.com/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="http://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script type="text/javascript">
+		
+		var autoCloseTimeout = 10; // seconds
+		var tl = new TimelineLite();
+		/**
+		 * After preload, initiate the splashpage. 
+		 *
+		 */
+		$(document).ready(onReady);
+			function onReady() {
+			screenad.hideNavBar();
+			screenad.setAlignment('left', 'top');
+			screenad.setSize('100%', '100%');
+			screenad.setSticky(true);
+			screenad.resize('100%', '100%');
+			screenad.position();
+			screenad.setBlockPageTouches(true);
+			screenad.addEventListener(screenad.RESIZE, resizeHandler);
+			screenad.addEventListener(screenad.ORIENTATION_CHANGE, orientationChageHandler);
+			resizeHandler(null)
+			init();
+
+				setTimeout(function() {
+					screenad.event("auto_close");
+					screenad.close();
+				},(1000*autoCloseTimeout));
+		}
+		/**
+		 * Handles orienation change
+		 *
+		 */
+		function orientationChageHandler(evt){
+			if (screenad.screenorientation == 'landscape'){
+				
+				// do something when the screen is in landscape mode
+
+			}else if (screenad.screenorientation == 'portrait'){
+				
+				// do something when the screen is in portrait mode
+			
+			}
+			$('#orientation').html('Orientation: ' + screenad.screenorientation);
+		}
+		/**
+		 * Handles resize of the viewport. 
+		 * Here you can align your elements.
+		 *
+		 */
+		 function init() {
+			var logo1 = document.getElementById("logo1"),
+				img1 = document.getElementById("img1"),
+				logo2 = document.getElementById("logo2"),
+				text1 = document.getElementById("text1"),
+				img2 = document.getElementById("img2"),
+				text2 = document.getElementById("text2"),
+				train = document.getElementById("train"),
+				cta = document.getElementById("cta");
+
+			tl.to(logo1, 0, {autoAlpha:0}, "+=1.5")
+				.to([logo2, img1], 0.5, {autoAlpha:1})
+				.to(text1, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.5");
+
+			tl.to(text1, 0.5, {autoAlpha:0, left:120, ease: Power2.easeInOut}, "+=1.5")
+				.to(text2, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.25")
+				.to(img2, 0.2, {autoAlpha:1, scale:1})
+				.to(img2, 0.1, {autoAlpha:1, scale:0.9})
+				.to(img2, 0.1, {autoAlpha:1, scale:0.8})
+				.to(img2, 0.1, {autoAlpha:1, scale:1})
+				.to(train, 0.2, {autoAlpha:1, left:-364, ease: Power2.easeInOut})
+				.to(cta, 0.2, {autoAlpha:1, scale:1})
+				.to(cta, 0.1, {autoAlpha:1, scale:0.9})
+				.to(cta, 0.1, {autoAlpha:1, scale:0.7})
+				.to(cta, 0.1, {autoAlpha:1, scale:1})
+				.to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut}, "+=1.75");
+		}
+
+		function resizeHandler(evt) {
+			$('#stage').css('width',screenad.browserwidth+'px');
+			$('#stage').css('height',screenad.browserheight+'px');
+		}
+		/**
+		 * Handles user close
+		 *
+		 */
+		function doClose() {
+			screenad.event("user_close");
+			screenad.close();
+		}
+		</script>
+		<style type="text/css">
+			body {
+				margin:0;
+				padding:0;
+				font-family:arial;
+				color:#333333;
+			}
+			#stage {
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				cursor:pointer;
+				
+			}
+			#close_btn {
+				right:0;
+				top:0;
+				position:absolute;
+				width:44px;
+				height:44px;
+				z-index:510;
+			}
+			#background{
+				position:absolute;
+				left:0;
+				top:0;
+				width:100%;
+				height:100%;
+				z-index:100;
+				background:#5c6970;
+			}
+			#content_holder{
+				position:absolute;
+				text-align:center;
+				left:0;
+				top:0;
+				bottom:0;
+				right:0;
+				z-index:500;
+				cursor:hand;
+				margin:auto;
+				width: 318px;
+				height: 478px;
+				overflow: hidden;
+				border:1px solid black;
+				background-color: #98bf0e;
+			}
+			.layer {
+		  		position: absolute;
+		  		top: 0;
+		  		left: 0;
+		  		width: 318px;
+		  		height: 478px;
+		  		opacity: 0;
+			}
+			#logo1 {
+				background: url("logo1.png") center no-repeat;
+				opacity: 1;
+			}
+			#logo2 {
+			 	background: url("logo2.png") center no-repeat;
+			}
+			#img1 {
+			  	background: url("img1.png") center no-repeat;
+			}
+			#text1 {
+			  	background: url("text1.png") center no-repeat;
+			  	left: -120px;
+			}
+			#text2 {
+			  	background: url("text2.png") center no-repeat;
+			  	left: -120px;
+			}
+			#img2 {
+			  	background: url("img2.png") center no-repeat;
+			  	width: 83px;
+			  	height:83px;
+			  	top: 134px;
+			  	left: 196px;
+			    -ms-transform: scale(0.1);
+			    -webkit-transform: scale(0.1);
+			    transform: scale(0.1);
+			}
+			#train {
+			  	background: url("train.png") center no-repeat;
+			  	width: 559px;
+			  	left:-650px;
+			  	top: 87px;
+			}
+			#cta {
+			  	background: url("cta.png") center no-repeat;
+			  	width: 160px;
+			  	height: 50px;
+			  	top: 353px;
+			  	left: 75px;
+			    -ms-transform: scale(0.1);
+			    -webkit-transform: scale(0.1);
+			    transform: scale(0.1);
+			}
+		</style>
+	</head>
+	<body onresize="resizeHandler(null);">
+		<div id="stage">
+			<img id="close_btn" src="close_bt.png" onClick="doClose();"/>
+			<div id="background"></div>
+			
+			<div id="content_holder" onclick="screenad.click('default');"> 
+					<div id="logo1" class="layer"></div>
+			      	<div id="img1" class="layer"></div>
+			      	<div id="text1" class="layer"></div>
+			      	<div id="img2" class="layer"></div>
+			      	<div id="text2" class="layer"></div>
+			      	<div id="train" class="layer"></div>
+			      	<div id="logo2" class="layer"></div>
+			      	<div id="cta" class="layer"></div>
+			    </div>
+		</div>
+	</body> 
+</html>
