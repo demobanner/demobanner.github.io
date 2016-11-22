@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+    <!-- SCRVERSION: screenad_interface_1.0.3 -->
+    <!-- SCRFORMAT: layer -->
+    <!-- SCRSTICKY: false -->
+    <!-- SCRWIDTH: 600 -->
+    <!-- SCRHEIGHT: 600 -->
+	<!-- SCRDATE: 07-09-15 -->
+	<script src="https://media.adrcdn.com/scripts/jquery.min.js"></script>
+    <script src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+    <script src="https://media.adrcdn.com/scripts/screenad_template_0.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript">
+        var tl = new TimelineLite();
+        var tl_expand = new TimelineLite();
+
+        function init() {
+        //collapsed
+        tl.to(logo1, 0, {autoAlpha:0}, "+=1.5")
+            .to([logo2, img1], 0.5, {autoAlpha:1})
+            .to(text1, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.5");
+
+        tl.to(text1, 0.5, {autoAlpha:0, left:300, ease: Power2.easeInOut}, "+=2")
+            .to(text2, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.25")
+            .to(img2, 0.2, {autoAlpha:1, scale:1})
+            .to(img2, 0.1, {autoAlpha:1, scale:0.9})
+            .to(img2, 0.1, {autoAlpha:1, scale:0.8})
+            .to(img2, 0.1, {autoAlpha:1, scale:1})
+            .to(train, 0.2, {autoAlpha:1, left:-350, ease: Power2.easeInOut})
+            .to(cta, 0.2, {autoAlpha:1, scale:1})
+            .to(cta, 0.1, {autoAlpha:1, scale:0.9})
+            .to(cta, 0.1, {autoAlpha:1, scale:0.7})
+            .to(cta, 0.1, {autoAlpha:1, scale:1})
+            .to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut}, "+=2");
+
+        //expanded
+        tl_expand.to(logo1_expand, 0, {autoAlpha:0}, "+=1.5")
+            .to([logo2_expand, img1_expand], 0.5, {autoAlpha:1})
+            .to(text1_expand, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.5");
+
+        tl_expand.to(text1_expand, 0.5, {autoAlpha:0, left:300, ease: Power2.easeInOut}, "+=2")
+            .to(text2_expand, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.25")
+            .to(img2_expand, 0.2, {autoAlpha:1, scale:1})
+            .to(img2_expand, 0.1, {autoAlpha:1, scale:0.9})
+            .to(img2_expand, 0.1, {autoAlpha:1, scale:0.8})
+            .to(img2_expand, 0.1, {autoAlpha:1, scale:1})
+            .to(train_expand, 0.2, {autoAlpha:1, left:-740, ease: Power2.easeInOut})
+            .to(cta_expand, 0.2, {autoAlpha:1, scale:1})
+            .to(cta_expand, 0.1, {autoAlpha:1, scale:0.9})
+            .to(cta_expand, 0.1, {autoAlpha:1, scale:0.7})
+            .to(cta_expand, 0.1, {autoAlpha:1, scale:1})
+            .to(train_expand, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut}, "+=2");
+
+    }
+    window.onload = init;
+
+    // if (navigator.userAgent.indexOf('Mac OS X') != -1) { console.log("mac"); }
+    // else {
+    //     document.getElementById("cta").style.lineHeight = "42px";
+    //     document.getElementById("cta2").style.lineHeight = "42px";
+    // }
+  </script>
+</head>
+<body>
+
+    <div id="stage">
+
+        <img id="closeBtn" src="close_button.png" />
+		<img id="openBtn" src="open_button.png" />
+        <div id="clickArea" onclick="screenad.click();"></div>
+
+        <div id="collapsedContent" onclick="screenad.click();">
+            <div id="logo1" class="layer"></div>
+            <div id="img1" class="layer"></div>
+            <div id="text1" class="layer"></div>
+            <div id="img2" class="layer"></div>
+            <div id="text2" class="layer"></div>
+            <div id="train" class="layer"></div>
+            <div id="logo2" class="layer"></div>
+            <div id="cta" class="layer"></div>
+        </div>
+
+        <div id="expandedContent" onclick="screenad.click('CTA');">
+            <div id="logo1_expand" class="layer"></div>
+            <div id="img1_expand" class="layer"></div>
+            <div id="text1_expand" class="layer"></div>
+            <div id="img2_expand" class="layer"></div>
+            <div id="text2_expand" class="layer"></div>
+            <div id="train_expand" class="layer"></div>
+            <div id="logo2_expand" class="layer"></div>
+            <div id="cta_expand" class="layer"></div>
+        </div>
+
+        <div id="sharedContent"></div>
+
+    </div>
+</body>
+</html>

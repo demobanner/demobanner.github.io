@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>izy 300x250</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript">
+
+    var tl = new TimelineLite();
+
+    function init() {
+
+      tl.to(logo1, 0, {autoAlpha:0}, "+=1.5")
+        .to([logo2, img1], 0.5, {autoAlpha:1})
+        .to(text1, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.5");
+
+      tl.to(text1, 0.5, {autoAlpha:0, left:300, ease: Power2.easeInOut}, "+=2")
+        .to(text2, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.25")
+        .to(img2, 0.2, {autoAlpha:1, scale:1})
+        .to(img2, 0.1, {autoAlpha:1, scale:0.9})
+        .to(img2, 0.1, {autoAlpha:1, scale:0.8})
+        .to(img2, 0.1, {autoAlpha:1, scale:1})
+        .to(train, 0.2, {autoAlpha:1, left:-350, ease: Power2.easeInOut})
+        .to(cta, 0.2, {autoAlpha:1, scale:1})
+        .to(cta, 0.1, {autoAlpha:1, scale:0.9})
+        .to(cta, 0.1, {autoAlpha:1, scale:0.7})
+        .to(cta, 0.1, {autoAlpha:1, scale:1})
+        .to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut}, "+=2");
+    }
+
+    window.onload = init;
+
+  </script>
+  </head>
+  <body>
+    <div id="banner">
+    <a class="click-tag" href="">
+      <div id="logo1" class="layer"></div>
+      <div id="img1" class="layer"></div>
+      <div id="text1" class="layer"></div>
+      <div id="img2" class="layer"></div>
+      <div id="text2" class="layer"></div>
+      <div id="train" class="layer"></div>
+      <div id="logo2" class="layer"></div>
+      <div id="cta" class="layer"></div>
+    </a>
+  </div>
+  </body>
+</html>

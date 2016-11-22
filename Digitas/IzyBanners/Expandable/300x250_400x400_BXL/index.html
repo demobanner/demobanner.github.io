@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Preview FT</title>
+		<style type="text/css">
+			html, body {
+				margin:0; padding:0;
+			}
+			.box{
+				width:1050px;
+				height:920px;
+				background:url('bg.jpg') no-repeat top left;
+				margin:0 auto;
+				position:relative;
+			}
+			.flashtransparent{
+				position:absolute;
+				top:157px;
+				left:200px;
+				width:400px;
+				height:400px;
+				z-index:5;
+			}
+			.flash300x250{
+				position:absolute;
+				width:300px;
+				height:250px;
+				top:308px;
+				left:663px;
+				z-index:2;
+			}
+			iframe {
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="flash300x250">
+				<iframe width="300" height="250" src="300x250/index.html"></iframe>
+			</div>
+			<div class="flashtransparent">
+				<iframe id="iframeft" width="400" height="400" src="400x400/index.html"></iframe>
+			</div>  
+		</div>
+	</body>
+</html>

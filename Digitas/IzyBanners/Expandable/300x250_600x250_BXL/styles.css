@@ -1,0 +1,167 @@
+body {
+    margin:0;
+    padding:0;
+    width:300px;
+    height:250px;
+}
+
+#stage {
+    width:auto;
+    height:auto;
+    cursor:pointer;
+}
+
+#closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 140;
+}
+
+#openBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 140;
+}
+
+#clickArea {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    z-index: 120;
+}
+
+#collapsedContent {
+    position: absolute;
+    width: 298px;
+    height: 248px;
+    left: 300px;
+    overflow: hidden;
+    border:1px solid black;
+    background-color: #98bf0e;
+    cursor: pointer;
+    z-index: 80;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#logo1 {
+  background: url("logo1.png") center no-repeat;
+    opacity: 1;
+}
+#logo2 {
+  background: url("logo2.png") center no-repeat;
+}
+#img1 {
+  background: url("img1.png") center no-repeat;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+  left: -300px;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+  left: -300px;
+}
+#img2 {
+  background: url("img2.png") center no-repeat;
+  width: 83px;
+  height:83px;
+  top: 80px;
+  left: 195px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#train {
+  background: url("train.png") center no-repeat;
+  width: 650px;
+  left:-650px;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  width: 135px;
+  height: 42px;
+  top: 196px;
+  left: 155px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
+#expandedContent {
+    position: absolute;
+    width: 598px;
+    height: 248px;
+    overflow: hidden;
+    border:1px solid black;
+    background-color: #98bf0e;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#logo1_expand {
+  background: url("logo1_expand.png") center no-repeat;
+    opacity: 1;
+}
+#logo2_expand {
+  background: url("logo2_expand.png") center no-repeat;
+}
+#img1_expand {
+  background: url("img1_expand.png") center no-repeat;
+}
+#text1_expand {
+  background: url("text1_expand.png") center no-repeat;
+  left: -300px;
+}
+#text2_expand {
+  background: url("text2_expand.png") center no-repeat;
+  left: -300px;
+}
+#img2_expand {
+  background: url("img2_expand.png") center no-repeat;
+  width: 93px;
+  height:93px;
+  top: 14px;
+  left: 447px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+#train_expand {
+  background: url("train_expand.png") center no-repeat;
+  width: 938px;
+  left:-938px;
+}
+#cta_expand {
+  background: url("cta_expand.png") center no-repeat;
+  width: 183px;
+  height: 57px;
+  top: 122px;
+  left: 85px;
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
+#sharedContent {
+    position: absolute;
+    left: 300px;
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    z-index: 60;
+}
+
