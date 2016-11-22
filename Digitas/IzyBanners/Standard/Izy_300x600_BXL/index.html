@@ -33,7 +33,7 @@
 				.to([logo2, img1], 0.5, {autoAlpha:1})
 				.to(text1, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.5");
 
-			tl.to(text1, 0.5, {autoAlpha:0, left:120, ease: Power2.easeInOut}, "+=1.5")
+			tl.to(text1, 0.5, {autoAlpha:0, left:120, ease: Power2.easeInOut}, "+=2")
 				.to(text2, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.25")
 				.to(img2, 0.2, {autoAlpha:1, scale:1})
 				.to(img2, 0.1, {autoAlpha:1, scale:0.9})
@@ -44,12 +44,22 @@
 				.to(cta, 0.1, {autoAlpha:1, scale:0.9})
 				.to(cta, 0.1, {autoAlpha:1, scale:0.7})
 				.to(cta, 0.1, {autoAlpha:1, scale:1})
-				.to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut, onComplete:onLoop}, "+=1.75");
+				.to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut}, "+=2")
+				.to(train, 0.5, {autoAlpha: 1, delay: 1.5, onComplete:Loop});
 		}
 		
 		function restart() {
-      tl.restart();
-    }
+	      tl.restart();
+	    }
+
+   		var count = 0;
+   		function Loop() {
+   			if ( count < 1) {
+   				tl.restart();
+   			}
+   			count++;
+   		}
+
 		function onLoop() {
 			if ( loop < LOOP_TIME ) {
 				restart();

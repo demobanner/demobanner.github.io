@@ -44,12 +44,22 @@
 				.to(cta, 0.1, {autoAlpha:1, scale:0.9})
 				.to(cta, 0.1, {autoAlpha:1, scale:0.7})
 				.to(cta, 0.1, {autoAlpha:1, scale:1})
-				.to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut, onComplete:onLoop}, "+=2");
+				.to(train, 1, {autoAlpha:1, left:650, ease: Power2.easeInOut}, "+=2")
+				.to(train, 0.5, {autoAlpha: 1, delay: 1.5, onComplete:Loop});
 		}
 		
 		function restart() {
-      tl.restart();
-    }
+      		tl.restart();
+   		}
+
+   		var count = 0;
+   		function Loop() {
+   			if ( count < 1) {
+   				tl.restart();
+   			}
+   			count++;
+   		}
+
 		function onLoop() {
 			if ( loop < LOOP_TIME ) {
 				restart();
