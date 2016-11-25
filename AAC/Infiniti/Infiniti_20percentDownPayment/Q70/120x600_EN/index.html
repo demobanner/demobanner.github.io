@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=120,height=600">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="CSSPlugin.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+			
+      function init() {
+        var car = document.getElementById('car'),
+            f2_text = document.getElementById('f2_text'),
+            f3_text = document.getElementById('f3_text'),
+            f4_text = document.getElementById('f4_text'),
+            f5_text = document.getElementById('f5_text'),
+            f6_text = document.getElementById('f6_text'),
+            cta = document.getElementById('cta'),
+						btn_replay = document.getElementById('btn-replay');
+
+          tl.to(car, 0.5, {autoAlpha: 1,ease: Power4.easeOut});
+          tl.to(car, 0.5, {top: -25, ease: Power4.easeOut, delay: 1})
+            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            //.to(f2_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f3_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut, delay: 1})
+            .to(f3_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f4_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f4_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f5_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f5_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f6_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power4.easeOut})
+					  .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+      }
+			
+			function restart() {
+				tl.restart();
+			}
+			
+			window.onload = init;
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <a class="click-tag" href="javascript:" onclick="window.open(window.clickTag, '_blank');" >
+        <div id="car" class="layer"></div>
+        <div id="f2_text" class="layer"></div>
+        <div id="f3_text" class="layer"></div>
+        <div id="f4_text" class="layer"></div>
+        <div id="f5_text" class="layer"></div>
+        <div id="f6_text" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="logo" class="layer"></div>
+      </a>
+			<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 298px;
+  height: 248px;
+}
+#banner {
+  position: relative;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#car {
+  background: url('car.jpg') center no-repeat;
+  width: 370px;
+  height: 320px;
+  /* opacity: 1; */
+  top: -40px;
+  left: -36px;
+}
+#f2_text {
+  background: url('f2_text.png') center no-repeat;
+}
+#f3_text {
+  background: url('f3_text.png') center no-repeat;
+}
+#f4_text {
+  background: url('f4_text.png') center no-repeat;
+}
+#f5_text {
+  background: url('f5_text.png') center no-repeat;
+}
+#f6_text {
+  background: url('f6_text.png') center no-repeat;
+}
+#cta {
+  background: url('cta.png') center no-repeat;
+  top: 30px;
+}
+#logo {
+  background: url('logo.png') center no-repeat;
+  opacity: 1;
+}
+#logo1 {
+  background: url('logo1.png') center no-repeat;
+  opacity: 1;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}
