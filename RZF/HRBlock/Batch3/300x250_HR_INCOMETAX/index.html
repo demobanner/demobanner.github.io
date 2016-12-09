@@ -1,0 +1,189 @@
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	  <title>Banner</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<div id="banner">
+		<a id="mainExit" href="javascript:">
+			<div class="cube" id="banner1" style="transform: scale(0.85);">
+			  	<div class="face front">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face right">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face back">
+						<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face left">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face top" >
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face bottom">
+			  		<div class="clickTag"></div>
+			  	</div>
+			</div>
+
+			<div class="cube" id="banner2" style="display:none; transform: scale(0.82);">
+			  	<div class="face front">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face right">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face back">
+						<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face left">
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face top" >
+			  		<div class="clickTag"></div>
+			  	</div>
+			  	<div class="face bottom">
+			  		<div class="clickTag"></div>
+			  	</div>
+			</div>
+			<div id="textAnimation">
+			  	<img id="txt_8_1" src="8.png">
+			  	<img class="text" id="txt_A_1" src="A.png">
+			  	<img id="txt_2_1" src="2.png">
+			  	<img class="text" id="txt_S_1" src="S.png">
+			  	<img id="txt_3_1" src="3.png">
+			  	<img class="text" id="txt_C_1" src="C.png">
+			  	<img id="txt_7_1" src="7.png">
+			  	<img class="text" id="txt_N_1" src="N.png">
+			  	<img id="txt_8_2" src="8.png">
+			  	<img class="text" id="txt_A_2" src="A.png">
+			  	<img id="txt_1_1" src="1.png">
+			  	<img class="text" id="txt_T_1" src="T.png">
+			  	<img id="txt_3_2" src="3.png">
+			  	<img class="text" id="txt_E_2" src="E.png">
+			  	<img id="txt_4_2" src="4.png">
+			  	<img class="text" id="txt_D_2" src="D.png">
+			  	<img id="txt_8_3" src="8.png">
+			  	<img class="text" id="txt_B_3" src="B.png">
+			  	<img id="txt_7_2" src="7.png">
+			  	<img class="text" id="txt_Y_2" src="Y.png">
+			  	<img id="txt_3_3" src="3.png">
+			  	<img class="text" id="txt_N_3" src="N.png">
+			  	<img id="txt_9_1" src="9.png">
+			  	<img class="text" id="txt_U_1" src="U.png">
+			</div>
+		</a>
+		</div>
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+	  <script src="cube.js"></script>
+
+	  <script>
+
+			var w = 280;
+			var h = 230;
+
+			var cube1 = new Cube({
+				banner: 'banner1',
+				width: w,
+				height: h,
+				isTest: false,
+				vertical: true,
+				autoRotate: true,
+				autoRotateDelay: 2.5,
+				autoRotateTime: 1,
+				autoRotateLeft: false,
+				autoRotateTop: true,
+				completeFunc: onComplete,
+				autoRotateAngle: [-90],
+				loop: 1,
+				faces: [
+					{face: 'front', type: 'image', link: 'frame1.png', clickTag: ''},
+					{face: 'right', type: 'image', link: '', clickTag: ''},
+					{face: 'back', type: 'image', link: '', clickTag: ''},
+					{face: 'left', type: 'image', link: '', clickTag: ''},
+					{face: 'top', type: 'image', link: 'frame2.png', clickTag: ''},
+					{face: 'bottom', type: 'image', link: '', clickTag: ''}
+				]
+			});
+
+			function onComplete() {
+				cube1.cube.style.display = 'none';
+				cube2.cube.style.display = 'block';
+				cube2.play();
+			};
+			cube1.play();
+
+			var cube2 = new Cube({
+				banner: 'banner2',
+				width: w,
+				height: h,
+				isTest: true,
+				vertical: false,
+				autoRotate: true,
+				autoRotateDelay: 2.5,
+				autoRotateTime: 1,
+				autoRotateLeft: false,
+				autoRotateTop: true,
+				autoRotateAngle: [-90, -180],
+				loop: 2,
+				faces: [
+					{face: 'front', type: 'image', link: 'frame2.png', clickTag: ''},
+					{face: 'right', type: 'image', link: 'frame3.png', clickTag: ''},
+					{face: 'back', type: 'image', link: 'frame4.png', clickTag: ''},
+					{face: 'left', type: 'image', link: '', clickTag: ''},
+					{face: 'top', type: 'image', link: '', clickTag: ''},
+					{face: 'bottom', type: 'image', link: '', clickTag: ''}
+				]
+			});
+
+	  </script>
+	  <script type="text/javascript">
+	  	var clickTag = 'http://google.com';
+			function exitClickHandler(e) {
+				Enabler.exitOverride('mainExit', clickTag);
+			}
+
+	  	function init (){
+				document.getElementById('mainExit').addEventListener('click', exitClickHandler, false);
+	  		var tl = new TimelineMax({paused:false});
+	  		var delay = 11;
+	  		tl.to(textAnimation, 0.5, {autoAlpha: 1}, '+=10.5');
+	  		TweenMax.delayedCall(delay, textAnimate, [txt_8_1, txt_A_1]);
+	  		TweenMax.delayedCall(delay + .1, textAnimate, [txt_2_1, txt_S_1]);
+	  		TweenMax.delayedCall(delay + .2, textAnimate, [txt_3_1, txt_C_1]);
+	  		TweenMax.delayedCall(delay + .3, textAnimate, [txt_7_1, txt_N_1]);
+	  		TweenMax.delayedCall(delay + .4, textAnimate, [txt_8_2, txt_A_2]);
+	  		TweenMax.delayedCall(delay + .5, textAnimate, [txt_1_1, txt_T_1]);
+	  		TweenMax.delayedCall(delay + .6, textAnimate, [txt_3_2, txt_E_2]);
+	  		TweenMax.delayedCall(delay + .7, textAnimate, [txt_4_2, txt_D_2]);
+	  		TweenMax.delayedCall(delay + .8, textAnimate, [txt_8_3, txt_B_3]);
+	  		TweenMax.delayedCall(delay + .9, textAnimate, [txt_7_2, txt_Y_2]);
+	  		TweenMax.delayedCall(delay + 1, textAnimate, [txt_3_3, txt_N_3]);
+	  		TweenMax.delayedCall(delay + 1.1, textAnimate, [txt_9_1, txt_U_1]);
+	  	}
+
+	  	function textAnimate(txt1, txt2){
+			var tl = new TimelineMax();
+			tl.to(txt1, 0.1, {scaleY:0.1})
+				.to(txt1, 0.1, {scaleY:1})
+				.to(txt1, 0.1, {scaleY:0.1})
+				.to(txt1, 0.1, {scaleY:1})
+				.to(txt1, 0.1, {scaleY:0.1})
+				.to(txt1, 0.1, {scaleY:1})
+				.to(txt1, 0.1, {scaleY:0.1})
+				.to(txt1, 0.1, {scaleY:1})
+				.to(txt1, 0.1, {scaleY: 0.1,alpha:0 })
+				.to(txt2, .1, {scaleY:1, alpha:1}, '-=0.1');
+		}
+		window.onload = init();
+	  </script>
+
+	</body>
+</html>
