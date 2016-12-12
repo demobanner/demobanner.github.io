@@ -59,6 +59,17 @@ body {
       .front, .right {
         z-index: 10000;
       }
+
+      #last_frame{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 140px;
+        height: 580px;
+        opacity: 0;
+        background: url(frame4_end.png) 0 0 no-repeat;
+      }
+
       #textAnimation{
         position: absolute;
         left: 20px;

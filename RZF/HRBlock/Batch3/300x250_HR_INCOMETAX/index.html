@@ -51,6 +51,9 @@
 			  		<div class="clickTag"></div>
 			  	</div>
 			</div>
+
+			<div id="last_frame"></div>
+
 			<div id="textAnimation">
 			  	<img id="txt_8_1" src="8.png">
 			  	<img class="text" id="txt_A_1" src="A.png">
@@ -154,7 +157,8 @@
 				document.getElementById('mainExit').addEventListener('click', exitClickHandler, false);
 	  		var tl = new TimelineMax({paused:false});
 	  		var delay = 11;
-	  		tl.to(textAnimation, 0.5, {autoAlpha: 1}, '+=10.5');
+	  		tl.to(last_frame, 0.1, {autoAlpha:1}, '+=10.5');
+	  		tl.to(textAnimation, 0.5, {autoAlpha: 1}, '-=0.1');
 	  		TweenMax.delayedCall(delay, textAnimate, [txt_8_1, txt_A_1]);
 	  		TweenMax.delayedCall(delay + .1, textAnimate, [txt_2_1, txt_S_1]);
 	  		TweenMax.delayedCall(delay + .2, textAnimate, [txt_3_1, txt_C_1]);
