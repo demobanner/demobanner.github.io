@@ -59,13 +59,28 @@ a {
 	top: 30px;
 }
 
-#img3 {
-  background: url("img3.png") center no-repeat;
+#box1 {
+  background: url("box1.png") center no-repeat;
 	top: 250px;
 }
-#img4 {
-  background: url("img3.png") center no-repeat;
+#box2 {
+  background: url("box2.png") center no-repeat;
 	top: 250px;
+}
+#box3 {
+  background: url("box3.png") center no-repeat;
+  top: 250px;
+}
+#box4 {
+  background: url("box4.png") center no-repeat;
+  top: 250px;
+}
+#box5 {
+  background: url("box5.png") center no-repeat;
+  top: 250px;
+}
+#white {
+  background: #fff;
 }
 #cta {
   background: url("cta.png") center no-repeat;
