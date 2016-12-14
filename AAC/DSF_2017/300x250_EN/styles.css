@@ -32,14 +32,8 @@ a {
   bottom: 0;
 }
 #firework {
-	position:absolute;
-	width:680px;
-	height:336px;
-	top:-90px;
-	left:-100px;
 	background: url(firework.gif) center no-repeat;
 	mix-blend-mode: color-dodge;
-	opacity: 0;
 }
 
 #text1 {
