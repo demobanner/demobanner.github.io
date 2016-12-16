@@ -65,7 +65,6 @@ a {
 }
 #logo {
   background: url("logo.png") center no-repeat;
-  top: 30px;
 }
 #dsf {
   background: url("dsf_logo.png") center no-repeat;
@@ -77,6 +76,7 @@ a {
 }
 #text10 {
   background: url("text10.png") center no-repeat;
+  top: 30px;
 }
 #btn-replay {
   position: absolute;
