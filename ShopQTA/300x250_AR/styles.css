@@ -10,18 +10,18 @@ a {
 }
 #banner {
   position: absolute;
-  width: 726px;
-  height: 88px;
+  width: 298px;
+  height: 248px;
   overflow: hidden;
   border:1px solid black;
   background-color: #fff;
 }
 .layer {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 726px;
-  height: 88px;
+ /* top: 0;
+  left: 0;*/
+  width: 298px;
+  height: 248px;
   opacity: 0;
 }
 .click-tag {
@@ -31,30 +31,11 @@ a {
   right: 0;
   bottom: 0;
 }
-#background1_1 {
-  background: url("bg1_1.png") left no-repeat;
-  width: 0;
-  right: auto;
-  left: 0;
-  opacity: 1;
-}
-#background1_2 {
-  background: url("bg1_2.png") center no-repeat;
-  transform: scale(2.2);
-  opacity: 1;
-}
-#background2 {
-  background: url("bg2.png") center no-repeat;
-  top: -100px;
-  left: 100px;
-  opacity: 1;
-}
-#background3 {
-  background: url("bg3.png") right center no-repeat;
-  left: auto;
-	right: -1px;
-	width: 0;
-  opacity: 1;
+
+#background {
+	background: url("bg.png") center no-repeat;
+	transform: scale(1.5);
+	opacity: 1;
 }
 #text1 {
   background: url("text1.png") center no-repeat;
@@ -74,9 +55,36 @@ a {
 #cta {
   background: url("cta.png") center no-repeat;
 }
+#pink {
+  background: url("pinkTriangle.png") center no-repeat;
+	top: 100px;
+	left: 100px;
+	opacity: 1;
+}
+#black {
+  background: url("blackTriangle.png") right no-repeat;
+  width: 0px;
+	left: auto;
+	right: 0;
+	opacity: 1;
+}
+#blue {
+  background: url("blueTriangle.png") bottom no-repeat;
+  height: 0px;
+  bottom: 0;
+  top: auto;
+	opacity: 1;
+}
 #logo {
   background: url("logo.png") center no-repeat;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
+/*#logo_small {
+  background: url("logo_small.png") center no-repeat;
+ 
+}*/
 #btn-replay {
   position: absolute;
   top: 3px;
