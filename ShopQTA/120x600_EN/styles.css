@@ -51,6 +51,7 @@ a {
 }
 #text2 {
   background: url("text2.png") center no-repeat;
+  top:-7px;
 }
 #text3 {
   background: url("text3.png") center no-repeat;

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=728,height=90">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {					
+
+			tl.to(background1_1, 0.5, {width: 300, ease: Power0.easeOut})
+			  .to(background1_2, 0.5, {scale:1, ease: Power0.easeOut}, "-=0.5")
+			  .to(logo, 0.5, {autoAlpha:1, ease: Power0.easeOut}, "+=0.25")
+			  .to(text1, 0.5, {autoAlpha:1}, "+=0.25")
+			  .to(text1, 0.5, {autoAlpha:0},'+=2')
+
+			tl.to(background2, 0.5, {top: 0, left: 0, ease: Power0.easeOut})
+			  .to(text2, 0.5, {autoAlpha:1})
+			  .to(text2, 0.5, {autoAlpha:0},'+=2')
+		    
+			tl.to(background3, 0.5, {width: 200, ease: Power0.easeOut})
+			  .to(text3, 0.5, {autoAlpha:1})
+			  .to(text3, 0.5, {autoAlpha:0},'+=2')
+
+			  .to(text4, 0.5, {autoAlpha:1})
+			  .to(text4, 0.5, {autoAlpha:0},'+=2')
+
+			  .to(text5, 0.5, {autoAlpha:1})
+			  .to(text5, 0.5, {autoAlpha:0},'+=2')
+
+			  .to(cta, 0.5, {autoAlpha:1, onComplete: onLoop});   
+				
+		}
+		
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+		<div id="background1_1" class="layer"></div>     
+		<div id="background3" class="layer"></div> 
+		<div id="background2" class="layer"></div> 
+		<div id="background1_2" class="layer"></div>  
+		<div id="text1" class="layer"></div>
+		<div id="text2" class="layer"></div>
+		<div id="text3" class="layer"></div>
+		<div id="text4" class="layer"></div>
+		<div id="text5" class="layer"></div>
+		<div id="cta" class="layer"></div>
+		<div id="logo" class="layer"></div>
+    </a>
+		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+  </div>
+</body>
+</html>
