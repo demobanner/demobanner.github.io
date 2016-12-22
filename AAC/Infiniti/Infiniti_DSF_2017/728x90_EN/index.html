@@ -42,14 +42,15 @@
 				.to(bg2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut}, "-=0.5")
 				.to(text2_a, 0.5, {autoAlpha:1})
 				.to(text2_b, 0.5, {autoAlpha:1}, "+=1")
-				.to([text2_a, text2_b], 0.5, {autoAlpha:0}, "+=2");
-				// .to(text2_b, 0, {top:3});
+				.to([text2_a, text2_b], 0.5, {autoAlpha:0}, "+=2")
+				.to(text2_b, 0, {top:-7});
 
 			tl.to(bg2, 0.5, {top:90, ease:Power2.easeInOut})
 				.to(bg3, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut}, "-=0.5")
 				.to([text3_a, text3_b], 0.5, {autoAlpha:1})
 				.to(text2_b, 0.5, {autoAlpha:1}, "+=1")
 				.to(text3_b, 0.5, {autoAlpha:0}, "+=2")
+				.to(text3_a, 0.5, {left:17, ease:Power2.easeInOut}, "-=0.5")
 				.to(text4, 0.5, {autoAlpha:1});
 
 			tl.to(bg5, 0.5, {autoAlpha:1}, "+=2")
