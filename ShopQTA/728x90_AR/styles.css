@@ -40,6 +40,8 @@ a {
 }
 #background1_2 {
   background: url("bg1_2.png") center no-repeat;
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
   transform: scale(2.2);
   opacity: 1;
 }
@@ -76,6 +78,9 @@ a {
 }
 #logo {
   background: url("logo.png") center no-repeat;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 #btn-replay {
   position: absolute;

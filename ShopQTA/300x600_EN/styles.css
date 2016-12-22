@@ -33,7 +33,9 @@ a {
 }
 #background1 {
   background: url("bg1.png") center no-repeat;
-  transform: scale(2.2);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
   opacity: 1;
 }
 #background2 {
@@ -66,12 +68,13 @@ a {
 }
 #logo {
   background: url("logo.png") center no-repeat;
+  top:-42px;
 }
 #btn-replay {
   position: absolute;
-  top: 17px;
+  top: 20px;
   right: 3px;
-	height: 16px;
+  height: 16px;
   width: 16px;
   visibility: hidden;
   opacity: 0;
