@@ -81,10 +81,7 @@ a {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/*#logo_small {
-  background: url("logo_small.png") center no-repeat;
- 
-}*/
+
 #btn-replay {
   position: absolute;
   top: 3px;
