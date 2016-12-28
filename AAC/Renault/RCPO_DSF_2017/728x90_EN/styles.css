@@ -42,25 +42,25 @@ a {
 #f2_box {
   background: url("f2_box.png") center no-repeat;
   top: 90px;
-  /*width: 120px;*/
+  height: 90px;
 }
 #f3_box {
   background: url("f3_box.png") center no-repeat;
-  top: 90px;
-  /*width: 120px;
-  opacity: 1;*/
+  top: 88px;
+  height: 90px;
+  opacity: 1;
 }
 #f4_box {
   background: url("f4_box.png") center no-repeat;
-  top: 90px;
- /* width: 120px;
-  opacity: 1;*/
+  top: 88px;
+  height: 90px;
+  opacity: 1;
 }
 #f5_box {
   background: url("f5_box.png") center no-repeat;
-  top: 90px;
-  /*width: 120px;
-  opacity: 1;*/
+  top: 88px;
+  height: 90px;
+  opacity: 1;
 }
 #tc {
   background: url("tc.png") center no-repeat;
