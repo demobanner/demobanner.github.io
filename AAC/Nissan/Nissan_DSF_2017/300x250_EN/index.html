@@ -33,17 +33,16 @@
 					cta = document.getElementById("cta"),
 					logo_dsf = document.getElementById("logo_dsf");
 
-			tl.to(f1_text1, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
-				.to(f1_hand1, 0.5, {left:0, ease: Power2.easeInOut})
+			tl.to([f1_hand1, f1_text1], 0.5, {left: 0, ease: Power2.easeInOut})
 				.to(f1_hand1, 0.5, {autoAlpha:0, ease: Power2.easeInOut, delay: 0.5})
-				.to(f1_text2, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
-				.to(f1_hand2, 0.5, {left:0, ease: Power2.easeInOut})
+
+				.to([f1_hand2, f1_text2], 0.5, {left: 0, ease: Power2.easeInOut})
 				.to(f1_hand2, 0.5, {autoAlpha:0, ease: Power2.easeInOut, delay: 0.5})
-				.to(f1_text3, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
-				.to(f1_hand3, 0.5, {left:0, ease: Power2.easeInOut})
+
+				.to([f1_hand3, f1_text3], 0.5, {left: 0, ease: Power2.easeInOut})
 				.to(f1_hand3, 0.5, {autoAlpha:0, ease: Power2.easeInOut, delay: 0.5})
-				.to(f1_text4, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
-				.to(f1_hand4, 0.5, {left:0, ease: Power2.easeInOut})
+
+				.to([f1_hand4, f1_text4], 0.5, {left: 0, ease: Power2.easeInOut})
 				.to([f1_text1, f1_text2, f1_text3, f1_text4, f1_hand4], 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(f2_text, 0.5, {autoAlpha:1})
