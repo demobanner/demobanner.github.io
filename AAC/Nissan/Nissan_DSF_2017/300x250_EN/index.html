@@ -23,22 +23,28 @@
 			var f1_text1 = document.getElementById("f1_text1"),
 					f1_text2 = document.getElementById("f1_text2"),
 					f1_text3 = document.getElementById("f1_text3"),
-					f1_text4 = document.getElementById("f1_text4"),
 					f2_text = document.getElementById("f2_text"),
 					f3_img = document.getElementById("f3_img"),
 					f4_img = document.getElementById("f4_img"),
 					f5_img = document.getElementById("f5_img"),
 					f6_text = document.getElementById("f6_text"),
 					f7_text = document.getElementById("f7_text"),
-					f7_img = document.getElementById("f7_img"),
+					f7_hand = document.getElementById("f7_hand"),
 					cta = document.getElementById("cta"),
-					dsf_logo = document.getElementById("dsf_logo");
+					logo_dsf = document.getElementById("logo_dsf");
 
 			tl.to(f1_text1, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
+				.to(f1_hand1, 0.5, {left:0, ease: Power2.easeInOut})
+				.to(f1_hand1, 0.5, {autoAlpha:0, ease: Power2.easeInOut, delay: 0.5})
 				.to(f1_text2, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
+				.to(f1_hand2, 0.5, {left:0, ease: Power2.easeInOut})
+				.to(f1_hand2, 0.5, {autoAlpha:0, ease: Power2.easeInOut, delay: 0.5})
 				.to(f1_text3, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
+				.to(f1_hand3, 0.5, {left:0, ease: Power2.easeInOut})
+				.to(f1_hand3, 0.5, {autoAlpha:0, ease: Power2.easeInOut, delay: 0.5})
 				.to(f1_text4, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
-				.to([f1_text1, f1_text2, f1_text3, f1_text4], 0.5, {autoAlpha:0}, "+=2");
+				.to(f1_hand4, 0.5, {left:0, ease: Power2.easeInOut})
+				.to([f1_text1, f1_text2, f1_text3, f1_text4, f1_hand4], 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(f2_text, 0.5, {autoAlpha:1})
 				.to(f2_text, 0.5, {autoAlpha:0}, "+=2");
@@ -55,10 +61,11 @@
 			tl.to(f6_text, 0.5, {autoAlpha:1})
 				.to(f6_text, 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(f7_text, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
+			tl.to(logo_nissan, 0.5, {autoAlpha: 1, top: 0, ease: Power2.easeInOut})
+			    .to(f7_text, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut})
 				.to(cta, 0.5, {autoAlpha:1, scale:1, ease: Power2.easeInOut}, "+=0.5")
-				.to(f7_img, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.2")
-				.to(dsf_logo, 0.5, {autoAlpha:1, onComplete:onLoop}, "+=0.5");
+				.to(f7_hand, 0.5, {autoAlpha:1, left:0, ease: Power2.easeInOut}, "-=0.2")
+				.to(logo_dsf, 0.5, {autoAlpha:1, onComplete:onLoop}, "+=0.5");
 		}
 		
 		function restart() {
@@ -82,9 +89,13 @@
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
       <div id="f1_text1" class="layer"></div>
+      <div id="f1_hand1" class="layer"></div>
       <div id="f1_text2" class="layer"></div>
+      <div id="f1_hand2" class="layer"></div>
       <div id="f1_text3" class="layer"></div>
+      <div id="f1_hand3" class="layer"></div>
       <div id="f1_text4" class="layer"></div>
+      <div id="f1_hand4" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_img" class="layer"></div>
       <div id="f4_img" class="layer"></div>
@@ -92,8 +103,9 @@
       <div id="f6_text" class="layer"></div>
       <div id="f7_text" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <div id="f7_img" class="layer"></div>
-      <div id="dsf_logo" class="layer"></div>
+      <div id="f7_hand" class="layer"></div>
+      <div id="logo_dsf" class="layer"></div>
+      <div id="logo_nissan" class="layer"></div>
     </a>
 		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
   </div>

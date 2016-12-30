@@ -38,12 +38,22 @@ a {
   transform: scale(0.1);
   mix-blend-mode: multiply;
 }
+#f1_hand1 {
+  background: url("f1_hand1.png") center no-repeat;
+  left: 120px;
+  opacity: 1;
+}
 #f1_text2 {
   background: url("f1_text2.png") center no-repeat;
   -ms-transform: scale(0.1); 
   -webkit-transform: scale(0.1); 
   transform: scale(0.1);
   mix-blend-mode: multiply;
+}
+#f1_hand2 {
+  background: url("f1_hand2.png") center no-repeat;
+  left: -120px;
+  opacity: 1;
 }
 #f1_text3 {
   background: url("f1_text3.png") center no-repeat;
@@ -52,13 +62,11 @@ a {
   transform: scale(0.1);
   mix-blend-mode: multiply;
 }
-/*#f1_text4 {
-  background: url("f1_text4.png") center no-repeat;
-  -ms-transform: scale(0.1); 
-  -webkit-transform: scale(0.1); 
-  transform: scale(0.1);
-  mix-blend-mode: darken;
-}*/
+#f1_hand3 {
+  background: url("f1_hand3.png") center no-repeat;
+  left: 120px;
+  opacity: 1;
+}
 #f2_text {
   background: url("f2_text.png") center no-repeat;
 }
@@ -77,8 +85,8 @@ a {
 #f6_text {
   background: url("f6_text.png") center no-repeat;
 }
-#f7_img {
-  background: url("f7_img.png") center no-repeat;
+#f7_hand {
+  background: url("f7_hand.png") center no-repeat;
   left: -120px;
 }
 #f7_text {
@@ -95,8 +103,12 @@ a {
   -webkit-transform: scale(0.1); 
   transform: scale(0.1);
 }
-#dsf_logo {
-  background: url("dsf_logo.png") center no-repeat;
+#logo_dsf {
+  background: url("logo_dsf.png") center no-repeat;
+}
+#logo_nissan {
+  background: url("logo_nissan.png") center no-repeat;
+  top: -100px;
 }
 #btn-replay {
   position: absolute;
