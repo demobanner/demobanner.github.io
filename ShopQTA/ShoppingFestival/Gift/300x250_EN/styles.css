@@ -35,30 +35,20 @@ a {
 #bg1 {
   background: url("bg1.svg") center no-repeat;
   -ms-transform: scale(5);
-  /*-webkit-transform: scale(5);*/
+  -webkit-transform: scale(5);
   transform: scale(5);
   top: -79px;
   left: -55px;
-
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(5, 5);
-  filter: none;
--webkit-filter: blur(0px);
 
 }
 
 #bg2 {
   background: url("bg2.svg") center no-repeat;
   -ms-transform: scale(5);
-  /*-webkit-transform: scale(5);*/
+  -webkit-transform: scale(5);
   transform: scale(5);
   top: -79px;
   left: -55px;
-
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(5, 5);
-  filter: none;
--webkit-filter: blur(0px);
 
 }
 
