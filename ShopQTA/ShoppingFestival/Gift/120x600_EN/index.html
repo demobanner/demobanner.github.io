@@ -23,10 +23,11 @@
 
 
 			tl.to(bg1, 0.5, {autoAlpha:1, ease: Power2.easeOut})
-        .to(bg1, 2, { scale:2, x:-45, y:46, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "+=1")
-        .to(bg2, 2, { scale:2, x:-45, y:46, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "-=2")
-        .to(bg1, 2, { scale:1, x:-18, y:110, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "+=1")
-        .to(bg2, 2, { autoAlpha:1, scale:1, x:-18, y:110, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "-=2")
+        .to(bg1, 2, { x:-274, y:0, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "+=1")
+        .to(bg1, 2, { x:90, y:289, rotation: 0.01, ease: Power2.easeOut}, "+=1")
+        .fromTo(bg2, 2, { autoAlpha:1,x:-179 , y:119},{x:185, y:408, rotation: 0.01, ease: Power2.easeOut}, '-=2')
+        .to(bg1, 3, { scale:1.9, x:14, y:260, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "+=1")
+        .to(bg2, 3, { scale:1.9, x:133, y:360, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "-=3")
 
 				.to(logo, 0.5, {autoAlpha:1, ease: Power2.easeOut})
         .to(text, 0.5, {autoAlpha:1, ease: Power2.easeOut})
@@ -53,8 +54,8 @@
 <body>
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
-      <div id="bg1" class="layer"></div>
       <div id="bg2" class="layer"></div>
+      <div id="bg1" class="layer"></div>
       <div id="logo" class="layer"></div>
       <div id="text" class="layer"></div>
       <div id="cta" class="layer"></div>

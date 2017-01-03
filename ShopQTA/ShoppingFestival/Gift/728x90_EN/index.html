@@ -20,17 +20,11 @@
 				isReplay = true;	// show/hide replay button in the end
 
 		function init() {
-
-
-			tl.to(bg1, 0.5, {autoAlpha:1, ease: Power2.easeOut})
-        .to(bg1, 2, { scale:2, x:-45, y:46, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "+=1")
-        .to(bg2, 2, { scale:2, x:-45, y:46, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "-=2")
-        .to(bg1, 2, { scale:1, x:-18, y:110, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "+=1")
-        .to(bg2, 2, { autoAlpha:1, scale:1, x:-18, y:110, z: 0.01, rotation: 0.01, ease: Power2.easeOut}, "-=2")
-
-				.to(logo, 0.5, {autoAlpha:1, ease: Power2.easeOut})
-        .to(text, 0.5, {autoAlpha:1, ease: Power2.easeOut})
-			  .to(cta, 0.5, {autoAlpha:1, ease: Power2.easeOut, onComplete:onLoop});
+   			tl.fromTo(bg1, 2.5, {scale: 11.5, y: -34, x: -178}, {scale:2, y: 30, x: 149, z: 0.01, ease: Power2.easeOut}, "+=2")
+   			  .fromTo(bg2, 2.5, {scale: 7.8, y: 142, x: 211}, {scale: 1.8, y: 51, x: 235, z: 0.01, ease: Power2.easeOut}, "-=2.5")
+			.to(logo, 0.5, {autoAlpha:1, ease: Power2.easeOut})
+			.to(text, 0.5, {autoAlpha:1, ease: Power2.easeOut})
+			.to(cta, 0.5, {autoAlpha:1, ease: Power2.easeOut, onComplete:onLoop});
 		}
 
 		function restart() {
