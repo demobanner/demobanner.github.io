@@ -10,18 +10,18 @@ a {
 }
 #banner {
   position: absolute;
-  width: 298px;
-  height: 248px;
+  width: 118px;
+  height: 598px;
   overflow: hidden;
   border:1px solid black;
-  background-color: #0074c8;
+  background-color: #f69322;
 }
 .layer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 298px;
-  height: 248px;
+  width: 118px;
+  height: 598px;
   opacity: 0;
 }
 .click-tag {
@@ -32,9 +32,8 @@ a {
   bottom: 0;
 }
 #img {
-  background: url("bg.svg") center no-repeat;
+  background: url("img.svg") center no-repeat;
   opacity: 1;
-  
 }
 #text {
   background: url("text.png") center no-repeat;

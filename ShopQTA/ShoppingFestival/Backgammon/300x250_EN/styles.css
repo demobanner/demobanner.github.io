@@ -34,11 +34,6 @@ a {
 #img {
   background: url("img.svg") center no-repeat;
   opacity: 1;
-  // -ms-transform: scale(6.5); /* IE 9 */
-  // -webkit-transform: scale(6.5); /* Safari */
-  // transform: scale(6.5);
-  // top: 361px;
-  // left: 261px;
 }
 #text {
   background: url("text.png") center no-repeat;
