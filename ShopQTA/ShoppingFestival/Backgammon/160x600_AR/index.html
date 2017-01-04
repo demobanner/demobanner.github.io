@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=160,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 3,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {			
+			tl.fromTo(img, 1.5, {scale: 10, y: 206, x: 203}, {scale: 5, y: 195, x: 142, z: 0.01, transformOrigin:"50% 50%", ease: Power2.easeOut}, "+=2")
+			  .to(img, 1.2, {scale: 3.5, y: 273, x: 104, z: 0, transformOrigin:"50% 50%", ease: Power2.easeInOut}, "+=2");
+
+			tl.to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeOut})
+			  .to(text, 0.5, {autoAlpha: 1, ease: Power3.easeOut})
+			  .to(cta, 0.5, {autoAlpha: 1, ease: Power3.easeOut, onComplete: onLoop});
+		}
+		
+		function restart() {
+      		tl.restart();
+    	}
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="img" class="layer"></div>
+      <div id="text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+  </div>
+</body>
+</html>
