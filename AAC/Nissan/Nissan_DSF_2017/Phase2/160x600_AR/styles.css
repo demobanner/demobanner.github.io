@@ -85,10 +85,9 @@ a {
 }
 #f6_car {
   background: url("f6_car.png") center no-repeat;
-  width: 210px;
-  -ms-transform: matrix(1, 0, 0, 1, -130, -15);
-  -webkit-transform: matrix(1, 0, 0, 1, -130, -15);
-  transform: matrix(1, 0, 0, 1, -130, -15);
+  -ms-transform: matrix(1, 0, 0, 1, -80, -15);
+  -webkit-transform: matrix(1, 0, 0, 1, -80, -15);
+  transform: matrix(1, 0, 0, 1, -80, -15);
 }
 #f6_text {
   background: url("f6_text.png") center no-repeat;
