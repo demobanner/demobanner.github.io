@@ -18,32 +18,32 @@
       var tl = new TimelineLite();
 			
       function init() {
-          tl.to(car, 0.5, {autoAlpha: 1,ease: Power4.easeOut});
-          tl.to(car, 0.5, {top: -20, ease: Power4.easeOut, delay: 1})
-            .to(carname, 0.5, {top: -10, ease: Power4.easeInOut}, "-=0.65")
-            .to(f1_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+          tl.to(car, 0.5, {autoAlpha: 1,ease: Power2.easeOut});
+          tl.to(car, 0.5, {top: -20, ease: Power2.easeOut, delay: 1})
+            .to(carname, 0.5, {top: -10, ease: Power2.easeInOut}, "-=0.65")
+            .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
 						
-            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut}, "+=1")
+            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
             .to(f2_text, 0.5, {autoAlpha: 0, delay: 2})
 
-            .to(f3_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f3_text, 0.5, {autoAlpha: 0, delay: 2})
 
-            .to(f4_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f4_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f4_text, 0.5, {autoAlpha: 0, delay: 2})
 
-            .to(f5_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f5_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f5_text, 0.5, {autoAlpha: 0, delay: 2})
 
-            .to(f6_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f6_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f6_text, 0.5, {autoAlpha: 0, delay: 2})
 
-            .to(f7_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+            .to(f7_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f7_text, 0.5, {autoAlpha: 0, delay: 2})
 
             .to(car, 0.5, {top: -40})
-            .to(f8_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
-            .to(cta, 0.5, {top: 3, autoAlpha: 1, ease: Power4.easeOut})
+            .to(f8_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to(cta, 0.5, {top: 3, autoAlpha: 1, ease: Power2.easeOut})
 					  .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
       }
 			

@@ -23,6 +23,12 @@ body {
 #car {
   background: url('car.jpg') center no-repeat;
 }
+#f1_text {
+  background: url('f1_text.png') center no-repeat;
+}
+#f2_text {
+  background: url('f2_text.png') center no-repeat;
+}
 #f3_text {
   background: url('f3_text.png') center no-repeat;
 }
@@ -35,6 +41,12 @@ body {
 #f6_text {
   background: url('f6_text.png') center no-repeat;
 }
+#f7_text {
+  background: url('f7_text.png') center no-repeat;
+}
+#f8_text {
+  background: url('f8_text.png') center no-repeat;
+}
 #cta {
   background: url('cta.png') center no-repeat;
   top: 30px;
@@ -42,7 +54,7 @@ body {
 #carname {
   background: url('name.png') center no-repeat;
   opacity: 1;
-  top: 15px;
+  top: 25px;
 }
 #logo {
   background: url('logo.png') center no-repeat;

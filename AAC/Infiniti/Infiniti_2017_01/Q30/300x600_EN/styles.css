@@ -25,6 +25,12 @@ body {
   height: 700px;
   top: -100px;
 }
+#f1_text {
+  background: url('f1_text.png') center no-repeat;
+}
+#f2_text {
+  background: url('f2_text.png') center no-repeat;
+}
 #f3_text {
   background: url('f3_text.png') center no-repeat;
 }
@@ -33,6 +39,15 @@ body {
 }
 #f5_text {
   background: url('f5_text.png') center no-repeat;
+}
+#f6_text {
+  background: url('f6_text.png') center no-repeat;
+}
+#f7_text {
+  background: url('f7_text.png') center no-repeat;
+}
+#f8_text {
+  background: url('f8_text.png') center no-repeat;
 }
 #cta {
   background: url('cta.png') center no-repeat;
