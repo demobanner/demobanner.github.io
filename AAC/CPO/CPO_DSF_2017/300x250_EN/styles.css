@@ -54,9 +54,11 @@ a {
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
+  top: -50px;
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
+  top: -50px;
 }
 #f4_logo {
   background: url("f4_logo.png") center no-repeat;
@@ -69,6 +71,7 @@ a {
 }
 #f7_text {
   background: url("f7_text.png") center no-repeat;
+  top: -50px;
 }
 #logo1 {
   background: url("logo1.png") center no-repeat;
