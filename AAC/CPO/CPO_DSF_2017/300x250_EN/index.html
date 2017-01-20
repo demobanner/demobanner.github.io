@@ -23,30 +23,31 @@
 		function init() {
 
 			tl.to(bg, 0.5, {autoAlpha:1})
-				.to(f1_img1, 0.5, {autoAlpha:1}, "-=0.5")
-				.to(f1_text, 0.5, {autoAlpha:1})
-				.to(f1_road, 0.5, {autoAlpha:1})
-				.to(f1_road, 1, {width:300, ease: Power1.easeInOut})
+				.to(f1_img1, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "-=0.5")
+				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=0.5")
+				.to(f1_road, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f1_road, 2, {width:300, ease: Power0.easeInOut})
 				.to(f1_img1, 0.5, {scale:1, top:0, left:0, ease: Power2.easeInOut})
-				.to(f1_img1, 0.5, {autoAlpha:0}, "+=1")
+				.to(f1_img1, 0.5, {autoAlpha:0}, "+=1.5")
 				.to(f1_img2, 0.5, {autoAlpha:1})
 				.to([bg, f1_text, logo1, f1_img2, f1_road], 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(logo2, 0.5, {autoAlpha:1})
-				.to(f2_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 				.to(f2_text, 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 				.to(f3_text, 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(f4_logo, 0.5, {autoAlpha:1}) 
-				.to(f4_logo, 0.5, {autoAlpha:0}, "+=0.5")
+				.to(f4_logo, 0.5, {autoAlpha:0}, "+=1")
 				.to(f5_logo, 0.5, {autoAlpha:1})
-				.to(f5_logo, 0.5, {autoAlpha:0}, "+=0.5")
+				.to(f5_logo, 0.5, {autoAlpha:0}, "+=1")
 				.to(f6_logo, 0.5, {autoAlpha:1})
-				.to(f6_logo, 0.5,  {autoAlpha:0}, "+=0.5");
+				.to([f6_logo, logo2], 0.5,  {autoAlpha:0}, "+=1");
 
-			tl.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut, onComplete:onLoop});
+			tl.to(f7_bg, 0.5, {autoAlpha:1})
+				.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
@@ -58,7 +59,7 @@
 				loop++ ;
 			} else if (isReplay) {
 				var btn_replay = document.getElementById('btn-replay');
-				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180}, "+=0.5");
 			}
 		}
 		
@@ -79,6 +80,7 @@
       <div id="f4_logo" class="layer"></div>
       <div id="f5_logo" class="layer"></div>
       <div id="f6_logo" class="layer"></div>
+      <div id="f7_bg" class="layer"></div>
       <div id="f7_text" class="layer"></div>
       <div id="logo1" class="layer"></div>
       <div id="logo2" class="layer"></div>

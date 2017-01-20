@@ -69,9 +69,12 @@ a {
 #f6_logo {
   background: url("f6_logo.png") center no-repeat;
 }
+#f7_bg {
+  background: url("f7_bg.jpg") center no-repeat;
+}
 #f7_text {
   background: url("f7_text.png") center no-repeat;
-  top: -50px;
+	top: -50px;
 }
 #logo1 {
   background: url("logo1.png") center no-repeat;
