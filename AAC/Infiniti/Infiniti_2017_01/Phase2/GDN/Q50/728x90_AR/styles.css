@@ -42,6 +42,7 @@ body {
 #f9_text {
   background: url('f9_text.png') center no-repeat;
   top: -10px;
+  left: 10px;
 }
 #cta {
   background: url('cta.png') center no-repeat;

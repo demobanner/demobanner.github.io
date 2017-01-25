@@ -19,18 +19,7 @@
 			
       function init() {
           tl.to(car, 0.5, {autoAlpha: 1,ease: Power2.easeOut});
-          tl.to(car, 0.5, {top: -10, ease: Power2.easeOut, delay: 1})
-
-            .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-						
-            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
-            .to(f2_text, 0.5, {autoAlpha: 0, delay: 2})
-
-            .to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-            .to(f3_text, 0.5, {autoAlpha: 0, delay: 2})
-
-            .to(f4_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-            .to(f4_text, 0.5, {autoAlpha: 0, delay: 2})
+          tl.to(car, 0.5, {top: -25, ease: Power2.easeOut, delay: 1})
 
             .to(f5_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f5_text, 0.5, {autoAlpha: 0, delay: 2})
@@ -40,9 +29,12 @@
 
             .to(f7_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f7_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f8_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to(f8_text, 0.5, {autoAlpha: 0, delay: 2})
 						
 						.to(car, 0.5, {top: -40, ease: Power2.easeOut})
-            .to(f8_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to(f9_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
 					  .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
       }
@@ -57,15 +49,12 @@
   <body>
     <div id="banner">
       <a class="click-tag" href="javascript:" onclick="window.open(window.clickTag, '_blank');" >
-        <div id="car" class="layer"></div>
-        <div id="f1_text" class="layer"></div>
-        <div id="f2_text" class="layer"></div>
-        <div id="f3_text" class="layer"></div>
-        <div id="f4_text" class="layer"></div>
+        <div id="car" class="layer"></div>        
         <div id="f5_text" class="layer"></div>
         <div id="f6_text" class="layer"></div>
         <div id="f7_text" class="layer"></div>
         <div id="f8_text" class="layer"></div>
+        <div id="f9_text" class="layer"></div>
         <div id="cta" class="layer"></div>
         <div id="logo" class="layer"></div>
       </a>

@@ -22,32 +22,28 @@ body {
 }
 #car {
   background: url('car.jpg') center no-repeat;
-  height: 700px;
-  top: -76px;
-}
-#f1_text {
-  background: url('f1_text.png') center no-repeat;
-}
-#f2_text {
-  background: url('f2_text.png') center no-repeat;
-}
-#f3_text {
-  background: url('f3_text.png') center no-repeat;
-}
-#f4_text {
-  background: url('f4_text.png') center no-repeat;
+  height: 650px;
+  top: -70px;
 }
 #f5_text {
   background: url('f5_text.png') center no-repeat;
+  top: -30px;
 }
 #f6_text {
   background: url('f6_text.png') center no-repeat;
+  top: -30px;
 }
 #f7_text {
   background: url('f7_text.png') center no-repeat;
+  top: -30px;
 }
 #f8_text {
   background: url('f8_text.png') center no-repeat;
+  top: -30px;
+}
+#f9_text {
+  background: url('f9_text.png') center no-repeat;
+  top: -30px;
 }
 #cta {
   background: url('cta.png') center no-repeat;

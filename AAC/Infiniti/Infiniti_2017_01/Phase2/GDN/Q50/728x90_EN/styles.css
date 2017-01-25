@@ -23,29 +23,26 @@ body {
 #car {
   background: url('car.jpg') center no-repeat;
 }
-#f1_text {
-  background: url('f1_text.png') center no-repeat;
-}
-#f2_text {
-  background: url('f2_text.png') center no-repeat;
-}
-#f3_text {
-  background: url('f3_text.png') center no-repeat;
-}
-#f4_text {
-  background: url('f4_text.png') center no-repeat;
-}
 #f5_text {
   background: url('f5_text.png') center no-repeat;
+  top: -10px;
 }
 #f6_text {
   background: url('f6_text.png') center no-repeat;
+  top: -10px;
 }
 #f7_text {
   background: url('f7_text.png') center no-repeat;
+  top: -10px;
 }
 #f8_text {
   background: url('f8_text.png') center no-repeat;
+  top: -10px;
+}
+#f9_text {
+  background: url('f9_text.png') center no-repeat;
+  top: -10px;
+  left: 10px;
 }
 #cta {
   background: url('cta.png') center no-repeat;
