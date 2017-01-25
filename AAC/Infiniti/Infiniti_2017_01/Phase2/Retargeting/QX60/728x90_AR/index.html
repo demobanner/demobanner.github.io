@@ -21,9 +21,8 @@
           tl.to(car, 0.5, {autoAlpha: 1,ease: Power2.easeOut});
           tl.to(car, 0.5, {left: 55, ease: Power2.easeOut, delay: 1})
             .to(carname, 0.5, {top: 0, left: 0, ease: Power2.easeInOut}, "-=0.65")
-            .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
 						
-            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
+            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
             .to(f2_text, 0.5, {autoAlpha: 0, delay: 2})
 
             .to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
@@ -57,7 +56,6 @@
     <div id="banner">
       <a class="click-tag" href="javascript:" onclick="window.open(window.clickTag, '_blank');" >
         <div id="car" class="layer"></div>
-        <div id="f1_text" class="layer"></div>
         <div id="f2_text" class="layer"></div>
         <div id="f3_text" class="layer"></div>
         <div id="f4_text" class="layer"></div>

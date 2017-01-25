@@ -25,29 +25,33 @@ body {
   height: 700px;
   top: -100px;
 }
-#f1_text {
-  background: url('f1_text.png') center no-repeat;
-}
 #f2_text {
   background: url('f2_text.png') center no-repeat;
+  top: -30px;
 }
 #f3_text {
   background: url('f3_text.png') center no-repeat;
+  top: -30px;
 }
 #f4_text {
   background: url('f4_text.png') center no-repeat;
+  top: -30px;
 }
 #f5_text {
   background: url('f5_text.png') center no-repeat;
+  top: -30px;
 }
 #f6_text {
   background: url('f6_text.png') center no-repeat;
+  top: -30px;
 }
 #f7_text {
   background: url('f7_text.png') center no-repeat;
+  top: -30px;
 }
 #f8_text {
   background: url('f8_text.png') center no-repeat;
+  top: -30px;
 }
 #cta {
   background: url('cta.png') center no-repeat;
