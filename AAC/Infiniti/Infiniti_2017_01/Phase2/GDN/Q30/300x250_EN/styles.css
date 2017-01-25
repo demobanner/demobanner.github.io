@@ -28,23 +28,25 @@ body {
   top: -40px;
   left: -20px;
 }
-#f1_text {
-  background: url('f1_text.png') center no-repeat;
-}
 #f5_text {
   background: url('f5_text.png') center no-repeat;
+	top: -20px;
 }
 #f6_text {
   background: url('f6_text.png') center no-repeat;
+	top: -20px;
 }
 #f7_text {
   background: url('f7_text.png') center no-repeat;
+	top: -20px;
 }
 #f8_text {
   background: url('f8_text.png') center no-repeat;
+	top: -20px;
 }
 #f9_text {
   background: url('f9_text.png') center no-repeat;
+	top: -20px;
 }
 #cta {
   background: url('cta.png') center no-repeat;
