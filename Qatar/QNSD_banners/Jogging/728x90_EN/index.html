@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=160,height=600">
+	<meta name="ad.size" content="width=728,height=90">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
@@ -25,14 +25,14 @@
 				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=1");
 
 			tl.to(bg0, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
-				.to(bg0, 7, {x:-7, ease: Power0.easeInOut}, "-=0.3")
+				.to(bg0, 7, {x:-46, ease: Power0.easeInOut}, "-=0.3")
 				.to(bg1, 7, {x:0, ease: Power0.easeInOut}, "-=7")
-				.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "-=9")
-				.to(f2_text, 6, {x:0, ease: Power1.easeInOut}, "-=6")
-				.to(f1_text, 0.5, {x:160, ease: Power1.easeInOut}, "-=5")
-				.to(f3_text, 0.5, {autoAlpha:1, x:0, ease: Power1.easeInOut}, "-=4.5")
+				.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "-=7")
+				.to(f2_text, 6, {x:0, ease: Power1.easeInOut}, "-=7")
+				.to(f1_text, 0.5, {y:-90, ease: Power1.easeInOut}, "-=5")
+				.to(f3_text, 0.5, {autoAlpha:1, y:0, ease: Power1.easeInOut}, "-=4.5")
 				.to(bg0, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "-=0.5")
-				.to(f2_text, 0.8, {x:-160, ease: Power1.easeInOut}, "+=0.5")
+				.to(f2_text, 0.8, {autoAlpha:0, x:-100, ease: Power1.easeInOut}, "+=0.5")
 				.to(cta, 0.5, {autoAlpha:1, y:0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
@@ -59,6 +59,7 @@
       <div id="bg1" class="layer"></div>
       <div id="bg0" class="layer"></div>
       <div id="bg2" class="layer"></div>
+      <div id="shadow" class="layer"></div>
       <div id="white" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f2_text" class="layer"></div>
