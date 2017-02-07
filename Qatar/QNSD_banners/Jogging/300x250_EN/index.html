@@ -21,28 +21,21 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-			var bg1 = document.getElementById("bg1"),
-				bg2 = document.getElementById("bg2"),
-				f1_text = document.getElementById("f1_text"),
-				f2_text = document.getElementById("f2_text"),
-				f3_text = document.getElementById("f3_text"),
-				cta = document.getElementById("cta"),
-				logo = document.getElementById("logo");
+			tl.to(white, 0.5, {autoAlpha:1, top: 189, ease: Power2.easeInOut}, "-=0.5")
+				.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=1");
 
-			tl.to(bg1, 0.5, {autoAlpha:1})
-				.to(bg1, 0.4, {height:190, ease: Power4.easeInOut}, "-=0.4")
-				.to(bg2, 0.5, {autoAlpha:1}, "-=0.3")
-				.to(logo, 0.5, {autoAlpha:1}, "-=0.2")
-				.to(f1_text, 0.5, {autoAlpha:1}, "+=1");
-
-			tl.to(bg1, 8, {x:-100, ease: Power0.easeInOut})
-				.to(f2_text, 0.5, {autoAlpha:1}, "-=9")
-				.to(f2_text, 7, {x:-80, ease: Power0.easeInOut}, "-=7")
-				.to(f1_text, 0.5, {y:-100, ease: Power0.easeInOut}, "-=5.5")
-				.to(f3_text, 0.5, {autoAlpha:1, y:0, ease: Power0.easeInOut}, "-=5")
-				.to(f2_text, 0.8, {x:-300, ease: Power1.easeInOut}, "+=0.3")
-				.to([bg1, bg2], 0.5, {opacity: 0.5}, "-=0.5")
-				.to(cta, 0.5, {autoAlpha:1, y:0, ease: Power1.easeInOut, onComplete:onLoop}, "-=0.5");
+			tl.to(bg0, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
+				.to(bg0, 8, {x:-152, ease: Power0.easeInOut}, "-=0.3")
+				.to(bg1, 8, {x:-100, ease: Power0.easeInOut}, "-=8")
+				.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "-=9")
+				.to(f2_text, 7, {x:-80, ease: Power1.easeInOut}, "-=7")
+				.to(f1_text, 0.5, {y:-100, ease: Power1.easeInOut}, "-=5.5")
+				.to(f3_text, 0.5, {autoAlpha:1, y:0, ease: Power1.easeInOut}, "-=5")
+				.to(bg0, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "-=0.5")
+				.to(f2_text, 0.8, {x:-300, ease: Power1.easeInOut})
+				.to(f3_text, 0.5, {y:-15, ease: Power1.easeInOut}, "-=0.5")
+				.to(cta, 0.5, {autoAlpha:1, y:0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
@@ -66,7 +59,9 @@
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
       <div id="bg1" class="layer"></div>
+      <div id="bg0" class="layer"></div>
       <div id="bg2" class="layer"></div>
+      <div id="white" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_text" class="layer"></div>

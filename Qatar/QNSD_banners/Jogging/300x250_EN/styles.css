@@ -32,15 +32,27 @@ a {
   bottom: 0;
 }
 #bg1 {
-  background: url("bg1.jpg") top no-repeat;
+  background: url("bg1.jpg") center no-repeat;
   width: 600px;
+	opacity: 1;
   -ms-transform: translate(-210px, 0px);
   -webkit-transform: translate(-210px, 0px);
   transform: translate(-210px, 0px);
 }
+#bg0 {
+  background: url("bg0.jpg") center no-repeat;
+  width: 600px;
+  -ms-transform: translate(-260px, 0px);
+  -webkit-transform: translate(-260px, 0px);
+  transform: translate(-260px, 0px);
+}
 #bg2 {
-  background: url("bg2.png") top no-repeat;
-  height: 190px;
+  background: url("bg2.png") center no-repeat;
+	opacity: 1;
+}
+#white {
+  background-color: #fff;
+  top: 250px;
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
@@ -59,9 +71,9 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  -ms-transform: translate(0px, -30px);
-  -webkit-transform: translate(0px, -30px);
-  transform: translate(0px, -30px);
+  -ms-transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
 }
 #logo {
   background: url("logo.png") center no-repeat;
