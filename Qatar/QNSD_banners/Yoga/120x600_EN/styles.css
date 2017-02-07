@@ -33,6 +33,10 @@ a {
 }
 #bg {
   background: url("bg.jpg") center no-repeat;
+  width: 440px;
+  height: 440px;
+  top: 80px;
+  left: -161px;
   opacity: 1;
 }
 #f1_text {
@@ -43,6 +47,9 @@ a {
   -ms-transform: rotate(180deg); 
   -webkit-transform: rotate(180deg); 
   transform: rotation(180deg);
+  -ms-transform-origin: 50% 477px;
+  -webkit-transform-origin: 50% 477px;
+  transform-origin: 50% 477px;
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
@@ -67,12 +74,12 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  top: 20px;
+  top: -10px;
 }
 #btn-replay {
   position: absolute;
-  width: 16px;
-  height: 16px
+  width: 15px;
+  height: 15px
   top: 3px;
   right: 3px;
   visibility: hidden;
