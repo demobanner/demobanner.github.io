@@ -37,7 +37,8 @@ a {
 }
 #bg2 {
   background: url("bg2.jpg") center no-repeat;
-  top: 3px;
+  height: 100px;
+  top: 0px;
 }
 
 #f1_text {
