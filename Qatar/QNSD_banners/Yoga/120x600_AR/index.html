@@ -31,6 +31,7 @@
 			  .to(f3_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
 
 			  .to(bg, 3, {rotation: 360, ease: Power3.easeInOut, delay: 2})
+			  .to(f2_text, 3, {rotation: -180, autoAlpha: 0, ease: Power3.easeInOut}, "-=3")
 			  .to(shadow, 3, {autoAlpha: 0, ease: Power3.easeInOut}, "-=3")
 			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut, onComplete:onLoop})
 

@@ -47,9 +47,9 @@ a {
   -ms-transform: rotate(180deg); 
   -webkit-transform: rotate(180deg); 
   transform: rotation(180deg);
-  -ms-transform-origin: 50% 477px;
-  -webkit-transform-origin: 50% 477px;
-  transform-origin: 50% 477px;
+  -ms-transform-origin: 50% 460px;
+  -webkit-transform-origin: 50% 460px;
+  transform-origin: 50% 460px;
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
