@@ -35,16 +35,16 @@ a {
   background: url("bg1.jpg") center no-repeat;
   width: 350px;
 	opacity: 1;
-  -ms-transform: translate(-193px, 0px);
-  -webkit-transform: translate(-193px, 0px);
-  transform: translate(-193px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 #bg0 {
   background: url("bg0.jpg") center no-repeat;
   width: 350px;
-  -ms-transform: translate(-210px, 0px);
-  -webkit-transform: translate(-210px, 0px);
-  transform: translate(-210px, 0px);
+  -ms-transform: translate(-18px, 0px);
+  -webkit-transform: translate(-18px, 0px);
+  transform: translate(-18px, 0px);
 }
 #bg2 {
   background: url("bg2.png") center no-repeat;
@@ -59,15 +59,15 @@ a {
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
-  -ms-transform: translate(105px, 0px);
-  -webkit-transform: translate(105px, 0px);
-  transform: translate(105px, 0px);
+  -ms-transform: translate(-110px, 0px);
+  -webkit-transform: translate(-110px, 0px);
+  transform: translate(-110px, 0px);
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
-  -ms-transform: translate(120px, 0px);
-  -webkit-transform: translate(120px, 0px);
-  transform: translate(120px, 0px);
+  -ms-transform: translate(-120px, 0px);
+  -webkit-transform: translate(-120px, 0px);
+  transform: translate(-120px, 0px);
 }
 #cta {
   background: url("cta.png") center no-repeat;

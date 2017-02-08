@@ -35,16 +35,16 @@ a {
   background: url("bg1.jpg") center no-repeat;
   width: 600px;
 	opacity: 1;
-  -ms-transform: translate(-210px, 0px);
-  -webkit-transform: translate(-210px, 0px);
-  transform: translate(-210px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  -webkit-transform: translate(-100px, 0px);
+  transform: translate(-100px, 0px);
 }
 #bg0 {
   background: url("bg0.jpg") center no-repeat;
   width: 600px;
-  -ms-transform: translate(-260px, 0px);
-  -webkit-transform: translate(-260px, 0px);
-  transform: translate(-260px, 0px);
+  -ms-transform: translate(-152px, 0px);
+  -webkit-transform: translate(-152px, 0px);
+  transform: translate(-152px, 0px);
 }
 #bg2 {
   background: url("bg2.png") center no-repeat;
@@ -59,9 +59,9 @@ a {
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
-  -ms-transform: translate(180px, 0px);
-  -webkit-transform: translate(180px, 0px);
-  transform: translate(180px, 0px);
+  -ms-transform: translate(-275px, 0px);
+  -webkit-transform: translate(-275px, 0px);
+  transform: translate(-275px, 0px);
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
@@ -80,9 +80,9 @@ a {
 }
 #btn-replay {
   position: absolute;
-  top: 3px;
-  right: 3px;
-	height: 16px;
+  top: 1px;
+  right: 1px;
+	height: 14px;
   visibility: hidden;
   opacity: 0;
 	line-height: 0;
