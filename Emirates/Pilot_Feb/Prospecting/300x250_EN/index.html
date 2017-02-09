@@ -14,8 +14,67 @@
 <body>
   <div id="banner">
     <a id="mainExit" class="click-tag" href="javascript:window.open(window.clickTag)">
-      <!-- <div id="f1_bg" class="layer"></div> -->
-      <img src="f1_bg.jpg" class="mask" data-mask="centerblur.png">
+      <div id="f1_bg" class="layer"></div>
+
+      <!-- <svg version="1.1" xml:space="preserve" id="theSVG1" class="layer">
+        <defs>
+          <mask id="masker">
+            <rect class="gradientBox" fill="url(#theGradient)" x="0" y="0" width="300" height="250"/>
+          </mask>
+
+          <pattern id="f1_bg" patternUnits="userSpaceOnUse" width="300" height="250">
+            <image xlink:href="f1_bg.jpg" />
+          </pattern>
+
+          <lineargradient id="theGradient" gradientUnits="userSpaceOnUse" x1="300" y1="250" x2="600" y2="250">
+            <stop  offset="0" style="stop-color:#000000"/>
+            <stop  offset="1" style="stop-color:#ffffff"/>
+          </lineargradient>
+        </defs>
+        <g mask="url(#masker)">
+          <rect id="theImage" width="300" height="250" x="0" y="0" fill="url(#f1_bg)" />
+        </g>
+      </svg> -->
+
+      <svg version="1.1" xml:space="preserve" id="theSVG2" class="layer">
+        <defs>
+          <mask id="masker2">
+            <rect class="gradientBox" fill="url(#theGradient2)" x="0" y="0" width="300" height="250"/>
+          </mask>
+
+          <pattern id="f2_bg" patternUnits="userSpaceOnUse" width="300" height="250">
+            <image xlink:href="f2_bg.jpg" x="0" y="0" />
+          </pattern>
+
+          <lineargradient id="theGradient2" gradientUnits="userSpaceOnUse" x1="300" y1="250" x2="600" y2="250">
+            <stop  offset="0" style="stop-color:#000000"/>
+            <stop  offset="1" style="stop-color:#ffffff"/>
+          </lineargradient>
+        </defs>
+        <g mask="url(#masker2)">
+          <rect id="theImage2" width="300" height="250" x="0" y="0" fill="url(#f2_bg)" />
+        </g>
+      </svg>
+
+      <svg version="1.1" xml:space="preserve" id="theSVG3" class="layer">
+        <defs>
+          <mask id="masker3">
+            <rect class="gradientBox" fill="url(#theGradient3)" x="0" y="0" width="300" height="250"/>
+          </mask>
+
+          <pattern id="f3_bg" patternUnits="userSpaceOnUse" width="300" height="250">
+            <image xlink:href="f3_bg.jpg" x="0" y="0" />
+          </pattern>
+
+          <lineargradient id="theGradient3" gradientUnits="userSpaceOnUse" x1="300" y1="250" x2="600" y2="250">
+            <stop  offset="0" style="stop-color:#000000"/>
+            <stop  offset="1" style="stop-color:#ffffff"/>
+          </lineargradient>
+        </defs>
+        <g mask="url(#masker3)">
+          <rect id="theImage3" width="300" height="250" x="0" y="0" fill="url(#f3_bg)" />
+        </g>
+      </svg>
 
       <div id="f1_text" class="layer"></div>
       <div id="f2_bg" class="layer"></div>
@@ -34,21 +93,19 @@
     var tl = new TimelineLite();
 
     function init() {
-      tl.to(f1_text, 0.5, {autoAlpha: 1})
-        // .to(f1_bg, 1, {autoAlpha: 0}, '+=1')
+      // tl.to("#theGradient", 1.5, {attr:{x1:-300, x2:0},  yoyo:true, ease:Power2.easeIn});
 
-        // .to(f2_bg, 1, {autoAlpha: 1}, '-=1')
-    //     .to(f2_bg, 0.5, {autoAlpha: 0}, '+=1')
+      tl.to(f1_text, 0.5, {autoAlpha: 1, ease:Power2.easeOut});
+      tl.to("#theGradient2", 1.5, {attr:{x1:-300, x2:0},  yoyo:true, ease:Power2.easeIn}, '+=0.5');
+      tl.to(f1_text, 0.5, {autoAlpha: 0, ease:Power2.easeOut}, '+=2');
 
-    //     .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
-    //     .to(f3_text, 0.5, {autoAlpha: 1})
-    //     .to(f3_text, 0.5, {autoAlpha: 0}, '+=2')
-    //     .to(f3_bg, 0.5, {autoAlpha: 0}, '-=0.5')
+      tl.to("#theGradient3", 1.5, {attr:{x1:-300, x2:0},  yoyo:true, ease:Power2.easeIn}, '-=1');
+      tl.to(f3_text, 0.5, {autoAlpha: 1, ease:Power2.easeOut},'+=0.2');
 
-    //     .to(f4_bg, 0.5, {autoAlpha: 1}, '-=0.5')
-    //     .to([f4_text1,f4_text2] , 0.5, {autoAlpha: 1})
-    //     .to(cta, 0.5, {autoAlpha: 1})
-    //     .to(logo, 2, {autoAlpha: 1, onComplete:replay});
+      tl.to(f4_bg, 0.5, {autoAlpha: 1}, '+=2.5');
+      tl.to([f4_text1,f4_text2] , 0.5, {autoAlpha: 1, ease:Power2.easeOut});
+      tl.to(cta, 0.5, {autoAlpha: 1, ease:Power2.easeOut});
+      tl.to(logo, 2, {autoAlpha: 1, ease:Power2.easeOut, onComplete:replay});
     }
 
     var count = 0;
@@ -61,6 +118,5 @@
 
     window.onload = init;
   </script>
-  <script src="canvasmask.js"></script>
 </body>
 </html>
