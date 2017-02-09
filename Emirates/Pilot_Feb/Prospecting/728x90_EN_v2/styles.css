@@ -8,7 +8,7 @@ body {
   width: 726px;
   height: 88px;
   border: 1px solid #000000;
-  background: #fff;
+  background: #fff url(f2_bg.jpg) center no-repeat;;
 }
 .click-tag {
   position: absolute;
@@ -38,7 +38,6 @@ body {
 }
 #f2_bg {
   background: url(f2_bg.jpg) center no-repeat;
-  opacity: 1;
 }
 #f3_bg {
   background: url(f3_bg.jpg) center no-repeat;

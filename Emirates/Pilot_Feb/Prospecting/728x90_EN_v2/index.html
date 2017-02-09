@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="banner">
-    <a id="mainExit" class="click-tag" href="javascript:window.open(window.clickTag)">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
       <img id="bg" class="layer" src="f1_bg.jpg" alt="">
       <div id="f2_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
@@ -86,7 +86,8 @@
     }
 
     function tween() {
-      tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+      tl.to(f2_bg, 0, {autoAlpha: 1, ease: Power0.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
         .to(f3_bg, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, '+=3')
         .to(f3_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut});
 
