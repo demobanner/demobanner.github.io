@@ -8,7 +8,7 @@ body {
   width: 726px;
   height: 88px;
   border: 1px solid #000000;
-  background: #fff;
+  background: #fff url(f1_bg.jpg) top left no-repeat;;
 }
 .click-tag {
   position: absolute;
@@ -28,19 +28,19 @@ body {
   opacity: 1;
   z-index: 1;
 }
-#f1_bg {
-  background: url(f1_bg.jpg) center no-repeat;
-  opacity: 1;
+#bg {
+  width: 728px;
+  height: 90px;
+  visibility: hidden;
 }
 #f1_text {
   background: url(f1_text.png) center no-repeat;
 }
 #f2_bg {
-  background: url(f2_bg.jpg) center top no-repeat;
-  height: 0;
+  background: url(f2_bg.jpg) center no-repeat;
 }
 #f3_bg {
-  background: url(f3_bg.jpg) center top no-repeat;
+  background: url(f3_bg.jpg) center no-repeat;
 }
 #f3_text {
   background: url(f3_text.png) center no-repeat;
