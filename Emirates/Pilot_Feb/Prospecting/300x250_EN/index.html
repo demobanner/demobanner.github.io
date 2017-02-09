@@ -8,87 +8,118 @@
   <title>Banner 300x250</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript">
-    var clickTag = "http://www.emiratesgroupcareers.com/english/Careers_Overview/Pilot_Jobs/PilotJobs.aspx";
+    var clickTag = "";
   </script>
 </head>
 <body>
   <div id="banner">
     <a id="mainExit" class="click-tag" href="javascript:window.open(window.clickTag)">
-      <div id="f1_bg" class="layer"></div>
-
-      <svg version="1.1" id="theSVG2" class="layer" viewBox="0 0 300 250" width="300" height="250" xml:space="preserve">
-        <defs>
-          <mask id="masker2">
-            <rect class="gradientBox" fill="url(#theGradient2)" x="0" y="0" width="300" height="250"/>
-          </mask>
-
-          <pattern id="f2_bg" patternUnits="userSpaceOnUse" width="300" height="250">
-            <image xlink:href="f2_bg.jpg" x="0" y="0" width="300" height="250"/>
-          </pattern>
-
-          <lineargradient id="theGradient2" gradientUnits="userSpaceOnUse" x1="300" y1="250" x2="600" y2="250">
-            <stop  offset="0" style="stop-color:#000000"/>
-            <stop  offset="1" style="stop-color:#ffffff"/>
-          </lineargradient>
-        </defs>
-        <g mask="url(#masker2)">
-          <rect id="theImage2" width="300" height="250" x="0" y="0" fill="url(#f2_bg)" />
-        </g>
-      </svg>
-
-      <svg version="1.1" id="theSVG3" class="layer" viewBox="0 0 300 250" width="300" height="250" xml:space="preserve">
-        <defs>
-          <mask id="masker3">
-            <rect class="gradientBox" fill="url(#theGradient3)" x="0" y="0" width="300" height="250"/>
-          </mask>
-
-          <pattern id="f3_bg" patternUnits="userSpaceOnUse" width="300" height="250">
-            <image xlink:href="f3_bg.jpg" x="0" y="0"  width="300" height="250"/>
-          </pattern>
-
-          <lineargradient id="theGradient3" gradientUnits="userSpaceOnUse" x1="300" y1="250" x2="600" y2="250">
-            <stop  offset="0" style="stop-color:#000000"/>
-            <stop  offset="1" style="stop-color:#ffffff"/>
-          </lineargradient>
-        </defs>
-        <g mask="url(#masker3)">
-          <rect id="theImage3" width="300" height="250" x="0" y="0" fill="url(#f3_bg)" />
-        </g>
-      </svg>
-
-      <div id="f1_text" class="layer"></div>
+      <img id="bg" class="layer" src="f1_bg.jpg" alt="">
       <div id="f2_bg" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
       <div id="f3_bg" class="layer"></div>
       <div id="f3_text" class="layer"></div>
       <div id="f4_bg" class="layer"></div>
-      <div id="f4_text1" class="layer"></div>
-      <div id="f4_text2" class="layer"></div>
+      <div id="f4_logo" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
     </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script type="text/javascript">
-
     var tl = new TimelineLite();
 
+    var WIDTH,
+        HEIGHT,
+        RADIUS = 20,
+        posX,
+        posY;
+
+    var firstBg,
+        canvas,
+        ctx,
+        img,
+        time;
+
+    function createCanvas(parent, width, height) {
+        canvas = {};
+        canvas.node = document.createElement('canvas');
+        canvas.context = canvas.node.getContext('2d');
+        canvas.node.width = width || 100;
+        canvas.node.height = height || 100;
+
+        parent.appendChild(canvas.node);
+        return canvas;
+    }
+
+    function initCanvas(container, width, height) {
+      canvas = createCanvas(container, width, height);
+      ctx = canvas.context;
+
+      // define a custom fillCircle method
+      ctx.fillCircle = function(x, y, radius) {
+          this.fillStyle = '#ffffff';
+          this.beginPath();
+          this.moveTo(x, y);
+          this.arc(x, y, radius, 0, Math.PI * 2, false);
+          this.fill();
+      };
+
+      img = document.getElementById("bg");
+      ctx.drawImage(img, 0, 0);
+
+      tween();
+
+      posX = 0;
+      posY = 0;
+
+      ctx.globalCompositeOperation = 'destination-out';
+      time = setInterval(draw, 3);
+    }
+
+    function draw() {
+      ctx.fillCircle(posX, posY, RADIUS);
+      posX += 8;
+      posY -= 14;
+
+      if (posY <= -20) {
+        posY = 400;
+        posX -= 200;
+      }
+
+      if (posX >= WIDTH *2) {
+        clearInterval(time);
+      }
+    }
+
+    function tween() {
+      tl.to(f2_bg, 0, {autoAlpha: 1, ease: Power0.easeInOut})
+        .to(f1_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+        .to(f3_bg, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, '+=3')
+        .to(f3_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut});
+
+      tl.to(f4_bg, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, '+=2')
+        .to(f4_logo, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+        .to(f4_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+        .to(cta, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+        .to(logo, 2, {autoAlpha: 1, ease: Power0.easeInOut, onComplete:replay});
+    }
+
     function init() {
-      tl.to(f1_text, 0.5, {autoAlpha: 1, ease:Power2.easeOut});
-      tl.to("#theGradient2", 1.5, {attr:{x1:-300, x2:0},  yoyo:true, ease:Power2.easeIn}, '+=0.5');
-      tl.to(f1_text, 0.5, {autoAlpha: 0, ease:Power2.easeOut}, '+=2');
+      firstBg = document.getElementById('f2_bg');
+      WIDTH = firstBg.offsetWidth;
+      HEIGHT = firstBg.offsetHeight;
 
-      tl.to("#theGradient3", 1.5, {attr:{x1:-300, x2:0},  yoyo:true, ease:Power2.easeIn}, '-=1');
-      tl.to(f3_text, 0.5, {autoAlpha: 1, ease:Power2.easeOut},'+=0.2');
-
-      tl.to(f4_bg, 0.5, {autoAlpha: 1}, '+=2.5');
-      tl.to([f4_text1,f4_text2] , 0.5, {autoAlpha: 1, ease:Power2.easeOut});
-      tl.to(cta, 0.5, {autoAlpha: 1, ease:Power2.easeOut});
-      tl.to(logo, 2, {autoAlpha: 1, ease:Power2.easeOut, onComplete:replay});
+      initCanvas(firstBg, WIDTH, HEIGHT);
     }
 
     var count = 0;
     function replay() {
       if (count < 1) {
+        firstBg.removeChild(canvas.node);
+        initCanvas(firstBg, WIDTH, HEIGHT);
+
         tl.restart();
       }
       count++;

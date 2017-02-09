@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
 }
 #banner {
   position: relative;
@@ -9,6 +8,7 @@ body {
   width: 298px;
   height: 248px;
   border: 1px solid #000000;
+  background: #fff url(f1_bg.jpg) top left no-repeat;
 }
 .click-tag {
   position: absolute;
@@ -21,8 +21,6 @@ body {
   position: absolute;
   width: 298px;
   height: 248px;
-  left: 0;
-  top: 0;
   opacity: 0;
 }
 #logo {
@@ -30,12 +28,10 @@ body {
   opacity: 1;
   z-index: 1;
 }
-#theSVG1, #theSVG2, #theSVG3{
-  opacity: 1;
-}
-#f1_bg {
-  background: url(f1_bg.jpg) center no-repeat;
-  opacity: 1;
+#bg {
+  width: 300px;
+  height: 250px;
+  visibility: hidden;
 }
 #f1_text {
   background: url(f1_text.png) center no-repeat;
@@ -52,11 +48,11 @@ body {
 #f4_bg {
   background: url(f4_bg.jpg) center no-repeat;
 }
-#f4_text1 {
-  background: url(f4_text1.png) center no-repeat;
+#f4_text {
+  background: url(f4_text.png) center no-repeat;
 }
-#f4_text2 {
-  background: url(f4_text2.png) center no-repeat;
+#f4_logo {
+  background: url(f4_logo.png) center no-repeat;
 }
 #cta {
   background: url(cta.png) center no-repeat;
