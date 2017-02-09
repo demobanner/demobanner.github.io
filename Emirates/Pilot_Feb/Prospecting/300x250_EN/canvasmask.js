@@ -8,6 +8,7 @@
   document.body.appendChild(imagecanvas);
   */
   window.addEventListener('load', function(){
+    var tl = new TimelineLite();
     [].forEach.call(document.querySelectorAll('.mask'), function(img){
       var newImg = document.createElement('img');
       newImg.src = img.src;
@@ -18,6 +19,7 @@
 
         var mask = document.createElement('img');
         mask.src = img.getAttribute('data-mask');
+        tl.to(mask, 3, {scale: 5})
         mask.onload = function() {
           imagecanvas.width  = width;
           imagecanvas.height = height;
