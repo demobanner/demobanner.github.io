@@ -21,18 +21,6 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-			var f1_text = document.getElementById("f1_text"),
-				f2_bg = document.getElementById("f2_bg"),
-				f2_text = document.getElementById("f2_text"),
-				f3_bg = document.getElementById("f3_bg"),
-				f3_text = document.getElementById("f3_text"),
-				f4_bg = document.getElementById("f4_bg"),
-				f4_text = document.getElementById("f4_text"),
-				f5_text = document.getElementById("f5_text"),
-				cta = document.getElementById("cta"),
-				logo_nissan = document.getElementById("logo_nissan"),
-				logo = document.getElementById("logo");
-
 			tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to([f1_text, logo, logo_nissan], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
