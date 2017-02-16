@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=728,height=90">
+	<meta name="ad.size" content="width=120,height=600">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
@@ -24,29 +24,27 @@
 			tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to([f1_text, logo_nissan], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to(f2_bg, 0.5, {autoAlpha:1, left: 0, ease: Power2.easeInOut})
-				.to(f2_text, 0.5, {autoAlpha:1, left: 0, ease: Power2.easeInOut}, "-=0.5")
-				.to(f2_bg, 0.5, {autoAlpha:0, left: 80, ease: Power2.easeInOut}, "+=2")
-				.to(f2_text, 0.5, {autoAlpha:0, left: -130, ease: Power1.easeInOut}, "-=0.5");
+			tl.to(f2_bg, 0.5, {autoAlpha:1, top: 0, ease: Power2.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha:1, top: 0, ease: Power2.easeInOut}, "-=0.5")
+				.to(f2_bg, 0.5, {autoAlpha:0, top: 50, ease: Power2.easeInOut}, "+=2")
+				.to(f2_text, 0.5, {autoAlpha:0, top: -100, ease: Power1.easeInOut}, "-=0.5");
 
-			tl.to(f3_bg, 0.5, {autoAlpha:1, left: 0, ease: Power2.easeInOut})
-				.to(f3_text, 0.5, {autoAlpha:1, left: 0, ease: Power2.easeInOut}, "-=0.5")
-				.to(f3_bg, 0.5, {autoAlpha:0, left: 80, ease: Power2.easeInOut}, "+=2")
-				.to(f3_text, 0.5, {autoAlpha:0, left: -130, ease: Power1.easeInOut}, "-=0.5");
+			tl.to(f3_bg, 0.5, {autoAlpha:1, top: 0, ease: Power2.easeInOut})
+				.to(f3_text, 0.5, {autoAlpha:1, top: 0, ease: Power2.easeInOut}, "-=0.5")
+				.to(f3_bg, 0.5, {autoAlpha:0, top: 50, ease: Power2.easeInOut}, "+=2")
+				.to(f3_text, 0.5, {autoAlpha:0, top: -100, ease: Power1.easeInOut}, "-=0.5");
 
-			tl.to(f4_bg, 0.5, {autoAlpha:1, left: 0, ease: Power2.easeInOut})
-				.to(f4_text, 0.5, {autoAlpha:1, left: 0, ease: Power2.easeInOut}, "-=0.5")
-				.to(f4_bg, 0.5, {autoAlpha:0, left: 80, ease: Power2.easeInOut}, "+=2")
-				.to(f4_text, 0.5, {autoAlpha:0, left: -130, ease: Power1.easeInOut}, "-=0.5");
+			tl.to(f4_bg, 0.5, {autoAlpha:1, top: 0, ease: Power2.easeInOut})
+				.to(f4_text, 0.5, {autoAlpha:1, top: 0, ease: Power2.easeInOut}, "-=0.5")
+				.to(f4_bg, 0.5, {autoAlpha:0, top: 50, ease: Power2.easeInOut}, "+=2")
+				.to(f4_text, 0.5, {autoAlpha:0, top: -100, ease: Power1.easeInOut}, "-=0.5");
 
 			tl.to(f5_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to(f5_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to(f1_text, 0, {left:21, ease: Power0.easeInOut})
-				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-				.to(f1_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
-
 			tl.to(logo_nissan, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f1_text, 0.5, {top:-32, ease: Power0.easeInOut}, "-=0.5")
+				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut, onComplete:onLoop});
 		}
 		
