@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>QTA - Video banner</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script type"text/javascript">
+  var clickTag = "";
+
+  var tl = new TimelineLite();
+
+  function init() {
+    tl.to(logo_bg, 0.5, {bottom: 0, autoAlpha: 1, ease: Power1.easeInOut})
+      .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+      .to(f1_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+      .to(f1_text, 0.5, {autoAlpha: 0, top: 10, scale: 1.1, delay: 2, ease: Power3.easeInOut})
+      .to(f2_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+      .to(f2_text, 0.5, {autoAlpha: 0, top: 10, scale: 1.1, delay: 2, ease: Power3.easeInOut, onComplete: playVideo});
+  }
+
+  function playVideo() {
+    var video_player = document.getElementById('video-player');
+    tl.to(video_player, 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
+    video_player.play();
+    video_player.onended = function() {
+      tl.to(video_player, 0.5, {autoAlpha: 0, ease: Power3.easeInOut})
+        .to(f4_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+        .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut});
+    };
+  }
+
+  window.onload = init;
+
+  </script>
+</head>
+<body>
+  <div id="banner">
+		<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_text" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="logo_bg" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <video id="video-player" width="298" height="248" class="layer">
+  			<source src="video.mp4" type="video/mp4">
+  		</video>
+		</a>
+  </div>
+</body>
+</html>
