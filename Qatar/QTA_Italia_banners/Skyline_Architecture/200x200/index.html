@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>QTA - Video banner</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+  	<script type"text/javascript">
+  	var clickTag = "";
+
+  	var tl = new TimelineLite();
+
+  	function init() {
+  		video_player.volume = 0;
+  		tl.to(white, 0.5, {autoAlpha:1, top:143, ease: Power1.easeInOut}, "+=0.5")
+  			.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  			.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  			.to(f1_text, 0.5, {autoAlpha:0, scale:1.1, ease: Power1.easeInOut}, "+=2.5");
+
+  		tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  			.to([bg, f2_text, logo, white], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2.5");
+
+  		tl.to(video_player, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  			.addPause("+=0", video_player.play, null, video_player);
+
+  		video_player.addEventListener("play", function() {
+  			tl.to(video_player, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=30")
+  				.to([bg, white, logo], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  				.to(f4_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut});
+		});
+  	}
+
+  window.onload = init;
+  </script>
+</head>
+<body>
+	<div id="banner">
+		<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+			<div id="bg" class="layer"></div>
+			<div id="white" class="layer"></div>
+			<div id="f1_text" class="layer"></div>
+			<div id="f2_text" class="layer"></div>
+    		<video id="video_player" width="198" height="198">
+				<source src="video.mp4" type="video/mp4">
+			</video>
+			<div id="f4_text" class="layer"></div>
+			<div id="cta" class="layer"></div>
+			<div id="logo" class="layer"></div>
+		</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+a {
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 334px;
+  height: 278px;
+  border: 1px solid #000;
+  background: white;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 334px;
+  height: 278px;
+	/*visibility: hidden;*/
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+#video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+	background: #000;
+  opacity: 0;
+}
+#logo{
+  background: url(logo.png) center center;
+  top: 76px;
+}
+#bg{
+  background: url(bg.jpg) center center;
+}
+#f1_txt{
+  background: url(f1_txt.png) center center;
+}
+#f2_txt{
+  background: url(f2_txt.png) center center;
+}
+#f4_txt{
+  background: url(f4_txt.png) center center;
+}
+#cta{
+  background: url(cta.png) center center;
+  top: 20px;
+}
