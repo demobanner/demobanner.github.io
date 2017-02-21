@@ -15,8 +15,8 @@
   	var tl = new TimelineLite();
 
   	function init() {
-  		video_player.volume = 0;
-  		tl.to(white, 0.5, {autoAlpha:1, top:188, ease: Power1.easeInOut}, "+=0.5")
+  		video_player.volume = 1;
+  		tl.to(white, 0.5, {autoAlpha:1, top:188, ease: Power1.easeInOut})
   			.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
   			.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
   			.to(f1_text, 0.5, {autoAlpha:0, scale:1.1, ease: Power1.easeInOut}, "+=2.5");
