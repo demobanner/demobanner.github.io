@@ -13,45 +13,53 @@
   	var clickTag = "";
 
   	var tl = new TimelineLite();
+		
+		function init() {
+    tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  		.to(f1_text, 0.5, {autoAlpha:0, scale:1.1, ease: Power1.easeInOut}, "+=2.5")
+      .to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  		.to(f2_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut, onComplete: playVideo}, "+=2.5");
+		}
 
-  	function init() {
-  		video_player.volume = 1;
-  		tl.to(white, 0.5, {autoAlpha:1, top:188, ease: Power1.easeInOut})
-  			.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  			.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  			.to(f1_text, 0.5, {autoAlpha:0, scale:1.1, ease: Power1.easeInOut}, "+=2.5");
-
-  		tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  			.to([bg, f2_text, logo, white], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2.5");
-
-  		tl.to(video_player, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  			.addPause("+=0", video_player.play, null, video_player);
-
-  		video_player.addEventListener("play", function() {
-  			tl.to(video_player, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=30")
-  				.to([bg, white, logo], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  				.to(f4_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+		function playVideo() {
+			var video_player = document.getElementById('video_player');
+			var volume_control = document.getElementById('volume_control');
+			volume_control.onclick = function() {
+				if (video_player.muted == true) {
+					video_player.muted = false;
+					volume_control.style.background = "url('unmute.png') center no-repeat";
+				}
+				else {
+					video_player.muted = true;
+					volume_control.style.background = "url('mute.png') center no-repeat";
+				}
+			}
+			tl.to([video_player, volume_control], 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
+			video_player.play();
+			video_player.onended = function() {
+				tl.to([video_player, volume_control], 0.5, {autoAlpha: 0, ease: Power3.easeInOut})
+					.to(f4_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
   				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut});
-		});
-  	}
+			};
+		}
 
-  window.onload = init;
+		window.onload = init;
   </script>
 </head>
 <body>
 	<div id="banner">
 		<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
 			<div id="bg" class="layer"></div>
-			<div id="white" class="layer"></div>
 			<div id="f1_text" class="layer"></div>
 			<div id="f2_text" class="layer"></div>
-    		<video id="video_player" width="248" height="248">
+    		<video id="video_player" width="248" height="190" muted="true">
 				<source src="video.mp4" type="video/mp4">
 			</video>
 			<div id="f4_text" class="layer"></div>
-			<div id="cta" class="layer"></div>
 			<div id="logo" class="layer"></div>
+			<div id="cta" class="layer"></div>
 		</a>
+		<div id="volume_control" class="layer"></div>
 	</div>
 </body>
 </html>
