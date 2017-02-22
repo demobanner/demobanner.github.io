@@ -15,19 +15,28 @@
   var tl = new TimelineLite();
 
   function init() {
-    tl.to(logo_bg, 0.5, {bottom: 0, autoAlpha: 1, ease: Power1.easeInOut})
-      .to(logo, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-      .to(f1_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+    tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
       .to(f1_text, 0.5, {autoAlpha: 0, top: 10, scale: 1.1, delay: 2, ease: Power3.easeInOut})
       .to(f2_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut, onComplete: playVideo});
   }
 
   function playVideo() {
     var video_player = document.getElementById('video-player');
-    tl.to(video_player, 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
+    var volume_control = document.getElementById('volume_control');
+    volume_control.onclick = function() {
+      if (video_player.muted == true) {
+        video_player.muted = false;
+        volume_control.style.background = "url('unmute.png') center no-repeat";
+      }
+      else {
+        video_player.muted = true;
+        volume_control.style.background = "url('mute.png') center no-repeat";
+      }
+    }
+    tl.to([video_player, volume_control], 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
     video_player.play();
     video_player.onended = function() {
-      tl.to(video_player, 0.5, {autoAlpha: 0, ease: Power3.easeInOut})
+      tl.to([video_player, volume_control], 0.5, {autoAlpha: 0, ease: Power3.easeInOut})
         .to(f2_text, 0.5, {autoAlpha: 0, top: 10, scale: 1.1, ease: Power3.easeInOut})
         .to(f4_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
         .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut});
@@ -47,10 +56,11 @@
       <div id="logo_bg" class="layer"></div>
       <div id="logo" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <video id="video-player" height="250" class="layer">
+      <video id="video-player" height="250" class="layer" muted="true">
   			<source src="video.mp4" type="video/mp4">
   		</video>
 		</a>
+    <div id="volume_control" class="layer"></div>
   </div>
 </body>
 </html>

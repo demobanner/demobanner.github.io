@@ -16,48 +16,54 @@
 <body>
   <div id="banner">
 		<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
-    <div id="bg" class="layer"></div>
-    <video id="video-player" width="998" height="298">
-      <source src="QTA_Italian_30s.mp4" type="video/mp4">
-    </video>
-    <div id="f1_txt" class="layer"></div>
-    <div id="f2_txt" class="layer"></div>
-    <div id="f4_txt" class="layer"></div>
-    <div id="logo" class="layer"></div>
-    <div id="cta" class="layer"></div>
+      <div id="bg" class="layer"></div>
+      <video id="video-player" width="998" height="298" muted>
+        <source src="QTA_Italian_30s.mp4" type="video/mp4">
+      </video>
+      <div id="f1_txt" class="layer"></div>
+      <div id="f2_txt" class="layer"></div>
+      <div id="f4_txt" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="cta" class="layer"></div>
 		</a>
+    <a id="toggleMute" class="layer" href="javascript:"></a>
   </div>
   <script type="text/javascript">
     var tl = new TimelineLite();
     var video = document.getElementById("video-player");
+    var toggleMute = document.getElementById("toggleMute");
+    toggleMute.addEventListener('click', onToggleMuteHandler);
 
     function init() {
-      tl.to(bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-        .to(logo, 0.5, {autoAlpha: 1, x: -161, ease: Power2.easeInOut})
-        .to(f1_txt, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+      tl.to(f1_txt, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
 
         .to(f1_txt, 0.5, {autoAlpha: 0, scale:1.1, x: 10, y:10, ease: Power2.easeInOut}, '+=2')
         .to(f2_txt, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
 
         .to(f2_txt, 0.5, {autoAlpha: 0, scale:1.1, x: 10, y:10, ease: Power2.easeInOut}, '+=2')
-        .to(video, 0.5, {autoAlpha: 1, ease: Power2.easeInOut, onComplete:playVideo});
+        .to(video, 0.5, {autoAlpha: 1, ease: Power2.easeInOut, onComplete:playVideo})
+        .to(toggleMute, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=0.5');
     }
 
     function playVideo(){
       video.play();
       video.onended = function(){
       tl.to(video, 0.5, {autoAlpha: 0, ease: Power2.easeInOut})
+        .to(toggleMute, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '-=0.5')
         .to(f4_txt, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
         .to(cta, 0.5, {autoAlpha: 1, y: -20, ease: Power2.easeInOut});
       }
     }
 
-    var count = 0;
-    function replay() {
-      if (count < 1) {
-        tl.restart();
+    function onToggleMuteHandler(){
+      if (video.muted == false) {
+          video.muted = true;
+          toggleMute.style.background = "url(mute.png) center no-repeat";
       }
-      count++;
+      else {
+          video.muted = false;
+          toggleMute.style.background = "url(unmute.png) center no-repeat";
+      }
     }
 
     window.onload = init;

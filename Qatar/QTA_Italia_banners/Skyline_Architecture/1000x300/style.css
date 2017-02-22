@@ -37,23 +37,31 @@ a {
 	background: #000;
   opacity: 0;
 }
+#toggleMute{
+  width: 20px;
+  height: 16px;
+  left: 848px;
+  top: 10px;
+  background: url(mute.png)center no-repeat;
+}
 #logo{
-  background: url(logo.png) center center;
-  left: 161px;
+  background: url(logo.png) center no-repeat;
+  opacity: 1;
 }
 #bg{
-  background: url(bg.jpg) center center;
+  background: url(bg.jpg) center no-repeat;
+  opacity: 1;
 }
 #f1_txt{
-  background: url(f1_txt.png) center center;
+  background: url(f1_txt.png) center no-repeat;
 }
 #f2_txt{
-  background: url(f2_txt.png) center center;
+  background: url(f2_txt.png) center no-repeat;
 }
 #f4_txt{
-  background: url(f4_txt.png) center center;
+  background: url(f4_txt.png) center no-repeat;
 }
 #cta{
-  background: url(cta.png) center center;
+  background: url(cta.png) center no-repeat;
   top: 20px;
 }

@@ -55,10 +55,21 @@ a {
 }
 #logo {
   background: url("logo.png") center no-repeat;
+  opacity: 1;
 }
 #logo_bg {
   height: 60px;
   background-color: #fff;
   top: auto;
-  bottom: -60px;
+  bottom: 0;
+  opacity: 1;
+}
+#volume_control {
+  top: 191px;
+  left: 5px;
+  width: 20px;
+  height: 16px;
+  opacity: 0;
+  background: url('mute.png') center no-repeat;
+  cursor: pointer;
 }
