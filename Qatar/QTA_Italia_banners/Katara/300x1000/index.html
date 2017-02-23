@@ -23,6 +23,7 @@
   function playVideo() {
     var video_player = document.getElementById('video-player');
     var volume_control = document.getElementById('volume_control');
+    volume_control.style.background = "url('unmute.png') center no-repeat";
     volume_control.onclick = function() {
       if (video_player.muted == false) {
         video_player.muted = true;

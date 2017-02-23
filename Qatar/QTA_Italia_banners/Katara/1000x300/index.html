@@ -32,6 +32,7 @@
     var tl = new TimelineLite();
     var video = document.getElementById("video-player");
     var toggleMute = document.getElementById("toggleMute");
+    toggleMute.style.background = "url(unmute.png) center no-repeat";
     toggleMute.addEventListener('click', onToggleMuteHandler);
 
     function init() {

@@ -51,7 +51,7 @@ a {
   opacity: 1;
 }
 #volume {
-  background: url("unmute.png") center no-repeat;
+  background: url("mute.png") center no-repeat;
   width: 20px;
   height: 16px;
   top: 147px;

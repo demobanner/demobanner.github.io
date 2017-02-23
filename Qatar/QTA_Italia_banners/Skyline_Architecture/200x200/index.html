@@ -19,14 +19,15 @@
   			.to(f1_text, 0.5, {autoAlpha:0, top: 5, scale:1.1, ease: Power1.easeInOut}, "+=2");
 
   		tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  			.to(f2_text, 0.5, {autoAlpha:0, top: 5, scale: 1.1, ease: Power0.easeInOut}, "+=2");
+  			.to(f2_text, 0.5, {autoAlpha:0, top: 5, scale: 1.1, ease: Power0.easeInOut, onComplete:playVideo}, "+=2");
 
-  		tl.to([video_player, volume], 0.5, {autoAlpha:1, ease: Power0.easeInOut, onComplete:playVideo});
 	}
 			
 	function playVideo() {
 		var volume = document.getElementById("volume");
+		volume.style.background = "url(unmute.png) center no-repeat";
   		volume.addEventListener("click", onVolume);
+  		tl.to([video_player, volume], 0.5, {autoAlpha:1, ease: Power0.easeInOut});
 		video_player.play();
 		video_player.onended = function() {
 			tl.to([video_player, volume], 0.5, {autoAlpha:0, ease: Power0.easeInOut})

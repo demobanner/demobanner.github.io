@@ -42,7 +42,8 @@ a {
   height: 16px;
   left: 10px;
   top: 224px;
-  background: url(unmute.png)center no-repeat;
+  background: url(mute.png)center no-repeat;
+  visibility: hidden;
 }
 #logo{
   background: url(logo.png) center no-repeat;

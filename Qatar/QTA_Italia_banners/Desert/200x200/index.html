@@ -14,36 +14,40 @@
 
   	var tl = new TimelineLite();
 
-		function init() {
-    tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  		.to(f1_text, 0.5, {autoAlpha:0, top:5, scale:1.1, ease: Power1.easeInOut}, "+=2.5")
-      .to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  		.to(f2_text, 0.5, {autoAlpha:0, top:5, scale:1.1, ease: Power1.easeInOut, onComplete: playVideo}, "+=2.5");
-		}
+  	function init() {
+  		tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  			.to(f1_text, 0.5, {autoAlpha:0, top: 5, scale:1.1, ease: Power1.easeInOut}, "+=2");
 
-		function playVideo() {
-			var video_player = document.getElementById('video_player');
-			var volume_control = document.getElementById('volume_control');
-			volume_control.onclick = function() {
-				if (video_player.muted == false) {
-					video_player.muted = true;
-					volume_control.style.background = "url('mute.png') center no-repeat";
-				}
-				else {
-					video_player.muted = false;
-					volume_control.style.background = "url('unmute.png') center no-repeat";
-				}
-			}
-			tl.to([video_player, volume_control], 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
-			video_player.play();
-			video_player.onended = function() {
-				tl.to([video_player, volume_control], 0.5, {autoAlpha: 0, ease: Power3.easeInOut})
-					.to(f4_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  		tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+  			.to(f2_text, 0.5, {autoAlpha:0, top: 5, scale: 1.1, ease: Power0.easeInOut, onComplete:playVideo}, "+=2");
+
+	}
+			
+	function playVideo() {
+		var volume = document.getElementById("volume");
+		volume.style.background = "url(unmute.png) center no-repeat";
+  		volume.addEventListener("click", onVolume);
+  		tl.to([video_player, volume], 0.5, {autoAlpha:1, ease: Power0.easeInOut});
+		video_player.play();
+		video_player.onended = function() {
+			tl.to([video_player, volume], 0.5, {autoAlpha:0, ease: Power0.easeInOut})
+				.to(f4_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
   				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut});
-			};
 		}
+  	}
 
-		window.onload = init;
+  	function onVolume() {
+  		if (video_player.muted == false) {
+		    video_player.muted = true;
+		    volume.style.background = "url(mute.png) center no-repeat";
+		}
+		else {
+		    video_player.muted = false;
+		    volume.style.background = "url(unmute.png) center no-repeat";
+		}
+  	}
+
+  	window.onload = init;
   </script>
 </head>
 <body>
@@ -59,7 +63,7 @@
 			<div id="logo" class="layer"></div>
 			<div id="cta" class="layer"></div>
 		</a>
-		<div id="volume_control" class="layer"></div>
+		<a id="volume" class="layer" href="javascript:"></a>
 	</div>
 </body>
 </html>
