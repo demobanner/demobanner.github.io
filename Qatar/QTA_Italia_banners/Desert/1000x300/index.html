@@ -35,6 +35,7 @@
     toggleMute.addEventListener('click', onToggleMuteHandler);
 
     function init() {
+			toggleMute.style.background = "url(unmute.png) center no-repeat";
       tl.to(f1_txt, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
 
         .to(f1_txt, 0.5, {autoAlpha: 0, scale:1.1, x: 10, y:10, ease: Power2.easeInOut}, '+=2')
