@@ -16,22 +16,22 @@
 		
 		function init() {
     tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  		.to(f1_text, 0.5, {autoAlpha:0, scale:1.1, ease: Power1.easeInOut}, "+=2.5")
+  		.to(f1_text, 0.5, {autoAlpha:0, top:5, scale:1.1, ease: Power1.easeInOut}, "+=2.5")
       .to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-  		.to(f2_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut, onComplete: playVideo}, "+=2.5");
+  		.to(f2_text, 0.5, {autoAlpha:0, top:5, scale:1.1, ease: Power1.easeInOut, onComplete: playVideo}, "+=2.5");
 		}
 
 		function playVideo() {
 			var video_player = document.getElementById('video_player');
 			var volume_control = document.getElementById('volume_control');
 			volume_control.onclick = function() {
-				if (video_player.muted == true) {
-					video_player.muted = false;
-					volume_control.style.background = "url('unmute.png') center no-repeat";
-				}
-				else {
+				if (video_player.muted == false) {
 					video_player.muted = true;
 					volume_control.style.background = "url('mute.png') center no-repeat";
+				}
+				else {
+					video_player.muted = false;
+					volume_control.style.background = "url('unmute.png') center no-repeat";
 				}
 			}
 			tl.to([video_player, volume_control], 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
@@ -52,7 +52,7 @@
 			<div id="bg" class="layer"></div>
 			<div id="f1_text" class="layer"></div>
 			<div id="f2_text" class="layer"></div>
-    		<video id="video_player" width="248" height="190" muted="true">
+    		<video id="video_player" width="248" height="190">
 				<source src="video.mp4" type="video/mp4">
 			</video>
 			<div id="f4_text" class="layer"></div>

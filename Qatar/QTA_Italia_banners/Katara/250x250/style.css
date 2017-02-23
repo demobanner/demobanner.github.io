@@ -63,6 +63,6 @@ a {
   width: 20px;
   height: 16px;
   opacity: 0;
-  background: url('mute.png') center no-repeat;
+  background: url('unmute.png') center no-repeat;
   cursor: pointer;
 }

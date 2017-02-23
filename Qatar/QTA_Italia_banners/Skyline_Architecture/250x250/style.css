@@ -48,7 +48,14 @@ a {
 }
 #logo {
   background: url("logo.png") center no-repeat;
-	opacity: 1;
+  opacity: 1;
+}
+#volume {
+  background: url("unmute.png") center no-repeat;
+  width: 20px;
+  height: 16px;
+  top: 192px;
+  left: 5px;
 }
 #video_player {
   position: absolute;
@@ -56,13 +63,4 @@ a {
   left: 0;
 	background: #000;
   opacity: 0;
-}
-#volume_control {
-  top: 195px;
-  left: 5px;
-  width: 20px;
-  height: 16px;
-  opacity: 0;
-  background: url('mute.png') center no-repeat;
-  cursor: pointer;
 }
