@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=300,height=250">
+	<meta name="ad.size" content="width=728,height=90">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
@@ -22,12 +22,10 @@
 		
 		function init() {
 
-			tl.to(bg, 1.5, {scale: 0.7, x: -485, y:-300, ease:Power1.easeInOut}, "+=1")
-				.to(bg, 1.5, {x: -814, y: -390, ease:Power1.easeInOut}, "+=1")
-				.to(redCar, 1.5, {scale:1, x:0, y:0, ease:Power1.easeInOut}, "-=1.5")
-				.to(bg, 1.5, {scale: 0.3, x: -635, y: -295, ease:Power1.easeInOut}, "+=1")
-
-				.to(bg, 1.5, {scale: 0.9, x: -841, y: -163, ease:Power1.easeInOut}, "+=1")
+			tl.to(bg, 0.5, {autoAlpha: 1, ease:Power1.easeInOut})
+				.to(redCar, 1.5, {scale:1, x:0, y:0, ease:Power1.easeInOut}, "-=1")
+				.to(bg, 1.5, {scale: 0.25, x: -633, y:-272, ease:Power1.easeInOut}, "+=1")
+				.to(bg, 1.5, {scale: 0.5, x: -711, y:-226, ease:Power1.easeInOut}, "+=1")
 				.to(bg, 0.5, {autoAlpha:0, ease:Power0.easeInOut}, "+=2");
 
 			tl.to([logo, logo_nissan], 0.5, {autoAlpha:1, ease:Power0.easeInOut})
