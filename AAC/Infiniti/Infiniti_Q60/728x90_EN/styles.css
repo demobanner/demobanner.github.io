@@ -1,0 +1,67 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 726px;
+  height: 88px;
+}
+#banner {
+  position: relative;
+  width: 726px;
+  height: 88px;
+  border: 1px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+#car {
+  background: url('car.jpg') center no-repeat;
+}
+#f5_text {
+  background: url('f5_text.png') center no-repeat;
+  top: -10px;
+}
+#f6_text {
+  background: url('f6_text.png') center no-repeat;
+  top: -10px;
+}
+#f7_text {
+  background: url('f7_text.png') center no-repeat;
+  top: -10px;
+}
+#f8_text {
+  background: url('f8_text.png') center no-repeat;
+  top: -10px;
+}
+#f9_text {
+  background: url('f9_text.png') center no-repeat;
+  /*top: -10px;
+  left: 10px;*/
+}
+#cta {
+  background: url('cta.png') center no-repeat;
+  top: 30px;
+}
+#carname {
+  background: url('name.png') center no-repeat;
+  opacity: 1;
+  top: 25px;
+}
+#logo {
+  background: url('logo.png') center no-repeat;
+  opacity: 1;
+}
+#btn_replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}
