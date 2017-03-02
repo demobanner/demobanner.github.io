@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		function init() {
+
+			tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+				.to(f1_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
+
+			tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+				.to(f2_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
+
+			tl.to(f3_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+				.to(f3_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
+
+			tl.to(f4_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+				.to(f4_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
+
+			tl.to(f5_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+				.to(f5_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
+
+			tl.to(f6_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+				.to(f6_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
+
+			tl.to(logo, 0.5, {top:-64, ease: Power1.easeOut})
+				.to(white, 0.5, {autoAlpha:1, ease: Power1.easeOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeOut}, "-=0.5")
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeOut});
+				// .to(logo, 0.5, {autoAlpha:1, ease: Power0.easeOut, onComplete:onLoop}, "+=1");
+		}
+
+  // 		var count = 0;
+		// function onLoop() {
+		// 	if ( count < 1 ) {
+		// 		tl.restart();
+		// 	}
+		// 	count++ ;
+		// }
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_text" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="f5_text" class="layer"></div>
+      <div id="f6_text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="white" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="logo_AWR" class="layer"></div>
+    </a>
+  </div>
+</body>
+</html>
