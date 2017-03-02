@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=300,height=250">
+	<meta name="ad.size" content="width=160,height=600">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
@@ -36,9 +36,8 @@
 			tl.to(f6_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
 				.to(f6_text, 0.5, {autoAlpha:0, ease: Power0.easeOut}, "+=2");
 
-			tl.to(logo, 0.5, {top:-66, ease: Power1.easeOut})
-				.to(white, 0.5, {autoAlpha:1, ease: Power1.easeOut})
-				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeOut}, "-=0.5")
+			tl.to(logo, 0.5, {top:-69, ease: Power1.easeOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeOut})
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeOut});
 		}
 		
@@ -56,7 +55,6 @@
       <div id="f5_text" class="layer"></div>
       <div id="f6_text" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <div id="white" class="layer"></div>
       <div id="logo" class="layer"></div>
       <div id="logo_AWR" class="layer"></div>
     </a>

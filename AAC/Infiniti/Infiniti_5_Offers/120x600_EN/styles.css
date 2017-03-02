@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 118px;
+  height: 598px;
+  overflow: hidden;
+  border:1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 118px;
+  height: 598px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+}
+#f5_text {
+  background: url("f5_text.png") center no-repeat;
+}
+#f6_text {
+  background: url("f6_text.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 30px;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
