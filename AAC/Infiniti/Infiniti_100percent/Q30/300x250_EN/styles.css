@@ -53,6 +53,10 @@ body {
   background: url('logo.png') center no-repeat;
   opacity: 1;
 }
+#logo_AWR {
+  background: url('logo_AWR.png') center no-repeat;
+  opacity: 0;
+}
 #carname {
   background: url('name.png') center no-repeat;
   opacity: 1;
