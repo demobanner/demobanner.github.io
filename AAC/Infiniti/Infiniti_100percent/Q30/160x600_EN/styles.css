@@ -22,7 +22,7 @@ body {
 }
 #car {
   background: url('car.jpg') center no-repeat;
-  height: 700px;
+  height: 600px;
   top: -50px;
 }
 #f1_text {

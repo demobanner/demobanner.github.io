@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="ad.size" content="width=300,height=600">
+    <meta name="ad.size" content="width=300,height=250">
     <title>Banners</title>
     <link rel="stylesheet" href="styles.css">
 		<script src="TweenLite.min.js"></script>
@@ -18,8 +18,9 @@
       var tl = new TimelineLite();
 			
       function init() {
-          tl.to(car, 0.5, {autoAlpha: 1,ease: Power2.easeOut})
-						.to(car, 0.5, {top: -30, ease: Power2.easeOut, delay: 1})
+          tl.to(car, 0.5, {autoAlpha: 1,ease: Power2.easeOut});
+          tl.to(car, 0.5, {top: -30, ease: Power2.easeOut, delay: 1})
+            .to(carname, 0.5, {top: -10, ease: Power2.easeInOut}, "-=0.65")
             .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
 						
             .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
@@ -35,11 +36,11 @@
             .to(f5_text, 0.5, {autoAlpha: 0, delay: 2})
 
             .to(f6_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-            .to([f1_text, f6_text, car, logo, carname], 0.5, {autoAlpha: 0, delay: 2});
+						.to([f1_text, f6_text, car, carname], 0.5, {autoAlpha: 0, delay: 2});
 
-          tl.to(logo, 0, {top:-480, ease: Power0.easeOut})
-            .to([logo, logo_AWR], 0.5, {autoAlpha:1, ease: Power0.easeOut})
-            .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+					tl.to(logo, 0.5, {top:-80, ease: Power1.easeOut})
+						.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+						.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeOut})
 					  .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
       }
 			
