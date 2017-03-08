@@ -21,25 +21,26 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-			tl.to([f1_text, bg], 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
-			  .to([f1_text, f1_bg], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, '+=2')
+			tl.to(bg, 1, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.9')
+			  
+				.to(f2_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to([f1_text, f1_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
+				.to(f2_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 
-    		  .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.5')
-	          .to(f2_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
-	          .to([f2_text, f2_bg], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, '+=2')
+				.to(f3_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to([f2_text, f2_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
+				.to(f3_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 
-	          .to(f3_bg, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.5')
-	          .to(f3_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
-	          .to([f3_text, f3_bg], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, '+=2')
+				.to(f4_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to([f3_text, f3_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
+				.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 
-	          .to(f4_bg, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.5')
-	          .to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
-	          .to([f4_text, f4_bg], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, '+=2')
-
-	          .to(f5_bg, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.5')
-	          .to(f5_text1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
-	          .to(f5_text2, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-	          .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut, onComplete:onLoop});
+				.to(f5_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to([f4_text, f4_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
+				.to(f5_text1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+				.to(f5_text2, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
+				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
