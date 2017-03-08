@@ -37,7 +37,7 @@
 				.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 
 				.to(f5_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
-				.to([f4_text, f4_bg, bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
+				.to([f4_text, f4_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
 				.to(f5_text1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 				.to(f5_text2, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
 				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut, onComplete:onLoop});
@@ -71,11 +71,11 @@
       <div id="f3_text" class="layer"></div>
       <div id="f4_bg" class="layer"></div>
       <div id="f4_text" class="layer"></div>
+      <div id="bg" class="layer"></div>
       <div id="f5_bg" class="layer"></div>
       <div id="f5_text1" class="layer"></div>
       <div id="f5_text2" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <div id="bg" class="layer"></div>
     </a>
 	<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
   </div>
