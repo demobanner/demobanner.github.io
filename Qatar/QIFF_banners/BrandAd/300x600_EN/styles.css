@@ -72,7 +72,7 @@ a {
 }
 #bg {
   background: url("bg.png") center no-repeat;
-  opacity: 1;
+  /*opacity: 1;*/
 }
 #btn-replay {
   position: absolute;

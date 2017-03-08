@@ -21,7 +21,7 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-			tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+			tl.to([f1_text, bg], 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
 			  .to([f1_text, f1_bg], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, '+=2')
 
     		  .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.5')
