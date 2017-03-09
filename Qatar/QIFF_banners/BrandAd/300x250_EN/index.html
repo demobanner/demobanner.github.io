@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="ad.size" content="width=300,height=250">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<title>Standard ClickTag Banner</title>
+	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
 	<script src="TimelineLite.min.js"></script>
 	<script src="CSSPlugin.min.js"></script>
@@ -25,20 +25,28 @@
 				.to(f1_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, '-=0.9')
 			  
 				.to(f2_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to(bg, 0.8, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.8")
 				.to([f1_text, f1_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
-				.to(f2_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+				.to(bg, 1, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.9")
 
 				.to(f3_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to(bg, 0.8, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.8")
 				.to([f2_text, f2_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
-				.to(f3_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+				.to(bg, 1, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f3_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.9")
 
 				.to(f4_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to(bg, 0.8, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.8")
 				.to([f3_text, f3_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
-				.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+				.to(bg, 1, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f4_text, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.9")
 
 				.to(f5_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, '+=2')
+				.to(bg, 0.8, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.8")
 				.to([f4_text, f4_bg], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, '-=0.1')
-				.to(f5_text1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "+=0.5")
+				.to(bg, 1, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f5_text1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.9")
 				.to(f5_text2, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
 				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
