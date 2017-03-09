@@ -57,7 +57,10 @@ a {
   background: url("f4_text.png") center no-repeat;
 }
 #f5_bg {
-  background: #e9453f url("f5_bg.png") center no-repeat;
+  background: #e9453f;
+}
+#f5_bg1 {
+  background: url("f5_bg.png") center no-repeat;
 }
 #f5_text1 {
   background: url("f5_text1.png") center no-repeat;
