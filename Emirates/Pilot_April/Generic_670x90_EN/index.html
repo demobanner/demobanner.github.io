@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=670, height=90">
+  <title>Banner 300x250</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript">
+    var clickTag = "http://www.emiratesgroupcareers.com/english/careers_overview/pilot_jobs/roadshows.aspx";
+  </script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f2_bg" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="f3_bg" class="layer"></div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="f5_text1" class="layer"></div>
+      <div id="f5_text2" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var tl = new TimelineLite();
+
+    function init() {
+      tl.to(f1_text, 0.5, {autoAlpha: 1})
+        .to(f1_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f1_bg, 0.5, {autoAlpha: 0}, '-=0.5')
+
+        .to(f2_bg, 0.5, {autoAlpha: 1}, '-=0.5')
+        .to(f2_text, 0.5, {autoAlpha: 1})
+        .to(f2_text, 0.5, {autoAlpha: 0}, '+=2')
+        .to(f2_bg, 0.5, {autoAlpha: 0}, '-=0.5')
+
+        .to(f3_bg, 0.5, {autoAlpha: 1}, '-=0.5')
+        .to(f3_text, 0.5, {autoAlpha: 1})
+        .to(f3_text, 0.5, {autoAlpha: 0}, '+=2')
+
+        .to(f4_text, 0.5, {autoAlpha: 1})
+        .to(f4_text, 0.5, {autoAlpha: 0}, '+=2')
+
+        .to(f5_text1, 0.5, {autoAlpha: 1})
+        .to(f5_text2, 0.5, {autoAlpha: 1})
+        .to(cta, 0.5, {autoAlpha: 1})
+        .to(logo, 2, {autoAlpha: 1, onComplete:replay});
+    }
+
+    var count = 0;
+    function replay() {
+      if (count < 1) {
+        tl.restart();        
+      }
+      count++;
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>
