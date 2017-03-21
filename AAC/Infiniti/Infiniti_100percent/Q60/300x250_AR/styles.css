@@ -27,6 +27,9 @@ body {
   top: -40px;
   left: -20px;
 }
+#f1_text, #f2_text, #f3_text , #f4_text, #f5_text, #f6_text {
+	top: 5px;
+}
 #f1_text {
   background: url('f1_text.png') center no-repeat;
 }
