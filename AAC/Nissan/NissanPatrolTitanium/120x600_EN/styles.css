@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 118px;
+  height: 598px;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 118px;
+  height: 598px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_bg {
+  background: url("f1_bg.jpg") center no-repeat;
+  width: 678px;
+  height: 840px;
+  -ms-transform: matrix(1, 0, 0, 1, -133, -197); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -133, -197); /* Safari */
+  transform: matrix(1, 0, 0, 1, -133, -197);
+  opacity: 1;
+}
+#f1_bgcolor {
+  background-color: #0d130f;
+  opacity: 1;
+}
+#f2_bgcolor {
+  background: #000 url("f2_bg2.jpg") top no-repeat;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f2_bg {
+  background: url("f2_bg.jpg") center no-repeat;
+  width: 495px;
+  height: 800px;
+  -ms-transform: matrix(1, 0, 0, 1, -171, -150); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -171, -150); /* Safari */
+  transform: matrix(0.6, 0, 0, 0.6, -171, -210);
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f3_bg {
+  background: url("f3_bg.jpg") center no-repeat;
+  width: 844px;
+  height: 836px;
+  -ms-transform: matrix(1, 0, 0, 1, -720, -90); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -720, -90); /* Safari */
+  transform: matrix(1, 0, 0, 1, -720, -90);
+}
+#f3_bgcolor {
+  background-color: #000;
+}
+#f4_bg {
+  background: url("f4_bg.jpg") center no-repeat;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+}
+#f5_text {
+  background: url("f5_text.jpg") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 30px;
+}
+#logo_nissan {
+  background: url("logo_nissan.png") center no-repeat;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
