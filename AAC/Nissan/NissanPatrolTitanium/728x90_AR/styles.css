@@ -33,14 +33,17 @@ a {
 }
 #f1_bg {
   background: #000 url("f1_bg.jpg") center no-repeat;
-  width: 1110px;
-  height: 350px;
-  -ms-transform: matrix(1.57, 0, 0, 1.57, -175, -74); /* IE 9 */
-  -webkit-transform: matrix(1.57, 0, 0, 1.57, -175, -74); /* Safari */
-  transform: matrix(1.57, 0, 0, 1.57, -175, -74);
+  width: 747px;
+  height: 482px;
+  -ms-transform: matrix(1, 0, 0, 1, 150, -236); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 150, -236); /* Safari */
+  transform: matrix(1, 0, 0, 1, 150, -236);
   opacity: 1;
 }
-
+#f1_bgcolor {
+  background-color: #020100;
+  opacity: 1;
+}
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }

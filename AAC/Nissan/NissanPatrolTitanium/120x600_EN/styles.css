@@ -44,19 +44,15 @@ a {
   background-color: #0d130f;
   opacity: 1;
 }
-#f2_bgcolor {
-  background: #000 url("f2_bg2.jpg") top no-repeat;
-}
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
-  width: 495px;
-  height: 800px;
-  -ms-transform: matrix(1, 0, 0, 1, -171, -150); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, -171, -150); /* Safari */
-  transform: matrix(0.6, 0, 0, 0.6, -171, -210);
+  width: 324px;
+  -ms-transform: matrix(1, 0, 0, 1, -205, 0); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -205, 0); /* Safari */
+  transform: matrix(1, 0, 0, 1, -205, 0);
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;

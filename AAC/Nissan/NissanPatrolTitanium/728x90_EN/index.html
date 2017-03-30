@@ -23,10 +23,10 @@
 		function init() {
 
 			tl.to(f1_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
-				.to(f1_bg, 1, {scale: 0.39, x: -214, y: -124, ease:Power1.easeInOut}, "+=0.5")
+				.to(f1_bg, 1, {y: -111, ease:Power1.easeInOut}, "+=0.5")
 
 			tl.to(f2_bg, 0.8, {autoAlpha:1, ease:Power0.easeInOut}, "+=2")
-				.to([f1_bg, f1_text], 0.1, {autoAlpha:0, ease:Power0.easeInOut}, "-=0.1")
+				.to([f1_bg, f1_text, f1_bgcolor], 0.1, {autoAlpha:0, ease:Power0.easeInOut}, "-=0.1")
 				.to(f2_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
 				.to(f2_bg, 1, {scale: 0.44, x: -76, y: -87, ease:Power1.easeInOut}, "+=0.5");
 
@@ -66,6 +66,7 @@
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
 	  <div id="black" class="layer"></div>
+	  <div id="f1_bgcolor" class="layer"></div>
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f2_bg" class="layer"></div>

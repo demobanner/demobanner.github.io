@@ -25,13 +25,13 @@
 			tl.to(f1_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
 				.to(f1_bg, 1, {scale: 0.26, x: -268, y: -160, ease:Power1.easeInOut}, "+=0.5");
 
-			tl.to([f2_bg, f2_bgcolor], 0.8, {autoAlpha:1, ease:Power0.easeInOut}, "+=2")
+			tl.to(f2_bg, 0.8, {autoAlpha:1, ease:Power0.easeInOut}, "+=2")
 				.to(f2_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
 				.to([f1_bg, f1_text, f1_bgcolor], 0.1, {autoAlpha:0, ease:Power0.easeInOut}, "-=0.1")
-				.to(f2_bg, 1, {scale: 0.34, x: -181, y: -97, ease:Power1.easeInOut}, "+=0.5");
+				.to(f2_bg, 1, {x: -53, ease:Power1.easeInOut}, "+=0.5");
 
 			tl.to([f3_bg, f3_bgcolor], 0.8, {autoAlpha:1, ease:Power0.easeInOut}, "+=2")
-				.to([f2_bg, f2_text, f2_bgcolor], 0.1, {autoAlpha:0, ease:Power0.easeInOut}, "-=0.1")
+				.to([f2_bg, f2_text], 0.1, {autoAlpha:0, ease:Power0.easeInOut}, "-=0.1")
 				.to(f3_bg, 1, {scale: 0.21, x: -337, y: -155, ease:Power1.easeInOut}, "+=0.5");
 
 			tl.to([logo_nissan, f4_bg], 0.5, {autoAlpha:1, ease:Power0.easeInOut}, "+=2")
@@ -68,7 +68,6 @@
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
 
-      <div id="f2_bgcolor" class="layer"></div>
       <div id="f2_bg" class="layer"></div>
       <div id="f2_text" class="layer"></div>
 
