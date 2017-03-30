@@ -50,9 +50,9 @@ a {
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
   width: 324px;
-  -ms-transform: matrix(1, 0, 0, 1, -205, 0); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, -205, 0); /* Safari */
-  transform: matrix(1, 0, 0, 1, -205, 0);
+  -ms-transform: matrix(1, 0, 0, 1, -53, 0); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -53, 0); /* Safari */
+  transform: matrix(1, 0, 0, 1, -53, 0);
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
