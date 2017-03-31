@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+
+		var tl = new TimelineLite();
+
+		function init() {
+		 animation();
+		}
+
+        function animation(){
+
+          tl.fromTo(text, 0.1, {autoAlpha:0},{autoAlpha:1})
+			.fromTo(f1_text1, 0.2, {autoAlpha:0, scale:0.5, x:-1, y:-25}, {autoAlpha:1, scale:1, x:0, y:0, ease:Power0.easeInOut})
+			.fromTo(f1_text2, 0.2, {autoAlpha:0, scale:0.5, x:-1, y:7}, {autoAlpha:1, scale:1, x:0, y:0, ease:Power0.easeInOut})
+			.fromTo(f1_text3, 0.5, {autoAlpha:0, scale:0.5, x:-3, y:50}, {autoAlpha:1, scale:1, x:0, y:0, ease:Power0.easeInOut})
+			.fromTo(f1_text4, 0.5, {autoAlpha:0, scale:0.5, x:1, y:78}, {autoAlpha:1, scale:1, x:0, y:0, ease:Power0.easeInOut})
+			tl.fromTo(ani, 5, {y:0, ease:Power0.easeInOut},{y:-780, ease:Power0.easeInOut})
+			 .to(logo, 5,{y:-780},"-=7.5")
+			  .to(logo, 0.1, {autoAlpha:0,scale:0.5,x:-1, y:-125},"-=0.1");
+
+			tl.to([f2_plan,f2_rope], 0.5, {autoAlpha:1}, '-=6')
+			  .to(ani_milk, 0.5, {autoAlpha:1},"-=5")
+			  .to(f2_plan, 1,{rotation:-5})
+			   .to(f2_plan, 1,{rotation:0})
+			  .to(f2_plan, 1,{rotation:5})
+			  .to(ani_milk, 1,{rotation:-5},"-=0.5")
+			   .to(ani_milk, 1,{rotation:0})
+			  .to(ani_milk, 1,{rotation:5})
+			  .to(ani_milk, 1,{rotation:-5})
+			   .to(ani_milk, 1,{rotation:0})
+			  .to(ani_milk, 1,{rotation:5})
+			   .to([f2_plan,f2_rope], 0.1, {autoAlpha:0},"+=0.4")
+			  .to(ani, 0.5, {y:-736, ease:Power0.easeInOut})
+
+
+			tl.to(f3_text1, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power0.easeInOut})
+			  .to(f3_text2, 0.5,{autoAlpha:1, top:0, ease:Power0.easeInOut})
+		      .to(f3_text3, 0.5,{autoAlpha:1})
+		      .to(f3_tc, 0.5,{autoAlpha:1},"-=0.5")
+		      .to(f3_tc, 2,{autoAlpha:1, onComplete:onLoop});
+        }
+
+        var loop=0;
+        var tl3 = new TimelineLite();
+		function onLoop(){
+         if (loop < 1) {
+         	tl3.to([ani_milk,f3_text1,f3_text2,f3_text3,f3_tc], 0.5,{autoAlpha:0})
+ 			      .to(logo, 0.5, {autoAlpha:1,scale:1, x:0, y:0, ease:Power0.easeInOut});
+            animation();
+            counter = 0;
+            loop++;
+
+        }}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="javascript:window.open(window.clickTag)" style="cursor:pointer;">
+    <div id="ani">
+      <div id="text" class="layer">
+				<div id="f1_text1" class="layer"></div>
+				<div id="f1_text2" class="layer"></div>
+				<div id="f1_text3" class="layer"></div>
+				<div id="f1_text4" class="layer"></div>
+      </div>
+      <div id="ani_milk" class="layer">
+      	   <div id="f2_rope" class="layer"></div>
+      	   <div id="f2_milk" class="layer"></div>
+      </div>
+      <div id="f2_plan" class="layer"></div>
+    </div>
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f3_text3" class="layer"></div>
+      <div id="f3_tc" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+</body>
+</html>

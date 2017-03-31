@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 638px;
+  height: 958px;
+  overflow: hidden;
+  border:1px solid black;
+  background: url("bg.jpg") center no-repeat;
+  cursor: pointer;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 638px;
+  height: 958px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_text1 {
+  background: url("f1_text1.png") center no-repeat;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, -100, -360); /* IE 9 */
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, -100, -360); /* Safari */
+  transform: matrix(0.1, 0, 0, 0.1, -100, -360);
+}
+#f1_text2 {
+  background: url("f1_text2.png") center no-repeat;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, 110, -360); /* IE 9 */
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, 110, -360); /* Safari */
+  transform: matrix(0.1, 0, 0, 0.1, 110, -360);
+}
+#f1_text3 {
+  background: url("f1_text3.png") center no-repeat;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, 0, -320); /* IE 9 */
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, 0, -320); /* Safari */
+  transform: matrix(0.1, 0, 0, 0.1, 0, -320);
+}
+#milk_bottle {
+  background: url("milk_bottle.png") center no-repeat;
+  opacity: 1;
+  left: 800px;
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, -50, 80); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, -50, 80); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, -50, 80);
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 20, 100); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 20, 100); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 20, 100);
+}
+#f2_text3 {
+  background: url("f2_text3.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 130); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 130); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 0, 130);
+}
+#f2_text4 {
+  background: url("f2_text4.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 160); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 160); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 0, 160);
+}
+#f2_text5 {
+  background: url("f2_text5.png") center no-repeat;
+}
+#f2_text6 {
+  background: url("f2_text6.png") center no-repeat;
+}
+#f2_text7 {
+  background: url("f2_text7.png") center no-repeat;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=970,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+
+		var tl1 = new TimelineLite();
+		var tl2 = new TimelineLite();
+
+		var count = 0;
+
+		function init() {
+			startBanner();
+		}
+
+		function startBanner() {
+			tl1.to(f1_text1, 0.5, {autoAlpha: 1, x: 0, scale: 1, ease: Power4.easeInOut})
+				.to(f1_text2, 0.5, {autoAlpha: 1, x: 0, scale: 1, ease: Power4.easeInOut}, "-=.25")
+				.to(f1_text3, 0.5, {autoAlpha: 1, y: 0, scale: 1, ease: Power1.easeInOut})
+				.to(f1_text, 3, {scale: 1.1, rotation: 0.01, ease: Power0.easeInOut}, "-=0.75")
+				.to(f1_text, 0.5, {autoAlpha: 0, scale: 1.2, ease: Power0.easeInOut})
+
+				.to(milk_bottle, 1.5, {left: 0 , autoAlpha: 1, ease: Power1.easeOut}, "-=0.5")
+				.to(cross_icon, 0.5, {scale: 1, autoAlpha: 1, ease: Power0.easeInOut}, "-=1.25")
+				.to(cross_text, 1.5, {autoAlpha: 1, rotation: -10, ease: Power0.easeInOut}, "-=1")
+
+				.to(f2_text1, 0.5, {scale: 1, autoAlpha: 1, y: 0, ease: Power4.easeInOut}, "-=1")
+				.to(f2_text2, 0.5, {scale: 1, autoAlpha: 1, x: 0, y: 0, ease: Power4.easeInOut}, "-=0.75")
+				.to(f2_text3, 0.5, {scale: 1, autoAlpha: 1, x: 0, y: 0, ease: Power4.easeInOut}, "-=0.5")
+				.to(f2_text4, 0.5, {autoAlpha: 1, ease: Power0.easeInOut},"-=0.25")
+				.to(f2_text5, 0.5, {autoAlpha: 1, ease: Power0.easeInOut, onComplete: endBanner});
+		}
+
+		function endBanner() {
+			if (count < 1) {
+				tl2.to([f2_text1, f2_text2, f2_text3, f2_text4], 0.5, {autoAlpha: 0, left: 50, ease: Power0.easeInOut, delay: 3})
+					.to([milk_bottle, cross_icon], 0.5, {autoAlpha: 0, ease: Power0.easeInOut}, "-=0.5")
+					.to([f2_text1, f2_text2, f2_text3, f2_text4], 0.1, {left: 0}, "-=0.5")
+					.to(cross_text, 0.5, {autoAlpha: 0, rotation: 20, ease: Power0.easeInOut, onComplete: restart}, "-=0.5");
+				count++;
+			}
+		}
+
+		function restart() {
+			tl1.restart();
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="banner">
+	<a class="click-tag" onclick="javascript:window.open(window.clickTag)">
+		<div id="f1_text" class="layer">
+			<div id="f1_text1" class="layer"></div>
+			<div id="f1_text2" class="layer"></div>
+			<div id="f1_text3" class="layer"></div>
+		</div>
+		<div id="milk_bottle" class="layer"></div>
+		<div id="cross_icon" class="layer"></div>
+		<div id="cross_text" class="layer"></div>
+		<div id="f2_text1" class="layer"></div>
+		<div id="f2_text2" class="layer"></div>
+		<div id="f2_text3" class="layer"></div>
+		<div id="f2_text4" class="layer"></div>
+		<div id="f2_text5" class="layer"></div>
+	  <div id="logo" class="layer"></div>
+	</a>
+  </div>
+</body>
+</html>

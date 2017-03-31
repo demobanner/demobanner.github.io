@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 968px;
+  height: 248px;
+  overflow: hidden;
+  border:1px solid black;
+  background: url("bg.jpg") center no-repeat;
+  cursor: pointer;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 968px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#f1_text{
+  opacity: 1;
+}
+#f1_text1 {
+  background: url("f1_text1.png") center no-repeat;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, -145, 0); /* IE 9 */
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, -145, 0); /* Safari */
+  transform: matrix(0.1, 0, 0, 0.1, -145, 0);
+}
+#f1_text2 {
+  background: url("f1_text2.png") center no-repeat;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, 140, 0); /* IE 9 */
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, 140, 0); /* Safari */
+  transform: matrix(0.1, 0, 0, 0.1, 140, 0);
+}
+#f1_text3 {
+  background: url("f1_text3.png") center no-repeat;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, 0, 30); /* IE 9 */
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, 0, 30); /* Safari */
+  transform: matrix(0.1, 0, 0, 0.1, 0, 30);
+}
+#milk_bottle {
+  background: url("milk_bottle.png") center no-repeat;
+  opacity: 1;
+  left: 700px;
+}
+#cross_icon {
+  background: url("cross_icon.png") center no-repeat;
+  -ms-transform: matrix(1.1, 0, 0, 1.1, 766, 65); /* IE 9 */
+  -webkit-transform: matrix(1.1, 0, 0, 1.1, 766, 65); /* Safari */
+  transform: matrix(1.1, 0, 0, 1.1, 766, 65);
+  width: 101px;
+  height: 136px;
+}
+#cross_text {
+  background: url("cross_text.png") center no-repeat;
+  width: 150px;
+  height: 150px;
+  top: 51px;
+  left: 740px;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+  transform: rotate(20deg);
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, -20); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, -20); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 0, -20);
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 50, -20); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 50, -20); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 50, -20);
+}
+#f2_text3 {
+  background: url("f2_text3.png") center no-repeat;
+   -ms-transform: matrix(0.5, 0, 0, 0.5, 22, 5); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 22, 5); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 22, 5);
+}
+#f2_text4 {
+  background: url("f2_text4.png") center no-repeat;
+ 
+}
+#f2_text5 {
+  background: url("f2_text5.png") center no-repeat;
+ 
+}
+

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=640,height=960">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+
+		function init() {
+			tl.to(f1_text1, 0.5, {autoAlpha: 1, x: 0, y: 0, scale: 1, ease: Power4.easeInOut})
+				.to(f1_text2, 0.5, {autoAlpha: 1, x: 0, y: 0, scale: 1, ease: Power4.easeInOut}, "-=.25")
+				.to(f1_text3, 0.5, {autoAlpha: 1, y: 0, scale: 1, ease: Power1.easeInOut})
+
+				.to(milk_bottle, 1, {left: 0 , autoAlpha: 1, ease: Power1.easeOut})
+
+				.to(f2_text1, 0.5, {scale: 1, autoAlpha: 1, x: 0, y: 0, ease: Power1.easeInOut}, "-=0.25")
+				.to(f2_text2, 0.5, {scale: 1, autoAlpha: 1, x: 0, y: 0, ease: Power1.easeInOut}, "-=0.25")
+				.to(f2_text3, 0.5, {scale: 1, autoAlpha: 1, x: 0, y: 0, ease: Power1.easeInOut}, "-=0.25")
+				.to(f2_text4, 0.5, {scale: 1, autoAlpha: 1, x: 0, y: 0, ease: Power1.easeInOut}, "-=0.25")
+				.to(f2_text5, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.25")
+				.to(f2_text6, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f2_text7, 0.5, {autoAlpha: 1, ease: Power1.easeInOut});
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+	<a class="click-tag" onclick="javascript:window.open(window.clickTag)">
+		<div id="f1_text1" class="layer"></div>
+		<div id="f1_text2" class="layer"></div>
+		<div id="f1_text3" class="layer"></div>
+		<div id="milk_bottle" class="layer"></div>
+		<div id="f2_text1" class="layer"></div>
+		<div id="f2_text2" class="layer"></div>
+		<div id="f2_text3" class="layer"></div>
+		<div id="f2_text4" class="layer"></div>
+		<div id="f2_text5" class="layer"></div>
+		<div id="f2_text6" class="layer"></div>
+		<div id="f2_text7" class="layer"></div>
+	</a>
+  </div>
+</body>
+</html>
