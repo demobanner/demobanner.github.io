@@ -10,7 +10,7 @@ a {
 }
 #banner {
   position: absolute;
-  width: 298px;
+  width: 248px;
   height: 248px;
   overflow: hidden;
   border:1px solid black;
@@ -20,7 +20,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 298px;
+  width: 248px;
   height: 248px;
   opacity: 0;
 }
@@ -50,13 +50,4 @@ a {
 #logo {
   background: url("logo.png") center no-repeat;
   opacity: 1;
-}
-#btn-replay {
-  position: absolute;
-  top: 3px;
-  right: 3px;
-	height: 16px;
-  visibility: hidden;
-  opacity: 0;
-	line-height: 0;
 }
