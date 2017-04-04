@@ -25,15 +25,13 @@
 				.to(f2_text, 0.5, {autoAlpha:0, ease: Power2.easeOut}, "+=2");
 
 			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeOut})
-				.to(f3_text, 0.5, {autoAlpha:0, ease: Power2.easeOut}, "+=2")
-				.to(f1_text, 0, {top: -50}, "-=0.5");
+				.to(f3_text, 0.5, {autoAlpha:0, ease: Power2.easeOut}, "+=2");
 
-			tl.to(f1_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeOut})
-				.to(f1_text, 0.5, {autoAlpha:0, ease: Power2.easeOut}, "+=2");
+			tl.to(f4_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeOut})
+				.to(f4_text, 0.5, {autoAlpha:0, ease: Power2.easeOut}, "+=2");
 
 			tl.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power2.easeOut});
 		}
-
 		window.onload = init;
 
 	</script>
@@ -44,6 +42,7 @@
       <div id="f1_text" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
     </a>

@@ -43,6 +43,10 @@ a {
   background: url("f3_text.png") center no-repeat;
   top: -100px;
 }
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+  top: -100px;
+}
 #cta {
   background: url("cta.png") center no-repeat;
   top: -100px;
