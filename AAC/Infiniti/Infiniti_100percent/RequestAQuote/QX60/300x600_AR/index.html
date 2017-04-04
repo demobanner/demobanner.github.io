@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="ad.size" content="width=300,height=600">
+    <title>Banners</title>
+    <link rel="stylesheet" href="styles.css">
+		<script src="TweenLite.min.js"></script>
+		<script src="TimelineLite.min.js"></script>
+		<script src="CSSPlugin.min.js"></script>
+		<script src="EasePack.min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
+      var tl = new TimelineLite();
+			
+      function init() {
+          tl.to(car, 0.5, {autoAlpha: 1,ease: Power2.easeOut})
+						.to(car, 0.5, {top: -30, ease: Power2.easeOut, delay: 1})
+            .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            
+            .to(f1_text_a, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
+            .to(f1_text_a, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f1_text_b, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to([f1_text, f1_text_b], 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(title, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+						
+            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
+            .to(f2_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to(f3_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f4_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to(f4_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f5_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to(f5_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f6_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to([title, f6_text, car, logo, carname], 0.5, {autoAlpha: 0, delay: 2});
+
+          tl.to(logo, 0, {top:-480, ease: Power0.easeOut})
+            .to([logo, logo_AWR], 0.5, {autoAlpha:1, ease: Power0.easeOut})
+            .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+					  .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+      }
+			
+			function restart() {
+				tl.restart();
+			}
+			
+			window.onload = init;
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <a class="click-tag" href="javascript:" onclick="window.open(window.clickTag, '_blank');" >
+        <div id="car" class="layer"></div>
+        <div id="f1_text" class="layer"></div>
+        <div id="f1_text_a" class="layer"></div>
+        <div id="f1_text_b" class="layer"></div>
+        <div id="title" class="layer"></div>
+        <div id="f2_text" class="layer"></div>
+        <div id="f3_text" class="layer"></div>
+        <div id="f4_text" class="layer"></div>
+        <div id="f5_text" class="layer"></div>
+        <div id="f6_text" class="layer"></div>
+        <div id="cta" class="layer"></div>
+        <div id="carname" class="layer"></div>
+        <div id="logo" class="layer"></div>
+        <div id="logo_AWR" class="layer"></div>
+      </a>
+			<a id="btn_replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+    </div>
+  </body>
+</html>
