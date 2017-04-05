@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 158px;
+  height: 598px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #fff;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 158px;
+  height: 598px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_img1 {
+  background: url("f1_img1.png") center no-repeat;
+  opacity: 1;
+}
+#f1_img2 {
+  background: url("f1_img2.png") center no-repeat;
+  opacity: 1;
+  -ms-transform: rotate(0); /* IE 9 */
+  -webkit-transform: rotate(0); /* Chrome, Safari, Opera */
+  transform: rotate(0);
+}
+#f1_img3 {
+  background: url("f1_img3.png") center no-repeat;
+}
+#f1_text1 {
+  background: url("f1_text1.png") left no-repeat;
+  width: 42px;
+  opacity: 1;
+}
+#f1_text2 {
+  background: url("f1_text2.png") center no-repeat;
+}
+#f2_bg {
+  background: url("f2_bg.jpg") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+  top: 30px;
+}
+#f3_bg {
+  background: url("f3_bg.jpg") center no-repeat;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+  top: 30px;
+}
+#f4_bg {
+  background: url("f4_bg.jpg") center no-repeat;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+  top: 30px;
+}
+#f5_text {
+  background: url("f5_text.png") center no-repeat;
+}
+#f6_text1 {
+  background: url("f6_text1.png") center no-repeat;
+}
+#f6_text2 {
+  background: url("f6_text2.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 30px;
+}
+#logo_nissan {
+  background: url("logo_nissan.png") center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
