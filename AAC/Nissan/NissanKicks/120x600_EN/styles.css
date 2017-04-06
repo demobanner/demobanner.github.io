@@ -66,12 +66,19 @@ a {
 #logo_AWR {
   background: url("logo_AWR.png") center no-repeat;
 }
-#btn-replay {
+#btn {
+  position: absolute;
+  height: 22px;
+  width: 26px;
+  top: 152px;
+  left: 68px;
+}
+#btnReplay {
   position: absolute;
   top: 3px;
   right: 3px;
-	height: 16px;
+  height: 16px;
   visibility: hidden;
   opacity: 0;
-	line-height: 0;
+  line-height: 0;
 }
