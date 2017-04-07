@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=120,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+
+		var tl = new TimelineLite();
+
+		var f1Img2, time;
+
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
+		var scissorsButton, timer,
+				isFirst = true;
+
+		function init() {
+
+			scissorsButton = document.getElementById("btn");
+
+			tl.to(f1_text1, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+				.to(f1_img2, 0.3, {autoAlpha:1, ease:Power3.easeInOut, onComplete: scissorsLoop});
+
+			timer = setTimeout(animation, 10000);
+		}
+
+		function scissorsLoop() {
+			if (isFirst) {
+				scissorsButton.addEventListener("click", animation);
+				isFirst = false;
+			}
+			tl.to(f1_img2, 0.3, {autoAlpha:0, ease:Power0.easeInOut}, "+=0.4")
+				.to(f1_img2, 0.3, {autoAlpha:1, ease:Power0.easeInOut, onComplete: scissorsLoop}, "+=0.4");
+		}
+
+		function animation() {
+			clearTimeout(timer);
+			scissorsButton.removeEventListener("click", animation);
+
+			tl.kill(null, f1_img2);
+
+			tl.to([f1_img1, f1_text1, f1_img2], 0.1, {autoAlpha:0, ease:Power1.easeInOut})
+				.to(f1_car, 0.5, {top: -50, ease:Power2.easeIn}, "-=0.1")
+				.to(bg1, 1, {top: -162, ease:Power2.easeIn}, "-=0.5")				
+				.to(f1_car, 0.5, {top: 236, ease:Power2.easeIn}, "-=0.5")
+				.to(bg2, 0.5, {autoAlpha:1, ease:Power4.easeOut})
+				.to(logo_nissan, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+				.to(f1_text2, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+				.to([bg1, f1_car, bg2, f1_text2], 0.5, {autoAlpha:0, ease:Power2.easeInOut}, "+=2");
+
+			tl.to(logo_AWR, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut, onComplete:onLoop});
+		}
+
+		function restart() {
+      tl.to([bg1, f1_car, f1_img1, f1_text1, scissors], 0, {top:0})
+      	.to([logo_AWR, logo_nissan, cta, btnReplay], 0.1, {autoAlpha:0, ease:Power1.easeInOut});
+			tl.to([bg1, f1_car, f1_img1, f1_text1, scissors], 0.1, {autoAlpha:1})
+				.to(btn, 0, {autoAlpha:1});
+			scissorsLoop();
+
+      timer = setTimeout(animation, 10000);
+
+      scissorsButton.addEventListener("click", animation);
+    }
+
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				tl.to(btnReplay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="bg1" class="layer"></div>
+      <div id="f1_car" class="layer"></div>
+      <div id="bg2" class="layer"></div>
+      <div id="f1_img1" class="layer"></div>
+      <div id ="scissors">
+      	<div id="f1_img2" class="layer"></div>
+      </div>
+      <div id="f1_text1" class="layer"></div>
+      <div id="f1_text2" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo_nissan" class="layer"></div>
+      <div id="logo_AWR" class="layer"></div>
+    </a>
+	<a id="btnReplay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+	<a id="btn" href="javascript:"></a>
+  </div>
+</body>
+</html>
