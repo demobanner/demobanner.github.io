@@ -31,6 +31,12 @@ a {
   right: 0;
   bottom: 0;
 }
+#f1_logo {
+  background: url("f1_logo.png") center no-repeat;
+  width: 230px;
+  left: 120px;
+  opacity: 1;
+}
 #f1_text {
   background: url("f1_text.png") center no-repeat;
   -ms-transform: scale(0.1); 
