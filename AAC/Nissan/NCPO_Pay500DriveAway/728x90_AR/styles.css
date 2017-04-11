@@ -31,14 +31,8 @@ a {
   right: 0;
   bottom: 0;
 }
-#f1_text1 {
-  background: url("f1_text1.png") center no-repeat;
-  height: 173px;
-  opacity: 1;
-  top: 88px;
-}
-#f1_text2 {
-  background: url("f1_text2.png") center no-repeat;
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
   -ms-transform: scale(0.1); 
   -webkit-transform: scale(0.1); 
   transform: scale(0.1);

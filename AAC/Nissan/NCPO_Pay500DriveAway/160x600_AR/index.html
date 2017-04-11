@@ -22,8 +22,6 @@
 
 		function init() {
 
-			tl.to(f1_logo, 2.5, {left: -260, ease: Power1.easeInOut});
-
 			tl.to(f1_text, 0.5, {autoAlpha:1, scale:1, top:0, ease: Power2.easeInOut})
 				.to(f1_text, 0.5, {autoAlpha:0, scale:0.5, top:-50, ease: Power1.easeInOut}, "+=2");
 
@@ -56,7 +54,6 @@
 <body>
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
-    	<div id="f1_logo" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_text" class="layer"></div>
