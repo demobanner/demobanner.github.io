@@ -11,51 +11,42 @@
     <script src="TimelineLite.min.js"></script>
     <script src="CSSPlugin.min.js"></script>
     <script type="text/javascript">
-
-      var clickTag = '';
-
+      var clickTag = "";
+    </script>
+    <script type="text/javascript">
       var tl = new TimelineLite();
-    
-      var LOOP_TIME = 0,  // how many time the banner replays
-        loop = 0,
-        isReplay = true;  // show/hide replay button in the end
 			
       function init() {
+				tl.to(car, 0.5, {autoAlpha: 1,ease: Power4.easeOut});
+				tl.to(car, 0.5, {top: -15, ease: Power4.easeOut, delay: 1})
+					.to(f1_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
 
-          tl.to(car, 0.5, {autoAlpha: 1,ease: Power4.easeOut});
-          tl.to(car, 0.5, {top: -5, ease: Power4.easeOut, delay: 1})
-            .to(f1_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+					.to(f2_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut, delay: 1})
+					.to(f2_text, 0.5, {autoAlpha: 0, delay: 2.2})
 
-            .to(f2_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut, delay: 1})
-            .to(f2_text, 0.5, {autoAlpha: 0, delay: 2.2})
+					.to(f3_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+					.to(f3_text, 0.5, {autoAlpha: 0, delay: 2.2})
 
-            .to(f3_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
-            .to(f3_text, 0.5, {autoAlpha: 0, delay: 2.2})
+					.to(f4_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+					.to(f4_text, 0.5, {autoAlpha: 0, delay: 2.2})
 
-            .to(f4_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
-            .to(f4_text, 0.5, {autoAlpha: 0, delay: 2.2})
+					.to(f5_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+					.to(f5_text, 0.5, {autoAlpha: 0, delay: 2.2})
 
-            .to(f5_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
-            .to(f5_text, 0.5, {autoAlpha: 0, delay: 2.2})
-
-            tl.to(car, 0.5, {scale: 0.85, top: -20})
-            .to(f6_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
-            .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power4.easeOut, onComplete:onLoop});
+					.to(car, 0.5, {scale: 0.85, top: -30})
+					.to(f6_text, 0.5, {autoAlpha: 1, ease: Power4.easeOut})
+					.to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power4.easeOut})
+					.to(logo_Infi, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, "+=0.5")
+					.to(logo_AWR, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+					.to(logo_AWR, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, "+=1")
+					.to(logo_Infi, 0.5, {autoAlpha: 1, ease: Power2.easeOut});
+					
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180}); 
       }
 			
 			function restart() {
 				tl.restart();
 			}
-
-      function onLoop() {
-        if ( loop < LOOP_TIME ) {
-          restart();
-          loop++ ;
-        } else if (isReplay) {
-          tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
-          document.getElementById('replayButton').addEventListener("click", restart);
-        }
-      }
 			
 			window.onload = init;
     </script>
@@ -72,8 +63,10 @@
         <div id="f6_text" class="layer"></div>
         <div id="cta" class="layer"></div>
         <div id="logo" class="layer"></div>
+        <div id="logo_Infi" class="layer"></div>
+        <div id="logo_AWR" class="layer"></div>
       </a>
-			<a id="replayButton" href="javascript:"><img src="replay.png"></a>
+			<a id="replayButton" href="javascript:" onclick="restart();"><img src="replay.png"></a>
     </div>
   </body>
 </html>

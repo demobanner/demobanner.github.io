@@ -24,7 +24,6 @@ body {
   background: url('car.jpg') center no-repeat;
   width: 340px;
   height: 290px;
-  /* opacity: 1; */
   top: -40px;
   left: -20px;
 }
@@ -48,11 +47,13 @@ body {
 }
 #cta {
   background: url('cta.png') center no-repeat;
-  top: 30px;
 }
-#logo {
-  background: url('logo.png') center no-repeat;
+#logo_Infi {
+  background: url('logo_Infi.png') center no-repeat;
   opacity: 1;
+}
+#logo_AWR {
+  background: url('logo_AWR.png') center no-repeat;
 }
 #logo1 {
   background: url('logo1.png') center no-repeat;

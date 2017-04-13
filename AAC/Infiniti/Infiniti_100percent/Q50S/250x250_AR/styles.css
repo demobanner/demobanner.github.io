@@ -47,11 +47,17 @@ body {
 }
 #cta {
   background: url('cta.png') center no-repeat;
-  top: 30px;
 }
 #logo {
   background: url('logo.png') center no-repeat;
   opacity: 1;
+}
+#logo_Infi {
+  background: url('logo_Infi.png') center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url('logo_AWR.png') center no-repeat;
 }
 #replayButton {
   position: absolute;
