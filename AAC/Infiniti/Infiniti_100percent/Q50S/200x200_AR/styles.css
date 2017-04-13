@@ -8,13 +8,13 @@ body {
   left: 0;
   top: 0;
   opacity: 0;
-  width: 726px;
-  height: 88px;
+  width: 198px;
+  height: 198px;
 }
 #banner {
   position: relative;
-  width: 726px;
-  height: 88px;
+  width: 198px;
+  height: 198px;
   border: 1px solid #000;
   background-color: #fff;
   overflow: hidden;
@@ -22,6 +22,10 @@ body {
 }
 #car {
   background: url('car.jpg') center no-repeat;
+  width: 260px;
+  height: 260px;
+  top: -30px;
+  left: -30px;
 }
 #f1_text {
   background: url('f1_text.png') center no-repeat;
@@ -47,11 +51,6 @@ body {
 }
 #logo {
   background: url('logo.png') center no-repeat;
-  opacity: 1;
-  top: 20px;
-}
-#logo2 {
-  background: url('logo2.png') center no-repeat;
   opacity: 1;
 }
 #btn-replay {
