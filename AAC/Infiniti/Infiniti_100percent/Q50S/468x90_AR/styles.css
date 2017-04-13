@@ -54,7 +54,7 @@ body {
   background: url('logo2.png') center no-repeat;
   opacity: 1;
 }
-#btn-replay {
+#replayButton {
   position: absolute;
   top: 3px;
   right: 3px;
