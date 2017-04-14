@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<meta name="ad.size" content="width=728,height=90">
+		<title>Banners</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="TweenLite.min.js"></script>
+		<script src="TimelineLite.min.js"></script>
+		<script src="CSSPlugin.min.js"></script>
+		<script src="EasePack.min.js"></script>
+		<script type="text/javascript">
+			var clickTag = '';
+			
+			var tl = new TimelineLite();
+			
+			function init() {
+
+				tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+				  .to([f1_text, f1_logo], 0.5, {autoAlpha: 0, ease: Power0.easeInOut}, "+=2")
+				  .to(white_bg, 0.5, {width: 200, ease: Power3.easeInOut})
+					.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeOut})
+
+					.to(f3_img, 0.8, {y: 0, ease: Power2.easeInOut}, "+=1")
+					.to([f1_img, f2_text, white_bg], 0.8, {y: -90, ease: Power2.easeInOut}, "-=0.8")
+
+					.to(f4_img, 0.8, {y: 0, ease: Power2.easeInOut}, "+=3")
+					.to(f3_img, 0.8, {y: -90, ease: Power2.easeInOut}, "-=0.8")
+
+					.to(f5_img, 0.8, {y: 0, ease: Power2.easeInOut}, "+=3")
+					.to(f4_img, 0.8, {y: -90, ease: Power2.easeInOut}, "-=0.8")
+
+					.to(f6_img, 0.8, {y: 0, ease: Power2.easeInOut}, "+=3")
+					.to(f5_img, 0.8, {y: -90, ease: Power2.easeInOut}, "-=0.8")
+
+					.to(f7_img, 0.8, {y: 0, ease: Power2.easeInOut}, "+=3")
+					.to(f6_img, 0.8, {y: -90, ease: Power2.easeInOut}, "-=0.8")
+
+					.to(f8_img, 0.8, {y: 0, ease: Power2.easeInOut}, "+=3")
+					.to(f7_img, 0.8, {y: -90, ease: Power2.easeInOut}, "-=0.8")
+
+					.to(f8_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=3")
+					.to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power3.easeInOut})
+					.to(f8_logo1, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+					.to(f8_logo2, 0.5, {autoAlpha: 1, ease: Power3.easeInOut});
+			}
+			
+			window.onload = init;
+			
+		</script>
+	</head>
+	<body>
+		<div id="banner">
+			<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+				<div id="f1_img" class="layer"></div>
+				<div id="f1_text" class="layer"></div>
+				<div id="white_bg" class="layer"></div>
+				<div id="f1_logo" class="layer"></div>
+				<div id="f2_text" class="layer"></div>
+				<div id="f3_img" class="layer"></div>
+				<div id="f4_img" class="layer"></div>
+				<div id="f5_img" class="layer"></div>
+				<div id="f6_img" class="layer"></div>
+				<div id="f7_img" class="layer"></div>
+				<div id="f8_img" class="layer"></div>
+				<div id="cta" class="layer"></div>
+				<div id="f8_logo1" class="layer"></div>
+				<div id="f8_logo2" class="layer"></div>
+			</a>
+		</div>
+	</body>
+</html>
