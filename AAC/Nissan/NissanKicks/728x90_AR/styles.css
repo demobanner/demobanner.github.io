@@ -58,6 +58,9 @@ a {
 #f1_text2 {
   background: url("f1_text2.png") center no-repeat;
 }
+#f2_logo {
+  background: url("f2_logo.png") center no-repeat;
+}
 #cta {
   background: url("cta.png") center no-repeat;
   top: 30px;
