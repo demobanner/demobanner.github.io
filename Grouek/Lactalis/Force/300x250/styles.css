@@ -44,15 +44,15 @@ a {
 }
 #f1_text1 {
   background: url("f1_text1.png") center no-repeat;
-  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 25); 
-  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 25); 
-  transform: matrix(0.5, 0, 0, 0.5, 0, 25);
-}
-#f1_text2 {
-  background: url("f1_text2.png") center no-repeat;
   -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 35); 
   -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 35); 
   transform: matrix(0.5, 0, 0, 0.5, 0, 35);
+}
+#f1_text2 {
+  background: url("f1_text2.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 45); 
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 45); 
+  transform: matrix(0.5, 0, 0, 0.5, 0, 45);
 }
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
