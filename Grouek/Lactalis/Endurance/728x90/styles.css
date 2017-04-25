@@ -60,36 +60,51 @@ a {
   -webkit-transform: matrix(0.5, 0, 0, 0.5, 8, 5);
   transform: matrix(0.5, 0, 0, 0.5, 8, 5);
 }
+#f1_bg {
+  background: url("f1_bg.jpg") center no-repeat;
+  width: 728px;
+  height: 218px;
+  opacity: 1;
+  -ms-transform: matrix(1, 0, 0, 1, -13, 0); 
+  -webkit-transform: matrix(1, 0, 0, 1, -13, 0); 
+  transform: matrix(1, 0, 0, 1, -13, 0);
+}
+#f2_bg {
+  background: url("f2_bg.jpg") center no-repeat;
+  width: 728px;
+  height: 236px;
+  -ms-transform: matrix(1, 0, 0, 1, -12, -1); 
+  -webkit-transform: matrix(1, 0, 0, 1, -12, -1); 
+  transform: matrix(1, 0, 0, 1, -12, -1);
+}
+#f3_bg {
+  background: url("f3_bg.jpg") center no-repeat;
+  width: 728px;
+  height: 252px;
+ -ms-transform: matrix(1, 0, 0, 1, -11, -1); 
+  -webkit-transform: matrix(1, 0, 0, 1, -11, -1); 
+  transform: matrix(1, 0, 0, 1, -11, -1);   
+}
+
 #f1_img1 {
   background: url("f1_img1.png") center no-repeat;
-  width: 238px;
-  height: 204px;
-  -ms-transform: translate(-2px, 0px);
-    -webkit-transform: translate(-2px, 0px);
-    transform: translate(-2px, 0px);
+  -ms-transform: matrix(1 0, 0, 1, 0, 0); 
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #f1_img2 {
   background: url("f1_img2.png") center no-repeat;
-  -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+  width: 154px;
+  height: 212px;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 546, -59); 
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 546, -59);
+  transform: matrix(0.5, 0, 0, 0.5, 546, -59);
 }
 #f1_img3 {
   background: url("f1_img3.png") center no-repeat;
-  -ms-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
-}
-#f1_img4 {
-  background: url("f1_img4.png") center no-repeat;
-  width: 202px;
-  height: 184px;
-  -ms-transform: matrix(0.51, 0, 0, 0.51, 523, -44);
-  -webkit-transform: matrix(0.51, 0, 0, 0.51, 523, -44);
-  transform: matrix(0.51, 0, 0, 0.51, 523, -44);
-}
-#f1_img5 {
-  background: url("f1_img5.png") center no-repeat;
+  -ms-transform: matrix(1 0, 0, 1, 0, 0); 
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #f2_img {
   background: url("f2_img.png") center no-repeat;

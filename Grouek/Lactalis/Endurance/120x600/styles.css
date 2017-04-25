@@ -14,7 +14,7 @@ a {
   height: 598px;
   overflow: hidden;
   border:1px solid black;
-  background: url("bg.jpg") center no-repeat;
+  background-color: #282f54;
 }
 .layer {
   position: absolute;
@@ -32,9 +32,12 @@ a {
   bottom: 0;
 }
 #f1_img {
-  background: url("f1_img.png") center no-repeat;
-  height: 252px;
-  top: 0;
+  background: url("f1_img.jpg") center no-repeat;
+  width: 132px;
+  height: 277px;
+  -ms-transform: matrix(0.9, 0, 0, 0.9, -7, -14); /* IE 9 */
+  -webkit-transform: matrix(0.9, 0, 0, 0.9, -7, -14); /* Safari */
+  transform: matrix(0.9, 0, 0, 0.9, -7, -14);
   opacity: 1;
 }
 #f1_text {
@@ -69,46 +72,55 @@ a {
   transform: matrix(0.9, 0, 0, 0.9, 0, 0);
 }
 #f2_img {
-  background: url("f2_img.png") center no-repeat;
-  height: 262px;
-  top: 0;
+  background: url("f2_img.jpg") center no-repeat;
+  width: 132px;
+  height: 288px;
+  -ms-transform: matrix(0.9, 0, 0, 0.9, -7, -14); /* IE 9 */
+  -webkit-transform: matrix(0.9, 0, 0, 0.9, -7, -14); /* Safari */
+  transform: matrix(0.9, 0, 0, 0.9, -7, -14);
 }
 #f2_product {
-  background: url("f2_product.png") center no-repeat;
+  background: url("f2_product.jpg") center no-repeat;
   width: 120px;
+  height: 235px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, 120, 0); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, 120, 0); /* Safari */
-  transform: matrix(1, 0, 0, 1, 120, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 120, 363); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 120, 363); /* Safari */
+  transform: matrix(1, 0, 0, 1, 120, 363);
 }
 #f3_img {
-  background: url("f3_img.png") center no-repeat;
-  height: 273px;
-  top: 0;
+  background: url("f3_img.jpg") center no-repeat;
+  width: 132px;
+  height: 300px;
+  -ms-transform: matrix(0.9, 0, 0, 0.9, -7, -16); /* IE 9 */
+  -webkit-transform: matrix(0.9, 0, 0, 0.9, -7, -16); /* Safari */
+  transform: matrix(0.9, 0, 0, 0.9, -7, -16);
 }
 #f3_product {
-  background: url("f3_product.png") center no-repeat;
+  background: url("f3_product.jpg") center no-repeat;
   width: 120px;
+  height: 223px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, 120, 0); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, 120, 0); /* Safari */
-  transform: matrix(1, 0, 0, 1, 120, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 120, 375); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 120, 375); /* Safari */
+  transform: matrix(1, 0, 0, 1, 120, 375);
 }
 #f4_img {
-  background: url("f4_img.png") center no-repeat;
-  width: 144px;
-  height: 315px;
-  -ms-transform: matrix(0.8, 0, 0, 0.8, -13, -29); /* IE 9 */
-  -webkit-transform: matrix(0.8, 0, 0, 0.8, -13, -29); /* Safari */
-  transform: matrix(0.8, 0, 0, 0.8, -13, -29);
+  background: url("f4_img.jpg") center no-repeat;
+  width: 132px;
+  height: 316px;
+  -ms-transform: matrix(0.9, 0, 0, 0.9, -7, -17); /* IE 9 */
+  -webkit-transform: matrix(0.9, 0, 0, 0.9, -7, -17); /* Safari */
+  transform: matrix(0.9, 0, 0, 0.9, -7, -17);
 }
 #f4_product {
-  background: url("f4_product.png") center no-repeat;
+  background: url("f4_product.jpg") center no-repeat;
   width: 120px;
+  height: 189px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, 120, 0); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, 120, 0); /* Safari */
-  transform: matrix(1, 0, 0, 1, 120, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 120, 409); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 120, 409); /* Safari */
+  transform: matrix(1, 0, 0, 1, 120, 409);
 }
 #f4_text1 {
   background: url("f4_text1.png") center no-repeat;
@@ -155,7 +167,12 @@ a {
   left: -38px;
   opacity: 1;
 }
-#logo {
-  background: url("logo.png") center no-repeat;
+#bg_overlay {
+  background: url("bg_overlay.png") center no-repeat;
+  mix-blend-mode: overlay;
+  opacity: 1;
+}
+#bg_product {
+  background: url("bg_product.png") center no-repeat;
   opacity: 1;
 }
