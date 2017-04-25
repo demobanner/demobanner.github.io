@@ -80,13 +80,12 @@ a {
   transform: matrix(0.9, 0, 0, 0.9, -9, -15);
 }
 #f2_product {
-  background: url("f2_product.jpg") center no-repeat;
+  background: url("f2_product.png") center no-repeat;
   width: 160px;
-  height: 241px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, 160, 358); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, 160, 358); /* Safari */
-  transform: matrix(1, 0, 0, 1, 160, 358);
+  -ms-transform: matrix(1, 0, 0, 1, 160, 0); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 160, 0); /* Safari */
+  transform: matrix(1, 0, 0, 1, 160, 0);
 }
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
@@ -97,13 +96,12 @@ a {
   transform: matrix(0.9, 0, 0, 0.9, -9, -17);
 }
 #f3_product {
-  background: url("f3_product.jpg") center no-repeat;
+  background: url("f3_product.png") center no-repeat;
   width: 160px;
-  height: 245px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, 160, 353); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, 160, 353); /* Safari */
-  transform: matrix(1, 0, 0, 1, 160, 353);
+  -ms-transform: matrix(1, 0, 0, 1, 160, 0); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 160, 0); /* Safari */
+  transform: matrix(1, 0, 0, 1, 160, 0);
 }
 #f4_img {
   background: url("f4_img.jpg") center no-repeat;
@@ -114,37 +112,36 @@ a {
   transform: matrix(0.9, 0, 0, 0.9, -9, -17);
 }
 #f4_product {
-  background: url("f4_product.jpg") center no-repeat;
+  background: url("f4_product.png") center no-repeat;
   width: 160px;
-  height: 210px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, 160, 388); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, 160, 388); /* Safari */
-  transform: matrix(1, 0, 0, 1, 160, 388);
+  -ms-transform: matrix(1, 0, 0, 1, 160, 0); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, 160, 0); /* Safari */
+  transform: matrix(1, 0, 0, 1, 160, 0);
 }
 #f4_text1 {
   background: url("f4_text1.png") center no-repeat;
-  -ms-transform: (0.5, 0, 0, 0.5, 0, -25); /* IE 9 */
-  -webkit-transform: (0.5, 0, 0, 0.5, 0, -25); /* Safari */
-  transform: matrix(0.5, 0, 0, 0.5, 0, -25);
+  -ms-transform: (0.5, 0, 0, 0.5, 0, 0); /* IE 9 */
+  -webkit-transform: (0.5, 0, 0, 0.5, 0, 0); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 0, 0);
 }
 #f4_text2 {
   background: url("f4_text2.png") center no-repeat;
-  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, -10); /* IE 9 */
-  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, -10); /* Safari */
-  transform: matrix(0.5, 0, 0, 0.5, 0, -10);
-}
-#f4_text3 {
-  background: url("f4_text3.png") center no-repeat;
-  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 5); /* IE 9 */
-  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 5); /* Safari */
-  transform: matrix(0.5, 0, 0, 0.5, 0, 5);
-}
-#f4_text4 {
-  background: url("f4_text4.png") center no-repeat;
   -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 10); /* IE 9 */
   -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 10); /* Safari */
   transform: matrix(0.5, 0, 0, 0.5, 0, 10);
+}
+#f4_text3 {
+  background: url("f4_text3.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 20); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 20); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 0, 20);
+}
+#f4_text4 {
+  background: url("f4_text4.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 30); /* IE 9 */
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 30); /* Safari */
+  transform: matrix(0.5, 0, 0, 0.5, 0, 30);
 }
 #cta {
   height: 22px;

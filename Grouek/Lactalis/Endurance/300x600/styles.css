@@ -123,6 +123,12 @@ a {
   -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, -10); 
   transform: matrix(0.5, 0, 0, 0.5, 0, -10);
 }
+#f4_text3 {
+  background: url("f4_text3.png") center no-repeat;
+  -ms-transform: matrix(0.5, 0, 0, 0.5, 0, 5); 
+  -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 5); 
+  transform: matrix(0.5, 0, 0, 0.5, 0, 5);
+}
 #cta {
   width: 157px;
   height: 34px;
