@@ -18,44 +18,25 @@
 		
 		
 		function init() {
-			 //  tl.to(f1_img1, 0.5 , {autoAlpha:1})
-				// .to([f1_img4,f1_img2,f1_img3], 0.5, {autoAlpha:1, ease: Power2.easeInOut})
-				// .to(f1_img4, 0, {autoAlpha:1, ease: Power2.easeInOut})
-				// .to(f1_img4, 7, {scale:1,  x:522, y:-4, ease:Power2.easeInOut})
-				// .to(f1_img2, 7, {x:10, ease:Power4.easeInOut},"-=7")
-			 //    .to(f1_img3, 7, {x:-11, ease:Power4.easeInOut},"-=7")
-			 //    .to(f1_img5, 0, {autoAlpha:0},"-=6")
-				// .to(f1_img1, 3 , {y:-87, ease: Power2.easeInOut},"-=7")
-				// .to(f1_text1, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut},"-=7")
-			 //    .to(f1_text2, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut},"-=6.5")
-    //             .to(f2_img, 0.5, {autoAlpha:1, ease: Power2.easeInOut},"-=5")
-    //             .to(f1_img1, 0, {autoAlpha:0},"-=4.5")
-				// .to(f2_img, 1.5, {y:-60, ease: Power2.easeInOut},"-=4.5")
-				// .to([f2_img,f1_text1,f1_text2], 0, {autoAlpha:0},"-=3")
-    //             .to(f3_img, 0.5, {autoAlpha:1, ease: Power2.easeInOut},"-=3")
-    //             .to(f3_img, 1.5, {y:-74, ease: Power2.easeInOut},"-=2.5")
-    //             .to([f2_img,f1_text1,f1_text2], 0, {autoAlpha:0})
-    //             .to(f3_text1, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut},"-=3")
-				// .to(f3_text2, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut},"-=2.5")
-				// .to(f3_text2, 0.5, {autoAlpha:1,onComplete:replay},"+=1")
+
 			tl.to([f1_img2, f1_img3, f1_img_bg], 0.5, {autoAlpha:1, ease: Power2.easeInOut})
 			  	.to(f1_img1, 0.5, {autoAlpha:1, ease: Power2.easeInOut},"-=0.5")
 				.to(f1_text1, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut})
 			 	.to(f1_text2, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut})
-			 	.to(f1_bg, 6, {y:-111, ease: Power1.easeInOut}, "-=2")
+			 	.to(f1_bg, 5, {y:-111, ease: Power1.easeInOut}, "-=2")
 			 	.to(f2_bg, 0.5, {autoAlpha:1, ease: Power2.easeInOut},"-=2")
 			 	.to(f1_bg, 0, {autoAlpha:0})
-			 	.to(f2_bg, 3.5, {y:-70, ease: Power1.easeInOut},"-=2")
+			 	.to(f2_bg, 3, {y:-70, ease: Power1.easeInOut},"-=2")
                 .to(f3_bg, 0.5, {autoAlpha:1, ease: Power2.easeInOut},"-=1")
 			 	.to([f2_bg,f1_text1,f1_text2], 0, {autoAlpha:0})
-                .to(f3_text1, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut})
+                .to(f3_text1, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut},"-=0.5")
 				.to(f3_text2, 0.5, {autoAlpha:1, scale:1, x:0, y:0, ease:Power2.easeInOut})
-                .to(f3_bg, 3, {y:-82, ease: Power1.easeInOut},"-=1.5")
+                .to(f3_bg, 2.5, {y:-82, ease: Power1.easeInOut},"-=0.5")
 				.to(f3_text2, 0.1, {autoAlpha:1, onComplete:replay}, "+=2")
 			
-			  tl.to(f1_img2, 8, {scale:1, x:550, y:-18, ease:Linear.none, force3D:false}, "2");
-			  tl.to(f1_img1, 8, {x:-10, ease:Power1.easeInOut}, "2");
-			  tl.to(f1_img3, 8, {x:10, ease:Power1.easeInOut}, "2");
+			  tl.to(f1_img2, 6, {scale:1, x:550, y:-18, ease:Linear.none, force3D:false}, "2");
+			  tl.to(f1_img1, 6, {x:-10, ease:Power1.easeInOut}, "2");
+			  tl.to(f1_img3, 6, {x:10, ease:Power1.easeInOut}, "1");
 			
 		}
 		
