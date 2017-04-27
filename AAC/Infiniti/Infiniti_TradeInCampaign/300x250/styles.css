@@ -82,27 +82,28 @@ a {
   -webkit-transform: matrix(0.8, 0, 0, 0.8, 300, -20); /* Safari */
   transform: matrix(0.8, 0, 0, 0.8, 300, -20); /* Standard syntax */
 }
-#f7_text {
-  background: url("f7_text.png") center no-repeat;
+#f1_logo {
+  background: url("logo_infiniti.png") center no-repeat;
+  opacity: 1;
+}
+#end_frame {
   opacity: 1;
   -ms-transform: matrix(1 0, 0, 1, 300, 0); /* IE 9 */
   -webkit-transform: matrix(1, 0, 0, 1, 300, 0); /* Safari */
   transform: matrix(1, 0, 0, 1, 300, 0); /* Standard syntax */
 }
-#f1_logo {
-  background: url("logo_infiniti.png") center no-repeat;
-  opacity: 1;
-}
 #logo_infiniti {
   background: url("logo_infiniti.png") center no-repeat;
+  opacity: 1;
   top: -80px;
 }
 #logo_awr {
   background: url("logo_awr.png") center no-repeat;
+  opacity: 1;
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  top: 20px;
+  opacity: 1;
 }
 #btn-replay {
   position: absolute;
