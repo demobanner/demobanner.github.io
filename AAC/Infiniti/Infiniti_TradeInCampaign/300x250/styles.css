@@ -86,7 +86,8 @@ a {
   background: url("logo_infiniti.png") center no-repeat;
   opacity: 1;
 }
-#end_frame {
+#f7_text {
+  background: url("f7_text.png") center no-repeat;
   opacity: 1;
   -ms-transform: matrix(1 0, 0, 1, 300, 0); /* IE 9 */
   -webkit-transform: matrix(1, 0, 0, 1, 300, 0); /* Safari */
@@ -94,16 +95,14 @@ a {
 }
 #logo_infiniti {
   background: url("logo_infiniti.png") center no-repeat;
-  opacity: 1;
   top: -80px;
 }
 #logo_awr {
   background: url("logo_awr.png") center no-repeat;
-  opacity: 1;
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  opacity: 1;
+  top: 20px;
 }
 #btn-replay {
   position: absolute;
