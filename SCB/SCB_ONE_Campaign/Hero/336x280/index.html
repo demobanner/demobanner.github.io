@@ -21,10 +21,10 @@
 		}
 
 		function playTween() {
-			tl.to(f1_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "+=0.5")
-				.to(f2_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "+=0.5")
+			tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "+=0.5")
 				.to(f3_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "+=0.5")
 				.to(f4_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "+=0.5")
+				.to(f1_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "+=0.5")
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut}, "+=0.5")
 				.to(f1_text, 0, {autoAlpha:1, onComplete:replay}, "+=2");
 		}
