@@ -39,16 +39,17 @@
 				.to([f1_text1, f1_text2, f1_logo, f3_bg], 0.1, {autoAlpha:0, ease: Power0.easeInOut}, "-=0.5")
 				.to(f4_text1, 0.2, {autoAlpha:1, scale:1, y:0, ease: Power0.easeInOut}, "-=0.6")
 				.to(f4_text2, 0.2, {autoAlpha:1, scale:1, y:0, ease: Power0.easeInOut}, "-=0.4")
-			 	.to(cta, 0.2, {autoAlpha:1, scale:1.05, force3D:false, ease: Power1.easeInOut}, "-=0.4")
-			 	// .fromTo(cta_eff, 0.3, {x: -50}, {x: 127, ease:Power1.easeInOut}, "-=0.2")
-			 	.to(cta, 0.2, {scale:1, force3D:false, ease: Power0.easeInOut}, "+=0.1")
-				.to(cta, 0.2, {scale:1.05, force3D:false, ease: Power1.easeInOut}, "+=0.8")
-				// .fromTo(cta_eff, 0.3, {x: -50}, {x: 127, ease:Power1.easeInOut}, "-=0.2")
-				.to(cta, 0.2, {scale:1, force3D:false, ease: Power0.easeInOut}, "+=0.1")
-				.to(cta, 0.2, {scale:1.05, force3D:false, ease: Power1.easeInOut}, "+=0.8")
-				// .fromTo(cta_eff, 0.3, {x: -50}, {x: 127, ease:Power1.easeInOut}, "-=0.2")
-				.to(cta, 0.2, {scale:1, force3D:false, ease: Power0.easeInOut}, "+=0.1")
-				.to(cta, 0.1, {autoAlpha:1, onComplete:replay}, "+=1.2");
+			 	.to(cta, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.4")
+			 	.to(cta, 0.1, {autoAlpha:1, onComplete:replay}, "+=1.2");
+			 // 	// .fromTo(cta_eff, 0.3, {x: -50}, {x: 127, ease:Power1.easeInOut}, "-=0.2")
+			 // 	.to(cta, 0.2, {scale:1, force3D:false, ease: Power0.easeInOut}, "+=0.1")
+				// .to(cta, 0.2, {scale:1.05, force3D:false, ease: Power1.easeInOut}, "+=0.8")
+				// // .fromTo(cta_eff, 0.3, {x: -50}, {x: 127, ease:Power1.easeInOut}, "-=0.2")
+				// .to(cta, 0.2, {scale:1, force3D:false, ease: Power0.easeInOut}, "+=0.1")
+				// .to(cta, 0.2, {scale:1.05, force3D:false, ease: Power1.easeInOut}, "+=0.8")
+				// // .fromTo(cta_eff, 0.3, {x: -50}, {x: 127, ease:Power1.easeInOut}, "-=0.2")
+				// .to(cta, 0.2, {scale:1, force3D:false, ease: Power0.easeInOut}, "+=0.1")
+				// .to(cta, 0.1, {autoAlpha:1, onComplete:replay}, "+=1.2");
 		}
 
 		var count = 0;
