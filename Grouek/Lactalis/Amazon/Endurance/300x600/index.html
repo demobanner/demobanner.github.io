@@ -28,16 +28,16 @@
 				.to(f1_img, 0.8, {scale:1, y:0, ease: Power1.easeInOut}, "-=1");
 
 			tl.to(f1_img, 0.5, {x: -300, ease: Linear.none}, "+=0.7")
-				.to(f2_img, 0.5, {autoAlpha:1, x: 0, ease: Linear.none}, "-=0.5")
-				.to(f2_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
-				.to(f1_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
-				.to(f2_bg, 1, {scale:1.05, y:2, x:-1, ease: Power1.easeIn}, "-=0.2");
-
-			tl.to(f2_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
 				.to(f3_img, 0.5, {autoAlpha:1, x: 0, ease: Linear.none}, "-=0.5")
 				.to(f3_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
-				.to(f2_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
-				.to(f3_bg, 1, {scale:1.05, y:3, x:-1,  ease: Power1.easeIn}, "-=0.2");
+				.to(f1_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
+				.to(f3_bg, 1, {scale:1.05, y:2, x:-1, ease: Power1.easeIn}, "-=0.2");
+
+			// tl.to(f2_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
+			// 	.to(f3_img, 0.5, {autoAlpha:1, x: 0, ease: Linear.none}, "-=0.5")
+			// 	.to(f3_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
+			// 	.to(f2_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
+			// 	.to(f3_bg, 1, {scale:1.05, y:3, x:-1,  ease: Power1.easeIn}, "-=0.2");
 
 			tl.to(f3_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
 				.to(f4_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
@@ -97,8 +97,8 @@
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_img" class="layer"></div>
-      <div id="f2_bg" class="layer"></div>
-      <div id="f2_img" class="layer"></div>
+      <!-- <div id="f2_bg" class="layer"></div>
+      <div id="f2_img" class="layer"></div> -->
       <div id="f3_bg" class="layer"></div>
       <div id="f3_img" class="layer"></div>
       <div id="f1_text1" class="layer"></div>

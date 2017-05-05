@@ -65,7 +65,7 @@ a {
   -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, -5); 
   transform: matrix(0.5, 0, 0, 0.5, 0, -5);
 }
-#f2_bg {
+/*#f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
   width: 300px;
   height: 318px;
@@ -80,7 +80,7 @@ a {
   -ms-transform: translate(300px, 0px); 
   -webkit-transform: translate(300px, 0px);
   transform: translate(300px, 0px);
-}
+}*/
 #f3_bg {
   background: url("f3_bg.jpg") center no-repeat;
    width: 300px;

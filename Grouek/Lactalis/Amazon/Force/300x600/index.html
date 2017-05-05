@@ -33,15 +33,15 @@
 				.to(f1_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
 				.to(f2_bg, 1, {scale:1.05, y:3, x:-1, ease: Power1.easeIn}, "-=0.2");
 
-			tl.to(f2_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
-				.to(f3_img, 0.5, {autoAlpha:1, x: 0, ease: Linear.none}, "-=0.5")
-				.to(f3_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
-				.to(f2_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
-				.to(f3_bg, 1, {scale:1.05, y:3, x:-1, ease: Power1.easeIn}, "-=0.2");
+			// tl.to(f2_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
+			// 	.to(f3_img, 0.5, {autoAlpha:1, x: 0, ease: Linear.none}, "-=0.5")
+			// 	.to(f3_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
+			// 	.to(f2_bg, 0, {autoAlpha:0, ease: Power1.easeInOut})
+			// 	.to(f3_bg, 1, {scale:1.05, y:3, x:-1, ease: Power1.easeIn}, "-=0.2");
 
-			tl.to(f3_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
+			tl.to(f2_img, 0.5, {x: -300, ease: Linear.none}, "+=0.5")
 				.to(f4_bg, 0.2, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.3")
-				.to([f3_bg, f1_text1, f1_text2], 0, {autoAlpha:0})
+				.to([f2_bg, f1_text1, f1_text2], 0, {autoAlpha:0})
 				.to([f4_img1, f4_img2, f4_img3, f4_img4], 0.2, {autoAlpha:1}, "-=0.2")
 				.to(f4_text1, 0.2, {autoAlpha:1, scale:1, y:0, ease: Power1.easeInOut}, "-=0.3")
 				.to(f4_text2, 0.2, {autoAlpha:1, scale:1, y:0, ease: Power1.easeInOut}, "-=0.1")
@@ -96,8 +96,8 @@
       <div id="f1_img" class="layer"></div>
       <div id="f2_bg" class="layer"></div>
       <div id="f2_img" class="layer"></div>
-      <div id="f3_bg" class="layer"></div>
-      <div id="f3_img" class="layer"></div>
+      <!-- <div id="f3_bg" class="layer"></div>
+      <div id="f3_img" class="layer"></div> -->
       <div id="f1_text1" class="layer"></div>
       <div id="f1_text2" class="layer"></div>
       <div id="f4_bg" class="layer"></div>
