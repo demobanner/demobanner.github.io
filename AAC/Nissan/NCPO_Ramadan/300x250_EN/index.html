@@ -27,22 +27,35 @@
 			tl.to(f2_bg, 0.8, {autoAlpha: 1, ease: Power1.easeInOut}, "+=2")
 				.to(f1_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, "-=0.6")
     		.to([f1_bg, f1_img], 0.1, {autoAlpha: 0, ease: Power1.easeInOut}, "-=0.1")
-    		.to(f2_text, 0.5, {autoAlpha:1, scale:1, transformOrigin: "50% 40%", ease: Power1.easeInOut})
+        .to(f2_img, 1, {rotation:180, transformOrigin: "155px 106px", ease: Power1.easeInOut})
+        .to([f2_img, f2_text], 0.5, {autoAlpha:1, scale:1, transformOrigin: "155px 106px", ease: Power1.easeInOut}, "-=1")
     		.to(tc, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
-    		.to(f2_text, 0.5, {scale:0, ease: Power1.easeInOut}, "+=2");
+    		.to([f2_img, f2_text], 0.5, {scale:0, ease: Power1.easeInOut}, "+=2")
+    		.to(f2_img, 0, {rotation: 0});
 
-    	tl.to(f3_text, 0.5, {autoAlpha:1, scale:1, transformOrigin: "50% 40%", ease: Power1.easeInOut}, "-=0.3")
-    		.to(f3_text, 0.5, {scale:0, ease: Power1.easeInOut}, "+=2");
+    	tl.to(f2_img, 1, {rotation:180, transformOrigin: "155px 106px", ease: Power1.easeInOut})
+        .to([f2_img, f3_text], 0.5, {autoAlpha:1, scale:1, transformOrigin: "155px 106px", ease: Power1.easeInOut}, "-=1")
+    		.to([f2_img, f3_text], 0.5, {scale:0, ease: Power1.easeInOut}, "+=2")
+    		.to(f2_img, 0, {rotation: 0});
 
-    	tl.to(f4_text, 0.5, {autoAlpha:1, scale:1, transformOrigin: "50% 40%", ease: Power1.easeInOut}, "-=0.3")
-    		.to(f4_text, 0.5, {scale:0, ease: Power1.easeInOut}, "+=2");
+    	tl.to(f2_img, 1, {rotation:180, transformOrigin: "155px 106px", ease: Power1.easeInOut})
+        .to([f2_img, f4_text], 0.5, {autoAlpha:1, scale:1, transformOrigin: "155px 106px", ease: Power1.easeInOut}, "-=1")
+    		.to(f2_img, 0.5, {rotation: 180, ease: Power1.easeInOut})
+    		.to([f2_img, f4_text], 0.5, {scale:0, ease: Power1.easeInOut}, "+=2")
+    		.to(f2_img, 0, {rotation: 0});
 
-    	tl.to(f5_text, 0.5, {autoAlpha:1, scale:1, transformOrigin: "50% 40%", ease: Power1.easeInOut}, "-=0.3")
-    		.to(f5_text, 0.5, {scale:0, ease: Power1.easeInOut}, "+=2")
-    		.to(tc, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "-=0.5");
+    	tl.to(f2_img, 1, {rotation:180, transformOrigin: "155px 106px", ease: Power1.easeInOut})
+        .to([f2_img, f5_text], 0.5, {autoAlpha:1, scale:1, transformOrigin: "155px 106px", ease: Power1.easeInOut}, "-=1")
+    		.to(f2_img, 0.5, {rotation: 180, ease: Power1.easeInOut})
+    		.to([f2_img, f5_text], 0.5, {scale:0, ease: Power1.easeInOut}, "+=2")
+    		.to(tc, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "-=0.5")
+    		.to(f2_img, 0, {rotation: 0});
 
-    	tl.to(f6_text, 0.5, {autoAlpha:1, scale:1, transformOrigin: "50% 40%", ease: Power1.easeInOut}, "-=0.3")
-    		.to(f6_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2")
+    	tl.to(f2_img, 1, {rotation:180, transformOrigin: "155px 106px", ease: Power1.easeInOut})
+        .to([f2_img, f6_text], 0.5, {autoAlpha:1, scale:1, transformOrigin: "155px 106px", ease: Power1.easeInOut}, "-=1")
+    		.to(f2_img, 0.5, {rotation: 180, ease: Power1.easeInOut})
+    		.to([f2_img, f6_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2")
+    		.to(f2_img, 0, {rotation: 0})
     		.to(f1_text, 0, {top: 30}, "-=0.5");
 
     	tl.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
@@ -73,6 +86,7 @@
       <div id="f1_bg" class="layer"></div>
       <div id="f1_img" class="layer"></div>
       <div id="f2_bg" class="layer"></div>
+      <div id="f2_img" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_text" class="layer"></div>
       <div id="f4_text" class="layer"></div>

@@ -45,6 +45,12 @@ a {
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
 }
+#f2_img {
+  background: url("f2_img.png") center no-repeat;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0); 
+  transform: scale(0);
+}
 #f2_text {
   background: url("f2_text.png") center no-repeat;
   -ms-transform: scale(0);
