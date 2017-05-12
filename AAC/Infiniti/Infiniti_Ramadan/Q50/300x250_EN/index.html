@@ -21,7 +21,7 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-		  tl.to(car, 1, {x: 0, y: 0, ease: Power1.easeOut});
+		  tl.to(car, 1.5, {x: 0, y: 0, ease: Power1.easeOut});
 		  tl.to(wheels, 0.1, {autoAlpha: 0, ease: Power4.easeOut}, "-=0.2")
 						
         .to(f2_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
@@ -42,7 +42,7 @@
         .to(f7_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
         .to(f7_text, 0.5, {autoAlpha: 0, delay: 2})
 
-		  	.to(car, 1, {x: 300, y: 50, ease: Power2.easeIn})
+		  	.to(car, 1.5, {x: 300, y: 50, ease: Power2.easeIn})
 		  	.to(wheels, 0.1, {autoAlpha: 1, ease: Power4.easeOut}, "-=0.2")
 		  	.to(bg, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.2")
 
