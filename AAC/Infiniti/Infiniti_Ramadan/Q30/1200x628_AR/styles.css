@@ -26,9 +26,9 @@ body {
 #car {
   background: url('car.png') center no-repeat;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, -873, -142); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, -873, -142); /* Safari */
-  transform: matrix(1, 0, 0, 1, -873, -142); /* Standard syntax */
+  -ms-transform: matrix(1, 0, 0, 1, -873, -107); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -873, -107); /* Safari */
+  transform: matrix(1, 0, 0, 1, -873, -107); /* Standard syntax */
 }
 #wheels {
   background: url('wheels.png') center no-repeat;
@@ -39,6 +39,9 @@ body {
 }
 #f2_text {
   background: url('f2_text.png') center no-repeat;
+}
+#tc {
+  background: url('tc.png') center no-repeat;
 }
 #f3_text {
   background: url('f3_text.png') center no-repeat;
@@ -57,7 +60,7 @@ body {
 }
 #cta {
   background: url('cta.png') center no-repeat;
-  top: 30px;
+  top: 50px;
 }
 #logo_awr {
   background: url('logo_awr.png') center no-repeat;

@@ -27,9 +27,9 @@ body {
   background: url('car.png') center no-repeat;
   width: 180px;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, -180, -20); 
-  -webkit-transform: matrix(1, 0, 0, 1, -180, -20); 
-  transform: matrix(1, 0, 0, 1, -180, -20); 
+  -ms-transform: matrix(1, 0, 0, 1, -180, -25); 
+  -webkit-transform: matrix(1, 0, 0, 1, -180, -25); 
+  transform: matrix(1, 0, 0, 1, -180, -25); 
 }
 #wheels {
   background: url('wheels.png') center no-repeat;
@@ -41,6 +41,9 @@ body {
 }
 #f2_text {
   background: url('f2_text.png') center no-repeat;
+}
+#f2_tc {
+  background: url('f2_tc.png') center no-repeat;
 }
 #f3_text {
   background: url('f3_text.png') center no-repeat;

@@ -40,6 +40,9 @@ body {
 #f2_text {
   background: url('f2_text.png') center no-repeat;
 }
+#tc {
+  background: url('tc.png') center no-repeat;
+}
 #f3_text {
   background: url('f3_text.png') center no-repeat;
 }
