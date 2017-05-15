@@ -26,9 +26,9 @@ body {
 #car {
   background: url('car.png') center no-repeat;
  /* opacity: 1;*/
-  -ms-transform: matrix(1, 0, 0, 1, -300, -40); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, -300, -40); /* Safari */
-  transform: matrix(1, 0, 0, 1, -300, -40); /* Standard syntax */
+  -ms-transform: matrix(1, 0, 0, 1, -300, -30); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -300, -30); /* Safari */
+  transform: matrix(1, 0, 0, 1, -300, -30); /* Standard syntax */
 }
 #wheels {
   background: url('wheels.png') center no-repeat;
@@ -62,12 +62,15 @@ body {
   background: url('cta.png') center no-repeat;
   top: 30px;
 }
+#carname {
+  background: url('carname.png') center no-repeat;
+}
 #logo_awr {
   background: url('logo_awr.png') center no-repeat;
 }
 #logo_infiniti {
   background: url('logo_infiniti.png') center no-repeat;
-  opacity: 1;
+ opacity: 1;
 }
 #btn_replay {
   position: absolute;
