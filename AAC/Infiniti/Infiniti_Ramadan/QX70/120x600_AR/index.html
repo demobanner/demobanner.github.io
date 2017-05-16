@@ -23,8 +23,8 @@
 		function init() {
 		  tl.to(car, 1, {x: -65, y: 0, ease: Power2.easeOut});
 		  tl.to(wheels, 0.1, {autoAlpha: 0, ease: Power4.easeOut}, "-=0.2")
-						
-        .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+
+		.to([f1_text,carname], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
         .to(f1_text, 0.5, {autoAlpha: 0, delay: 2})
 
         .to([f2_text, f2_tc], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
@@ -43,7 +43,7 @@
         .to(f6_text, 0.5, {autoAlpha: 0, delay: 2})
 
         .to(f7_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-        .to(f7_text, 0.5, {autoAlpha: 0, delay: 2})
+        .to([f7_text, carname], 0.5, {autoAlpha: 0, delay: 2})
 
 		  	.to(wheels, 0.1, {autoAlpha: 1, ease: Power4.easeOut})
 		  	.to(car, 1, {x: 183, y: 25, ease: Power2.easeIn})		  	
@@ -87,6 +87,7 @@
     <div id="f6_text" class="layer"></div>
     <div id="f7_text" class="layer"></div>
     <div id="cta" class="layer"></div>
+    <div id="carname" class="layer"></div>
     <div id="logo_awr" class="layer"></div>
     <div id="logo_infiniti" class="layer"></div>
 	</a>

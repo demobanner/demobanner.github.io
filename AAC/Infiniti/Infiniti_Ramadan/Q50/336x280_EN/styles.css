@@ -26,9 +26,9 @@ body {
 #car {
   background: url('car.png') center no-repeat;
   opacity: 1;
-  -ms-transform: matrix(1, 0, 0, 1, -336, -45); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0, 1, -336, -45); /* Safari */
-  transform: matrix(1, 0, 0, 1, -336, -45); /* Standard syntax */
+  -ms-transform: matrix(1, 0, 0, 1, -336, -50); /* IE 9 */
+  -webkit-transform: matrix(1, 0, 0, 1, -336, -50); /* Safari */
+  transform: matrix(1, 0, 0, 1, -336, -50); /* Standard syntax */
 }
 #wheels {
   background: url('wheels.png') center no-repeat;
