@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name=”ad.size” content=”width=300,height=250” />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Banner</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js" type="text/javascript">
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script type="text/javascript">
+        function initEB(){
+            if (!EB.isInitialized()){
+              EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+            }else{
+              startAd();
+            }
+        }
+        function startAd(){
+            document.getElementById("ad").style.visibility = "visible";
+        }
+        function handleBannerClick(){
+            EB.clickthrough();
+        }
+        var clickTag = ""; //This value is used by the ad server and should not be changed
+
+        var timeline = new TimelineLite();
+
+        function init() {
+            initEB();
+
+            var car = document.getElementById("car"),
+                headlights = document.getElementById("headlights"),
+                header = document.getElementById("header"),
+                cta = document.getElementById("cta"),
+                cta_highlight = document.getElementById("cta_highlight"),
+                text1 = document.getElementById("text1");
+          
+
+            
+
+            timeline.to(car, 1.5, {alpha:1,left: 0, top:0, width: '100%', height: '100%', ease: Power2.easeOut});
+            timeline.to(header, 0.5, {alpha:1}, "-=0.7");
+            timeline.to(text1, 0.5, {alpha:1,top:0,ease: Power2.easeOut},"+=0.2");
+            timeline.to(headlights, 0.5, {alpha:1});
+            timeline.to(headlights, 0.5, {alpha:0});
+            timeline.to(cta, 0.5, {alpha:1},"+=0.5");
+            timeline.to(headlights, 0.5, {alpha:1});
+            timeline.to(headlights, 0.5, {alpha:0});
+            timeline.to(headlights, 0.5, {alpha:1});
+            timeline.to(cta_highlight, 1, {alpha:1,left:200});
+
+
+        }
+        window.onload = init;
+
+        </script>
+    </head>
+    <body>
+        <div class="global" id="ad" onclick="javascript:handleBannerClick();">
+            <div id="stade"></div>
+            <img id="car" src="images/car.png" alt="">
+            <div id="text1"></div>
+            <div id="headlights"></div>
+            <div id="header"></div>
+            <div id="cta"></div>
+            <div class="cta_highlight_wrap">
+                <div id="cta_highlight"></div>
+            </div>
+            <div id="logo"></div>
+        </div>
+    </body>
+</html>
