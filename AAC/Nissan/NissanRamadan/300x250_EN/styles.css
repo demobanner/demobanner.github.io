@@ -68,6 +68,9 @@ a {
 #tc {
   background: url("tc.png") center no-repeat;
 }
+#logo_awr {
+  background: url("logo_awr.png") center no-repeat;
+}
 #logo {
   background: url("logo.png") center no-repeat;
   opacity: 1;
