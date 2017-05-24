@@ -26,6 +26,9 @@ body {
   left: 0;
   opacity: 0;
 }
+#logo_text {
+  background: url(logo_text.png) center no-repeat;
+}
 #logo {
   background: url(logo.png) center no-repeat; 
   visibility: visible;
@@ -55,11 +58,8 @@ body {
 #f4_text {
   background: url(f4_text.png) center no-repeat;
 }
-#f5_text1 {
-  background: url(f5_text1.png) center no-repeat;
-}
-#f5_text2 {
-  background: url(f5_text2.png) center no-repeat;
+#f5_text {
+  background: url(f5_text.png) center no-repeat;
 }
 #cta {
   background: url(cta.png) center no-repeat;
