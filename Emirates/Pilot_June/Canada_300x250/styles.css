@@ -32,6 +32,9 @@ body {
   opacity: 1;
   z-index: 1;
 }
+#logo_text {
+  background: url(logo_text.png) center no-repeat;
+}
 #f1_bg {
   background: url(f1_bg.jpg) center no-repeat;
   visibility: visible;
@@ -46,20 +49,8 @@ body {
 #f2_text {
   background: url(f2_text.png) center no-repeat;
 }
-#f3_bg {
-  background: url(f3_bg.jpg) center no-repeat;
-}
 #f3_text {
   background: url(f3_text.png) center no-repeat;
-}
-#f4_text {
-  background: url(f4_text.png) center no-repeat;
-}
-#f5_text1 {
-  background: url(f5_text1.png) center no-repeat;
-}
-#f5_text2 {
-  background: url(f5_text2.png) center no-repeat;
 }
 #cta {
   background: url(cta.png) center no-repeat;
