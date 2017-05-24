@@ -20,8 +20,9 @@
       <div id="f2_text" class="layer"></div>
       <div id="f3_bg" class="layer"></div>
       <div id="f3_text" class="layer"></div>
-      <div id="f4_text1" class="layer"></div>
-      <div id="f4_text2" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="f5_text1" class="layer"></div>
+      <div id="f5_text2" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
     </a>
@@ -44,8 +45,11 @@
         .to(f3_text, 0.5, {autoAlpha: 1})
         .to(f3_text, 0.5, {autoAlpha: 0}, '+=2')
 
-        .to(f4_text1, 0.5, {autoAlpha: 1})
-        .to(f4_text2, 0.5, {autoAlpha: 1})
+        .to(f4_text, 0.5, {autoAlpha: 1})
+        .to(f4_text, 0.5, {autoAlpha: 0}, '+=2')
+
+        .to(f5_text1, 0.5, {autoAlpha: 1})
+        .to(f5_text2, 0.5, {autoAlpha: 1})
         .to(cta, 0.5, {autoAlpha: 1})
         .to(logo, 2, {autoAlpha: 1, onComplete:replay});
     }
