@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=160,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		var clickTag = '';
+
+		var tl = new TimelineLite();
+
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
+		function init() {
+			tl.to(f2_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+			  .to(f3_bg, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "+=0.5")
+			  .to(f4_bg, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "+=0.5")
+			  .to(f5_bg, 0.5, {autoAlpha: 1, ease: Power0.easeInOut}, "+=0.5")
+				.to(f6_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut});
+
+			tl.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(f7_text, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "+=2");
+
+			tl.to(f8_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(f9_img, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
+			  .to(logo_AWR, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
+				.to(tc, 0.5, {autoAlpha:1, ease: Power2.easeInOut, onComplete:onLoop});
+		}
+
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
+				document.getElementById('replayButton').addEventListener("click", restart);
+			}
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f2_bg" class="layer"></div>
+      <div id="f3_bg" class="layer"></div>
+      <div id="f4_bg" class="layer"></div>
+      <div id="f5_bg" class="layer"></div>
+      <div id="f6_bg" class="layer"></div>
+      <div id="f7_text" class="layer"></div>
+      <div id="f8_text" class="layer"></div>
+      <div id="f9_img" class="layer"></div>
+      <div id="tc" class="layer"></div>
+      <div id="cta" class="layer"></div>
+	  	<div id="logo_AWR" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+		<a id="replayButton" href="javascript:"><img src="replay.png"></a>
+  </div>
+</body>
+</html>
