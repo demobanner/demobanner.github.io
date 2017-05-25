@@ -46,7 +46,14 @@ a {
   background: url("f2_text.png") center no-repeat;
 }
 #f3_car {
+  opacity: 1;
+}
+#car {
   background: url("car.png") center no-repeat;
+  opacity: 1;
+}
+#wheels {
+  background: url("wheels.png") center no-repeat;
   opacity: 1;
 }
 #f4_text {

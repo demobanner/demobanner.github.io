@@ -21,28 +21,28 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-			tl.to(f2_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-				.to(f2_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f2_text, 0.5, {autoAlpha:1, ease:Power3.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha:0, ease:Power3.easeInOut}, "+=2")
 
-				.fromTo(f3_car, 1.5, {x: -220}, {x: 300, ease: Power1.easeOut})
+				.fromTo(f3_car, 1.5, {x:-220, y:-20}, {x:300, y:20, ease:Power1.easeInOut})
 
-				.to(f4_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-				.to(f4_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+				.to(f4_text, 0.5, {autoAlpha:1, ease:Power3.easeInOut})
+				.to(f4_text, 0.5, {autoAlpha:0, ease:Power3.easeInOut}, "+=2")
 
-				.to(f5_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-				.to(f5_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+				.to(f5_text, 0.5, {autoAlpha:1, ease:Power3.easeInOut})
+				.to(f5_text, 0.5, {autoAlpha:0, ease:Power3.easeInOut}, "+=2")
 
-				.to(f6_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-				.to(f6_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+				.to(f6_text, 0.5, {autoAlpha:1, ease:Power3.easeInOut})
+				.to(f6_text, 0.5, {autoAlpha:0, ease:Power3.easeInOut}, "+=2")
 
-				.fromTo(f7_car, 0.5, {x: -220}, {x: 0, ease: Power1.easeOut})
+				.fromTo(f7_car, 0.5, {x:-220}, {x:0, ease:Power1.easeOut})
 
-				.to(f8_text, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-				.to(logo_awr, 0.5, {autoAlpha: 1, ease: Power3.easeInOut})
-				.to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-				.to(tc, 0.5, {autoAlpha: 1, ease: Power3.easeInOut, onComplete: onLoop});
+				.to(f8_text, 0.5, {autoAlpha:1, ease:Power3.easeInOut})
+				.to(logo_awr, 0.5, {autoAlpha:1, ease:Power3.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease:Power3.easeInOut})
+				.to(tc, 0.5, {autoAlpha:1, ease:Power3.easeInOut, onComplete:onLoop});
 
-			tl.fromTo(stars, 13, {x: -304}, {x: -71, ease:Linear.easeNone}, '0')
+			tl.fromTo(stars, 13, {x:-304}, {x:-71, ease:Linear.easeNone}, '0')
 		}
 		
 		function restart() {
@@ -54,7 +54,7 @@
 				loop++ ;
 			} else if (isReplay) {
 				var btn_replay = document.getElementById('btn-replay');
-				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+				tl.to(btn_replay, 0.5, {autoAlpha:1, rotation:180});
 			}
 		}
 		
@@ -69,7 +69,10 @@
 	  <div id="bg" class="layer"></div>
 
 	  <div id="f2_text" class="layer"></div>
-	  <div id="f3_car" class="layer"></div>
+	  <div id="f3_car" class="layer">
+			<div id="car" class="layer"></div>
+			<div id="wheels" class="layer"></div>
+		</div>
 	  <div id="f4_text" class="layer"></div>
 	  <div id="f5_text" class="layer"></div>
 	  <div id="f6_text" class="layer"></div>
