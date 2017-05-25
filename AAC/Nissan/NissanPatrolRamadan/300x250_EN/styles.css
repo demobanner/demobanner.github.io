@@ -45,9 +45,6 @@ a {
 #f2_text {
   background: url("f2_text.png") center no-repeat;
 }
-#f3_car {
-  opacity: 1;
-}
 #car {
   background: url("car.png") center no-repeat;
   opacity: 1;
@@ -67,7 +64,6 @@ a {
 }
 #f7_car {
   background: url("car.png") center no-repeat;
-  opacity: 1;
   -ms-transform: matrix(0.8, 0, 0, 0.8, 0, -10);   /* IE 9 */
   -webkit-transform: matrix(0.8, 0, 0, 0.8, 0, -10);   /* Safari */
   transform: matrix(0.8, 0, 0, 0.8, 0, -10);  
