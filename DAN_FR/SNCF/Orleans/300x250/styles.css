@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #ffffff;
+  opacity: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#text1,#text2 {
+  left: -300px;
+}
+#f1_bg {
+  opacity: 1;
+  background: url("f1_bg.jpg") center no-repeat;
+
+}
+#f1_house {
+  opacity: 1;
+  background: url("f1_house.png") center no-repeat;
+}
+#f1_text {
+  opacity: 1;
+  background: url("f1_text.png") center no-repeat;
+}
+
+@-moz-keyframes light1 {
+  0% { -moz-transform: rotate(0deg); -moz-transform-origin: 50% 100%;}
+  25% { -moz-transform: rotate(-30deg); -moz-transform-origin: 50% 100%; }
+  50% { -moz-transform: rotate(0deg); -moz-transform-origin: 50% 100%; }
+  75% { -moz-transform: rotate(30deg); -moz-transform-origin: 50% 100%; }
+  100% { -moz-transform: rotate(0deg); -moz-transform-origin: 50% 100%; }
+}
+@-webkit-keyframes light1 {
+  0% { -webkit-transform: rotate(0deg); -webkit-transform-origin: 50% 100%;}
+  25% { -webkit-transform: rotate(-30deg); -webkit-transform-origin: 50% 100%; }
+  50% { -webkit-transform: rotate(0deg); -webkit-transform-origin: 50% 100%; }
+  75% { -webkit-transform: rotate(30deg); -webkit-transform-origin: 50% 100%; }
+  100% { -webkit-transform: rotate(0deg); -webkit-transform-origin: 50% 100%; }
+}
+@keyframes light1 {
+  0% { transform: rotate(0deg); transform-origin: 50% 100%;}
+  25% { transform: rotate(-30deg); transform-origin: 50% 100%; }
+  50% { transform: rotate(0deg); transform-origin: 50% 100%; }
+  75% { transform: rotate(30deg); transform-origin: 50% 100%; }
+  100% { transform: rotate(0deg); transform-origin: 50% 100%; }
+}
+
+#f1_light1 {
+  width: 23px;
+  height: 108px;
+  left: 88px;
+  top: 2px;
+  opacity: 1;
+  background: url("f1_light1.png") center no-repeat;
+  mix-blend-mode:lighten;
+  -webkit-animation:light1 4s linear infinite;
+  -moz-animation:light1 4s linear infinite;
+  animation:light1 4s linear infinite;
+}
+#f1_light2 {
+  width: 71px;
+  height: 94px;
+  left: 118px;
+  top: 0;
+  opacity: 1;
+  background: url("f1_light2.png") center no-repeat;
+  mix-blend-mode:lighten;
+  -webkit-animation:light2 4s linear infinite;
+  -moz-animation:light2 4s linear infinite;
+  animation:light2 4s linear infinite;
+}
+@-moz-keyframes light2 {
+  0% { -moz-transform: rotate(30deg); -moz-transform-origin: 50% 100%;}
+  25% { -moz-transform: rotate(60deg); -moz-transform-origin: 50% 100%; }
+  50% { -moz-transform: rotate(30deg); -moz-transform-origin: 50% 100%; }
+  75% { -moz-transform: rotate(0deg); -moz-transform-origin: 50% 100%; }
+  100% { -moz-transform: rotate(30deg); -moz-transform-origin: 50% 100%; }
+}
+@-webkit-keyframes light2 {
+  0% { -webkit-transform: rotate(30deg); -webkit-transform-origin: 50% 100%;}
+  25% { -webkit-transform: rotate(60deg); -webkit-transform-origin: 50% 100%; }
+  50% { -webkit-transform: rotate(30deg); -webkit-transform-origin: 50% 100%; }
+  75% { -webkit-transform: rotate(0deg); -webkit-transform-origin: 50% 100%; }
+  100% { -webkit-transform: rotate(30deg); -webkit-transform-origin: 50% 100%; }
+}
+@keyframes light2 {
+  0% { transform: rotate(30deg); transform-origin: 50% 100%;}
+  25% { transform: rotate(60deg); transform-origin: 50% 100%; }
+  50% { transform: rotate(30deg); transform-origin: 50% 100%; }
+  75% { transform: rotate(0deg); transform-origin: 50% 100%; }
+  100% { transform: rotate(30deg); transform-origin: 50% 100%; }
+}
+#f2_bg {
+  background: #0088ce;
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+}
+#f2_text3 {
+  background: url("f2_text3.png") center no-repeat;
+}
+#f3_text1 {
+  opacity: 1;
+  background: url("f3_text1.png") center no-repeat;
+}
+#f3_text2 {
+  background: url("f3_text2.png") center no-repeat;
+}
+#f3_text3 {
+  background: url("f3_text3.png") center no-repeat;
+}
+#f3_text4 {
+  background: url("f3_text4.png") center no-repeat;
+}
+#f3_text5 {
+  opacity: 1;
+  background: url("f3_text5.png") center no-repeat;
+}
+#cta {
+  opacity: 1;
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 16px;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0;
+}
+  #extra_click_bt{
+    width: 80px;
+    height: 19px;
+    position: absolute;
+    left: 108px;
+    top: 208px;
+    cursor: pointer;
+  }

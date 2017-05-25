@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #ffffff;
+  opacity: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#text1,#text2 {
+  left: -300px;
+}
+#f1_bg {
+  opacity: 1;
+  background: url("f1_bg.jpg") center no-repeat;
+}
+#f1_text {
+  opacity: 1;
+  background: url("f1_text.png") center no-repeat;
+}
+#f1_chooper1 {
+  width: 87px;
+  height: 55px;
+  opacity: 1;
+  background: url("f1_chooper1.png") center no-repeat;
+}
+#f1_chooper2 {
+  width: 32px;
+  height: 22px;
+  opacity: 1;
+  background: url("f1_chooper2.png") center no-repeat;
+}
+#f1_chooper3 {
+  width: 66px;
+  height: 23px;
+  opacity: 1;
+  background: url("f1_chooper3.png") center no-repeat;
+}
+#f2_bg {
+  background: #0088ce;
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+}
+#f3_text1 {
+  opacity: 1;
+  background: url("f3_text1.png") center no-repeat;
+}
+#f3_text2 {
+  background: url("f3_text2.png") center no-repeat;
+}
+#f3_text3 {
+  background: url("f3_text3.png") center no-repeat;
+}
+#f3_text4 {
+  opacity: 1;
+  background: url("f3_text4.png") center no-repeat;
+}
+#cta {
+  opacity: 1;
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 16px;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0;
+}
+  #extra_click_bt{
+    width: 80px;
+    height: 19px;
+    position: absolute;
+    left: 108px;
+    top: 208px;
+    cursor: pointer;
+  }

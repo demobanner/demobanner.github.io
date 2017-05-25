@@ -1,0 +1,114 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #0088ce;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_bg {
+  background: url("f1_bg.jpg") center no-repeat;
+  opacity: 1;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f1_flag1 {
+  background: url("f1_flag1.png") center no-repeat;
+  width: 13px;
+  height: 4px;
+  top: 2px;
+  right: 181px;
+  left: auto;
+  opacity: 1;
+}
+#f1_flag2 {
+  background: url("f1_flag2.png") center no-repeat;
+  width: 9px;
+  height: 4px;
+  top: 22px;
+  right: 148px;
+  left: auto;
+  opacity: 1;
+}
+#f1_flag3 {
+  background: url("f1_flag3.png") center no-repeat;
+  width: 9px;
+  height: 3px;
+  top: 50px;
+  right: 223px;
+  left: auto;
+  opacity: 1;
+}
+#clouds1 {
+  background: url("clouds1.png") center no-repeat;
+  width: 37px;
+  height: 15px;
+  opacity: 1;
+}
+#clouds2 {
+  background: url("clouds2.png") center no-repeat;
+  width: 19px;
+  height: 6px;
+  opacity: 1;
+}
+#clouds3 {
+  background: url("clouds3.png") center no-repeat;
+  width: 36px;
+  height: 9px;
+  opacity: 1;
+}
+#f2_bg {
+  background-color: #0088ce;
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+}
+#f3_text1 {
+  opacity: 1;
+  background: url("f3_text1.png") center no-repeat;
+}
+#f3_text2 {
+  background: url("f3_text2.png") center no-repeat;
+}
+#f3_text3 {
+  background: url("f3_text3.png") center no-repeat;
+}
+#f3_text4 {
+  background: url("f3_text4.png") center no-repeat;
+  opacity: 1;
+}
+#cta {
+  opacity: 1;
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
