@@ -1,0 +1,79 @@
+<html>
+<head>
+
+<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+<!-- SCRVERSION:screenad_interface_1.0.3 -->
+<!-- SCRFORMAT:banner -->
+<!-- SCRWIDTH:728 -->
+<!-- SCRHEIGHT:90 -->
+<!-- SCRDATE:25-05-17 -->
+<script src="http://media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="http://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+<script src="EasePack.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+		var tl = new TimelineLite();
+        tl1 = new TimelineLite();
+
+		function init() {
+      document.getElementById("banner").style.opacity = 1;
+      wolfanimation();
+        tl.fromTo(f1_text, 0.5, {y:-100}, {autoAlpha: 1, y: 0, ease: Power0.easeInOut})
+        .fromTo(f1_eagles1, 3, {x: 303, y: 12, rotation:-20}, {autoAlpha:1, x: 723, y: 39, rotation:0, ease:Linear.easeNone}, '-=0.5')
+        .fromTo(f1_eagles2, 3, {x: 722, y: 36, rotation:20}, {autoAlpha:1, x: 280, y: 46, rotation:0, ease:Linear.easeNone},'-=3')
+        .fromTo([f1_bg, f1_screen], 0.5, {autoAlpha:1, y: 0}, {y: 70, ease:Linear.easeNone}, "-=1.5")
+        .fromTo(f1_text2, 0.5, {autoAlpha:1, y: -100}, {y: 0, ease:Linear.easeNone}, '-=1')
+          
+        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, '+=1')
+        .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+        .fromTo(f2_text1, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .fromTo(f2_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .to(f2_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, '+=2')
+        .fromTo(f3_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .to(f3_text3, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+        .fromTo(f3_text1, 0.5, {y:-90}, {y:0,  ease:Power2.easeInOut})
+        .fromTo(cta, 0.5, {y:90}, {y:0,  ease:Power2.easeInOut}, '-=0.5')
+        .fromTo(f3_text4, 0.5, {y:90}, {y:0,  ease:Power2.easeInOut});
+		}
+    function wolfanimation() {
+      tl1.to(f1_wolf, 0.5, {rotation: -2,  transformOrigin: "50% 100%", ease:Linear.easeNone})
+         .to(f1_wolf, 1, {rotation: 2, ease:Linear.easeNone})
+         .to(f1_wolf, 0.5, {rotation: 0, ease:Linear.easeNone, onComplete: wolfanimation});
+    }
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+	<div id="banner">
+    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f1_text2" class="layer"></div>
+      <div id="f1_screen">
+      <div id="f1_img" class="layer"></div>
+      <div id="f1_wolf" class="layer"></div>
+      <div id="f1_eagles2" class="layer"></div>
+      <div id="f1_eagles1" class="layer"></div>
+      </div>
+
+      <div id="f2_bg" class="layer"></div>
+      <div id="f2_text1" class="layer"></div>
+      <div id="f2_text2" class="layer"></div>
+
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f3_text3" class="layer"></div>
+      <div id="f3_text4" class="layer"></div>
+
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <!-- <div id="extra_click_bt" onclick="screenad.click('extra1');"></div> -->
+    </a>
+  </div>
+
+</body>
+</html>

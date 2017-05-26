@@ -1,0 +1,87 @@
+<html>
+<head>
+
+<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+<!-- SCRVERSION: screenad_interface_1.0.3 -->
+<!-- SCRFORMAT: banner -->
+<!-- SCRWIDTH: 300 -->
+<!-- SCRHEIGHT: 250 -->
+<!-- SCRDATE: 25-05-17 -->
+<script src="http://media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="http://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+<script src="EasePack.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+		var clickTag = 'https://www.google.com/';
+
+		var tl = new TimelineLite(),
+				tl1 = new TimelineLite();
+
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
+		function init() {
+      document.getElementById("banner").style.opacity = 1;
+			wolfanimation();
+        tl.fromTo(f1_text, 0.5, {y:-100}, {autoAlpha: 1, y: 0, ease: Power0.easeInOut})
+        .fromTo(f1_eagles1, 3, {x: -127, y: 180, rotation:-20}, {x: 298, y: 175, rotation:0, ease:Linear.easeNone}, '-=0.5')
+        .fromTo(f1_eagles2, 3, {x: 305, y: 152, rotation:20}, {x: -65, y: 190, rotation:0, ease:Linear.easeNone},'-=2')
+      
+        .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=1')
+        .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .fromTo(f2_text1, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .fromTo(f2_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .fromTo(f2_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f2_text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '+=2')
+        .to(f2_text3, 0.5, {autoAlpha: 0, ease: Power2.easeInOut},'-=0.5')
+        .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .fromTo(f3_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .fromTo(f3_text1, 0.5, {autoAlpha:1, x: -300}, {x: 0,  ease: Power0.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha:1, x: 300}, {x: 0,  ease: Power0.easeInOut}, '-=0.5')
+        .fromTo(f3_text5, 0.5, {autoAlpha:1, y: 30}, {y: 0,  ease: Power2.easeInOut});
+		}
+		
+		function wolfanimation() {
+      tl1.to(f1_wolf, 0.5, {rotation: -2,  transformOrigin: "50% 100%", ease:Linear.easeNone})
+         .to(f1_wolf, 1, {rotation: 2, ease:Linear.easeNone})
+				 .to(f1_wolf, 0.5, {rotation: 0, ease:Linear.easeNone, onComplete: wolfanimation});
+    }
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+	<div id="banner">
+    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f1_wolf" class="layer"></div>
+      <div id="f1_eagles2" class="layer"></div>
+      <div id="f1_eagles1" class="layer"></div>
+      
+     
+      <div id="f2_bg" class="layer"></div>
+      <div id="f2_text1" class="layer"></div>
+      <div id="f2_text2" class="layer"></div>
+      <div id="f2_text3" class="layer"></div>
+
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f3_text3" class="layer"></div>
+      <div id="f3_text4" class="layer"></div>
+      <div id="f3_text5" class="layer"></div>
+
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <!-- <div id="extra_click_bt" onclick="screenad.click('extra1');"></div> -->
+    </a>
+  </div>
+
+</body>
+</html>
