@@ -15,7 +15,8 @@
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-
+		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
+		
 		var tl = new TimelineLite();
 
 		var LOOP_TIME = 0,	// how many time the banner replays
@@ -24,12 +25,12 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-			tl.fromTo(f1_text, 0.5, {y:-100}, {y: 0, ease: Power0.easeInOut})
-        .fromTo(f1_bg, 4, {y: -43}, {y: 0, ease:Linear.easeNone})
-        .fromTo(f1_character1, 6, {x: 728, y: 10}, {x: 588, y: 90, ease:Linear.easeNone},'-=5')
-        .fromTo(f1_character2, 6, {x: 250, y: -50}, {x: 350, y: 70, ease:Linear.easeNone}, '-=5')
-        .fromTo(f1_character3, 6, {x: 728, y: 30}, {x: 588, y: 90, ease:Linear.easeNone}, '-=4.5')
-        .fromTo(f1_character4, 6, {x: 728, y: 0}, {x: 588, y: 60, ease:Linear.easeNone}, '-=5')
+			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
+        .fromTo(f1_bg, 4, {autoAlpha: 1, y: -43}, {y: 0, ease:Linear.easeNone})
+        .fromTo(f1_character1, 6, {autoAlpha: 1, x: 728, y: 10}, {x: 588, y: 90, ease:Linear.easeNone},'-=5')
+        .fromTo(f1_character2, 6, {autoAlpha: 1, x: 250, y: -50}, {x: 350, y: 70, ease:Linear.easeNone}, '-=5')
+        .fromTo(f1_character3, 6, {autoAlpha: 1, x: 728, y: 30}, {x: 588, y: 90, ease:Linear.easeNone}, '-=4.5')
+        .fromTo(f1_character4, 6, {autoAlpha: 1, x: 728, y: 0}, {x: 588, y: 60, ease:Linear.easeNone}, '-=5')
         .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=5')
         .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut},'-=4.5')
         .fromTo(f2_text1, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut},'-=4')
@@ -37,9 +38,9 @@
         .to(f2_text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut},'-=1.5')
         .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut},'-=1')
         .to(f3_text3, 0.5, {autoAlpha: 1, ease: Power2.easeInOut},'-=0.5')
-        .fromTo(f3_text1, 0.5, {y: -90}, {y: 0,  ease: Power0.easeInOut})
-        .fromTo(cta, 0.5, {y: 90}, {y: 0,  ease: Power0.easeInOut}, '-=0.5')
-        .fromTo(f3_text4, 0.5, {y: 90}, {y: 0,  ease: Power2.easeInOut});
+        .fromTo(f3_text1, 0.5, {autoAlpha: 1, y: -90}, {y: 0,  ease: Power0.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power0.easeInOut}, '-=0.5')
+        .fromTo(f3_text4, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power2.easeInOut});
 		}
 
 		window.onload = init;
