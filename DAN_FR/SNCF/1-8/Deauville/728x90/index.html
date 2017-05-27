@@ -15,13 +15,16 @@
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
+		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
+		
 		var tl = new TimelineLite();
         tl1 = new TimelineLite();
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
       pyramidAnimation();
-			 tl.fromTo(f1_block, 4, {autoAlpha:1, x:710, y:79}, {x:-100, ease:Linear.easeNone})
+			 tl.fromTo(f1_text, 0.5, {autoAlpha:0}, {autoAlpha:1,  ease:Power2.easeInOut})
+				.fromTo(f1_block, 4, {autoAlpha:1, x:710, y:79}, {x:-100, ease:Linear.easeNone}, '-=0.5')
           
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
@@ -30,13 +33,13 @@
         .to(f2_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, '+=2')
         .fromTo(f3_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
         .to(f3_text3, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
-        .fromTo(f3_text1, 0.5, {y:-90}, {y:0,  ease:Power2.easeInOut})
-        .fromTo(cta, 0.5, {y:90}, {y:0,  ease:Power2.easeInOut}, '-=0.5')
-        .fromTo(f3_text4, 0.5, {y:90}, {y:0,  ease:Power2.easeInOut});
+        .fromTo(f3_text1, 0.5, {autoAlpha:1, y:-90}, {y:0,  ease:Power2.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha:1, y:90}, {y:0,  ease:Power2.easeInOut}, '-=0.5')
+        .fromTo(f3_text4, 0.5, {autoAlpha:1, y:90}, {y:0,  ease:Power2.easeInOut});
 		}
     function pyramidAnimation() {
-      tl1.fromTo(f1_pyramid, 0.2, {y:-12}, {y:-11})
-        .fromTo(f1_pyramid, 0.2, {y:-11}, {y:-12, onComplete:pyramidAnimation});
+      tl1.fromTo(f1_pyramid, 0.2, {autoAlpha:1, y:-12}, {y:-11})
+        .fromTo(f1_pyramid, 0.2, {autoAlpha:1, y:-11}, {y:-12, onComplete:pyramidAnimation});
     }
 		window.onload = init;
 
@@ -44,7 +47,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f1_block" class="layer">
