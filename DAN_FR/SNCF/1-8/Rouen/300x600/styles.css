@@ -39,19 +39,16 @@ a {
   background: url("f1_bg.jpg") center no-repeat;
 }
 #f1_text {
-  opacity: 1;
   background: url("f1_text.png") center no-repeat;
 }
 #f1_chooper1 {
   width: 177px;
   height: 124px;
-  opacity: 1;
   background: url("f1_chooper1.png") center no-repeat;
 }
 #f1_chooper2 {
   width: 134px;
   height: 48px;
-  opacity: 1;
   background: url("f1_chooper2.png") center no-repeat;
 }
 #f2_bg {
@@ -70,7 +67,6 @@ a {
   background: url("f2_text4.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -83,11 +79,9 @@ a {
   background: url("f3_text4.png") center no-repeat;
 }
 #f3_text5 {
-  opacity: 1;
   background: url("f3_text5.png") center no-repeat;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
