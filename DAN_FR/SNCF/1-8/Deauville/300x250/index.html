@@ -22,8 +22,9 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-       tl.fromTo(f1_block, 0.5, {autoAlpha:1, x:300, y:228}, {x:180, ease:Linear.easeNone})
-				.to(f1_boat, 0, {autoAlpha:1}, "-=0.4");
+      
+			tl.fromTo(f1_block, 0.1, {autoAlpha:0, x:300, y:228}, {autoAlpha:1})
+				.to(f1_block, 0.5, {x:180, ease:Linear.easeNone})
 				
 			tl1.fromTo(f1_pyramid, 0.3, {autoAlpha:1, y:-26}, {y:-25, ease:Linear.easeNone})
         .to(f1_pyramid, 0.3, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
