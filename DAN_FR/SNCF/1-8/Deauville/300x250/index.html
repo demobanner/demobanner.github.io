@@ -15,6 +15,8 @@
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
+		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
+		
 		var tl = new TimelineLite(),
 				tl1 = new TimelineLite();
 
@@ -41,8 +43,8 @@
 		}
 		
 		function pyramidAnimation() {
-			tl1.fromTo(f1_pyramid, 0.3, {y:-26}, {y:-25, ease:Linear.easeNone})
-        .fromTo(f1_pyramid, 0.3, {y:-25}, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
+			tl1.fromTo(f1_pyramid, 0.3, {autoAlpha:1, y:-26}, {y:-25, ease:Linear.easeNone})
+        .to(f1_pyramid, 0.3, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
 		}
 
 		window.onload = init;
@@ -51,7 +53,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f1_block" class="layer">

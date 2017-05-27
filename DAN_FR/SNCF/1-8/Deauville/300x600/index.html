@@ -15,6 +15,8 @@
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
+		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
+		
 		var tl = new TimelineLite(),
 				tl1 = new TimelineLite();
 
@@ -54,7 +56,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f1_block" class="layer">

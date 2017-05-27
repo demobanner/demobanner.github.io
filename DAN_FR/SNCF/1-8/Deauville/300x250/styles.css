@@ -31,7 +31,7 @@ a {
   right: 0;
   bottom: 0;
 }
-#text1,#text2 {
+#text1, #text2 {
   left: -300px;
 }
 #f1_bg {
@@ -46,18 +46,17 @@ a {
   background: url("f1_boat.png") center no-repeat;
   width:72px;
   height: 15px;
-   -ms-transform: matrix(1, 0, 0, 1, 0, 0); 
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0); 
+	-webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
+	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #f1_pyramid {
-  opacity: 1;
   background: url("f1_pyramid.png") center no-repeat;
   width:45px;
   height: 39px;
   -ms-transform: matrix(1, 0, 0, 1, 70, -26); 
-    -webkit-transform: matrix(1, 0, 0, 1, 70, -26); 
-    transform: matrix(1, 0, 0, 1, 70, -26);
+  -webkit-transform: matrix(1, 0, 0, 1, 70, -26); 
+  transform: matrix(1, 0, 0, 1, 70, -26);
 }
 #f1_man {
   background: url("f1_man.png") center no-repeat;
@@ -76,7 +75,6 @@ a {
   background: url("f2_text3.png") center no-repeat;
 }
 #f3_text1 {
-
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
