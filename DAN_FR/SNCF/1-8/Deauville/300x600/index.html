@@ -24,6 +24,7 @@
       document.getElementById("banner").style.opacity = 1;
 			pyramidAnimation();
       tl.fromTo(f1_block, 0.5, {autoAlpha:1, x:300, y:558}, {x:39, ease:Linear.easeNone})
+				.to(f1_boat, 0, {autoAlpha:1}, "-=0.5")
 				.fromTo(f1_block, 2, {x:39, y:558}, {x:-246, ease:Linear.easeNone})
         .fromTo([f1_man, f1_text], 1, {autoAlpha:1, x:-439, y:0}, {x:0, ease:Linear.easeNone},"-=2")
       
