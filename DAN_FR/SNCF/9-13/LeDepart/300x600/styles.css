@@ -39,7 +39,6 @@ a {
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
-  opacity: 1;
 }
 #f2_bg {
   background: #0088ce;
@@ -57,7 +56,6 @@ a {
   background: url("f2_text4.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -70,11 +68,9 @@ a {
   background: url("f3_text4.png") center no-repeat;
 }
 #f3_text5 {
-  opacity: 1;
   background: url("f3_text5.png") center no-repeat;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
@@ -89,11 +85,11 @@ a {
   opacity: 0;
   line-height: 0;
 }
-  #extra_click_bt{
-    width: 80px;
-    height: 19px;
-    position: absolute;
-    left: 108px;
-    top: 208px;
-    cursor: pointer;
-  }
+#extra_click_bt{
+	width: 80px;
+	height: 19px;
+	position: absolute;
+	left: 108px;
+	top: 208px;
+	cursor: pointer;
+}
