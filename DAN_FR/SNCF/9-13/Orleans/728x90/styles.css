@@ -37,18 +37,15 @@ a {
 #f1_bg {
   width: 728px;
   height: 158px;
-  opacity: 1;
   background: url("f1_bg.jpg") center no-repeat;
 
 }
 #f1_house {
   width: 728px;
   height: 158px;
-  opacity: 1;
   background: url("f1_house.png") center no-repeat;
 }
 #f1_text {
-  opacity: 1;
   background: url("f1_text.png") center no-repeat;
 }
 
@@ -56,7 +53,6 @@ a {
   width: 19px;
   height: 87px;
   left: 493px;
-  opacity: 1;
   background: url("f1_light1.png") center no-repeat;
   mix-blend-mode:lighten;
 }
@@ -64,7 +60,6 @@ a {
   width: 57px;
   height: 78px;
   left: 515px;
-  opacity: 1;
   background: url("f1_light2.png") center no-repeat;
   mix-blend-mode:lighten;
 }
@@ -78,7 +73,6 @@ a {
   background: url("f2_text2.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -88,11 +82,9 @@ a {
   background: url("f3_text3.png") center no-repeat;
 }
 #f3_text4 {
-  opacity: 1;
   background: url("f3_text4.png") center no-repeat;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
@@ -107,11 +99,11 @@ a {
   opacity: 0;
   line-height: 0;
 }
-  #extra_click_bt{
-    width: 80px;
-    height: 19px;
-    position: absolute;
-    left: 108px;
-    top: 208px;
-    cursor: pointer;
-  }
+#extra_click_bt{
+	width: 80px;
+	height: 19px;
+	position: absolute;
+	left: 108px;
+	top: 208px;
+	cursor: pointer;
+}
