@@ -15,7 +15,7 @@
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-		var clickTag = '';
+		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl = new TimelineLite();
 
@@ -25,13 +25,13 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-			tl.fromTo(f1_text, 0.5, {y:-90}, {y: 0, ease: Power0.easeInOut})
-        .fromTo(f1_shoes1, 4, {x:490, y:0, rotation:30}, {x:440, y:60, rotation:0, ease:Linear.easeNone}, '-=1')
-        .fromTo(f1_shoes2, 4, {x:580, y:5, rotation:50}, {x:530, y:20, rotation:10, ease:Linear.easeNone},'-=4')
-        .fromTo(f1_shoes3, 4, {x:670, y:10, rotation:0}, {x:600, y:-15, rotation:50, ease:Linear.easeNone}, '-=4')
-        .fromTo(f1_shoes4, 4, {x:390, y:-20, rotation:0}, {x:420, y:-5, rotation:-20, ease:Linear.easeNone},'-=4')
-        .fromTo(f1_shoes5, 4, {x:430, y:40, rotation:30}, {x:520, y:60, rotation:-10, ease:Linear.easeNone}, '-=4')
-        .fromTo(f1_shoes6, 4, {x:380, y:35, rotation:0}, {x:320, y:50, rotation:30, ease:Linear.easeNone}, '-=4')
+			tl.fromTo(f1_text, 0.5, {autoAlpha:1, y:-90}, {y: 0, ease: Power0.easeInOut})
+        .fromTo(f1_shoes1, 4, {autoAlpha:1, x:490, y:0, rotation:30}, {x:440, y:60, rotation:0, ease:Linear.easeNone}, '-=1')
+        .fromTo(f1_shoes2, 4, {autoAlpha:1, x:580, y:5, rotation:50}, {x:530, y:20, rotation:10, ease:Linear.easeNone},'-=4')
+        .fromTo(f1_shoes3, 4, {autoAlpha:1, x:670, y:10, rotation:0}, {x:600, y:-15, rotation:50, ease:Linear.easeNone}, '-=4')
+        .fromTo(f1_shoes4, 4, {autoAlpha:1, x:390, y:-20, rotation:0}, {x:420, y:-5, rotation:-20, ease:Linear.easeNone},'-=4')
+        .fromTo(f1_shoes5, 4, {autoAlpha:1, x:430, y:40, rotation:30}, {x:520, y:60, rotation:-10, ease:Linear.easeNone}, '-=4')
+        .fromTo(f1_shoes6, 4, {autoAlpha:1, x:380, y:35, rotation:0}, {x:320, y:50, rotation:30, ease:Linear.easeNone}, '-=4')
         .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut},'-=0.5')
         .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
         .fromTo(f2_text1, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
@@ -39,9 +39,9 @@
         .to(f2_text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '+=2')
         .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
         .to(f3_text3, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-        .fromTo(f3_text1, 0.5, {y: -90}, {y: 0,  ease: Power2.easeInOut})
-        .fromTo(cta, 0.5, {y: 90}, {y: 0,  ease: Power2.easeInOut}, '-=0.5')
-        .fromTo(f3_text4, 0.5, {y: 90}, {y: 0,  ease: Power2.easeInOut});
+        .fromTo(f3_text1, 0.5, {autoAlpha:1, y: -90}, {y: 0,  ease: Power2.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha:1, y: 90}, {y: 0,  ease: Power2.easeInOut}, '-=0.5')
+        .fromTo(f3_text4, 0.5, {autoAlpha:1, y: 90}, {y: 0,  ease: Power2.easeInOut});
 		}
 
 		window.onload = init;
@@ -50,7 +50,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f1_shoes5" class="layer"></div>

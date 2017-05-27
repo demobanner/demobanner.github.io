@@ -39,37 +39,31 @@ a {
   background: url("f1_bg.jpg") center no-repeat;
 }
 #f1_text {
-  opacity: 1;
   background: url("f1_text.png") center no-repeat;
 }
 #f1_shoes1 {
   width: 92px;
   height: 103px;
-  opacity: 1;
   background: url("f1_shoes1.png") center no-repeat;
 }
 #f1_shoes2 {
   width: 60px;
   height: 71px;
-  opacity: 1;
   background: url("f1_shoes2.png") center no-repeat;
 }
 #f1_shoes3 {
   width: 42px;
   height: 63px;
-  opacity: 1;
   background: url("f1_shoes3.png") center no-repeat;
 }
 #f1_shoes4 {
   width: 70px;
   height: 57px;
-  opacity: 1;
   background: url("f1_shoes4.png") center no-repeat;
 }
 #f1_shoes5 {
   width: 22px;
   height: 29px;
-  opacity: 1;
   background: url("f1_shoes5.png") center no-repeat;
 }
 #f2_bg {
@@ -85,7 +79,6 @@ a {
   background: url("f2_text3.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -98,11 +91,9 @@ a {
   background: url("f3_text4.png") center no-repeat;
 }
 #f3_text5 {
-  opacity: 1;
   background: url("f3_text5.png") center no-repeat;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
