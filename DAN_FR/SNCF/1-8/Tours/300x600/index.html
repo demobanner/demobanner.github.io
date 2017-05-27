@@ -15,14 +15,14 @@
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-		var clickTag = '';
+		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl1 = new TimelineLite();
 		var tl2 = new TimelineLite();
 
 		function init() {
 			document.getElementById("banner").style.opacity = 1;
-			wavingFlag(tl2, f1_flag, 0, 14, 26);	
+			wavingFlag(tl2, f1_flag, 0, 5, 26);	
 
       tl1.fromTo(f1_text, 0.5, {y:-100}, {autoAlpha: 1, y: 0, ease: Power0.easeInOut})
         .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "+=3.5")
@@ -36,13 +36,13 @@
         .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
         .fromTo(f3_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
         .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-        .fromTo(f3_text1, 0.5, {x: -300}, {x: 0,  ease: Power0.easeInOut})
-        .fromTo(cta, 0.5, {x: 300}, {x: 0,  ease: Power0.easeInOut}, '-=0.5')
-        .fromTo(f3_text5, 0.5, {y: 30}, {y: 0,  ease: Power2.easeInOut});
+        .fromTo(f3_text1, 0.5, {autoAlpha: 1, x: -300}, {x: 0,  ease: Power0.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power0.easeInOut}, '-=0.5')
+        .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
 
-      tl1.fromTo(clouds1, 17, {x: 75, y: 142}, {x: -125, y: 142, ease:Linear.easeNone}, 0);
-      tl1.fromTo(clouds2, 19, {x: 227, y: 210}, {x: 0, y: 210, ease:Linear.easeNone}, 0);
-      tl1.fromTo(clouds3, 11, {x: 159, y: 253}, {x: -40, y: 253, ease:Linear.easeNone}, 0);
+      tl1.fromTo(clouds1, 17, {autoAlpha: 1, x: 75, y: 142}, {x: -125, y: 142, ease:Linear.easeNone}, 0);
+      tl1.fromTo(clouds2, 19, {autoAlpha: 1, x: 227, y: 210}, {x: 0, y: 210, ease:Linear.easeNone}, 0);
+      tl1.fromTo(clouds3, 11, {autoAlpha: 1, x: 159, y: 253}, {x: -40, y: 253, ease:Linear.easeNone}, 0);
 
 		}
 
@@ -57,7 +57,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click();" href="javascript:">
+    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_flag" class="layer"></div>
       <div id="f1_text" class="layer"></div>

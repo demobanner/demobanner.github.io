@@ -56,13 +56,11 @@ a {
   background: url("clouds2.png") center no-repeat;
   width: 52px;
   height: 17px;
-  opacity: 1;
 }
 #clouds3 {
   background: url("clouds3.png") center no-repeat;
   width: 100px;
   height: 27px;
-  opacity: 1;
 }
 #f2_bg {
   background-color: #0088ce;
@@ -80,7 +78,6 @@ a {
   background: url("f2_text4.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -93,11 +90,9 @@ a {
   background: url("f3_text4.png") center no-repeat;
 }
 #f3_text5 {
-  opacity: 1;
   background: url("f3_text5.png") center no-repeat;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
