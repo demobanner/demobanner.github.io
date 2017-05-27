@@ -38,11 +38,9 @@ a {
   top: -39px;
 }
 #f1_text {
-  opacity: 1;
   background: url("f1_text.png") center no-repeat;
 }
 #f1_text2 {
-  opacity: 1;
   background: url("f1_text2.png") center no-repeat;
 }
 #f1_wolf {
@@ -57,10 +55,8 @@ a {
   background: url("f1_eagles1.png") center no-repeat;
   width:103px;
   height: 50px;
-  opacity: 1;
 }
 #f1_eagles2 {
-  opacity: 1;
   background: url("f1_eagles2.png") center no-repeat;
   width:55px;
   height: 33px;
@@ -76,7 +72,6 @@ a {
   background: url("f2_text2.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -86,11 +81,9 @@ a {
   background: url("f3_text3.png") center no-repeat;
 }
 #f3_text4 {
-  opacity: 1;
   background: url("f3_text4.png") center no-repeat;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
