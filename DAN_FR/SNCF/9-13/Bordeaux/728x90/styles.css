@@ -36,7 +36,6 @@ a {
   background: url("f1_bg.jpg") center no-repeat;
 }
 #f1_text {
-  opacity: 1;
   background: url("f1_text.png") center no-repeat;
 }
 #f2_bg {
@@ -49,7 +48,6 @@ a {
   background: url("f2_text2.png") center no-repeat;
 }
 #f3_text1 {
-  opacity: 1;
   background: url("f3_text1.png") center no-repeat;
 }
 #f3_text2 {
@@ -60,10 +58,8 @@ a {
 }
 #f3_text4 {
   background: url("f3_text4.png") center no-repeat;
-  opacity: 1;
 }
 #cta {
-  opacity: 1;
   background: url("cta.png") center no-repeat;
 }
 #logo {
