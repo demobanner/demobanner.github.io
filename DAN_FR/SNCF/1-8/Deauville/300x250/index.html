@@ -23,7 +23,7 @@
 		function init() {
       document.getElementById("banner").style.opacity = 1;
 			pyramidAnimation();
-       tl.fromTo(f1_block, 0.5, {autoAlpha:1, x:300, y:228}, {autoAlpha:1, x:180, ease:Linear.easeNone})
+       tl.fromTo(f1_block, 0.5, {autoAlpha:1, x:300, y:228}, {x:180, ease:Linear.easeNone})
         .fromTo(f1_block, 2, { x:180, y:228}, {x:-130, y:228, ease:Linear.easeNone})
         .fromTo([f1_man, f1_text], 1, {autoAlpha:1, x:-300, y:0}, {x:0, y:0, ease:Linear.easeNone}, "-=2")
       
@@ -57,8 +57,8 @@
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f1_block" class="layer">
-      <div id="f1_boat" class="layer"></div>
-      <div id="f1_pyramid" class="layer"></div>
+				<div id="f1_boat" class="layer"></div>
+				<div id="f1_pyramid" class="layer"></div>
       </div>
       <div id="f1_man" class="layer"></div>
      
