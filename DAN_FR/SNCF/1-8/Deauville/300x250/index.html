@@ -24,8 +24,12 @@
       document.getElementById("banner").style.opacity = 1;
 			pyramidAnimation();
        tl.fromTo(f1_block, 0.5, {autoAlpha:1, x:300, y:228}, {x:180, ease:Linear.easeNone})
-				.to(f1_boat, 0, {autoAlpha:1}, "-=0.4")
-        .fromTo(f1_block, 2, { x:180, y:228}, {x:-130, y:228, ease:Linear.easeNone})
+				.to(f1_boat, 0, {autoAlpha:1}, "-=0.4");
+				
+			tl1.fromTo(f1_pyramid, 0.3, {autoAlpha:1, y:-26}, {y:-25, ease:Linear.easeNone})
+        .to(f1_pyramid, 0.3, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
+				
+      tl.fromTo(f1_block, 2, { x:180, y:228}, {x:-130, y:228, ease:Linear.easeNone})
         .fromTo([f1_man, f1_text], 1, {autoAlpha:1, x:-300, y:0}, {x:0, y:0, ease:Linear.easeNone}, "-=2")
       
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, '+=1')
