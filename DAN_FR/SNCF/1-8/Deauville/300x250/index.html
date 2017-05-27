@@ -49,7 +49,7 @@
 		}
 		
 		function pyramidAnimation() {
-			tl1.fromTo(f1_pyramid, 0.3, {autoAlpha:1, y:-26}, {y:-25, ease:Linear.easeNone})
+			tl1.fromTo(f1_pyramid, 0.3, {y:-26}, {y:-25, ease:Linear.easeNone})
         .to(f1_pyramid, 0.3, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
 		}
 

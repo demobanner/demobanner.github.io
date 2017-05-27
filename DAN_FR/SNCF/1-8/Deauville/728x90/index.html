@@ -28,8 +28,8 @@
 				.to([f1_boat, f1_pyramid], 0, {autoAlpha:1}, '-=0.5')
 				.to(f1_block, 4, {x:-100, ease:Linear.easeNone}, '-=0.5');
 				
-			tl1.fromTo(f1_pyramid, 0.3, {y:-26}, {y:-25, ease:Linear.easeNone}, "+=0.5")
-        .to(f1_pyramid, 0.3, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
+			tl1.fromTo(f1_pyramid, 0.2, {y:-12}, {y:-11})
+        .to(f1_pyramid, 0.2, {y:-12, onComplete:pyramidAnimation});
    
 			tl.to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
@@ -43,7 +43,7 @@
         .fromTo(f3_text4, 0.5, {autoAlpha:1, y:90}, {y:0,  ease:Power2.easeInOut});
 		}
     function pyramidAnimation() {
-      tl1.fromTo(f1_pyramid, 0.2, {autoAlpha:1, y:-12}, {y:-11})
+      tl1.fromTo(f1_pyramid, 0.2, {y:-12}, {y:-11})
         .to(f1_pyramid, 0.2, {y:-12, onComplete:pyramidAnimation});
     }
 		window.onload = init;
