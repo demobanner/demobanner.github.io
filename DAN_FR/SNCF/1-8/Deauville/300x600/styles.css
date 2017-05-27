@@ -31,7 +31,7 @@ a {
   right: 0;
   bottom: 0;
 }
-#text1,#text2 {
+#text1, #text2 {
   left: -300px;
 }
 #f1_bg {
@@ -51,7 +51,6 @@ a {
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #f1_pyramid {
-  opacity: 1;
   background: url("f1_pyramid.png") center no-repeat;
   width:82px;
   height: 69px;
