@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="ad.size" content="width=300,height=600">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>Banner</title>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script src="EasePack.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+    var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
+
+		var tl = new TimelineLite();
+
+		function init() {
+      document.getElementById("banner").style.opacity = 1;
+			tl.fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {y:0, ease:Power1.easeInOut})
+        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "+=2")
+        .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+        .fromTo(f2_text1, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .fromTo(f2_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .fromTo(f2_text3, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .fromTo(f2_text4, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .to(f2_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, '+=1')
+        .to(f2_text3, 0.5, {autoAlpha:0, ease:Power2.easeInOut},'-=0.5')
+        .to(f2_text4, 0.5, {autoAlpha:0, ease:Power2.easeInOut},'-=0.5')
+        .fromTo(f3_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .fromTo(f3_text3, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
+        .to(f3_text4, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+        .fromTo(f3_text1, 0.5, {autoAlpha:1, x:-300}, {x:0,  ease:Power0.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha:1, x:300}, {x:0,  ease:Power0.easeInOut}, '-=0.5')
+        .fromTo(f3_text5, 0.5, {autoAlpha:1, y:30}, {y:0,  ease:Power2.easeInOut});
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+	<div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+
+      <div id="f2_bg" class="layer"></div>
+      <div id="f2_text1" class="layer"></div>
+      <div id="f2_text2" class="layer"></div>
+      <div id="f2_text3" class="layer"></div>
+      <div id="f2_text4" class="layer"></div>
+
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f3_text3" class="layer"></div>
+      <div id="f3_text4" class="layer"></div>
+      <div id="f3_text5" class="layer"></div>
+
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+
+</body>
+</html>
