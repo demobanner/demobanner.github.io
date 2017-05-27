@@ -44,19 +44,16 @@ a {
   background: url("clouds1.png") center no-repeat;
   width: 222px;
   height: 69px;
-  opacity: 1;
 }
 #clouds2 {
   background: url("clouds2.png") center no-repeat;
   width: 127px;
   height: 40px;
-  opacity: 1;
 }
 #clouds3 {
   background: url("clouds3.png") center no-repeat;
   width: 166px;
   height: 56px;
-  opacity: 1;
 }
 #f2_bg {
   background-color: #0088ce;
