@@ -16,15 +16,16 @@
 		
 		var tl = new TimelineLite();
 		
+		
 		function init() {
 			tl.to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-			  .to(tc, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-			  .to(f1_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
+			.to(tc, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
+			  .to(f1_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
 
 			  .to(f2_text, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-			  .to(f2_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
+			  .to(f2_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
 
-			  .to(bg, 0.5, {top: -51, ease: Power1.easeInOut})
+			 .to(bg, 0.5, {top: -32, ease: Power1.easeInOut})
 			  .to(f3_img, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.2")
 			  .to(f3_img, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
 			  .to(bg, 0.5, {top: -1, ease: Power1.easeInOut}, "-=0.2")
@@ -33,12 +34,12 @@
 			  .to(f4_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
 
 			  .to(f5_text, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-			  .to(f5_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
+			  .to(f5_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
 
-			  .to(bg, 0.5, {top: -51, ease: Power1.easeInOut})
+			   .to(bg, 0.5, {top: -32, ease: Power3.easeInOut})
 			  .to(f6_img, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.2")
 			  .to(f6_img, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
-			  .to(bg, 0.5, {top: -1, ease: Power1.easeInOut}, "-=0.2")
+			  .to(bg, 0.5, {top: -1, ease: Power3.easeInOut}, "-=0.2")
 
 			  .to(f7_text, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
 			  .to(f7_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
@@ -46,14 +47,16 @@
 			  .to(f8_text, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
 			  .to(f8_text, 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
 
-			  .to(bg, 0.5, {top: -51, ease: Power1.easeInOut})
+			  .to(bg, 0.5, {top: -32, ease: Power1.easeInOut})
 			  .to(f9_img, 0.5, {autoAlpha: 1, ease: Power1.easeInOut}, "-=0.2")
-			  .to([f9_img, tc], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2")
+			 .to([f9_img, tc], 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
+			   .to(bg, 0.5, {top: -1, ease: Power1.easeInOut}, "-=0.2")
 
 			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
-			  .to(logo, 0.5, {top: -40, ease: Power1.easeInOut})
-			  .to(AWR_logo, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
-
+			  .to(AWR_logo, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
+			 
+			  
+			  
 		}
 		
 		window.onload = init;
@@ -78,7 +81,7 @@
 	  <div id="CI_logo" class="layer"></div>
 	  <div id="AWR_logo" class="layer"></div>
 	  <div id="logo" class="layer"></div>
-	  <div id="tc" class="layer"></div>
+	   <div id="tc" class="layer"></div>
 	</a>
   </div>
 </body>
