@@ -3,59 +3,51 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=300,height=250">
+	<meta name="ad.size" content="width=120,height=600">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
 	<script src="TimelineLite.min.js"></script>
 	<script src="CSSPlugin.min.js"></script>
 	<script src="EasePack.min.js"></script>
-	<link rel="stylesheet" href="styles.css"/>
+	<link rel="stylesheet" href="styles.css">
 	<script type="text/javascript">
 		var clickTag = '';
 		
 		var tl = new TimelineLite();
 		
-		
 		function init() {
-			tl.to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f1_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f1_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(tc, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(f2_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f2_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f2_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			 .to(bg, 0.5, {top: -32, ease: Power3.easeInOut})
-			  .to(f3_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.2")
-			  .to(f3_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
-			  .to(bg, 0.5, {top: -1, ease: Power3.easeInOut}, "-=0.2")
+			tl.to(f3_img, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(f3_img, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(f4_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f4_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f4_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(f4_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(f5_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f5_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f5_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(f5_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			   .to(bg, 0.5, {top: -32, ease: Power3.easeInOut})
-			  .to(f6_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.2")
-			  .to(f6_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
-			  .to(bg, 0.5, {top: -1, ease: Power3.easeInOut}, "-=0.2")
+			tl.to(f6_img, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(f6_img, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(f7_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f7_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(f7_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(f8_text, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(f8_text, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
+			tl.to(f8_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(f8_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(bg, 0.5, {top: -32, ease: Power3.easeInOut})
-			  .to(f9_img, 0.5, {autoAlpha: 1, ease: Power3.easeInOut}, "-=0.2")
-			  .to(f9_img, 0.5, {autoAlpha: 0, ease: Power3.easeInOut}, "+=2")
-			   .to(bg, 0.5, {top: -1, ease: Power3.easeInOut}, "-=0.2")
+			tl.to(f9_img, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to([f9_img, tc], 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			  .to(AWR_logo, 0.5, {autoAlpha: 1, top: 0, ease: Power3.easeInOut})
-			 
-			  
-			  
+			tl.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				//.to(logo, 0.5, {top: -63, ease: Power1.easeInOut})
+				.to(AWR_logo, 0.5, {autoAlpha:1, ease: Power1.easeInOut});
 		}
 		
 		window.onload = init;
@@ -64,23 +56,22 @@
 </head>
 <body>
   <div id="banner">
-	<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
-	  <div id="bg" class="layer"></div>
-	  <div id="f1_text" class="layer"></div>
-	  <div id="f2_text" class="layer"></div>
-	  <div id="f3_img" class="layer"></div>
-	  <div id="f4_text" class="layer"></div>
-	  <div id="f5_text" class="layer"></div>
-	  <div id="f6_img" class="layer"></div>
-	  <div id="f7_text" class="layer"></div>
-	  <div id="f8_text" class="layer"></div>
-	  <div id="f9_img" class="layer"></div>
-	  
-	  <div id="cta" class="layer"></div>
-	  <div id="CI_logo" class="layer"></div>
-	  <div id="AWR_logo" class="layer"></div>
-	  <div id="logo" class="layer"></div>
-	</a>
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_text" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="f3_img" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="f5_text" class="layer"></div>
+      <div id="f6_img" class="layer"></div>
+      <div id="f7_text" class="layer"></div>
+      <div id="f8_text" class="layer"></div>
+      <div id="f9_img" class="layer"></div>
+      <div id="tc" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="AWR_logo" class="layer"></div>
+      <div id="CI_logo" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
   </div>
 </body>
 </html>

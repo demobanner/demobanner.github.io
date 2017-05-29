@@ -10,17 +10,17 @@ a {
 }
 #banner {
   position: absolute;
-  width: 726px;
+  width: 466px;
   height: 88px;
   overflow: hidden;
   border:1px solid black;
-  background-color: #fff;
+  background: url("bg.jpg") center no-repeat;
 }
 .layer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 726px;
+  width: 466px;
   height: 88px;
   opacity: 0;
 }
@@ -31,15 +31,12 @@ a {
   right: 0;
   bottom: 0;
 }
-#bg {
-  background: url("bg.jpg") center no-repeat;
-  opacity: 1;
-  height:120px;
-  top: -1px;
-}
 #f1_text {
   background: url("f1_text.png") center no-repeat;
   top: 50px;
+}
+#tc {
+  background: url("tc.png") center no-repeat;
 }
 #f2_text {
   background: url("f2_text.png") center no-repeat;
@@ -47,7 +44,6 @@ a {
 }
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
- 
 }
 #f4_text {
   background: url("f4_text.png") center no-repeat;
@@ -59,8 +55,6 @@ a {
 }
 #f6_img {
   background: url("f6_img.jpg") center no-repeat;
- /* mix-blend-mode: darken;*/
- 
 }
 #f7_text {
   background: url("f7_text.png") center no-repeat;
@@ -72,18 +66,17 @@ a {
 }
 #f9_img {
   background: url("f9_img.jpg") center no-repeat;
- /* mix-blend-mode: darken;*/
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  top:20px;
+  top: 30px;
+}
+#AWR_logo {
+  background: url("AWR_logo.png") center no-repeat;
 }
 #CI_logo {
   background: url("CI_logo.png") center no-repeat;
   opacity: 1;
-}
-#AWR_logo {
-  background: url("AWR_logo.png") center no-repeat;
 }
 #logo {
   background: url("logo.png") center no-repeat;
