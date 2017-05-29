@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta data-template-name="Expandable Banner">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Banner</title>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script type="text/javascript">
+    var clickTag = "";
+  </script>
+</head>
+<body>
+    <div id="main-container">
+      <!-- Collapsed Content -->
+      <div id="collapsed-state">
+        <div id="collapsed-exit"></div>
+        <div class="feature-collapsed" id="feature-collapsed">
+          <div id="stars1" class="layer-1"></div>
+          <div id="bg1" class="layer-1"></div>
+          <div id="f3_car1" class="layer-1">
+            <div id="car1" class="layer-1"></div>
+            <div id="wheels1" class="layer-1"></div>
+          </div>
+          <div id="f4_text1" class="layer-1"></div>
+          <div id="f5_text1" class="layer-1"></div>
+          <div id="f6_text1" class="layer-1"></div>
+          <div id="f2_text1" class="layer-1"></div>
+          <div id="logo_awr1" class="layer-1"></div>
+          <div id="cta1" class="layer-1"></div>
+          <div id="tc1" class="layer-1"></div>
+          <div id="logo_nissan1" class="layer-1"></div>
+        </div>
+        <div id="expand-button" class="button">
+        </div>
+        <a id="replayButton_1" href="javascript:"><img src="replay.png"></a>
+      </div>
+
+      <!-- Expand Content -->
+      <div id="expanded-state">
+        <div id="expanded-exit"></div>
+        <div id="collapse-button" class="button">X</div>
+        <div class="feature-expanded" id="feature-expanded">
+          <div id="stars2" class="layer-2"></div>
+          <div id="bg2" class="layer-2"></div>
+          <div id="f2_text2" class="layer-2"></div>
+          <div id="f3_car2" class="layer-2">
+            <div id="car2" class="layer-2"></div>
+            <div id="wheels2" class="layer-2"></div>
+          </div>
+          <div id="f4_text2" class="layer-2"></div>
+          <div id="f5_text2" class="layer-2"></div>
+          <div id="f6_text2" class="layer-2"></div>
+          <div id="f8_text2" class="layer-2"></div>
+          <div id="logo_awr2" class="layer-2"></div>
+          <div id="cta2" class="layer-2"></div>
+          <div id="tc2" class="layer-2"></div>
+          <div id="logo_nissan2" class="layer-2"></div>
+        </div>
+        <a id="replayButton_2" href="javascript:"><img src="replay.png"></a>
+      </div>
+    </div>
+
+  <script src="logic.js"></script>
+</body>
+</html>

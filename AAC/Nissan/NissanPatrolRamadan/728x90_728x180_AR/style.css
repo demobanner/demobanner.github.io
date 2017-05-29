@@ -1,0 +1,279 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #fff;
+}
+
+
+#main-container {
+  position: absolute;
+  width: 728px;
+  height: 180px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+#collapsed-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 728px;
+  height: 90px;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  background-color: #000;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 728px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  border: 1px solid #777;
+  z-index: 200;
+  display: none;
+  overflow: hidden;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+#collapsed-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+.button {
+  position: absolute;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0px 4px;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+}
+
+#expand-button {
+  width: 726px;
+  height: 88px;
+  display: none;
+  background: none;
+}
+
+#collapse-button {
+  bottom: 6px;
+  right: 6px;
+  display: none;
+}
+.feature-collapsed {
+  top: 0px;
+  left: 0px;
+  width: 726px;
+  height: 88px;
+  position: absolute;
+}
+
+.feature-expanded {
+  top: 0px;
+  left: 0px;
+  width: 726px;
+  height: 178px;
+  position: absolute;
+}
+
+.layer-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+#stars1 {
+  background: url("stars1.jpg") center no-repeat;
+  width: 674px;
+  height: 52px;
+  -ms-transform: translate(-369px, 0px);
+  -webkit-transform: translate(-369px, 0px); 
+  transform: translate(-369px, 0px);
+  opacity: 1;
+}
+#bg1 {
+  background: url("bg1.png") center no-repeat;
+  opacity: 1;
+}
+#shadow1 {
+  background: url("shadow1.png") center no-repeat;
+  opacity: 1;
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+}
+#car1 {
+  background: url("car1.png") center no-repeat;
+  opacity: 1;
+}
+#wheels1 {
+  background: url("wheels1.png") center no-repeat;
+  opacity: 1;
+}
+#f4_text1 {
+  background: url("f4_text1.png") center no-repeat;
+}
+#f5_text1 {
+  background: url("f5_text1.png") center no-repeat;
+}
+#f6_text1 {
+  background: url("f6_text1.png") center no-repeat;
+}
+#f8_text1 {
+  background: url("f8_text1.png") center no-repeat;
+}
+#f7_car1 {
+  background: url("car1.png") center no-repeat;
+}
+#logo_awr1 {
+  background: url("logo_awr1.png") center no-repeat;
+}
+#cta1 {
+  background: url("cta1.png") center no-repeat;
+  top: 20px;
+}
+#tc1 {
+  background: url("tc1.png") center no-repeat;
+}
+#logo_nissan1 {
+  background: url("logo_nissan1.png") center no-repeat;
+  opacity: 1;
+}
+#replayButton_1{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 16px;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0;
+  z-index: 600;
+}
+.layer-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 178px;
+  opacity: 0;
+}
+#stars2 {
+  background: url("stars2.jpg") center no-repeat;
+  width: 630px;
+  height: 86px;
+  -ms-transform: translate(-252px, 0px);
+  -webkit-transform: translate(-252px, 0px); 
+  transform: translate(-252px, 0px);
+  opacity: 1;
+}
+#bg2 {
+  background: url("bg2.png") center no-repeat;
+  opacity: 1;
+}
+#shadow2 {
+  background: url("shadow2.png") center no-repeat;
+  opacity: 1;
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+}
+#f3_car2 {
+  background: url("car2.png") center no-repeat;
+  opacity: 1;
+  
+}
+#wheels2 {
+  background: url("wheels2.png") center no-repeat;
+  opacity: 1;
+}
+#f4_text2 {
+  background: url("f4_text2.png") center no-repeat;
+}
+#f5_text2 {
+  background: url("f5_text2.png") center no-repeat;
+}
+#f6_text2 {
+  background: url("f6_text2.png") center no-repeat;
+}
+#f8_text2 {
+  background: url("f8_text2.png") center no-repeat;
+}
+#f7_car2 {
+  background: url("car2.png") center no-repeat;
+ /*  -ms-transform: matrix(0.8, 0, 0, 0.8, 0, -10);   
+  -webkit-transform: matrix(0.8, 0, 0, 0.8, 0, -10);   
+  transform: matrix(0.8, 0, 0, 0.8, 0, -10);  */
+}
+#logo_awr2 {
+  background: url("logo_awr2.png") center no-repeat;
+}
+#cta2 {
+  background: url("cta2.png") center no-repeat;
+  top: 20px;
+}
+#tc2 {
+  background: url("tc2.png") center no-repeat;
+}
+#logo_nissan2 {
+  background: url("logo_nissan2.png") center no-repeat;
+  opacity: 1;
+}
+#replayButton_2 {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 16px;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0;
+  z-index: 600;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
