@@ -13,7 +13,7 @@ a {
   width: 298px;
   height: 598px;
   overflow: hidden;
-  border:1px solid black;
+  border:1px solid #777;
   background-color: #000;
 }
 .layer {
