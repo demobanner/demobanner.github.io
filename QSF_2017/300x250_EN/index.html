@@ -21,6 +21,8 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
+			document.getElementById("banner").style.visibility = 'visible';
+			
 			tl.from(f1_bg1, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut})
 			  .from(f1_bg2, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "+=0.1")
 			  .from(f1_bg3, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "-=0.2")
