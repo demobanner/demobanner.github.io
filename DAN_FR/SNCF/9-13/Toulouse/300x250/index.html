@@ -18,9 +18,9 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-      tl.to(f1_bg, 0.5, {scale:0.58, y:135, x:5, ease:Power0.easeInOut},'+=1')
+      tl.to(f1_bg, 1, {scale:0.58, y:135, x:5, ease:Power2.easeInOut},'+=1')
         .fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {y:0, ease:Power0.easeInOut})
-        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut},'+=2.5')
+        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut},'+=1.5')
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
         .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
         .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
