@@ -18,10 +18,6 @@
         tlLight1 = new TimelineLite(),
         tlLight2 = new TimelineLite();
 
-		var LOOP_TIME = 0,	// how many time the banner replays
-				loop = 0,
-				isReplay = true;	// show/hide replay button in the end
-
 		function init() {
       document.getElementById("banner").style.opacity = 1;
 			tl.fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {y:0, ease:Power1.easeInOut})
@@ -31,21 +27,20 @@
         .fromTo(f1_light2, 3.5, {autoAlpha:1, y:-78}, {y:-12, ease:Linear.easeNone},'-=3.5')
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
-        .fromTo(f2_text1, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .fromTo(f2_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .to(f2_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, '+=1')
-        .fromTo(f3_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .to(f3_text3, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
-        .fromTo(f3_text1, 0.5, {autoAlpha:1, y:-90}, {y:0,  ease:Power0.easeInOut})
-        .fromTo(cta, 0.5, {autoAlpha:1, y:90}, {y:0,  ease:Power0.easeInOut}, '-=0.5')
-        .fromTo(f3_text4, 0.5, {autoAlpha:1, y:90}, {y:0,  ease:Power2.easeInOut});
+        .to([f2_text1, f2_text2], 0.5, {autoAlpha:1,  ease: Power2.easeInOut},)
+        .to(f2_text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
+        .fromTo(f3_text1, 0.5, {autoAlpha: 1, y: -90}, {y: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f3_text3, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text4, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power2.easeInOut});
 
-        tlLight1.fromTo(f1_light2, 2, {rotation:60, transformOrigin:'50% 100%'}, {rotation:0, transformOrigin:'50% 100%', onComplete:lightAnimate, onCompleteParams:[tlLight1, f1_light2, 60]});
-        tlLight2.fromTo(f1_light1, 2, {rotation:-30, transformOrigin:'50% 100%'}, {rotation:30, transformOrigin:'50% 100%', onComplete:lightAnimate, onCompleteParams:[tlLight2, f1_light1, -30]},'-=2');
+        tlLight1.fromTo(f1_light2, 2, {rotation:60}, {rotation:0, onComplete:lightAnimate, onCompleteParams:[tlLight1, f1_light2, 60]});
+        tlLight2.fromTo(f1_light1, 2, {rotation:-30}, {rotation:30, onComplete:lightAnimate, onCompleteParams:[tlLight2, f1_light1, -30]},'-=2');
 		}
 
     function lightAnimate(tlLight, light, angle){
-      tlLight.to(light, 2, {rotation:angle, transformOrigin:'50% 100%', onComplete:restartLight});
+      tlLight.to(light, 2, {rotation:angle, onComplete:restartLight});
     }
 
     function restartLight(){

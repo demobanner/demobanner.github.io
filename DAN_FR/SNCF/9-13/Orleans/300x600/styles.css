@@ -55,6 +55,9 @@ a {
   top: 151px;
   background: url("f1_light1.png") center no-repeat;
   mix-blend-mode:lighten;
+  -ms-transform-origin: 50% 100%; /* IE 9 */
+  -webkit-transform-origin: 50% 100%; /* Chrome, Safari, Opera */
+  transform-origin: 50% 100%;
 }
 #f1_light2 {
   width: 131px;
@@ -62,6 +65,9 @@ a {
   top: 134px;
   background: url("f1_light2.png") center no-repeat;
   mix-blend-mode:lighten;
+  -ms-transform-origin: 50% 100%; /* IE 9 */
+  -webkit-transform-origin: 50% 100%; /* Chrome, Safari, Opera */
+  transform-origin: 50% 100%;
 }
 #f2_bg {
   background: #0088ce;

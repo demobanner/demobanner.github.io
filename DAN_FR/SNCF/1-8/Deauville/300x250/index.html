@@ -33,19 +33,16 @@
       tl.fromTo(f1_block, 2, { x:180, y:228}, {x:-130, y:228, ease:Linear.easeNone})
         .fromTo([f1_man, f1_text], 1, {autoAlpha:1, x:-300, y:0}, {x:0, y:0, ease:Linear.easeNone}, "-=2")
       
-        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, '+=1')
+        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "+=1")
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
-        .fromTo(f2_text1, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .fromTo(f2_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .fromTo(f2_text3, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .to(f2_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, '+=2')
-        .to(f2_text3, 0.5, {autoAlpha:0, ease:Power2.easeInOut},'-=0.5')
-        .fromTo(f3_text2, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .fromTo(f3_text3, 0.5, {autoAlpha:0, x:30}, {autoAlpha:1, x:0,  ease:Power2.easeInOut})
-        .to(f3_text4, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
-        .fromTo(f3_text1, 0.5, {autoAlpha:1, x:-300}, {x:0,  ease:Power0.easeInOut})
-        .fromTo(cta, 0.5, {autoAlpha:1, x:300}, {x:0,  ease:Power0.easeInOut}, '-=0.5')
-        .fromTo(f3_text5, 0.5, {autoAlpha:1, y:30}, {y:0,  ease:Power2.easeInOut});
+        .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
+        .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
+        .fromTo(f3_text1, 0.5, {autoAlpha: 1, x: -300}, {x: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .fromTo(f3_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
 		}
 		
 		function pyramidAnimation() {
