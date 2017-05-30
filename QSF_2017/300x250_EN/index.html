@@ -17,15 +17,15 @@
 		var tl = new TimelineLite();
 		
 		function init() {
-			tl.to(f1_bg1, 0.3, {width: 120, ease: Power2.easeInOut})
-			tl.to(f1_bg2, 0.3, {height: 210, ease: Power2.easeInOut})
-			tl.to(f1_bg3, 0.3, {height: 220, ease: Power2.easeInOut})
-			tl.to(f1_bg4, 0.3, {width: 120, ease: Power2.easeInOut})
-			tl.to(f1_bg5, 0.3, {width: 165, ease: Power2.easeInOut})
-			tl.to(f1_bg6, 0.3, {height: 210, ease: Power2.easeInOut})
-			tl.to(f1_bg7, 0.3, {height: 250, ease: Power2.easeInOut})
-			tl.to(f1_bg8, 0.3, {width: 80, ease: Power2.easeInOut})
-			tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+			tl.to(f1_bg1, 0.3, {width: 298, ease: Power0.easeIn})
+			tl.to(f1_bg2, 0.3, {height: 248, ease: Power0.easeIn})
+			tl.to(f1_bg3, 0.3, {height: 248, ease: Power0.easeIn}, "-=0.2")
+			tl.to(f1_bg4, 0.3, {width: 298, ease: Power0.easeIn})
+			tl.to(f1_bg5, 0.3, {width: 298, ease: Power0.easeIn})
+			tl.to(f1_bg6, 0.3, {height: 248, ease: Power0.easeIn})
+			tl.to(f1_bg7, 0.3, {height: 248, ease: Power0.easeIn}, "-=0.2")
+			tl.to(f1_bg8, 0.3, {width: 298, ease: Power0.easeIn})
+			tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power0.easeIn})
 		}
 		
 		window.onload = init;
