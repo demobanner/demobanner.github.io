@@ -40,6 +40,9 @@ a {
   -webkit-transform: matrix(1, 0, 0, 1, -250, -178); /* Safari */
   transform: matrix(1, 0, 0, 1, -250, -178);
 }
+#f1_bg2 {
+  background: #e5f4f8 url("f1_bg2.jpg") center no-repeat;
+}
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }
