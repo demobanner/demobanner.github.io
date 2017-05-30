@@ -18,8 +18,8 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-      tl.fromTo(f1_text1, 0.5, {autoAlpha:0}, {autoAlpha:1, ease:Power0.easeInOut})
-        .fromTo(f1_text2, 0.5, {autoAlpha:0}, {autoAlpha:1, ease:Power0.easeInOut})
+      tl.to(f1_text1, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
+        .to(f1_text2, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
 
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power3.easeInOut}, "+=2")
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
