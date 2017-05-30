@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		function init() {
+			tl.to(f1_bg1, 0.3, {width: 120, ease: Power2.easeInOut})
+			tl.to(f1_bg2, 0.3, {height: 210, ease: Power2.easeInOut})
+			tl.to(f1_bg3, 0.3, {height: 220, ease: Power2.easeInOut})
+			tl.to(f1_bg4, 0.3, {width: 120, ease: Power2.easeInOut})
+			tl.to(f1_bg5, 0.3, {width: 165, ease: Power2.easeInOut})
+			tl.to(f1_bg6, 0.3, {height: 210, ease: Power2.easeInOut})
+			tl.to(f1_bg7, 0.3, {height: 250, ease: Power2.easeInOut})
+			tl.to(f1_bg8, 0.3, {width: 80, ease: Power2.easeInOut})
+			tl.to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+		<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+			<!-- Frame 1 -->
+		  <div id="f1_bg1" class="layer"></div>
+		  <div id="f1_bg2" class="layer"></div>
+		  <div id="f1_bg3" class="layer"></div>
+		  <div id="f1_bg4" class="layer"></div>
+		  <div id="f1_bg5" class="layer"></div>
+		  <div id="f1_bg6" class="layer"></div>
+		  <div id="f1_bg7" class="layer"></div>
+		  <div id="f1_bg8" class="layer"></div>
+		  <div id="f1_bg9" class="layer"></div>
+		  <div id="f1_bg10" class="layer"></div>
+		  <div id="f1_text" class="layer"></div>
+		</a>
+  </div>
+</body>
+</html>
