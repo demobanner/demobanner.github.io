@@ -22,16 +22,15 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-      
-			tl.fromTo(f1_text, 0.5, {autoAlpha: 0, y:-100}, {autoAlpha: 1, y: 0, ease: Power1.easeInOut})
-        .fromTo(f1_block, 2.5, {autoAlpha:1, x:300, y:228}, {x:-115, ease:Linear.easeNone}, '-=0.5')
-				.to([f1_boat, f1_pyramid], 0, {autoAlpha:1},"-=2.5")
+      tl.fromTo(f1_block, 2.5, {autoAlpha:1, x:300, y:228}, {x:-115, ease:Linear.easeNone})
+        .to([f1_boat, f1_pyramid], 0, {autoAlpha:1},"-=2.5")
 				
 			tl1.fromTo(f1_pyramid, 0.3, {y:-26}, {y:-25, ease:Linear.easeNone}, "+=0.5")
         .to(f1_pyramid, 0.3, {y:-26, ease:Linear.easeNone, onComplete:pyramidAnimation});
 				
-      tl.fromTo(f1_man, 1, {autoAlpha:1, x:-213, y:0}, {x:0, y:0, ease:Linear.easeNone},"-=2")
-      
+			tl.fromTo(f1_man, 1, {autoAlpha:1, x:-213, y:0}, {x:0, ease:Linear.easeNone},"-=2.5")
+				.fromTo(f1_text, 0.5, {autoAlpha: 0, y:-100}, {autoAlpha: 1, y: 0, ease: Power1.easeInOut},"-=1.8")
+				
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "+=1")
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
         .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
