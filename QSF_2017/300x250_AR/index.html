@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {
+			document.getElementById("banner").style.visibility = 'visible';
+			
+			tl.from(f1_bg1, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut})
+			  .from(f1_bg2, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+			  .from(f1_bg3, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "-=0.2")
+			  .from(f1_bg4, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut}, "+=0.1")
+			  .from(f1_bg5, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut}, "+=0.1")
+			  .from(f1_bg6, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+			  .from(f1_bg7, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "-=0.2")
+			  .from(f1_bg8, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+			  .to(f1_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+			  .to([f1_bg1, f1_bg2, f1_bg3, f1_bg4, f1_bg5, f1_bg6, f1_bg7, f1_bg8, f1_text], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2");
+
+			tl.from(f2_bg1, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut})
+				.from(f2_bg2, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f2_bg3, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "-=0.2")
+				.from(f2_bg4, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f2_bg5, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f2_bg6, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f2_bg7, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut}, "-=0.2")
+				.from(f2_bg8, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "+=0.1")
+				.to(f2_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+				.to([f2_bg1, f2_bg2, f2_bg3, f2_bg4, f2_bg5, f2_bg6, f2_bg7, f2_bg8, f2_text], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2");
+
+			tl.from(f3_bg1, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut})
+				.from(f3_bg2, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f3_bg3, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f3_bg4, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f3_bg5, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f3_bg6, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "-=0.2")
+				.from(f3_bg7, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+				.to(f3_text, 0.5, {autoAlpha: 1, ease: Power0.easeInOut})
+				.to([f3_bg1, f3_bg2, f3_bg3, f3_bg4, f3_bg5, f3_bg6, f3_bg7, f3_text], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, "+=2");
+
+			tl.from(f4_bg1, 0.5, {autoAlpha:1, clip:"rect(0 298px 248px 298px)", ease: Power0.easeInOut})
+				.from(f4_bg2, 0.4, {autoAlpha:1, clip:"rect(248px 298px 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+				.from(f4_bg3, 0.4, {autoAlpha:1, clip:"rect(0 298px 0 0)", ease: Power0.easeInOut}, "-=0.2")
+				.from(f4_bg4, 0.5, {autoAlpha:1, clip:"rect(0 0 248px 0)", ease: Power0.easeInOut}, "+=0.1")
+				.to(logo, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(f4_text1, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
+				.to(cta, 0.5, {width: 155, ease: Power2.easeInOut})
+				.to(f4_text2, 0.5, {autoAlpha: 1, ease: Power1.easeInOut, onComplete: onLoop});
+
+		}
+		
+		function restart() {
+		  tl.restart();
+		}
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				var btn_replay = document.getElementById('btn-replay');
+				tl.to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+	<a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+		<div id="f1_bg1" class="clipBox"></div>
+		<div id="f1_bg2" class="clipBox"></div>
+		<div id="f1_bg3" class="clipBox"></div>
+		<div id="f1_bg4" class="clipBox"></div>
+		<div id="f1_bg5" class="clipBox"></div>
+		<div id="f1_bg6" class="clipBox"></div>
+		<div id="f1_bg7" class="clipBox"></div>
+		<div id="f1_bg8" class="clipBox"></div>
+		<div id="f1_text" class="layer"></div>
+
+		<div id="f2_bg1" class="clipBox"></div>
+		<div id="f2_bg2" class="clipBox"></div>
+		<div id="f2_bg3" class="clipBox"></div>
+		<div id="f2_bg4" class="clipBox"></div>
+		<div id="f2_bg5" class="clipBox"></div>
+		<div id="f2_bg6" class="clipBox"></div>
+		<div id="f2_bg7" class="clipBox"></div>
+		<div id="f2_bg8" class="clipBox"></div>
+		<div id="f2_text" class="layer"></div>
+
+		<div id="f3_bg1" class="clipBox"></div>
+		<div id="f3_bg2" class="clipBox"></div>
+		<div id="f3_bg3" class="clipBox"></div>
+		<div id="f3_bg4" class="clipBox"></div>
+		<div id="f3_bg5" class="clipBox"></div>
+		<div id="f3_bg6" class="clipBox"></div>
+		<div id="f3_bg7" class="clipBox"></div>
+		<div id="f3_bg8" class="clipBox"></div>
+		<div id="f3_text" class="layer"></div>
+
+		<div id="f4_bg1" class="clipBox"></div>
+		<div id="f4_bg2" class="clipBox"></div>
+		<div id="f4_bg3" class="clipBox"></div>
+		<div id="f4_bg4" class="clipBox"></div>
+		<div id="f4_text1" class="layer"></div>
+		<div id="f4_text2" class="layer"></div>
+		<div id="cta" class="layer"></div>
+		<div id="logo" class="layer"></div>
+	</a>
+		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
+  </div>
+</body>
+</html>

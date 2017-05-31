@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #ffffff;
+  visibility: hidden;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.clipBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  clip:rect(0px 726px 88px 0px);
+}
+#f1_brush1 {
+  background: url("f1_brush1.jpg") center no-repeat;
+}
+#f1_brush2 {
+  background: url("f1_brush2.jpg") center no-repeat;
+}
+#f1_brush3 {
+  background: url("f1_brush3.jpg") center no-repeat;
+}
+#f1_brush4 {
+  background: url("f1_brush4.jpg") center no-repeat;
+}
+#f1_brush5 {
+  background: url("f1_brush5.jpg") center no-repeat;
+}
+#f1_brush6 {
+  background: url("f1_brush6.jpg") center no-repeat;
+}
+
+#f2_brush1 {
+  background: url("f2_brush1.jpg") center no-repeat;
+}
+#f2_brush2 {
+  background: url("f2_brush2.jpg") center no-repeat;
+}
+#f2_brush3 {
+  background: url("f2_brush3.jpg") center no-repeat;
+}
+#f2_brush4 {
+  background: url("f2_brush4.jpg") center no-repeat;
+}
+#f2_brush5 {
+  background: url("f2_brush5.jpg") center no-repeat;
+}
+#f2_brush6 {
+  background: url("f2_brush6.jpg") center no-repeat;
+}
+
+#f3_brush1 {
+  background: url("f3_brush1.jpg") center no-repeat;
+}
+#f3_brush2 {
+  background: url("f3_brush2.jpg") center no-repeat;
+}
+#f3_brush3 {
+  background: url("f3_brush3.jpg") center no-repeat;
+}
+#f3_brush4 {
+  background: url("f3_brush4.jpg") center no-repeat;
+}
+#f3_brush5 {
+  background: url("f3_brush5.jpg") center no-repeat;
+}
+#f3_brush6 {
+  background: url("f3_brush6.jpg") center no-repeat;
+}
+
+#f4_brush1 {
+  background: url("f4_brush1.jpg") center no-repeat;
+}
+#f4_brush2 {
+  background: url("f4_brush2.jpg") center no-repeat;
+}
+#f4_brush3 {
+  background: url("f4_brush3.jpg") center no-repeat;
+}
+
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+}
+
+#f4_text1 {
+  background: url("f4_text1.png") center no-repeat;
+}
+#f4_text2 {
+  top: 30px;
+  background: url("f4_text2.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
