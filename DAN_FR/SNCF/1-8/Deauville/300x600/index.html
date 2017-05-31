@@ -22,15 +22,14 @@
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-			tl.fromTo(f1_block, 0.1, {autoAlpha:0, x:300, y:558}, {autoAlpha:1, x:300, y:558})
-				.to([f1_boat, f1_pyramid], 0, {autoAlpha:1})
-				.to(f1_block, 0.5, {x:39, ease:Linear.easeNone});
+			tl.fromTo(f1_text, 0.5, {autoAlpha: 0, y:-100}, {autoAlpha: 1, y: 0, ease: Power1.easeInOut})
+      .fromTo(f1_block, 2.5, {autoAlpha:1, x:300, y:558}, {x:-206, ease:Linear.easeNone}, '-=0.5')
+				.to([f1_boat, f1_pyramid], 0, {autoAlpha:1},"-=2.5")
 				
 			tl1.fromTo(f1_pyramid, 0.3, {y:-45}, {y:-43, ease:Linear.easeNone}, "+=0.5")
 				.to(f1_pyramid, 0.3, {y:-45, ease:Linear.easeNone, onComplete:pyramidAnimation});
 				
-			tl.fromTo(f1_block, 2, {x:39, y:558}, {x:-246, ease:Linear.easeNone})
-        .fromTo([f1_man, f1_text], 1, {autoAlpha:1, x:-439, y:0}, {x:0, ease:Linear.easeNone},"-=2")
+			tl.fromTo(f1_man, 1, {autoAlpha:1, x:-308, y:0}, {x:0, ease:Linear.easeNone},"-=2")
       
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "+=1")
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})

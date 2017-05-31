@@ -21,13 +21,13 @@
 				tl2 = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
 			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
         .fromTo(f1_character1, 6, {autoAlpha: 1, x: 300, y: 180}, {x: 150, y: 220, ease:Linear.easeNone})
         .fromTo(f1_character2, 6, {autoAlpha: 1, x: -40, y: 165}, {x: 110, y: 185, ease:Linear.easeNone}, '-=6')
         .fromTo(f1_character3, 6, {autoAlpha: 1, x: 300, y: 207}, {x: 150, y: 207, ease:Linear.easeNone}, '-=5')
         .fromTo(f1_character4, 6, {autoAlpha: 1, x: 300, y: 130}, {x: 150, y: 200, ease:Linear.easeNone}, '-=5');
-				
+
       tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
         .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
         .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})

@@ -37,6 +37,7 @@ a {
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
+  top: -30px;
 }
 #f1_shoes1 {
   width: 184px;

@@ -14,7 +14,7 @@ a {
   overflow: hidden;
   border:1px solid black;
   background-color: #ffffff;
-  opacity: 0;
+  visibility: hidden;
 }
 .layer {
   position: absolute;
@@ -36,6 +36,7 @@ a {
 }
 #f1_bg {
   opacity: 1;
+  height: 129px;
   background: url("f1_bg.jpg") center no-repeat;
 }
 #f1_text {

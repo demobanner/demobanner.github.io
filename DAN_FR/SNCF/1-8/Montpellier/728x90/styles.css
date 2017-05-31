@@ -37,6 +37,10 @@ a {
   height: 165px;
   top: -39px;
 }
+#mount {
+  opacity: 1;
+  background: url("mount.png") center no-repeat;
+} 
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }

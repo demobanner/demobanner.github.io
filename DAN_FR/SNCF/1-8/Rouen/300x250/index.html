@@ -21,12 +21,12 @@
 				tl2 = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
 			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
-        .fromTo(f1_chooper1, 5, {autoAlpha: 1, x: 418, y: 50, rotation:0}, {x: -118, y: 90, rotation:30, ease:Linear.easeNone}, '-=1')
-        .fromTo(f1_chooper2, 5, {autoAlpha: 1, x: -89, y: 20, rotation:0}, {x: 389, y: 60, rotation:-50, ease:Linear.easeNone}, '-=2.5')
+        .fromTo(f1_chooper1, 5, {autoAlpha: 1, x: 418, y: 40, rotation:0}, {x: -118, y: 60, rotation:30, ease:Linear.easeNone}, '-=1')
+        .fromTo(f1_chooper2, 5, {autoAlpha: 1, x: -89, y: 10, rotation:0}, {x: 389, y: 30, rotation:-50, ease:Linear.easeNone}, '-=2.5')
         .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3');
-				
+
       tl2.to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
         .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
         .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '+=2')
