@@ -37,6 +37,29 @@ a {
   background: url("f1-bg.jpg") center no-repeat;
   opacity: 1;
 }
+#f1_cows {
+  opacity: 1;
+  background: url("cows.png") center no-repeat;
+  top: -31px;
+  left: 458px;
+  width: 158px;
+  height: 127px;
+  -ms-transform-origin: 50px 123px; /* IE 9 */
+  -webkit-transform-origin: 50px 123px; /* Chrome, Safari, Opera */
+  transform-origin: 50px 123px;
+}
+#f1_cow {
+  opacity: 1;
+  position: absolute;
+  top: 78px;
+  left: 455px;
+  width: 31px;
+  height: 37px;
+  background: url("cow.png") center no-repeat;
+  -ms-transform-origin: 29px 1px; /* IE 9 */
+  -webkit-transform-origin: 29px 1px; /* Chrome, Safari, Opera */
+  transform-origin: 29px 1px;
+}
 #f1_text1 {
   background: url("f1_text1.png") center no-repeat;
 }

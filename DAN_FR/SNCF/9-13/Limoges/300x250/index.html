@@ -16,10 +16,12 @@
 
 		var tl1 = new TimelineLite();
     var tl2 = new TimelineLite();
+    var tl3 = new TimelineLite();
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-      shake();
+      shakePlate();
+      shakeCow();
 			tl1.fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {y:0, ease:Power0.easeInOut})
           .to(f1_cow, 0.5, {y:250, autoAlpha:0, ease:Power2.easeInOut}, '+=2.5')
           .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut},'+=0.5')
@@ -34,9 +36,14 @@
           .fromTo(f3_text5, 0.5, {autoAlpha:1, y:30}, {y:0,  ease:Power2.easeInOut});
 		}
 
-    function shake() {
-      tl2.to(f1_cow, 0.9, {rotation:-5, ease:Linear.easeNone})
-         .to(f1_cow, 0.9, {rotation:5, ease:Linear.easeNone, onComplete:shake});
+    function shakePlate() {
+      tl2.to(f1_cows, 0.9, {rotation:-1, ease:Linear.easeNone})
+         .to(f1_cows, 0.9, {rotation:1, ease:Linear.easeNone, onComplete:shakePlate});
+    }
+
+    function shakeCow() {
+      tl3.to(f1_cow, 0.9, {rotation:-10, ease:Linear.easeNone})
+         .to(f1_cow, 0.9, {rotation:0, ease:Linear.easeNone, onComplete:shakeCow});
     }
 
 		window.onload = init;

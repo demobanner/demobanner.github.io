@@ -15,13 +15,18 @@
     var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl = new TimelineLite();
+    var tl1 = new TimelineLite();
+    var tl2 = new TimelineLite();
 
 		function init() {
       document.getElementById("banner").style.opacity = 1;
-      tl.to(f1_text1, 0.5, {autoAlpha:1, y:0, ease:Power0.easeInOut},'+=0.5')
-        .to(f1_bg, 0.5, {y:80, ease:Power0.easeInOut},'+=1')
-        .to(f1_text2, 0.5, {autoAlpha:1, y:0, ease:Power0.easeInOut},'+=0.5')
-        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power3.easeInOut}, "+=2.5")
+      shakePlate();
+      shakeCow();
+      tl.to(f1_text1, 0.5, {autoAlpha:1, y:0, ease:Power0.easeInOut})
+        .to(f1_cow, 0.5, {y:200, ease:Power2.easeInOut}, '+=0.5')
+        .to(f1_bg, 0.5, {y:80, ease:Power0.easeInOut})
+        .to(f1_text2, 0.5, {autoAlpha:1, y:0, ease:Power0.easeInOut})
+        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power3.easeInOut}, "+=1")
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
         .fromTo([f2_text1, f2_text2], 0.5, {autoAlpha:0}, {autoAlpha:1, ease:Power2.easeInOut})
         .to(f2_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, '+=2')
@@ -33,6 +38,16 @@
         .fromTo(f3_text4, 0.5, {autoAlpha:1, y:30}, {y:0,  ease:Power2.easeInOut});
 		}
 
+    function shakePlate() {
+      tl1.to(f1_cows, 0.9, {rotation:-1, ease:Linear.easeNone})
+         .to(f1_cows, 0.9, {rotation:1, ease:Linear.easeNone, onComplete:shakePlate});
+    }
+
+    function shakeCow() {
+      tl2.to(f1_cow, 0.9, {rotation:-10, ease:Linear.easeNone})
+         .to(f1_cow, 0.9, {rotation:0, ease:Linear.easeNone, onComplete:shakeCow});
+    }
+
 		window.onload = init;
 
 	</script>
@@ -40,7 +55,10 @@
 <body>
 	<div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
-      <div id="f1_bg" class="layer"></div>
+      <div id="f1_bg" class="layer">
+        <div id="f1_cows" class="layer"></div>        
+        <div id="f1_cow"></div>
+      </div>
       <div id="f1_text1" class="layer"></div>
       <div id="f1_text2" class="layer"></div>
 

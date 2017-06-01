@@ -38,6 +38,13 @@ a {
 #f1_cows {
   opacity: 1;
   background: url("cows.png") center no-repeat;
+  top: 52px;
+  left: 48px;
+  width: 162px;
+  height: 130px;
+  -ms-transform-origin: 50px 123px; /* IE 9 */
+  -webkit-transform-origin: 50px 123px; /* Chrome, Safari, Opera */
+  transform-origin: 50px 123px;
 }
 #f1_cow {
   position: absolute;

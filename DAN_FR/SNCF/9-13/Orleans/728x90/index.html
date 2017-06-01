@@ -19,7 +19,7 @@
         tlLight2 = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
 			tl.fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {y:0, ease:Power1.easeInOut})
         .fromTo(f1_bg, 3.5, {autoAlpha:1, y:-68}, {y:0, ease:Linear.easeNone})
         .fromTo(f1_house, 3.5, {autoAlpha:1, y:-68}, {y:0, ease:Linear.easeNone},'-=3.5')
