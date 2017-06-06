@@ -24,10 +24,10 @@
       document.getElementById("banner").style.visibility = 'visible';
 			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
         .fromTo(f1_chooper1, 5, {autoAlpha: 1, x: 418, y: 40, rotation:0}, {x: -118, y: 60, rotation:30, ease:Linear.easeNone}, '-=1')
-        .fromTo(f1_chooper2, 5, {autoAlpha: 1, x: -89, y: 10, rotation:0}, {x: 389, y: 30, rotation:-50, ease:Linear.easeNone}, '-=2.5')
-        .to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '-=3');
+        .fromTo(f1_chooper2, 5, {autoAlpha: 1, x: -89, y: 10, rotation:0}, {x: 389, y: 30, rotation:-50, ease:Linear.easeNone}, '-=2.5');
 
-      tl2.to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
+      tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, '4')
+        .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
         .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
         .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '+=2')
         .fromTo(f3_text1, 0.5, {autoAlpha: 1, x: -300}, {x: 0,  ease: Power0.easeInOut})
