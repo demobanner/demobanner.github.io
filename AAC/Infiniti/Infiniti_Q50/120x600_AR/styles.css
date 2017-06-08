@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body {
+  margin:0;
+  padding: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 118px;
+  height: 598px;
+}
+#banner {
+  position: relative;
+  width: 118px;
+  height: 598px;
+  border: 1px solid #000;
+  overflow: hidden;
+  background-color: #fff;
+}
+#bg {
+  background: url('bg.jpg') center no-repeat;
+  opacity: 1;
+}
+#car {
+  background: url('car.png') center no-repeat;
+  width: 187px;
+  opacity: 1;
+  -ms-transform: matrix(1, 0, 0, 1, -187, -30); 
+  -webkit-transform: matrix(1, 0, 0, 1, -187, -30); 
+  transform: matrix(1, 0, 0, 1, -187, -30); 
+}
+#wheels {
+  background: url('wheels.png') center no-repeat;
+  width: 187px;
+  opacity: 1;
+}
+#f1_text {
+  background: url('f1_text.png') center no-repeat;
+}
+#f2_text {
+  background: url('f2_text.png') center no-repeat;
+}
+#f2_tc {
+  background: url('f2_tc.png') center no-repeat;
+}
+#f3_text {
+  background: url('f3_text.png') center no-repeat;
+}
+#f4_text {
+  background: url('f4_text.png') center no-repeat;
+}
+#f5_text {
+  background: url('f5_text.png') center no-repeat;
+}
+#f6_text {
+  background: url('f6_text.png') center no-repeat;
+}
+#f7_text {
+  background: url('f7_text.png') center no-repeat;
+}
+#cta {
+  background: url('cta.png') center no-repeat;
+  top: 30px;
+}
+#carname {
+  background: url('carname.png') center no-repeat;
+}
+#logo_awr {
+  background: url('logo_awr.png') center no-repeat;
+}
+#logo_infiniti {
+  background: url('logo_infiniti.png') center no-repeat;
+}
+/*#btn_replay {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+}*/
