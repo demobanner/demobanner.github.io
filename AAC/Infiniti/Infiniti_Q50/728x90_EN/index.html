@@ -25,8 +25,13 @@
 		  tl.to(wheels, 0.1, {autoAlpha: 0, ease: Power4.easeOut}, "-=0.2")
 
 		.to([f1_text,carname], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-        .to(f1_text, 0.5, {autoAlpha: 0, delay: 2})
 						
+				.to(f1_text_a, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
+				.to(f1_text_a, 0.5, {autoAlpha: 0, delay: 2})
+
+				.to(f1_text_b, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+				.to([f1_text, f1_text_b], 0.5, {autoAlpha: 0, delay: 2})
+
         .to([f2_text, tc], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
         .to([f2_text, tc], 0.5, {autoAlpha: 0, delay: 2.5})
 
@@ -77,7 +82,9 @@
     <div id="car" class="layer">
       <div id="wheels" class="layer"></div>
     </div>
-    <div id="f1_text" class="layer"></div>
+		<div id="f1_text" class="layer"></div>
+		<div id="f1_text_a" class="layer"></div>
+		<div id="f1_text_b" class="layer"></div>
     <div id="f2_text" class="layer"></div>
     <div id="tc" class="layer"></div>
     <div id="f3_text" class="layer"></div>
@@ -85,6 +92,7 @@
     <div id="f5_text" class="layer"></div>
     <div id="f6_text" class="layer"></div>
     <div id="f7_text" class="layer"></div>
+    <div id="f8_text" class="layer"></div>
     <div id="cta" class="layer"></div>
     <div id="carname" class="layer"></div>
     <div id="logo_awr" class="layer"></div>
