@@ -24,20 +24,20 @@
 		  tl.to(car, 1, {autoAlpha:1, x: 0, y: 0, ease: Power1.easeOut});
 		  tl.to(wheels, 0.1, {autoAlpha: 0, ease: Power4.easeOut}, "-=0.2")
 
-        .to([f2_text, tc, carname], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+        .to([f2_text, carname, tc], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
         .to([f2_text, tc], 0.5, {autoAlpha: 0, delay: 2.5})
 
-        .to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-        .to(f3_text, 0.5, {autoAlpha: 0, delay: 2.5})
+        .to(f1_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
 
-				.to([f1_text], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-						
 				.to(f1_text_a, 0.5, {autoAlpha: 1, ease: Power2.easeOut}, "+=1")
 				.to(f1_text_a, 0.5, {autoAlpha: 0, delay: 2.5})
 
 				.to(f1_text_b, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
 				.to([f1_text, f1_text_b], 0.5, {autoAlpha: 0, delay: 2.5})
-
+						
+        .to([f3_text], 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+        .to(f3_text, 0.5, {autoAlpha: 0, delay: 2.5})
+				
         .to(f4_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
         .to(f4_text, 0.5, {autoAlpha: 0, delay: 2.5})
 
@@ -48,7 +48,7 @@
         .to(f6_text, 0.5, {autoAlpha: 0, delay: 2.5})
 
         .to(f7_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-        .to([carname,f7_text], 0.5, {autoAlpha: 0, delay: 2.5})
+        .to([f7_text, carname], 0.5, {autoAlpha: 0, delay: 2.5})
 
 		.to(wheels, 0.1, {autoAlpha: 1, ease: Power4.easeOut})
 	  	.to(car, 1, {x: 330, y: 40, ease: Power2.easeIn})
