@@ -39,11 +39,17 @@ body {
 #f1_text {
   background: url('f1_text.png') center no-repeat;
 }
+#f1_text_a {
+  background: url('f1_text_a.png') center no-repeat;
+}
+#f1_text_b {
+  background: url('f1_text_b.png') center no-repeat;
+}
 #f2_text {
   background: url('f2_text.png') center no-repeat;
 }
-#f2_tc {
-  background: url('f2_tc.png') center no-repeat;
+#tc {
+  background: url('tc.png') center no-repeat;
 }
 #f3_text {
   background: url('f3_text.png') center no-repeat;
@@ -59,6 +65,9 @@ body {
 }
 #f7_text {
   background: url('f7_text.png') center no-repeat;
+}
+#f8_text {
+  background: url('f8_text.png') center no-repeat;
 }
 #cta {
   background: url('cta.png') center no-repeat;
