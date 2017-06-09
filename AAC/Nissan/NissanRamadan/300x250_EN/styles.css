@@ -31,9 +31,16 @@ a {
   right: 0;
   bottom: 0;
 }
+#bg {
+  background: url("f6_bg.jpg") center no-repeat;
+  opacity: 1;
+}
 #f1_bg {
   background: url("f1_bg.jpg") center no-repeat;
-  opacity: 1;
+}
+#f1_text {
+  background: url("f8_text.png") center no-repeat;
+  top: 50px;
 }
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
@@ -56,7 +63,9 @@ a {
 }
 #f8_text {
   background: url("f8_text.png") center no-repeat;
-	top: 50px;
+  -ms-transform: matrix(0.9, 0, 0, 0.9, -38, -165); 
+  -webkit-transform: matrix(0.9, 0, 0, 0.9, -38, -165); 
+  transform: matrix(0.9, 0, 0, 0.9, -38, -165);
 }
 #car {
   background: url("car.png") center no-repeat;

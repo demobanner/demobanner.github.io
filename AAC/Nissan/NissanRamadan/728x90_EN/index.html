@@ -22,7 +22,9 @@
 
 		function init() {
 			// tl.to(f1_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-			tl.to(f2_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+			tl.to(f1_text, 0.5, {autoAlpha: 1, top:0, ease: Power2.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha: 0, ease: Power0.easeInOut}, "+=2")
+				.to(f2_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to(f3_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=0.5")
 				.to(f4_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=0.5")
 				.to(f5_bg, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=0.5")
@@ -32,7 +34,6 @@
 				.to(f7_text, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "+=2");
 
 			tl.to(f8_text, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
-				.to(f8_text, 0.5, {scale:0.85, transformOrigin: "1305px 44px", ease: Power2.easeInOut}, "+=2")
 				.to(f9_img, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
 				.to(f9_img, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "+=2")
 				.to(logo_AWR, 0.5, {autoAlpha:1, top:0, ease: Power2.easeInOut})
@@ -60,6 +61,8 @@
 <body>
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+    	<div id="bg" class="layer"></div>
+	    <div id="f1_text" class="layer"></div>
       <div id="f1_bg" class="layer"></div>
       <div id="f2_bg" class="layer"></div>
       <div id="f3_bg" class="layer"></div>

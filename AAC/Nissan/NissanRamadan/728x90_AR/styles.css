@@ -31,9 +31,12 @@ a {
   right: 0;
   bottom: 0;
 }
+#bg {
+  background: url("f6_bg.jpg") center no-repeat;
+  opacity: 1;
+}
 #f1_bg {
   background: url("f1_bg.jpg") center no-repeat;
-  opacity: 1;
 }
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
@@ -54,12 +57,17 @@ a {
   background: url("f7_text.png") center no-repeat;
   top: 30px;
 }
+#f1_text {
+  background: url("f8_text.png") center no-repeat;
+  top: 30px;
+}
 #f8_text {
   background: url("f8_text.png") center no-repeat;
   top: 30px;
   -ms-transform: scale(1); 
   -webkit-transform: scale(1); 
   transform: scale(1);
+      left: -148px;
 }
 #f9_img {
   background: url("f9_img.png") center no-repeat;

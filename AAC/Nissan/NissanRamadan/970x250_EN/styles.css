@@ -31,9 +31,12 @@ a {
   right: 0;
   bottom: 0;
 }
+#bg {
+  background: url("f6_bg.jpg") center no-repeat;
+  opacity: 1;
+}
 #f1_bg {
   background: url("f1_bg.jpg") center no-repeat;
-  opacity: 1;
 }
 #f2_bg {
   background: url("f2_bg.jpg") center no-repeat;
@@ -54,12 +57,19 @@ a {
   background: url("f7_text.png") center no-repeat;
   top: 50px;
 }
+#f1_text {
+  background: url("f8_text.png") center no-repeat;
+  top: 50px;
+}
 #f8_text {
   background: url("f8_text.png") center no-repeat;
   top: 50px;
-  -ms-transform: scale(1); 
-  -webkit-transform: scale(1); 
-  transform: scale(1);
+  -ms-transform: matrix(0.87, 0, 0, 0.87, 0, 0); 
+  -webkit-transform: matrix(0.87, 0, 0, 0.87, 0, 0); 
+  transform: matrix(0.87, 0, 0, 0.87, 0, 0);
+  -ms-transform-origin: 106px -380px 0px;
+  -webkit-transform-origin: 106px -380px 0px;
+  transform-origin: 106px -380px 0px;
 }
 #f9_img {
   background: url("f9_img.png") center no-repeat;
