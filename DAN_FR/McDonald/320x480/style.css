@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body, body * {
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+.floater_dc{
+  position: relative;
+  display: none;
+  width: 320px;
+  height: 480px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.background_ext_dc{
+  width: 320px;
+  height: 480px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+}
+.close_btn_dc{
+  width: 20px;
+  height: 18px;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  position: absolute;
+  background-image: url('close.png');
+  background-repeat: no-repeat;
+  z-index: 220;
+}
+#container_dc{
+  position: relative;
+  overflow: hidden;
+  width: 318px;
+  height: 478px;
+  border: 1px solid #777;
+  background: url(bg.jpg) center no-repeat;
+}
+#banner{
+  visibility: hidden;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 318px;
+  height: 478px;
+  opacity: 0;
+}
+#f1_img{
+  background: url(f1_img.jpg) center no-repeat;
+}
+#f2_img{
+  background: url(f2_img.jpg) center no-repeat;
+}
+#f3_img{
+  background: url(f3_img.jpg) center no-repeat;
+}
+#f4_img{
+  background: url(f4_img.jpg) center no-repeat;
+}
+#f5_bg{
+  background: #000;
+}
+#f5_img{
+  background: url(f5_img.jpg) center no-repeat;
+}
+#f5_text{
+  top: 150px;
+  background: url(f5_text.png) center no-repeat;
+}
+#f6_bg{
+  background: url(f6_bg.jpg) center no-repeat;
+}
+#f6_img{
+  background: url(f6_img.jpg) center no-repeat;
+}
+#f6_text{
+  background: url(f6_text.png) center no-repeat;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+       transform: scale(2);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+#f7_img1{
+  left: -320px;
+  background: url(f7_img1.png) center no-repeat;
+}
+#f7_img2{
+  left: 320px;
+  background: url(f7_img2.png) center no-repeat;
+}
+#cta{
+  background: url(cta.png) center no-repeat;
+}
+#cta_bg1{
+  background: url(cta_bg1.png) center no-repeat;
+}
+#cta_bg2{
+  background: url(cta_bg2.png) center no-repeat;
+}
+#cta_bg3{
+  background: url(cta_bg3.png) center no-repeat;
+}
+#cta_bg4{
+  background: url(cta_bg4.png) center no-repeat;
+}
+.clipBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  clip:rect(0px 318px 478px 0px);
+}
+#logo1{
+  top: 150px;
+  background: url(logo1.png) center no-repeat;
+}
+#logo2{
+  background: url(logo2.png) center no-repeat;
+}
+#light{
+  background: url(light.png) center no-repeat;
+}
