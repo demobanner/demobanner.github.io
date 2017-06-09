@@ -62,6 +62,7 @@ body, body * {
   visibility: hidden;
   width: 318px;
   height: 478px;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,6 +160,7 @@ body, body * {
   visibility: hidden;
   width: 478px;
   height: 318px;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;

@@ -22,9 +22,10 @@ dcAd.setObjects = function() {
 	dcAd.degreesText = document.getElementById('degreesText');
 
 	dcAd.banner1.style.display = 'inline';
-	dcAd.banner1animation();
 	dcAd.banner2.style.display = 'none';
-	dcAd.banner2.style.visibility = 'hidden';
+
+  dcAd.banner1animation();
+  dcAd.banner2animation();
 
 	dcAd.addListeners();
 }
@@ -33,9 +34,6 @@ dcAd.setObjects = function() {
 dcAd.addListeners = function() {
 
 	dcAd.bgExit.addEventListener('click', dcAd.bgExitHandler , false);
-
-	// dcAd.modeText.innerHTML = 'mode: '+Enabler.getOrientation().getMode();
-	// dcAd.degreesText.innerHTML = 'degrees: '+Enabler.getOrientation().getDegrees();
 
 	console.log("orientation mode: "+Enabler.getOrientation().getMode());
 	console.log("orientation degrees: "+Enabler.getOrientation().getDegrees());
@@ -62,25 +60,18 @@ dcAd.changeOrientationHandler = function(){
 	console.log("orientation mode: "+Enabler.getOrientation().getMode());
 	console.log("orientation degrees: "+Enabler.getOrientation().getDegrees());
 
-	// dcAd.modeText.innerHTML = 'mode: '+Enabler.getOrientation().getMode();
-	// dcAd.degreesText.innerHTML = 'degrees: '+Enabler.getOrientation().getDegrees();
-
 	if(Enabler.getOrientation().getMode() == 'portrait'){
 		dcAd.container.style.width = 318+'px';
 		dcAd.container.style.height = 478+'px';
 
 		dcAd.banner1.style.display = 'inline';
-		dcAd.banner1animation();
 		dcAd.banner2.style.display = 'none';
-		dcAd.banner2.style.visibility = 'hidden';
 	}else{
 		dcAd.container.style.width = 478+'px';
 		dcAd.container.style.height = 318+'px';
 
 		dcAd.banner1.style.display = 'none';
-		dcAd.banner1.style.visibility = 'hidden';
 		dcAd.banner2.style.display = 'inline';
-		dcAd.banner2animation();
 	}
 }
 
