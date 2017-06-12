@@ -90,7 +90,7 @@ a {
   background: url("f2_bg7.jpg") center no-repeat;
 }
 #f2_text {
-  background: url("text2.png") no-repeat;
+  background: url("f2_text.png") no-repeat;
 }
 #f3_bg1 {
   background: url("f3_bg1.jpg") center no-repeat;
@@ -118,7 +118,7 @@ a {
 }
 
 #f3_text {
-  background: url("text3.png") no-repeat;
+  background: url("f3_text.png") no-repeat;
 }
 #f4_bg1 {
   background: url("f1_bg1.jpg") center no-repeat;
@@ -145,7 +145,7 @@ a {
   background: url("f1_bg8.jpg") center no-repeat;
 }
 #f4_text {
-  background: url("text4.png") no-repeat;
+  background: url("f4_text.png") no-repeat;
 }
 #f5_bg1 {
   background: url("f5_bg1.jpg") center no-repeat;
