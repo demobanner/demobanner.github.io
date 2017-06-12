@@ -7,15 +7,14 @@
 <!-- SCRWIDTH: 728 -->
 <!-- SCRHEIGHT: 90 -->
 <!-- SCRDATE: 19-08-15 -->
-<script src="http://media.adrcdn.com/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="http://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="//media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
 <script src="TweenLite.min.js"></script>
 <script src="TimelineLite.min.js"></script>
 <script src="CSSPlugin.min.js"></script>
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl1 = new TimelineLite();
 		var tl2 = new TimelineLite();
@@ -23,7 +22,7 @@
     var tl4 = new TimelineLite();
 
 		function init() {
-			document.getElementById("banner").style.opacity = 1;
+			document.getElementById("banner").style.visibility = 'visible';
       wavingFlag(tl2, f1_flag1, 0, 5, 13);
       wavingFlag(tl3, f1_flag2, 0.5, 3, 9);
       wavingFlag(tl4, f1_flag3, 0.25, 3, 9);
@@ -56,7 +55,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
+    <a class="click-tag" onclick="screenad.click("default");" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_flag1" class="layer"></div>
       <div id="f1_flag2" class="layer"></div>
@@ -65,7 +64,7 @@
       <div id="clouds1" class="layer"></div>
       <div id="clouds2" class="layer"></div>
       <div id="clouds3" class="layer"></div>
-      
+
       <div id="f2_bg" class="layer"></div>
       <div id="f2_text1" class="layer"></div>
       <div id="f2_text2" class="layer"></div>

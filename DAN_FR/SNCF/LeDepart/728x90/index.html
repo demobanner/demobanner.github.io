@@ -17,7 +17,7 @@
 		var tl = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
       tl.to(f1_text1, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
         .to(f1_text2, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
 
@@ -38,8 +38,11 @@
 	</script>
 </head>
 <body>
-	<div id="banner">
-    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+  <a class="click-tag" href="javascript:window.open(clickTag)">
+    <noscript>
+      <img src="728x90.gif">
+    </noscript>
+    <div id="banner">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text1" class="layer"></div>
       <div id="f1_text2" class="layer"></div>
@@ -55,8 +58,6 @@
 
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
-    </a>
-  </div>
-
+    </div>
 </body>
 </html>

@@ -7,23 +7,22 @@
 <!-- SCRWIDTH:300 -->
 <!-- SCRHEIGHT:250 -->
 <!-- SCRDATE:25-05-17 -->
-<script src="http://media.adrcdn.com/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="http://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="//media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
 <script src="TweenLite.min.js"></script>
 <script src="TimelineLite.min.js"></script>
 <script src="CSSPlugin.min.js"></script>
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-		var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
 			tl.fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {y:0, ease:Power0.easeInOut})
         .fromTo(f1_clouds, 5, {autoAlpha:1, x:0}, {x:-150, ease:Linear.easeNone}, '-=0.5')
-        
+
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut},'-=2')
         .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, "-=1.5")
         .fromTo([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:0}, {autoAlpha:1, ease:Power2.easeInOut}, "-=1")
@@ -47,7 +46,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
+    <a class="click-tag" onclick="screenad.click("default");" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_clouds" class="layer"></div>
       <div id="f1_img1" class="layer"></div>

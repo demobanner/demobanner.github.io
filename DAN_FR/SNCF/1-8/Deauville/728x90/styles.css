@@ -14,7 +14,7 @@ a {
   overflow: hidden;
   border:1px solid black;
   background-color: #ffffff;
-  opacity: 0;
+  visibility: hidden;
 }
 .layer {
   position: absolute;
@@ -45,16 +45,16 @@ a {
   background: url("f1_boat.png") center no-repeat;
   width:32px;
   height: 7px;
-  -ms-transform: matrix(1, 0, 0, 1, 0, 0); 
-  -webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #f1_pyramid {
   background: url("f1_pyramid.png") center no-repeat;
   width:20px;
   height: 18px;
-  -ms-transform: matrix(1, 0, 0, 1, 30, -12); 
-  -webkit-transform: matrix(1, 0, 0, 1, 30, -12); 
+  -ms-transform: matrix(1, 0, 0, 1, 30, -12);
+  -webkit-transform: matrix(1, 0, 0, 1, 30, -12);
   transform: matrix(1, 0, 0, 1, 30, -12);
 }
 #f1_man {

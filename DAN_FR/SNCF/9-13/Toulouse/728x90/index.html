@@ -1,23 +1,25 @@
-<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="ad.size" content="width=728,height=90">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <title>Banner</title>
-  <script src="TweenLite.min.js"></script>
-  <script src="TimelineLite.min.js"></script>
-  <script src="CSSPlugin.min.js"></script>
-  <script src="EasePack.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
+
+<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+<!-- SCRVERSION: screenad_interface_1.0.3 -->
+<!-- SCRFORMAT: banner -->
+<!-- SCRWIDTH: 728 -->
+<!-- SCRHEIGHT: 90 -->
+<!-- SCRDATE: 19-08-15 -->
+<script src="//media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+<script src="EasePack.min.js"></script>
+<link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-    var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
       tl.fromTo(f1_text, 0.5, {autoAlpha:1, y:-100}, {autoAlpha:1, y:0, ease:Power0.easeInOut})
 
         .to(f2_bg, 0.5, {autoAlpha:1, ease:Power3.easeInOut}, "+=2")
@@ -37,7 +39,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+    <a class="click-tag" onclick="screenad.click("default");" href="javascript:">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
 

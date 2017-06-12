@@ -7,21 +7,20 @@
 <!-- SCRWIDTH:728 -->
 <!-- SCRHEIGHT:90 -->
 <!-- SCRDATE:25-05-17 -->
-<script src="http://media.adrcdn.com/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="http://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="//media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
 <script src="TweenLite.min.js"></script>
 <script src="TimelineLite.min.js"></script>
 <script src="CSSPlugin.min.js"></script>
 <script src="EasePack.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript">
-    var clickTag = 'http://developer.weborama.com/?page_id=58#Using%20Clicks';
 
 		var tl = new TimelineLite();
     var tl1 = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.opacity = 1;
+      document.getElementById("banner").style.visibility = 'visible';
       fewanimation();
        tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
        .fromTo(f1_screen, 0.5, {autoAlpha:1, y: 0}, {y: 88, ease:Linear.easeNone},"+=1.5")
@@ -45,7 +44,7 @@
       tl1.to(few, 0.3, {rotation: -2,  transformOrigin: "0% 50%", ease:Linear.easeNone})
          .to(few, 0.6, {rotation: 2, ease:Linear.easeNone})
          .to(few, 0.3, {rotation: 0, ease:Linear.easeNone, onComplete: fewanimation});
-    
+
     }
 		window.onload = init;
 
@@ -53,7 +52,7 @@
 </head>
 <body>
 	<div id="banner">
-    <a class="click-tag" onclick="screenad.click(clickTag);" href="javascript:">
+    <a class="click-tag" onclick="screenad.click("default");" href="javascript:">
       <div id="f1_screen">
       <div id="f1_bg" class="layer"></div>
       <div id="cloud3" class="layer"></div>

@@ -14,7 +14,7 @@ a {
   overflow: hidden;
   border:1px solid black;
   background-color: #ffffff;
-  opacity: 0;
+  visibility: hidden;
 }
 .layer {
   position: absolute;
@@ -38,7 +38,7 @@ a {
 #mount {
   opacity: 1;
   background: url("mount.png") center no-repeat;
-} 
+}
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }
