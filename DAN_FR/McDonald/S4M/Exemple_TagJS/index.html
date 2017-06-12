@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Template testing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  	<meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="mraid.js"></script>
+</head>
+
+<body id="acf-body">
+
+  <div id="_s4m_container_{S4M_TrackID}">
+      <script>
+         var _s4mConfig = {
+             id: "{S4M_TrackID}",
+             containerId : "_s4m_container_{S4M_TrackID}",
+             deviceAdvertiserId: "undefined",
+             absoluteAssetURL : "http://dev.yancomobile.com/tmp/",
+             clickURL : "undefined",
+             trackImpURL : [],
+             lat: "undefined",
+             lon: "undefined"
+         };
+         (function(){
+              var rnd = new Date().getTime();
+             var _s4mScp = document.createElement('script');
+             _s4mScp.src = "./tag.js?rnd="+rnd;
+
+             document.getElementsByTagName('head')[0].appendChild(_s4mScp);
+         })();
+   </script>
+  </div>
+</body>
+</html>
