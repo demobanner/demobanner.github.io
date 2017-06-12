@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 638px;
+  height: 98px;
+  overflow: hidden;
+  border:1px solid #777;
+  background-color: #000;
+  visibility: hidden;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 638px;
+  height: 98px;
+  opacity: 0;
+}
+#f1_img {
+  background: url("f1_img.png") center no-repeat;
+}
+#f1_text1 {
+  background: url("f1_text1.png") center no-repeat;
+}
+#f1_text2 {
+  background: url("f1_text2.png") center no-repeat;
+}
+#f1_text3 {
+  background: url("f1_text3.png") center no-repeat;
+}
+#f1_text4 {
+  background: url("f1_text4.png") center no-repeat;
+}
+#f1_text5 {
+  background: url("f1_text5.png") center no-repeat;
+}
+#f2_img {
+  background: url("f2_img.png") center no-repeat;
+  width: 321px;
+  height: 191px;
+  -ms-transform: matrix(1, 0, 0, 1, 640, -49); 
+  -webkit-transform: matrix(1, 0, 0, 1, 640, -49); 
+  transform: matrix(1, 0, 0, 1, 640, -49);
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f2_logo {
+  background: url("f2_logo.png") center no-repeat;
+  -ms-transform: translate(0px, 100px);
+  -webkit-transform: translate(0px, 100px); 
+  transform: translate(0px, 100px);
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#cta_bg1{
+  background: url("cta_bg1.png") center no-repeat;
+  opacity: 0;
+}
+#cta_bg2{
+  background: url("cta_bg2.png") center no-repeat;
+}
+#cta_bg3{
+  background: url("cta_bg3.png") center no-repeat;
+}
+#cta_bg4{
+  background: url("cta_bg4.png") center no-repeat;
+}
+.clipBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  clip:rect(0px 638px 98px 0px);
+}
+#light {
+  background: url("light.png") center no-repeat;
+}
+

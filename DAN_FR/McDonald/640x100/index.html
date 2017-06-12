@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="ad.size" content="width=640,height=100">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>Banner</title>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script src="EasePack.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    var clickTag = 'https://www.google.com/';
+
+    var tl = new TimelineLite();
+
+
+    function init() {
+      document.getElementById("banner").style.visibility = 'visible';      
+      tl.to(light, 0.2, {autoAlpha:1, ease:Power2.easeInOut}, 0.5)
+        .to(f1_text1, 0.2, {autoAlpha:1, ease:Power2.easeInOut}, 0.5)
+        .to(f1_img, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 1)
+        .to(f1_text2, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 1.5)
+        .to(f1_text2, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, 2.5)
+        .to(f1_text3, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 2.5)
+        .to(f1_text3, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, 3.5)
+        .to(f1_text4, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 3.5)
+        .to(f1_text4, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, 4.5)
+        .to(f1_text5, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 4.5)
+        .to(f1_text1, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, 5)
+        .to(f1_img, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, 5)
+        .to(f1_text5, 0.5, {y:90, ease:Power2.easeInOut}, 5.5);
+
+      tl.to(f2_logo, 0.5, {autoAlpha:1, y:0, ease:Power2.easeInOut}, 6.5)
+        .to(f2_text, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 7)
+        .to(f2_img, 0.5, {autoAlpha:1, x:367, ease:Power2.easeInOut}, 7.5)
+        .to(f2_text, 0.5, {autoAlpha:0, ease:Power2.easeInOut}, 9.5)
+        .to(f2_img, 0.5, {scale:0.55, x:366, y:-43, ease:Power2.easeInOut}, 10)
+        .to(cta, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 10)
+        .to(cta_bg1, 0, {autoAlpha:1, clip:"rect(0px 638px 98px 0px)", ease: Power1.easeOut}, 10.5)
+        .from(cta_bg2, 0.5, {autoAlpha:1, clip:"rect(0 638px 0 0)", ease: Power1.easeOut}, 10.5)
+        .from(cta_bg3, 0.75, {autoAlpha:1, clip:"rect(0 638px 98px 638px)", ease: Power1.easeOut}, 10.75)
+        .from(cta_bg4, 0.5, {autoAlpha:1, clip:"rect(98px 638px 98px 0)", ease: Power1.easeOut}, 11);
+    }
+      
+    window.onload = init;
+
+  </script>
+</head>
+<body>
+    <div id="banner">
+      <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+        <div id="f1_img" class="layer"></div>
+        <div id="light" class="layer"></div>
+        <div id="f1_text1" class="layer"></div>
+        <div id="f1_text2" class="layer"></div>
+        <div id="f1_text3" class="layer"></div>
+        <div id="f1_text4" class="layer"></div>
+        <div id="f1_text5" class="layer"></div>
+
+        <div id="f2_img" class="layer"></div>
+        <div id="f2_logo" class="layer"></div>
+        <div id="f2_text" class="layer"></div>
+
+        <div id="cta_bg1" class="clipBox"></div>
+        <div id="cta_bg2" class="clipBox"></div>
+        <div id="cta_bg3" class="clipBox"></div>
+        <div id="cta_bg4" class="clipBox"></div>
+        <div id="cta" class="layer"></div>
+      </a>
+    </div>
+</body>
+</html>
