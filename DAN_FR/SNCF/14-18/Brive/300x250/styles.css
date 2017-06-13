@@ -47,8 +47,12 @@ a {
 }
 #f1_bg {
   background: url("f1_bg.jpg") center no-repeat;
+  opacity: 1;
   width: 790px;
   height: 650px;
+  -ms-transform: matrix(1, 0, 0, 1, -254, -149);
+  -webkit-transform: matrix(1, 0, 0, 1, -254, -149); 
+  transform: matrix(1, 0, 0, 1, -254, -149);
 }
 #f1_img {
   background: url("f1_img.png") center no-repeat;
