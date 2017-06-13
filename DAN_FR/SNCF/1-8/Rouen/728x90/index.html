@@ -20,7 +20,7 @@
 				tl2 = new TimelineLite();
 
 		function init() {
-      document.getElementById("banner").style.visibility = 'visible';
+      document.getElementById("stageBackground").style.visibility = 'visible';
 			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-90}, {y: 0, ease: Power0.easeInOut})
         .fromTo(f1_bg, 3.5, {y: -39}, {y: 0,ease:Linear.easeNone})
         .fromTo(f1_chooper1, 4, {autoAlpha: 1, x: 728, y: 10, rotation:0}, {x: 328, y: 70, rotation:30, ease:Linear.easeNone},'-=3.5')
@@ -42,8 +42,8 @@
 	</script>
 </head>
 <body>
-	<div id="banner">
-    <a class="click-tag" onclick="screenad.click("default");" href="javascript:">
+	<div id="stageContent" onClick="screenad.click();">
+    <div id="stageBackground">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="f1_chooper1" class="layer"></div>
@@ -61,8 +61,7 @@
 
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
-      <!-- <div id="extra_click_bt" onclick="screenad.click('extra1');"></div> -->
-    </a>
+    </div>
   </div>
 
 </body>

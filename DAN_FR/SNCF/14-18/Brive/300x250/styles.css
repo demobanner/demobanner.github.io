@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+a {
+  border: none;
+  display: inline-block;
+}
+#stageContent {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: 250px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#stageBackground {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 298px;
+  height: 248px;
+  right: auto;
+  bottom: auto;
+  border:  solid 1px #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
+  z-index: -100;
+  overflow: hidden;
+  visibility: hidden;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+#text1,#text2 {
+  left: -300px;
+}
+#f1_bg {
+  background: url("f1_bg.jpg") center no-repeat;
+  width: 790px;
+  height: 650px;
+}
+#f1_img {
+  background: url("f1_img.png") center no-repeat;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f1_clouds {
+  background: url("f1_clouds.png") center no-repeat;
+  width: 404px;
+}
+#f2_bg {
+  background: #0088ce;
+}
+#f2_text1 {
+  background: url("f2_text1.png") center no-repeat;
+}
+#f2_text2 {
+  background: url("f2_text2.png") center no-repeat;
+}
+#f2_text3 {
+  background: url("f2_text3.png") center no-repeat;
+}
+#f3_text1 {
+  background: url("f3_text1.png") center no-repeat;
+}
+#f3_text2 {
+  background: url("f3_text2.png") center no-repeat;
+}
+#f3_text3 {
+  background: url("f3_text3.png") center no-repeat;
+}
+#f3_text4 {
+  background: url("f3_text4.png") center no-repeat;
+}
+#f3_text5 {
+  background: url("f3_text5.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 16px;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 0;
+}
+#extra_click_bt{
+	width: 80px;
+	height: 19px;
+	position: absolute;
+	left: 108px;
+	top: 208px;
+	cursor: pointer;
+}

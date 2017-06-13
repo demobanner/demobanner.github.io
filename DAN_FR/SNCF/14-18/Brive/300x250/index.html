@@ -1,0 +1,69 @@
+<html>
+<head>
+
+<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+<!-- SCRVERSION: screenad_interface_1.0.3 -->
+<!-- SCRFORMAT: banner -->
+<!-- SCRWIDTH: 300 -->
+<!-- SCRHEIGHT: 250 -->
+<!-- SCRDATE: 19-08-15 -->
+<script src="//media.adrcdn.com/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+<script src="EasePack.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+		var tl = new TimelineLite(),
+				tl2 = new TimelineLite();
+
+		function init() {
+      document.getElementById("stageBackground").style.visibility = 'visible';
+			tl.fromTo(f1_bg, 1, {autoAlpha:1, scale:1, x:-254, y:-149}, {scale:0.41, x:-251, y:-209, ease: Power1.easeInOut})
+				.to(f1_img, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+				.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut}, "-=0.1");
+
+    //   tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
+    //     .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+    //     .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
+    //     .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
+    //     .fromTo(f3_text1, 0.5, {autoAlpha: 1, x: -300}, {x: 0,  ease: Power1.easeInOut})
+				// .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+    //     .fromTo(f3_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+    //     .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+    //     .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power1.easeInOut})
+    //     .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
+
+    	tl.fromTo(f1_clouds, 5, {autoAlpha:1, x:0, y:0}, {x:0, y:0, ease: Power1.easeInOut}, 0);
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="stageContent" onClick="screenad.click();">
+    <div id="stageBackground">
+      <div id="f1_bg" class="layer"></div>
+      <div id="f1_clouds" class="layer"></div>
+      <div id="f1_img" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+
+      <div id="f2_bg" class="layer"></div>
+      <div id="f2_text1" class="layer"></div>
+      <div id="f2_text2" class="layer"></div>
+      <div id="f2_text3" class="layer"></div>
+
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f3_text3" class="layer"></div>
+      <div id="f3_text4" class="layer"></div>
+      <div id="f3_text5" class="layer"></div>
+
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </div>
+  </div>
+</body>
+</html>

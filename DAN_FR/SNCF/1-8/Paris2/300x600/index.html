@@ -19,7 +19,7 @@
 		var tl2 = new TimelineLite();
 
 		function init() {
-			document.getElementById("banner").style.visibility = 'visible';
+			document.getElementById("stageBackground").style.visibility = 'visible';
 			shake();
 
       tl1.fromTo(f1_text, 0.5, {y:-100}, {autoAlpha: 1, y: 0, ease: Power0.easeInOut})
@@ -46,8 +46,8 @@
 	</script>
 </head>
 <body>
-	<div id="banner">
-    <a class="click-tag" onclick="screenad.click("default");" href="javascript:">
+	<div id="stageContent" onClick="screenad.click();">
+    <div id="stageBackground">
       <div id="f1_bg" class="layer"></div>
       <div id="f1_text" class="layer"></div>
       <div id="alien" class="layer"></div>
@@ -67,7 +67,7 @@
 
       <div id="cta" class="layer"></div>
       <div id="logo" class="layer"></div>
-    </a>
+    </div>
   </div>
 
 </body>
