@@ -24,18 +24,19 @@
 				.to(f1_img, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
 				.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut}, "-=0.1");
 
-    //   tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
-    //     .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-    //     .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
-    //     .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
-    //     .fromTo(f3_text1, 0.5, {autoAlpha: 1, x: -300}, {x: 0,  ease: Power1.easeInOut})
-				// .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
-    //     .fromTo(f3_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
-    //     .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-    //     .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power1.easeInOut})
-    //     .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
+      tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
+        .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .to([f2_text1, f2_text2, f2_text3], 0.5, {autoAlpha:1,  ease: Power2.easeInOut})
+        .to([f2_text2, f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
+        .fromTo(f3_text1, 0.5, {autoAlpha: 1, x: -300}, {x: 0,  ease: Power1.easeInOut})
+				.fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .fromTo(f3_text3, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
 
-    	tl.fromTo(f1_clouds, 5, {autoAlpha:1, x:0, y:0}, {x:0, y:0, ease: Power1.easeInOut}, 0);
+    	tl.to(f1_clouds, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 1.1)
+    		.fromTo(f1_clouds, 5.5, {x:-59}, {x:-106, ease: Power1.easeInOut}, 1.1);
 		}
 
 		window.onload = init;

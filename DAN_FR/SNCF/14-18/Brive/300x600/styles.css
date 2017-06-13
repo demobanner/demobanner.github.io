@@ -46,31 +46,24 @@ a {
   left: -300px;
 }
 #f1_bg {
-  opacity: 1;
   background: url("f1_bg.jpg") center no-repeat;
+  opacity: 1;
+  width: 686px;
+  left: -37px;
+}
+#f1_img {
+  background: url("f1_img.png") center no-repeat;
+  opacity: 1;
+  width: 686px;
+  left: -37px;
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }
-#f1_character1 {
-  width: 64px;
-  height: 61px;
-  background: url("f1_character1.png") center no-repeat;
-}
-#f1_character2 {
-  width: 66px;
-  height: 97px;
-  background: url("f1_character2.png") center no-repeat;
-}
-#f1_character3 {
-  width: 74px;
-  height: 72px;
-  background: url("f1_character3.png") center no-repeat;
-}
-#f1_character4 {
-  width: 66px;
-  height: 113px;
-  background: url("f1_character4.png") center no-repeat;
+#f1_clouds {
+  background: url("f1_clouds.png") center no-repeat;
+  opacity: 1;
+  width: 221px;
 }
 #f2_bg {
   background: #0088ce;

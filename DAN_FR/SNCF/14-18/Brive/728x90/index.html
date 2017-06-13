@@ -21,19 +21,19 @@
 		function init() {
       document.getElementById("stageBackground").style.visibility = 'visible';
 			 tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
-       .fromTo(f1_bg, 0.5, {autoAlpha:1, y: 0}, {y: 88, ease:Linear.easeNone},"+=1.5")
+       .fromTo(f1_screen, 0.5, {autoAlpha:1, y: 0}, {y: 88, ease:Linear.easeNone},"+=1")
 
-      //   .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, '+=1.5')
-      //   .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
-      //   .to([f2_text1, f2_text2], 0.5, {autoAlpha:1,  ease: Power2.easeInOut},)
-      //   .to(f2_text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
-      //   .fromTo(f3_text1, 0.5, {autoAlpha: 1, y: -90}, {y: 0,  ease: Power1.easeInOut})
-      //   .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
-      //   .to(f3_text3, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-      //   .fromTo(cta, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power1.easeInOut})
-      //   .fromTo(f3_text4, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power2.easeInOut});
+        .to(f2_bg, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, '+=2')
+        .to(logo, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+        .to([f2_text1, f2_text2], 0.5, {autoAlpha:1,  ease: Power2.easeInOut},)
+        .to(f2_text2, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=2")
+        .fromTo(f3_text1, 0.5, {autoAlpha: 1, y: -90}, {y: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text2, 0.5, {autoAlpha: 0, x: 30}, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f3_text3, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .fromTo(cta, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power1.easeInOut})
+        .fromTo(f3_text4, 0.5, {autoAlpha: 1, y: 90}, {y: 0,  ease: Power2.easeInOut});
 
-      // tl.fromTo(clouds, 16, {autoAlpha: 1, x: 621, y: 5}, {x: 365, ease:Linear.easeNone}, 0);
+      tl.fromTo(clouds, 16, {autoAlpha: 1, x: 549, y: -90}, {x: 280, ease:Linear.easeNone}, 1.5);
        
 
 		}
@@ -45,9 +45,14 @@
 <body>
 	<div id="stageContent" onClick="screenad.click();">
     <div id="stageBackground">
-      <div id="f1_bg" class="layer"></div>
+      <div id="f1_screen">
+        <div id="f1_bg" class="layer"></div>
+         <div id="f1_mask" class="layer"></div>
+         <div id="clouds" class="layer"></div>
+         <div id="f1_man" class="layer"></div>
+         <div id="f1_ligne" class="layer"></div>  
+        </div>
       <div id="f1_text" class="layer"></div>
-      <div id="clouds" class="layer"></div>
 
       <div id="f2_bg" class="layer"></div>
       <div id="f2_text1" class="layer"></div>

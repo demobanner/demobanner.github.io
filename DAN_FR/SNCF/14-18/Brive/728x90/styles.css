@@ -54,25 +54,29 @@ a {
 #f1_text {
   background: url("f1_text.png") center no-repeat;
 }
-#f1_character1 {
-  width: 38px;
-  height: 32px;
-  background: url("f1_character1.png") center no-repeat;
+#f1_man {
+  background: url("f1_man.png") center no-repeat;
+  height: 176px;
+  top:-88px;
+   opacity: 1;
 }
-#f1_character2 {
-  width: 35px;
-  height: 51px;
-  background: url("f1_character2.png") center no-repeat;
+#f1_ligne {
+  background: url("f1_ligne.png") center no-repeat;
+  height: 176px;
+  top:-88px;
+   opacity: 1;
 }
-#f1_character3 {
-  width: 44px;
-  height: 37px;
-  background: url("f1_character3.png") center no-repeat;
+#f1_mask {
+  background: url("f1_mask.png") center no-repeat;
+  height: 176px;
+  top:-88px;
+   opacity: 1;
 }
-#f1_character4 {
-  width: 44px;
-  height: 59px;
-  background: url("f1_character4.png") center no-repeat;
+#clouds{
+   background: url("clouds.png") center no-repeat;
+   width:446px;
+  height: 90px;
+  
 }
 #f2_bg {
   background: #0088ce;

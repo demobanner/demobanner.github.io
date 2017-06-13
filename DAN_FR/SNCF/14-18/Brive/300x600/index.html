@@ -20,11 +20,8 @@
 
 		function init() {
       document.getElementById("stageBackground").style.visibility = 'visible';
-			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power1.easeInOut})
-        .fromTo(f1_character1, 5, {autoAlpha: 1, x: 300, y: 470}, {x: 150, y: 500, ease:Linear.easeNone})
-        .fromTo(f1_character2, 5, {autoAlpha: 1, x: -66, y: 400}, {x: 70, y: 430, ease:Linear.easeNone}, '-=4.5')
-        .fromTo(f1_character3, 5, {autoAlpha: 1, x: 300, y: 500}, {x: 150, y: 530, ease:Linear.easeNone}, '-=4')
-        .fromTo(f1_character4, 5, {autoAlpha: 1, x: 300, y: 390}, {x: 150, y: 400, ease:Linear.easeNone}, '-=4.5');
+			tl.fromTo(f1_text, 0.5, {autoAlpha: 1, y:-100}, {y: 0, ease: Power0.easeInOut})
+        .to(f1, 1.5, {x:-324, ease: Power1.easeInOut}, "+=1");
 
 			tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
         .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
@@ -36,6 +33,8 @@
         .to(f3_text4, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
         .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power1.easeInOut})
         .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
+
+      tl.fromTo(f1_clouds, 6, {x:94}, {x:-100, ease: Power1.easeInOut}, 0);
 		}
 
 		window.onload = init;
@@ -45,12 +44,12 @@
 <body>
 	<div id="stageContent" onClick="screenad.click();">
     <div id="stageBackground">
-      <div id="f1_bg" class="layer"></div>
+      <div id="f1">
+        <div id="f1_bg" class="layer"></div>
+        <div id="f1_clouds" class="layer"></div>
+        <div id="f1_img" class="layer"></div>
+      </div>
       <div id="f1_text" class="layer"></div>
-      <div id="f1_character1" class="layer"></div>
-      <div id="f1_character2" class="layer"></div>
-      <div id="f1_character3" class="layer"></div>
-      <div id="f1_character4" class="layer"></div>
 
       <div id="f2_bg" class="layer"></div>
       <div id="f2_text1" class="layer"></div>
