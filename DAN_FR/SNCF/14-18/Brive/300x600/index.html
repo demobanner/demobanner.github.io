@@ -25,7 +25,7 @@
         .to(f1_ball, 0.8, {rotation: 0,  transformOrigin: "82px 163px", ease:Linear.easeNone})
         .to(f1_ball, 0.8, {rotation: -3,  transformOrigin: "82px 163px", ease:Linear.easeNone})
         .to(f1_ball, 0.8, {rotation: 0,  transformOrigin: "82px 163px", ease:Linear.easeNone})
-        .to(f1, 1.5, {left:-88, ease: Power1.easeInOut}, "-=0.8");
+        .to(f1, 1.5, {left:-88, ease: Power1.easeInOut}, "-=1.8");
 
 			tl2.to(f2_bg, 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, 4)
         .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
@@ -38,7 +38,7 @@
         .fromTo(cta, 0.5, {autoAlpha: 1, x: 300}, {x: 0,  ease: Power1.easeInOut})
         .fromTo(f3_text5, 0.5, {autoAlpha: 1, y: 30}, {y: 0,  ease: Power2.easeInOut});
 
-      tl.fromTo(f1_clouds, 6, {x:70}, {x:-100, ease: Power1.easeInOut}, 1);
+      tl.fromTo(f1_clouds, 6, {x:70}, {x:-100, ease: Power1.easeInOut}, 0.8);
 		}
 
 		window.onload = init;
