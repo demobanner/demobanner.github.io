@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="ad.size" content="width=728,height=90">
+  <meta name="ad.size" content="width=320,height=50">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
   <title>Banner</title>
   <script src="TweenLite.min.js"></script>
@@ -18,7 +18,7 @@
 
 
     function init() {
-      document.getElementById("banner").style.visibility = 'visible';      
+      document.getElementById("banner").style.visibility = 'visible';
       tl.to(light, 0.2, {autoAlpha:1, ease:Power2.easeInOut}, 0.5)
         .to(f1_text1, 0.2, {autoAlpha:1, ease:Power2.easeInOut}, 0.5)
         .to(f1_img, 0.5, {autoAlpha:1, ease:Power2.easeInOut}, 1)
@@ -44,7 +44,7 @@
         .from(cta_bg3, 0.75, {autoAlpha:1, clip:"rect(0 318px 48px 318px)", ease: Power1.easeOut}, 10.75)
         .from(cta_bg4, 0.5, {autoAlpha:1, clip:"rect(48px 318px 48px 0)", ease: Power1.easeOut}, 11);
     }
-      
+
     window.onload = init;
 
   </script>
