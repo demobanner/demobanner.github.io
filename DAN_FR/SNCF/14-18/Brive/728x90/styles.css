@@ -60,6 +60,14 @@ a {
   top:-88px;
    opacity: 1;
 }
+#f1_ball {
+  opacity: 1;
+  background: url("f1_ball.png") center no-repeat;
+  width: 70px;
+    height: 82px;
+    top: -87px;
+    left: 608px;
+}
 #f1_ligne {
   background: url("f1_ligne.png") center no-repeat;
   height: 176px;
@@ -68,9 +76,10 @@ a {
 }
 #f1_mask {
   background: url("f1_mask.png") center no-repeat;
-  height: 176px;
-  top:-88px;
+  /*height: 176px;
+  top:-88px;*/
    opacity: 1;
+   mix-blend-mode:soft-light;
 }
 #clouds{
    background: url("clouds.png") center no-repeat;

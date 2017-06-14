@@ -56,9 +56,29 @@ a {
 }
 #f1_img {
   background: url("f1_img.png") center no-repeat;
+  opacity: 1;
+  width: 790px;
+  height: 650px;
+  -ms-transform: matrix(1, 0, 0, 1, -254, -149);
+  -webkit-transform: matrix(1, 0, 0, 1, -254, -149); 
+  transform: matrix(1, 0, 0, 1, -254, -149);
+}
+#f1_ball {
+  background: url("f1_ball.png") center no-repeat;
+  opacity: 1;
+  width: 69px;
+  height: 68px;
+  -ms-transform: matrix(2, 0, 0, 2, 392, 95);
+  -webkit-transform: matrix(2, 0, 0, 2, 392, 95); 
+  transform: matrix(2, 0, 0, 2, 392, 95);
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
+}
+#f1_shadow {
+  background: url("f1_shadow.png") center no-repeat;
+  opacity: 1;
+  mix-blend-mode: soft-light;
 }
 #f1_clouds {
   background: url("f1_clouds.png") center no-repeat;

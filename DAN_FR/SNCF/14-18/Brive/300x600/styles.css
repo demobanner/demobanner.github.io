@@ -45,20 +45,36 @@ a {
 #text1,#text2 {
   left: -300px;
 }
+#f1 {
+  position: absolute;
+  top: 0;
+  left: -290px;
+}
 #f1_bg {
   background: url("f1_bg.jpg") center no-repeat;
   opacity: 1;
   width: 686px;
-  left: -37px;
 }
 #f1_img {
   background: url("f1_img.png") center no-repeat;
   opacity: 1;
   width: 686px;
-  left: -37px;
+}
+#f1_ball {
+  background: url("f1_ball.png") center no-repeat;
+  opacity: 1;
+  width: 164px;
+  height: 163px;
+  left: 436px;
+  top: 143px;
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
+}
+#f1_shadow {
+  background: url("f1_shadow.png") center no-repeat;
+  opacity: 1;
+  mix-blend-mode: soft-light;
 }
 #f1_clouds {
   background: url("f1_clouds.png") center no-repeat;
