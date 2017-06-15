@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+a {
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  background: white;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+#video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+	background: #000;
+}
+#logo {
+  background: url(logo.png) center no-repeat; 
+  visibility: visible;
+  opacity: 1;
+}
