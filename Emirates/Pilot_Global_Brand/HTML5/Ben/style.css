@@ -35,3 +35,8 @@ a {
   left: 0;
 	background: #000;
 }
+#end{
+  display: none;
+  opacity: 1;
+  background: url(backup.jpg) center no-repeat;
+}
