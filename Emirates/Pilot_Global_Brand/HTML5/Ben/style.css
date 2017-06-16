@@ -36,5 +36,7 @@ a {
 	background: #000;
 }
 #end{
+  display: none;
+  opacity: 1;
   background: url(end.jpg) center no-repeat;
 }
