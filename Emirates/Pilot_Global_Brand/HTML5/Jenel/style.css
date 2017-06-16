@@ -35,3 +35,6 @@ a {
   left: 0;
 	background: #000;
 }
+#end{
+  background: url(end.jpg) center no-repeat;
+}
