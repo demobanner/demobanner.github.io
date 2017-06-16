@@ -38,5 +38,9 @@ a {
 #end{
   display: none;
   opacity: 1;
+<<<<<<< HEAD
   background: url(backup.jpg) center no-repeat;
+=======
+  background: url(end.jpg) center no-repeat;
+>>>>>>> 8098ac9927e22d68dd16deb2f435ea0bbde11eb7
 }
