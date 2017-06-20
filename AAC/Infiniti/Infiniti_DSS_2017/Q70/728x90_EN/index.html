@@ -32,8 +32,8 @@
 			tl.to(f5_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to([bg, carname, f5_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut});
+			tl.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut});
 		}
 		
 		window.onload = init;
