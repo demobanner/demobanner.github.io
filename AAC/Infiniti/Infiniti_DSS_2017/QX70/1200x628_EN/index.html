@@ -29,11 +29,11 @@
 	        .to(f2_text, 0.5, {autoAlpha: 0, delay: 2.5})
 
 	        .to(f3_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-	        .to([f3_text,bg,carname,logo_infiniti], 0.5, {autoAlpha: 0, delay: 2.5})
+	        .to([f3_text,bg,carname], 0.5, {autoAlpha: 0, delay: 2.5})
+	        .to(logo_infiniti, 0.5, {top:-236, ease: Power1.easeInOut})
 
-	        .to(logo_awr, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-	        .to(logo_infiniti2, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-	        .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
+			.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+			.to(logo_awr, 0.5, {autoAlpha:1, ease: Power0.easeInOut});
 		}
 		
 		// function restart() {
@@ -64,7 +64,6 @@
 	    <div id="carname" class="layer"></div>
 	    <div id="logo_awr" class="layer"></div>
 	    <div id="logo_infiniti" class="layer"></div>
-	    <div id="logo_infiniti2" class="layer"></div>
 	</a>
   </div>
 </body>

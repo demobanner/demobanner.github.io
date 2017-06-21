@@ -35,10 +35,9 @@
 	        .to(f4_text, 0.5, {autoAlpha: 0, delay: 2.5})
 
 	        .to(f5_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-	        .to([f5_text,bg,carname,logo_infiniti], 0.5, {autoAlpha: 0, delay: 2.5})
-	        .to(logo_infiniti, 0, {top:-447})
+	        .to([f5_text,bg,carname], 0.5, {autoAlpha: 0, delay: 2.5})
+	        .to(logo_infiniti, 0.5, {top:-447})
 
-	       .to(logo_infiniti, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 		   .to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 		   .to(logo_awr, 0.5, {autoAlpha:1, ease: Power0.easeInOut});
 		}

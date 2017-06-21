@@ -39,10 +39,6 @@ body {
   background: url('cta.png') center no-repeat;
   top: 30px;
 }
-#year{
-  background: url('year.png') center no-repeat;
-  opacity: 1;
-}
 #carname {
   background: url('carname.png') center no-repeat;
   opacity: 1;
@@ -53,7 +49,4 @@ body {
 #logo_infiniti {
   background: url('logo_infiniti.png') center no-repeat;
   opacity: 1;
-}
-#logo_infiniti2 {
-  background: url('logo_infiniti2.png') center no-repeat;
 }
