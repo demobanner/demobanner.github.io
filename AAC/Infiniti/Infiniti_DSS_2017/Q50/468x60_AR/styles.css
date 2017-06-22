@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 466px;
+  height: 58px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #fff;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 466px;
+  height: 58px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#bg {
+  background: url("bg.jpg") center no-repeat;
+  opacity: 1;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f1_text_a {
+  background: url("f1_text_a.png") center no-repeat;
+}
+#f1_text_b {
+  background: url("f1_text_b.png") center no-repeat;
+}
+#tc {
+  background: url("tc.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+}
+#f5_text {
+  background: url("f5_text.png") center no-repeat;
+}
+#f6_text {
+  background: url("f6_text.png") center no-repeat;
+}
+#carname {
+  background: url("carname.png") center no-repeat;
+  opacity: 1;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 20px;
+}
+#logo1 {
+  background: url("logo1.png") center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
