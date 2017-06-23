@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=300,height=250">
+	<meta name="ad.size" content="width=1200,height=628">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
@@ -35,11 +35,11 @@
 	        .to(f4_text, 0.5, {autoAlpha: 0, delay: 2.5})
 
 	        .to(f5_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-	        .to([f5_text,bg,carname], 0.5, {autoAlpha: 0, delay: 2.5})
-	        .to(logo_infiniti, 0.5, {top:-236, ease: Power1.easeInOut})
-      
-	        .to(cta, 0.5, {top: 0, autoAlpha: 1, ease: Power2.easeOut})
-	        .to(logo_awr, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+	        .to([f5_text,bg,carname], 0.5, {autoAlpha: 0, delay: 2.5}) 
+	       	.to(logo_infiniti, 0.5, {top:-236, ease: Power1.easeInOut})
+
+			.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+			.to(logo_awr, 0.5, {autoAlpha:1, ease: Power0.easeInOut});
 		}
 		
 		// function restart() {
