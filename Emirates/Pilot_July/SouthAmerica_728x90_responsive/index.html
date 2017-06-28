@@ -25,6 +25,7 @@
       <div id="cta" class="layer"></div>
       <div id="logo_text" class="layer"></div>
       <div id="logo" class="layer"></div>
+			<div id="border" class="layer"></div>
     </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -32,6 +33,8 @@
     var tl = new TimelineLite();
 
     function init() {
+			resize();
+			
       tl.to(f1_text, 0.5, {autoAlpha: 1})
         .to(f1_text, 0.5, {autoAlpha: 0}, '+=2')
         .to(f1_bg, 0.5, {autoAlpha: 0}, '-=0.5')
@@ -61,6 +64,13 @@
       }
       count++;
     }
+		
+		function resize() {
+      var banner = document.getElementById('banner');
+      banner.style.height = Math.ceil(banner.offsetWidth/728*90) + 'px';
+    }
+
+    window.addEventListener('resize', resize, true);
 
     window.onload = init;
   </script>

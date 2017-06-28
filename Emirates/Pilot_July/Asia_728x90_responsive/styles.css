@@ -16,100 +16,60 @@ body {
   opacity: 1;
 }
 
-@media all {
-  #banner {
-    position: relative;
-    overflow: hidden;
-    width: 726px;
-    height: 88px;
-    border: 1px solid #000000;
-    background: url(f3_bg.jpg) center no-repeat;
-  }
-  .layer {
-    position: absolute;
-    width: 726px;
-    height: 88px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  #logo {
-    background: url(logo.png) center no-repeat; 
-  }
-  #logo_text {
-    background: url(logo_text.png) center no-repeat;
-  }
-  #f1_bg {
-    background: url(f1_bg.jpg) center no-repeat;
-  }
-  #f1_text {
-    background: url(f1_text.png) center no-repeat;
-  }
-  #f2_bg {
-    background: url(f2_bg.jpg) center no-repeat;
-  }
-  #f2_text {
-    background: url(f2_text.png) center no-repeat;
-  }
-  #f3_bg {
-    background: url(f3_bg.jpg) center no-repeat;
-  }
-  #f3_text {
-    background: url(f3_text.png) center no-repeat;
-  }
-  #f4_text {
-    background: url(f4_text.png) center no-repeat;
-  }
-  #f5_text {
-    background: url(f5_text.png) center no-repeat;
-  }
-  #cta {
-    background: url(cta.png) center no-repeat;
-  }
+#banner {
+  position: relative;
+  overflow: hidden;
+  max-width: 728px;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  background-size: contain;
 }
-
-@media all and (max-width : 727px){
-  #banner {
-    position: relative;
-    overflow: hidden;
-    width: 318px;
-    height: 48px;
-    border: 1px solid #777;
-    background: url(f3_bg_s.jpg) center no-repeat;
-  }
-  .layer {
-    position: absolute;
-    width: 318px;
-    height: 48px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  #logo {
-    background: url(logo_s.png) center no-repeat; 
-  }
-  #logo_text {
-    background: url(logo_text_s.png) center no-repeat;
-  }
-  #f1_bg, #f2_bg, #f3_bg {
-    background: none;
-  }
-  #f1_text {
-    background: url(f1_text_s.png) center no-repeat;
-  }
-  #f2_text {
-    background: url(f2_text_s.png) center no-repeat;
-  }
-  #f3_text {
-    background: url(f3_text_s.png) center no-repeat;
-  }
-  #f4_text {
-    background: url(f4_text_s.png) center no-repeat;
-  }
-  #f5_text {
-    background: url(f5_text_s.png) center no-repeat;
-  }
-  #cta {
-    background: url(cta_s.png) center no-repeat;
-  }
+.layer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#logo {
+	background-image: url(logo.png);
+}
+#logo_text {
+	background-image: url(logo_text.png);
+}
+#f1_bg {
+	background-image: url(f1_bg.jpg);
+}
+#f1_text {
+	background-image: url(f1_text.png);
+}
+#f2_bg {
+	background-image: url(f2_bg.jpg);
+}
+#f2_text {
+	background-image: url(f2_text.png);
+}
+#f3_bg {
+	background-image: url(f3_bg.jpg);
+}
+#f3_text {
+	background-image: url(f3_text.png);
+}
+#f4_text {
+	background-image: url(f4_text.png);
+}
+#f5_text {
+	background-image: url(f5_text.png);
+}
+#cta {
+	background-image: url(cta.png);
+}
+#border {
+  background-image: url(border.png);
+  opacity: 1;
 }
