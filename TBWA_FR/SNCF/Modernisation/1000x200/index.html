@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=1000,height=200">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Standard ClickTag Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();
+		
+		function init() {
+			tl.to(bg, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
+				.to(text, 0.5, {autoAlpha:1,left:0, ease: Power2.easeInOut})
+				.to(logo,0.5,{autoAlpha:1, ease: Power2.easeInOut})
+				.to(f1_img, 0.5, {autoAlpha:1, ease: Power2.easeInOut},'+=0.5');
+								 
+			tl.to(f1_img, 0.5, {autoAlpha:0, ease: Power2.easeInOut},'+=2')
+				.to(cta,0.5,{autoAlpha:1,left:0, ease: Power2.easeInOut})
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a id="clickArea" target="_blank" class="click-tag">
+      <div id="bg" class="layer"></div>
+      <div id="f1_img" class="layer"></div>
+      <div id="text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="border" class="layer"></div>
+    </a>
+  </div>
+  <script type="text/javascript"> 
+  		document.getElementById("clickArea").href = clickTag; 
+  </script>
+</body>
+</html>
