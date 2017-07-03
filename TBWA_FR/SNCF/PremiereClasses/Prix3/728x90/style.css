@@ -1,55 +1,51 @@
 /* ======== DEFAULT CSS ======== */
-
+@charset "UTF-8";
 body {
     margin: 0;
     padding: 0;
 }
 
-.click-tag{
-    width: 728px;
-    height: 90px;
-    z-index: 15;
+#stageContent {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 728px;
+  height: 90px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
-#container {
-    position: relative;
-    overflow: hidden;
-    background: #cd0037;
-    display: none;
+#stageBackground {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 726px;
+  height: 88px;
+  right: auto;
+  bottom: auto;
+  border:  solid 1px #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #cd0037;
+  z-index: -100;
+  overflow: hidden;
+  visibility: hidden;
 }
 
-#container div,
-#container img,
+#stageBackground div,
+#stageBackground img,
 button {
     position: absolute;
-}
-.border {
-    border: 1px solid #000000;
-    z-index: 10;
 }
 
 .border_in{
     border: 7px solid #ffffff;
+    width: 712px;
+    height: 74px;
     z-index: 5;
 }
 
-#container,
-.frame-1,
-.frame-2,
-.curtain,
-.border_in,
-.border {
-    width: 728px;
-    height: 90px;
-    box-sizing: border-box;
-}
-
-/* ======== CLICK TAG ======== */
-.click-tag {
-    cursor: pointer;
-    opacity: 0;
-}
 
 /* ======== STATIC ELLEMENTS ======== */
 /* ======== ANIMATED ELEMENTS ======== */
