@@ -1,17 +1,17 @@
 /* ======== DEFAULT CSS ======== */
 @charset "UTF-8";
+
 body {
     margin: 0;
     padding: 0;
 }
-
 #stageContent {
   position: absolute;
   margin: 0px;
   left: 0px;
   top: 0px;
-  width: 728px;
-  height: 90px;
+  width: 300px;
+  height: 250px;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -21,8 +21,8 @@ body {
   margin: 0px;
   left: 0px;
   top: 0px;
-  width: 726px;
-  height: 88px;
+  width: 298px;
+  height: 248px;
   right: auto;
   bottom: auto;
   border:  solid 1px #000;
@@ -41,9 +41,8 @@ button {
 
 .border_in{
     border: 7px solid #ffffff;
-    width: 712px;
-    height: 74px;
-    z-index: 5;
+    width: 284px;
+    height: 234px;
 }
 
 
@@ -56,8 +55,8 @@ button {
 }
 
 .picture{
-    left: 482px;
-    top: 12px;
+    left: 143px;
+    top: 137px;
 }
 
 .logo-2,
@@ -73,39 +72,42 @@ button {
 
 }
 
-.txt-1{
-    left: 0;
-    top: 0;
+.txt-1,
+.txt-2,
+.txt-6{
+    left: 23px;
+    top: 62px;
 }
 
 .txt-7,
 .txt-8{
-    left: 0;
-    top: 0;
+    left: 25px;
+    top: 68px;
 }
 
 .cta{
-    left: 0;
-    top: 0;
+    left: 179px;
+    top: 189px;
 }
 
 .picture,
 .txt-1,
+.txt-2,
 .lenta,
 .logo-2,
+.txt-6,
 .txt-7,
 .txt-8,
 .cta,
-.legal-2,
-.curtain{
+.legal-2{
     opacity: 0;
 }
 
 /* ======== ANIMATIONS ======== */
 
 .picture-anim {
-    -webkit-animation: glide-on-water 2300ms ease-out forwards;
-    animation: glide-on-water 2300ms ease-out forwards;
+    -webkit-animation: glide-on-water 2500ms ease-out forwards;
+    animation: glide-on-water 2500ms ease-out forwards;
 }
 
 .logo-2-anim{
@@ -197,11 +199,11 @@ button {
 
 @-webkit-keyframes glide-on-water {
   0% {
-      -webkit-transform: translate(63px,120px) rotate(30deg);
+      -webkit-transform: translate(313px,40px) rotate(30deg);
   }
   1% {
       opacity: 1;
-      -webkit-transform: translate(63px,120px) rotate(30deg);
+      -webkit-transform: translate(313px,40px) rotate(30deg);
   }
 
 
@@ -278,18 +280,46 @@ button {
 }
 
 @-webkit-keyframes fade-in-2-cta {
-    0% { opacity: 0; -webkit-transform: translateY(0px);}
-    10% { opacity: 1; -webkit-transform: translateY(0px);}
-    25% { opacity: 1; -webkit-transform: translateY(0px);}
-    30% { opacity: 1; -webkit-transform: translateX(-10px) scale(1.1);}
-    35% { opacity: 1; -webkit-transform: translateX(0px);}
-    45% { opacity: 1; -webkit-transform: translateX(0px);}
-    50% { opacity: 1; -webkit-transform: translateX(-10px) scale(1.1);}
-    55% { opacity: 1; -webkit-transform: translateX(0px);}
-    65% { opacity: 1; -webkit-transform: translateX(0px);}
-    70% { opacity: 1; -webkit-transform: translateX(-10px) scale(1.1);}
-    75% { opacity: 1; -webkit-transform: translateX(0px);}
-    100% { opacity: 1; -webkit-transform: translateX(0px);}
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+    }
+    10% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+
+    25% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    45% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    65% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 
@@ -297,11 +327,11 @@ button {
 
 @keyframes glide-on-water {
   0% {
-      transform: translate(63px,120px) rotate(30deg);
+      transform: translate(313px,40px) rotate(30deg);
   }
   1% {
       opacity: 1;
-      transform: translate(63px,120px) rotate(30deg);
+      transform: translate(313px,40px) rotate(30deg);
   }
 
 
@@ -377,19 +407,45 @@ button {
 }
 
 @keyframes fade-in-2-cta {
-    0% { opacity: 0; transform: translateY(50px);}
-    10% { opacity: 1; transform: translateY(0px);}
-    25% { opacity: 1; transform: translateY(0px);}
-    30% { opacity: 1; transform: translateX(-10px) scale(1.1);}
-    35% { opacity: 1; transform: translateX(0px);}
-    45% { opacity: 1; transform: translateX(0px);}
-    50% { opacity: 1; transform: translateX(-10px) scale(1.1);}
-    55% { opacity: 1; transform: translateX(0px);}
-    65% { opacity: 1; transform: translateX(0px);}
-    70% { opacity: 1; transform: translateX(-10px) scale(1.1);}
-    75% { opacity: 1; transform: translateX(0px);}
-    100% { opacity: 1; transform: translateX(0px);}
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    10% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    45% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    65% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(0px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
-
-
 

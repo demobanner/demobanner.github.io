@@ -7,24 +7,29 @@ var frame1,
     background,
     picture,
     txt1,
+    txt2,
+    txt6,
     txt7,
     txt8,
     lenta,
     logo2,
     legal2,
-    cta;
+    cta,
+    border_in;
 
 // ======== Taiming Vars ======== //
 
 var counter = 0,
     timeoutID;
 
-// ======== Preload Ad ======== //
+// ======== Preload Ad ======== // 
 
 var preloadImages = [
     "background.jpg",
     "picture.png",
     "txt-1.png",
+    "txt-2.png",
+    "txt-6.png",
     "txt-7.png",
     "txt-8.png",
     "lenta.png",
@@ -51,14 +56,16 @@ function preload() {
     }
 }
 
-// ======== Show Ad ======== //
+// ======== Show Ad ======== // 
 
 function init() {
     frame1 = document.querySelector(".frame-1");
     background = document.querySelector(".background");
     picture = document.querySelector(".picture");
     txt1 = document.querySelector(".txt-1");
+    txt2 = document.querySelector(".txt-2");
     frame2 = document.querySelector(".frame-2");
+    txt6 = document.querySelector(".txt-6");
     txt7 = document.querySelector(".txt-7");
     txt8 = document.querySelector(".txt-8");
     lenta = document.querySelector(".lenta");
@@ -68,35 +75,50 @@ function init() {
     border_in = document.querySelector(".border_in");
 
 
-    stageBackground.style.visibility = "visible";
+    stageBackground.style.display = "block";
     timeline();
 }
 
-// ======== TIMELINE ======== //
+// ======== TIMELINE ======== // 
 
 function timeline() {
-    console.log('timeline');
 
     timeoutID = setTimeout(function() {
         picture.className = "picture picture-anim";
-    }, 0300);
+    }, 0300); 
 
     timeoutID = setTimeout(function() {
         lenta.className = "lenta lenta-anim";
     }, 0500);
-
+  
 
     timeoutID = setTimeout(function() {
         logo2.className = "logo-2 logo-2-anim";
-    }, 0500);
+    }, 0500); 
 
     timeoutID = setTimeout(function() {
         txt1.className = "txt-1 txt-1-anim";
     }, 0800);
 
     timeoutID = setTimeout(function() {
+        txt2.className = "txt-2 txt-2-anim";
+    }, 1000);
+
+    timeoutID = setTimeout(function() {
+        txt6.className = "txt-6 txt-6-anim";
+    }, 1200);
+
+    timeoutID = setTimeout(function() {
         txt1.className = "txt-1 txt-1-anim-2";
     }, 4200);
+
+    timeoutID = setTimeout(function() {
+        txt2.className = "txt-2 txt-2-anim-2";
+    }, 4300);
+
+    timeoutID = setTimeout(function() {
+        txt6.className = "txt-6 txt-6-anim-2";
+    }, 4400);
 
     timeoutID = setTimeout(function() {
         frame1.className = "frame-1 frame-1-anim";
@@ -105,19 +127,21 @@ function timeline() {
 
     timeoutID = setTimeout(function() {
         txt7.className = "txt-7 txt-7-anim";
-    }, 4600);
+    }, 4800);
 
     timeoutID = setTimeout(function() {
         txt8.className = "txt-8 txt-8-anim";
-    }, 4800);
+    }, 5000);
 
     timeoutID = setTimeout(function() {
         legal2.className = "legal-2 legal-2-anim";
-    }, 4800);
-
+    }, 5000);
+    
 
     timeoutID = setTimeout(function() {
         cta.className = "cta cta-anim";
-    }, 5500);
+    }, 6000);
 
 }
+
+
