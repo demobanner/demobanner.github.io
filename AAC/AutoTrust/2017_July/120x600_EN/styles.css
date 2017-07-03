@@ -37,6 +37,8 @@ a {
 }
 #f2_img {
   background: url("f2_img.png") center no-repeat;
+  left: 120px;
+  top: -30px;
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
@@ -44,6 +46,8 @@ a {
 }
 #f4_img {
   background: url("f4_img.png") center no-repeat;
+  left: 120px;
+  top: -40px;
 }
 #f5_text {
   background: url("f5_text.png") center no-repeat;
@@ -51,6 +55,8 @@ a {
 }
 #f6_img {
   background: url("f6_img.png") center no-repeat;
+  left: 120px;
+  top: -45px;
 }
 #f7_text {
   background: url("f7_text.png") center no-repeat;
@@ -58,6 +64,8 @@ a {
 }
 #f8_img {
   background: url("f8_img.png") center no-repeat;
+  left: 120px;
+  top: -40px;
 }
 #f9_text {
   background: url("f9_text.png") center no-repeat;
