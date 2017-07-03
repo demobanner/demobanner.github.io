@@ -10,8 +10,8 @@ a {
 }
 #banner {
   position: absolute;
-  width: 298px;
-  height: 248px;
+  width: 726px;
+  height: 88px;
   overflow: hidden;
   border: 1px solid black;
   background: url("bg.jpg");
@@ -20,8 +20,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 298px;
-  height: 248px;
+  width: 726px;
+  height: 88px;
   opacity: 0;
 }
 .click-tag {
@@ -33,62 +33,63 @@ a {
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f2_img {
   background: url("f2_img.png") center no-repeat;
-  left: 300px;
-  top: -30px;
+   -ms-transform: matrix(1, 0, 0, 1, 192, -20);
+  -webkit-transform: matrix(1, 0, 0, 1, 192, -20); 
+  transform: matrix(1, 0, 0, 1, 192, -20);
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f4_img {
   background: url("f4_img.png") center no-repeat;
-  left: 300px;
-  top: -80px;
+   -ms-transform: matrix(1, 0, 0, 1, 91, -33);
+  -webkit-transform: matrix(1, 0, 0, 1, 91, -33); 
+  transform: matrix(1, 0, 0, 1, 91, -33);
 }
 #f5_text {
   background: url("f5_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f6_img {
   background: url("f6_img.png") center no-repeat;
-  left: 300px;
-  top: -45px;
+    -ms-transform: matrix(1, 0, 0, 1, 184, -17);
+  -webkit-transform: matrix(1, 0, 0, 1, 184, -17); 
+  transform: matrix(1, 0, 0, 1, 184, -17);
 }
 #f7_text {
   background: url("f7_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f8_img {
   background: url("f8_img.png") center no-repeat;
-  left: 300px;
-  top: -40px;
 }
 #f9_text {
   background: url("f9_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f10_text {
   background: url("f10_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f11_text {
   background: url("f11_text.png") center no-repeat;
-  top: 80px;
+  top: 40px;
 }
 #f12_img1 {
   background: url("f12_img1.jpg") center no-repeat;
 }
 #f12_img2 {
   background: url("f12_img2.png") center no-repeat;
-  width: 34px;
-  height: 54px;
-  -ms-transform: matrix(0.1, 0, 0, 0.1, 210, 131);
-  -webkit-transform: matrix(0.1, 0, 0, 0.1, 210, 131); 
-  transform: matrix(0.1, 0, 0, 0.1, 210, 131);
+  width: 39px;
+  height: 59px;
+  -ms-transform: matrix(0.3, 0, 0, 0.3, 375, 37);
+  -webkit-transform: matrix(0.3, 0, 0, 0.3, 375, 37); 
+  transform: matrix(0.3, 0, 0, 0.3, 375, 37);
 }
 #f12_text {
   background: url("f12_text.png") center no-repeat;
@@ -101,7 +102,7 @@ a {
 }
 #cta {
   background: url("cta.png") center no-repeat;
-  top: 50px;
+  top: 40px;
 }
 #logo_AWR {
   background: url("logo_AWR.png") center no-repeat;

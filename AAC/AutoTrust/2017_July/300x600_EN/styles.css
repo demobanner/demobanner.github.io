@@ -11,7 +11,7 @@ a {
 #banner {
   position: absolute;
   width: 298px;
-  height: 248px;
+  height: 598px;
   overflow: hidden;
   border: 1px solid black;
   background: url("bg.jpg");
@@ -21,7 +21,7 @@ a {
   top: 0;
   left: 0;
   width: 298px;
-  height: 248px;
+  height: 598px;
   opacity: 0;
 }
 .click-tag {
@@ -33,7 +33,7 @@ a {
 }
 #f1_text {
   background: url("f1_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f2_img {
   background: url("f2_img.png") center no-repeat;
@@ -42,7 +42,7 @@ a {
 }
 #f3_text {
   background: url("f3_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f4_img {
   background: url("f4_img.png") center no-repeat;
@@ -51,7 +51,7 @@ a {
 }
 #f5_text {
   background: url("f5_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f6_img {
   background: url("f6_img.png") center no-repeat;
@@ -60,7 +60,7 @@ a {
 }
 #f7_text {
   background: url("f7_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f8_img {
   background: url("f8_img.png") center no-repeat;
@@ -69,26 +69,26 @@ a {
 }
 #f9_text {
   background: url("f9_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f10_text {
   background: url("f10_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f11_text {
   background: url("f11_text.png") center no-repeat;
-  top: 80px;
+  top: 100px;
 }
 #f12_img1 {
   background: url("f12_img1.jpg") center no-repeat;
 }
 #f12_img2 {
   background: url("f12_img2.png") center no-repeat;
-  width: 34px;
-  height: 54px;
-  -ms-transform: matrix(0.1, 0, 0, 0.1, 210, 131);
-  -webkit-transform: matrix(0.1, 0, 0, 0.1, 210, 131); 
-  transform: matrix(0.1, 0, 0, 0.1, 210, 131);
+  width: 54px;
+  height: 87px;
+  -ms-transform: matrix(0.3, 0, 0, 0.3, 132, 308);
+  -webkit-transform: matrix(0.3, 0, 0, 0.3, 132, 308); 
+  transform: matrix(0.3, 0, 0, 0.3, 132, 308);
 }
 #f12_text {
   background: url("f12_text.png") center no-repeat;
@@ -106,12 +106,9 @@ a {
 #logo_AWR {
   background: url("logo_AWR.png") center no-repeat;
 }
-#logo1 {
-  background: url("logo1.png") center no-repeat;
+#logo {
+  background: url("logo.png") center no-repeat;
   opacity: 1;
-}
-#logo2 {
-  background: url("logo2.png") center no-repeat;
 }
 #replayButton {
   position: absolute;

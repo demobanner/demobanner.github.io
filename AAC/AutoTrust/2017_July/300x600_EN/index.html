@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="ad.size" content="width=300,height=250">
+	<meta name="ad.size" content="width=300,height=600">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>Banner</title>
 	<script src="TweenLite.min.js"></script>
@@ -22,10 +22,9 @@
 		
 		function init() {
 			tl.to(f1_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to([logo1, f1_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
+				.to(f1_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to(logo2, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-				.to(f2_img, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+			tl.to(f2_img, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
 				.to(tc1, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to(f2_img, 0.5, {left:-300, top:30, ease: Power1.easeInOut}, "+=2")
 				.to(tc1, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "-=0.5");
@@ -64,15 +63,14 @@
 				.to(f10_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
 			tl.to(f11_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to([f11_text, logo2], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
+				.to(f11_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
 			tl.to([f12_img1, f12_img2], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-				.to(f12_img2, 0.5, {scale:1, x:210, y:113, ease: Elastic.easeOut.config(1, 0.4)}, "-=0.4")
+				.to(f12_img2, 0.5, {scale:1, x:132, y:279, ease: Elastic.easeOut.config(1, 0.4)}, "-=0.4")
 				.to(f12_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to([f12_img1, f12_img2, f12_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to(logo1, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+			tl.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
@@ -114,8 +112,7 @@
       <div id="tc2" class="layer"></div>
       <div id="cta" class="layer"></div>
       <div id="logo_AWR" class="layer"></div>
-      <div id="logo1" class="layer"></div>
-      <div id="logo2" class="layer"></div>
+      <div id="logo" class="layer"></div>
     </a>
 		<a id="replayButton" href="javascript:"><img src="replay.png"></a>
   </div>
