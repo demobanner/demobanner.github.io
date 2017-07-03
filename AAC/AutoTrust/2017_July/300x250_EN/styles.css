@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: url("bg.jpg");
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+  top: 80px;
+}
+#f2_img {
+  background: url("f2_img.png") center no-repeat;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+  top: 80px;
+}
+#f4_img {
+  background: url("f4_img.png") center no-repeat;
+}
+#f5_text {
+  background: url("f5_text.png") center no-repeat;
+  top: 80px;
+}
+#f6_img {
+  background: url("f6_img.png") center no-repeat;
+}
+#f7_text {
+  background: url("f7_text.png") center no-repeat;
+  top: 80px;
+}
+#f8_img {
+  background: url("f8_img.png") center no-repeat;
+}
+#f9_text {
+  background: url("f9_text.png") center no-repeat;
+  top: 80px;
+}
+#f10_text {
+  background: url("f10_text.png") center no-repeat;
+  top: 80px;
+}
+#f11_text {
+  background: url("f11_text.png") center no-repeat;
+  top: 80px;
+}
+#f12_img1 {
+  background: url("f12_img1.jpg") center no-repeat;
+}
+#f12_img2 {
+  background: url("f12_img2.png") center no-repeat;
+  width: 34px;
+  height: 54px;
+  -ms-transform: matrix(0.1, 0, 0, 0.1, 210, 131);
+  -webkit-transform: matrix(0.1, 0, 0, 0.1, 210, 131); 
+  transform: matrix(0.1, 0, 0, 0.1, 210, 131);
+}
+#f12_text {
+  background: url("f12_text.png") center no-repeat;
+}
+#tc1 {
+  background: url("tc1.png") center no-repeat;
+}
+#tc2 {
+  background: url("tc2.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 50px;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#logo1 {
+  background: url("logo1.png") center no-repeat;
+  opacity: 1;
+}
+#logo2 {
+  background: url("logo2.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
