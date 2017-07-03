@@ -86,9 +86,9 @@ a {
   background: url("f12_img2.png") center no-repeat;
   width: 54px;
   height: 87px;
-  -ms-transform: matrix(0.3, 0, 0, 0.3, 41, 310);
-  -webkit-transform: matrix(0.3, 0, 0, 0.3, 41, 310); 
-  transform: matrix(0.3, 0, 0, 0.3, 41, 310);
+  -ms-transform: matrix(0.1, 0, 0, 0.1, 41, 310);
+  -webkit-transform: matrix(0.3, 0, 0, 0.1, 41, 310); 
+  transform: matrix(0.1, 0, 0, 0.1, 41, 310);
 }
 #f12_text {
   background: url("f12_text.png") center no-repeat;
