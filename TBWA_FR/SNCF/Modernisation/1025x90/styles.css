@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 1023px;
+  height: 88px;
+  overflow: hidden;
+  border:1px solid black;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1023px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#text {
+  left: -300px;
+  top: -1px;
+}
+#cta{
+  left:300px;
+}
+#bg {
+  background: url("bg.jpg") center no-repeat;
+}
+#f1_img {
+  background: url("f1_img.png") center no-repeat;
+}
+#text {
+  background: url("text.png") left center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;  
+  left: 10px;
+}
+#border {
+  background: url("border.png") center no-repeat;
+  opacity:1;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
