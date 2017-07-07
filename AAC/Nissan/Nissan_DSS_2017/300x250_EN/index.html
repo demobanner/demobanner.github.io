@@ -14,190 +14,152 @@
 	<script type="text/javascript">
 		var clickTag = '';
 
-		var tl1 = new TimelineLite();
-		var tl2 = new TimelineLite();
+		var tl = new TimelineLite();
 
 		var LOOP_TIME = 0,	// how many time the banner replays
 				loop = 0,
 				isReplay = true;	// show/hide replay button in the end
 
 		function init() {
-			tl1.to([f1_text1, f1_text3], 0.5, {rotation:7.7, x:16, y:94, ease: Power1.easeInOut}, 1)
-				.to(f1_text2, 0.5, {rotation:2, x:59, y:47, ease: Power1.easeInOut}, 1)
-				.to(f1_text3, 0.5, {rotation:-1.3, x:63, y:150, ease: Power1.easeInOut}, 1.5)
-				.to(f1, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 4);
+			tl.to([f1_text1, f1_text3], 0.5, {rotation:7.7, x:16, y:94, ease: Power1.easeInOut}, '+=1')
+				.to(f1_text2, 0.5, {rotation:2, x:59, y:47, ease: Power1.easeInOut}, '-=0.5')
+				.to(f1_text3, 0.5, {rotation:-1.3, x:63, y:150, ease: Power1.easeInOut})
+				.to(f1, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=2');
 
-			tl1.to(f2_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut}, 4.5)
-				.to(beach, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut}, 5)
-				.to(f2_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut}, 5.5);
+			tl.to(f2_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+        .to(f2_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+        .to(beach, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut},'-=0.5')
+        .to(f2_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut})
+        .to(f2_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+        .to(f2_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut},'+=0.5')
+        .to(f2_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut},'+=0.5')
+        .to(f2_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut},'+=0.5')
+        .to([f2_title, f2_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
 
-			tl1.to([f3_text, f3_number1, f3_number2, f3_number3, f3_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 8.5)
 
-				.to(f3_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 8.8)
-        .to([f3_number1_blue_0_top, f3_number1_blue_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 8.9)
+			tl.to([f3_text, f3_number1, f3_number2, f3_number3, f3_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f3_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f3_number1_blue_0_top, f3_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f3_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f3_number1_blue_1_top, f3_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f3_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f3_number1_blue_2_top, f3_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+				.to([f2, f3], 0.5, {autoAlpha:0, ease: Power0.easeInOut},'+=1');
 
-        .to(f3_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 9.1)
-        .to([f3_number1_blue_1_top, f3_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 9.2)
+			tl.to(f4_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+        .to(f4_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f4_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut})
+        .to(f4_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+        .to(f4_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+        .to(f4_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, '+=0.5')
+        .to(f4_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+        .to([f4_title, f4_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
 
-        .to(f3_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 9.3)
-        .to([f3_number1_blue_2_top, f3_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 9.4)
+			tl.to([f5_text, f5_number1, f5_number2, f5_number3, f5_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f5_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_0_top, f5_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_1_top, f5_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_2_top, f5_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_3_top, f5_number1_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_4_top, f5_number1_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_5_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_5_top, f5_number1_blue_5_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_6_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_6_top, f5_number1_blue_6_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_7_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_7_top, f5_number1_blue_7_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f5_number1_blue_8_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f5_number1_blue_8_top, f5_number1_blue_8_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+				.to([f4, f5], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=1');
 
-				.to([f2, f3], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 10.5);
+			tl.to(f6_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+        .to(f6_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f6_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut})
+        .to(f6_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+        .to(f6_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+        .to(f6_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, '+=0.5')
+        .to(f6_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+        .to([f6_title, f6_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut})
 
-			tl1.to(f4_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut}, 11)
-				.to(f4_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut}, 11.5)
+			tl.to([f7_text, f7_number1, f7_number2, f7_number3, f7_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f7_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f7_number1_blue_0_top, f7_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f7_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f7_number1_blue_1_top, f7_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f7_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f7_number1_blue_2_top, f7_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f7_number1_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f7_number1_blue_3_top, f7_number1_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f7_number1_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f7_number1_blue_4_top, f7_number1_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
 
-			tl1.to([f5_text, f5_number1, f5_number2, f5_number3, f5_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 15)
+				.to(f7_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=1.5')
+        .to([f7_number2_red_0_top, f7_number2_red_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=1.4')
+        .to(f7_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=1.2')
+        .to([f7_number2_red_1_top, f7_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=1.1')
+        .to(f7_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=0.9')
+        .to([f7_number2_red_2_top, f7_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.8')
+        .to(f7_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.6')
+        .to([f7_number2_red_3_top, f7_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.5')
+        .to(f7_number2_red_4_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=0.3')
+        .to([f7_number2_red_4_top, f7_number2_red_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+				.to([f6, f7], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=1');
 
-				.to(f5_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 15.3)
-        .to([f5_number1_blue_0_top, f5_number1_blue_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 15.4)
+			tl.to(f8_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+        .to(f8_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f8_img, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+        .to(f8_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+        .to(f8_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+        .to(f8_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, '+=0.5')
+        .to(f8_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+        .to([f8_title, f8_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
 
-        .to(f5_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 15.6)
-        .to([f5_number1_blue_1_top, f5_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 15.7)
+			tl.to([f9_text, f9_number1, f9_number2, f9_number3, f9_number4, f9_number5], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f9_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f9_number1_blue_0_top, f9_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
 
-        .to(f5_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 15.8)
-        .to([f5_number1_blue_2_top, f5_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 15.9)
+				.to(f9_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.3')
+        .to([f9_number2_red_0_top, f9_number2_red_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f9_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f9_number2_red_1_top, f9_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f9_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f9_number2_red_2_top, f9_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f9_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f9_number2_red_3_top, f9_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
 
-        .to(f5_number1_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 16)
-        .to([f5_number1_blue_3_top, f5_number1_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 16.1)
+				.to(f9_number3_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=1.2')
+        .to([f9_number3_blue_0_top, f9_number3_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=1.1')
+        .to(f9_number3_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.9')
+        .to([f9_number3_blue_1_top, f9_number3_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.8')
+        .to(f9_number3_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.6')
+        .to([f9_number3_blue_2_top, f9_number3_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.5')
+        .to(f9_number3_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.3')
+        .to([f9_number3_blue_3_top, f9_number3_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+        .to(f9_number3_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+        .to([f9_number3_blue_4_top, f9_number3_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+				.to([f8, f9, beach], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=1');
 
-        .to(f5_number1_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 16.2)
-        .to([f5_number1_blue_4_top, f5_number1_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 16.3)
-
-        .to(f5_number1_blue_5_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 16.4)
-        .to([f5_number1_blue_5_top, f5_number1_blue_5_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 16.5)
-
-        .to(f5_number1_blue_6_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 16.6)
-        .to([f5_number1_blue_6_top, f5_number1_blue_6_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 16.7)
-
-        .to(f5_number1_blue_7_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 16.8)
-        .to([f5_number1_blue_7_top, f5_number1_blue_7_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 16.9)
-
-        .to(f5_number1_blue_8_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 17)
-        .to([f5_number1_blue_8_top, f5_number1_blue_8_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 17.1)
-
-				.to([f4, f5], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 18.2);
-
-			tl1.to(f6_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut}, 18.7)
-				.to(f6_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut}, 19.2)
-
-			tl1.to([f7_text, f7_number1, f7_number2, f7_number3, f7_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 22.7)
-
-				.to(f7_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23)
-        .to([f7_number1_blue_0_top, f7_number1_blue_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 23.1)
-
-        .to(f7_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.3)
-        .to([f7_number1_blue_1_top, f7_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 23.4)
-
-        .to(f7_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.5)
-        .to([f7_number1_blue_2_top, f7_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 23.6)
-
-        .to(f7_number1_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.7)
-        .to([f7_number1_blue_3_top, f7_number1_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 23.8)
-
-        .to(f7_number1_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.9)
-        .to([f7_number1_blue_4_top, f7_number1_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 24)
-
-				.to(f7_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23)
-        .to([f7_number2_red_0_top, f7_number2_red_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 23.1)
-
-        .to(f7_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.3)
-        .to([f7_number2_red_1_top, f7_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 23.4)
-
-        .to(f7_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.5)
-        .to([f7_number2_red_2_top, f7_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 23.6)
-
-        .to(f7_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.7)
-        .to([f7_number2_red_3_top, f7_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 23.8)
-
-        .to(f7_number2_red_4_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 23.9)
-        .to([f7_number2_red_4_top, f7_number2_red_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 24)
-
-				.to([f6, f7], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 25.1);
-
-			tl1.to(f8_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut}, 25.6)
-				.to(f8_img, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut}, 26.1);
-
-			tl1.to([f9_text, f9_number1, f9_number2, f9_number3, f9_number4, f9_number5], 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 29.6)
-
-				.to(f9_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 29.9)
-        .to([f9_number1_blue_0_top, f9_number1_blue_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 30)
-
-				.to(f9_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 29.9)
-        .to([f9_number2_red_0_top, f9_number2_red_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 30)
-
-        .to(f9_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.2)
-        .to([f9_number2_red_1_top, f9_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.3)
-
-        .to(f9_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.4)
-        .to([f9_number2_red_2_top, f9_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.5)
-
-        .to(f9_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.6)
-        .to([f9_number2_red_3_top, f9_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.7)
-
-				.to(f9_number3_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 29.9)
-        .to([f9_number3_blue_0_top, f9_number3_blue_0_bottom], 0.2, {autoAlpha:0, ease: Power4.easeOut}, 30)
-
-        .to(f9_number3_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.2)
-        .to([f9_number3_blue_1_top, f9_number3_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.3)
-
-        .to(f9_number3_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.4)
-        .to([f9_number3_blue_2_top, f9_number3_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.5)
-
-        .to(f9_number3_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.6)
-        .to([f9_number3_blue_3_top, f9_number3_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.7)
-
-        .to(f9_number3_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut}, 30.8)
-        .to([f9_number3_blue_4_top, f9_number3_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, 30.9)
-
-				.to([f8, f9, beach], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 32);
-
-			tl1.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 32.5)
-				.to(f10_img1, 0.5, {left:0, ease: Power1.easeInOut}, 32.5)
-				.to(f10_img2, 1, {left:0, ease: Power1.easeInOut, onComplete:onLoop}, 33)
-				.to(f10_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 34)
-				.to(cta, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 34.5)
-				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 35);
-
-			tl2.to(f2_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 5)
-				.to(f2_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 5.6)
-				.to(f2_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 6.3)
-				.to(f2_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 7.1)
-				.to(f2_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 7.9)
-				.to([f2_title, f2_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 8)
-
-				.to(f4_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 11.5)
-				.to(f4_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 12.1)
-				.to(f4_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 12.8)
-				.to(f4_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 13.6)
-				.to(f4_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 14.4)
-				.to([f4_title, f4_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 14.5)
-
-				.to(f6_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 19.2)
-				.to(f6_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 19.8)
-				.to(f6_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 20.5)
-				.to(f6_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 21.3)
-				.to(f6_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 22.1)
-				.to([f6_title, f6_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 22.2)
-
-				.to(f8_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, 26.1)
-				.to(f8_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 26.7)
-				.to(f8_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 27.4)
-				.to(f8_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, 28.2)
-				.to(f8_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, 29)
-				.to([f8_title, f8_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, 29.1);
+			tl.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f10_img1, 0.5, {left:0, ease: Power1.easeInOut})
+				.to(f10_img2, 1, {left:0, ease: Power1.easeInOut},'-=0.5')
+				.to(f10_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut, onComplete:onLoop});
 		}
 
 		function restart() {
-      tl1.restart();
-      tl2.restart();
+      tl.restart();
     }
 		function onLoop() {
 			if ( loop < LOOP_TIME ) {
 				restart();
 				loop++ ;
 			} else if (isReplay) {
-				tl1.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
 				document.getElementById('replayButton').addEventListener("click", restart);
 			}
 		}
