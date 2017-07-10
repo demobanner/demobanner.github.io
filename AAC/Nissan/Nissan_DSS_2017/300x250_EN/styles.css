@@ -137,8 +137,23 @@ a {
 #f3_number1_blue_2_top, #f3_number1_blue_2_bottom {
   background-image: url("blue_2.png");
 }
-#f3_number1_blue_3_top, #f3_number1_blue_3_bottom {
-  background-image: url("blue_3.png");
+#f3_number2_red_0_top, #f3_number2_red_0_bottom {
+  background-image: url("red_0.png");
+}
+#f3_number2_red_1_top, #f3_number2_red_1_bottom {
+  background-image: url("red_1.png");
+}
+#f3_number2_red_2_top, #f3_number2_red_2_bottom {
+  background-image: url("red_2.png");
+}
+#f3_number2_red_3_top, #f3_number2_red_3_bottom {
+  background-image: url("red_3.png");
+}
+#f3_number2_red_4_top, #f3_number2_red_4_bottom {
+  background-image: url("red_4.png");
+}
+#f3_number2_red_5_top, #f3_number2_red_5_bottom {
+  background-image: url("red_5.png");
 }
 
 #f4_car {
