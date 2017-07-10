@@ -59,7 +59,7 @@ a {
 #f1_text2 {
   background: url("f1_text2.png") center no-repeat;
   width: 218px;
-  height: 54px;
+  height: 53px;
   -ms-transform: translate(252px, 17px);
   -webkit-transform: translate(252px, 17px);
   transform: translate(252px, 17px);
@@ -68,7 +68,7 @@ a {
 #f1_text3 {
   background: url("f1_text3.png") center no-repeat;
   width: 218px;
-  height: 53px;
+  height: 54px;
   -ms-transform: translate(252px, 17px);
   -webkit-transform: translate(252px, 17px);
   transform: translate(252px, 17px);
