@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=160,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		var clickTag = '';
+
+		var tl = new TimelineLite();
+
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
+		function init() {
+tl.to(f1_text1, 0.5, {rotation:0, x:-2, y:-11, ease: Power1.easeInOut}, '+=0.5')
+	.to(f1_text3, 0.5, {rotation:9.5, x:0, y:-10, ease: Power1.easeInOut}, "-=0.5")
+	.to(f1_text2, 0.5, {rotation:0, x:-1, y:-58, ease: Power1.easeInOut}, '-=0.5')
+	.to(f1_text3, 0.5, {rotation:0, x:-1, y:32, ease: Power1.easeInOut})
+	.to(f1, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=2');
+
+tl.to(f2_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+	.to(f2_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(beach, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut},'-=0.5')
+	.to(f2_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut})
+	.to(f2_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f2_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut},'+=0.5')
+	.to(f2_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut},'+=0.5')
+	.to(f2_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut},'+=0.5')
+	.to([f2_title, f2_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
+
+
+tl.to([f3_text, f3_number1, f3_number2, f3_number3, f3_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f3_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f3_number1_blue_0_top, f3_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f3_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f3_number1_blue_1_top, f3_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+
+	.to(f3_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=0.6')
+	.to([f3_number2_red_0_top, f3_number2_red_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.5')
+	.to(f3_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.3')
+	.to([f3_number2_red_1_top, f3_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f3_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f3_number2_red_2_top, f3_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f3_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f3_number2_red_3_top, f3_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f3_number2_red_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f3_number2_red_4_top, f3_number2_red_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to([f2, f3], 0.5, {autoAlpha:0, ease: Power0.easeInOut},'+=1');
+
+tl.to(f4_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+	.to(f4_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f4_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut})
+	.to(f4_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f4_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+	.to(f4_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, '+=0.5')
+	.to(f4_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+	.to([f4_title, f4_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
+
+tl.to([f5_text, f5_number1, f5_number2, f5_number3, f5_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f5_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_0_top, f5_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_1_top, f5_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_2_top, f5_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_3_top, f5_number1_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_4_top, f5_number1_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_5_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_5_top, f5_number1_blue_5_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_6_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_6_top, f5_number1_blue_6_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_7_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_7_top, f5_number1_blue_7_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f5_number1_blue_8_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f5_number1_blue_8_top, f5_number1_blue_8_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to([f4, f5], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=1');
+
+tl.to(f6_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+	.to(f6_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f6_img, 0.5, {autoAlpha:1, left:0, ease: Power1.easeInOut})
+	.to(f6_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f6_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+	.to(f6_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, '+=0.5')
+	.to(f6_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+	.to([f6_title, f6_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
+
+tl.to([f7_text, f7_number1, f7_number2, f7_number3, f7_number4], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f7_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f7_number1_blue_0_top, f7_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f7_number1_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f7_number1_blue_1_top, f7_number1_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f7_number1_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f7_number1_blue_2_top, f7_number1_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f7_number1_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f7_number1_blue_3_top, f7_number1_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f7_number1_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f7_number1_blue_4_top, f7_number1_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+
+	.to(f7_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=1.5')
+	.to([f7_number2_red_0_top, f7_number2_red_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=1.4')
+	.to(f7_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=1.2')
+	.to([f7_number2_red_1_top, f7_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=1.1')
+	.to(f7_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=0.9')
+	.to([f7_number2_red_2_top, f7_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.8')
+	.to(f7_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.6')
+	.to([f7_number2_red_3_top, f7_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.5')
+	.to(f7_number2_red_4_top, 0.3, {rotationX:180, ease: Power4.easeOut}, '-=0.3')
+	.to([f7_number2_red_4_top, f7_number2_red_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to([f6, f7], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=1');
+
+tl.to(f8_car, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+	.to(f8_title, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f8_img, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+	.to(f8_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f8_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+	.to(f8_text, 0.1, {autoAlpha:1, ease: Power0.easeInOut}, '+=0.5')
+	.to(f8_text, 0.1, {autoAlpha:0, ease: Power0.easeInOut}, '+=0.5')
+	.to([f8_title, f8_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut});
+
+tl.to([f9_text, f9_number1, f9_number2, f9_number3, f9_number4, f9_number5], 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f9_number1_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f9_number1_blue_0_top, f9_number1_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+
+	.to(f9_number2_red_0_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.3')
+	.to([f9_number2_red_0_top, f9_number2_red_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f9_number2_red_1_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f9_number2_red_1_top, f9_number2_red_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f9_number2_red_2_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f9_number2_red_2_top, f9_number2_red_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f9_number2_red_3_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f9_number2_red_3_top, f9_number2_red_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+
+	.to(f9_number3_blue_0_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=1.2')
+	.to([f9_number3_blue_0_top, f9_number3_blue_0_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=1.1')
+	.to(f9_number3_blue_1_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.9')
+	.to([f9_number3_blue_1_top, f9_number3_blue_1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.8')
+	.to(f9_number3_blue_2_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.6')
+	.to([f9_number3_blue_2_top, f9_number3_blue_2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.5')
+	.to(f9_number3_blue_3_top, 0.3, {rotationX:180, ease: Power4.easeOut},'-=0.3')
+	.to([f9_number3_blue_3_top, f9_number3_blue_3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to(f9_number3_blue_4_top, 0.3, {rotationX:180, ease: Power4.easeOut})
+	.to([f9_number3_blue_4_top, f9_number3_blue_4_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.2')
+	.to([f8, f9], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, '+=1');
+
+tl.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(f10_img1, 0.5, {left:0, ease: Power1.easeInOut})
+	.to(f10_img2, 1, {left:0, ease: Power1.easeInOut},'-=0.5')
+	.to(f10_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(cta, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+	.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut, onComplete:onLoop});
+		}
+
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
+				document.getElementById('replayButton').addEventListener("click", restart);
+			}
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1">
+      	<div id="f1_text3" class="layer"></div>
+      	<div id="f1_text1" class="layer"></div>
+      	<div id="f1_text2" class="layer"></div>
+      </div>
+
+      <div id="beach" class="layer"></div>
+
+      <div id="f2">
+	      <div id="f2_car" class="layer"></div>
+	      <div id="f2_img" class="layer"></div>
+	      <div id="f2_title" class="layer"></div>
+	      <div id="f2_text" class="layer"></div>
+	    </div>
+
+      <div id="f3">
+      	<div id="f3_text" class="layer"></div>
+
+      	<div id="f3_number1">
+	        <div id="f3_number1_blue_2_bottom" class="number_bottom"></div>
+	        <div id="f3_number1_blue_2_top" class="number_top"></div>
+	        <div id="f3_number1_blue_1_bottom" class="number_bottom"></div>
+	        <div id="f3_number1_blue_1_top" class="number_top"></div>
+	        <div id="f3_number1_blue_0_bottom" class="number_bottom"></div>
+	      	<div id="f3_number1_blue_0_top" class="number_top"></div>
+	    	</div>
+
+      	<div id="f3_number2">
+	        <div id="f3_number2_red_5_bottom" class="number_bottom"></div>
+	        <div id="f3_number2_red_5_top" class="number_top"></div>
+	        <div id="f3_number2_red_4_bottom" class="number_bottom"></div>
+	      	<div id="f3_number2_red_4_top" class="number_top"></div>
+	        <div id="f3_number2_red_3_bottom" class="number_bottom"></div>
+	        <div id="f3_number2_red_3_top" class="number_top"></div>
+	        <div id="f3_number2_red_2_bottom" class="number_bottom"></div>
+	        <div id="f3_number2_red_2_top" class="number_top"></div>
+	        <div id="f3_number2_red_1_bottom" class="number_bottom"></div>
+	        <div id="f3_number2_red_1_top" class="number_top"></div>
+	        <div id="f3_number2_red_0_bottom" class="number_bottom"></div>
+	      	<div id="f3_number2_red_0_top" class="number_top"></div>
+      	</div>
+
+      	<div id="f3_number3"></div>
+
+      	<div id="f3_number4"></div>
+      </div>
+
+      <div id="f4">
+	      <div id="f4_car" class="layer"></div>
+	      <div id="f4_img" class="layer"></div>
+	      <div id="f4_title" class="layer"></div>
+	      <div id="f4_text" class="layer"></div>
+	    </div>
+
+      <div id="f5">
+      	<div id="f5_text" class="layer"></div>
+
+      	<div id="f5_number1">
+	        <div id="f5_number1_blue_9_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_9_top" class="number_top"></div>
+	        <div id="f5_number1_blue_8_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_8_top" class="number_top"></div>
+	        <div id="f5_number1_blue_7_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_7_top" class="number_top"></div>
+	        <div id="f5_number1_blue_6_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_6_top" class="number_top"></div>
+	        <div id="f5_number1_blue_5_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_5_top" class="number_top"></div>
+	        <div id="f5_number1_blue_4_bottom" class="number_bottom"></div>
+	      	<div id="f5_number1_blue_4_top" class="number_top"></div>
+	        <div id="f5_number1_blue_3_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_3_top" class="number_top"></div>
+	        <div id="f5_number1_blue_2_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_2_top" class="number_top"></div>
+	        <div id="f5_number1_blue_1_bottom" class="number_bottom"></div>
+	        <div id="f5_number1_blue_1_top" class="number_top"></div>
+	        <div id="f5_number1_blue_0_bottom" class="number_bottom"></div>
+	      	<div id="f5_number1_blue_0_top" class="number_top"></div>
+	    	</div>
+
+      	<div id="f5_number2"></div>
+
+      	<div id="f5_number3"></div>
+
+      	<div id="f5_number4"></div>
+      </div>
+
+      <div id="f6">
+	      <div id="f6_car" class="layer"></div>
+	      <div id="f6_img" class="layer"></div>
+	      <div id="f6_title" class="layer"></div>
+	      <div id="f6_text" class="layer"></div>
+	    </div>
+
+      <div id="f7">
+      	<div id="f7_text" class="layer"></div>
+
+      	<div id="f7_number1">
+	        <div id="f7_number1_blue_5_bottom" class="number_bottom"></div>
+	        <div id="f7_number1_blue_5_top" class="number_top"></div>
+	        <div id="f7_number1_blue_4_bottom" class="number_bottom"></div>
+	      	<div id="f7_number1_blue_4_top" class="number_top"></div>
+	        <div id="f7_number1_blue_3_bottom" class="number_bottom"></div>
+	        <div id="f7_number1_blue_3_top" class="number_top"></div>
+	        <div id="f7_number1_blue_2_bottom" class="number_bottom"></div>
+	        <div id="f7_number1_blue_2_top" class="number_top"></div>
+	        <div id="f7_number1_blue_1_bottom" class="number_bottom"></div>
+	        <div id="f7_number1_blue_1_top" class="number_top"></div>
+	        <div id="f7_number1_blue_0_bottom" class="number_bottom"></div>
+	      	<div id="f7_number1_blue_0_top" class="number_top"></div>
+	    	</div>
+
+      	<div id="f7_number2">
+	        <div id="f7_number2_red_5_bottom" class="number_bottom"></div>
+	        <div id="f7_number2_red_5_top" class="number_top"></div>
+	        <div id="f7_number2_red_4_bottom" class="number_bottom"></div>
+	      	<div id="f7_number2_red_4_top" class="number_top"></div>
+	        <div id="f7_number2_red_3_bottom" class="number_bottom"></div>
+	        <div id="f7_number2_red_3_top" class="number_top"></div>
+	        <div id="f7_number2_red_2_bottom" class="number_bottom"></div>
+	        <div id="f7_number2_red_2_top" class="number_top"></div>
+	        <div id="f7_number2_red_1_bottom" class="number_bottom"></div>
+	        <div id="f7_number2_red_1_top" class="number_top"></div>
+	        <div id="f7_number2_red_0_bottom" class="number_bottom"></div>
+	      	<div id="f7_number2_red_0_top" class="number_top"></div>
+      	</div>
+
+      	<div id="f7_number3"></div>
+
+      	<div id="f7_number4"></div>
+      </div>
+
+      <div id="f8">
+	      <div id="f8_car" class="layer"></div>
+	      <div id="f8_img" class="layer"></div>
+	      <div id="f8_title" class="layer"></div>
+	      <div id="f8_text" class="layer"></div>
+	    </div>
+
+      <div id="f9">
+      	<div id="f9_text" class="layer"></div>
+
+      	<div id="f9_number1">
+	        <div id="f9_number1_blue_1_bottom" class="number_bottom"></div>
+	        <div id="f9_number1_blue_1_top" class="number_top"></div>
+	        <div id="f9_number1_blue_0_bottom" class="number_bottom"></div>
+	      	<div id="f9_number1_blue_0_top" class="number_top"></div>
+	    	</div>
+
+      	<div id="f9_number2">
+	        <div id="f9_number2_red_4_bottom" class="number_bottom"></div>
+	      	<div id="f9_number2_red_4_top" class="number_top"></div>
+	        <div id="f9_number2_red_3_bottom" class="number_bottom"></div>
+	        <div id="f9_number2_red_3_top" class="number_top"></div>
+	        <div id="f9_number2_red_2_bottom" class="number_bottom"></div>
+	        <div id="f9_number2_red_2_top" class="number_top"></div>
+	        <div id="f9_number2_red_1_bottom" class="number_bottom"></div>
+	        <div id="f9_number2_red_1_top" class="number_top"></div>
+	        <div id="f9_number2_red_0_bottom" class="number_bottom"></div>
+	      	<div id="f9_number2_red_0_top" class="number_top"></div>
+      	</div>
+
+      	<div id="f9_number3">
+	        <div id="f9_number3_blue_5_bottom" class="number_bottom"></div>
+	        <div id="f9_number3_blue_5_top" class="number_top"></div>
+	        <div id="f9_number3_blue_4_bottom" class="number_bottom"></div>
+	      	<div id="f9_number3_blue_4_top" class="number_top"></div>
+	        <div id="f9_number3_blue_3_bottom" class="number_bottom"></div>
+	        <div id="f9_number3_blue_3_top" class="number_top"></div>
+	        <div id="f9_number3_blue_2_bottom" class="number_bottom"></div>
+	        <div id="f9_number3_blue_2_top" class="number_top"></div>
+	        <div id="f9_number3_blue_1_bottom" class="number_bottom"></div>
+	        <div id="f9_number3_blue_1_top" class="number_top"></div>
+	        <div id="f9_number3_blue_0_bottom" class="number_bottom"></div>
+	      	<div id="f9_number3_blue_0_top" class="number_top"></div>
+	      </div>
+
+      	<div id="f9_number4"></div>
+
+      	<div id="f9_number5"></div>
+      </div>
+
+      <div id="f10_img1" class="layer"></div>
+      <div id="f10_img2" class="layer"></div>
+      <div id="f10_text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="logo_AWR" class="layer"></div>
+    </a>
+		<a id="replayButton" href="javascript:"><img src="replay.png"></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 598px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 598px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.number_top, .number_bottom{
+  position: absolute;
+  left: 0;
+  width: 33px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+.number_top{
+  top: 0;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  background-position: left top;
+}
+.number_bottom{
+  top: 25px;
+  background-position: left bottom;
+}
+#f1_text1 {
+  background: url("f1_text1.png") center no-repeat;
+  width: 217px;
+  height: 54px;
+  -ms-transform: translate(37px, 272px);
+  -webkit-transform: translate(37px, 272px);
+  transform: translate(37px, 272px);
+  opacity: 1;
+}
+#f1_text2 {
+  background: url("f1_text2.png") center no-repeat;
+  width: 217px;
+  height: 54px;
+  -ms-transform: translate(37px, 272px);
+  -webkit-transform: translate(37px, 272px);
+  transform: translate(37px, 272px);
+  opacity: 1;
+}
+#f1_text3 {
+  background: url("f1_text3.png") center no-repeat;
+  width: 217px;
+  height: 54px;
+  -ms-transform: translate(37px, 272px);
+  -webkit-transform: translate(37px, 272px);
+  transform: translate(37px, 272px);
+  opacity: 1;
+}
+#f2_car {
+  background: url("f2_car.png") center no-repeat;
+  left: 300px;
+  top: -90px;
+}
+#f2_img {
+  background: url("f2_img.png") center no-repeat;
+  left: 100px;
+}
+#f2_title {
+  background: url("f2_title.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+}
+#f3_number1 {
+  position: absolute;
+  left: 94px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f3_number2 {
+  position: absolute;
+  left: 141px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("red_0.png");
+}
+#f3_number3 {
+  position: absolute;
+  left: 176px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("blue_0.png");
+}
+#f3_number4 {
+  position: absolute;
+  left: 211px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("red_0.png");
+}
+#f3_number1_blue_0_top, #f3_number1_blue_0_bottom {
+  background-image: url("blue_0.png");
+}
+#f3_number1_blue_1_top, #f3_number1_blue_1_bottom {
+  background-image: url("blue_1.png");
+}
+#f3_number1_blue_2_top, #f3_number1_blue_2_bottom {
+  background-image: url("blue_2.png");
+}
+#f3_number2_red_0_top, #f3_number2_red_0_bottom {
+  background-image: url("red_0.png");
+}
+#f3_number2_red_1_top, #f3_number2_red_1_bottom {
+  background-image: url("red_1.png");
+}
+#f3_number2_red_2_top, #f3_number2_red_2_bottom {
+  background-image: url("red_2.png");
+}
+#f3_number2_red_3_top, #f3_number2_red_3_bottom {
+  background-image: url("red_3.png");
+}
+#f3_number2_red_4_top, #f3_number2_red_4_bottom {
+  background-image: url("red_4.png");
+}
+#f3_number2_red_5_top, #f3_number2_red_5_bottom {
+  background-image: url("red_5.png");
+}
+
+#f4_car {
+  background: url("f4_car.png") center no-repeat;
+  left: -300px;
+  top: -50px;
+}
+#f4_img {
+  background: url("f4_img.png") center no-repeat;
+  left: -100px;
+}
+#f4_title {
+  background: url("f4_title.png") center no-repeat;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+}
+
+#f5_text {
+  background: url("f3_text.png") center no-repeat;
+}
+#f5_number1 {
+  position: absolute;
+  left: 94px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f5_number2 {
+  position: absolute;
+  left: 141px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("red_0.png");
+}
+#f5_number3 {
+  position: absolute;
+  left: 176px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("blue_0.png");
+}
+#f5_number4 {
+  position: absolute;
+  left: 211px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("red_0.png");
+}
+#f5_number1_blue_0_top, #f5_number1_blue_0_bottom {
+  background-image: url("blue_0.png");
+}
+#f5_number1_blue_1_top, #f5_number1_blue_1_bottom {
+  background-image: url("blue_1.png");
+}
+#f5_number1_blue_2_top, #f5_number1_blue_2_bottom {
+  background-image: url("blue_2.png");
+}
+#f5_number1_blue_3_top, #f5_number1_blue_3_bottom {
+  background-image: url("blue_3.png");
+}
+#f5_number1_blue_4_top, #f5_number1_blue_4_bottom {
+  background-image: url("blue_4.png");
+}
+#f5_number1_blue_5_top, #f5_number1_blue_5_bottom {
+  background-image: url("blue_5.png");
+}
+#f5_number1_blue_6_top, #f5_number1_blue_6_bottom {
+  background-image: url("blue_6.png");
+}
+#f5_number1_blue_7_top, #f5_number1_blue_7_bottom {
+  background-image: url("blue_7.png");
+}
+#f5_number1_blue_8_top, #f5_number1_blue_8_bottom {
+  background-image: url("blue_8.png");
+}
+#f5_number1_blue_9_top, #f5_number1_blue_9_bottom {
+  background-image: url("blue_9.png");
+}
+
+#f6_car {
+  background: url("f6_car.png") center no-repeat;
+  left: -300px;
+  top: -50px;
+}
+#f6_img {
+  background: url("f6_img.png") center no-repeat;
+  left: 100px;
+}
+#f6_title {
+  background: url("f6_title.png") center no-repeat;
+}
+#f6_text {
+  background: url("f6_text.png") center no-repeat;
+}
+
+#f7_text {
+  background: url("f3_text.png") center no-repeat;
+}
+#f7_number1 {
+  position: absolute;
+  left: 94px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f7_number2 {
+  position: absolute;
+  left: 141px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f7_number3 {
+  position: absolute;
+  left: 176px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("blue_0.png");
+}
+#f7_number4 {
+  position: absolute;
+  left: 211px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("red_0.png");
+}
+#f7_number1_blue_0_top, #f7_number1_blue_0_bottom {
+  background-image: url("blue_0.png");
+}
+#f7_number1_blue_1_top, #f7_number1_blue_1_bottom {
+  background-image: url("blue_1.png");
+}
+#f7_number1_blue_2_top, #f7_number1_blue_2_bottom {
+  background-image: url("blue_2.png");
+}
+#f7_number1_blue_3_top, #f7_number1_blue_3_bottom {
+  background-image: url("blue_3.png");
+}
+#f7_number1_blue_4_top, #f7_number1_blue_4_bottom {
+  background-image: url("blue_4.png");
+}
+#f7_number1_blue_5_top, #f7_number1_blue_5_bottom {
+  background-image: url("blue_5.png");
+}
+#f7_number2_red_0_top, #f7_number2_red_0_bottom {
+  background-image: url("red_0.png");
+}
+#f7_number2_red_1_top, #f7_number2_red_1_bottom {
+  background-image: url("red_1.png");
+}
+#f7_number2_red_2_top, #f7_number2_red_2_bottom {
+  background-image: url("red_2.png");
+}
+#f7_number2_red_3_top, #f7_number2_red_3_bottom {
+  background-image: url("red_3.png");
+}
+#f7_number2_red_4_top, #f7_number2_red_4_bottom {
+  background-image: url("red_4.png");
+}
+#f7_number2_red_5_top, #f7_number2_red_5_bottom {
+  background-image: url("red_5.png");
+}
+
+#f8_car {
+  background: url("f8_car.png") center no-repeat;
+  left: 300px;
+  top: -40px;
+}
+#f8_img {
+  background: url("f8_img.png") center no-repeat;
+  top: 250px;
+}
+#f8_title {
+  background: url("f8_title.png") center no-repeat;
+}
+#f8_text {
+  background: url("f8_text.png") center no-repeat;
+}
+
+#f9_text {
+  background: url("f9_text.png") center no-repeat;
+}
+#f9_number1 {
+  position: absolute;
+  left: 76px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f9_number2 {
+  position: absolute;
+  left: 111px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f9_number3 {
+  position: absolute;
+  left: 158px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+}
+#f9_number4 {
+  position: absolute;
+  left: 193px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("red_0.png");
+}
+#f9_number5 {
+  position: absolute;
+  left: 228px;
+  top: 131px;
+  width: 33px;
+  height: 50px;
+  opacity: 0;
+  background-image: url("blue_0.png");
+}
+#f9_number1_blue_0_top, #f9_number1_blue_0_bottom {
+  background-image: url("blue_0.png");
+}
+#f9_number1_blue_1_top, #f9_number1_blue_1_bottom {
+  background-image: url("blue_1.png");
+}
+#f9_number2_red_0_top, #f9_number2_red_0_bottom {
+  background-image: url("red_0.png");
+}
+#f9_number2_red_1_top, #f9_number2_red_1_bottom {
+  background-image: url("red_1.png");
+}
+#f9_number2_red_2_top, #f9_number2_red_2_bottom {
+  background-image: url("red_2.png");
+}
+#f9_number2_red_3_top, #f9_number2_red_3_bottom {
+  background-image: url("red_3.png");
+}
+#f9_number2_red_4_top, #f9_number2_red_4_bottom {
+  background-image: url("red_4.png");
+}
+#f9_number3_blue_0_top, #f9_number3_blue_0_bottom {
+  background-image: url("blue_0.png");
+}
+#f9_number3_blue_1_top, #f9_number3_blue_1_bottom {
+  background-image: url("blue_1.png");
+}
+#f9_number3_blue_2_top, #f9_number3_blue_2_bottom {
+  background-image: url("blue_2.png");
+}
+#f9_number3_blue_3_top, #f9_number3_blue_3_bottom {
+  background-image: url("blue_3.png");
+}
+#f9_number3_blue_4_top, #f9_number3_blue_4_bottom {
+  background-image: url("blue_4.png");
+}
+#f9_number3_blue_5_top, #f9_number3_blue_5_bottom {
+  background-image: url("blue_5.png");
+}
+#beach {
+  background: url("beach.png") center no-repeat;
+  top: 100px;
+}
+#f10_img1 {
+  background: url("f10_img1.png") center no-repeat;
+  opacity: 1;
+  left: 80px;
+}
+#f10_img2 {
+  background: url("f10_img2.png") center no-repeat;
+  opacity: 1;
+  left: 120px;
+}
+#f10_text {
+  background: url("f10_text.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}

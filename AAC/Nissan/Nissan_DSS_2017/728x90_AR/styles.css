@@ -173,10 +173,11 @@ a {
 
 #f5_text {
   background: url("f3_text.png") center no-repeat;
+  left: 61px;
 }
 #f5_number1 {
   position: absolute;
-  left: 117px;
+  left: 178px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -184,7 +185,7 @@ a {
 }
 #f5_number2 {
   position: absolute;
-  left: 164px;
+  left: 225px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -193,7 +194,7 @@ a {
 }
 #f5_number3 {
   position: absolute;
-  left: 199px;
+  left: 260px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -202,7 +203,7 @@ a {
 }
 #f5_number4 {
   position: absolute;
-  left: 234px;
+  left: 295px;
   top: 21px;
   width: 35px;
   height: 52px;
