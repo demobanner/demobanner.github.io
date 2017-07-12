@@ -77,7 +77,7 @@ a {
 #f2_car {
   background: url("f2_car.png") center no-repeat;
   left: 86px;
-  top: -35px;
+  top: -30px;
 }
 #f2_img {
   background: url("f2_img.png") center no-repeat;
@@ -94,7 +94,7 @@ a {
 }
 #f3_number1 {
   position: absolute;
-  left: 117px;
+  left: 477px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -102,7 +102,7 @@ a {
 }
 #f3_number2 {
   position: absolute;
-  left: 164px;
+  left: 524px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -111,7 +111,7 @@ a {
 }
 #f3_number3 {
   position: absolute;
-  left: 199px;
+  left: 559px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -120,7 +120,7 @@ a {
 }
 #f3_number4 {
   position: absolute;
-  left: 234px;
+  left: 594px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -158,7 +158,7 @@ a {
 #f4_car {
   background: url("f4_car.png") center no-repeat;
   left: -134px;
-  top: -48px;
+  top: -30px;
 }
 #f4_img {
   background: url("f4_img.png") center no-repeat;
@@ -177,7 +177,7 @@ a {
 }
 #f5_number1 {
   position: absolute;
-  left: 178px;
+  left: 538px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -185,7 +185,7 @@ a {
 }
 #f5_number2 {
   position: absolute;
-  left: 225px;
+  left: 585px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -194,7 +194,7 @@ a {
 }
 #f5_number3 {
   position: absolute;
-  left: 260px;
+  left: 620px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -203,7 +203,7 @@ a {
 }
 #f5_number4 {
   position: absolute;
-  left: 295px;
+  left: 655px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -244,7 +244,7 @@ a {
 #f6_car {
   background: url("f6_car.png") center no-repeat;
   left: -137px;
-  top: -62px;
+  top: -35px;
 }
 #f6_img {
   background: url("f6_img.png") center no-repeat;
@@ -262,7 +262,7 @@ a {
 }
 #f7_number1 {
   position: absolute;
-  left: 117px;
+  left: 477px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -270,7 +270,7 @@ a {
 }
 #f7_number2 {
   position: absolute;
-  left: 164px;
+  left: 524px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -278,7 +278,7 @@ a {
 }
 #f7_number3 {
   position: absolute;
-  left: 199px;
+  left: 559px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -287,7 +287,7 @@ a {
 }
 #f7_number4 {
   position: absolute;
-  left: 234px;
+  left: 594px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -334,7 +334,7 @@ a {
 #f8_car {
   background: url("f8_car.png") center no-repeat;
   left: 80px;
-  top: -62px;
+  top: -30px;
 }
 #f8_img {
   background: url("f8_img.png") center no-repeat;
@@ -352,7 +352,7 @@ a {
 }
 #f9_number1 {
   position: absolute;
-  left: 117px;
+  left: 477px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -360,7 +360,7 @@ a {
 }
 #f9_number2 {
   position: absolute;
-  left: 152px;
+  left: 512px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -368,7 +368,7 @@ a {
 }
 #f9_number3 {
   position: absolute;
-  left: 199px;
+  left: 559px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -376,7 +376,7 @@ a {
 }
 #f9_number4 {
   position: absolute;
-  left: 234px;
+  left: 594px;
   top: 21px;
   width: 35px;
   height: 52px;
@@ -385,7 +385,7 @@ a {
 }
 #f9_number5 {
   position: absolute;
-  left: 269px;
+  left: 629px;
   top: 21px;
   width: 35px;
   height: 52px;
