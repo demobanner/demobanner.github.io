@@ -21,14 +21,14 @@
 				isReplay = true;	// show/hide replay button in the end
 		
 		function init() {
-			tl.to(f1_text, 0.5, {autoAlpha:1, top:0, ease: Power0.easeInOut})
+			tl.to(f1_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 				.to(f1_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
 			tl.to(f2_img, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 			.to(f2_img, 0.5, {scale:1, transformOrigin:"75% 50%", ease: Elastic.easeOut.config(1, 0.6)}, "-=0.5")
 				.to(f2_img, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 				
-			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power0.easeInOut})
+			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 				.to(f3_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 				
 			tl.to(f4_img, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
@@ -36,7 +36,7 @@
 				.to([logo,f4_img], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 				
 			tl.to(logo2, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-			  .to(f5_text, 0.5, {autoAlpha:1, top:0, ease: Power0.easeInOut})
+			  .to(f5_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 			  .to([logo2,f5_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 				
 			tl.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
@@ -44,7 +44,7 @@
 				.to(f6_img, 0.5, {scale:1, transformOrigin:"75% 50%", ease: Elastic.easeOut.config(1, 0.6)}, "-=0.5")
 				.to(f6_img, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 				
-			tl.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power0.easeInOut})
+			tl.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
 				.to([logo,f7_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
 			tl.to(logo3, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
