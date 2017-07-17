@@ -16,6 +16,10 @@
 		
 		var tl = new TimelineLite();
 		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
 		function init() {
 			tl.to(f1_text, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
 			  .to([f1_text,logo_CI], 0.5, {autoAlpha: 0, ease: Power0.easeInOut}, "+=2")
@@ -48,8 +52,20 @@
 
 			  .to(cta, 0.5, {autoAlpha: 1, top: 0, ease: Power1.easeInOut})
 			  .to(logo_CI, 0.5, {autoAlpha: 1,left:120, ease: Power1.easeInOut})
-			  .to(logo_AWR, 0.5, {autoAlpha: 1, ease: Power1.easeInOut})
-	
+			  .to(logo_AWR, 0.5, {autoAlpha: 1, ease: Power1.easeInOut, onComplete:onLoop});	
+		}
+		
+		function restart() {
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
+				document.getElementById('replayButton').addEventListener("click", restart);
+			}
 		}
 		
 		window.onload = init;
@@ -77,6 +93,7 @@
 	  <div id="logo_AWR" class="layer"></div>
 	  <div id="logo" class="layer"></div>
 	</a>
+	<a id="replayButton" href="javascript:"><img src="replay.png"></a>
   </div>
 </body>
 </html>
