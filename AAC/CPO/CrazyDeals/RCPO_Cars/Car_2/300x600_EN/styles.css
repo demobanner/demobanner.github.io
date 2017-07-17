@@ -69,6 +69,7 @@ a {
 #logo {
   background: url("logo.png") center no-repeat;
   opacity: 1;
+  top: 21px;
 }
 #logo_AWR {
   background: url("logo_AWR.png") center no-repeat;
