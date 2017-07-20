@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+a {
+  border: none;
+  display: inline-block;
+}
+#stageContent {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 120px;
+  height: 600px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#stageBackground {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  width: 118px;
+  height: 598px;
+  right: auto;
+  bottom: auto;
+  border:  solid 1px #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
+  z-index: -100;
+  overflow: hidden;
+  visibility: hidden;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 118px;
+  height: 598px;
+  opacity: 0;
+}
+#bg {
+  opacity: 1;
+  background: url("bg.jpg") center no-repeat;
+}
+#frame{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 588px;
+  border: solid 5px #fff;
+}
+#text1 {
+  background: url("text1.png") center no-repeat;
+}
+#text2 {
+  background: url("text2.png") center no-repeat;
+}
+#text3 {
+  background: url("text3.png") center no-repeat;
+}
+#text3_1 {
+  background: url("text3_1.png") center no-repeat;
+}
+#text3_2 {
+  background: url("text3_2.png") center no-repeat;
+}
+#text3_3 {
+  background: url("text3_3.png") center no-repeat;
+}
+#text3_4 {
+  background: url("text3_4.png") center no-repeat;
+}
+#text3_5 {
+  background: url("text3_5.png") center no-repeat;
+}
+#text3_1, #text3_2, #text3_3, #text3_4, #text3_5{
+  opacity: 1;
+  -ms-transform: translate(-120px, 0);
+  -webkit-transform: translate(-120px, 0);
+  transform: translate(-120px, 0);
+}
+#text4 {
+  background: url("text4.png") center no-repeat;
+}
+#cta {
+  -ms-transform: translate(0, 30px);
+  -webkit-transform: translate(0, 30px);
+  transform: translate(0, 30px);
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  opacity: 1;
+  background: url("logo.png") center no-repeat;
+}

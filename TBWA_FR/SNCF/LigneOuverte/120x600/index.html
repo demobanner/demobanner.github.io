@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+<!-- SCRVERSION: screenad_interface_1.0.3 -->
+<!-- SCRFORMAT: banner -->
+<!-- SCRWIDTH: 120 -->
+<!-- SCRHEIGHT: 600 -->
+<!-- SCRDATE: 19-08-15 -->
+<script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+<script src="EasePack.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+		var tl = new TimelineLite();
+
+		function init() {
+      document.getElementById("stageBackground").style.visibility = 'visible';
+			tl.to(text1, 0.5, {autoAlpha: 1, ease: Power0.easeOut})
+        .to(text1, 0.5, {autoAlpha: 0, ease: Power0.easeOut}, '+=2')
+        .to(text2, 0.5, {autoAlpha: 1, ease: Power0.easeOut})
+        .to(text2, 0.5, {autoAlpha: 0, ease: Power0.easeOut}, '+=3')
+        .to(text3, 0.5, {autoAlpha: 1, ease: Power0.easeOut})
+        .to(text3_1, 0.5, {x: 0, ease: Power3.easeOut})
+        .to(text3_1, 0.5, {x: 120, ease: Power3.easeOut},'+=1')
+        .to(text3_2, 0.5, {x: 0, ease: Power3.easeOut})
+        .to(text3_2, 0.5, {x: 120, ease: Power3.easeOut},'+=1')
+        .to(text3_3, 0.5, {x: 0, ease: Power3.easeOut})
+        .to(text3_3, 0.5, {x: 120, ease: Power3.easeOut},'+=1')
+        .to(text3_4, 0.5, {x: 0, ease: Power3.easeOut})
+        .to(text3_4, 0.5, {x: 120, ease: Power3.easeOut},'+=1')
+        .to(text3_5, 0.5, {x: 0, ease: Power3.easeOut})
+        .to(text3_5, 0.5, {x: 120, ease: Power3.easeOut},'+=1')
+        .to(text3, 0.5, {autoAlpha: 0, ease: Power0.easeOut})
+        .to(text4, 0.5, {autoAlpha: 1, ease: Power0.easeOut})
+        .to(cta, 0.5, {autoAlpha: 1, y: 0, ease: Power2.easeOut})
+
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="stageContent" onClick="screenad.click();">
+    <div id="stageBackground">
+      <div id="bg" class="layer"></div>
+      <div id="frame"></div>
+      <div id="text1" class="layer"></div>
+      <div id="text2" class="layer"></div>
+      <div id="text3" class="layer"></div>
+      <div id="text3_1" class="layer"></div>
+      <div id="text3_2" class="layer"></div>
+      <div id="text3_3" class="layer"></div>
+      <div id="text3_4" class="layer"></div>
+      <div id="text3_5" class="layer"></div>
+      <div id="text4" class="layer"></div>
+
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </div>
+  </div>
+</body>
+</html>
