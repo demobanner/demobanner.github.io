@@ -35,7 +35,10 @@
             .to(f5_text, 0.5, {autoAlpha: 0, delay: 2})
 
             .to(f6_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
-            .to([f1_text, f6_text, car, logo, carname], 0.5, {autoAlpha: 0, delay: 2});
+            .to(f6_text, 0.5, {autoAlpha: 0, delay: 2})
+
+            .to(f7_text, 0.5, {autoAlpha: 1, ease: Power2.easeOut})
+            .to([f1_text, f7_text, car, logo, carname], 0.5, {autoAlpha: 0, delay: 2});
 
           tl.to(logo, 0, {top:-480, ease: Power0.easeOut})
             .to([logo, logo_AWR], 0.5, {autoAlpha:1, ease: Power0.easeOut})
@@ -60,6 +63,7 @@
         <div id="f4_text" class="layer"></div>
         <div id="f5_text" class="layer"></div>
         <div id="f6_text" class="layer"></div>
+        <div id="f7_text" class="layer"></div>
         <div id="cta" class="layer"></div>
         <div id="carname" class="layer"></div>
         <div id="logo" class="layer"></div>

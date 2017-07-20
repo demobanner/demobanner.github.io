@@ -43,6 +43,9 @@ body {
 #f6_text {
   background: url('f6_text.png') center no-repeat;
 }
+#f7_text {
+  background: url('f7_text.png') center no-repeat;
+}
 #cta {
   background: url('cta.png') center no-repeat;
   top: 30px;
