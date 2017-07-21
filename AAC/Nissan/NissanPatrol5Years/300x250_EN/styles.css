@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_img {
+  background: url("f1_img.png") center no-repeat;
+  left: -300px;
+  top: -20px;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+}
+#f3_img {
+  background: url("f3_img.png") center no-repeat;
+  top: 300px;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+  top: 300px;
+}
+#red {
+  background: url("red.png") bottom no-repeat;
+  height: 11px;
+	top: auto;
+	bottom: 0;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+  top: 100px;
+}
+#f5_text {
+  background: url("f5_text.png") center no-repeat;
+  top: 100px;
+}
+#f6_text {
+  background: url("f6_text.png") center no-repeat;
+  top: 100px;
+}
+#f7_img {
+  background: url("f7_img.png") center no-repeat;
+  left: -300px;
+  top: -20px;
+}
+#f7_text {
+  background: url("f7_text.png") center no-repeat;
+}
+#hands {
+  background: url("hands.png") center no-repeat;
+  top: 300px;
+}
+#light {
+  background: url("light.png") center no-repeat;
+}
+#f10_text {
+  background: url("f10_text.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
