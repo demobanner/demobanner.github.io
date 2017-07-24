@@ -22,27 +22,20 @@
 		
 		function init() {
 			tl.to(f1_img, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
-				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=0.3")
-				.to(f1_text, 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
-
-			tl.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
 				.to([logo, f1_img, f2_text], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to([f3_img, f3_text], 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+			tl.to([f3_img, f3_text], 0.5, {autoAlpha:1, y:0, ease: Power1.easeInOut})
 
-				.to(f3_text, 0.5, {top:-48, ease: Power2.easeInOut}, "+=1.5")
-				.to(red, 0.5, {autoAlpha:1, height:107, ease: Power1.easeInOut}, "-=0.5")
+				.to(f3_text, 0.5, {scale:0.76, y:-53, ease: Power2.easeInOut}, "+=1.5")
+				.to(red, 0.5, {autoAlpha:1, height:119, ease: Power1.easeInOut}, "-=0.5")
 				.to(f4_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut}, "-=0.3")
 
-				.to(f3_text, 0.5, {top:-54, ease: Power2.easeInOut}, "+=1.5")
-				.to(red, 0.5, {height:119, ease: Power2.easeInOut}, "-=0.5")
-				.to(f4_text, 0.5, {top:-32, ease: Power2.easeInOut}, "-=0.5")				
+				.to(f4_text, 0.5, {top:-25, ease: Power2.easeInOut}, "+=1")				
 				.to(f5_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut}, "-=0.2")
 
-				.to(f3_text, 0.5, {top:-73, ease: Power2.easeInOut}, "+=1.5")
-				.to(red, 0.5, {height:158, ease: Power2.easeInOut}, "-=0.5")
-				.to(f4_text, 0.5, {top:-70, ease: Power2.easeInOut}, "-=0.5")				
-				.to(f5_text, 0.5, {top:-38, ease: Power2.easeInOut}, "-=0.5")			
+				.to(f4_text, 0.5, {top:-34, ease: Power2.easeInOut}, "+=1")				
+				.to(f5_text, 0.5, {top:-19, ease: Power2.easeInOut}, "-=0.5")			
 				.to(f6_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut}, "-=0.2")
 				.to([f3_img, f3_text, f4_text, f5_text, f6_text, red], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
@@ -82,7 +75,6 @@
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
       <div id="f1_img" class="layer"></div>
-      <div id="f1_text" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_img" class="layer"></div>
       <div id="f3_text" class="layer"></div>

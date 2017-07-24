@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_img {
+  background: url("f1_img.png") center no-repeat;
+  left: -70px;
+  top: -20px;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+}
+#f2_text {
+  background: url("f2_text.png") center no-repeat;
+   -ms-transform: translate(0px, 90px);
+  -webkit-transform: translate(0px, 90px); 
+  transform: translate(0px, 90px);
+}
+#f2_img {
+  background: url("f2_img.png") center no-repeat;
+  -ms-transform: translate(0px, 90px);
+  -webkit-transform: translate(0px, 90px); 
+  transform: translate(0px, 90px);
+}
+
+#red {
+  background: url("red.png") bottom no-repeat;
+  width: 4px;
+	left: auto;
+	right: 0;
+  top:1px;
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+  width: 4px;
+  left: auto;
+  right: 0;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+  width: 4px;
+  left: auto;
+  right: 0;
+}
+#f5_text {
+  background: url("f5_text.png") center no-repeat;
+  width: 4px;
+  left: auto;
+  right: 0;
+}
+#f6_text {
+  background: url("f6_text.png") center no-repeat;
+}
+#f6_img {
+  background: url("f6_img.png") center no-repeat;
+  left: -70px;
+  top: -20px;
+}
+#hands {
+  background: url("hands.png") center no-repeat;
+  top: 90px;
+}
+#light {
+  background: url("light.png") center no-repeat;
+}
+#f8_text {
+  background: url("f8_text.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
