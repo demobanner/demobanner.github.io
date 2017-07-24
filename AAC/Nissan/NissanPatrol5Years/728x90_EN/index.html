@@ -38,21 +38,21 @@
 				.to(f5_text, 0.5, {autoAlpha:1, width:729, ease: Power1.easeInOut}, "-=0.2")
 				.to([f2_img, f2_text, f3_text, f4_text, f5_text, red], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");
 
-			tl.to(f6_img, 0.5, {autoAlpha:1, left:87, top:0, ease: Power1.easeInOut})
-			// 	.to(f6_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-			// 	.to(f6_img, 0.5, {left:0, ease: Power1.easeInOut}, "+=1")
-			// 	.to(f6_text, 0.5, {scale:0.8, left:92, ease: Power0.easeInOut},"-=0.5")
-			// 	.to(hands, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-			// 	.to(hands, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "+=0.5")
-			// 	.to(light, 0.5, {autoAlpha:1, ease: Power2.easeInOut}, "-=1")
-			// 	.to(light, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "-=0.5")
-			// 	.to(light, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
-			// 	.to([f6_img, f6_text, light], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");		
+			tl.to(f6_img, 0.5, {autoAlpha:1, left:0, top:0, ease: Power1.easeInOut})
+				.to(f6_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f6_img, 0.5, {left:-91, ease: Power1.easeInOut}, "+=1")
+				.to(f6_text, 0.5, {scale:0.8, left:92, ease: Power0.easeInOut},"-=0.5")
+				.to(hands, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to(hands, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "+=0.5")
+				.to(light, 0.5, {autoAlpha:1, ease: Power2.easeInOut}, "-=1")
+				.to(light, 0.5, {autoAlpha:0, ease: Power2.easeInOut}, "-=0.5")
+				.to(light, 0.5, {autoAlpha:1, ease: Power2.easeInOut})
+				.to([f6_img, f6_text, light], 0.5, {autoAlpha:0, ease: Power0.easeInOut}, "+=2");		
 
-			// tl.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-			// 	.to(f8_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-			// 	.to(cta, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
-			// 	.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut, onComplete:onLoop});
+			tl.to(logo, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(f8_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease: Power0.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
