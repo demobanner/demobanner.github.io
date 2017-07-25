@@ -30,8 +30,11 @@ body {
 #f1_text {
   background: url('f1_text.png') center no-repeat;
 }
-#f2_text {
-  background: url('f2_text.png') center no-repeat;
+#f2_text1 {
+  background: url('f2_text1.png') center no-repeat;
+}
+#f2_text2 {
+  background: url('f2_text2.png') center no-repeat;
 }
 #f3_text {
   background: url('f3_text.png') center no-repeat;
@@ -46,7 +49,7 @@ body {
   background: url('f6_text.png') center no-repeat;
 }
 #f7_text {
-  background: url('f6_text.png') center no-repeat;
+  background: url('f7_text.png') center no-repeat;
 }
 #cta {
   background: url('cta.png') center no-repeat;
