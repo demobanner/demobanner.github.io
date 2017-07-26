@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: url("bg.jpg") center no-repeat;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+  -ms-transform: scale(0.1); 
+  -webkit-transform: scale(0.1); 
+  transform: scale(0.1);
+}
+#f2 {  
+  top: 300px;
+  background: url("f2_img.png") center no-repeat;
+}
+.number_top, .number_bottom{
+  position: absolute;
+  left: 0;
+  width: 74px;
+  height: 34.5px;
+  background-repeat: no-repeat;
+}
+.number_top{
+  top: 0;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  background-position: left top;
+}
+.number_bottom{
+  top: 34.5px;
+  background-position: left bottom;
+}
+#number1 {
+  position: absolute;
+  left: 23px;
+  top: 78px;
+  width: 74px;
+  height: 69px;
+  background-image: url("num_0.png");
+}
+#number1_top_9, #number1_bottom_9 {
+  background-image: url("num1_9.png");
+}
+#number1_top_8, #number1_bottom_8 {
+  background-image: url("num1_8.png");
+}
+#number1_top_7, #number1_bottom_7 {
+  background-image: url("num1_7.png");
+}
+#number1_top_6, #number1_bottom_6 {
+  background-image: url("num1_6.png");
+}
+#number1_top_5, #number1_bottom_5 {
+  background-image: url("num1_5.png");
+}
+#number1_top_4, #number1_bottom_4 {
+  background-image: url("num1_4.png");
+}
+#number1_top_3, #number1_bottom_3 {
+  background-image: url("num1_3.png");
+}
+#number1_top_2, #number1_bottom_2 {
+  background-image: url("num1_2.png");
+}
+#number1_top_1, #number1_bottom_1 {
+  background-image: url("num1_1.png");
+}
+#number2 {
+  position: absolute;
+  left: 112px;
+  top: 78px;
+  width: 74px;
+  height: 69px;
+  background-image: url("num_0.png");
+}
+#number2_top_9, #number2_bottom_9 {
+  background-image: url("num2_9.png");
+}
+#number2_top_8, #number2_bottom_8 {
+  background-image: url("num2_8.png");
+}
+#number2_top_7, #number2_bottom_7 {
+  background-image: url("num2_7.png");
+}
+#number2_top_6, #number2_bottom_6 {
+  background-image: url("num2_6.png");
+}
+#number2_top_5, #number2_bottom_5 {
+  background-image: url("num2_5.png");
+}
+#number2_top_4, #number2_bottom_4 {
+  background-image: url("num2_4.png");
+}
+#number2_top_3, #number2_bottom_3 {
+  background-image: url("num2_3.png");
+}
+#number2_top_2, #number2_bottom_2 {
+  background-image: url("num2_2.png");
+}
+#number2_top_1, #number2_bottom_1 {
+  background-image: url("num2_1.png");
+}
+#number3 {
+  position: absolute;
+  left: 201px;
+  top: 78px;
+  width: 74px;
+  height: 69px;
+  background-image: url("num_0.png");
+}
+#number3_top_9, #number3_bottom_9 {
+  background-image: url("num3_9.png");
+}
+#number3_top_8, #number3_bottom_8 {
+  background-image: url("num3_8.png");
+}
+#number3_top_7, #number3_bottom_7 {
+  background-image: url("num3_7.png");
+}
+#number3_top_6, #number3_bottom_6 {
+  background-image: url("num3_6.png");
+}
+#number3_top_5, #number3_bottom_5 {
+  background-image: url("num3_5.png");
+}
+#number3_top_4, #number3_bottom_4 {
+  background-image: url("num3_4.png");
+}
+#number3_top_3, #number3_bottom_3 {
+  background-image: url("num3_3.png");
+}
+#number3_top_2, #number3_bottom_2 {
+  background-image: url("num3_2.png");
+}
+#number3_top_1, #number3_bottom_1 {
+  background-image: url("num3_1.png");
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+  top: 50px;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+  top: 50px;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 50px;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
