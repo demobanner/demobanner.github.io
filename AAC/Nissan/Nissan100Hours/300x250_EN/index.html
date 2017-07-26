@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite(),
+				tl1 = new TimelineLite(),
+				tl2 = new TimelineLite(),
+				tl3 = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+
+		var i = 0,
+				j = 0,
+				cellArray = [];
+		
+		function init() {
+			createNumber();
+
+			tl.to(f1_text, 0.8, {autoAlpha:1, scale:1, ease:Elastic.easeOut.config(1, 0.75)})
+				.to(f1_text, 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=2");
+
+			tl.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut, onComplete:onFlip})
+				.to(f2, 0.5, {top:-300, ease:Power2.easeInOut, onComplete:removeNumber}, "+=2");
+
+			tl.to(logo, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
+				.to(f3_text, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
+				.to(f3_text, 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=2");
+
+			tl.to(f4_text, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease:Power1.easeInOut, onComplete:onLoop});
+		}
+
+		function createNumber() {
+			cellArray[0] = document.getElementById("cell_1");
+			cellArray[1] = document.getElementById("cell_2");
+			cellArray[2] = document.getElementById("cell_3");
+
+			initCell(cellArray[0], 9, "num1");
+			initCell(cellArray[1], 9, "num2");
+			initCell(cellArray[2], 9, "num3");
+		}
+		
+		function initCell(element, num, numName) {
+			var item,
+					top_item,
+					bottom_item;
+
+			for (i=1; i<=num; i++) {
+				top_item = document.createElement("DIV");
+				top_item.className = "number_top";
+				top_item.style.backgroundImage = 'url("' + numName + '_' + i + '.png")';
+
+				bottom_item = document.createElement("DIV");
+				bottom_item.className = "number_bottom";
+				bottom_item.style.backgroundImage = 'url("' + numName + '_' + i + '.png")';
+
+				item = document.createElement("DIV");
+				item.className = "number";
+
+				item.appendChild(top_item);
+				item.appendChild(bottom_item);
+				element.insertBefore(item, element.childNodes[0]);
+			}
+		}
+
+		function onFlip() {
+			var ele,
+					numArr = [],
+					tweenArr = [tl1, tl2, tl3];
+
+			for (j=0; j<cellArray.length; j++) {
+				numArr = cellArray[j].getElementsByClassName("number");
+				
+		  	for (i=0; i<numArr.length-1; i++) {
+		  		ele = numArr[numArr.length-i-1];
+		  		flipNumber(ele, tweenArr[j]);
+		  	}
+			}
+		}
+
+		function flipNumber(ele, tween) {
+			var numTop = ele.getElementsByClassName("number_top"),
+					numBot = ele.getElementsByClassName("number_bottom");
+
+			tween.to(numTop, 0.2, {rotationX:180, ease: Power4.easeOut})
+				.to([numTop, numBot], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+		}
+
+		function removeNumber() {
+			var list;
+
+			for (j=0; j<cellArray.length; j++) {
+				list = cellArray[j];
+				while (list.hasChildNodes()) {   
+			    list.removeChild(list.firstChild);
+				}
+			}
+		}
+
+		function restart() {
+			createNumber();
+      tl.restart();
+    }
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
+				document.getElementById('replayButton').addEventListener("click", restart);
+			}
+		}
+
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_text" class="layer"></div>
+      <div id="f2" class="layer">
+      	<div id="flipContainer">
+      		<div id="cell_1" class="numCell"></div>
+      		<div id="cell_2" class="numCell"></div>
+      		<div id="cell_3" class="numCell"></div>
+      	</div>
+      </div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="logo_AWR" class="layer"></div>
+    </a>
+		<a id="replayButton" href="javascript:"><img src="replay.png"></a>
+  </div>
+</body>
+</html>
