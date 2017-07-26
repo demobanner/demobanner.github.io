@@ -45,7 +45,7 @@ a {
   position: absolute;
   left: 0;
   width: 74px;
-  height: 34.5px;
+  height: 34px;
   background-repeat: no-repeat;
 }
 .number_top{
@@ -55,16 +55,18 @@ a {
   background-position: left top;
 }
 .number_bottom{
-  top: 34.5px;
+  top: 35px;
   background-position: left bottom;
 }
-#number1 {
+#number1, #number2, #number3 {
   position: absolute;
-  left: 23px;
-  top: 78px;
+  top: 79px;
   width: 74px;
   height: 69px;
   background-image: url("num_0.png");
+}
+#number1 {
+  left: 23px;
 }
 #number1_top_9, #number1_bottom_9 {
   background-image: url("num1_9.png");
@@ -94,12 +96,7 @@ a {
   background-image: url("num1_1.png");
 }
 #number2 {
-  position: absolute;
   left: 112px;
-  top: 78px;
-  width: 74px;
-  height: 69px;
-  background-image: url("num_0.png");
 }
 #number2_top_9, #number2_bottom_9 {
   background-image: url("num2_9.png");
@@ -129,12 +126,7 @@ a {
   background-image: url("num2_1.png");
 }
 #number3 {
-  position: absolute;
   left: 201px;
-  top: 78px;
-  width: 74px;
-  height: 69px;
-  background-image: url("num_0.png");
 }
 #number3_top_9, #number3_bottom_9 {
   background-image: url("num3_9.png");

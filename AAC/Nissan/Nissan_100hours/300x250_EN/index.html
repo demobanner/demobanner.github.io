@@ -30,7 +30,7 @@
 
 			tl.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
 				.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut, onComplete:frame2})
-				.to(f2, 0.5, {autoAlpha:0, top:-300, ease:Power0.easeInOut}, "+=3");
+				.to(f2, 0.5, {autoAlpha:0, top:-300, ease:Power0.easeInOut}, "+=1");
 
 			tl.to(logo, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
 				.to(f3_text, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
@@ -50,14 +50,14 @@
 				var number3_top = document.getElementById("number3_top_" + i);
 				var number3_bottom = document.getElementById("number3_bottom_" + i);
 
-				tl1.to(number1_top, 0.2, {rotationX:180, ease: Power4.easeOut})
-        	.to([number1_top, number1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+				tl1.to(number1_top, 0.1, {rotationX:180, top:1, ease: Power4.easeOut})
+        	.to([number1_top, number1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
 
-				tl2.to(number2_top, 0.2, {rotationX:180, ease: Power4.easeOut})
-        	.to([number2_top, number2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+				tl2.to(number2_top, 0.1, {rotationX:180, top:1, ease: Power4.easeOut})
+        	.to([number2_top, number2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
 
-				tl3.to(number3_top, 0.2, {rotationX:180, ease: Power4.easeOut})
-        	.to([number3_top, number3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+				tl3.to(number3_top, 0.1, {rotationX:180, top:1, ease: Power4.easeOut})
+        	.to([number3_top, number3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
 			}
 		}
 		
@@ -71,14 +71,14 @@
 				var number3_top = document.getElementById("number3_top_" + i);
 				var number3_bottom = document.getElementById("number3_bottom_" + i);
 
-				tl1.to(number1_top, 0.1, {rotationX:0, ease: Power4.easeOut})
-        		.to([number1_top, number1_bottom], 0.1, {autoAlpha:1, ease: Power4.easeOut});
+				tl1.to(number1_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number1_top, number1_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
 
-				tl2.to(number2_top, 0.1, {rotationX:0, ease: Power4.easeOut})
-        		.to([number2_top, number2_bottom], 0.1, {autoAlpha:1, ease: Power4.easeOut});
+				tl2.to(number2_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number2_top, number2_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
 
-				tl3.to(number3_top, 0.1, {rotationX:0, ease: Power4.easeOut})
-        		.to([number3_top, number3_bottom], 0.1, {autoAlpha:1, ease: Power4.easeOut});
+				tl3.to(number3_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number3_top, number3_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
 			}
     }
 		function onLoop() {
