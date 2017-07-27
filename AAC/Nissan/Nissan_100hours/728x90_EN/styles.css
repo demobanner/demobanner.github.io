@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 726px;
+  height: 88px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: white;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 726px;
+  height: 88px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#f1_text {
+  background: url("f1_text.png") center no-repeat;
+  -ms-transform: scale(0); 
+  -webkit-transform: scale(0); 
+  transform: scale(0);
+}
+#f2 {  
+  top: 90px;
+  background: url("f2_img.png") center no-repeat;
+  opacity: 1;
+}
+.number_top, .number_bottom{
+  position: absolute;
+  left: 0;
+  width: 52px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.number_top{
+  top: 0;
+  -webkit-transform-origin: 0% 98%;
+  transform-origin: 0% 98%;
+  background-position: left top;
+}
+.number_bottom{
+  top: 25px;
+  background-position: left bottom;
+}
+#number1,#number2,#number3 {
+  position: absolute;
+  top: 12px;
+  width: 52px;
+  height: 49px;
+  background-image: url("num_0.png");
+}
+#number1 {
+  left: 342px;
+}
+#number1_top_20, #number1_bottom_20 {
+  background-image: url("num1_20.png");
+}
+#number1_top_19, #number1_bottom_19 {
+  background-image: url("num1_19.png");
+}
+#number1_top_18, #number1_bottom_18 {
+  background-image: url("num1_18.png");
+}
+#number1_top_17, #number1_bottom_17 {
+  background-image: url("num1_17.png");
+}
+#number1_top_16, #number1_bottom_16 {
+  background-image: url("num1_16.png");
+}
+#number1_top_15, #number1_bottom_15 {
+  background-image: url("num1_15.png");
+}
+#number1_top_14, #number1_bottom_14 {
+  background-image: url("num1_14.png");
+}
+#number1_top_13, #number1_bottom_13 {
+  background-image: url("num1_13.png");
+}
+#number1_top_12, #number1_bottom_12 {
+  background-image: url("num1_12.png");
+}
+#number1_top_11, #number1_bottom_11 {
+  background-image: url("num1_11.png");
+}
+#number1_top_10, #number1_bottom_10 {
+  background-image: url("num1_10.png");
+}
+#number1_top_9, #number1_bottom_9 {
+  background-image: url("num1_9.png");
+}
+#number1_top_8, #number1_bottom_8 {
+  background-image: url("num1_8.png");
+}
+#number1_top_7, #number1_bottom_7 {
+  background-image: url("num1_7.png");
+}
+#number1_top_6, #number1_bottom_6 {
+  background-image: url("num1_6.png");
+}
+#number1_top_5, #number1_bottom_5 {
+  background-image: url("num1_5.png");
+}
+#number1_top_4, #number1_bottom_4 {
+  background-image: url("num1_4.png");
+}
+#number1_top_3, #number1_bottom_3 {
+  background-image: url("num1_3.png");
+}
+#number1_top_2, #number1_bottom_2 {
+  background-image: url("num1_2.png");
+}
+#number1_top_1, #number1_bottom_1 {
+  background-image: url("num1_1.png");
+}
+#number2 {
+  left: 405px;
+}
+#number2_top_10, #number2_bottom_10, #number2_top_20, #number2_bottom_20{
+  background-image: url("num2_10.png");
+}
+#number2_top_9, #number2_bottom_9, #number2_top_19, #number2_bottom_19 {
+  background-image: url("num2_9.png");
+}
+#number2_top_8, #number2_bottom_8, #number2_top_18, #number2_bottom_18 {
+  background-image: url("num2_8.png");
+}
+#number2_top_7, #number2_bottom_7, #number2_top_17, #number2_bottom_17 {
+  background-image: url("num2_7.png");
+}
+#number2_top_6, #number2_bottom_6, #number2_top_16, #number2_bottom_16 {
+  background-image: url("num2_6.png");
+}
+#number2_top_5, #number2_bottom_5, #number2_top_15, #number2_bottom_15 {
+  background-image: url("num2_5.png");
+}
+#number2_top_4, #number2_bottom_4, #number2_top_14, #number2_bottom_14 {
+  background-image: url("num2_4.png");
+}
+#number2_top_3, #number2_bottom_3, #number2_top_13, #number2_bottom_13 {
+  background-image: url("num2_3.png");
+}
+#number2_top_2, #number2_bottom_2, #number2_top_12, #number2_bottom_12 {
+  background-image: url("num2_2.png");
+}
+#number2_top_1, #number2_bottom_1, #number2_top_11, #number2_bottom_11 {
+  background-image: url("num2_1.png");
+}
+
+#number3 {
+  left: 468px;
+}
+#number3_top_10, #number3_bottom_10, #number3_top_20, #number3_bottom_20 {
+  background-image: url("num3_10.png");
+}
+#number3_top_9, #number3_bottom_9, #number3_top_19, #number3_bottom_19 {
+  background-image: url("num3_9.png");
+}
+#number3_top_8, #number3_bottom_8, #number3_top_18, #number3_bottom_18 {
+  background-image: url("num3_8.png");
+}
+#number3_top_7, #number3_bottom_7, #number3_top_17, #number3_bottom_17 {
+  background-image: url("num3_7.png");
+}
+#number3_top_6, #number3_bottom_6, #number3_top_16, #number3_bottom_16 {
+  background-image: url("num3_6.png");
+}
+#number3_top_5, #number3_bottom_5, #number3_top_15, #number3_bottom_15 {
+  background-image: url("num3_5.png");
+}
+#number3_top_4, #number3_bottom_4, #number3_top_14, #number3_bottom_14 {
+  background-image: url("num3_4.png");
+}
+#number3_top_3, #number3_bottom_3, #number3_top_13, #number3_bottom_13 {
+  background-image: url("num3_3.png");
+}
+#number3_top_2, #number3_bottom_2, #number3_top_12, #number3_bottom_12 {
+  background-image: url("num3_2.png");
+}
+#number3_top_1, #number3_bottom_1, #number3_top_11, #number3_bottom_11 {
+  background-image: url("num3_1.png");
+}
+#f3_text {
+  background: url("f3_text.png") center no-repeat;
+  top: 50px;
+}
+#f4_text {
+  background: url("f4_text.png") center no-repeat;
+  top: 50px;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
+  top: 50px;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+  opacity: 1;
+}
+#logo_AWR {
+  background: url("logo_AWR.png") center no-repeat;
+}
+#replayButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}

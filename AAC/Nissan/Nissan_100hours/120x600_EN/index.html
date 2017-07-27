@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=120,height=600">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite();		
+		var tl1 = new TimelineLite();
+		var tl2 = new TimelineLite();
+		var tl3 = new TimelineLite();
+
+		var i;
+
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {
+			tl.to(f1_text, 0.8, {autoAlpha:1, scale:1, ease:Elastic.easeOut.config(1, 0.75)})
+				.to(f1_text, 0.5, {top:-95, ease:Power1.easeInOut}, "+=2");
+
+			tl.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut, onStart:frame2})
+				.to(f3_text, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
+				.to([f2,f3_text], 0.5, {autoAlpha:0,top:-50, ease:Power0.easeInOut},'+=3.5');
+			tl.to(f4_text, 0.5, {autoAlpha:1,top:0, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1,top:0, ease:Power2.easeInOut, onComplete:onLoop})
+		}
+		
+		function frame2() {
+			for(i=1; i<20; i++) {				
+				var number1_top = document.getElementById("number1_top_" + i);
+				var number1_bottom = document.getElementById("number1_bottom_" + i);				
+				var number2_top = document.getElementById("number2_top_" + i);
+				var number2_bottom = document.getElementById("number2_bottom_" + i);		
+				var number3_top = document.getElementById("number3_top_" + i);
+				var number3_bottom = document.getElementById("number3_bottom_" + i);
+
+				tl1.to(number1_top, 0.15, {rotationX:180, top:1, ease: Power4.easeOut})
+        		.to([number1_top, number1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
+
+				tl2.to(number2_top, 0.15, {rotationX:180, top:1, ease: Power4.easeOut})
+        		.to([number2_top, number2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
+
+				tl3.to(number3_top, 0.15, {rotationX:180, top:1, ease: Power4.easeOut})
+        		.to([number3_top, number3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
+			}
+		}
+		
+		function restart() {
+	        tl.restart();
+	        for(i=1; i<20; i++) {				
+				var number1_top = document.getElementById("number1_top_" + i);
+				var number1_bottom = document.getElementById("number1_bottom_" + i);				
+				var number2_top = document.getElementById("number2_top_" + i);
+				var number2_bottom = document.getElementById("number2_bottom_" + i);		
+				var number3_top = document.getElementById("number3_top_" + i);
+				var number3_bottom = document.getElementById("number3_bottom_" + i);
+
+				tl1.to(number1_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number1_top, number1_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
+
+				tl2.to(number2_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number2_top, number2_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
+
+				tl3.to(number3_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number3_top, number3_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
+			}
+    	}
+
+		function onLoop() {
+			if ( loop < LOOP_TIME ) {
+				restart();
+				loop++ ;
+			} else if (isReplay) {
+				tl.to(replayButton, 0.5, {autoAlpha: 1, rotation: 180});
+				document.getElementById('replayButton').addEventListener("click", restart);
+			}
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="f1_text" class="layer"></div>
+  	   <div id="f2" class="layer">
+      	<div id="number1">
+      		<div id="number1_bottom_20" class="number_bottom"></div>
+      		<div id="number1_top_20" class="number_top"></div>
+      		<div id="number1_bottom_19" class="number_bottom"></div>
+      		<div id="number1_top_19" class="number_top"></div>
+      		<div id="number1_bottom_18" class="number_bottom"></div>
+      		<div id="number1_top_18" class="number_top"></div>
+      		<div id="number1_bottom_17" class="number_bottom"></div>
+      		<div id="number1_top_17" class="number_top"></div>
+      		<div id="number1_bottom_16" class="number_bottom"></div>
+      		<div id="number1_top_16" class="number_top"></div>
+      		<div id="number1_bottom_15" class="number_bottom"></div>
+      		<div id="number1_top_15" class="number_top"></div>
+      		<div id="number1_bottom_14" class="number_bottom"></div>
+      		<div id="number1_top_14" class="number_top"></div>
+      		<div id="number1_bottom_13" class="number_bottom"></div>
+      		<div id="number1_top_13" class="number_top"></div>
+      		<div id="number1_bottom_12" class="number_bottom"></div>
+      		<div id="number1_top_12" class="number_top"></div>
+      		<div id="number1_bottom_11" class="number_bottom"></div>
+      		<div id="number1_top_11" class="number_top"></div>
+      		<div id="number1_bottom_10" class="number_bottom"></div>
+      		<div id="number1_top_10" class="number_top"></div>
+      		<div id="number1_bottom_9" class="number_bottom"></div>
+      		<div id="number1_top_9" class="number_top"></div>
+      		<div id="number1_bottom_8" class="number_bottom"></div>
+      		<div id="number1_top_8" class="number_top"></div>
+      		<div id="number1_bottom_7" class="number_bottom"></div>
+      		<div id="number1_top_7" class="number_top"></div>
+      		<div id="number1_bottom_6" class="number_bottom"></div>
+      		<div id="number1_top_6" class="number_top"></div>
+      		<div id="number1_bottom_5" class="number_bottom"></div>
+      		<div id="number1_top_5" class="number_top"></div>
+      		<div id="number1_bottom_4" class="number_bottom"></div>
+      		<div id="number1_top_4" class="number_top"></div>
+      		<div id="number1_bottom_3" class="number_bottom"></div>
+      		<div id="number1_top_3" class="number_top"></div>
+      		<div id="number1_bottom_2" class="number_bottom"></div>
+      		<div id="number1_top_2" class="number_top"></div>
+      		<div id="number1_bottom_1" class="number_bottom"></div>
+      		<div id="number1_top_1" class="number_top"></div>
+      	</div>
+      	<div id="number2">
+      		<div id="number2_bottom_20" class="number_bottom"></div>
+      		<div id="number2_top_20" class="number_top"></div>
+      		<div id="number2_bottom_19" class="number_bottom"></div>
+      		<div id="number2_top_19" class="number_top"></div>
+      		<div id="number2_bottom_18" class="number_bottom"></div>
+      		<div id="number2_top_18" class="number_top"></div>
+      		<div id="number2_bottom_17" class="number_bottom"></div>
+      		<div id="number2_top_17" class="number_top"></div>
+      		<div id="number2_bottom_16" class="number_bottom"></div>
+      		<div id="number2_top_16" class="number_top"></div>
+      		<div id="number2_bottom_15" class="number_bottom"></div>
+      		<div id="number2_top_15" class="number_top"></div>
+      		<div id="number2_bottom_14" class="number_bottom"></div>
+      		<div id="number2_top_14" class="number_top"></div>
+      		<div id="number2_bottom_13" class="number_bottom"></div>
+      		<div id="number2_top_13" class="number_top"></div>
+      		<div id="number2_bottom_12" class="number_bottom"></div>
+      		<div id="number2_top_12" class="number_top"></div>
+      		<div id="number2_bottom_11" class="number_bottom"></div>
+      		<div id="number2_top_11" class="number_top"></div>
+          <div id="number2_bottom_10" class="number_bottom"></div>
+          <div id="number2_top_10" class="number_top"></div>
+      		<div id="number2_bottom_9" class="number_bottom"></div>
+      		<div id="number2_top_9" class="number_top"></div>
+      		<div id="number2_bottom_8" class="number_bottom"></div>
+      		<div id="number2_top_8" class="number_top"></div>
+      		<div id="number2_bottom_7" class="number_bottom"></div>
+      		<div id="number2_top_7" class="number_top"></div>
+      		<div id="number2_bottom_6" class="number_bottom"></div>
+      		<div id="number2_top_6" class="number_top"></div>
+      		<div id="number2_bottom_5" class="number_bottom"></div>
+      		<div id="number2_top_5" class="number_top"></div>
+      		<div id="number2_bottom_4" class="number_bottom"></div>
+      		<div id="number2_top_4" class="number_top"></div>
+      		<div id="number2_bottom_3" class="number_bottom"></div>
+      		<div id="number2_top_3" class="number_top"></div>
+      		<div id="number2_bottom_2" class="number_bottom"></div>
+      		<div id="number2_top_2" class="number_top"></div>
+      		<div id="number2_bottom_1" class="number_bottom"></div>
+      		<div id="number2_top_1" class="number_top"></div>
+      	</div>
+      	<div id="number3">
+      		<div id="number3_bottom_20" class="number_bottom"></div>
+      		<div id="number3_top_20" class="number_top"></div>
+      		<div id="number3_bottom_19" class="number_bottom"></div>
+      		<div id="number3_top_19" class="number_top"></div>
+      		<div id="number3_bottom_18" class="number_bottom"></div>
+      		<div id="number3_top_18" class="number_top"></div>
+      		<div id="number3_bottom_17" class="number_bottom"></div>
+      		<div id="number3_top_17" class="number_top"></div>
+      		<div id="number3_bottom_16" class="number_bottom"></div>
+      		<div id="number3_top_16" class="number_top"></div>
+      		<div id="number3_bottom_15" class="number_bottom"></div>
+      		<div id="number3_top_15" class="number_top"></div>
+      		<div id="number3_bottom_14" class="number_bottom"></div>
+      		<div id="number3_top_14" class="number_top"></div>
+      		<div id="number3_bottom_13" class="number_bottom"></div>
+      		<div id="number3_top_13" class="number_top"></div>
+      		<div id="number3_bottom_12" class="number_bottom"></div>
+      		<div id="number3_top_12" class="number_top"></div>
+      		<div id="number3_bottom_11" class="number_bottom"></div>
+      		<div id="number3_top_11" class="number_top"></div>
+          <div id="number3_bottom_10" class="number_bottom"></div>
+          <div id="number3_top_10" class="number_top"></div>
+      		<div id="number3_bottom_9" class="number_bottom"></div>
+      		<div id="number3_top_9" class="number_top"></div>
+      		<div id="number3_bottom_8" class="number_bottom"></div>
+      		<div id="number3_top_8" class="number_top"></div>
+      		<div id="number3_bottom_7" class="number_bottom"></div>
+      		<div id="number3_top_7" class="number_top"></div>
+      		<div id="number3_bottom_6" class="number_bottom"></div>
+      		<div id="number3_top_6" class="number_top"></div>
+      		<div id="number3_bottom_5" class="number_bottom"></div>
+      		<div id="number3_top_5" class="number_top"></div>
+      		<div id="number3_bottom_4" class="number_bottom"></div>
+      		<div id="number3_top_4" class="number_top"></div>
+      		<div id="number3_bottom_3" class="number_bottom"></div>
+      		<div id="number3_top_3" class="number_top"></div>
+      		<div id="number3_bottom_2" class="number_bottom"></div>
+      		<div id="number3_top_2" class="number_top"></div>
+      		<div id="number3_bottom_1" class="number_bottom"></div>
+      		<div id="number3_top_1" class="number_top"></div>
+      	</div>
+      </div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="logo_AWR" class="layer"></div>
+    </a>
+		<a id="replayButton" href="javascript:"><img src="replay.png"></a>
+  </div>
+</body>
+</html>
