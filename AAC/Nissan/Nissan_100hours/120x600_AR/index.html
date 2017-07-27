@@ -29,16 +29,15 @@
 			tl.to(f1_text, 0.8, {autoAlpha:1, scale:1, ease:Elastic.easeOut.config(1, 0.75)})
 				.to(f1_text, 0.5, {top:-95, ease:Power1.easeInOut}, "+=2");
 
-			tl.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
-				.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut, onComplete:frame2})
+			tl.to(f2, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut, onStart:frame2})
 				.to(f3_text, 0.5, {autoAlpha:1, top:0, ease:Power2.easeInOut})
 				.to([f2,f3_text], 0.5, {autoAlpha:0,top:-50, ease:Power0.easeInOut},'+=3.5');
 			tl.to(f4_text, 0.5, {autoAlpha:1,top:0, ease:Power2.easeInOut})
-				.to(cta, 0.5, {autoAlpha:1,top:0, ease:Power2.easeInOut, onComplete:onLoop})
+				.to(cta, 0.5, {autoAlpha:1,top:0, ease:Power2.easeInOut, onComplete:onLoop});
 		}
 		
 		function frame2() {
-			for(i=1; i<9; i++) {				
+			for(i=1; i<20; i++) {				
 				var number1_top = document.getElementById("number1_top_" + i);
 				var number1_bottom = document.getElementById("number1_bottom_" + i);				
 				var number2_top = document.getElementById("number2_top_" + i);
@@ -46,20 +45,20 @@
 				var number3_top = document.getElementById("number3_top_" + i);
 				var number3_bottom = document.getElementById("number3_bottom_" + i);
 
-				tl1.to(number1_top, 0.2, {rotationX:180, ease: Power4.easeOut})
-        	.to([number1_top, number1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+				tl1.to(number1_top, 0.15, {rotationX:180, top:1, ease: Power4.easeOut})
+        		.to([number1_top, number1_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
 
-				tl2.to(number2_top, 0.2, {rotationX:180, ease: Power4.easeOut})
-        	.to([number2_top, number2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+				tl2.to(number2_top, 0.15, {rotationX:180, top:1, ease: Power4.easeOut})
+        		.to([number2_top, number2_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
 
-				tl3.to(number3_top, 0.2, {rotationX:180, ease: Power4.easeOut})
-        	.to([number3_top, number3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut}, '-=0.1');
+				tl3.to(number3_top, 0.15, {rotationX:180, top:1, ease: Power4.easeOut})
+        		.to([number3_top, number3_bottom], 0.1, {autoAlpha:0, ease: Power4.easeOut});
 			}
 		}
 		
 		function restart() {
 	        tl.restart();
-	        for(i=1; i<9; i++) {				
+	        for(i=1; i<20; i++) {				
 				var number1_top = document.getElementById("number1_top_" + i);
 				var number1_bottom = document.getElementById("number1_bottom_" + i);				
 				var number2_top = document.getElementById("number2_top_" + i);
@@ -67,14 +66,14 @@
 				var number3_top = document.getElementById("number3_top_" + i);
 				var number3_bottom = document.getElementById("number3_bottom_" + i);
 
-				tl1.to(number1_top, 0.1, {rotationX:0, ease: Power4.easeOut})
-        		.to([number1_top, number1_bottom], 0.1, {autoAlpha:1, ease: Power4.easeOut});
+				tl1.to(number1_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number1_top, number1_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
 
-				tl2.to(number2_top, 0.1, {rotationX:0, ease: Power4.easeOut})
-        		.to([number2_top, number2_bottom], 0.1, {autoAlpha:1, ease: Power4.easeOut});
+				tl2.to(number2_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number2_top, number2_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
 
-				tl3.to(number3_top, 0.1, {rotationX:0, ease: Power4.easeOut})
-        		.to([number3_top, number3_bottom], 0.1, {autoAlpha:1, ease: Power4.easeOut});
+				tl3.to(number3_top, 0, {rotationX:0, top:0, ease: Power4.easeOut})
+        		.to([number3_top, number3_bottom], 0, {autoAlpha:1, ease: Power4.easeOut});
 			}
     	}
 
@@ -96,8 +95,30 @@
   <div id="banner">
     <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
       <div id="f1_text" class="layer"></div>
-  	  <div id="f2" class="layer">
+  	   <div id="f2" class="layer">
       	<div id="number1">
+      		<div id="number1_bottom_20" class="number_bottom"></div>
+      		<div id="number1_top_20" class="number_top"></div>
+      		<div id="number1_bottom_19" class="number_bottom"></div>
+      		<div id="number1_top_19" class="number_top"></div>
+      		<div id="number1_bottom_18" class="number_bottom"></div>
+      		<div id="number1_top_18" class="number_top"></div>
+      		<div id="number1_bottom_17" class="number_bottom"></div>
+      		<div id="number1_top_17" class="number_top"></div>
+      		<div id="number1_bottom_16" class="number_bottom"></div>
+      		<div id="number1_top_16" class="number_top"></div>
+      		<div id="number1_bottom_15" class="number_bottom"></div>
+      		<div id="number1_top_15" class="number_top"></div>
+      		<div id="number1_bottom_14" class="number_bottom"></div>
+      		<div id="number1_top_14" class="number_top"></div>
+      		<div id="number1_bottom_13" class="number_bottom"></div>
+      		<div id="number1_top_13" class="number_top"></div>
+      		<div id="number1_bottom_12" class="number_bottom"></div>
+      		<div id="number1_top_12" class="number_top"></div>
+      		<div id="number1_bottom_11" class="number_bottom"></div>
+      		<div id="number1_top_11" class="number_top"></div>
+      		<div id="number1_bottom_10" class="number_bottom"></div>
+      		<div id="number1_top_10" class="number_top"></div>
       		<div id="number1_bottom_9" class="number_bottom"></div>
       		<div id="number1_top_9" class="number_top"></div>
       		<div id="number1_bottom_8" class="number_bottom"></div>
@@ -118,6 +139,28 @@
       		<div id="number1_top_1" class="number_top"></div>
       	</div>
       	<div id="number2">
+      		<div id="number2_bottom_20" class="number_bottom"></div>
+      		<div id="number2_top_20" class="number_top"></div>
+      		<div id="number2_bottom_19" class="number_bottom"></div>
+      		<div id="number2_top_19" class="number_top"></div>
+      		<div id="number2_bottom_18" class="number_bottom"></div>
+      		<div id="number2_top_18" class="number_top"></div>
+      		<div id="number2_bottom_17" class="number_bottom"></div>
+      		<div id="number2_top_17" class="number_top"></div>
+      		<div id="number2_bottom_16" class="number_bottom"></div>
+      		<div id="number2_top_16" class="number_top"></div>
+      		<div id="number2_bottom_15" class="number_bottom"></div>
+      		<div id="number2_top_15" class="number_top"></div>
+      		<div id="number2_bottom_14" class="number_bottom"></div>
+      		<div id="number2_top_14" class="number_top"></div>
+      		<div id="number2_bottom_13" class="number_bottom"></div>
+      		<div id="number2_top_13" class="number_top"></div>
+      		<div id="number2_bottom_12" class="number_bottom"></div>
+      		<div id="number2_top_12" class="number_top"></div>
+      		<div id="number2_bottom_11" class="number_bottom"></div>
+      		<div id="number2_top_11" class="number_top"></div>
+          <div id="number2_bottom_10" class="number_bottom"></div>
+          <div id="number2_top_10" class="number_top"></div>
       		<div id="number2_bottom_9" class="number_bottom"></div>
       		<div id="number2_top_9" class="number_top"></div>
       		<div id="number2_bottom_8" class="number_bottom"></div>
@@ -138,6 +181,28 @@
       		<div id="number2_top_1" class="number_top"></div>
       	</div>
       	<div id="number3">
+      		<div id="number3_bottom_20" class="number_bottom"></div>
+      		<div id="number3_top_20" class="number_top"></div>
+      		<div id="number3_bottom_19" class="number_bottom"></div>
+      		<div id="number3_top_19" class="number_top"></div>
+      		<div id="number3_bottom_18" class="number_bottom"></div>
+      		<div id="number3_top_18" class="number_top"></div>
+      		<div id="number3_bottom_17" class="number_bottom"></div>
+      		<div id="number3_top_17" class="number_top"></div>
+      		<div id="number3_bottom_16" class="number_bottom"></div>
+      		<div id="number3_top_16" class="number_top"></div>
+      		<div id="number3_bottom_15" class="number_bottom"></div>
+      		<div id="number3_top_15" class="number_top"></div>
+      		<div id="number3_bottom_14" class="number_bottom"></div>
+      		<div id="number3_top_14" class="number_top"></div>
+      		<div id="number3_bottom_13" class="number_bottom"></div>
+      		<div id="number3_top_13" class="number_top"></div>
+      		<div id="number3_bottom_12" class="number_bottom"></div>
+      		<div id="number3_top_12" class="number_top"></div>
+      		<div id="number3_bottom_11" class="number_bottom"></div>
+      		<div id="number3_top_11" class="number_top"></div>
+          <div id="number3_bottom_10" class="number_bottom"></div>
+          <div id="number3_top_10" class="number_top"></div>
       		<div id="number3_bottom_9" class="number_bottom"></div>
       		<div id="number3_top_9" class="number_top"></div>
       		<div id="number3_bottom_8" class="number_bottom"></div>
