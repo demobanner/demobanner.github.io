@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cetelem 160x600</title>
+
+    <!-- IMPORTANT: DETERMINES THE SIZE OF YOUR AD (See Readme)-->
+    <meta name="ad.size" content="width=160,height=600">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- replay function -->
+
+    <script>
+        var clickTag = "${CLICK_URL}";
+    </script>
+</head>
+
+<body onload="addListeners()">
+    <div id="container">
+        <a href="javascript:void(window.open(window.clickTag))">
+            <!-- background -->
+            <div class="background"></div>
+            <!-- frame 1 -->
+                <img class="img1" src="img1.png" id="play">
+                <img class="title" src="title.png" id="play">
+                <div class="decor" id="play">
+                    <img class="credito" src="credito.png" id="play">
+                    <img class="decor1" src="decor1.png" id="play">
+                </div>
+                <img class="ml1" src="ml.png" id="play">
+                <img class="taux" src="taux.png" id="play">
+                <img class="title2" src="title2.png" id="play">
+                <img class="decor2" src="decor2.png" id="play">
+                <div class="decor4" id="play">
+                    <img class="decor3" src="decor1.png" id="play">
+                </div>
+                <div class="carre" id="play"></div>
+                <img class="ctaTxt" src="ctaTxt.png" id="play">
+                <img class="ctaClick" src="ctaClick.png" id="play">
+                <img class="logo" src="logo.png" id="play">
+                <img class="ml2" src="legal_roll_over.jpg" id="play">
+                <div class="border"></div>
+        </a>
+    </div>
+
+
+
+    <script>
+    var imgs = document.querySelectorAll('#play');
+
+    for (var i = 0; i < imgs.length; i++) {
+      imgs[i].onclick = toggleAnimation;
+      imgs[i].style.webkitAnimationPlayState = 'running';
+    }
+
+        function addListeners() {
+            legalBtn = document.querySelector(".ml1");
+            legalScreen = document.querySelector(".ml2");
+            legalBtn.addEventListener("mouseover", legalShow, false);
+            legalBtn.addEventListener("mouseout", legalHide, false);
+        }
+
+        //======== bgExitHandler ========
+        function legalShow() {
+            legalScreen.style.opacity = "1";
+            toggleAnimation();
+        }
+
+        function legalHide() {
+            legalScreen.style.opacity = "0";
+
+            toggleAnimation();
+        }
+
+        setTimeout(function(){
+            legalBtn.removeEventListener("mouseover", legalShow, false);
+        }, 13000)
+
+
+        function toggleAnimation() {
+          var style;
+          for (var i = 0; i < imgs.length; i++) {
+            style = imgs[i].style;
+            if (style.webkitAnimationPlayState === 'running') {
+              style.webkitAnimationPlayState = 'paused';
+              style.animationPlayState = 'paused';
+              document.body.className = 'paused';
+            } else {
+              style.webkitAnimationPlayState = 'running';
+              style.animationPlayState = 'running';
+              document.body.className = '';
+            }
+          }
+        }
+    </script>
+</body>
+
+</html>
