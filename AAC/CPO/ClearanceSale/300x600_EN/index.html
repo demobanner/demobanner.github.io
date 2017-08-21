@@ -37,15 +37,16 @@
 				.to(f2_text, 0.5, {autoAlpha:0}, "+=2");
 
 			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to(f3_text, 0.5, {autoAlpha:0}, "+=2");
+				.to([f3_text, logo2], 0.5, {autoAlpha:0}, "+=2");
 
-			tl.to(f4_logo, 0.5, {autoAlpha:1}) 
-				.to(f5_logo, 0.5, {autoAlpha:1})
-				.to(f6_logo, 0.5, {autoAlpha:1})
-				.to([f4_logo, f5_logo, f6_logo, logo2], 0.5,  {autoAlpha:0}, "+=1");
-
-			tl.to(f7_bg, 0.5, {autoAlpha:1})
-				.to(f7_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
+			tl.to(f4_bg, 0.5, {autoAlpha:1})
+				.to(f4_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
+				.to([f4_bg, f4_text], 0.5,  {autoAlpha:0}, "+=2")
+				
+			tl.to([logo_nissan, logo2], 0.5, {autoAlpha:1}) 
+				.to(logo_infiniti, 0.5, {autoAlpha:1})
+				.to(logo_renault, 0.5, {autoAlpha:1})
+				.to(cta, 0.5, {autoAlpha:1, onComplete:onLoop});
 		}
 		
 		function restart() {
@@ -73,14 +74,15 @@
       <div id="f1_text" class="layer"></div>
       <div id="f1_img1" class="layer"></div>
       <div id="f1_img2" class="layer"></div>
+      <div id="logo1" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_text" class="layer"></div>
-      <div id="f4_logo" class="layer"></div>
-      <div id="f5_logo" class="layer"></div>
-      <div id="f6_logo" class="layer"></div>
-      <div id="f7_bg" class="layer"></div>
-      <div id="f7_text" class="layer"></div>
-      <div id="logo1" class="layer"></div>
+      <div id="f4_bg" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="logo_nissan" class="layer"></div>
+      <div id="logo_infiniti" class="layer"></div>
+      <div id="logo_renault" class="layer"></div>
+      <div id="cta" class="layer"></div>
       <div id="logo2" class="layer"></div>
     </a>
 		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>

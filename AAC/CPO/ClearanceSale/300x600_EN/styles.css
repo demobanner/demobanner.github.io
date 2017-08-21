@@ -60,21 +60,21 @@ a {
   background: url("f3_text.png") center no-repeat;
   top: -50px;
 }
-#f4_logo {
-  background: url("f4_logo.png") center no-repeat;
-}
-#f5_logo {
-  background: url("f5_logo.png") center no-repeat;
-}
-#f6_logo {
-  background: url("f6_logo.png") center no-repeat;
-}
-#f7_bg {
+#f4_bg {
   background: url("f7_bg.jpg") center no-repeat;
 }
-#f7_text {
+#f4_text {
   background: url("f7_text.png") center no-repeat;
 	top: -50px;
+}
+#logo_nissan {
+  background: url("logo_nissan.png") center no-repeat;
+}
+#logo_infiniti {
+  background: url("logo_infiniti.png") center no-repeat;
+}
+#logo_renault {
+  background: url("logo_renault.png") center no-repeat;
 }
 #logo1 {
   background: url("logo1.png") center no-repeat;
@@ -82,6 +82,9 @@ a {
 }
 #logo2 {
   background: url("logo2.png") center no-repeat;
+}
+#cta {
+  background: url("cta.png") center no-repeat;
 }
 #btn-replay {
   position: absolute;
