@@ -76,15 +76,12 @@ a {
 #logo_renault {
   background: url("logo_renault.png") center no-repeat;
 }
-#logo1 {
-  background: url("logo1.png") center no-repeat;
-  opacity: 1;
-}
-#logo2 {
-  background: url("logo2.png") center no-repeat;
+#logo {
+  background: url("logo.png") center no-repeat;
 }
 #cta {
   background: url("cta.png") center no-repeat;
+	top: 50px;
 }
 #btn-replay {
   position: absolute;

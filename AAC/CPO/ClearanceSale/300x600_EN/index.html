@@ -22,31 +22,31 @@
 		
 		function init() {
 
-			tl.to(bg, 0.5, {autoAlpha:1})
-				.to(f1_img1, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "-=0.5")
-				.to(f1_text, 0.5, {autoAlpha:1, ease: Power0.easeInOut}, "+=0.5")
-				.to(f1_road, 0.5, {autoAlpha:1, ease: Power0.easeInOut})
+			tl.to(bg, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(f1_img1, 0.5, {autoAlpha:1, ease: Power1.easeInOut}, "-=0.5")
+				.to(f1_text, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(f1_road, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
 				.to(f1_road, 2, {width:300, ease: Power0.easeInOut})
 				.to(f1_img1, 0.5, {scale:1, top:0, left:0, ease: Power2.easeInOut})
-				.to(f1_img1, 0.5, {autoAlpha:0}, "+=1.5")
-				.to(f1_img2, 0.5, {autoAlpha:1})
-				.to([bg, f1_text, logo1, f1_img2, f1_road], 0.5, {autoAlpha:0}, "+=2");
+				.to(f1_img1, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=1.5")
+				.to(f1_img2, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to([bg, f1_text, f1_img2, f1_road], 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			tl.to(logo2, 0.5, {autoAlpha:1})
+			tl.to(logo, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
 				.to(f2_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to(f2_text, 0.5, {autoAlpha:0}, "+=2");
+				.to(f2_text, 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
 			tl.to(f3_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to([f3_text, logo2], 0.5, {autoAlpha:0}, "+=2");
+				.to([f3_text, logo], 0.5, {autoAlpha:0, ease: Power1.easeInOut}, "+=2");
 
-			tl.to(f4_bg, 0.5, {autoAlpha:1})
+			tl.to(f4_bg, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
 				.to(f4_text, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut})
-				.to([f4_bg, f4_text], 0.5,  {autoAlpha:0}, "+=2")
+				.to([f4_bg, f4_text], 0.5,  {autoAlpha:0, ease: Power1.easeInOut}, "+=2")
 				
-			tl.to([logo_nissan, logo2], 0.5, {autoAlpha:1}) 
-				.to(logo_infiniti, 0.5, {autoAlpha:1})
-				.to(logo_renault, 0.5, {autoAlpha:1})
-				.to(cta, 0.5, {autoAlpha:1, onComplete:onLoop});
+			tl.to([logo_nissan, logo], 0.5, {autoAlpha:1, ease: Power1.easeInOut}) 
+				.to(logo_infiniti, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(logo_renault, 0.5, {autoAlpha:1, ease: Power1.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease: Power1.easeInOut, onComplete:onLoop});
 		}
 		
 		function restart() {
@@ -74,7 +74,6 @@
       <div id="f1_text" class="layer"></div>
       <div id="f1_img1" class="layer"></div>
       <div id="f1_img2" class="layer"></div>
-      <div id="logo1" class="layer"></div>
       <div id="f2_text" class="layer"></div>
       <div id="f3_text" class="layer"></div>
       <div id="f4_bg" class="layer"></div>
@@ -83,7 +82,7 @@
       <div id="logo_infiniti" class="layer"></div>
       <div id="logo_renault" class="layer"></div>
       <div id="cta" class="layer"></div>
-      <div id="logo2" class="layer"></div>
+      <div id="logo" class="layer"></div>
     </a>
 		<a id="btn-replay" href="javascript:" onclick="restart();"><img src="replay.png"></a>
   </div>
