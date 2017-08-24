@@ -77,11 +77,13 @@ a {
   background: url("f8_img1.png") center no-repeat;
   opacity: 1;
   left: 600px;
+  top: -21px;
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg); 
   transform: rotate(90deg);
 }
 #f8_img2 {
+  top: -22px;
   background: url("f8_img2.png") center no-repeat;
 }
 #cta {
