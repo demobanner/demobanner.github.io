@@ -35,7 +35,17 @@ a {
   background: url("f1_img.jpg") center no-repeat;
   opacity: 1;
   width: 331px;
+}
+#f1 {
+  position: absolute;
   left: -331px;
+}
+#f1_img2 {
+  background: url("f1_img2.png") center no-repeat;
+  opacity: 1;
+  left: 24px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f2_img1 {
   background: url("f2_img1.png") center no-repeat;
@@ -55,30 +65,59 @@ a {
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
 }
+#f3_img2 {
+  background: url("f3_img2.png") center no-repeat;
+  left: 9px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+#f3 {
+  position: absolute;
+}
 #f4_text {
   background: url("f4_text.png") center no-repeat;
 }
 #f5_text {
   background: url("f5_text.png") center no-repeat;
 }
+#f6 {
+  position: absolute;
+  left: 300px;
+}
 #f6_img {
   background: url("f6_img.jpg") center no-repeat;
   opacity: 1;
   width: 350px;
+}
+#f6_img2 {
+  background: url("f6_img2.png") center no-repeat;
+  opacity: 1;
+  left: 24px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+#f7 {
+  position: absolute;
   left: 300px;
 }
 #f7_img {
   background: url("f7_img.jpg") center no-repeat;
   opacity: 1;
   width: 413px;
-  left: 300px;
+}
+#f7_img2 {
+  background: url("f7_img2.png") center no-repeat;
+  opacity: 1;
+  left: 38px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f8_img1 {
   background: url("f8_img1.png") center no-repeat;
   opacity: 1;
   left: 600px;
   -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 #f8_img2 {
