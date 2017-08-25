@@ -10,7 +10,7 @@ a {
 }
 #banner {
   position: absolute;
-  width: 298px;
+  width: 118px;
   height: 598px;
   overflow: hidden;
   border: 1px solid black;
@@ -20,7 +20,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 298px;
+  width: 118px;
   height: 598px;
   opacity: 0;
 }
@@ -33,19 +33,17 @@ a {
 }
 #f1{
   position: absolute;
-  left: -310px;
+  left: -120px;
 }
 #f1_img {
   background: url("f1_img.jpg") center no-repeat;
   opacity: 1;
-  width: 310px;
 }
 #f1_img2 {
-    background: url("f1_img2.png") center no-repeat;
-    opacity: 1;
-    left: 6px;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f1_img2.png") center no-repeat;
+  opacity: 1;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f2_img1 {
   background: url("f2_img1.png") center no-repeat;
@@ -64,17 +62,17 @@ a {
 }
 #f3{
   position: absolute;
-  left: -300px;
+  left: -120px;
 }
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
   opacity: 1;
 }
 #f3_img2 {
-    background: url("f3_img2.png") center no-repeat;
-    opacity: 1;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f3_img2.png") center no-repeat;
+  opacity: 1;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f4_text {
   background: url("f4_text.png") center no-repeat;
@@ -84,40 +82,36 @@ a {
 }
 #f6{  
   position: absolute;
-  left: 300px;
+  left: 120px;
 }
 #f6_img {
   background: url("f6_img.jpg") center no-repeat;
   opacity: 1;
-  width: 350px;
 }
 #f6_img2 {
-    background: url("f6_img2.png") center no-repeat;
-    opacity: 1;
-    left: 27px;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f6_img2.png") center no-repeat;
+  opacity: 1;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f7{  
   position: absolute;
-  left: 300px;
+  left: 120px;
 }
 #f7_img {
   background: url("f7_img.jpg") center no-repeat;
   opacity: 1;
-  width: 380px;
 }
 #f7_img2 {
-    background: url("f7_img2.png") center no-repeat;
-    opacity: 1;
-    left: 41px;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f7_img2.png") center no-repeat;
+  opacity: 1;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f8_img1 {
   background: url("f8_img1.png") center no-repeat;
   opacity: 1;
-  left: 600px;
+  left: 260px;
   top: -21px;
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg); 

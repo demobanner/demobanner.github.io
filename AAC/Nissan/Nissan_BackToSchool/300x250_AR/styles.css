@@ -11,7 +11,7 @@ a {
 #banner {
   position: absolute;
   width: 298px;
-  height: 598px;
+  height: 248px;
   overflow: hidden;
   border: 1px solid black;
   background-color: #fff;
@@ -21,7 +21,7 @@ a {
   top: 0;
   left: 0;
   width: 298px;
-  height: 598px;
+  height: 248px;
   opacity: 0;
 }
 .click-tag {
@@ -31,21 +31,21 @@ a {
   right: 0;
   bottom: 0;
 }
-#f1{
-  position: absolute;
-  left: -310px;
-}
 #f1_img {
   background: url("f1_img.jpg") center no-repeat;
   opacity: 1;
-  width: 310px;
+  width: 331px;
+}
+#f1 {
+  position: absolute;
+  left: -331px;
 }
 #f1_img2 {
-    background: url("f1_img2.png") center no-repeat;
-    opacity: 1;
-    left: 6px;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f1_img2.png") center no-repeat;
+  opacity: 1;
+  left: 24px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f2_img1 {
   background: url("f2_img1.png") center no-repeat;
@@ -62,19 +62,17 @@ a {
 #f2_img5 {
   background: url("f2_img5.png") center no-repeat;
 }
-#f3{
-  position: absolute;
-  left: -300px;
-}
 #f3_img {
   background: url("f3_img.jpg") center no-repeat;
-  opacity: 1;
 }
 #f3_img2 {
-    background: url("f3_img2.png") center no-repeat;
-    opacity: 1;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f3_img2.png") center no-repeat;
+  left: 9px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+#f3 {
+  position: absolute;
 }
 #f4_text {
   background: url("f4_text.png") center no-repeat;
@@ -82,7 +80,7 @@ a {
 #f5_text {
   background: url("f5_text.png") center no-repeat;
 }
-#f6{  
+#f6 {
   position: absolute;
   left: 300px;
 }
@@ -92,39 +90,37 @@ a {
   width: 350px;
 }
 #f6_img2 {
-    background: url("f6_img2.png") center no-repeat;
-    opacity: 1;
-    left: 27px;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f6_img2.png") center no-repeat;
+  opacity: 1;
+  left: 24px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
-#f7{  
+#f7 {
   position: absolute;
   left: 300px;
 }
 #f7_img {
   background: url("f7_img.jpg") center no-repeat;
   opacity: 1;
-  width: 380px;
+  width: 413px;
 }
 #f7_img2 {
-    background: url("f7_img2.png") center no-repeat;
-    opacity: 1;
-    left: 41px;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+  background: url("f7_img2.png") center no-repeat;
+  opacity: 1;
+  left: 38px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
 #f8_img1 {
   background: url("f8_img1.png") center no-repeat;
   opacity: 1;
   left: 600px;
-  top: -21px;
   -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 #f8_img2 {
-  top: -22px;
   background: url("f8_img2.png") center no-repeat;
 }
 #cta {
