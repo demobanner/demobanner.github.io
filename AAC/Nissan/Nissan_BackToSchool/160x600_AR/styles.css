@@ -111,7 +111,7 @@ a {
 #f8_img1 {
   background: url("f8_img1.png") center no-repeat;
   opacity: 1;
-  left: 360px;
+  left: 320px;
   top: -21px;
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg); 
