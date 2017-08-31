@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=336,height=280">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		var clickTag = '';
+		
+		var tl = new TimelineLite(),
+				tl1 = new TimelineLite();
+		
+		function init() {
+			sunRising();
+			tl.to([shadow1, car1, shadow2, car2], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut})
+				.to(f1_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
+				.to([shadow1, car1, shadow2, car2], 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=3");
+
+			tl.to([shadow3, car3, shadow4, car4], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut}, "-=0.3")
+				.to([bg, f1_text, shadow3, car3, shadow4, car4], 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=3");
+
+			tl.to(f3_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
+				.to(f3_text, 0.5, {autoAlpha:0, ease:Power0.easeInOut}, "+=4");
+
+			tl.to(f4_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
+				.to(logo, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, top:0, ease:Power1.easeInOut})
+				.to(logo_AWR, 0.5, {autoAlpha:1, ease:Power0.easeInOut});
+		}
+		
+		function sunRising() {
+			tl1.to(sun, 1.5, {autoAlpha:1, top:0, ease:Power0.easeInOut})
+				.to(sun, 1.5, {autoAlpha:0, top:250, ease:Power0.easeInOut}, "+=1")
+				.to(sun, 1.5, {autoAlpha:1, top:0, ease:Power0.easeInOut})
+				.to(sun, 1.5, {autoAlpha:0, top:250, ease:Power0.easeInOut}, "+=1");
+		}
+		
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" onclick="window.open(window.clickTag, '_blank');" href="javascript:">
+      <div id="bg" class="layer"></div>
+      <div id="sun" class="layer"></div>
+      <div id="shadow1" class="layer"></div>
+      <div id="car1" class="layer"></div>
+      <div id="shadow2" class="layer"></div>
+      <div id="car2" class="layer"></div>
+      <div id="shadow3" class="layer"></div>
+      <div id="car3" class="layer"></div>
+      <div id="shadow4" class="layer"></div>
+      <div id="car4" class="layer"></div>
+      <div id="f1_text" class="layer"></div>
+      <div id="f3_text" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo_AWR" class="layer"></div>
+    </a>
+  </div>
+</body>
+</html>
