@@ -24,7 +24,7 @@
 				.to([shadow1, car1, shadow2, car2,f1_text], 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=3");
 
 
-			tl.to([shadow3, car3, shadow4, car4], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut},"-=0.3")
+			tl.to([shadow3, car3, shadow4, car4], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut},"-=0.4")
 				.to(f1_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
 				.to([bg, f1_text, shadow3, car3, shadow4, car4], 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=3");
 
@@ -38,10 +38,10 @@
 		 }
 
 		function sunRising() {
-			tl1.to(sun, 1.5, {autoAlpha:1, ease:Power0.easeInOut})
-				.to(sun, 1.5, {autoAlpha:0, ease:Power0.easeInOut}, "+=1")
-				.to(sun, 1.5, {autoAlpha:1, ease:Power0.easeInOut})
-				.to(sun, 1.5, {autoAlpha:0, ease:Power0.easeInOut}, "+=1");
+			tl1.to(sun, 1.5, {autoAlpha:1,top: 0, ease:Power0.easeInOut})
+				.to(sun, 1.5, {autoAlpha:0,top:435, ease:Power0.easeInOut}, "+=1")
+				.to(sun, 1.5, {autoAlpha:1,top: 0, ease:Power0.easeInOut})
+				.to(sun, 1.5, {autoAlpha:0,top:435, ease:Power0.easeInOut}, "+=1");
 		}
 
 		window.onload = init;

@@ -38,7 +38,7 @@ a {
 #sun {
   background: url("sun.png") center no-repeat;
   /*height: 140px;*/
-  top:0;
+  top:435px;
 }
 #shadow1 {
   background: url("shadow1.png") center no-repeat;

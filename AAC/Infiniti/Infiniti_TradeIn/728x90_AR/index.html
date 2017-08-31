@@ -13,10 +13,10 @@
 	<link rel="stylesheet" href="styles.css">
 	<script type="text/javascript">
 		var clickTag = '';
-		
+
 		var tl = new TimelineLite(),
 				tl1 = new TimelineLite();
-		
+
 		function init() {
 			sunRising();
 			tl.to([shadow1, car1, shadow2, car2], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut})
@@ -24,7 +24,7 @@
 				.to([shadow1, car1, shadow2, car2,f1_text], 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=3");
 
 
-			tl.to([shadow3, car3, shadow4, car4], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut})
+			tl.to([shadow3, car3, shadow4, car4], 0.5, {autoAlpha:1, left:0, ease:Power1.easeInOut},"-=0.3")
 				.to(f1_text, 0.5, {autoAlpha:1, ease:Power0.easeInOut})
 				.to([bg, f1_text, shadow3, car3, shadow4, car4], 0.5, {autoAlpha:0, ease:Power1.easeInOut}, "+=3");
 
@@ -36,16 +36,16 @@
 				.to(cta, 0.5, {autoAlpha:1, top:0, ease:Power1.easeInOut})
 				.to(logo_AWR, 0.5, {autoAlpha:1, ease:Power0.easeInOut});
 		}
-		
+
 		function sunRising() {
 			tl1.to(sun, 1.5, {autoAlpha:1, top:-50, ease:Power0.easeInOut})
-				.to(sun, 1.5, {autoAlpha:0, top:65, ease:Power0.easeInOut}, "+=1")
+				.to(sun, 1.5, {autoAlpha:0, top:0, ease:Power0.easeInOut}, "+=1")
 				.to(sun, 1.5, {autoAlpha:1, top:-50, ease:Power0.easeInOut})
-				.to(sun, 1.5, {autoAlpha:0, top:65, ease:Power0.easeInOut}, "+=1");
+				.to(sun, 1.5, {autoAlpha:0, top:0, ease:Power0.easeInOut}, "+=1");
 		}
-		
+
 		window.onload = init;
-		
+
 	</script>
 </head>
 <body>

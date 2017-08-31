@@ -37,7 +37,6 @@ a {
 }
 #sun {
   background: url("sun.png") center no-repeat;
-  top: 65px;
   height: 140px;
 }
 #shadow1 {

@@ -38,10 +38,10 @@
 		 }
 
 		function sunRising() {
-			tl1.to(sun, 1.5, {autoAlpha:1, ease:Power0.easeInOut})
-				.to(sun, 1.5, {autoAlpha:0, ease:Power0.easeInOut}, "+=1")
-				.to(sun, 1.5, {autoAlpha:1, ease:Power0.easeInOut})
-				.to(sun, 1.5, {autoAlpha:0, ease:Power0.easeInOut}, "+=1");
+			tl1.to(sun, 1.5, {autoAlpha:1,top: 0, ease:Power0.easeInOut})
+				.to(sun, 1.5, {autoAlpha:0,top:435, ease:Power0.easeInOut}, "+=1")
+				.to(sun, 1.5, {autoAlpha:1,top: 0, ease:Power0.easeInOut})
+				.to(sun, 1.5, {autoAlpha:0,top:435, ease:Power0.easeInOut}, "+=1");
 		}
 
 		window.onload = init;
