@@ -10,12 +10,12 @@ a {
 }
 @font-face {
   font-family: AvenirBlack;
-  src: url(https://demobanner.github.io/TBWA_FR/SNCF/SNCF_Intercites_Phase2/AvenirLTStd-Black.woff) format('woff');
+  src: url(AvenirLTStd-Black.otf);
 
 }
 @font-face {
   font-family: AvenirMedium;
-  src: url(https://demobanner.github.io/TBWA_FR/SNCF/SNCF_Intercites_Phase2/AvenirLTStd-Medium.woff) format('woff');
+  src: url(AvenirLTStd-Medium.otf);
 }
 #banner {
   position: absolute;
