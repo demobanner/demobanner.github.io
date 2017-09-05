@@ -28,13 +28,13 @@
 
       var location = data.location.toUpperCase();
 
-      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.img,{fit:'cover'});
+      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.img,data.img,{fit:'cover'});
       ADventori.Display.setText(document.getElementById('f2_city_name'),location);
       ADventori.Display.setText(document.getElementById('f3_city_name'),location);
       ADventori.Display.setAndAdaptText(document.getElementById('f3_number'),data.price,75);
       ADventori.Display.setText(document.getElementById('f3_currency'),data.currency);
 
-      var padding_left = 150,
+      var padding_left = 120,
           f3_number = document.getElementById('f3_number'),
           f3_currency = document.getElementById('f3_currency'),
           f3_star = document.getElementById('f3_star'),
@@ -42,20 +42,29 @@
 
       switch(price_length){
         case 3:
-          padding_left = 25;
+          padding_left = 10;
+
+          f3_number.style.top = "6px";
+          f3_number.style.letterSpacing = "-9px";
+
+          f3_currency.style.fontSize = "120px";
+          f3_currency.style.top = "35px";
+
+          f3_star.style.fontSize = "50px";
+          f3_star.style.top = "-18px";
           break;
 
         case 4:
-          padding_left = 0;
+          padding_left = 10;
 
-          f3_number.style.top = "13px";
-          f3_number.style.letterSpacing = "-20px";
+          f3_number.style.top = "20px";
+          f3_number.style.letterSpacing = "-7px";
 
           f3_currency.style.fontSize = "90px";
           f3_currency.style.top = "40px";
 
-          f3_star.style.fontSize = "50px";
-          f3_star.style.top = "12px";
+          f3_star.style.fontSize = "40px";
+          f3_star.style.top = "5px";
           break;
       }
 
@@ -69,7 +78,7 @@
         .to(f2_city, 0.5, {autoAlpha: 1, x:27, ease: Power2.easeInOut})
         .to(f2_text3, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
         .to([f2_text1, f2_text2, f2_city,f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut},'9')
-        tl.to(f3_text1, 0.5, {x: 0,  ease: Power1.easeInOut})
+        .to(f3_text1, 0.5, {x: 0,  ease: Power1.easeInOut})
         .to(f3_text2, 0.5, {autoAlpha:1, x: 0,  ease: Power1.easeInOut})
         .to(f3_city_name, 0.5, {autoAlpha:1, x: 30,  ease: Power2.easeInOut})
         .to(f3_text3, 0.5, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})

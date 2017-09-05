@@ -28,13 +28,13 @@
 
       var location = data.location.toUpperCase();
 
-      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.img,{fit:'cover'});
+      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.img,data.img,{fit:'cover'});
       ADventori.Display.setText(document.getElementById('f2_city_name'),location);
       ADventori.Display.setText(document.getElementById('f3_city_name'),location);
       ADventori.Display.setAndAdaptText(document.getElementById('f3_number'),data.price,75);
       ADventori.Display.setText(document.getElementById('f3_currency'),data.currency);
 
-      var padding_left = 28,
+      var padding_left = 10,
           f3_number = document.getElementById('f3_number'),
           f3_currency = document.getElementById('f3_currency'),
           f3_star = document.getElementById('f3_star'),
@@ -45,7 +45,7 @@
           padding_left = 5;
 
           f3_number.style.top = "8px"
-          f3_number.style.letterSpacing = "-10px";
+          f3_number.style.letterSpacing = "-3px";
 
           f3_currency.style.fontSize = "50px";
           f3_currency.style.top = "20px";
@@ -55,10 +55,10 @@
           break;
 
         case 4:
-          padding_left = 5;
+          padding_left = -5;
 
           f3_number.style.top = "15px";
-          f3_number.style.letterSpacing = "-7px";
+          f3_number.style.letterSpacing = "-2px";
 
           f3_currency.style.fontSize = "40px";
           f3_currency.style.top = "24px";
