@@ -26,9 +26,11 @@
 
       document.getElementById("banner").style.visibility = 'visible';
 
+      var location = data.location.toUpperCase();
+
       ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.img,{fit:'cover'});
-      ADventori.Display.setText(document.getElementById('f2_city_name'),data.location);
-      ADventori.Display.setText(document.getElementById('f3_city_name'),data.location);
+      ADventori.Display.setText(document.getElementById('f2_city_name'),location);
+      ADventori.Display.setText(document.getElementById('f3_city_name'),location);
       ADventori.Display.setAndAdaptText(document.getElementById('f3_number'),data.price,75);
       ADventori.Display.setText(document.getElementById('f3_currency'),data.currency);
 
