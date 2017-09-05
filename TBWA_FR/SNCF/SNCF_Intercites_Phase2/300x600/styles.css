@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+a {
+  border: none;
+  display: inline-block;
+}
+@font-face {
+  font-family: AvenirBlack;
+  src: url(https://demobanner.github.io/TBWA_FR/SNCF/SNCF_Intercites_Phase2/AvenirLTStd-Black.woff) format('woff');
+
+}
+@font-face {
+  font-family: AvenirMedium;
+  src: url(https://demobanner.github.io/TBWA_FR/SNCF/SNCF_Intercites_Phase2/AvenirLTStd-Medium.woff) format('woff');
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 598px;
+  overflow: hidden;
+  border:1px solid #000000;
+  background-color: #0088ce;
+  /*background: url("300x600.gif");*/
+  visibility: hidden;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 598px;
+  opacity: 0;
+}
+#f1_img {
+  opacity: 1;
+}
+#f1_img img{
+  width: 100%;
+  height: 100%;
+}
+#f2_text1 {
+  -ms-transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  background: url("f2_text1.png") center no-repeat;
+}
+#f2_text2 {
+  -ms-transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  background: url("f2_text2.png") center no-repeat;
+}
+#f2_city {
+  opacity: 0;
+  top: 251px;
+  position: absolute;
+  -ms-transform: translateX(46px);
+  -webkit-transform: translateX(46px);
+  transform: translateX(46px);
+}
+#f2_city span{
+  color: #fff;
+  font-size: 23px;
+  font-family: 'AvenirMedium', sans-serif;
+}
+#f2_city #f2_city_name{
+  color: #ffb612;
+}
+#f2_text3 {
+  -ms-transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  background: url("f2_text3.png") center no-repeat;
+}
+#f3_text1 {
+  opacity: 1;
+  -ms-transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
+  transform: translateX(-300px);
+  background: url("f3_text1.png") center no-repeat;
+}
+#f3_city_name {
+  opacity: 0;
+  position: absolute;
+  -ms-transform: translateX(46px);
+  -webkit-transform: translateX(46px);
+  transform: translateX(46px);
+  top: 224px;
+  color: #fff;
+  font-size: 23px;
+  font-family: 'AvenirMedium', sans-serif;
+}
+#f3_text2 {
+  -ms-transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  background: url("f3_text2.png") center no-repeat;
+}
+#f3_price {
+  opacity: 0;
+  position: absolute;
+  left: 63px;
+  top: 223px;
+}
+#f3_price span{
+  position: relative;
+  color: #fff;
+  font-family: 'AvenirBlack', sans-serif;
+}
+#f3_price #f3_number{
+  position: absolute;
+  width: 160px;
+  height: 168px;
+  overflow: hidden;
+  font-size: 140px;
+  letter-spacing: -17px;
+  padding-right: 10px;
+}
+#f3_currency {
+  top: 13px;
+  font-size: 82px;
+}
+#f3_star{
+  top: -20px;
+  font-size: 35px;
+}
+#f3_text3 {
+  opacity: 1;
+  -ms-transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  background: url("f3_text4.png") center no-repeat;
+}
+#cta {
+  opacity: 1;
+  -ms-transform: translateX(300px);
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  background: url("cta.png") center no-repeat;
+}
+#logo {
+  background: url("logo.png") center no-repeat;
+}

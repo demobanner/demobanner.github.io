@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="ad.size" content="width=300,height=600">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>Banner</title>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script src="EasePack.min.js"></script>
+  <script src="https://cf-cdn.adventori.com/lp/enabler/ADventori-2.0.0.js" type="text/javascript"></script>
+  <link rel=stylesheet type="text/css" href="https://cf-cdn.adventori.com/lp/enabler/ADventori-2.0.0.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+		var tl = new TimelineLite();
+
+    var data = ADventori.initData({
+      'f1_img':'f1_img.jpg',
+      'f2_city_name':"LUNEVILLE",
+      'f3_city_name':"LUNEVILLE",
+      'f3_number':"15",
+      'f3_currency':"€"
+    });
+		function init() {
+
+      document.getElementById("banner").style.visibility = 'visible';
+
+      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.f1_img,{fit:'cover'});
+      ADventori.Display.setText(document.getElementById('f2_city_name'),data.f2_city_name);
+      ADventori.Display.setText(document.getElementById('f3_city_name'),data.f3_city_name);
+      ADventori.Display.setAndAdaptText(document.getElementById('f3_number'),data.f3_number,75);
+      ADventori.Display.setText(document.getElementById('f3_currency'),data.f3_currency);
+
+      var padding_left = 28,
+          f3_number = document.getElementById('f3_number'),
+          f3_currency = document.getElementById('f3_currency'),
+          f3_star = document.getElementById('f3_star'),
+          price_length = f3_number.firstChild.length;
+
+      switch(price_length){
+        case 3:
+          padding_left = 5;
+
+          f3_number.style.top = "8px"
+          f3_number.style.letterSpacing = "-10px";
+
+          f3_currency.style.fontSize = "50px";
+          f3_currency.style.top = "20px";
+
+          f3_star.style.fontSize = "30px";
+          f3_star.style.top = "6px";
+          break;
+
+        case 4:
+          padding_left = 5;
+
+          f3_number.style.top = "15px";
+          f3_number.style.letterSpacing = "-7px";
+
+          f3_currency.style.fontSize = "40px";
+          f3_currency.style.top = "24px";
+
+          f3_star.style.fontSize = "25px";
+          f3_star.style.top = "13px";
+          break;
+      }
+
+      f3_currency.style.left = f3_number.offsetLeft + f3_number.offsetWidth - padding_left + 'px';
+      f3_star.style.left = f3_currency.offsetLeft + 'px';
+
+			tl.to(f1_img, 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, '3')
+        .to(logo, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .to(f2_text1, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to(f2_text2, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to(f2_city, 0.5, {autoAlpha: 1, x:16, ease: Power2.easeInOut})
+        .to(f2_text3, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to([f2_text2, f2_city,f2_text3], 0.5, {autoAlpha: 0, ease: Power2.easeInOut},'9')
+        .to(f3_text1, 0.5, {x: 0,  ease: Power1.easeInOut})
+        .to(f3_city_name, 0.5, {autoAlpha:1, x: 16,  ease: Power2.easeInOut})
+        .to(f3_text2, 0.5, {autoAlpha:1, x: 0,  ease: Power2.easeInOut})
+        .to(f3_price, 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
+        .to(cta, 0.5, {x: 0,  ease: Power1.easeInOut})
+        .to(f3_text3, 0.5, {y: 0,  ease: Power2.easeInOut});
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+
+  <div id="banner">
+	   <a href="javascript:void(0);" onclick="ADventori.click();">
+      <div id="f1_img" class="layer"></div>
+      <div id="f2_text1" class="layer"></div>
+      <div id="f2_text2" class="layer"></div>
+      <div id="f2_city"><span id="f2_city_name"></span><span>,</span></div>
+      <div id="f2_text3" class="layer"></div>
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_city_name"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f3_price"><span id="f3_number"></span><span id="f3_currency"></span><span id="f3_star">*</span></div>
+      <div id="f3_text3" class="layer"></div>
+      <div id="tc" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+  </div>
+</body>
+</html>
