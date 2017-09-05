@@ -17,21 +17,20 @@
 		var tl = new TimelineLite();
 
     var data = ADventori.initData({
-      'f1_img':'f1_img.jpg',
-      'f2_city_name':"LUNEVILLE",
-      'f3_city_name':"LUNEVILLE",
-      'f3_number':"15",
-      'f3_currency':"€"
+      'img':'f1_img.jpg',
+      'location':"LUNEVILLE",
+      'price':"15",
+      'currency':"€"
     });
 		function init() {
 
       document.getElementById("banner").style.visibility = 'visible';
 
-      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.f1_img,{fit:'cover'});
-      ADventori.Display.setText(document.getElementById('f2_city_name'),data.f2_city_name);
-      ADventori.Display.setText(document.getElementById('f3_city_name'),data.f3_city_name);
-      ADventori.Display.setAndAdaptText(document.getElementById('f3_number'),data.f3_number,75);
-      ADventori.Display.setText(document.getElementById('f3_currency'),data.f3_currency);
+      ADventori.Display.addAndAdaptImage(document.getElementById('f1_img'),data.img,{fit:'cover'});
+      ADventori.Display.setText(document.getElementById('f2_city_name'),data.location);
+      ADventori.Display.setText(document.getElementById('f3_city_name'),data.location);
+      ADventori.Display.setAndAdaptText(document.getElementById('f3_number'),data.price,75);
+      ADventori.Display.setText(document.getElementById('f3_currency'),data.currency);
 
       var padding_left = 28,
           f3_number = document.getElementById('f3_number'),
