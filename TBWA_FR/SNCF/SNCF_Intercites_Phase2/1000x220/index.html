@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="ad.size" content="width=1000,height=220">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>Banner</title>
+  <script src="TweenLite.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script src="EasePack.min.js"></script>
+  <script src="https://cf-cdn.adventori.com/lp/enabler/ADventori-2.0.0.js" type="text/javascript"></script>
+  <link rel=stylesheet type="text/css" href="https://cf-cdn.adventori.com/lp/enabler/ADventori-2.0.0.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+		var tl = new TimelineLite();
+
+     var data = ADventori.initData({
+      'img':'img.jpg',
+      'location':"Luneville",
+      'price':"15",
+      'currency':"€"
+    });
+
+		function init() {
+
+      document.getElementById("banner").style.visibility = 'visible';
+
+      ADventori.Display.addAndAdaptImage(document.getElementById('img'),data.img,{fit:'cover'});
+      ADventori.Display.setText(document.getElementById('city_name'),data.location);
+      ADventori.Display.setText(document.getElementById('number'),data.price);
+      ADventori.Display.setText(document.getElementById('currency'),data.currency);
+
+			tl.to(text1, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to(text2, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to(text3, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to(city, 0.5, {autoAlpha: 1, x:527, ease: Power2.easeInOut})
+        .to(text4, 0.5, {autoAlpha: 1, x:0, ease: Power2.easeInOut})
+        .to(price, 0.5, {autoAlpha: 1, ease: Power2.easeInOut});
+		}
+
+		window.onload = init;
+
+	</script>
+</head>
+<body>
+  <div id="banner">
+	   <a href="javascript:void(0);" onclick="ADventori.click();">
+      <div id="img" class="layer"></div>
+      <div id="text1" class="layer"></div>
+      <div id="text2" class="layer"></div>
+      <div id="text3" class="layer"></div>
+      <div id="city"><span id="city_name"></span><span>, allez-y</span></div>
+      <div id="text4" class="layer"></div>
+      <div id="price"><span id="number"></span><span id="currency"></span><span id="star">*</span></div>
+
+    </a>
+  </div>
+</body>
+</html>
