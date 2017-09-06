@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="ad.size" content="width=300,height=250">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Banner</title>
+	<script src="TweenLite.min.js"></script>
+	<script src="TimelineLite.min.js"></script>
+	<script src="CSSPlugin.min.js"></script>
+	<script src="EasePack.min.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript">
+		var clickTag = "${CLICK_URL}";
+		
+		var tl = new TimelineLite();
+		var tl2 = new TimelineLite();
+		
+		var LOOP_TIME = 0,	// how many time the banner replays
+				loop = 0,
+				isReplay = true;	// show/hide replay button in the end
+		
+		function init() {
+
+			tl.to(f1_img, 0.5, {autoAlpha:1,top:-5, ease:Back.easeOut.config(1)},'+=0.5')
+				.to(f1_img, 0.5, {top:-200, ease:Back.easeIn.config(1)},'+=2');
+
+			tl.to([f2_bg,f2_img], 0.5, {autoAlpha:1, ease:Power1.easeInOut})
+				.to(f2_text, 0.5, {autoAlpha:1, ease:Power1.easeInOut},'-=0.5');
+
+			tl.to(f2, 0.8, {scale:1,left:-185,top:20, ease:Power1.easeInOut},'+=2')
+				.to([f2_img,f2_text], 0.5, {autoAlpha:0, ease:Power1.easeInOut},'-=0.5')
+				.to(f3_text1, 0.5, {autoAlpha:1, ease:Power1.easeInOut, onComplete:addListeners},'-=0.5')
+				.to(f3_text2, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
+				.to(f2_bg, 0.5, {autoAlpha:0, ease:Power0.easeInOut},'+=2.5')
+				.to([f3_text1,f3_text2,f3_click], 0.5, {autoAlpha:0, ease:Power0.easeInOut},'-=0.2');
+
+			tl.to(f4_text, 0.5, {autoAlpha:1, ease:Power1.easeInOut})
+				.to(f4_img, 0.5, {autoAlpha:1,left:165, ease:Power1.easeInOut},'-=0.5')
+				.to(f4_img, 0.2, {left:168, ease:Power1.easeInOut})
+				.to([f4_text,f4_img], 0.5, {autoAlpha:0, ease:Power0.easeInOut},'+=2.5');
+			
+			tl.to([f5_text,f5_bg,logo,cta], 0.5, {autoAlpha:1, ease:Power1.easeInOut})
+				.to(f5_bg, 0, {scale:1.2,left:-300,top:30, ease:Power1.easeInOut},'-=0.5')
+				.to(cta, 0.5, {autoAlpha:0, ease:Power2.easeInOut},'+=0.5')
+				.to(cta, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:0, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:0, ease:Power2.easeInOut})
+				.to(cta, 0.5, {autoAlpha:1, ease:Power2.easeInOut});
+		}
+		
+		function addListeners() {
+            legalBtn = document.getElementById("f3_click");						
+			legalBtn.style.visibility = 'visible';
+            legalBtn.addEventListener("mouseover", legalShow, false);
+            legalBtn.addEventListener("mouseout", legalHide, false);
+        }
+
+        //======== bgExitHandler ========
+        function legalShow() {
+            tl.pause();
+			tl2.to(play, 0.1, {autoAlpha:1, ease:Power1.easeInOut});
+        }
+
+        function legalHide() {         
+            tl.play();
+			tl2.to(play, 0.1, {autoAlpha:0, ease:Power1.easeInOut});
+        }
+
+		window.onload = init;
+		
+	</script>
+</head>
+<body>
+  <div id="banner">
+    <a class="click-tag" href="javascript:void(window.open(window.clickTag))">
+      <div id="f1_img" class="layer"></div>
+      <div id="f2_text" class="layer"></div>
+      <div id="f2" class="frame2">
+	      <div id="f2_bg" class="layer"></div> 
+	      <div id="f2_img" class="layer"></div>     	
+      </div>
+      <div id="f3_text1" class="layer"></div>
+      <div id="f3_text2" class="layer"></div>
+      <div id="f4_text" class="layer"></div>
+      <div id="f4_img" class="layer"></div>
+      <div id="f5" class="layer">
+      	<div id="f5_bg" class="layer"></div> 
+      </div>
+      <div id="f5_text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+      <div id="play" class="layer"></div>
+    </a>
+	<a id="f3_click" class="layer" href="javascript:void(window.open(window.clickTag))""></a>
+		
+  </div>
+</body>
+</html>

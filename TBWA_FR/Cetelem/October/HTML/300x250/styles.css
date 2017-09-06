@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  overflow: hidden;
+  border:1px solid #000;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 248px;
+  opacity: 0;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.frame2{  
+  left: 20px;
+  top: 10px;
+  position: absolute;
+  transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+}
+#play{
+  background: url("legal_roll_over.jpg") center no-repeat;
+}
+#f1_img {
+  background: url("img1.png") center no-repeat;
+  height: 194px;
+  top:-200px;
+}
+#f2_text {
+  height: 92px;
+  width: 180px;
+  left: 30px;
+  top: 30px;
+  background: url("title.png") center no-repeat;
+}
+#f2_img {
+  height: 177px;
+  width: 92px;
+  left: 210px;
+  top: 70px;
+  background: url("credito.png") center no-repeat;
+}
+#f2_bg,#f5_bg {
+  width: 459px;
+  height: 281px;
+  left: -20px;
+  top: -14px;
+  background: url("decor1.png") center no-repeat;
+}
+#f3_text1 {
+  width: 300px;
+  height: 103px;
+  top: 145px;
+	background: url("ml.png") center no-repeat;
+}
+#f3_click {
+	visibility: hidden;
+}
+#f3_text2 {
+  width: 121px;
+  height: 88px;
+  left: 97px;
+  top: 45px;
+  background: url("taux.png") center no-repeat;
+}
+#f4_text {
+  width: 118px;
+  height: 95px;
+  left: 30px;
+  top: 65px;
+  background: url("title2.png") center no-repeat;
+}
+#f4_img {
+  width: 134px;
+  height: 242px;
+  left: 300px;
+  top:6px;
+  background: url("decor2.png") center no-repeat;
+}
+#f5 {
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  left: 58px;
+  top: 15px;
+  opacity: 1;
+}
+#f5_text {
+  width: 128px;
+  height: 107px;
+  left: 80px;
+  top: 65px;
+  background: url("ctaTxt.png") center no-repeat;
+}
+#cta {
+  width: 88px;
+  height: 22px;
+  left: 102px;
+  top: 142px;
+  background: url("ctaClick.png") center no-repeat;
+}
+#logo {
+  width: 80px;
+  height: 29px;
+  left: 105px;
+  top: 200px;
+  background: url("logo.png") center no-repeat;
+}
+#btn-replay {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+	height: 16px;
+  visibility: hidden;
+  opacity: 0;
+	line-height: 0;
+}
