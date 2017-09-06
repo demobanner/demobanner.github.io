@@ -27,7 +27,7 @@
 
       document.getElementById("banner").style.visibility = 'visible';
 
-      ADventori.Display.addAndAdaptImage(document.getElementById('img'),data.img,{fit:'cover'});
+      ADventori.Display.addAndAdaptImage(document.getElementById('img'),data.img,data.img,{fit:'cover'});
       ADventori.Display.setText(document.getElementById('city_name'),data.location);
       ADventori.Display.setText(document.getElementById('number'),data.price);
       ADventori.Display.setText(document.getElementById('currency'),data.currency);

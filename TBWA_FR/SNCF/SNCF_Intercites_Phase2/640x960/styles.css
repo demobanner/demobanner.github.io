@@ -38,10 +38,6 @@ a {
 #f1_img {
   opacity: 1;
 }
-#f1_img img{
-  width: 100%;
-  height: 100%;
-}
 #f2_text1 {
   -ms-transform: translateX(30px);
   -webkit-transform: translateX(30px);
@@ -119,12 +115,12 @@ a {
 }
 #f3_price #f3_number{
   position: absolute;
-  width: 400px;
+  width: 390px;
   height: 305px;
   overflow: hidden;
   font-size: 253px;
-  letter-spacing: -25px;
-  padding-right: 10px;
+  letter-spacing: -10px;
+  padding-right: 20px;
 }
 #f3_currency {
   top: 27px;
