@@ -39,10 +39,6 @@ a {
 #play{
   background: url("legal_roll_over.png") center no-repeat;
 }
-#f1_img {
-  background: url("img1.png") center no-repeat;
-  top:-200px;
-}
 #f2_text {
   background: url("title.png") center no-repeat;
 }
@@ -52,8 +48,14 @@ a {
 #f2_bg,#f5_bg {
   width: 449px;
   height: 600px;
-  left: -72px;
+  left: 1px;
   background: url("decor1.png") center no-repeat;
+}
+#white{
+  background: #fff;
+  width: 69px;
+  height: 28px;
+  top: 230px;
 }
 #f3_click {
 	visibility: hidden;

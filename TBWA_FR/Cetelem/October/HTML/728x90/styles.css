@@ -32,6 +32,7 @@ a {
 }
 .frame2{  
   position: absolute;
+  left: 102px;
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -52,8 +53,8 @@ a {
 #f2_bg {
   width: 728px;
   height: 314px;
-  left: 70px;
-  top:-100px;
+  left: 93px;
+  top: -128px;
   background: url("decor1.png") center no-repeat;
   transform: scale(0.5);
   -ms-transform: scale(0.5);

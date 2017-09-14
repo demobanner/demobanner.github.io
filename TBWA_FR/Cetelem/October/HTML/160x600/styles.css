@@ -39,20 +39,26 @@ a {
 #play{
   background: url("legal_roll_over.png") center no-repeat;
 }
-#f1_img {
+/*#f1_img {
   background: url("img1.png") center no-repeat;
   top:-200px;
-}
+}*/
 #f2_text {
   background: url("title.png") center no-repeat;
 }
 #f2_img {
-  background: url("credito.png") center no-repeat;
+  background: url("credito.png") center no-repeat;  
+  top: 17px;
+  left: -15px;
 }
 #f2_bg,#f5_bg {
-  width: 348px;
+  width: 600px;
   height: 600px;
-  left: -95px;
+  left: -236px;
+  top: 41px;
+  transform: scale(0.58);
+  -ms-transform: scale(0.58);
+  -webkit-transform: scale(0.58);
   background: url("decor1.png") center no-repeat;
 }
 #f3_click {
@@ -96,4 +102,10 @@ a {
   visibility: hidden;
   opacity: 0;
 	line-height: 0;
+}
+#white {
+    background: #fff;
+    width: 20px;
+    height: 22px;
+    top: 200px;
 }

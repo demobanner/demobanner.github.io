@@ -23,8 +23,8 @@
 		
 		function init() {
 
-			tl.to(f1_img, 0.5, {autoAlpha:1,top:5, ease:Back.easeOut.config(1)},'+=0.5')
-				.to(f1_img, 0.5, {top:-350, ease:Back.easeIn.config(1)},'+=2');
+			// tl.to(f1_img, 0.5, {autoAlpha:1,top:5, ease:Back.easeOut.config(1)},'+=0.5')
+			// 	.to(f1_img, 0.5, {top:-350, ease:Back.easeIn.config(1)},'+=2');
 
 			tl.to([f2_bg,f2_img], 0.5, {autoAlpha:1, ease:Power1.easeInOut})
 				.to(f2_text, 0.5, {autoAlpha:1, ease:Power1.easeInOut},'-=0.5');
@@ -42,7 +42,7 @@
 				.to([f4_text,f4_img], 0.5, {autoAlpha:0, ease:Power0.easeInOut},'+=2.5');
 			
 			tl.to([f5_text,f5_bg,logo,cta], 0.5, {autoAlpha:1, ease:Power1.easeInOut})
-				.to(f5_bg, 0, {left:0, ease:Power1.easeInOut},'-=0.5')
+				.to(f5_bg, 0, {left:-3, ease:Power1.easeInOut},'-=0.5')
 				.to(cta, 0.5, {autoAlpha:0, ease:Power2.easeInOut},'+=0.5')
 				.to(cta, 0.5, {autoAlpha:1, ease:Power2.easeInOut})
 				.to(cta, 0.5, {autoAlpha:0, ease:Power2.easeInOut})
