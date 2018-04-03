@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="ad.size" content= "width=970, height=250">
+  <title>Rich Banner 970x250_EN</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="init()">
+  <div id="banner">
+    <a href="javascript:window.open(window.clickTag)" style="display:inline-block;">
+      <div id="bgd" class="layer"></div>
+      <div id="F1-text-1" class="layer"></div>
+      <div id="F1-text-2" class="layer"></div>
+      <div id="F1-text-2b" class="layer"></div>
+      <div id="bus-photo" class="layer"></div>
+      <div id="eng-photo" class="layer"></div>
+      <div id="comb-photo-1" class="layer"></div>
+      <div id="comb-photo-2" class="layer"></div>
+      <div id="mask" class="layer"></div>
+      <div id="bus-text-1" class="layer"></div>
+      <div id="bus-text-2" class="layer"></div>
+      <div id="eng-text-1" class="layer"></div>
+      <div id="eng-text-2" class="layer"></div>
+      <div id="comb-text-1" class="layer"></div>
+      <div id="comb-text-2" class="layer"></div>
+      <div id="photo-3" class="layer"></div>
+      <div id="F4-text" class="layer"></div>
+      <div id="cta" class="layer"></div>
+      <div id="logo" class="layer"></div>
+    </a>
+    <a id="icon-1" href="javascript:" onclick="showEng()"></a>
+    <a id="icon-1-active"></a>
+    <a id="icon-2" href="javascript:" onclick="showBus()"></a>
+    <a id="icon-2-active"></a>
+    <a id="btn-replay" href="javascript:" onclick="javascript:window.location.reload();"><img src="images/btn-replay.png"></a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "http://www.eau.ac.ae";
+    var bannerTween = new TimelineLite();
+    var myFun;
+    var bgd = document.getElementById('bgd'),
+        icon_1 = document.getElementById('icon-1'),
+        icon_1_active = document.getElementById('icon-1-active'),
+        icon_2 = document.getElementById('icon-2'),
+        icon_2_active = document.getElementById('icon-2-active'),
+        F1_text_1 = document.getElementById('F1-text-1'),
+        F1_text_2 = document.getElementById('F1-text-2'),
+        F1_text_2b = document.getElementById('F1-text-2b'),
+        logo = document.getElementById('logo'),
+        bus_photo = document.getElementById('bus-photo'),
+        eng_photo = document.getElementById('eng-photo'),
+        comb_photo_1 = document.getElementById('comb-photo-1'),
+        comb_photo_2 = document.getElementById('comb-photo-2'),
+        bus_text_1 = document.getElementById('bus-text-1'),
+        bus_text_2 = document.getElementById('bus-text-2'),
+        eng_text_1 = document.getElementById('eng-text-1'),
+        eng_text_2 = document.getElementById('eng-text-2'),
+        comb_text_1 = document.getElementById('comb-text-1'),
+        comb_text_2 = document.getElementById('comb-text-2'),
+        photo_3 = document.getElementById('photo-3'),
+        mask = document.getElementById('mask'),
+        F4_text = document.getElementById('F4-text'),
+        cta = document.getElementById('cta'),
+        btn_replay = document.getElementById('btn-replay');
+
+    function init() {
+    myFun = setTimeout(autoPlay, 5000);
+      bannerTween.to(bgd, 0.2, {autoAlpha: 1})
+                  .to(logo, 0.5, {autoAlpha: 1},'-=0.2')
+                  .to(F1_text_1, 0.5, {autoAlpha: 1, top: 0})
+                  .to(F1_text_2, 0.5, {autoAlpha: 1, top: 0})
+                  .to(icon_1, 0.5, {autoAlpha: 1},'-=0.2')
+                  .to(icon_2, 0.5, {autoAlpha: 1},'-=0.2')
+                  .to(F1_text_2b, 0.4, {autoAlpha:1},'+=0.3')
+                  .to(F1_text_2b, 0.3, {autoAlpha:0, onComplete: repeatHighlight});
+    }
+    function showBus() {
+      clearTimeout(myFun);
+      hiddenFrame();
+      bannerTween.to(bus_photo, 0.5, {autoAlpha: 1},'-=0.5')
+                  .to(bus_text_1, 0.5, {autoAlpha: 1, top: 0},'-=0.2')
+                  .to(bus_photo, 0.2, {scale: 0.696, top: -56, left: -212},'+=2.5')
+                  .to(bus_text_1, 0.2, {autoAlpha: 0},'-=0.2')
+                  .to(bus_text_2, 0.3, {autoAlpha: 1, top: 0},'-=0.2');
+      showEndFrame();
+    }
+    function showEng() {
+      clearTimeout(myFun);
+      hiddenFrame();
+      bannerTween.to(eng_photo, 0.5, {autoAlpha: 1},'-=0.5')
+                  .to(eng_text_1, 0.5, {autoAlpha: 1, top: 0},'-=0.2')
+                  .to(eng_photo, 0.2, {scale: 0.974, top: -16, left: -15},'+=2.5')
+                  .to(eng_text_1, 0.2, {autoAlpha: 0},'-=0.2')
+                  .to(eng_text_2, 0.3, {autoAlpha: 1, top: 0},'-=0.2');
+      showEndFrame();
+    }
+    function hiddenFrame() {
+      bannerTween.to(icon_1, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(icon_2, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(F1_text_1, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(F1_text_2, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(mask, 0.5, {autoAlpha: 1});
+    }
+    function showEndFrame() {
+      bannerTween.to(mask, 0.5, {autoAlpha: 0},'+=2.5')
+                  .to(photo_3, 0.5, {autoAlpha: 1},'-=0.5')
+                  .to(F4_text, 0.5, {autoAlpha: 1, top: 0},'-=0.2')
+                  .to(cta, 0.5, {autoAlpha: 1, top: 0},'-=0.2')
+                  .to(btn_replay, 0.5, {autoAlpha: 1, rotation: 180});
+    }
+    function autoPlay() {
+      clearTimeout(myFun);
+      bannerTween.to(icon_1_active, 0.5, {autoAlpha: 1},'+=1')
+                  .to(icon_1_active, 0.5, {autoAlpha: 0},'+=1')
+                  .to(icon_2_active, 0.5, {autoAlpha: 1})
+                  .to(icon_2, 0.5, {autoAlpha: 0});
+      bannerTween.to(icon_1, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(icon_2_active, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(F1_text_1, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(F1_text_2, 0.4, {autoAlpha: 0},'-=0.4')
+                  .to(mask, 0.5, {autoAlpha: 1});
+      bannerTween.to(comb_photo_1, 0.5, {autoAlpha: 1},'-=0.5')
+                  .to(comb_text_1, 0.5, {autoAlpha: 1, top: 0},'-=0.2')
+                  .to(comb_photo_2, 0.2, {autoAlpha:1},'+=2.5')
+                  .to(comb_text_1, 0.2, {autoAlpha: 0},'-=0.2')
+                  .to(comb_text_2, 0.2, {autoAlpha: 1, top: 0},'-=0.2');
+      showEndFrame();
+    }
+    function restart() {
+      bannerTween.restart();
+    }
+  function repeatHighlight() {
+    bannerTween.to(F1_text_2b, 0.4, {autoAlpha:1},'+=0.3')
+          .to(F1_text_2b, 0.3, {autoAlpha:0, onComplete: repeatHighlight});
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffee;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  border: none;
+  display: inline-block;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  width: 968px;
+  height: 248px;
+  border: 1px solid #000000;
+  background: white;
+}
+.click-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 250px;
+  visibility: hidden;
+  opacity: 0;
+}
+#icon-1, #icon-2,#icon-1-active, #icon-2-active {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+#icon-1 {
+  top: 57px;
+  left: 428px;
+  width: 136px;
+  height: 138px;
+  background: url(images/ico-eng.png) no-repeat;
+}
+#icon-1-active {
+  top: 57px;
+  left: 428px;
+  width: 136px;
+  height: 138px;
+  background: url(images/ico-eng-active.png) no-repeat;
+}
+#icon-1:hover, #icon-1:focus {
+  background: url(images/ico-eng-active.png) no-repeat;
+}
+#icon-2 {
+  top: 62px;
+  left: 600px;
+  width: 90px;
+  height: 129px;
+  background: url(images/ico-bus.png) no-repeat;
+}
+#icon-2-active {
+  top: 62px;
+  left: 600px;
+  width: 90px;
+  height: 129px;
+  background: url(images/ico-bus-active.png) no-repeat;
+}
+#icon-2:hover, #icon-2:focus {
+  background: url(images/ico-bus-active.png) no-repeat;
+}
+#bgd {
+  background: url(images/bgd-F1.jpg) no-repeat;
+}
+#F1-text-1 {
+  background: url(images/F1-text-1.png) no-repeat;
+  top: 250px;
+}
+#F1-text-2 {
+  background: url(images/F1-text-2.png) no-repeat;
+  top: 250px;
+}
+#F1-text-2b {
+  background: url(images/F1-text-2b.png) no-repeat;
+}
+#logo {
+  background: url(images/logo.png) no-repeat;
+}
+#mask {
+  background: url(images/mask.png) no-repeat;
+}
+#bus-photo {
+  background: url(images/bus-photo.jpg) no-repeat;
+  width: 1395px;
+  height: 360px;
+  left: -253px;
+  top: -5px;
+  transform: scale(1);
+}
+#bus-text-1 {
+  background: url(images/bus-text-1.png) no-repeat;
+  top: 250px;
+}
+#bus-text-2 {
+  background: url(images/bus-text-2.png) no-repeat;
+  top: 250px;
+}
+#eng-photo {
+  background: url(images/eng-photo.jpg) no-repeat;
+  width: 996px;
+  height: 513px;
+  left: -26px;
+  top: -257px;
+  transform: scale(1);
+}
+#eng-text-1 {
+  background: url(images/eng-text-1.png) no-repeat;
+  top: 250px;
+}
+#eng-text-2 {
+  background: url(images/eng-text-2.png) no-repeat;
+  top: 250px;
+}
+#comb-photo-1 {
+  background: url(images/bus-photo.jpg) no-repeat;
+  background-size: 100%;
+}
+#comb-photo-2 {
+  background: url(images/eng-photo.jpg) no-repeat center;
+  background-size: 100%;
+}
+#comb-text-1 {
+  background: url(images/comb-text-1.png) no-repeat;
+  top: 250px;
+}
+#comb-text-2 {
+  background: url(images/comb-text-2.png) no-repeat;
+  top: 250px;
+}
+#photo-3 {
+  background: url(images/photo-3.jpg) no-repeat;
+}
+#F4-text {
+  background: url(images/F4-text.png) no-repeat;
+  top: 250px;
+}
+#cta {
+  background: url(images/cta.png) no-repeat;
+  top: 250px;
+}
+#btn-replay {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
