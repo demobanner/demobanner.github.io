@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nissan</title>
+        <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <style type="text/css">
+            body { margin:0; padding:0; }
+            .global { position:absolute; top:0px; left:0px; overflow:hidden; width:298px; height:248px; border:1px solid #bbb; display:block;}
+            #protector {position:absolute; top:0px; left:0px;width:298px; height:248px;display:block;background:white;}
+            #container {position:absolute; top:0px; left:0px;width:298px; height:248px;display:block;}
+            .layer {position:absolute; top:0px; left:0px; display:block;}
+            #scrollbar_full{ position:absolute; overflow: hidden;top:0px;display:block;}
+            #whiteline{ position:absolute;top:0px;display:block;width:3px;background:white;}
+            #number{ position:absolute;display:block;height:300px;text-align:right;}
+            .num{ margin-left:2px;}
+            #loadN{ opacity:0;}
+            #legend{ position:absolute;display:block;right:2px;bottom:5px;}
+            #title2, #legend2, #logo_conditions{ position:absolute;display:block;top:0;left:0;}
+        </style>
+    </head>
+    <body>
+        <div id="all">
+            <a href="javascript:void(0);" id="clickthrough-button" >
+                <div class="global" id="ad">
+                    <div id="container">
+                        <img class="layer" id="background" src="img/background.jpg" />
+                        <div class="layer" id="part2">
+                            <img class="layer" id="txt1" src="img/txt.png" />
+                            <img class="layer" id="txt2" src="img/txt.png" />
+                            <img class="layer" id="txt3" src="img/txt.png" />
+                            <img class="layer" id="txt4" src="img/txt.png" />
+                            <img class="layer" id="txt5" src="img/txt.png" />
+                            <img class="layer" id="txt6" src="img/txt.png" />
+                            <img class="layer" id="txt7" src="img/txt.png" />
+                        </div>
+                        <img class="layer" id="logo" src="img/logo.jpg" />
+                        <img class="layer" id="title" src="img/title.png" />
+                        <img class="layer" id="title2" src="img/title2.png" />
+                        <img class="layer" id="logo_conditions" src="img/logo_conditions.png" />
+                        <div class="layer" id="part1">
+                            <div class="layer" id="scrollbar">
+                                <div id="scrollbar_full">
+                                    <img class="layer" id="bluescroll" src="img/scrollbar_full.png" />
+                                </div>
+                                <img class="layer" src="img/scrollbar.png" />
+                                <div id="whiteline"></div>
+                                <img class="layer" id="pointer1" src="img/pointer.png" />
+                                <img class="layer" id="pointer2" src="img/pointer.png" />
+                                <img class="layer" id="km" src="img/km.png" />
+                                <div id="refN"></div>
+                                <div id="loadN">
+                                    <img src="img/n0.png" />
+                                    <img src="img/n1.png" />
+                                    <img src="img/n2.png" />
+                                    <img src="img/n3.png" />
+                                    <img src="img/n4.png" />
+                                    <img src="img/n5.png" />
+                                    <img src="img/n6.png" />
+                                    <img src="img/n7.png" />
+                                    <img src="img/n8.png" />
+                                    <img src="img/n9.png" />
+                                </div>
+                                <div id="number">
+                                </div>
+                            </div>
+                        </div>
+                        <img id="legend" src="img/legend.png" />
+                        <img id="legend2" src="img/legend2.png" />
+                        <img class="layer" id="car" src="img/car.png" height="auto" />
+                        <img class="layer" id="cta1" src="img/cta1.jpg" />
+                        <img class="layer" id="cta2" src="img/cta2.jpg" />
+                    </div>
+                    <div id="protector"></div>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
