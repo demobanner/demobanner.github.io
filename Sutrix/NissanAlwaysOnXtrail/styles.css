@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  margin:0;
+  padding: 0;
+}
+.global {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: black;
+  cursor: pointer;
+}
+#stade, #logo, #cta, #header, #text1, #headlights{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image:url(images/bg.jpg);
+}
+#logo {
+  background-image:url(images/logo.png);
+}
+#car{
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: -334px;
+  top: 15px;
+}
+#headlights{
+  opacity: 0;
+  background-image: url(images/headlights.png);
+}
+#minicar{
+  position: absolute;
+  left: 232px;
+  top: -1px;
+  width: 35px;
+  height: 30px;
+}
+.cta_highlight_wrap{
+  position: absolute;
+  left: 11px;
+  top: 207px;
+  width: 278px;
+  height: 30px;
+  overflow: hidden;
+}
+#cta {
+  background-image: url(images/cta.png);
+}
+#cta_highlight{
+  position: absolute;
+  left: -80px;
+  top: 0;
+  width: 71px;
+  height: 33px;
+  background-image: url(images/cta_highlight.png);
+}
+#header{
+  opacity: 0;
+  background-image: url(images/header.png);
+}
+#text1{
+  top: -20px;
+  opacity: 0;
+  background-image: url(images/text1.png);
+}
